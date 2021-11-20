@@ -1,0 +1,20 @@
+/* HEADER SCSS STYLES
+============================================================== */
+/* HEADER STYLES */
+
+header {                        width: 100%; display: block; margin: 0; padding: 0; position: absolute; top: 0; left: 0; z-index: 99;}
+.header.wrapper {               padding: 50px 0 10px;} 
+.header .logo {                 width: 301px; margin: 0; float: left;}
+.header .logo img {             height: 45px;}
+
+/* NAV STYLES */
+nav {                       margin: 0; float: left;}
+ul.nav {                    margin: 5px 40px;}
+ul.nav li {                 margin: 0; font-family: 'Open Sans', sans-serif; font-size: 16px; font-weight: 500; position: relative; display: inline-block; padding: 10px; margin: 0 15px 0 0;}
+// ul.nav li:last-child {      margin: 0;}
+ul.nav li a {               text-decoration: none; color: #fff;}
+// ul.nav li a svg {           font-size: 12px; padding: 0 0 0 5px;}
+// ul.nav li:hover > a {       color: #F3E454;}
+
+
+

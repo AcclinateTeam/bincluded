@@ -1,0 +1,61 @@
+// // First override some or all individual color variables
+// $primary: #25408f;
+// $secondary: #8f5325;
+// $success: #3e8d63;
+// $info: #13101c;
+// $warning: #945707;
+// $danger: #d62518;
+// $light: #f8f9fa;
+// $dark: #343a40;
+
+// // Then add them to your custom theme-colors map, together with any additional colors you might need
+// $theme-colors: (
+// 	primary: $primary,
+// 	secondary: $secondary,
+// 	success: $success,
+// 	info: $info,
+// 	warning: $warning,
+// 	danger: $danger,
+// 	light: $light,
+// 	dark: $dark,
+// 	// add any additional color below
+// );
+// @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+/* #RESETS & BASICS
+================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, form, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;	padding: 0;	border: 0; font-size: 100%;	font: inherit;	vertical-align: baseline; }
+article, aside, details, figcaption, figure, footer, form, header, hgroup, menu, nav, section, span {
+    display: block; }
+ol, ul, menu  {		list-style: none; }
+blockquote, q {		quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after {
+    content: ''; content: none; }
+table {				 border-spacing: 0; border-collapse: collapse;}
+html {				width:100%; height: 100%;}
+body {				min-height: 100%; position: relative;}
+
+
+/* COMPONENT SCSS IMPORTS */
+@import './skeleton.scss';
+@import './header.scss';
+@import './footer.scss';
+@import './home.scss';
+
+/* FONT IMPORT */
+/* Font Imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Oswald:wght@300;400;500;700&family=Poppins:wght@300&display=swap');
+
+
+
+/* #GLOBAL TYPOGRAPHY
+================================================== */
+body {              font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 16px; font-weight: 300;}
+
+h1, h2, h3, h4, h5, h6 {	font-family: 'Oswald', sans-serif; font-weight: 900; text-transform: uppercase; color: #0F0F10;}
+h1 { font-size: 42px; line-height: 42px;}
+h2 { font-size: 24px; line-height: 24px;}
+h3 { font-size: 20px; line-height: 20px;}
+h4 { font-size: 18px; line-height: 18px;}
+h5 { font-size: 14px; line-height: 14px;}

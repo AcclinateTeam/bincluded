@@ -1,0 +1,73 @@
+/* HOME PAGE SCSS STYLES
+============================================================== */
+/* CALLOUT STYLES */
+.callout {                  width: 100%; height:100vh; background-size: auto 100%; background-repeat: no-repeat; background-color: #fff;}
+.callout svg {              position: absolute; top: 0; left: 0;}
+
+.jumbotron {                width: 100%;  display: block; position:  absolute; top: 160px; left: 0;}
+
+.calltext {                 width: 100%;}
+.calltext h1 {              font-size: 115px; line-height: 115px; font-weight: 700; color: #fff; margin: 46px 0;}
+.calltext p {               width: 90%; font-size: 28px; line-height: 40px; font-weight: 400; color: #fff; }
+
+.callimage {                width: 750px;  display: block;}
+.callimage img {            width: 90%;  display: block;}
+
+.portalbg {                 position: relative; overflow: hidden; padding: 100px 0; background-color: #f7f7f7;}
+.portalbg svg {             width: 50%; position: absolute; top: 0; right: 0;}
+.portal {                   padding: 50px 0; margin: 0 -15px;}
+// .portal .ports {            height: 300px; display: block; background-color: #cca112;} 
+// .portal .port {             width: 100%; height: 100%; margin: 40px; background-color: #c88ccc;}
+.portal .ports {                        display: block;}
+.portal .ports .port {                  height: 225px; margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; background: #fff;}
+.portal .ports .port h1 {               font-size: 54px; line-height: 54px; margin: 0 0 20px; color: #0F0F10;}
+.portal .ports .port p {                font-size: 18px; line-height: 24px; color: #0F0F10;}
+.portal .ports .port svg {              font-size: 56px; display: block; position: relative; clear: both; margin: 0 0 30px; color: #CA1D48;}
+.portal .ports .port h4  {              font-family: 'Open Sans', sans-serif; font-size: 24px; line-height: 32px; text-transform: none; margin: 0 0 12px; color: #0F0F10;}
+
+.whyNow {                           padding: 20px 0 0; background-color: #000;}
+.whyNow .whyImage {                 width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
+.whyNow .whyText {                  width: 100%; padding: 40px 0;}
+.whyNow .whyText h1 {               font-size: 115px; line-height: 115px; font-weight: 700; color: #fff; margin: 0 0 51px 35%;}
+.whyNow .whyText p {                font-size: 20px; line-height: 32px; font-weight: 400; color: #fff; margin: 0 200px 0 35%;}
+.whyNow .stats {                    display: block;}
+.whyNow .stats .stat {              text-align: center;}
+.whyNow .stat .point {              padding: 40px;}
+.whyNow .stat .point h3 {           font-family: 'Poppins', sans-serif; font-size: 54px; line-height: 54px; font-weight: 700; color: #fff; margin: 0 0 10px; text-transform: none;}
+.whyNow .stat .point h3 span {      color: #CA1D48;}
+.whyNow .stat .point p {            font-size: 14px; line-height: 20px; font-weight: 400; color: #fff; margin: 0 0 20px; text-transform: none;}
+
+.covid {                            margin: 100px 0; text-align: center;}
+.covid h1 {                         font-family: 'Poppins', sans-serif; font-size: 54px; line-height: 64px; font-weight: 700; color: #0F0F10; margin: 0 300px 10px; text-transform: none;}
+.covid .data {                      padding: 40px;}
+.covid .data h3 {                   font-family: 'Poppins', sans-serif; font-size: 54px; line-height: 54px; font-weight: 700; color: #0F0F10; margin: 0 0 10px; text-transform: none;}
+.covid .data h3 span {              color: #CA1D48;}
+.covid .data p {                    font-size: 14px; line-height: 20px; font-weight: 400; color: #0F0F10; margin: 0 0 20px; text-transform: none;}
+
+/* SPONSOR STYLES */
+.foot .sponsors {                           width: 100%; padding: 100px 0 100px; background-color: #EEC31A;}
+.foot .sponsors h1 {                        margin: 0 0 50px; text-align: center;}
+.foot .sponsors .images {                   display: block; text-align: center;}
+.foot .sponsors img {                       height: 93px; display: inline-block; margin: 0 40px;}
+
+.footer {                                   padding: 65px 0 80px; background-color: #050236;}
+.footLogo {                                 margin: 0 0 30px;}
+.footer img {                               height: 146px; margin: 0 0 20px;}
+.footer p {                                 font-size: 12px; margin: 0 0 10px; text-align: left; color: #fff;}
+.footLogo p {                               padding: 0 40px 0 0;}
+.footer svg {                               display: inline-block; font-size: 12px; margin: 0 6px 0 0; color: #fff;}
+.footer h1 {                                font-size: 22px; margin: 0 0 10px; color: #fff;}
+.footer .social svg {                       display: inline-block; font-size: 28px; margin: 12px 12px 0 0;}
+.footer .social {                           margin: 0 0 40px;}
+.footer .social li {                        font-family: 'Inter', sans-serif; font-size: 16px; line-height: 28px; font-weight: 500; color: #fff; }
+.footer .social li a {                      text-decoration: none; color: #fff;}
+.footer .connect p {                        width: 275px; font-family: 'Inter', sans-serif; margin: 0 0 33px; font-size: 16px; line-height: 24px; font-weight: 500; color: #fff;}
+.footer .connect a {                        font-size: 14px; font-weight: 500; padding: 15px 20px; text-decoration: none; text-transform: uppercase; border-radius: 10px; color: #1A3667; background-color: #F3E454;}
+
+.footEnd {                  padding: 13px 0; background-color: #050236;}
+.footEnd p {                font-size: 13px; font-weight: 500; display: inline-block; height: 12px; padding: 10px 0 10px; color: #fff;}
+.footend ul {               float: right;}
+.footend ul li {            padding: 8px 0 0; margin: 0 0 0 20px; display: inline-block;}
+.footend ul li svg {        font-size: 15px;}
+.footend ul li a {          color: #F3E454;}
+

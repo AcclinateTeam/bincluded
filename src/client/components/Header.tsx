@@ -33,17 +33,24 @@ const Header = () =>
                                     </svg> */}
                                 {/* <img src="/images/blockB.svg" alt="" /> */}
                                 {/* <img src="/images/incBham.svg" alt="" /> */}
-                                <img src="/images/bIncludedLogo.png" alt="" />
+                                <Link to="/"><img src="/images/bIncludedLogo.png" alt="" /></Link>
                             </div>
 
                             <nav>
                                 <ul className="nav">
-                                    <li><Link to='/'>Health</Link></li>
-                                    <li><Link to='/'>Family</Link></li>
-                                    <li><Link to='/'>Careers</Link></li>
-                                    <li><Link to='/'>COVID-19</Link></li>
+                                    <li><Link to='/health'>Health</Link></li>
+                                    <li><Link to='/family'>Family</Link></li>
+                                    <li><Link to='/careers'>Careers</Link></li>
+                                    <li><Link to='/covid'>COVID-19</Link></li>
                                 </ul>
                             </nav>
+
+                            <div className="login">
+                                <ul className="log">
+                                    <li className="signup"><a href="">Sign Up</a></li>
+                                    <li className="logins"><a href="">Log in</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

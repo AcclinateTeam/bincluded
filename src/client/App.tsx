@@ -6,7 +6,15 @@ import { useState, useEffect } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'; // import fa library
 import { fab } from '@fortawesome/free-brands-svg-icons'; // import fa brand icons
 import { fas } from '@fortawesome/free-solid-svg-icons'; // import fa solid icons
+
+/* PAGE IMPORTS */
 import Home from './pages/Home';
+import Health from './pages/Health';
+import Family from './pages/Family';
+import Careers from './pages/Careers';
+import Covid from './pages/covid';
+
+/* COMPONENT IMPORTS */
 import Header from './components/Header';
 import Footer from './components/Footer';
 
@@ -19,10 +27,13 @@ const App = (props: AppProps) =>
 
 	return (
 		<>
-			<BrowserRouter>
-				<Header />
+			<BrowserRouter>				
 				<Routes>
 					<Route path="/" element={<Home />} />
+					<Route path="/health" element={<Health />} />
+					<Route path="/family" element={<Family />} />
+					<Route path="/careers" element={<Careers />} />
+					<Route path="/covid" element={<Covid />} />
 					<Route path="*" element={<Home />} />
 				</Routes>
 				<Footer />

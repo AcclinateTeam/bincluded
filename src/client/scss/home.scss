@@ -1,17 +1,22 @@
 /* HOME PAGE SCSS STYLES
 ============================================================== */
 /* CALLOUT STYLES */
-.callout {                  width: 100%; height:100vh; background-size: auto 100%; background-repeat: no-repeat; background-color: #fff;}
+.callout {                  width: 100%; height:100%; background-size: auto 100%; background-repeat: no-repeat; background-color: #fff;}
 .callout svg {              position: absolute; top: 0; left: 0;}
 
 .jumbotron {                width: 100%;  display: block; position:  absolute; top: 160px; left: 0;}
 
-.calltext {                 width: 100%;}
+.calltext {                 width: 100%; display: block;}
 .calltext h1 {              font-size: 115px; line-height: 115px; font-weight: 700; color: #fff; margin: 46px 0;}
-.calltext p {               width: 90%; font-size: 28px; line-height: 40px; font-weight: 400; color: #fff; }
+.calltext p {               width: 90%; font-size: 24px; line-height: 36px; font-weight: 400; color: #fff; }
 
 .callimage {                width: 750px;  display: block;}
 .callimage img {            width: 90%;  display: block;}
+
+.callbutton {                           margin: 30px 0 0; display: block;}
+.callbutton .button {                      font-weight: 700; line-height:52px; margin: 0 15px 0 0;}
+.callbutton .button.signup {                border: 1px solid #CA1D48; background-color: #CA1D48; color: #fff;} 
+.callbutton .button.learnmore {             border: 1px solid #fff; background-color: none !important; color: #fff;} 
 
 .portalbg {                 position: relative; overflow: hidden; padding: 100px 0; background-color: #f7f7f7;}
 .portalbg svg {             width: 50%; position: absolute; top: 0; right: 0;}
@@ -27,9 +32,9 @@
 
 .whyNow {                           padding: 20px 0 0; background-color: #000;}
 .whyNow .whyImage {                 width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
-.whyNow .whyText {                  width: 100%; padding: 40px 0;}
-.whyNow .whyText h1 {               font-size: 115px; line-height: 115px; font-weight: 700; color: #fff; margin: 0 0 51px 35%;}
-.whyNow .whyText p {                font-size: 20px; line-height: 32px; font-weight: 400; color: #fff; margin: 0 200px 0 35%;}
+.whyNow .whyText {                  width: 100%; padding: 30px 0 40px;}
+.whyNow .whyText h1 {               font-size: 85px; line-height: 90px; font-weight: 700; color: #fff; margin: 0 0 30px 35%;}
+.whyNow .whyText p {                font-size: 16px; line-height: 30px; font-weight: 400; color: #fff; margin: 0 100px 0 35%;}
 .whyNow .stats {                    display: block;}
 .whyNow .stats .stat {              text-align: center;}
 .whyNow .stat .point {              padding: 40px;}
@@ -46,8 +51,8 @@
 
 /* SPONSOR STYLES */
 .foot .sponsors {                           width: 100%; padding: 100px 0 100px; background-color: #EEC31A;}
-.foot .sponsors h1 {                        margin: 0 0 50px; text-align: center;}
-.foot .sponsors .images {                   display: block; text-align: center;}
+.foot .sponsors h1 {                        margin: 0 0 100px; text-align: center;}
+.foot .sponsors .images {                   display: block; margin: 0 0 125px; text-align: center;}
 .foot .sponsors img {                       height: 93px; display: inline-block; margin: 0 40px;}
 
 .footer {                                   padding: 65px 0 80px; background-color: #050236;}

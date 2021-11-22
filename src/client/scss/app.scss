@@ -42,12 +42,37 @@ body {				min-height: 100%; position: relative;}
 @import './header.scss';
 @import './footer.scss';
 @import './home.scss';
+@import './health.scss';
 
 /* FONT IMPORT */
 /* Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Oswald:wght@300;400;500;700&family=Poppins:wght@300&display=swap');
 
+/* #GLOBAL STYLES
+================================================== */
+/* CALLOUT STYLES */
+.call {                     width: 100%; height: 500px; position: relative; background-color: #0F0F10;}  
+.call .callbg {             width: 100%; height: 500px; position: absolute; top: 0; left: 0; opacity: 0.7; background-size: cover; }
 
+/* RECIPE COMPONENT STYLES */
+.recipes {                          background-color: #000000; }
+.recipes .panel {                   margin: 0 -20px 50px; }
+.recipes .recwrap {                 padding: 0 40px 20px;}
+.recipes .recipe {                  margin: 0 0 45px; border-radius: 15px; background-color: #fff;}
+.recipes .recipe .image {           width: 100%; height: 180px; border-radius: 15px 15px 0 0; background-repeat: no-repeat; background-position: -100px; background-size: cover;}
+.recipes .recipe .text {            padding: 20px; }
+
+/* RELATED POSTS COMPONENT STYLES */
+.related .panel {                   margin: 0 -20px 50px; }
+.related .relwrap {                 padding: 0 40px 20px;}
+.related .article {                 margin: 0 0 45px; border-radius: 15px; border: 1px solid #cecece; background-color: #fff;}
+.related .article .image {           width: 100%; height: 180px; border-radius: 15px 15px 0 0; background-repeat: no-repeat; background-size: cover;}
+.related .article .text {            padding: 20px; }
+
+/* BUTTONS */
+.buttonwrap {                       width: 100%; margin: 0 0 20px; text-align: center; position: relative; }
+.button {                           font-weight: 500; padding: 15px 20px; text-align: center; text-decoration: none; background-color: none;}
+.sponsors .button {                 font-weight: 500; color: #fff; }
 
 /* #GLOBAL TYPOGRAPHY
 ================================================== */
@@ -59,3 +84,18 @@ h2 { font-size: 24px; line-height: 24px;}
 h3 { font-size: 20px; line-height: 20px;}
 h4 { font-size: 18px; line-height: 18px;}
 h5 { font-size: 14px; line-height: 14px;}
+
+/* #GLOBAL TEXT STYLES */
+.call .text h1 {                font-family: 'Oswald', sans-serif; font-size: 64px; line-height: 64px; text-shadow: 1px 1px 20px #000000; margin: 200px 0 15px; color: #fff;}
+.call .text p {                 font-family: 'Poppins', sans-serif; font-size: 24px; line-height: 36px; font-weight: 700; width: 1000px; text-shadow: 1px 1px 20px #000000; color: #fff;}  
+.recipes h1 {                   margin: 50px 0; color: #fff;}
+.recipes .text h2 {             margin: 0 0 20px; color: #1a1a1a;}
+.recipes .text p {              font-size: 14px; line-height: 22px; margin: 0 0 20px; color: #1a1a1a;}
+.recipes .text a {              font-size: 18px; line-height: 26px; font-weight: 500; text-decoration: none; color: #1a1a1a;}
+.recipes .text svg {            margin: 0 0 0 5px; color: #1a1a1a;}
+
+.related h1 {                   margin: 50px 0; color: #0F0F10;}
+.related .text h2 {             margin: 0 0 20px; color: #1a1a1a;}
+.related .text p {              font-size: 14px; line-height: 22px; margin: 0 0 20px; color: #1a1a1a;}
+.related .text a {              font-size: 18px; line-height: 26px; font-weight: 500; text-decoration: none; color: #1a1a1a;}
+.related .text svg {            margin: 0 0 0 5px; color: #1a1a1a;}

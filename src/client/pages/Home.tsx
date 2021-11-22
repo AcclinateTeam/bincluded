@@ -1,10 +1,18 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import React from 'react';
+
+/* COMPONENT IMPORTS */
+import Header from '../components/Header';
 
 const Home = () =>
 {
     return (
         <>
+            {/* HEADER COMPONENT IMPORT */}
+            <Header />
+
+            {/* JUMBOTRON COMPONENT */}
             <section>
                 <div className="callout" style={{ backgroundImage: "url(/images/callback.png)" }}>
                     <div className="jumbotron">
@@ -16,6 +24,11 @@ const Home = () =>
                                         <p>
                                             #BIncluded is a movement with a mission to build a community of individuals ready to take control of their health and future.
                                         </p>
+                                    </div>
+                                    <div className="callbutton">
+                                        <Link className="button signup" to="/">Sign Up</Link>
+                                        <Link className="button learnmore" to="/">Learn More</Link>
+
                                     </div>
                                 </div>
                                 <div className="five columns">
@@ -29,6 +42,7 @@ const Home = () =>
                 </div>
             </section>
 
+            {/* PORTAL COMPONENT */}
             <section>
                 <div className="container">
                     <div className="row portalbg">
@@ -85,6 +99,8 @@ const Home = () =>
                 </div>
             </section>
 
+
+            {/* WHY_NOW? COMPONENT */}
             <section>
                 <div className="container">
                     <div className="row whyNow">
@@ -93,7 +109,7 @@ const Home = () =>
                                 <div className="five columns">
                                     <div className="whyText">
                                         <h1>Why Now?</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus.</p>
+                                        <p>Acclinate™, a Birmingham-based company specializing in digital health products, is partnering with Jefferson County to help 50,000 county residents control their future by taking charge of their health. The B-Included website will engage residents and provide easy access to pertinent health resources and job assistance.</p>
                                     </div>
                                 </div>
                                 <div className="three columns stats">
@@ -123,26 +139,19 @@ const Home = () =>
                                     </div>
                                 </div>
                             </div>
-                            <div className="two columns whyimage" style={{ backgroundColor: '#a4ac98' }}>
-                                He Going Crazy on this beat right now
-                            </div>
-                            <div className="two columns whyimage" style={{ backgroundColor: '#51fac8' }}>
-                                He Going Crazy on this beat right now
-                            </div>
-                            <div className="two columns whyimage" style={{ backgroundColor: '#9fcc11' }}>
-                                He Going Crazy on this beat right now
-                            </div>
-                            <div className="two columns whyimage" style={{ backgroundColor: '#15ca18' }}>
-                                He Going Crazy on this beat right now
-                            </div>
-                            <div className="two columns whyimage" style={{ backgroundColor: '#ff9878' }}>
-                                He Going Crazy on this beat right now
-                            </div>
+
+                            {/* IMAGE BACKGROUNDS */}
+                            <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow1.jpg)` }}></div>
+                            <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow4.jpg)` }}></div>
+                            <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow3.jpg)` }}></div>
+                            <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow2.jpg)` }}></div>
+                            <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow5.jpg)` }}></div>
                         </div>
                     </div>
                 </div>
             </section>
 
+            {/* COVID-19 COMPONENT */}
             <section>
                 <div className="container">
                     <div className="row covid">
@@ -174,22 +183,6 @@ const Home = () =>
                                             <p>Vaccines Administered</p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div className="container">
-                    <div className="row foot">
-                        <div className="ten columns">
-                            <div className="sponsors">
-                                <h1>Brought to you by</h1>
-                                <div className="images">
-                                    <img className="prosper" src="/images/prosper2.png" alt="" />
-                                    <img className="uab" src="/images/uab2.png" alt="" />
                                 </div>
                             </div>
                         </div>

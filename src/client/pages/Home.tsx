@@ -1,12 +1,41 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
 
 const Home = () =>
 {
+
+    const [tracker, setTracker] = useState<any>([]);
+    const [actuals, setActuals] = useState<any>([]);
+    const [beds, setBeds] = useState<any>([]);
+    const [metrics, setMetrics] = useState<any>([]);
+
+    function kFormatter (num: number)
+    {
+        return Math.abs(num) > 999 ? Math.sign(num) * ((Math.abs(num) / 1000).toFixed(1)) + 'k' : Math.sign(num) * Math.abs(num)
+    }
+
+    useEffect(() =>
+    {
+
+
+        getMetroTracker();
+        async function getMetroTracker ()
+        {
+            const response = await fetch('https://api.covidactnow.org/v2/cbsa/13820.json?apiKey=3221244a929540bdb7c557ce3d60b092');
+            const metro = await response.json();
+            setTracker(metro);
+            setActuals(metro.actuals);
+            setBeds(metro.actuals.hospitalBeds);
+            setMetrics(metro.metrics);
+        }
+
+    }, []);
+
+
     return (
         <>
             {/* HEADER COMPONENT IMPORT */}
@@ -26,9 +55,8 @@ const Home = () =>
                                         </p>
                                     </div>
                                     <div className="callbutton">
-                                        <Link className="button signup" to="/">Sign Up</Link>
+                                        <Link className="button signup" to="/">Join The Community</Link>
                                         <Link className="button learnmore" to="/">Learn More</Link>
-
                                     </div>
                                 </div>
                                 <div className="five columns">
@@ -45,55 +73,59 @@ const Home = () =>
             {/* PORTAL COMPONENT */}
             <section>
                 <div className="container">
-                    <div className="row portalbg">
-                        <svg viewBox="0 0 653 667" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M83.501 -0.00195312H653.001V666.998H0.500977L83.501 -0.00195312Z" fill="#050236" />
-                        </svg>
-
-                        <div className="eight columns offset-by-one">
-                            <div className="container portal">
-                                <div className="third columns ports">
-                                    <div className="port">
-                                        <h1>Resources at your fingertips</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
-                                    </div>
+                    <div className="eight columns offset-by-one">
+                        <div className="portal">
+                            <div className="third columns ports">
+                                <div className="port">
+                                    <h1>Resources at your fingertips</h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
                                 </div>
+                            </div>
+                            <Link to="/health">
                                 <div className="third columns ports">
-                                    <div className="port">
-                                        <FontAwesomeIcon icon="hard-hat" />
-                                        <h4>Careers</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
-                                    </div>
-                                </div>
-                                <div className="third columns ports">
-                                    <div className="port">
+                                    <div className="port shadow">
                                         <FontAwesomeIcon icon="user-md" />
                                         <h4>Health</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
                                     </div>
                                 </div>
+                            </Link>
+                            <Link to="">
                                 <div className="third columns ports">
-                                    <div className="port">
+                                    <div className="port shadow">
                                         <FontAwesomeIcon icon="users" />
                                         <h4>Family</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
                                     </div>
                                 </div>
+                            </Link>
+                            <Link to="">
                                 <div className="third columns ports">
-                                    <div className="port">
-                                        <FontAwesomeIcon icon="calendar-alt" />
-                                        <h4>Events</h4>
+                                    <div className="port shadow">
+                                        <FontAwesomeIcon icon="hard-hat" />
+                                        <h4>Careers</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
                                     </div>
                                 </div>
+                            </Link>
+                            <Link to="">
                                 <div className="third columns ports">
-                                    <div className="port">
+                                    <div className="port shadow">
                                         <FontAwesomeIcon icon="viruses" />
                                         <h4>COVID-19</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
+                            <Link to="">
+                                <div className="third columns ports">
+                                    <div className="port shadow">
+                                        <FontAwesomeIcon icon="newspaper" />
+                                        <h4>Events</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -104,49 +136,50 @@ const Home = () =>
             <section>
                 <div className="container">
                     <div className="row whyNow">
-                        <div className="ten columns">
+                        <div className="eight columns offset-by-one">
                             <div className="container">
-                                <div className="five columns">
+                                <div className="four columns">
                                     <div className="whyText">
                                         <h1>Why Now?</h1>
-                                        <p>Acclinate™, a Birmingham-based company specializing in digital health products, is partnering with Jefferson County to help 50,000 county residents control their future by taking charge of their health. The B-Included website will engage residents and provide easy access to pertinent health resources and job assistance.</p>
+                                        <p>There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices. B-INCLUDED is that space and you can become part of that collective.<br /><br />B-INCLUDED is meant to address healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health and financial sustainability.</p>
+                                        <Link className="button learnmore" to="/">Learn More</Link>
                                     </div>
                                 </div>
-                                <div className="three columns stats">
+                                <div className="six columns stats">
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <h3>125k</h3>
-                                            <p>Patients Recovered</p>
+                                            <h3>43%</h3>
+                                            <p>of Jefferson County's population is Black or African-American</p>
                                         </div>
                                     </div>
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <h3>25k</h3>
-                                            <p>Patients Quarantined</p>
+                                            <h3>16.3%</h3>
+                                            <p>of Black Residents in Jefferson County live with a disability</p>
                                         </div>
                                     </div>
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <h3><span>92k</span></h3>
-                                            <p>Patients Under Treatment</p>
+                                            <h3><span>65%</span></h3>
+                                            <p>of the county's residents who live in impoverished or low-income communities are Black</p>
                                         </div>
                                     </div>
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <h3>12</h3>
-                                            <p>Hospitals Active</p>
+                                            <h3>15%</h3>
+                                            <p>of Jefferson County's Black residents are more likely to die from all causes</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-                            {/* IMAGE BACKGROUNDS */}
-                            <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow1.jpg)` }}></div>
-                            <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow4.jpg)` }}></div>
-                            <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow3.jpg)` }}></div>
-                            <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow2.jpg)` }}></div>
-                            <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow5.jpg)` }}></div>
                         </div>
+
+                        {/* IMAGE BACKGROUNDS */}
+                        <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow1.jpg)` }}></div>
+                        <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow4.jpg)` }}></div>
+                        <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow3.jpg)` }}></div>
+                        <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow2.jpg)` }}></div>
+                        <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow5.jpg)` }}></div>
                     </div>
                 </div>
             </section>
@@ -156,33 +189,34 @@ const Home = () =>
                 <div className="container">
                     <div className="row covid">
                         <div className="ten columns">
-                            <div className="container">
-                                <div className="six columns offset-by-two">
-                                    <h1>The latest data related to Covid-19</h1>
-                                    <div className="fourth columns">
-                                        <div className="data">
-                                            <h3>125k</h3>
-                                            <p>Patients Quarantined</p>
-                                        </div>
+                            <div className="eight columns offset-by-one">
+                                <h1>The latest data related to Covid-19</h1>
+                                <div className="fourth columns">
+                                    <div className="data border">
+                                        <h3>{kFormatter(actuals.cases)}</h3>
+                                        <p>Active Cases</p>
                                     </div>
-                                    <div className="fourth columns">
-                                        <div className="data">
-                                            <h3>12</h3>
-                                            <p>Hospitals Active</p>
-                                        </div>
+                                </div>
+                                <div className="fourth columns">
+                                    <div className="data border">
+                                        <h3><span>{kFormatter(beds.capacity)}</span></h3>
+                                        <p>Beds Available</p>
                                     </div>
-                                    <div className="fourth columns">
-                                        <div className="data">
-                                            <h3><span>49</span></h3>
-                                            <p>Beds Available</p>
-                                        </div>
+                                </div>
+                                <div className="fourth columns">
+                                    <div className="data border">
+                                        <h3>{kFormatter(metrics.infectionRate)}%</h3>
+                                        <p>Infection Rate</p>
                                     </div>
-                                    <div className="fourth columns">
-                                        <div className="data">
-                                            <h3>175k</h3>
-                                            <p>Vaccines Administered</p>
-                                        </div>
+                                </div>
+                                <div className="fourth columns">
+                                    <div className="data">
+                                        <h3>{metrics.vaccinationsInitiatedRatio}%</h3>
+                                        <p>Vaccines Initiated Ratio</p>
                                     </div>
+                                </div>
+                                <div className="buttonwrap">
+                                    <Link className="content button solid" to="/recipes">More on Covid-19</Link>
                                 </div>
                             </div>
                         </div>

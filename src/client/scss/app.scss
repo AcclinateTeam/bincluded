@@ -43,51 +43,146 @@ body {				min-height: 100%; position: relative;}
 @import './footer.scss';
 @import './home.scss';
 @import './health.scss';
+@import './careers.scss';
 
 /* FONT IMPORT */
 /* Font Imports */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,500&family=Oswald:wght@300;400;500;700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Oswald:wght@300;400;500;700&family=Poppins:wght@300&display=swap');
+
+.bg2 {      background-color: #f098;}
+.bg3 {      background-color: #cc45c5;}
+
 
 /* #GLOBAL STYLES
 ================================================== */
-/* CALLOUT STYLES */
-.call {                     width: 100%; height: 500px; position: relative; background-color: #0F0F10;}  
-.call .callbg {             width: 100%; height: 500px; position: absolute; top: 0; left: 0; opacity: 0.7; background-size: cover; }
+// CALLOUT STYLE
+.call {                     width: 100%; height: 825px; position: relative;}  
+.call .callbg {             width: 100%; height: 825px; position: absolute; top: 0; left: 0; background-size: cover; }
+.call .callContent {        margin: 180px 0 0;}
+.call .image {              width: 675px; float: right; margin: 0 20% 0 0;}
+.call .image img {          width: 100%;}
 
-/* RECIPE COMPONENT STYLES */
-.recipes {                          background-color: #000000; }
-.recipes .panel {                   margin: 0 -20px 50px; }
-.recipes .recwrap {                 padding: 0 40px 20px;}
-.recipes .recipe {                  margin: 0 0 45px; border-radius: 15px; background-color: #fff;}
-.recipes .recipe .image {           width: 100%; height: 180px; border-radius: 15px 15px 0 0; background-repeat: no-repeat; background-position: -100px; background-size: cover;}
-.recipes .recipe .text {            padding: 20px; }
+// CONTENT HEADER STYLES
+.content .header {                      padding: 80px 0;}
 
-/* RELATED POSTS COMPONENT STYLES */
-.related .panel {                   margin: 0 -20px 50px; }
-.related .relwrap {                 padding: 0 40px 20px;}
-.related .article {                 margin: 0 0 45px; border-radius: 15px; border: 1px solid #cecece; background-color: #fff;}
-.related .article .image {           width: 100%; height: 180px; border-radius: 15px 15px 0 0; background-repeat: no-repeat; background-size: cover;}
-.related .article .text {            padding: 20px; }
+// FEATURED RESOURCE STYLES
+.content .featured {                    width: 100%; height: 400px; display: inline-block; position: relative; box-shadow: 0 0 24px 2px #ddd;}
+.content .featured .face {              width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; opacity: 1; visibility: visible; background-color: #fff;}
+.content .featured .face img.health {          height: 150px; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.content .featured .back {              width: calc(100% - 200px); height: calc(100% - 200px); display: block; padding: 100px;}
+.content .featured .back a {            font-weight: 900; text-decoration: none; color: #CA1D48;}
+.content .featured .face:hover {        opacity: 0; visibility: hidden;}
+.content .featured .tag {               position: absolute; top: 20px; left: 20px; z-index: 9;}
+.content .featured .tag h6 {            font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: none; padding: 8px 10px; display: inline-block; background-color: #aed1f7;}
+
+
+// ADDITIONAL RESOURCE STYLES
+.addRes {                               margin: 100px 0;}
+.addRes .header {                       margin: 0 auto 50px; text-align: center;}
+.addRes .header h1 {                    font-size: 48px; line-height: 54px; padding: 0; margin: 0;}
+.addRes ul.terminal {                   width: 100%; display: block; text-align: center; border-bottom: 1px solid #cecece;} 
+.addRes ul.terminal li {                font-weight: 900; display: inline-block; padding: 20px 20px 30px; margin: 0 40px -2px 0; text-align: center; border-bottom: 1px solid rgba(255,255,255,0); color: #cecece;}
+.addRes ul.terminal li.active {         font-weight: 900; border-bottom: 3px solid #050236; background-color: #cecece; color: #050236;}
+.addRes ul.terminal li a {              text-decoration: none; color: #cecece;}
+.addRes ul.terminal li:hover {          text-decoration: none; border-bottom: 3px solid #050236; color: #050236; background-color: #cecece;}
+.addRes ul.terminal li.active a {       text-decoration: none; color: #050236;}
+.addRes .panel {                        margin: 30px -20px;}
+.addRes .panes {                        padding: 20px;}
+.addRes .panes:hover {                  transform: scale(1.02);}
+.addRes .pane {                         padding: 30px; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
+.addRes .pane .image {                  width: 96px; height: 66px; position: relative; margin: 0 0 30px; box-shadow: 0 0 24px 2px #dfdfdf; background-color: #fff;}
+.addRes .pane .image img {              width: 100%;}
+.addRes .pane h2 {                      font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; text-transform: none; padding: 0; margin: 0 0 20px;}
+.addRes .pane p {                       font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500;}
+.addRes .button {                       background-color: #CA1D48;}
+.addRes .button:hover {                 background-color: #EEC31A;}
+
+// TESTIMONY STYLES
+.testimony {                            padding: 100px 0; background-color: #050236;}
+.testimony .header {                    margin: 0 auto; text-align: center;}
+.testimony .header h1 {                 line-height: 50px; color: #fff;}
+.testimony .slider {                    padding: 50px 0 0;}
+.testimony .slides {                    width: 60%; padding: 50px 0 0; margin: 0 auto;}
+.testimony .slide {                     text-align: center; display: block; position: relative; padding: 80px 40px 40px; border: 1px solid #287FDD;}
+.testimony .slide .image {              width: 100px; height: 100px; display: block; position: absolute; top: -50px; left: calc(50% - 50px);}
+.testimony .slide .image img {          width: 100%; border-radius: 50px;}
+.testimony .slide h2 {                  font-family: 'Roboto', sans-serif; font-weight: 700; text-transform: none; padding: 0; margin: 0 0 20px; color: #fff;}
+.testimony .slide h4 {                  font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 18px; font-weight: 500; text-transform: none; margin: 0 0 20px; color: #287FDD;}
+.testimony .slide p {                   font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 300; font-style: italic; margin: 0 0 20px; color: #fff;}
+.testimony .slide .rating svg {         font-size: 24px; line-height: 24px; margin: 0 10px 0 0; color: #EEC31A;}
+
+// RECIPE COMPONENT STYLES
+.recComp {                              display: block; margin: 100px 0;}
+.recComp .panel .heading {              padding: 30px;}   
+.recComp .panel .heading h1 {           line-height: 50px; margin: 40px 0 20px;}
+.recComp .panel .heading p {            font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 26px; font-weight: 500; color: #0F0F10;}
+.recComp .recwrap {                     padding: 0 0 0 30px;}
+.recComp .recwrap:hover {               transform: scale(1.02);}
+.recComp .recipe {                      box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
+.recComp .recipe .image {               width: 100%; height: 224px; background-repeat: no-repeat; background-size: cover;}
+.recComp .recipe .text {                padding: 20px;}
+.recComp .recipe .text h2 {             font-family: 'Roboto', sans-serif; font-size: 22px; line-height: 22px; font-weight: 700; text-transform: none; margin: 0 0 20px;}
+.recComp .recipe .text p {              font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px;}
+.recComp .recipe .text a {              font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: #050236;}
+.recComp .recipe .text a {              color: #050236;}
+
+
+// RELATED ARTICLES styles
+.related {                              display: block; margin: 100px 0 0;}
+.related .heading {                     text-align: center;}
+.related .heading h1 {                  line-height: 50px; margin: 50px 0 70px;} 
+.related .panel {                       margin: 0 -20px;} 
+.related .articles {                    padding: 0 20px 20px; display: block;} 
+.related .article {                     margin: 0 0 45px; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
+// .related .articles:hover {               opacity: 0;}
+.related .article .image {              width: 100%; height: 250px; background-repeat: no-repeat; background-size: cover;}
+.related .article .text {               padding: 20px;} 
+.related .article .text h2 {             font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; font-weight: 700; text-transform: none; margin: 0 0 20px;}
+.related .article .text p {              font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px;}
+.related .article .text a {              font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: #050236;}
+.related .article .text svg {           color: #050236;}
+.related .buttonwrap {                  display: block; margin: 0 0 50px;}
+.related .button {                       background-color: #CA1D48;}
+.related .button:hover {                 background-color: #EEC31A;}
+
+// FEATURED STORY STYLES
+.featStory {                            height: 400px;}
+.featStory .story {                     box-shadow: 0 0 24px 2px #cecece;}
+.featStory .story .image {              width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: center -50px;}
+.featStory .story .text {               width: 100%; height: 100%; position: relative;}
+.featStory .story .text h5 {            font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 700; text-transform: none; position: absolute; top: 50px; left: 50px; color: #0F0F10;}
+.featStory .story .text ul.featTags {           position: absolute; top: 45px; right: 50px; list-style: none; padding: 0; margin: 0;}
+.featStory .story .text ul.featTags li {        font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 700; display: inline-block; text-transform: none; margin: 0 0 0 5px; padding: 5px; background-color: #287FDD; color: #0F0F10;}
+.featStory .story .text h1 {            width: 50%; font-size: 56px; line-height: 64px; position: absolute; top: 90px; left: 50px; }
+.featStory .story .text p {             width: 65%; font-size: 16px; line-height: 24px; position: absolute; bottom: 90px; left: 50px;}
+.featStory .story .text a {             font-weight: 700; text-decoration: none; position: absolute; bottom: 50px; left: 50px; color: #050236;}
+.featStory .story .text a:hover {       color: #EEC31A;}
 
 /* BUTTONS */
-.buttonwrap {                       width: 100%; margin: 0 0 20px; text-align: center; position: relative; }
-.button {                           font-weight: 500; padding: 15px 20px; text-align: center; text-decoration: none; background-color: none;}
-.sponsors .button {                 font-weight: 500; color: #fff; }
+.buttonwrap {                       width: 100%; text-align: center; position: relative; }
+.button {                           font-weight: 500; padding: 15px 20px; text-align: center; text-decoration: none; color: #fff;}
+.button.solid {                     background-color: #CA1D48; }
+.sponsors .button {                 font-weight: 500; color: #fff;}
 
 /* #GLOBAL TYPOGRAPHY
 ================================================== */
-body {              font-family: 'Open Sans', sans-serif; font-size: 16px; line-height: 16px; font-weight: 300;}
+body {              font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 16px; font-weight: 300;}
 
 h1, h2, h3, h4, h5, h6 {	font-family: 'Oswald', sans-serif; font-weight: 900; text-transform: uppercase; color: #0F0F10;}
 h1 { font-size: 42px; line-height: 42px;}
-h2 { font-size: 24px; line-height: 24px;}
-h3 { font-size: 20px; line-height: 20px;}
+h2 { font-size: 36px; line-height: 36px;}
+h3 { font-size: 24px; line-height: 24px;}
 h4 { font-size: 18px; line-height: 18px;}
 h5 { font-size: 14px; line-height: 14px;}
 
-/* #GLOBAL TEXT STYLES */
-.call .text h1 {                font-family: 'Oswald', sans-serif; font-size: 64px; line-height: 64px; text-shadow: 1px 1px 20px #000000; margin: 200px 0 15px; color: #fff;}
-.call .text p {                 font-family: 'Poppins', sans-serif; font-size: 24px; line-height: 36px; font-weight: 700; width: 1000px; text-shadow: 1px 1px 20px #000000; color: #fff;}  
+/* #GLOBAL TEXT STYLES*/
+// CALLOUT STYLES
+.call .text h1 {                font-family: 'Oswald', sans-serif; font-size: 72px; line-height: 72px; margin: 70px 0 30px; color: #fff;}
+.call .text p {                 font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 24px; font-weight: 300; width: 50%; margin: 0 0 30px; color: #fff;}
+
+// CONTENT STYLES
+.content h2 {                   text-align: center;}
+
 .recipes h1 {                   margin: 50px 0; color: #fff;}
 .recipes .text h2 {             margin: 0 0 20px; color: #1a1a1a;}
 .recipes .text p {              font-size: 14px; line-height: 22px; margin: 0 0 20px; color: #1a1a1a;}
@@ -99,3 +194,11 @@ h5 { font-size: 14px; line-height: 14px;}
 .related .text p {              font-size: 14px; line-height: 22px; margin: 0 0 20px; color: #1a1a1a;}
 .related .text a {              font-size: 18px; line-height: 26px; font-weight: 500; text-decoration: none; color: #1a1a1a;}
 .related .text svg {            margin: 0 0 0 5px; color: #1a1a1a;}
+
+.featured .back h3 {            font-family: 'Roboto', sans-serif; font-size: 36px; line-height: 36px; font-weight: 900; text-transform: none; margin: 0 0 20px; color: #1a1a1a;}
+.featured .back p {             font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 26px; font-weight: 300; margin: 0 0 20px; color: #1a1a1a;}
+
+
+/* #GLOBAL TRANSITION STYLES
+================================================== */
+ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}

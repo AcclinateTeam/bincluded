@@ -47,8 +47,8 @@ const Header = () =>
 
                             <div className="login">
                                 <ul className="log">
-                                    <li className="signup"><a href="">Sign Up</a></li>
-                                    <li className="logins"><a href="">Log in</a></li>
+                                    <li className="signup"><a href="">Log In</a></li>
+                                    <li className="logins"><a href="">Join the Community</a></li>
                                 </ul>
                             </div>
                         </div>

@@ -1,55 +1,59 @@
 /* HOME PAGE SCSS STYLES
 ============================================================== */
-/* CALLOUT STYLES */
+// HOME PAGE CALLOUT STYLES
 .callout {                  width: 100%; height:100%; background-size: auto 100%; background-repeat: no-repeat; background-color: #fff;}
 .callout svg {              position: absolute; top: 0; left: 0;}
-
 .jumbotron {                width: 100%;  display: block; position:  absolute; top: 160px; left: 0;}
-
 .calltext {                 width: 100%; display: block;}
 .calltext h1 {              font-size: 115px; line-height: 115px; font-weight: 700; color: #fff; margin: 46px 0;}
 .calltext p {               width: 90%; font-size: 24px; line-height: 36px; font-weight: 400; color: #fff; }
-
 .callimage {                width: 750px;  display: block;}
 .callimage img {            width: 90%;  display: block;}
-
 .callbutton {                           margin: 30px 0 0; display: block;}
-.callbutton .button {                      font-weight: 700; line-height:52px; margin: 0 15px 0 0;}
-.callbutton .button.signup {                border: 1px solid #CA1D48; background-color: #CA1D48; color: #fff;} 
-.callbutton .button.learnmore {             border: 1px solid #fff; background-color: none !important; color: #fff;} 
+.button {                      font-family: 'Oswald', sans-serif; text-transform: uppercase; font-weight: 700; line-height:52px; margin: 0 15px 0 0;}
+.button.signup {                border: 1px solid #CA1D48; background-color: #CA1D48; color: #fff;} 
+.button.learnmore {             border: 1px solid #fff; background-color: none !important; color: #fff;}
+.button.signup:hover {          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
+.button.learnmore:hover {       border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;}
 
-.portalbg {                 position: relative; overflow: hidden; padding: 100px 0; background-color: #f7f7f7;}
-.portalbg svg {             width: 50%; position: absolute; top: 0; right: 0;}
-.portal {                   padding: 50px 0; margin: 0 -15px;}
-// .portal .ports {            height: 300px; display: block; background-color: #cca112;} 
-// .portal .port {             width: 100%; height: 100%; margin: 40px; background-color: #c88ccc;}
+// HOME PAGE PORTAL SECTION STYLES
+.portal {                               display: inline-block; margin: 70px -15px 40px;}
 .portal .ports {                        display: block;}
 .portal .ports .port {                  height: 225px; margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; background: #fff;}
+.portal .ports .port:hover {            transform: scale(1.02);}
+.portal .ports .port.shadow {                 box-shadow: 0 0 24px 2px #ddd;}
 .portal .ports .port h1 {               font-size: 54px; line-height: 54px; margin: 0 0 20px; color: #0F0F10;}
-.portal .ports .port p {                font-size: 18px; line-height: 24px; color: #0F0F10;}
+.portal .ports .port p {                font-size: 18px; line-height: 26px; color: #0F0F10;}
 .portal .ports .port svg {              font-size: 56px; display: block; position: relative; clear: both; margin: 0 0 30px; color: #CA1D48;}
-.portal .ports .port h4  {              font-family: 'Open Sans', sans-serif; font-size: 24px; line-height: 32px; text-transform: none; margin: 0 0 12px; color: #0F0F10;}
+.portal .ports .port h4  {              font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 32px; text-transform: none; margin: 0 0 12px; color: #0F0F10;}
 
-.whyNow {                           padding: 20px 0 0; background-color: #000;}
-.whyNow .whyImage {                 width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
-.whyNow .whyText {                  width: 100%; padding: 30px 0 40px;}
-.whyNow .whyText h1 {               font-size: 85px; line-height: 90px; font-weight: 700; color: #fff; margin: 0 0 30px 35%;}
-.whyNow .whyText p {                font-size: 16px; line-height: 30px; font-weight: 400; color: #fff; margin: 0 100px 0 35%;}
-.whyNow .stats {                    display: block;}
-.whyNow .stats .stat {              text-align: center;}
-.whyNow .stat .point {              padding: 40px;}
-.whyNow .stat .point h3 {           font-family: 'Poppins', sans-serif; font-size: 54px; line-height: 54px; font-weight: 700; color: #fff; margin: 0 0 10px; text-transform: none;}
-.whyNow .stat .point h3 span {      color: #CA1D48;}
-.whyNow .stat .point p {            font-size: 14px; line-height: 20px; font-weight: 400; color: #fff; margin: 0 0 20px; text-transform: none;}
+// HOME PAGE WHYNOW? SECTION STYLES
+.whyNow {                               background-color: #050236;}
+.whyNow .whyImage {                     width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
+.whyNow .whyText {                      margin: 100px 100px 100px 0; display: inline-block;}
+.whyNow .whyText h1 {                   font-size: 48px; line-height: 60px; font-weight: 700; margin: 0 0 30px; color: #fff;}
+.whyNow .whyText p {                    font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 0 30px; color: #fff;}
 
+.whyNow .whyTextWide {                  text-align: center; padding: 90px 0;}
+.whyNow .whyTextWide h1 {               font-size: 48px; line-height: 60px; font-weight: 700; margin: 0 0 30px; color: #fff;}
+.whyNow .whyTextWide p {                width: 500px; font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 auto 30px; color: #fff;}
+
+.whyNow .stats {                    margin: 100px 0 0;}
+.whyNow .stats .stat {              display: block;}
+.whyNow .stat .point {              margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; border: 1px solid #287FDD;}
+.whyNow .stat .point h3 {           font-family: 'Poppins', sans-serif; font-size: 48px; line-height: 48px; font-weight: 700; color: #fff; margin: 0 0 60px; text-transform: none;}
+.whyNow .stat .point p {            height: 40px; font-size: 14px; line-height: 20px; font-weight: 400; color: #fff; margin: 0 0 20px; text-transform: none;}
+
+// HOME PAGE COVID-19 SECTION STYLES
 .covid {                            margin: 100px 0; text-align: center;}
-.covid h1 {                         font-family: 'Poppins', sans-serif; font-size: 54px; line-height: 64px; font-weight: 700; color: #0F0F10; margin: 0 300px 10px; text-transform: none;}
-.covid .data {                      padding: 40px;}
+.covid h1 {                         font-family: 'Oswald', sans-serif; font-size: 54px; line-height: 64px; font-weight: 700; color: #0F0F10; margin: 0 300px 70px;}
+.covid .data {                      padding: 0 40px; margin: 0 0 60px;}
+.covid .data.border {               border-right: 1px solid #cecece;}
 .covid .data h3 {                   font-family: 'Poppins', sans-serif; font-size: 54px; line-height: 54px; font-weight: 700; color: #0F0F10; margin: 0 0 10px; text-transform: none;}
 .covid .data h3 span {              color: #CA1D48;}
 .covid .data p {                    font-size: 14px; line-height: 20px; font-weight: 400; color: #0F0F10; margin: 0 0 20px; text-transform: none;}
 
-/* SPONSOR STYLES */
+// SPONSOR STYLES
 .foot .sponsors {                           width: 100%; padding: 100px 0 100px; background-color: #EEC31A;}
 .foot .sponsors h1 {                        margin: 0 0 100px; text-align: center;}
 .foot .sponsors .images {                   display: block; margin: 0 0 125px; text-align: center;}
@@ -64,9 +68,9 @@
 .footer h1 {                                font-size: 22px; margin: 0 0 10px; color: #fff;}
 .footer .social svg {                       display: inline-block; font-size: 28px; margin: 12px 12px 0 0;}
 .footer .social {                           margin: 0 0 40px;}
-.footer .social li {                        font-family: 'Inter', sans-serif; font-size: 16px; line-height: 28px; font-weight: 500; color: #fff; }
+.footer .social li {                        font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 28px; font-weight: 500; color: #fff; }
 .footer .social li a {                      text-decoration: none; color: #fff;}
-.footer .connect p {                        width: 275px; font-family: 'Inter', sans-serif; margin: 0 0 33px; font-size: 16px; line-height: 24px; font-weight: 500; color: #fff;}
+.footer .connect p {                        width: 275px; font-family: 'Roboto', sans-serif; margin: 0 0 33px; font-size: 16px; line-height: 24px; font-weight: 500; color: #fff;}
 .footer .connect a {                        font-size: 14px; font-weight: 500; padding: 15px 20px; text-decoration: none; text-transform: uppercase; border-radius: 10px; color: #1A3667; background-color: #F3E454;}
 
 .footEnd {                  padding: 13px 0; background-color: #050236;}

@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core'; // import fa library
 import { fab } from '@fortawesome/free-brands-svg-icons'; // import fa brand icons
 import { fas } from '@fortawesome/free-solid-svg-icons'; // import fa solid icons
+import { far } from '@fortawesome/free-regular-svg-icons'; // import fa regular icons
 
 /* PAGE IMPORTS */
 import Home from './pages/Home';
@@ -18,7 +19,7 @@ import Covid from './pages/covid';
 import Header from './components/Header';
 import Footer from './components/Footer';
 
-library.add(fab, fas);
+library.add(fab, fas, far);
 
 /* HOOK REACT EXAMPLE */
 const App = (props: AppProps) =>

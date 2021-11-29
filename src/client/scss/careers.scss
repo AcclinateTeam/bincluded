@@ -1,0 +1,29 @@
+/* CAREERS PAGE SCSS STYLES
+============================================================== */
+// CALLOUT STYLES
+.careers .callout {                         width: 100%; height: 345px; position: relative;}
+.careers .callout .imgcallLeft {            position: absolute; bottom: 10px; left: -70px;}
+.careers .callout .imgcallRight {           position: absolute; bottom: 10px; right: -70px;}
+.careers .callout .heading {                    text-align: center;}
+.careers .callout .heading h1 {                 font-family: 'Oswald', sans-serif; font-size: 72px; line-height: 72px; margin: 70px 0 30px; color: #0F0F10;}
+.careers .callout p.tagline {                   width: 100%; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; text-align: center; position: absolute; bottom: 10px; left: 0; color: #0F0F10;}
+.careers .callout p.tagline span {              font-weight: 700; display: inline-block;}
+
+// JOB CARD STYLES 
+.careers .cardpanel {                            margin: 100px -20px 60px; display: block;}
+.careers .cardwrap {                             padding: 0 22px;}
+.careers .cardwrap:last-child {                  margin: 0;}
+.careers .card {                                 border-radius: 12px; padding: 40px; margin: 0 0 45px; border: 1px solid #cecece; background-color: #fff;}
+.careers .card img {                             width: 66px; height: 66px; border-radius: 12px; border: 1px solid #fff; margin: 0 0 30px;}
+.careers .card h2 {                              font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; text-transform: none; margin: 0 0 15px; color: #1a1a1a;}
+.careers .card p {                               font-size: 14px; line-height: 22px; margin: 0 0 28px;}
+.careers .card a {                               text-decoration: none; font-weight: 700; color: #1A3667;}
+.careers .card a svg {                           margin: 0 0 0 7px;}
+
+
+
+
+
+
+// .call.careeers .content {                            background-color: #321987;}
+// .call.careers .callbg {                     height: 545px; background-size: 100% 100%; background-color: #f09;}

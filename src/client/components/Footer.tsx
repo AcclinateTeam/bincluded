@@ -35,7 +35,7 @@ const Footer = () =>
                                     <img className="uab" src="/images/uab2.png" alt="" />
                                 </div>
                                 <div className="buttonwrap">
-                                    <Link className="content button" to="/recipes">View Partners</Link>
+                                    <Link className="content button solid" to="/recipes">View Partners</Link>
                                 </div>
                             </div>
                         </div>
@@ -87,31 +87,62 @@ const Footer = () =>
             <div className="container footer">
                 <div className="seven columns offset-by-one-half">
                     <div className="container">
-                        <div className="fourth columns">
+                        <div className="two columns">
                             <div className="footLogo">
                                 <Link to="/">
                                     <img src="/images/footerlogo.png" alt="" />
                                 </Link>
                             </div>
                         </div>
-                        <div className="fourth columns social">
-                            <h1>Quick Links</h1>
+                        <div className="two columns social">
+                            <h1>Main</h1>
                             <ul>
                                 <li>
-                                    <a href="https://b-included.com/join-us/">About</a>
+                                    <a href="https://b-included.com/join-us/">Why Now?</a>
                                 </li>
                                 <li>
-                                    <a href="https://b-included.com/resources/">Resources</a>
+                                    <a href="https://b-included.com/resources/">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="https://b-included.com/154-2/">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="https://b-included.com/join-us/">Join Us</a>
+                                    <a href="https://b-included.com/154-2/">Prosper</a>
                                 </li>
                             </ul>
                         </div>
-                        <div className="third columns connect">
+                        <div className="two columns social">
+                            <h1>Resources</h1>
+                            <ul>
+                                <li>
+                                    <a href="https://b-included.com/join-us/">Health</a>
+                                </li>
+                                <li>
+                                    <a href="https://b-included.com/resources/">Family</a>
+                                </li>
+                                <li>
+                                    <a href="https://b-included.com/154-2/">Careers</a>
+                                </li>
+                                <li>
+                                    <a href="https://b-included.com/join-us/">COVID-19</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="two columns social">
+                            <h1>Additional Links</h1>
+                            <ul>
+                                <li>
+                                    <a href="https://b-included.com/join-us/">Partners</a>
+                                </li>
+                                <li>
+                                    <a href="https://b-included.com/resources/">Join the Community</a>
+                                </li>
+                                <li>
+                                    <a href="https://b-included.com/154-2/">Events</a>
+                                </li>
+                                <li>
+                                    <a href="https://b-included.com/join-us/">Clinical Trials</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div className="two columns connect">
                             <h1>Stay Connected</h1>
                             <p>Get news, resources and updates delivered to your inbox.</p>
                             {/* <a href="">Sign Up</a> */}

@@ -22,11 +22,14 @@ const Careers = () =>
                         <div className="eight columns offset-by-one">
                             <div className="heading">
                                 <h1>Find Your Next Career</h1>
-                                <form>
+                                {/*Programmable Search Engine for Job Search*/}
+                                <script async src="https://cse.google.com/cse.js?cx=e27038f2a37daf23e"></script>
+                                <div class="gcse-search"></div>
+                                {/* <form>
                                     <input type="text" />
                                     <input type="text" />
                                     <input type="text" />
-                                </form>
+                                </form> */}
                             </div>
                         </div>
                     </div>

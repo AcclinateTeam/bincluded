@@ -90,28 +90,28 @@ const WhyNow = () =>
                                 <div className="container">
                                     <div className="five columns windows">
                                         <div className="window">
-                                            <FontAwesomeIcon icon={['fas', 'rss']} />
-                                            <h1>Name Goes Here</h1>
+                                            <FontAwesomeIcon icon={['fas', 'linkedin']} />
+                                            <h1>Melanie Bridgeforth</h1>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
                                         </div>
                                     </div>
                                     <div className="five columns windows">
                                         <div className="window">
-                                            <FontAwesomeIcon icon={['fas', 'rss']} />
-                                            <h1>Name Goes Here</h1>
+                                            <FontAwesomeIcon icon={['fas', 'linkedin']} />
+                                            <h1>Jimmie Coleman</h1>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
                                         </div>
                                     </div>
                                     <div className="five columns windows">
                                         <div className="window">
-                                            <FontAwesomeIcon icon={['fas', 'rss']} />
-                                            <h1>Name Goes Here</h1>
+                                            <FontAwesomeIcon icon={['fas', 'linkedin']} />
+                                            <h1>Kelly Caruso</h1>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
                                         </div>
                                     </div>
                                     <div className="five columns windows">
                                         <div className="window">
-                                            <FontAwesomeIcon icon={['fas', 'rss']} />
+                                            <FontAwesomeIcon icon={['fas', 'linkedin']} />
                                             <h1>Name Goes Here</h1>
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
                                         </div>

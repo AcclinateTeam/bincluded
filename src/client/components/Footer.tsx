@@ -104,7 +104,7 @@ const Footer = () =>
                                     <a href="https://b-included.com/resources/">Blog</a>
                                 </li>
                                 <li>
-                                    <a href="https://b-included.com/154-2/">Prosper</a>
+                                    <a href="https://prosperbham.com/">Prosper</a>
                                 </li>
                             </ul>
                         </div>
@@ -112,16 +112,16 @@ const Footer = () =>
                             <h1>Resources</h1>
                             <ul>
                                 <li>
-                                    <a href="https://b-included.com/join-us/">Health</a>
+                                    <a href="/health">Health</a>
                                 </li>
                                 <li>
-                                    <a href="https://b-included.com/resources/">Family</a>
+                                    <a href="/family">Family</a>
                                 </li>
                                 <li>
-                                    <a href="https://b-included.com/154-2/">Careers</a>
+                                    <a href="/careers">Careers</a>
                                 </li>
                                 <li>
-                                    <a href="https://b-included.com/join-us/">COVID-19</a>
+                                    <a href="/covid">COVID-19</a>
                                 </li>
                             </ul>
                         </div>

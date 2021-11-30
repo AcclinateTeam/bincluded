@@ -71,7 +71,7 @@ const Covid = () =>
                                                         <h6>Featured Partner</h6>
                                                     </div>
                                                     <div className="text">
-                                                        <h1>Alabama United: Meeting People Where They Are</h1>
+                                                        <h1>Alabama United</h1>
                                                         <p>Alabama United supports new, non-traditional approaches, including rapid detection devices and home-based testing technologies, that address current gaps in COVID-19 testing. The program also supports new or non-traditional applications of existing approaches to make them more usable, accessible, or accurate. These may lead to new ways to identify the current SARS-CoV-2 virus as well as potential future viruses.</p>
                                                     </div>
                                                 </div>
@@ -111,12 +111,12 @@ const Covid = () =>
                                                         <h6>Featured Partner</h6>
                                                     </div>
                                                     <div className="text">
-                                                        <h1>Alabama United</h1>
-                                                        <p>Birmingham partners are working together to support underserved and vulnerable populations with COVID-19 tests. Led by Michael Mugavero, MD, UAB Professor of Medicine, Division of Infectious Diseases continue to position Birmingham as a leader in serving underserved populations. Community-engaged RADx-UP projects, like Alabama United, help the NIH understand and alleviate the barriers to COVID-19 testing across the nation.</p>
+                                                        <h1>The Responsibility of Doctors</h1>
+                                                        <p>Dr. David Hicks, Deputy Health Director for the Jefferson County Health Department talks about the responsibility of doctors to educate the public on COVID-19 and why it is important to get vaccinated. If doctors don’t step up and offer their educated perspectives, misinformation will fill the information vacuum and all of us will be in a worse position.</p>
                                                     </div>
                                                 </div>
                                                 <div className="four columns video">
-                                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yIxZsG8Cew4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gBLvjDFkoxE" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                                 </div>
                                             </div>
                                         </div>

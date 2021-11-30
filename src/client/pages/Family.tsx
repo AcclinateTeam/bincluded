@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
-import SubHeader from '../components/SubHeader';
+import Header from '../components/Header';
 
 const Family = () =>
 {
@@ -11,7 +11,7 @@ const Family = () =>
     return (
         <>
             {/* SUB-HEADER COMPONENT IMPORT */}
-            <SubHeader />
+            <Header />
             {/* CALL CONTENT SECTION */}
             <section className="call">
                 <div className="callbg" style={{ backgroundImage: `url("/images/healthbg.png")` }}></div>

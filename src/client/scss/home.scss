@@ -54,10 +54,10 @@
 .covid .data p {                    font-size: 14px; line-height: 20px; font-weight: 400; color: #0F0F10; margin: 0 0 20px; text-transform: none;}
 
 // SPONSOR STYLES
-.foot .sponsors {                           width: 100%; padding: 100px 0 100px; background-color: #EEC31A;}
+.foot .sponsors {                           width: 100%; padding: 100px 0 100px; z-index: 9; background-color: #EEC31A;}
 .foot .sponsors h1 {                        margin: 0 0 100px; text-align: center;}
 .foot .sponsors .images {                   display: block; margin: 0 0 125px; text-align: center;}
-.foot .sponsors img {                       height: 93px; display: inline-block; margin: 0 40px;}
+.foot .sponsors img {                       height: 93px; display: inline-block; z-index: 99; margin: 0 40px;}
 
 .footer {                                   padding: 65px 0 80px; background-color: #050236;}
 .footLogo {                                 margin: 0 0 30px;}
@@ -79,4 +79,5 @@
 .footend ul li {            padding: 8px 0 0; margin: 0 0 0 20px; display: inline-block;}
 .footend ul li svg {        font-size: 15px;}
 .footend ul li a {          color: #F3E454;}
+.footEnd p a {              text-decoration: none; color: #fff;}
 

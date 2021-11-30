@@ -4,14 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 /* COMPONENT IMPORTS */
-import SubHeader from '../components/SubHeader';
+import Header from '../components/Header';
 
 const Health = () =>
 {
     return (
         <>
             {/* SUB-HEADER COMPONENT IMPORT */}
-            <SubHeader />
+            <Header />
             {/* CALL CONTENT SECTION */}
             <section className="call">
                 <div className="callbg" style={{ backgroundImage: `url("/images/healthbg.png")` }}></div>
@@ -255,7 +255,7 @@ const Health = () =>
                         </div>
                     </div>
                 </div>
-            </section> 
+            </section>
         </>
     );
 }

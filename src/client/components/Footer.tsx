@@ -8,7 +8,7 @@ const Footer = () =>
     return (
         <footer>
             {/* PRE-FOOTER (PARTNERS) HORIZONTAL DIVIDER */}
-            <svg viewBox="0 0 1440 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 1440 84" fill="none" style={{ zIndex: 99 }} xmlns="http://www.w3.org/2000/svg">
                 <rect y="-386" width="1442" height="464" fill="white" />
                 <g clip-path="url(#clip0_179_768)">
                     <rect width="1440" height="966" fill="white" />
@@ -129,16 +129,16 @@ const Footer = () =>
                             <h1>Additional Links</h1>
                             <ul>
                                 <li>
-                                    <a href="https://b-included.com/join-us/">Partners</a>
+                                    <a href="/partners">Partners</a>
                                 </li>
                                 <li>
-                                    <a href="https://b-included.com/resources/">Join the Community</a>
+                                    <a href="#">Join the Community</a>
                                 </li>
                                 <li>
-                                    <a href="https://b-included.com/154-2/">Events</a>
+                                    <a href="#">Events</a>
                                 </li>
                                 <li>
-                                    <a href="https://b-included.com/join-us/">Clinical Trials</a>
+                                    <a href="/trials">Clinical Trials</a>
                                 </li>
                             </ul>
                         </div>
@@ -175,7 +175,7 @@ const Footer = () =>
                             </Link>
                         </li>
                     </ul>
-                    <p>© 2021 #BINCLUDED | Privacy Policy | Data Breach Response Policy</p>
+                    <p>© 2021 #BINCLUDED | <Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms &#38; Conditions</Link> | Data Breach Response Policy</p>
                 </div>
             </div>
 

@@ -1,0 +1,26 @@
+/* #WHYNOW STYLES
+================================================== */
+// CONTENT STYLES
+.whyComp .heading {                         padding: 200px 0; text-align: center; margin: 0 0 100px; background-color: #333;}
+.whyComp .heading h1 {                      font-size: 64px; line-height: 64px; margin: 0 0 30px; color: #fff;}
+.whyComp .heading a {                       font-weight: 700; text-decoration: none; margin: 0 0 30px; color: #fff;}
+.whyComp .heading p {                       width: 400px; font-size: 16px; line-height: 24px; margin: 30px auto 30px; color: #fff;}
+
+// VIDEO PANEL STYLES
+.whyComp .videoPanel {                      display: block; margin: 0 0 100px;}
+.whyComp .vidPanes {                        display: block; padding: 60px;}
+.whyComp .vidPane {                         height: 600px; display: block; background-color: #cb3;}
+.whyComp .panes {                           display: block; margin: 0 0 60px; box-shadow: 0 0 24px 2px #ddd;;}
+.whyComp .panes:last-child {                margin: 0;}
+.whyComp .pane {                            width: calc(100% - 60px); height: 140px; display: block; padding: 30px; background-color: #fff;}
+.whyComp .pane.end {                        margin: 0;}
+.whyComp .pane h1 {                         font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 24px; text-transform: none; margin: 0 0 30px; color: #0F0F10;}
+.whyComp .pane p {                          font-size: 16px; line-height: 24px; margin: 0 0 30px; color: #0F0F10;}
+
+// LEADERSHIP PANEL STYLES
+.leaders {                                  height: 1000px; display: block; position: relative; margin: 0 0 100px;}
+.leaders .leadersbg {                       width: 100%; display: block; position: absolute; top: 0; left: 0; background-color: #ffc;}
+.leaders .heading {                         padding: 90px 0 50px; background-color: #987cac;}
+.leaders .heading h1 {                      font-size: 48px; line-height: 48px; text-align: center; margin: 0 0 30px; color: #0F0F10;}
+.leaders .heading h3 {                      width: 700px; font-family: 'Roboto', sans-serif; font-size: 32px; line-height: 40px; font-weight: 500; text-transform: none; text-align: center; margin: 0 auto 30px; color: #0F0F10;}
+.leaders .heading p {                       width: 500px; font-size: 16px; line-height: 24px; text-align: center; margin: 0 auto 30px; color: #0F0F10;}

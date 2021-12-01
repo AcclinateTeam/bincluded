@@ -20,11 +20,16 @@ const Careers = () =>
                         <div className="eight columns offset-by-one">
                             <div className="heading">
                                 <h1>Find Your Next Career</h1>
-                                <form>
+                                <div>
+                                    
+                                    <script async src="https://cse.google.com/cse.js?cx=e27038f2a37daf23e"></script>
+                                    <div className="gcse-search"></div>
+                                </div>
+                                {/* <form>
                                     <input type="text" />
                                     <input type="text" />
                                     <input type="text" />
-                                </form>
+                                </form> */}
                             </div>
                         </div>
                     </div>
@@ -41,61 +46,35 @@ const Careers = () =>
                                 <div className="third columns">
                                     <div className="cardwrap">
                                         <div className="card">
-                                            <img src="/images/bhampromise.png" alt="" />
-                                            <h2>Patient Care</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link>
+                                            <img src="/images/UAB.jpeg" alt="" />
+                                            <h2>Patient Care Tech</h2>
+                                            
+                                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
+                                            <p>To assume responsibility for certain technical aspects of patient care as directed by the RN/LPN for the hospital. To obtain and record vitals, weight, inputs...</p>
+                                            {/* <Link to="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T192849&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                                            <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T192849&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="third columns">
                                     <div className="cardwrap">
                                         <div className="card">
-                                            <img src="/images/bhampromise.png" alt="" />
-                                            <h2>Patient Care</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link>
+                                        <img src="/images/UAB.jpeg" alt="" />
+                                            <h2>General Mechanic</h2>
+                                            <p>Reads, understands and interprets blueprints drawings, floor plans, schedules and manufacturers’ operating and/or maintenance specifications as related to electrical...</p>
+                                            {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                                            <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T192850&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="third columns">
                                     <div className="cardwrap">
                                         <div className="card">
-                                            <img src="/images/bhampromise.png" alt="" />
-                                            <h2>Patient Care</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="third columns">
-                                    <div className="cardwrap">
-                                        <div className="card">
-                                            <img src="/images/bhampromise.png" alt="" />
-                                            <h2>Patient Care</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="third columns">
-                                    <div className="cardwrap">
-                                        <div className="card">
-                                            <img src="/images/bhampromise.png" alt="" />
-                                            <h2>Patient Care</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="third columns">
-                                    <div className="cardwrap">
-                                        <div className="card">
-                                            <img src="/images/bhampromise.png" alt="" />
-                                            <h2>Patient Care</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link>
+                                            <img src="/images/UAB.jpeg" alt="" />
+                                            <h2>Office Associate</h2>
+                                            <p>Under general supervision, performs standard clerical and administrative duties. Requires demonstrated knowledge of the fundamental concepts, practices...</p>
+                                            {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                                            <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T192507&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -103,30 +82,68 @@ const Careers = () =>
                                 <div className="third columns">
                                     <div className="cardwrap">
                                         <div className="card">
-                                            <img src="/images/bhampromise.png" alt="" />
-                                            <h2>Patient Care</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link>
+                                            <img src="/images/UAB.jpeg" alt=""/>
+                                            <h2>Registered Nurse</h2>
+                                            <p>To utilize the nursing process to care and/or counsel individuals in the promotion and maintenance of health and the prevention of illness and injury. Using...</p>
+                                            {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                                            <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T188742&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
+
                                         </div>
                                     </div>
                                 </div>
                                 <div className="third columns">
                                     <div className="cardwrap">
                                         <div className="card">
-                                            <img src="/images/bhampromise.png" alt="" />
-                                            <h2>Patient Care</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link>
+                                            <img src="/images/UAB.jpeg" alt="" />
+                                            <h2>Educational Liaison</h2>
+                                            <p>Serves as an educational liaison and provides oversight for various projects initiated by internal organizations or departments. Related activities may include....</p>
+                                            {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                                            <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T192748&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div className="third columns">
                                     <div className="cardwrap">
                                         <div className="card">
-                                            <img src="/images/bhampromise.png" alt="" />
-                                            <h2>Patient Care</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link>
+                                            <img src="/images/UAB.jpeg" alt="" />
+                                            <h2>Administrative Assoc.</h2>
+                                            <p>This position provides secretarial and administrative support to departmental Section Chiefs and various Radiology faculty members, while also providing support...</p>
+                                            {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                                            <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T191330&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="third columns">
+                                    <div className="cardwrap">
+                                        <div className="card">
+                                            <img src="/images/UAB.jpeg" alt="" />
+                                            <h2>Dispatcher-Police</h2>
+                                            <p>Sends and receives radio transmissions from sworn and non-sworn field units and surrounding agencies. Answers the telephone and determines the form of assistance....</p>
+                                            {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                                            <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T189504&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="third columns">
+                                    <div className="cardwrap">
+                                        <div className="card">
+                                            <img src="/images/UAB.jpeg" alt="" />
+                                            <h2>Floor Care Tech</h2>
+                                            <p>Performs floor care, maintenance and finishing duties. Cares for a variety of surfaces including carpet, tile, stone, vinyl and wood. Uses professional cleaning...</p>
+                                            {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                                            <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T192294&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="third columns">
+                                    <div className="cardwrap">
+                                        <div className="card">
+                                            <img src="/images/UAB.jpeg" alt="" />
+                                            <h2>Electrician</h2>
+                                            <p>Performs routine and preventive maintenance and repair, modify, replace and install a wide variety of low and high voltage electrical and non-medical electronic fixed or portable...</p>
+                                            {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                                            <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T186474&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
                                         </div>
                                     </div>
                                 </div>

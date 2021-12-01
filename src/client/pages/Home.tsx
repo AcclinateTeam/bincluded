@@ -15,9 +15,9 @@ const Home = () =>
 
     function kFormatter (num: number)
     {
-        return Math.abs(num) > 999 ? Math.sign(num) * ((Math.abs(num) / 1000).toFixed(1)) + 'k' : Math.sign(num) * Math.abs(num)
+        return Math.abs(num) > 999 ? Math.sign(num) * (Math.round(Math.abs(num)/100)/10) + 'k' : Math.sign(num) * Math.abs(num) 
     }
-
+    
     useEffect(() =>
     {
 

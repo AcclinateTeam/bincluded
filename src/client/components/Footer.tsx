@@ -98,7 +98,7 @@ const Footer = () =>
                             <h1>Main</h1>
                             <ul>
                                 <li>
-                                    <a href="https://b-included.com/join-us/">Why Now?</a>
+                                    <a href="/whynow">Why Now?</a>
                                 </li>
                                 <li>
                                     <a href="https://b-included.com/resources/">Blog</a>

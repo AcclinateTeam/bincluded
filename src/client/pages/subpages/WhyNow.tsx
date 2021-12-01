@@ -74,10 +74,7 @@ const WhyNow = () =>
             </section>
 
             <section className="leaders">
-                <div className="leadersbg">
-                    asdasdasdasd
-
-                </div>
+                <div className="leadersbg" style={{ backgroundImage: `url("/images/leadersbg.png")` }}></div>
                 <div className="container">
                     <div className="eight columns offset-by-one">
                         <div className="heading">
@@ -85,44 +82,44 @@ const WhyNow = () =>
                             <h3>Birmingham Included gives its residents a chance at a happier, healthier life. </h3>
                             <p>Acclinate™, a Birmingham-based company specializing in digital health products, is partnering with Jefferson County to help 50,000 county residents control their future by taking charge of their health. The B-Included website will engage residents and provide easy access to pertinent health resources and job assistance.</p>
                         </div>
-                        <div className="container">
-                            <div className="six columns">
-                                <div className="container">
-                                    <div className="five columns windows">
-                                        <div className="window">
-                                            <FontAwesomeIcon icon={['fas', 'linkedin']} />
-                                            <h1>Melanie Bridgeforth</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                        </div>
+                        <div className="six columns windowSeal">
+                            <div className="container">
+                                <div className="five columns windows">
+                                    <div className="window">
+                                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                                        <h1>Melanie Bridgeforth</h1>
+                                        <h6>Women's Fund of Greater Birmingham</h6>
                                     </div>
-                                    <div className="five columns windows">
-                                        <div className="window">
-                                            <FontAwesomeIcon icon={['fas', 'linkedin']} />
-                                            <h1>Jimmie Coleman</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                        </div>
+                                </div>
+                                <div className="five columns windows">
+                                    <div className="window">
+                                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                                        <h1>Jimmie Coleman</h1>
+                                        <h6>Birmingham Citizen's Advisory Board</h6>
                                     </div>
-                                    <div className="five columns windows">
-                                        <div className="window">
-                                            <FontAwesomeIcon icon={['fas', 'linkedin']} />
-                                            <h1>Kelly Caruso</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                        </div>
+                                </div>
+                                <div className="five columns windows">
+                                    <div className="window">
+                                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                                        <h1>Kelly Caruso</h1>
+                                        <h6>Shipt</h6>
                                     </div>
-                                    <div className="five columns windows">
-                                        <div className="window">
-                                            <FontAwesomeIcon icon={['fas', 'linkedin']} />
-                                            <h1>Name Goes Here</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                        </div>
+                                </div>
+                                <div className="five columns windows">
+                                    <div className="window">
+                                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
+                                        <h1>Mark Crosswhite</h1>
+                                        <h6>Alabama Power</h6>
                                     </div>
                                 </div>
                             </div>
-                            <div className="four columns">
-                                <div className="cards">
-                                    <div className="card">
-                                        <img src="/images/article1.jpg" alt="" />
-                                        <h1>Acclinate + Prosper</h1>
+                        </div>
+                        <div className="four columns deck">
+                            <div className="cards">
+                                <div className="card">
+                                    <div className="image"><img src="/images/prosperAcclinate.png" alt="" /></div>
+                                    <div className="text">
+                                        <h1>Prosper + Acclinate</h1>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
                                         <a href="">Read About How This Partnership Was Formed <FontAwesomeIcon icon="arrow-right" /></a>
                                     </div>
@@ -130,6 +127,47 @@ const WhyNow = () =>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <section className="orgs">
+                <div className="container">
+                    <div className="eight columns offset-by-one">
+                        <div className="heading">
+                            <h1>Aligned With The Best Organizations</h1>
+                            <h3>Birmingham Included gives its residents a chance at a happier, healthier life.</h3>
+                        </div>
+                        <div className="container">
+                            <div className="third columns">
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgUAB.png")` }}></div>
+                            </div>
+                            <div className="third columns">
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgVulcan.png")` }}></div>
+                            </div>
+                            <div className="third columns">
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgProtective.png")` }}></div>
+                            </div>
+                            <div className="third columns">
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgProtective.png")` }}></div>
+                            </div>
+                            <div className="third columns">
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgUAB.png")` }}></div>
+                            </div>
+                            <div className="third columns">
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgVulcan.png")` }}></div>
+                            </div>
+                            <div className="third columns">
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgUAB.png")` }}></div>
+                            </div>
+                            <div className="third columns">
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgVulcan.png")` }}></div>
+                            </div>
+                            <div className="third columns">
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgProtective.png")` }}></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </>

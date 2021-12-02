@@ -50,7 +50,7 @@ const Covid = () =>
                             <div className="back">
                                 <h1>COVID-19</h1>
                                 <p>Sign up for updates and resources.</p>
-                                <a href="https://coronavirus.jhu.edu/map.html">Read More</a>
+                                <a href="https://coronavirus.jhu.edu/map.html" target="_blank">Read More</a>
                             </div>
                         </div>
                     </div>

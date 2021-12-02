@@ -60,7 +60,7 @@ const Careers = () =>
                                     <div className="cardwrap">
                                         <div className="card">
                                         <img src="/images/UAB5.png" alt="" />
-                                            <h2>General Mechanic</h2>
+                                            <h2>Mechanic</h2>
                                             <p>Reads, understands and interprets blueprints drawings, floor plans, schedules and manufacturers’ operating and/or maintenance specifications as related...</p>
                                             {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
                                             <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T192850&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>

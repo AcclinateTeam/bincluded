@@ -122,8 +122,9 @@ const Family = () =>
                                                 <h2>Eating Healthy in 2022</h2>
                                                 {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
                                                 <p>With more time spent at home in 2020 and 2021, there’s been a rise in baking, cooking (and eating) across the country. As a new year begins, it’s time to...</p>
+                                                <a href="https://www.gohealthuc.com/library/tips-eating-healthier-2022">More Details <FontAwesomeIcon icon="arrow-right" /></a>
 
-                                                <Link to="https://www.gohealthuc.com/library/tips-eating-healthier-2022">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                                {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                                             </div>
                                         </div>
                                     </div>
@@ -136,8 +137,9 @@ const Family = () =>
                                             <h2>3 Yoga Tips For You</h2>
                                                 {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
                                                 <p>Yoga is a practice that can include everyone, with modifications available for most poses. It also can help you to notice what your mind and body are telling...</p>
+                                                <a href="https://health.clevelandclinic.org/considering-yoga-3-tips-for-finding-the-right-class-for-you/">More Details <FontAwesomeIcon icon="arrow-right" /></a>
 
-                                                <Link to="https://health.clevelandclinic.org/considering-yoga-3-tips-for-finding-the-right-class-for-you/">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                                {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                                             </div>
                                         </div>
                                     </div>
@@ -150,7 +152,9 @@ const Family = () =>
                                             <h2>Staying Fit on a Budget</h2>
                                                 {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
                                                 <p>Want to get in shape? Don't worry—it doesn't have to cost you half your paycheck. Whether you’re trying to get bigger biceps or you just want to be able to...</p>
-                                                <Link to="https://www.discover.com/online-banking/banking-topics/tips-for-getting-fit-on-a-budget/">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                                <a href="https://www.discover.com/online-banking/banking-topics/tips-for-getting-fit-on-a-budget/">More Details <FontAwesomeIcon icon="arrow-right" /></a>
+
+                                                {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                                             </div>
                                         </div>
                                     </div>

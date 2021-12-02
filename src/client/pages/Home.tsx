@@ -53,24 +53,7 @@ const Home = () =>
                                         <h1>Stand Up For Your Health</h1>
                                         <p>
                                             #BIncluded is a movement with a mission to build a community of individuals ready to take control of their health and future.
-                                            <CountUp
-                                                start={0}
-                                                end={actuals.cases}
-                                                duration={2.75}
-                                                separator=","
-                                                decimals={3}
-                                                decimal="."
-                                                prefix="EUR "
-                                                suffix=" left"
-                                                onEnd={() => console.log('Ended! 👏')}
-                                                onStart={() => console.log('Started! 💨')}
-                                            >
-                                                {({ countUpRef, start }) => (
-                                                    <h3>
-                                                        <span style={{ width: '100px' }} ref={countUpRef} onScroll={start} />
-                                                    </h3>
-                                                )}
-                                            </CountUp>
+                                            
                                         </p>
                                     </div>
                                     <div className="callbutton">

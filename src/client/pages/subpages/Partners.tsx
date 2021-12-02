@@ -24,8 +24,8 @@ const Partners = () =>
                                     <p>We partner with brands that are passionate about our mission and our community..</p>
                                 </div>
                                 <div className="callbutton">
-                                    <Link className="button signup" to="https://nowincluded.com/explore/">Become A Partner</Link>
-                                    <Link className="button learnmore" to="https://nowincluded.com/explore/">View Partners</Link>
+                                    <a className="button signup" href="https://nowincluded.com/explore/">Become A Partner</a>
+                                    <a className="button learnmore" href="https://nowincluded.com/explore/">View Partners</a>
                                 </div>
                             </div>
                             <div className="four columns">
@@ -439,8 +439,6 @@ const Partners = () =>
                                         </div>
                                     </a>
                                 </div>
-
-                                https://www.medicaid.gov/
 
                                 {/* <div className="ten columns">
                                     <div className="panes">

@@ -286,7 +286,7 @@ const Home = () =>
                                             separator=","
                                             duration={3}
                                             prefix=""
-                                            suffix="%"
+                                            suffix=""
                                         >
                                             {({ countUpRef, start }) => (
                                                 <h3>
@@ -307,7 +307,7 @@ const Home = () =>
                                             decimal="."
                                             duration={3}
                                             prefix=""
-                                            suffix="%"
+                                            suffix=""
                                         >
                                             {({ countUpRef, start }) => (
                                                 <h3>

@@ -25,42 +25,6 @@
 [class*="container"] {
   width:100%
 }
-.container                                  { position: relative; width: 100%; padding: 0;}
-.container .column,
-.container .columns                         { float: left; display: inline; margin: 0; }
-// .row                                        { }
-
-/* Base Grid */
-.container .ten.columns {            width: 100%; }
-.container .nine.columns {           width: 90%; }
-.container .eight.columns {          width: 80%; }
-.container .seven.columns {          width: 70%; }
-.container .six.columns {            width: 60%; }
-.container .five.columns {           width: 50%; }
-.container .four.columns {           width: 40%; }
-.container .three.columns {          width: 30%; }
-.container .two.columns {            width: 20%; }
-.container .one.columns {            width: 10%; }  
-.container .third.columns {          width: 33.333%;}
-.container .twothird.columns {       width: 66.667%;}
-.container .fourth.columns {         width: 25%; }
-.container .threefours.columns {     width: 75%;}
-.container .sixth.columns {          width: 16.66666666666667%; }
-.container .eighth.columns {         width: 12.5%; }
-.container .fifteen.columns {        width: 15%;}
-
-/* Offsets */
-.container .offset-by-half                  { margin-left: 5%;  }
-.container .offset-by-one                   { margin-left: 10%; }
-.container .offset-by-one-half              { margin-left: 15%; }
-.container .offset-by-two                   { margin-left: 20%; }
-.container .offset-by-three                 { margin-left: 30%; }
-.container .offset-by-four                  { margin-left: 40%; }
-.container .offset-by-five                  { margin-left: 50%; }
-.container .offset-by-six                   { margin-left: 60%; }
-.container .offset-by-seven                 { margin-left: 70%; }
-.container .offset-by-eight                 { margin-left: 80%; }
-.container .offset-by-nine                  { margin-left: 90%; }
 
 /* #Tablet (Portrait)
 ================================================== */

@@ -275,8 +275,7 @@ const Submit = (props: any) =>
                             <div className="four columns">
                                 <div className="side">
                                     <h3>Share Your Recipes With The World!</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                    <p>We love food! Let’s create a digital cook book for everyone in the region to share our favorite recipes. It may be a new creation, a personalized favorite...</p>
+                                    <p>We love food! Let’s create a digital cook book for everyone in the region to share our favorite recipes. It may be a new creation, a personalized favorite, or family heirloom. Come share with us!</p>
                                 </div>
                             </div>
                         </div>

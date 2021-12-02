@@ -67,8 +67,7 @@ const Health = () =>
                             <div className="back">
                                 <h3>PatchRX</h3>
                                 <p>
-                                    {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, tellus et convallis fermentum, risus lorem elementum sem, sit amet feugiat urna nibh eu lacus. Vestibulum vel auctor turpis. In vel fermentum metus. Suspendisse vel nisl a mauris congue commodo. Morbi non fermentum leo. Donec feugiat tortor sit amet ullamcorper placerat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris aliquam diam ante, ut sodales purus aliquam at. Morbi sit amet quam suscipit, vulputate sem id, ullamcorper orci. In ut sagittis nibh. Nulla ullamcorper finibus nisi.</p> */}
-                                    How can we use technology tohelp people be healthier? Since then, our mission has evolved and expanded more than we could have ever expected. With personal instances of non-adherence effecting both founders, it became their dedicated mission to help patients get the most from their medications. And that’s what PatchRx is designed to do. We’re improving prescription adherence and helping our users remember to take their medication through data-driven technology. The service – a universal smart pill bottle device, a patient-facing app, and a pharmacy web app – helps...</p>
+                                    How can we use technology to help people be healthier? Since then, our mission has evolved and expanded more than we could have ever expected. With personal instances of non-adherence effecting both founders, it became their dedicated mission to help patients get the most from their medications. And that’s what PatchRx is designed to do. We’re improving prescription adherence and helping our users remember to take their medication through data-driven technology. The service – a universal smart pill bottle device, a patient-facing app, and a pharmacy web app – helps...</p>
 
                                 <a href="https://www.patchrx.io/">Visit Site</a>
                             </div>
@@ -93,7 +92,6 @@ const Health = () =>
                                     </div>
                                     <h2>Torry Butler</h2>
                                     <h4>Birmingham, Alabama</h4>
-                                    {/* <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut lacus vitae massa placerat convallis. Nunc posuere, turpis ut ultrices dignissim, mi mauris bibendum nisi, rutrum ullamcorper magna sapien nec libero.”</p> */}
                                     <p>"The health of a community is defined by the physical and mental health, education, employment, and finances of its members. "Where You Work, Live and Play Determines Your Health".</p>
                                     <div className="rating">
                                         <FontAwesomeIcon icon={['fas', 'star']} />

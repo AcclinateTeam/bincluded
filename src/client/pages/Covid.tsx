@@ -44,13 +44,13 @@ const Covid = () =>
                         <div className="phrase">
                             <div className="face" style={{ backgroundImage: `url("/images/article1.jpg")` }}>
                                 <div className="overlay">
-                                    <h1>Phrase<br /> About Covid</h1>
+                                    <h1>COVID-19 is caused by a coronavirus<br /> called SARS-CoV-2.</h1>
                                 </div>
                             </div>
                             <div className="back">
                                 <h1>COVID-19</h1>
                                 <p>Sign up for updates and resources.</p>
-                                <a href="#">Read More</a>
+                                <a href="https://coronavirus.jhu.edu/map.html">Read More</a>
                             </div>
                         </div>
                     </div>

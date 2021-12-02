@@ -29,13 +29,16 @@ import Terms from './pages/utils/Terms';
 /* COMPONENT IMPORTS */
 import Header from './components/Header';
 import Footer from './components/Footer';
+import RecipeSearch from './pages/recipes/RecipeSearch';
+import Recipe from './pages/recipes/Recipe';
+import Submit from './pages/recipes/Submit';
 
 library.add(fab, fas, far);
 
 /* HOOK REACT EXAMPLE */
 const App = (props: AppProps) =>
 {
-
+	
 
 	return (
 		<>
@@ -50,6 +53,10 @@ const App = (props: AppProps) =>
 					{/* SubPage Paths */}
 					<Route path="/partners" element={<Partners />} />
 					<Route path="/whynow" element={<WhyNow />} />
+					{/* Recipe Paths */}
+					<Route path="/recipes" element={<RecipeSearch />} />
+					<Route path="/recipes/:id" element={<Recipe />} />
+					<Route path="/submit" element={<Submit />} />
 					{/* Trial Paths */}
 					<Route path="/trials" element={<Trials />} />
 					<Route path="/trials/results/:text" element={<Results />} />

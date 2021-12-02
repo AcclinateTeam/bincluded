@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
+import Terminal from '../components/Terminal';
+import RecipeComp from '../components/RecipeComp';
 
 const Health = () =>
 {
@@ -27,8 +29,8 @@ const Health = () =>
                                     </p>
                                 </div>
                                 <div className="callbutton">
-                                    <Link className="button signup" to="/">Join The Community</Link>
-                                    <Link className="button learnmore" to="/">Learn More</Link>
+                                    <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
+                                    <Link className="button learnmore" to="/whynow">Learn More</Link>
                                 </div>
                             </div>
                             <div className="four columns">
@@ -73,64 +75,7 @@ const Health = () =>
                 </div>
             </section>
 
-            <section className="addRes">
-                <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <div className="header">
-                            <h1>Additional<br /> Health Resources</h1>
-                        </div>
-                        <ul className="terminal">
-                            <a href="#"><li className="active">Personal</li></a>
-                            <a href="#"><li>Mental</li></a>
-                            <a href="#"><li>Physical</li></a>
-                            <a href="#"><li>TeleHealth</li></a>
-                        </ul>
-                        <div className="panel">
-                            <div className="container">
-                                <div className="third columns">
-                                    <div className="panes">
-                                        <div className="pane">
-                                            <div className="image">
-                                                <img src="/images/christhealth.png" alt="" />
-                                            </div>
-                                            <h2>Christ Health</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="third columns">
-                                    <div className="panes">
-                                        <div className="pane">
-                                            <div className="image">
-                                                <img src="/images/cahaba.png" alt="" />
-                                            </div>
-                                            <h2>Cahaba Medical Care</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="third columns">
-                                    <div className="panes">
-                                        <div className="pane">
-                                            <div className="image">
-                                                <img src="/images/mpower.png" alt="" />
-                                            </div>
-                                            <h2>M-POWER Ministries</h2>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                            {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="buttonwrap">
-                            <Link className="button" to="/">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Terminal />
 
             <section className="testimony">
                 <div className="container">
@@ -161,48 +106,7 @@ const Health = () =>
                 </div>
             </section>
 
-            <section className="recComp">
-                <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <div className="panel">
-                            <div className="four columns">
-                                <div className="heading">
-                                    <h1>Try Our<br /> Healthy Recipes</h1>
-                                    <p>B-Included provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
-                                </div>
-                            </div>
-                            <div className="six columns">
-                                <div className="container">
-                                    <div className="five columns">
-                                        <div className="recwrap">
-                                            <div className="recipe">
-                                                <div className="image" style={{ backgroundImage: `url(/images/pepperSteak.jpg)` }}></div>
-                                                <div className="text">
-                                                    <h2>Pepper Steak</h2>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                                    <Link to="">View Recipe <FontAwesomeIcon icon="arrow-right" /></Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="five columns">
-                                        <div className="recwrap">
-                                            <div className="recipe">
-                                                <div className="image" style={{ backgroundImage: `url(/images/veganPasta.jpg)` }}></div>
-                                                <div className="text">
-                                                    <h2>Vegan Pasta</h2>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                                    <Link to="">View Recipe <FontAwesomeIcon icon="arrow-right" /></Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <RecipeComp />
 
             <section className="related">
                 <div className="container">

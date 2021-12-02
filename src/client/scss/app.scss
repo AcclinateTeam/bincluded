@@ -44,7 +44,16 @@ body {				min-height: 100%; position: relative;}
 @import './home.scss';
 @import './health.scss';
 @import './careers.scss';
+<<<<<<< HEAD
 @import './mobile.scss';
+=======
+@import './covid.scss';
+@import './trials.scss';
+@import './utils.scss';
+@import './whyNow.scss';
+@import './recipes.scss';
+
+>>>>>>> fd1d1818793688d4bc537dbd1ab0aa1e68dbe3f8
 
 /* FONT IMPORT */
 /* Font Imports */
@@ -94,7 +103,7 @@ body {				min-height: 100%; position: relative;}
 .addRes .pane .image {                  width: 96px; height: 66px; position: relative; margin: 0 0 30px; box-shadow: 0 0 24px 2px #dfdfdf; background-color: #fff;}
 .addRes .pane .image img {              width: 100%;}
 .addRes .pane h2 {                      font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; text-transform: none; padding: 0; margin: 0 0 20px;}
-.addRes .pane p {                       font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500;}
+.addRes .pane p {                       min-height: 44px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500;}
 .addRes .button {                       background-color: #CA1D48;}
 .addRes .button:hover {                 background-color: #EEC31A;}
 

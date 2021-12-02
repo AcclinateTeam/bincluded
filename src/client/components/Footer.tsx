@@ -132,7 +132,7 @@ const Footer = () =>
                                     <a href="/partners">Partners</a>
                                 </li>
                                 <li>
-                                    <a href="#">Join the Community</a>
+                                    <a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join the Community</a>
                                 </li>
                                 <li>
                                     <a href="#">Events</a>

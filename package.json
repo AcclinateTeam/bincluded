@@ -19,12 +19,20 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@types/express": "^4.17.13",
+<<<<<<< HEAD
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+=======
+    "@types/mysql": "^2.15.19",
+    "@types/react": "^17.0.22",
+    "@types/react-dom": "^17.0.9",
+>>>>>>> fd1d1818793688d4bc537dbd1ab0aa1e68dbe3f8
     "@types/react-router-dom": "^5.3.2",
     "bootstrap": "^5.1.1",
     "css-loader": "^6.3.0",
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "mysql": "^2.18.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-responsive": "^9.0.0-beta.5",

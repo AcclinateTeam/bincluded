@@ -1,9 +1,23 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const RecipeComp = (props: any) =>
 {
+
+    const [recipes, setRecipes] = useState([]);
+
+    useEffect(() =>
+    {
+        fetch('/api/recipes/random')
+            .then(res => res.json())
+            .then(recipes => setRecipes(recipes))
+    }, []);
+
+    console.log(recipes);
+
     return (
         <>
             <section className="recComp">
@@ -30,8 +44,8 @@ const RecipeComp = (props: any) =>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="five columns">
+                                    )
+                                    {/* <div className="five columns">
                                         <div className="recwrap">
                                             <div className="recipe">
                                                 <div className="image" style={{ backgroundImage: `url(/images/veganPasta.jpg)` }}></div>
@@ -43,7 +57,7 @@ const RecipeComp = (props: any) =>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> 
                                 </div>
                             </div>
                         </div>

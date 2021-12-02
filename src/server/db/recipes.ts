@@ -8,7 +8,7 @@ const getRecipe = async () =>
   Query(`select recipes.id, recipes.title, recipes.directions, recipes.description, recipes.cooktime, recipes.meals, recipes.servings, recipes.imagelink, recipes._created, users.username from recipes
   join users on users.id=recipes.userid
   order by rand()
-  limit 3`);
+  limit 2`);
 
 const oneRecipe = async (id: any) =>
   Query(

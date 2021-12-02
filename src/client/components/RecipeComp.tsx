@@ -32,32 +32,22 @@ const RecipeComp = (props: any) =>
                             </div>
                             <div className="six columns">
                                 <div className="container">
-                                    <div className="five columns">
-                                        <div className="recwrap">
-                                            <div className="recipe">
-                                                <div className="image" style={{ backgroundImage: `url(/images/pepperSteak.jpg)` }}></div>
-                                                <div className="text">
-                                                    <h2>Pepper Steak</h2>
-                                                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
-                                                    <p>A quick and easy Pepper Steak recipe! Made with tender slices of protein rich sirloin steak, fresh tender crisp bell pepper and onions, and everything is coat...</p>
-                                                    <Link to="https://www.cookingclassy.com/pepper-steak/">View Recipe <FontAwesomeIcon icon="arrow-right" /></Link>
+                                    {recipes.map((r: any, index: number) => (
+                                        <div key={r.id}>
+                                            <div className="five columns">
+                                                <div className="recwrap">
+                                                    <div className="recipe">
+                                                        <div className="image" style={{ backgroundImage: `url(${r.imagelink})` }}></div>
+                                                        <div className="text">
+                                                            <h2>{r.title}</h2>
+                                                            <p>{r.description}</p>
+                                                            <Link to={`/recipes/${r.id}`}>View Recipe <FontAwesomeIcon icon="arrow-right" /></Link>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    )
-                                    {/* <div className="five columns">
-                                        <div className="recwrap">
-                                            <div className="recipe">
-                                                <div className="image" style={{ backgroundImage: `url(/images/veganPasta.jpg)` }}></div>
-                                                <div className="text">
-                                                    <h2>Vegan Pasta</h2>
-                                                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
-                                                    <p>This is a 30-minute meal that’s virtually fool-proof. While you get your sauce going by sauteeing garlic and shallot in a little olive oil, roast your grape...</p>
-                                                    <Link to="https://minimalistbaker.com/creamy-vegan-garlic-pasta-with-roasted-tomatoes/">View Recipe <FontAwesomeIcon icon="arrow-right" /></Link>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> 
+                                    ))}
                                 </div>
                             </div>
                         </div>

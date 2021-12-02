@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import CountUp, { useCountUp } from 'react-countup';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
@@ -13,11 +14,11 @@ const Home = () =>
     const [beds, setBeds] = useState<any>([]);
     const [metrics, setMetrics] = useState<any>([]);
 
-    function kFormatter (num: number)
-    {
-        return Math.abs(num) > 999 ? Math.sign(num) * (Math.round(Math.abs(num)/100)/10) + 'k' : Math.sign(num) * Math.abs(num) 
-    }
-    
+    // function kFormatter (num: number)
+    // {
+    //     return Math.abs(num) > 999 ? Math.sign(num) * (Math.round(Math.abs(num)/100)/10) + 'k' : Math.sign(num) * Math.abs(num) 
+    // }
+
     useEffect(() =>
     {
 
@@ -52,11 +53,30 @@ const Home = () =>
                                         <h1>Stand Up For Your Health</h1>
                                         <p>
                                             #BIncluded is a movement with a mission to build a community of individuals ready to take control of their health and future.
+                                            <CountUp
+                                                start={0}
+                                                end={actuals.cases}
+                                                duration={2.75}
+                                                separator=","
+                                                decimals={3}
+                                                decimal="."
+                                                prefix="EUR "
+                                                suffix=" left"
+                                                onEnd={() => console.log('Ended! 👏')}
+                                                onStart={() => console.log('Started! 💨')}
+                                            >
+                                                {({ countUpRef, start }) => (
+                                                    <h3>
+                                                        <span style={{ width: '100px' }} ref={countUpRef} onScroll={start} />
+                                                    </h3>
+                                                )}
+                                            </CountUp>
                                         </p>
                                     </div>
                                     <div className="callbutton">
                                         <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
                                         <Link className="button learnmore" to="/whynow">Learn More</Link>
+
                                     </div>
                                 </div>
                                 <div className="five columns">
@@ -148,25 +168,73 @@ const Home = () =>
                                 <div className="six columns stats">
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <h3>43%</h3>
+                                            <CountUp
+                                                start={0}
+                                                end={43}
+                                                duration={3}
+                                                prefix=""
+                                                suffix="%"
+                                            >
+                                                {({ countUpRef, start }) => (
+                                                    <h3>
+                                                        <span ref={countUpRef} onMouseOver={start} />
+                                                    </h3>
+                                                )}
+                                            </CountUp>
                                             <p>of Jefferson County's population is Black or African-American</p>
                                         </div>
                                     </div>
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <h3>16%</h3>
+                                            <CountUp
+                                                start={0}
+                                                end={16}
+                                                duration={3}
+                                                prefix=""
+                                                suffix="%"
+                                            >
+                                                {({ countUpRef, start }) => (
+                                                    <h3>
+                                                        <span ref={countUpRef} onMouseOver={start} />
+                                                    </h3>
+                                                )}
+                                            </CountUp>
                                             <p>of Black Residents in Jefferson County live with a disability</p>
                                         </div>
                                     </div>
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <h3><span>65%</span></h3>
+                                            <CountUp
+                                                start={0}
+                                                end={43}
+                                                duration={3}
+                                                prefix=""
+                                                suffix="%"
+                                            >
+                                                {({ countUpRef, start }) => (
+                                                    <h3>
+                                                        <span ref={countUpRef} onMouseOver={start} />
+                                                    </h3>
+                                                )}
+                                            </CountUp>
                                             <p>of the county's residents who live in impoverished or low-income communities are Black</p>
                                         </div>
                                     </div>
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <h3>15%</h3>
+                                            <CountUp
+                                                start={0}
+                                                end={15}
+                                                duration={3}
+                                                prefix=""
+                                                suffix="%"
+                                            >
+                                                {({ countUpRef, start }) => (
+                                                    <h3>
+                                                        <span style={{ width: '100px' }} ref={countUpRef} onMouseOver={start} />
+                                                    </h3>
+                                                )}
+                                            </CountUp>
                                             <p>of Jefferson County's Black residents are more likely to die from all causes</p>
                                         </div>
                                     </div>
@@ -193,30 +261,86 @@ const Home = () =>
                                 <h1>The latest data related to Covid-19</h1>
                                 <div className="fourth columns">
                                     <div className="data border">
-                                        <h3>{actuals.cases}</h3>
+                                        <CountUp
+                                            start={0}
+                                            end={actuals.cases}
+                                            separator=","
+                                            duration={3}
+                                            prefix=""
+                                            suffix="%"
+                                        >
+                                            {({ countUpRef, start }) => (
+                                                <h3>
+                                                    <span ref={countUpRef} onMouseOver={start} />
+                                                </h3>
+                                            )}
+                                        </CountUp>
                                         <p>Active Cases</p>
                                     </div>
                                 </div>
                                 <div className="fourth columns">
                                     <div className="data border">
-                                        <h3><span>{beds.capacity}</span></h3>
+                                        <CountUp
+                                            start={0}
+                                            end={beds.capacity}
+                                            separator=","
+                                            duration={3}
+                                            prefix=""
+                                            suffix="%"
+                                        >
+                                            {({ countUpRef, start }) => (
+                                                <h3>
+                                                    <span ref={countUpRef} onMouseOver={start} />
+                                                </h3>
+                                            )}
+                                        </CountUp>
                                         <p>Beds Available</p>
                                     </div>
                                 </div>
                                 <div className="fourth columns">
                                     <div className="data border">
-                                        <h3>{metrics.infectionRate}%</h3>
+                                        <CountUp
+                                            start={-0.9999}
+                                            end={metrics.infectionRate}
+                                            separator=","
+                                            decimals={3}
+                                            decimal="."
+                                            duration={3}
+                                            prefix=""
+                                            suffix="%"
+                                        >
+                                            {({ countUpRef, start }) => (
+                                                <h3>
+                                                    <span ref={countUpRef} onMouseOver={start} />
+                                                </h3>
+                                            )}
+                                        </CountUp>
                                         <p>Infection Rate</p>
                                     </div>
                                 </div>
                                 <div className="fourth columns">
                                     <div className="data">
-                                        <h3>{metrics.vaccinationsInitiatedRatio}%</h3>
+                                        <CountUp
+                                            start={-0.9999}
+                                            end={metrics.vaccinationsInitiatedRatio}
+                                            separator=","
+                                            decimals={3}
+                                            decimal="."
+                                            duration={3}
+                                            prefix=""
+                                            suffix="%"
+                                        >
+                                            {({ countUpRef, start }) => (
+                                                <h3>
+                                                    <span ref={countUpRef} onMouseOver={start} />
+                                                </h3>
+                                            )}
+                                        </CountUp>
                                         <p>Vaccines Initiated Ratio</p>
                                     </div>
                                 </div>
                                 <div className="buttonwrap">
-                                    <Link className="content button solid" to="/recipes">More on Covid-19</Link>
+                                    <Link className="content button solid" to="/covid">More on Covid-19</Link>
                                 </div>
                             </div>
                         </div>

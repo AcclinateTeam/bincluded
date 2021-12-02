@@ -1,71 +1,166 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
+
+import Personal from './subComponents/Personal';
+import Mental from './subComponents/Mental';
+import Physical from './subComponents/Physical';
+import Tele from './subComponents/Tele';
 
 const Terminal = () =>
 {
-    return (
-        <>
-            <section className="addRes">
-                <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <div className="header">
-                            <h1>Additional<br /> Health Resources</h1>
-                        </div>
-                        <ul className="terminal">
-                            <a href="#"><li className="active">Personal</li></a>
-                            <a href="#"><li>Mental</li></a>
-                            <a href="#"><li>Physical</li></a>
-                            <a href="#"><li>TeleHealth</li></a>
-                        </ul>
-                        <div className="panel">
-                            <div className="container">
-                                <div className="third columns">
-                                    <div className="panes">
-                                        <div className="pane">
-                                            <div className="image">
-                                                <img src="/images/christhealth.png" alt="" />
-                                            </div>
-                                            <h2>Christ Health</h2>
-                                            <p>Providing affordable, compassionate care</p>
-                                            {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="third columns">
-                                    <div className="panes">
-                                        <div className="pane">
-                                            <div className="image">
-                                                <img src="/images/cahaba.png" alt="" />
-                                            </div>
-                                            <h2>Cahaba Medical Care</h2>
-                                            <p>Provides comprehensive primary care services</p>
-                                            {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="third columns">
-                                    <div className="panes">
-                                        <div className="pane">
-                                            <div className="image">
-                                                <img src="/images/mpower.png" alt="" />
-                                            </div>
-                                            <h2>M-POWER Ministries</h2>
-                                            <p>Engaging with the people of Birmingham and providing paths out of poverty.</p>
-                                            {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
-                                        </div>
-                                    </div>
+
+    const [mental, setMental] = useState(false);
+    const [physical, setPhysical] = useState(false);
+    const [tele, setTele] = useState(false);
+
+    const mentalLoaded = () =>
+    {
+        setMental(true);
+        setPhysical(false);
+        setTele(false);
+    }
+
+    const physicalLoaded = () =>
+    {
+        setMental(false);
+        setPhysical(true);
+        setTele(false);
+    }
+
+    const teleLoaded = () =>
+    {
+        setMental(false);
+        setPhysical(false);
+        setTele(true);
+    }
+
+    const personalButton = () =>
+    {
+        setMental(false);
+        setPhysical(false);
+        setTele(false);
+    }
+
+    if (mental && !physical && !tele)
+    {
+        return (
+            <>
+                <section className="addRes">
+                    <div className="container">
+                        <div className="eight columns offset-by-one">
+                            <div className="header">
+                                <h1>Additional<br /> Health Resources</h1>
+                            </div>
+                            <ul className="terminal">
+                                <a onClick={personalButton}><li>Personal</li></a>
+                                <a onClick={mentalLoaded}><li className="active">Mental</li></a>
+                                <a onClick={physicalLoaded}><li>Physical</li></a>
+                                <a onClick={teleLoaded}><li>TeleHealth</li></a>
+                            </ul>
+                            <div className="panel">
+                                <div className="container">
+                                    <Mental />
                                 </div>
                             </div>
-                        </div>
-                        <div className="buttonwrap">
-                            <Link className="button" to="/">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                            <div className="buttonwrap">
+                                <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </>
-    )
+                </section>
+            </>
+        );
+    } else if (!mental && physical && !tele)
+    {
+        return (
+            <>
+                <section className="addRes">
+                    <div className="container">
+                        <div className="eight columns offset-by-one">
+                            <div className="header">
+                                <h1>Additional<br /> Health Resources</h1>
+                            </div>
+                            <ul className="terminal">
+                                <a onClick={personalButton}><li>Personal</li></a>
+                                <a onClick={mentalLoaded}><li>Mental</li></a>
+                                <a onClick={physicalLoaded}><li className="active">Physical</li></a>
+                                <a onClick={teleLoaded}><li>TeleHealth</li></a>
+                            </ul>
+                            <div className="panel">
+                                <div className="container">
+                                    <Physical />
+                                </div>
+                            </div>
+                            <div className="buttonwrap">
+                                <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </>
+        );
+    } else if (!mental && !physical && tele)
+    {
+        return (
+            <>
+                <section className="addRes">
+                    <div className="container">
+                        <div className="eight columns offset-by-one">
+                            <div className="header">
+                                <h1>Additional<br /> Health Resources</h1>
+                            </div>
+                            <ul className="terminal">
+                                <a onClick={personalButton}><li>Personal</li></a>
+                                <a onClick={mentalLoaded}><li>Mental</li></a>
+                                <a onClick={physicalLoaded}><li>Physical</li></a>
+                                <a onClick={teleLoaded}><li className="active">TeleHealth</li></a>
+                            </ul>
+                            <div className="panel">
+                                <div className="container">
+                                    <Tele />
+                                </div>
+                            </div>
+                            <div className="buttonwrap">
+                                <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </>
+        );
+    } else 
+    {
+        return (
+            <>
+                <section className="addRes">
+                    <div className="container">
+                        <div className="eight columns offset-by-one">
+                            <div className="header">
+                                <h1>Additional<br /> Health Resources</h1>
+                            </div>
+                            <ul className="terminal">
+                                <a onClick={personalButton}><li className="active">Personal</li></a>
+                                <a onClick={mentalLoaded}><li>Mental</li></a>
+                                <a onClick={physicalLoaded}><li>Physical</li></a>
+                                <a onClick={teleLoaded}><li>TeleHealth</li></a>
+                            </ul>
+                            <div className="panel">
+                                <div className="container">
+                                    <Personal />
+                                </div>
+                            </div>
+                            <div className="buttonwrap">
+                                <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </>
+        )
+    }
 }
 
 export default Terminal;
+

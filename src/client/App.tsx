@@ -18,6 +18,9 @@ import Covid from './pages/Covid';
 // SUBPAGES
 import Partners from './pages/subpages/Partners';
 import WhyNow from './pages/subpages/WhyNow';
+// BLOG PAGES
+import Blog from './pages/blog/Blog';
+import SinglePost from './pages/blog/SinglePost';
 // TRIALS PAGES
 import Trials from './pages/trials/Trials';
 import Results from './pages/trials/Results';
@@ -53,6 +56,9 @@ const App = (props: AppProps) =>
 					{/* SubPage Paths */}
 					<Route path="/partners" element={<Partners />} />
 					<Route path="/whynow" element={<WhyNow />} />
+					{/* Blog Paths */}
+					<Route path="/blog" element={<Blog />} />
+					<Route path="/blog/single" element={<SinglePost />} />
 					{/* Recipe Paths */}
 					<Route path="/recipes" element={<RecipeSearch />} />
 					<Route path="/recipes/:id" element={<Recipe />} />

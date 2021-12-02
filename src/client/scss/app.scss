@@ -44,7 +44,13 @@ body {				min-height: 100%; position: relative;}
 @import './home.scss';
 @import './health.scss';
 @import './careers.scss';
+@import './covid.scss';
+@import './whyNow.scss';
+@import './utils.scss';
+@import './trials.scss';
+@import './recipes.scss';
 @import './mobile.scss';
+@import './blog.scss';
 
 /* FONT IMPORT */
 /* Font Imports */
@@ -82,7 +88,7 @@ body {				min-height: 100%; position: relative;}
 .addRes .header {                       margin: 0 auto 50px; text-align: center;}
 .addRes .header h1 {                    font-size: 48px; line-height: 54px; padding: 0; margin: 0;}
 .addRes ul.terminal {                   width: 100%; display: block; text-align: center; border-bottom: 1px solid #cecece;} 
-.addRes ul.terminal li {                font-weight: 900; display: inline-block; padding: 20px 20px 30px; margin: 0 40px -2px 0; text-align: center; border-bottom: 1px solid rgba(255,255,255,0); color: #cecece;}
+.addRes ul.terminal li {                font-weight: 900; display: inline-block; padding: 20px 20px 30px; margin: 0 40px -2px 0; text-align: center; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0); color: #cecece;}
 .addRes ul.terminal li.active {         font-weight: 900; border-bottom: 3px solid #050236; background-color: #cecece; color: #050236;}
 .addRes ul.terminal li a {              text-decoration: none; color: #cecece;}
 .addRes ul.terminal li:hover {          text-decoration: none; border-bottom: 3px solid #050236; color: #050236; background-color: #cecece;}

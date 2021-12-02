@@ -55,8 +55,8 @@ const Home = () =>
                                         </p>
                                     </div>
                                     <div className="callbutton">
-                                        <Link className="button signup" to="/">Join The Community</Link>
-                                        <Link className="button learnmore" to="/">Learn More</Link>
+                                        <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
+                                        <Link className="button learnmore" to="/whynow">Learn More</Link>
                                     </div>
                                 </div>
                                 <div className="five columns">
@@ -83,46 +83,46 @@ const Home = () =>
                             </div>
                             <Link to="/health">
                                 <div className="third columns ports">
-                                    <div className="port shadow">
+                                    <div className="port shadow hover">
                                         <FontAwesomeIcon icon="user-md" />
                                         <h4>Health</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
+                                        <p>Find reliable, fact-based health information you can trust.</p>
                                     </div>
                                 </div>
                             </Link>
                             <Link to="">
                                 <div className="third columns ports">
-                                    <div className="port shadow">
+                                    <div className="port shadow hover">
                                         <FontAwesomeIcon icon="users" />
                                         <h4>Family</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
+                                        <p>Find information on how to make your family’s health a priority.</p>
                                     </div>
                                 </div>
                             </Link>
                             <Link to="">
                                 <div className="third columns ports">
-                                    <div className="port shadow">
+                                    <div className="port shadow hover">
                                         <FontAwesomeIcon icon="hard-hat" />
                                         <h4>Careers</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
+                                        <p>Connect with resources to elevate your careers and increase your wealth.</p>
                                     </div>
                                 </div>
                             </Link>
                             <Link to="">
                                 <div className="third columns ports">
-                                    <div className="port shadow">
+                                    <div className="port shadow hover">
                                         <FontAwesomeIcon icon="viruses" />
                                         <h4>COVID-19</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
+                                        <p>Stay up-to-date on the latest COVID-19 news and stats.</p>
                                     </div>
                                 </div>
                             </Link>
                             <Link to="">
                                 <div className="third columns ports">
-                                    <div className="port shadow">
+                                    <div className="port shadow hover">
                                         <FontAwesomeIcon icon="newspaper" />
                                         <h4>Events</h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
+                                        <p>Share your story! We’d love to feature you.</p>
                                     </div>
                                 </div>
                             </Link>

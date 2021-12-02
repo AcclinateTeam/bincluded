@@ -174,4 +174,4 @@ const WhyNow = () =>
     )
 }
 
-export default WhyNow;
+export default WhyNow; 

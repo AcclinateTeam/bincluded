@@ -84,7 +84,7 @@ const Careers = () =>
                                         <div className="card">
                                             <img src="/images/UAB5.png" alt=""/>
                                             <h2>Registered Nurse</h2>
-                                            <p>To utilize the nursing process to care and/or counsel individuals in the promotion and maintenance of health and the prevention of illness and injury. Using...</p>
+                                            <p>To utilize the nursing process to care and/or counsel individuals in the promotion and maintenance of health and the prevention of illness and...</p>
                                             {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
                                             <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T188742&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
 
@@ -96,7 +96,7 @@ const Careers = () =>
                                         <div className="card">
                                             <img src="/images/UAB5.png" alt="" />
                                             <h2>Educational Liaison</h2>
-                                            <p>Serves as an educational liaison and provides oversight for various projects initiated by internal organizations or departments. Related activities may include....</p>
+                                            <p>Serves as an educational liaison and provides oversight for various projects initiated by internal organizations or departments. Related...</p>
                                             {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
                                             <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T192748&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
                                         </div>

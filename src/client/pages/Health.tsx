@@ -160,7 +160,7 @@ const Health = () =>
                                     </div>
                                 </div>
                                 <div className="buttonwrap">
-                                    <Link className="content button" to="/recipes">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                    <Link className="content button" to="/blog">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                                 </div>
                             </div>
                         </div>

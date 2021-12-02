@@ -42,7 +42,7 @@ const WhyNow = () =>
                             <div className="seven columns">
                                 <div className="vidPanes">
                                     <div className="vidPane">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-OTBTfdZUsg?start=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-OTBTfdZUsg?start=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -148,22 +148,22 @@ const WhyNow = () =>
                                 <div className="orgImg" style={{ backgroundImage: `url("/images/orgProtective.png")` }}></div>
                             </div>
                             <div className="third columns">
-                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgProtective.png")` }}></div>
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/partners/cahaba.png")` }}></div>
                             </div>
                             <div className="third columns">
-                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgUAB.png")` }}></div>
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/partners/impact.jpg")` }}></div>
                             </div>
                             <div className="third columns">
-                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgVulcan.png")` }}></div>
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/partners/mpower.jpg")` }}></div>
                             </div>
                             <div className="third columns">
-                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgUAB.png")` }}></div>
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/partners/uway.jpg")` }}></div>
                             </div>
                             <div className="third columns">
-                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgVulcan.png")` }}></div>
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/partners/m4a.png")` }}></div>
                             </div>
                             <div className="third columns">
-                                <div className="orgImg" style={{ backgroundImage: `url("/images/orgProtective.png")` }}></div>
+                                <div className="orgImg" style={{ backgroundImage: `url("/images/partners/christ-health.png")` }}></div>
                             </div>
                         </div>
                     </div>

@@ -35,7 +35,7 @@ const Footer = () =>
                                     <img className="uab" src="/images/uab2.png" alt="" />
                                 </div>
                                 <div className="buttonwrap">
-                                    <Link className="content button solid" to="/recipes">View Partners</Link>
+                                    <Link className="content button solid" to="/partners">View Partners</Link>
                                 </div>
                             </div>
                         </div>
@@ -101,7 +101,7 @@ const Footer = () =>
                                     <a href="/whynow">Why Now?</a>
                                 </li>
                                 <li>
-                                    <a href="https://b-included.com/resources/">Blog</a>
+                                    <a href="/blog/">Blog</a>
                                 </li>
                                 <li>
                                     <a href="https://prosperbham.com/">Prosper</a>
@@ -112,16 +112,16 @@ const Footer = () =>
                             <h1>Resources</h1>
                             <ul>
                                 <li>
-                                    <a href="/health">Health</a>
+                                    <Link to="/health">Health</Link>
                                 </li>
                                 <li>
-                                    <a href="/family">Family</a>
+                                    <Link to="/family">Family</Link>
                                 </li>
                                 <li>
-                                    <a href="/careers">Careers</a>
+                                    <Link to="/careers">Careers</Link>
                                 </li>
                                 <li>
-                                    <a href="/covid">COVID-19</a>
+                                    <Link to="/covid">COVID-19</Link>
                                 </li>
                             </ul>
                         </div>
@@ -129,16 +129,16 @@ const Footer = () =>
                             <h1>Additional Links</h1>
                             <ul>
                                 <li>
-                                    <a href="/partners">Partners</a>
+                                    <Link to="/partners">Partners</Link>
                                 </li>
                                 <li>
                                     <a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join the Community</a>
                                 </li>
                                 <li>
-                                    <a href="#">Events</a>
+                                    <Link to="/">Events</Link>
                                 </li>
                                 <li>
-                                    <a href="/trials">Clinical Trials</a>
+                                    <Link to="/trials">Clinical Trials</Link>
                                 </li>
                             </ul>
                         </div>

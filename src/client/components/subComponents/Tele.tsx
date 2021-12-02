@@ -10,7 +10,7 @@ const Tele = () =>
                         <div className="image">
                             <img src="/images/christhealth.png" alt="" />
                         </div>
-                        <h2>Tele</h2>
+                        <h2>Christ Health</h2>
                         <p>Providing affordable, compassionate care</p>
                         {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                     </div>

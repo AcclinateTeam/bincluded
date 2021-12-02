@@ -8,9 +8,9 @@ const Physical = () =>
                 <div className="panes">
                     <div className="pane">
                         <div className="image">
-                            <img src="/images/christhealth.png" alt="" />
+                            <img src="/images/partners/medicaid.png" alt="" />
                         </div>
-                        <h2>Physical</h2>
+                        <h2>Medicaid</h2>
                         <p>Providing affordable, compassionate care</p>
                         {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                     </div>
@@ -20,9 +20,9 @@ const Physical = () =>
                 <div className="panes">
                     <div className="pane">
                         <div className="image">
-                            <img src="/images/cahaba.png" alt="" />
+                            <img src="/images/partners/medicare.svg" alt="" />
                         </div>
-                        <h2>Cahaba Medical Care</h2>
+                        <h2>Medicare</h2>
                         <p>Provides comprehensive primary care services</p>
                         {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                     </div>
@@ -32,9 +32,9 @@ const Physical = () =>
                 <div className="panes">
                     <div className="pane">
                         <div className="image">
-                            <img src="/images/mpower.png" alt="" />
+                            <img src="/images/partners/m4a.png" alt="" />
                         </div>
-                        <h2>M-POWER Ministries</h2>
+                        <h2>M4a</h2>
                         <p>Engaging with the people of Birmingham and providing paths out of poverty.</p>
                         {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                     </div>

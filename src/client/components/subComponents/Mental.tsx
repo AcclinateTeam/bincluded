@@ -8,10 +8,10 @@ const Mental = () =>
                 <div className="panes">
                     <div className="pane">
                         <div className="image">
-                            <img src="/images/christhealth.png" alt="" />
+                            <img src="/images/partners/impact.jpg" alt="" />
                         </div>
-                        <h2>Mental</h2>
-                        <p>Providing affordable, compassionate care</p>
+                        <h2>Impact Family Counseling</h2>
+                        <p>IMPACT Family Counseling is a 501 (c)(3) Christian-affiliated, United Way agency located in Birmingham, AL.</p>
                         {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                     </div>
                 </div>
@@ -20,10 +20,10 @@ const Mental = () =>
                 <div className="panes">
                     <div className="pane">
                         <div className="image">
-                            <img src="/images/cahaba.png" alt="" />
+                            <img src="images/partners/crisis.webp" alt="" />
                         </div>
-                        <h2>Cahaba Medical Care</h2>
-                        <p>Provides comprehensive primary care services</p>
+                        <h2>Crisis Center</h2>
+                        <p>Our mission is to serve the unmet needs of people experiencing personal crisis or mental health issues.</p>
                         {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                     </div>
                 </div>

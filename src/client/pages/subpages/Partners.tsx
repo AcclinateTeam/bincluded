@@ -21,7 +21,7 @@ const Partners = () =>
                             <div className="five columns offset-by-one">
                                 <div className="text">
                                     <h1>Partners</h1>
-                                    <p>B-Included provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
+                                    <p>We partner with brands that are passionate about our mission and our community..</p>
                                 </div>
                                 <div className="callbutton">
                                     <Link className="button signup" to="/">Become A Partner</Link>
@@ -49,7 +49,7 @@ const Partners = () =>
                             </div>
                             <div className="back">
                                 <h1>COVID-19</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
+                                <p>Sign up for updates and resources.</p>
                                 <a href="#">Read More</a>
                             </div>
                         </div>

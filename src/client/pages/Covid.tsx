@@ -49,7 +49,7 @@ const Covid = () =>
                             </div>
                             <div className="back">
                                 <h1>COVID-19</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
+                                <p>Sign up for updates and resources.</p>
                                 <a href="#">Read More</a>
                             </div>
                         </div>

@@ -13,11 +13,11 @@ const Home = () =>
     const [beds, setBeds] = useState<any>([]);
     const [metrics, setMetrics] = useState<any>([]);
 
-    // function kFormatter (num: number)
-    // {
-    //     return Math.abs(num) > 999 ? Math.sign(num) * ((Math.abs(num) / 1000).toFixed(1)) + 'k' : Math.sign(num) * Math.abs(num)
-    // }
-
+    function kFormatter (num: number)
+    {
+        return Math.abs(num) > 999 ? Math.sign(num) * (Math.round(Math.abs(num)/100)/10) + 'k' : Math.sign(num) * Math.abs(num) 
+    }
+    
     useEffect(() =>
     {
 
@@ -78,7 +78,7 @@ const Home = () =>
                             <div className="third columns ports">
                                 <div className="port">
                                     <h1>Resources at your fingertips</h1>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer blandit vehicula cursus. </p>
+                                    <p>These resources are all located within one area for ease of use. </p>
                                 </div>
                             </div>
                             <Link to="/health">
@@ -154,7 +154,7 @@ const Home = () =>
                                     </div>
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <h3>16.3%</h3>
+                                            <h3>16%</h3>
                                             <p>of Black Residents in Jefferson County live with a disability</p>
                                         </div>
                                     </div>

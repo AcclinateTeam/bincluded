@@ -28,7 +28,7 @@ const WhyNow = () =>
                     <div className="eight columns offset-by-one">
                         <div className="heading">
                             <h1>Why Now?</h1>
-                            <Link to="/">Click Here to Read the Blog <FontAwesomeIcon icon="arrow-right" /></Link>
+                            <Link to="https://nowincluded.com/explore/">Click Here to Read the Blog <FontAwesomeIcon icon="arrow-right" /></Link>
                             <p>B-Included is a movement with a mission to build a community of individuals ready to take control of their health and future.</p>
                         </div>
                     </div>
@@ -42,7 +42,7 @@ const WhyNow = () =>
                             <div className="seven columns">
                                 <div className="vidPanes">
                                     <div className="vidPane">
-                                        Video Content Goes Here
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-OTBTfdZUsg?start=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -51,19 +51,19 @@ const WhyNow = () =>
                                     <div className="ten columns panes">
                                         <div className="pane">
                                             <h1>Our Mission</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
+                                            <p>Connect corporate, civic, and community leaders to understand issues and increase equitable economic growth.</p>
                                         </div>
                                     </div>
                                     <div className="ten columns panes">
                                         <div className="pane">
                                             <h1>Our Vision</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
+                                            <p>Transforming Birmingham by creating a more prosperous and equitable future.</p>
                                         </div>
                                     </div>
                                     <div className="ten columns panes">
                                         <div className="pane end">
                                             <h1>Our Values</h1>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
+                                            <p>Prosper is a coalition of community, civic and business leaders committed to creating a more vibrant, racially and gender inclusive economy.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -120,8 +120,8 @@ const WhyNow = () =>
                                     <div className="image"><img src="/images/prosperAcclinate.png" alt="" /></div>
                                     <div className="text">
                                         <h1>Prosper + Acclinate</h1>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                        <a href="">Read About How This Partnership Was Formed <FontAwesomeIcon icon="arrow-right" /></a>
+                                        <p>Acclinate and Birmingham Prosper have been hard at work to develop a Birmingham-specific community platform; B-INCLUDED. This platform will further Prosper's initiative to reduce racial inequities in Jefferson County by providing county residents access to long needed resources.</p>
+                                        <a href="https://prosperbham.com/">Read About How This Partnership Was Formed <FontAwesomeIcon icon="arrow-right" /></a>
                                     </div>
                                 </div>
                             </div>

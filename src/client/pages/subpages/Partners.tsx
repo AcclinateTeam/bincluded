@@ -24,8 +24,8 @@ const Partners = () =>
                                     <p>We partner with brands that are passionate about our mission and our community..</p>
                                 </div>
                                 <div className="callbutton">
-                                    <Link className="button signup" to="/">Become A Partner</Link>
-                                    <Link className="button learnmore" to="/">View Partners</Link>
+                                    <Link className="button signup" to="https://nowincluded.com/explore/">Become A Partner</Link>
+                                    <Link className="button learnmore" to="https://nowincluded.com/explore/">View Partners</Link>
                                 </div>
                             </div>
                             <div className="four columns">
@@ -50,7 +50,7 @@ const Partners = () =>
                             <div className="back">
                                 <h1>COVID-19</h1>
                                 <p>Sign up for updates and resources.</p>
-                                <a href="#">Read More</a>
+                                <a href="https://nowincluded.com/explore/">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -478,7 +478,7 @@ const Partners = () =>
                                         <p>We want you to be a part of the health conversation.</p>
                                     </div>
                                     <div className="three columns">
-                                        <a href="">Partner With Us</a>
+                                        <a href="https://nowincluded.com/explore/">Partner With Us</a>
                                     </div>
                                 </div>
                             </div>

@@ -24,8 +24,9 @@ const RecipeComp = (props: any) =>
                                                 <div className="image" style={{ backgroundImage: `url(/images/pepperSteak.jpg)` }}></div>
                                                 <div className="text">
                                                     <h2>Pepper Steak</h2>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                                    <Link to="">View Recipe <FontAwesomeIcon icon="arrow-right" /></Link>
+                                                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
+                                                    <p>A quick and easy Pepper Steak recipe! Made with tender slices of protein rich sirloin steak, fresh tender crisp bell pepper and onions, and everything is coat...</p>
+                                                    <Link to="https://www.cookingclassy.com/pepper-steak/">View Recipe <FontAwesomeIcon icon="arrow-right" /></Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -36,8 +37,9 @@ const RecipeComp = (props: any) =>
                                                 <div className="image" style={{ backgroundImage: `url(/images/veganPasta.jpg)` }}></div>
                                                 <div className="text">
                                                     <h2>Vegan Pasta</h2>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                                    <Link to="">View Recipe <FontAwesomeIcon icon="arrow-right" /></Link>
+                                                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
+                                                    <p>This is a 30-minute meal that’s virtually fool-proof. While you get your sauce going by sauteeing garlic and shallot in a little olive oil, roast your grape...</p>
+                                                    <Link to="https://minimalistbaker.com/creamy-vegan-garlic-pasta-with-roasted-tomatoes/">View Recipe <FontAwesomeIcon icon="arrow-right" /></Link>
                                                 </div>
                                             </div>
                                         </div>

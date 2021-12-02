@@ -90,7 +90,7 @@ const Home = () =>
                                     </div>
                                 </div>
                             </Link>
-                            <Link to="">
+                            <Link to="/health">
                                 <div className="third columns ports">
                                     <div className="port shadow hover">
                                         <FontAwesomeIcon icon="users" />
@@ -108,7 +108,7 @@ const Home = () =>
                                     </div>
                                 </div>
                             </Link>
-                            <Link to="">
+                            <Link to="/Careers">
                                 <div className="third columns ports">
                                     <div className="port shadow hover">
                                         <FontAwesomeIcon icon="viruses" />
@@ -117,7 +117,7 @@ const Home = () =>
                                     </div>
                                 </div>
                             </Link>
-                            <Link to="">
+                            <Link to="/Covid">
                                 <div className="third columns ports">
                                     <div className="port shadow hover">
                                         <FontAwesomeIcon icon="newspaper" />
@@ -142,7 +142,7 @@ const Home = () =>
                                     <div className="whyText">
                                         <h1>Why Now?</h1>
                                         <p>There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices. B-INCLUDED is that space and you can become part of that collective.<br /><br />B-INCLUDED is meant to address healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health and financial sustainability.</p>
-                                        <Link className="button learnmore" to="/">Learn More</Link>
+                                        <Link className="button learnmore" to="/WhyNow">Learn More</Link>
                                     </div>
                                 </div>
                                 <div className="six columns stats">

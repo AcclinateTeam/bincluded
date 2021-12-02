@@ -23,7 +23,7 @@ const Careers = () =>
                                 <div>
                                     
                                     <script async src="https://cse.google.com/cse.js?cx=e27038f2a37daf23e"></script>
-                                    <div className="gcse-search"></div>
+                                <div className="gcse-search"></div>
                                 </div>
                                 {/* <form>
                                     <input type="text" />
@@ -130,7 +130,7 @@ const Careers = () =>
                                         <div className="card">
                                             <img src="/images/UAB5.png" alt="" />
                                             <h2>Floor Care Tech</h2>
-                                            <p>Performs floor care, maintenance and finishing duties. Cares for a variety of surfaces including carpet, tile, stone, vinyl and wood. Uses professional cleaning products, equipment and...</p>
+                                            <p>Performs floor care, maintenance and finishing duties. Cares for a variety of surfaces including carpet, tile, stone, vinyl and wood. Uses professional cleaning products...</p>
                                             {/* <Link to="">More Details <FontAwesomeIcon icon="arrow-right" /></Link> */}
                                             <a href="https://uab.taleo.net/careersection/ext/jobdetail.ftl?job=T192294&tz=GMT-06%3A00&tzname=America%2FChicago">More Details <FontAwesomeIcon icon="arrow-right" /></a>
                                         </div>

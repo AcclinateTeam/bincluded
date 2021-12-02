@@ -98,7 +98,7 @@ const Footer = () =>
                             <h1>Main</h1>
                             <ul>
                                 <li>
-                                    <a href="/whynow">Why Now?</a>
+                                    <Link to="/whynow">Why Now?</Link>
                                 </li>
                                 <li>
                                     <a href="https://b-included.com/resources/">Blog</a>
@@ -112,16 +112,20 @@ const Footer = () =>
                             <h1>Resources</h1>
                             <ul>
                                 <li>
-                                    <a href="/health">Health</a>
+                                <Link to="/Health">Health</Link>
+                                    {/* <a href="/Health">Health</a> */}
                                 </li>
                                 <li>
-                                    <a href="/family">Family</a>
+                                <Link to="/Family">Family</Link>
+                                    {/* <a href="/Family">Family</a> */}
                                 </li>
                                 <li>
-                                    <a href="/careers">Careers</a>
+                                <Link to="/Careers">Careers</Link>
+                                    {/* <a href="/Careers">Careers</a> */}
                                 </li>
                                 <li>
-                                    <a href="/covid">COVID-19</a>
+                                <Link to="/Covid">Covid</Link>
+                                    {/* <a href="/Covid">COVID-19</a> */}
                                 </li>
                             </ul>
                         </div>
@@ -129,16 +133,18 @@ const Footer = () =>
                             <h1>Additional Links</h1>
                             <ul>
                                 <li>
-                                    <a href="/partners">Partners</a>
+                                <Link to="/Partners">Partners</Link>
+                                    {/* <a href="/Partners">Partners</a> */}
                                 </li>
                                 <li>
                                     <a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join the Community</a>
                                 </li>
                                 <li>
-                                    <a href="#">Events</a>
+                                    <a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Events</a>
                                 </li>
                                 <li>
-                                    <a href="/trials">Clinical Trials</a>
+                                <Link to="/Trials">Clinical Trials</Link>
+                                    {/* <a href="/Trials">Clinical Trials</a> */}
                                 </li>
                             </ul>
                         </div>

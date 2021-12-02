@@ -193,19 +193,19 @@ const Home = () =>
                                 <h1>The latest data related to Covid-19</h1>
                                 <div className="fourth columns">
                                     <div className="data border">
-                                        <h3>{kFormatter(actuals.cases)}</h3>
+                                        <h3>{actuals.cases}</h3>
                                         <p>Active Cases</p>
                                     </div>
                                 </div>
                                 <div className="fourth columns">
                                     <div className="data border">
-                                        <h3><span>{kFormatter(beds.capacity)}</span></h3>
+                                        <h3><span>{beds.capacity}</span></h3>
                                         <p>Beds Available</p>
                                     </div>
                                 </div>
                                 <div className="fourth columns">
                                     <div className="data border">
-                                        <h3>{kFormatter(metrics.infectionRate)}%</h3>
+                                        <h3>{metrics.infectionRate}%</h3>
                                         <p>Infection Rate</p>
                                     </div>
                                 </div>

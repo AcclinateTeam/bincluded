@@ -1,0 +1,47 @@
+/* #WHYNOW STYLES
+================================================== */
+// CONTENT STYLES
+.whyComp .heading {                         padding: 150px 0 250px; text-align: center; margin: 0 0 100px;}
+.whyComp .heading h1 {                      font-size: 64px; line-height: 64px; margin: 0 0 30px; color: #fff;}
+.whyComp .heading a {                       font-weight: 700; text-decoration: none; margin: 0 0 30px; color: #fff;}
+.whyComp .heading p {                       width: 400px; font-size: 16px; line-height: 24px; margin: 30px auto 30px; color: #fff;}
+
+// VIDEO PANEL STYLES
+.whyComp .videoPanel {                      display: block; margin: 0 0 100px;}
+.whyComp .vidPanes {                        display: block; padding: 60px;}
+.whyComp .vidPane {                         height: 600px; display: block; background-color: #cb3;}
+.whyComp .panes {                           display: block; margin: 0 0 60px; box-shadow: 0 0 24px 2px #ddd;}
+.whyComp .panes:last-child {                margin: 0;}
+.whyComp .pane {                            width: calc(100% - 60px); height: 140px; display: block; padding: 30px; background-color: #fff;}
+.whyComp .pane.end {                        margin: 0;}
+.whyComp .pane h1 {                         font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 24px; text-transform: none; margin: 0 0 30px; color: #0F0F10;}
+.whyComp .pane p {                          font-size: 16px; line-height: 24px; margin: 0 0 30px; color: #0F0F10;}
+
+// LEADERSHIP PANEL STYLES
+.leaders {                                  display: block; position: relative; overflow: hidden; padding: 0 0 100px;}
+.leaders .leadersbg {                       width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: 100%; background-repeat: no-repeat; background-position: 0 -200px;}
+.leaders .heading {                         padding: 90px 0 50px;}
+.leaders .heading h1 {                      font-size: 48px; line-height: 48px; text-align: center; margin: 0 0 30px; color: #0F0F10;}
+.leaders .heading h3 {                      width: 700px; font-family: 'Roboto', sans-serif; font-size: 32px; line-height: 40px; font-weight: 500; text-transform: none; text-align: center; margin: 0 auto 30px; color: #0F0F10;}
+.leaders .heading p {                       width: 500px; font-size: 16px; line-height: 24px; text-align: center; margin: 0 auto 30px; color: #0F0F10;}   
+.leaders .windows {                         display: block;}
+.leaders .window {                          display: block; margin: 0 30px 30px 0; padding: 30px; box-shadow: 0 0 24px 2px #ddd; background-color: #fff;}
+.leaders .window svg {                      font-size: 48px; line-height: 48px; margin: 0 0 75px; color: #0F0F10;}
+.leaders .window h1 {                       font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 24px; text-transform: none; margin: 0 0 10px; color: #0F0F10;}
+.leaders .window h6 {                       font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 24px; font-weight: 500; text-transform: none; margin: 0; color: #0F0F10;}
+.leaders .deck {                            margin: 0 -15px 0 0;}    
+.leaders .cards {                           display: block; }
+.leaders .card {                            display: block; margin: 0 30px 30px; margin: 0 0 30px; box-shadow: 0 0 24px 2px #ddd; background-color: #fff;}
+.leaders .image {                           width: 100%;}
+.leaders .text {                            padding: 30px;}   
+.leaders .card img {                        width: 100%;}
+.leaders .card h1 {                         font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 24px; text-transform: none; margin: 0 0 10px; color: #0F0F10;}
+.leaders .card p {                          font-size: 16px; line-height: 24px; font-weight: 400; margin: 0 0 30px; color: #0F0F10;}
+.leaders .card a {                          font-size: 16px; line-height: 16px; font-weight: 700; text-decoration: none; color: #050236;}
+
+// ORGANIZATIONS PANEL STYLES
+.orgs {                                     display: block; position: relative; overflow: hidden; margin: 0 0 100px;}
+.orgs .heading {                            padding: 90px 0 50px;}
+.orgs .heading h1 {                         font-size: 48px; line-height: 48px; text-align: center; margin: 0 0 30px; color: #0F0F10;}
+.orgs .heading h3 {                         width: 700px; font-family: 'Roboto', sans-serif; font-size: 32px; line-height: 40px; font-weight: 500; text-transform: none; text-align: center; margin: 0 auto 30px; color: #0F0F10;}
+.orgs .orgImg {                             width: 100%; height: 240px; display: block; margin: 0 0 30px; background-repeat: no-repeat; background-position: center;}

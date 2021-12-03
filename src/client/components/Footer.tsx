@@ -112,7 +112,6 @@ const Footer = () =>
                             <h1>Resources</h1>
                             <ul>
                                 <li>
-<<<<<<< HEAD
                                 <Link to="/Health">Health</Link>
                                     {/* <a href="/Health">Health</a> */}
                                 </li>
@@ -127,18 +126,6 @@ const Footer = () =>
                                 <li>
                                 <Link to="/Covid">Covid</Link>
                                     {/* <a href="/Covid">COVID-19</a> */}
-=======
-                                    <Link to="/health">Health</Link>
-                                </li>
-                                <li>
-                                    <Link to="/family">Family</Link>
-                                </li>
-                                <li>
-                                    <Link to="/careers">Careers</Link>
-                                </li>
-                                <li>
-                                    <Link to="/covid">COVID-19</Link>
->>>>>>> c6362c2e513140e833deebc2064e1dfd3a05e34c
                                 </li>
                             </ul>
                         </div>
@@ -146,29 +133,18 @@ const Footer = () =>
                             <h1>Additional Links</h1>
                             <ul>
                                 <li>
-<<<<<<< HEAD
                                 <Link to="/Partners">Partners</Link>
                                     {/* <a href="/Partners">Partners</a> */}
-=======
-                                    <Link to="/partners">Partners</Link>
->>>>>>> c6362c2e513140e833deebc2064e1dfd3a05e34c
                                 </li>
                                 <li>
                                     <a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join the Community</a>
                                 </li>
                                 <li>
-<<<<<<< HEAD
                                     <a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Events</a>
                                 </li>
                                 <li>
                                 <Link to="/Trials">Clinical Trials</Link>
                                     {/* <a href="/Trials">Clinical Trials</a> */}
-=======
-                                    <Link to="/">Events</Link>
-                                </li>
-                                <li>
-                                    <Link to="/trials">Clinical Trials</Link>
->>>>>>> c6362c2e513140e833deebc2064e1dfd3a05e34c
                                 </li>
                             </ul>
                         </div>

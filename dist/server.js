@@ -56,7 +56,11 @@ eval("\nvar __awaiter = (this && this.__awaiter) || function (thisArg, _argument
   \******************************/
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
+<<<<<<< HEAD
 eval("\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nvar express = __webpack_require__(/*! express */ \"express\");\nvar path = __webpack_require__(/*! path */ \"path\");\nvar routes_1 = __webpack_require__(/*! ./routes */ \"./src/server/routes/index.ts\");\nvar app = express();\napp.use(express.json());\napp.use(express.static('public'));\napp.use('/api', routes_1.default);\napp.use(\"*\", function (req, res) { return res.sendFile(path.join(__dirname, \"../public/index.html\")); });\nvar port = process.env.PORT || 3000;\napp.listen(port, function () { return console.log(\"Server listening on port: \" + port); });\n\n\n//# sourceURL=webpack://barebones-react-typescript-express/./src/server/server.ts?");
+=======
+eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar express = __webpack_require__(/*! express */ \"express\");\r\nvar path = __webpack_require__(/*! path */ \"path\");\r\nvar routes_1 = __webpack_require__(/*! ./routes */ \"./src/server/routes/index.ts\");\r\nvar app = express();\r\napp.use(express.json());\r\napp.use(express.static('public'));\r\napp.get('/api', routes_1.default);\r\napp.get(\"/*\", function (req, res) { return res.sendFile(path.join(__dirname, \"../public/index.html\")); });\r\nvar port = process.env.PORT || 3000;\r\napp.listen(port, function () { return console.log(\"Server listening on port: \" + port); });\r\n\n\n//# sourceURL=webpack://barebones-react-typescript-express/./src/server/server.ts?");
+>>>>>>> 63ef8289a59e6cf86a22265031b090e8ff54fe1a
 
 /***/ }),
 

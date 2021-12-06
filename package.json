@@ -9,6 +9,7 @@
     "dev": "npm-run-all --parallel watch:*",
     "start": "node dist/server.js"
   },
+  "proxy": "https://vallero.iad1-mysql-e2-6a.dreamhost.com",
   "keywords": [],
   "author": "",
   "license": "ISC",

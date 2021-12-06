@@ -1,4 +1,5 @@
 import * as mysql from 'mysql';
+import blogPosts from './blogPosts'
 import Recipes from './recipes';
 
 
@@ -11,14 +12,14 @@ export const connection = mysql.createConnection({
     password: process.env.DB_PASS
   });
 
-connection.connect(function(err) {
+connection.connect(function(err: any) {
     if(err) throw err;
     console.log('Connected to Database!');
 });
 
 export const Query = (query: string, values?: Array<string | number>) =>{
     return new Promise<Array<any>>((resolve, reject) => {
-        connection.query(query, values, (err, results) => {
+        connection.query(query, values, (err: any, results: any[] | PromiseLike<any[]>) => {
             if (err) return reject(err)
             return resolve(results)
         })
@@ -26,5 +27,6 @@ export const Query = (query: string, values?: Array<string | number>) =>{
 }
 
 export default {
-    Recipes
+    Recipes,
+    blogPosts
 }

@@ -7,6 +7,12 @@ import SubHeader from '../../components/SubHeader';
 
 const WhyNow = () =>
 {
+
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <>
             <SubHeader />
@@ -42,7 +48,7 @@ const WhyNow = () =>
                             <div className="seven columns">
                                 <div className="vidPanes">
                                     <div className="vidPane">
-                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-OTBTfdZUsg?start=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MXduRSowWmU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -67,6 +73,10 @@ const WhyNow = () =>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="ten columns">
+                                <h1>Why Now?</h1>
+                                <p>Why not now? There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices. B-Included is that space and you can become part of that collective</p>
                             </div>
                         </div>
                     </div>

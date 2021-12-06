@@ -7,6 +7,12 @@ import Header from '../../components/Header';
 
 const Partners = () =>
 {
+
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, []);
+    
     return (
         <>
             {/* SUB-HEADER COMPONENT IMPORT */}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -8,6 +8,16 @@ import Terminal from '../../components/Terminal';
 
 const Blog = () =>
 {
+    const [blogPosts, setBlogPosts] = useState([]);
+
+    useEffect(() =>
+    {
+        fetch('api/blogPosts/blog')
+            .then(res => res.json())
+            .then(blogPosts => setBlogPosts(blogPosts))
+    }, []);
+
+    console.log(blogPosts)
 
     return (
         <>
@@ -69,94 +79,22 @@ const Blog = () =>
                 <div className="container">
                     <div className="eight columns offset-by-one">
                         <div className="container panel">
-                            <div className="third columns">
-                                <div className="panes">
-                                    <div className="pane">
-                                        <div className="image" style={{ backgroundImage: `url(/images/angry.jpg)` }}></div>
-                                        <div className="text">
-                                            <h2>Feeling COVID rage?...</h2>
-                                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
-                                            <p> When COVID-19 vaccines rolled out to the general United States population in spring 2021, cases hit an all-time low in June, and a collective sigh of relief was breathed.</p>
 
-                                            <Link to="/blog/single">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                            {blogPosts.map((post, index) => (
+                                <div className="third columns" key={post.id}>
+                                    <div className="panes">
+                                        <div className="pane">
+                                            <div className="image" style={{ backgroundImage: `url(${post.imagelink})` }}></div>
+                                            <div className="text">
+                                                <h2>{post.title}</h2>
+                                                <p>{post.description}</p>
+                                                <Link to={`/blog/single/${post.id}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="third columns">
-                                <div className="panes">
-                                    <div className="pane">
-                                        <div className="image" style={{ backgroundImage: `url(/images/blog4.jpg)` }}></div>
-                                        <div className="text">
-                                            <h2>Three tips for maintaining skin health</h2>
-                                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
-                                            <p>Skin health is important because it performs many essential tasks for overall health. As the largest organ of the body, skin is a protectant from viruses... </p>
+                            ))}
 
-                                            <Link to="https://www.gohealthuc.com/library/tips-eating-healthier-2022">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            
-
-                            <div className="third columns">
-                                <div className="panes">
-                                    <div className="pane">
-                                        <div className="image" style={{ backgroundImage: `url(/images/blog5.jpg)` }}></div>
-                                        <div className="text">
-                                            <h2>Holiday Soul with Eric Essix</h2>
-                                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
-                                            <p>Eric Essix and Atlanta super group Five Men will return to the Alys Stephens Performing Arts Center stage by popular demand for an encore Holiday Soul...</p>
-
-                                            <Link to="https://www.gohealthuc.com/library/tips-eating-healthier-2022">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="third columns">
-                                <div className="panes">
-                                    <div className="pane">
-                                        <div className="image" style={{ backgroundImage: `url(/images/healthy.jpg)` }}></div>
-                                        <div className="text">
-                                            <h2>Eating Healthy in 2022</h2>
-                                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
-                                            <p>With more time spent at home in 2020 and 2021, there’s been a rise in baking, cooking (and eating) across the country. As a new year begins, it’s time to...</p>
-
-                                            <Link to="https://www.gohealthuc.com/library/tips-eating-healthier-2022">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="third columns">
-                                <div className="panes">
-                                    <div className="pane">
-                                        <div className="image" style={{ backgroundImage: `url(/images/yellow.jpg)` }}></div>
-                                        <div className="text">
-                                            <h2>Staying Fit on a Budget</h2>
-                                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
-                                            <p>Want to get in shape? Don't worry—it doesn't have to cost you half your paycheck. Whether you’re trying to get bigger biceps or you just want to be able to...</p>
-                                            <Link to="https://www.discover.com/online-banking/banking-topics/tips-for-getting-fit-on-a-budget/">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="third columns">
-                                <div className="panes">
-                                    <div className="pane">
-                                        <div className="image" style={{ backgroundImage: `url(/images/yoga.jpg)` }}></div>
-                                        <div className="text">
-                                            <h2>3 Yoga Tips For You</h2>
-                                            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p> */}
-                                            <p>Yoga is a practice that can include everyone, with modifications available for most poses. It also can help you to notice what your mind and body are telling...</p>
-
-
-                                            <Link to="https://health.clevelandclinic.org/considering-yoga-3-tips-for-finding-the-right-class-for-you/">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

@@ -9,6 +9,13 @@ import SubHeader from '../../components/SubHeader';
 
 const RecipeSearch: React.FC<SearchProps> = (props) =>
 {
+
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, []);
+
+    
     // document.documentElement.style.setProperty("--main-color", "#ffffff");
     // document.documentElement.style.setProperty("--second-color", "#ffffff");
     // document.documentElement.style.setProperty("--navtext-color", "#ffffff");

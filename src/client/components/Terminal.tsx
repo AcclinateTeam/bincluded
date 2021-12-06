@@ -10,7 +10,7 @@ import Tele from './subComponents/Tele';
 
 const Terminal = () =>
 {
-
+    
     const [mental, setMental] = useState(false);
     const [physical, setPhysical] = useState(false);
     const [tele, setTele] = useState(false);

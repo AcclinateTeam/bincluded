@@ -94,13 +94,14 @@ body {				min-height: 100%; position: relative;}
 .addRes ul.terminal li:hover {          text-decoration: none; border-bottom: 3px solid #050236; color: #050236; background-color: #cecece;}
 .addRes ul.terminal li.active a {       text-decoration: none; color: #050236;}
 .addRes .panel {                        margin: 30px -20px;}
+.addres .panel a {                      text-decoration: none;}
 .addRes .panes {                        padding: 20px;}
 .addRes .panes:hover {                  transform: scale(1.02);}
 .addRes .pane {                         padding: 30px; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
-.addRes .pane .image {                  width: 116px; height: 86px; position: relative; margin: 0 0 30px; box-shadow: 0 0 24px 2px #dfdfdf; background-color: #fff;}
+.addRes .pane .image {                  width: 116px; height: 86px; position: relative; margin: 0 0 30px; box-shadow: 0 0 24px 2px #dfdfdf; background-size: 70%; background-repeat: no-repeat; background-position: center;}
 .addRes .pane .image img {              padding: 10px; width: 100%; height: 100%; object-fit: contain;}
 .addRes .pane h2 {                      font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; text-transform: none; padding: 0; margin: 0 0 20px;}
-.addRes .pane p {                       min-height: 44px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500;}
+.addRes .pane p {                       display: none; visibility: hidden; opacity: 0; min-height: 44px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500;}
 .addRes .button {                       background-color: #CA1D48;}
 .addRes .button:hover {                 background-color: #EEC31A;}
 
@@ -139,16 +140,16 @@ body {				min-height: 100%; position: relative;}
 .related .heading {                     text-align: center;}
 .related .heading h1 {                  line-height: 50px; margin: 50px 0 70px;} 
 .related .panel {                       margin: 0 -20px;} 
-.related .articles {                    padding: 0 20px 20px; display: block;} 
-.related .article {                     margin: 0 0 45px; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
-// .related .articles:hover {               opacity: 0;}
+.related .articles {                    padding: 0 20px; display: block;} 
+.related .article {                     margin: 0 0 40px; box-shadow: 0 0 24px 2px #cecece;}
+.related .articles:hover {               transform: scale(1.02);}
 .related .article .image {              width: 100%; height: 250px; background-repeat: no-repeat; background-size: cover;}
 .related .article .text {               padding: 20px;} 
-.related .article .text h2 {             font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; font-weight: 700; text-transform: none; margin: 0 0 20px;}
-.related .article .text p {              font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px;}
+.related .article .text h2 {             font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; display: block; font-weight: 700; min-height: 40px; overflow: hidden; text-transform: none; margin: 0 0 20px;}
+.related .article .text p {              font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; min-height: 66px; margin: 0 0 20px;}
 .related .article .text a {              font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: #050236;}
 .related .article .text svg {           color: #050236;}
-.related .buttonwrap {                  display: block; margin: 0 0 50px;}
+.related .buttonwrap {                  display: block; margin: 20px 0 50px;}
 .related .button {                       background-color: #CA1D48;}
 .related .button:hover {                 background-color: #EEC31A;}
 
@@ -208,4 +209,4 @@ h5 { font-size: 14px; line-height: 14px;}
 
 /* #GLOBAL TRANSITION STYLES
 ================================================== */
-ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}

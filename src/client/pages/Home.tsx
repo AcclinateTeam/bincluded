@@ -8,6 +8,10 @@ import Header from '../components/Header';
 
 const Home = () =>
 {
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, [])
 
     const [tracker, setTracker] = useState<any>([]);
     const [actuals, setActuals] = useState<any>([]);
@@ -53,7 +57,7 @@ const Home = () =>
                                         <h1>Stand Up For Your Health</h1>
                                         <p>
                                             #BIncluded is a movement with a mission to build a community of individuals ready to take control of their health and future.
-                                            
+
                                         </p>
                                     </div>
                                     <div className="callbutton">
@@ -242,6 +246,7 @@ const Home = () =>
                         <div className="ten columns">
                             <div className="eight columns offset-by-one">
                                 <h1>The latest data related to Covid-19</h1>
+                                <h2>for the Metro-Birmingham Area</h2>
                                 <div className="fourth columns">
                                     <div className="data border">
                                         <CountUp
@@ -250,7 +255,6 @@ const Home = () =>
                                             separator=","
                                             duration={3}
                                             prefix=""
-                                            suffix="%"
                                         >
                                             {({ countUpRef, start }) => (
                                                 <h3>

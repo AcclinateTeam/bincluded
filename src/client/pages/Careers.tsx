@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 /* COMPONENT IMPORTS */
@@ -6,6 +6,12 @@ import SubHeader from '../components/SubHeader';
 
 const Careers = () =>
 {
+
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <>
             {/* SUB-HEADER COMPONENT IMPORT */}

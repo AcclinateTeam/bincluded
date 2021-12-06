@@ -6,6 +6,12 @@ import SubHeader from '../../components/SubHeader';
 
 const SingleRecipe: React.FC<RecipeProps> = (props) =>
 {
+
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, []);
+    
     const { id } = useParams();
 
     const [recipe, setRecipe] = useState<any>([{}]);

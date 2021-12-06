@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
@@ -7,6 +7,12 @@ import Header from '../components/Header';
 
 const Covid = () =>
 {
+
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <>
             {/* SUB-HEADER COMPONENT IMPORT */}

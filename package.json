@@ -2,12 +2,13 @@
   "name": "barebones-react-typescript-express",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.js",
+  "main": "app.js",
   "scripts": {
-    "watch:build": "webpack -w",
-    "watch:server": "nodemon dist/server.js",
+    "build": "webpack",
     "dev": "npm-run-all --parallel watch:*",
-    "start": "node dist/server.js"
+    "watch:build": "webpack -w",
+    "watch:server": "nodemon app.js",
+    "start": "node app.js"
   },
   "proxy": "https://vallero.iad1-mysql-e2-6a.dreamhost.com",
   "keywords": [],

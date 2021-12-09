@@ -1,27 +1,3 @@
-// // First override some or all individual color variables
-// $primary: #25408f;
-// $secondary: #8f5325;
-// $success: #3e8d63;
-// $info: #13101c;
-// $warning: #945707;
-// $danger: #d62518;
-// $light: #f8f9fa;
-// $dark: #343a40;
-
-// // Then add them to your custom theme-colors map, together with any additional colors you might need
-// $theme-colors: (
-// 	primary: $primary,
-// 	secondary: $secondary,
-// 	success: $success,
-// 	info: $info,
-// 	warning: $warning,
-// 	danger: $danger,
-// 	light: $light,
-// 	dark: $dark,
-// 	// add any additional color below
-// );
-// @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
-
 /* #RESETS & BASICS
 ================================================== */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, form, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {

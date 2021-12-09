@@ -1,24 +1,11 @@
 
-/*
-* Skeleton V1.2
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 6/20/2012
-*/
-
-
-/* Table of Contents
-==================================================
-    #Base 960 Grid
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
 
 
 
+// .whyComp .break h1 {                    text-align: center; color: #0F0F10;}
+
+
+<<<<<<< HEAD
 /* #Base 960 Grid
 ================================================== */
 /* For Mobile Phones */
@@ -261,3 +248,13 @@ or wrap each row of columns in a <div class="row"> */
   width: 0;
   height: 0;
 }
+=======
+@media only screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+
+
+    .callimage img {            width: 50%; background-color: #f09;  display: block;}
+    .whyComp .break h1 {                    text-align: center; color: #0F0F10;}
+
+
+}
+>>>>>>> eb7a1138a6b3e4c13ac0dd9929688dd9d5b1ba45

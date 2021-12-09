@@ -48,7 +48,38 @@ const Home = () =>
 
             {/* JUMBOTRON COMPONENT */}
             <section>
-                <div className="callout" style={{ backgroundImage: "url(/images/callback.png)" }}>
+                <div className="calloutbg">
+                    <svg viewBox="0 0 1440 778" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1244.23 447.955L1393.88 407.283L1389.45 452.089L1240.56 490.845L1244.23 447.955Z" fill="#EEC31A" />
+                        <path d="M1397.55 364.393L1547.2 323.721L1542.77 368.527L1393.88 407.283L1397.55 364.393Z" fill="#287FDD" />
+                        <path d="M1389.45 452.088L1539.59 411.482L1535.16 456.288L1386.27 495.044L1389.45 452.088Z" fill="#ECECEC" />
+                        <path d="M1022.07 385.467L1148.81 296.106L1159.96 339.73L1033.27 427.029L1022.07 385.467Z" fill="#CA1D48" />
+                        <path d="M1133.61 264.545L1260.35 178.502L1274 223.5L1144.81 306.108L1133.61 264.545Z" fill="#287FDD" />
+                        <path d="M1159.96 339.728L1287.19 250.26L1298.33 293.883L1171.65 381.183L1159.96 339.728Z" fill="#F8F8F8" />
+                        <path d="M0 0H934.5L841.5 587L0 728V0Z" fill="#287FDD" />
+                        <path d="M0 0L850.5 -0.5L841.5 587L0 620V0Z" fill="#CA1D48" />
+                        <path d="M0 0H796L841.499 587L0 690.5V0Z" fill="#050236" />
+                    </svg>
+                </div>
+                <div className="callout">
+                    <div className="content">
+                        <div className="calltext">
+                            <h1>Stand Up For Your Health</h1>
+                            <p>
+                                #BIncluded is a movement with a mission to build a community of individuals ready to take control of their health and future.
+
+                            </p>
+                        </div>
+                        <div className="callbutton">
+                            <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
+                            <Link className="button learnmore" to="/whynow">Learn More</Link>
+                        </div>
+                    </div>
+                    <div className="callimage">
+                        <img className="card-img" src="/images/callhome.png" alt="Callout Image Placeholder" />
+                    </div>
+                </div>
+                {/* <div className="callout" style={{ backgroundImage: "url(/images/callback.png)" }}>
                     <div className="jumbotron">
                         <div className="container">
                             <div className="eight columns offset-by-one">
@@ -74,7 +105,7 @@ const Home = () =>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
             </section>
 
             {/* PORTAL COMPONENT */}
@@ -88,7 +119,7 @@ const Home = () =>
                                     <p>These resources are all located within one area for ease of use. </p>
                                 </div>
                             </div>
-                            <Link to="/Health">
+                            <Link to="/health">
                                 <div className="third columns ports">
                                     <div className="port shadow hover">
                                         <FontAwesomeIcon icon="user-md" />
@@ -97,7 +128,7 @@ const Home = () =>
                                     </div>
                                 </div>
                             </Link>
-                            <Link to="/Family">
+                            <Link to="/family">
                                 <div className="third columns ports">
                                     <div className="port shadow hover">
                                         <FontAwesomeIcon icon="users" />
@@ -106,7 +137,7 @@ const Home = () =>
                                     </div>
                                 </div>
                             </Link>
-                            <Link to="/Careers">
+                            <Link to="/careers">
                                 <div className="third columns ports">
                                     <div className="port shadow hover">
                                         <FontAwesomeIcon icon="hard-hat" />
@@ -115,7 +146,7 @@ const Home = () =>
                                     </div>
                                 </div>
                             </Link>
-                            <Link to="/Covid">
+                            <Link to="/covid">
                                 <div className="third columns ports">
                                     <div className="port shadow hover">
                                         <FontAwesomeIcon icon="viruses" />
@@ -124,11 +155,11 @@ const Home = () =>
                                     </div>
                                 </div>
                             </Link>
-                            <Link to="/Home">
+                            <Link to="/blog">
                                 <div className="third columns ports">
                                     <div className="port shadow hover">
                                         <FontAwesomeIcon icon="newspaper" />
-                                        <h4>Events</h4>
+                                        <h4>Blog</h4>
                                         <p>Share your story! We’d love to feature you.</p>
                                     </div>
                                 </div>

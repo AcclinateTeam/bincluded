@@ -1,0 +1,126 @@
+/*For screens between 320px and 768px*/
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    ul.log li {font-size: 12px;}
+
+    .calltext h1 {font-size: 67px;}
+        
+    .calltext p {
+        width: 100%; 
+        font-size: 20px; 
+        color: #EEC31A; 
+    }
+    .portal .ports .port h1 {
+        font-size: 43px;
+        
+    }
+
+    .button {
+        display: none
+    }
+
+    .container.five.columns {width: 50%;}
+
+    .foot .sponsors img {
+        height: 60px;
+        display: inline-block;
+        z-index: 99;
+        margin: 0 40px;
+    }
+
+    ul.nav li a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .header.wrapper { 
+        padding: 50px 10px;
+        background-color: #050236;
+    }
+
+    .call .text p {
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 300;
+        width: 50%;
+        margin: 0 0 30px;
+        color: #eec31a;
+    }
+    /*Stand Up For Your Health-homepage*/
+    .callout {
+        width: 131%;
+    }
+
+    ul.nav {
+        margin: 5px 46px;
+    }
+
+    .callimage img {
+        width: 50%
+       
+    }
+    
+    .container .five.columns {
+        width: 90%;
+    }
+    
+    ul.log li a {
+        
+        padding: 15px 3px;
+        
+    }
+
+    .portal .ports .port p {
+        font-size: 20px;
+        
+    }
+
+    .row {
+        background-color: #050236
+    }
+    .featStory .story .text h1 {
+        font-size: 50px;
+    }
+
+    .covid19 .phrase .face .overlay h1 {
+        font-size: 47px;
+
+    }
+    .call .text p {
+        color: #eec31a;
+    }
+    .call .text h1 {
+        color: #eec31a;
+        font-size: 67px;
+    }
+    .callout .content .calltext h1 {
+        font-size: 108px;
+        color: #eec31a;
+    }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

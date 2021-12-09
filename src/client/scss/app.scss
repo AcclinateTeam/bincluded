@@ -28,6 +28,7 @@ body {				min-height: 100%; position: relative;}
 @import './mobile.scss';
 @import './blog.scss';
 @import './xsmallscreen.scss';
+@import './smallscreen.scss';
 
 
 /* FONT IMPORT */
@@ -193,7 +194,10 @@ ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton 
 // /*For screens smaller than 320px*/
 
 @media only screen and (max-width:320px) {
-    .call .text h1 {font-size: 57px; color:#EEC31A;}
+    .call .text h1 {
+        font-size: 57px;
+        color:#EEC31A;
+    }
 
     .content .featured .face img.health {
         height: 82px;
@@ -210,5 +214,20 @@ ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton 
 
     .featStory .story .text ul.featTags {
         top: 14px;
+    }
+   
+}
+
+@media only screen and (min-width:320px) and (max-width:768) {
+    .call .text h1 {
+       color: #eec31a;
+       font-size: 60px;
+     
+    }
+    .call .text p {
+        color: #eec31a;
+    }
+    .content .featured .face img.health {
+        height: 82px;
     }
 }

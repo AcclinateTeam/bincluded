@@ -35,7 +35,7 @@ const Footer = () =>
                                     <img className="uab" src="/images/uab2.png" alt="" />
                                 </div>
                                 <div className="buttonwrap">
-                                    <Link className="content button solid" to="/partners">View Partners</Link>
+                                    <Link className="content button partner" to="/partners">View Partners</Link>
                                 </div>
                             </div>
                         </div>
@@ -123,19 +123,15 @@ const Footer = () =>
                             <ul>
                                 <li>
                                     <Link to="/Health">Health</Link>
-                                    {/* <a href="/Health">Health</a> */}
                                 </li>
                                 <li>
                                     <Link to="/Family">Family</Link>
-                                    {/* <a href="/Family">Family</a> */}
                                 </li>
                                 <li>
                                     <Link to="/Careers">Careers</Link>
-                                    {/* <a href="/Careers">Careers</a> */}
                                 </li>
                                 <li>
                                     <Link to="/Covid">Covid</Link>
-                                    {/* <a href="/Covid">COVID-19</a> */}
                                 </li>
                             </ul>
                         </div>
@@ -150,7 +146,7 @@ const Footer = () =>
                                     <a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join the Community</a>
                                 </li>
                                 <li>
-                                    <a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Events</a>
+                                    <Link to="/blog">Blog</Link>
                                 </li>
                                 <li>
                                     <Link to="/Trials">Clinical Trials</Link>
@@ -159,39 +155,43 @@ const Footer = () =>
                             </ul>
                         </div>
                         <div className="two columns connect">
-                            <h1>Stay Connected</h1>
-                            <p>Get news, resources and updates delivered to your inbox.</p>
-                            {/* <a href="">Sign Up</a> */}
+                            <h1>Report a Bug</h1>
+                            <p>If you happen to stumble upon any bugs, please let us know!</p>
+                            <a className="button" href="https://jdsb9zx9r21.typeform.com/to/CNJivpjr">
+                                Report a Bug
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div className="container footEnd">
+            <div className="container">
                 <div className="seven columns offset-by-one-half">
-                    <ul>
-                        <li>
-                            <Link className="iconFace" to={{ pathname: "https://facebook.com" }} target="_blank">
-                                {/* <FontAwesomeIcon icon={['fab', 'facebook-f']} /> */}
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="iconTwit" to={{ pathname: "https://twitter.com" }} target="_blank">
-                                {/* <FontAwesomeIcon icon={['fab', 'twitter']} /> */}
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="iconTube" to={{ pathname: "https://instgram.com" }} target="_blank">
-                                {/* <FontAwesomeIcon icon={['fab', 'instagram']} /> */}
-                            </Link>
-                        </li>
-                        <li>
-                            <Link className="iconLink" to={{ pathname: "https://linkedin.com" }} target="_blank">
-                                {/* <FontAwesomeIcon icon={['fas', 'rss']} /> */}
-                            </Link>
-                        </li>
-                    </ul>
-                    <p>© 2021 #BINCLUDED | <Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms &#38; Conditions</Link> | Data Breach Response Policy</p>
+                    <div className="footend">
+                        <ul>
+                            <li>
+                                <Link className="iconFace" to={{ pathname: "https://facebook.com" }} target="_blank">
+                                    <FontAwesomeIcon icon={['fab', 'facebook-f']} /> FaceBook
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="iconTwit" to={{ pathname: "https://twitter.com" }} target="_blank">
+                                    <FontAwesomeIcon icon={['fab', 'twitter']} /> Twitter
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="iconTube" to={{ pathname: "https://instgram.com" }} target="_blank">
+                                    <FontAwesomeIcon icon={['fab', 'instagram']} /> Instagram
+                                </Link>
+                            </li>
+                            <li>
+                                <Link className="iconLink" to={{ pathname: "https://linkedin.com" }} target="_blank">
+                                    <FontAwesomeIcon icon={['fab', 'linkedin']} /> LinkedIn
+                                </Link>
+                            </li>
+                        </ul>
+                        <p>© 2021 #BINCLUDED | <Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms &#38; Conditions</Link> | Data Breach Response Policy</p>
+                    </div>
                 </div>
             </div>
 

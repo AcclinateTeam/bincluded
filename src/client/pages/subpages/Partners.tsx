@@ -482,7 +482,7 @@ const Partners = () =>
                                         <p>We want you to be a part of the health conversation.</p>
                                     </div>
                                     <div className="three columns">
-                                        <a href="https://nowincluded.com/explore/">Partner With Us</a>
+                                        <a href="https://jdsb9zx9r21.typeform.com/B-INCLUDED">Partner With Us</a>
                                     </div>
                                 </div>
                             </div>

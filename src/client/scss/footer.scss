@@ -5,3 +5,32 @@ footer {                            background-color: #050236;}
 
 /* FOOTER HOVER STYLES */
 .foot a.button:hover {              background-color: #050236;}
+
+// SPONSOR STYLES
+.foot .sponsors {                           width: 100%; padding: 50px 0; z-index: 9; background-color: #EEC31A;}
+.foot .sponsors h1 {                        margin: 0 0 50px; text-align: center;}
+.foot .sponsors .images {                   display: block; margin: 0 0 50px; text-align: center;}
+.foot .sponsors img {                       height: 93px; display: inline-block; z-index: 99; margin: 0 40px;}
+
+.footer {                                   padding: 65px 0 80px; background-color: #050236;}
+.footLogo {                                 margin: 0 0 30px;}
+.footer img {                               height: 146px; margin: 0 0 20px;}
+.footer p {                                 font-size: 12px; margin: 0 0 10px; text-align: left; color: #fff;}
+.footLogo p {                               padding: 0 40px 0 0;}
+.footer svg {                               display: inline-block; font-size: 12px; margin: 0 6px 0 0; color: #fff;}
+.footer h1 {                                font-size: 22px; margin: 0 0 10px; color: #fff;}
+.footer .social svg {                       display: inline-block; font-size: 28px; margin: 12px 12px 0 0;}
+.footer .social {                           margin: 0 0 40px;}
+.footer .social li {                        font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 28px; font-weight: 500; color: #fff; }
+.footer .social li a {                      text-decoration: none; color: #fff;}
+.footer .connect p {                        width: 275px; font-family: 'Roboto', sans-serif; margin: 0 0 33px; font-size: 16px; line-height: 24px; font-weight: 500; color: #fff;}
+.footer .connect a {                        font-size: 14px; font-weight: 500; padding: 15px 20px; text-decoration: none; text-transform: uppercase; color: #fff; background-color: #ca1d48;}
+.footer .connect a:hover {                  background-color: #F3E454; color: #0F0F10;}
+
+.footEnd {                  padding: 13px 0; border-top: 1px solid #fff; }
+.footEnd p {                font-size: 13px; font-weight: 500; display: inline-block; height: 12px; padding: 10px 0 10px; color: #fff;}
+.footend ul {               float: right;}
+.footend ul li {            padding: 8px 0 0; margin: 0 0 0 20px; display: inline-block;}
+.footend ul li svg {        font-size: 13px;}
+.footend ul li a {          font-size: 13px; color: #fff; text-decoration: none;}
+.footEnd p a {              text-decoration: none; color: #fff;}

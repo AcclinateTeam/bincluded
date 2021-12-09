@@ -8,6 +8,11 @@ import Terminal from '../../components/Terminal';
 
 const Blog = () =>
 {
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, []);
+    
     const [blogPosts, setBlogPosts] = useState([]);
 
     useEffect(() =>

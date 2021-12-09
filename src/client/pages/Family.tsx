@@ -31,13 +31,13 @@ const Family = () =>
                                     <p>#B-Included provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
                                 </div>
                                 <div className="callbutton">
-                                    <Link className="button signup" to="/">Join The Community</Link>
+                                    <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
                                     <Link className="button learnmore" to="/">View Resources</Link>
                                 </div>
                             </div>
                             <div className="four columns">
                                 <div className="image">
-                                    <img className="card-img" src="/images/healthcall.png" />
+                                    <img className="card-img" src="/images/callfamily.png" />
                                 </div>
                             </div>
                         </div>

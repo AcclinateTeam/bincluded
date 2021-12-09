@@ -37,7 +37,7 @@ const SubHeader = () =>
                             <div className="login">
                                 <ul className="log">
                                     <li className="signup"><a href="">Log In</a></li>
-                                    <li className="logins"><a href="">Join the Community</a></li>
+                                    <li className="logins"><a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a></li>
                                 </ul>
                             </div>
                         </div>

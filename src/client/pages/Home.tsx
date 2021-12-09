@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import CountUp, { useCountUp } from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
@@ -186,17 +187,13 @@ const Home = () =>
                                 <div className="six columns stats">
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <CountUp
-                                                start={0}
-                                                end={43}
-                                                duration={3}
-                                                prefix=""
-                                                suffix="%"
-                                            >
+                                            <CountUp start={0} end={43} duration={3} suffix="%" redraw={true}>
                                                 {({ countUpRef, start }) => (
-                                                    <h3>
-                                                        <span ref={countUpRef} onMouseOver={start} />
-                                                    </h3>
+                                                    <VisibilitySensor onChange={start} delayedCall>
+                                                        <h3>
+                                                            <span ref={countUpRef} />
+                                                        </h3>
+                                                    </VisibilitySensor>
                                                 )}
                                             </CountUp>
                                             <p>of Jefferson County's population is Black or African-American</p>
@@ -204,17 +201,13 @@ const Home = () =>
                                     </div>
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <CountUp
-                                                start={0}
-                                                end={16}
-                                                duration={3}
-                                                prefix=""
-                                                suffix="%"
-                                            >
+                                            <CountUp start={0} end={16} duration={3} suffix="%" redraw={true}>
                                                 {({ countUpRef, start }) => (
-                                                    <h3>
-                                                        <span ref={countUpRef} onMouseOver={start} />
-                                                    </h3>
+                                                    <VisibilitySensor onChange={start} delayedCall>
+                                                        <h3>
+                                                            <span ref={countUpRef} />
+                                                        </h3>
+                                                    </VisibilitySensor>
                                                 )}
                                             </CountUp>
                                             <p>of Black Residents in Jefferson County live with a disability</p>
@@ -222,17 +215,13 @@ const Home = () =>
                                     </div>
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <CountUp
-                                                start={0}
-                                                end={43}
-                                                duration={3}
-                                                prefix=""
-                                                suffix="%"
-                                            >
+                                            <CountUp start={0} end={43} duration={3} prefix="" suffix="%" >
                                                 {({ countUpRef, start }) => (
-                                                    <h3>
-                                                        <span ref={countUpRef} onMouseOver={start} />
-                                                    </h3>
+                                                    <VisibilitySensor onChange={start} delayedCall>
+                                                        <h3>
+                                                            <span ref={countUpRef} />
+                                                        </h3>
+                                                    </VisibilitySensor>
                                                 )}
                                             </CountUp>
                                             <p>of the county's residents who live in impoverished or low-income communities are Black</p>
@@ -240,17 +229,13 @@ const Home = () =>
                                     </div>
                                     <div className="five columns stat">
                                         <div className="point">
-                                            <CountUp
-                                                start={0}
-                                                end={15}
-                                                duration={3}
-                                                prefix=""
-                                                suffix="%"
-                                            >
+                                            <CountUp start={0} end={15} duration={3} prefix="" suffix="%" >
                                                 {({ countUpRef, start }) => (
-                                                    <h3>
-                                                        <span style={{ width: '100px' }} ref={countUpRef} onMouseOver={start} />
-                                                    </h3>
+                                                    <VisibilitySensor onChange={start} delayedCall>
+                                                        <h3>
+                                                            <span ref={countUpRef} />
+                                                        </h3>
+                                                    </VisibilitySensor>
                                                 )}
                                             </CountUp>
                                             <p>of Jefferson County's Black residents are more likely to die from all causes</p>
@@ -280,17 +265,13 @@ const Home = () =>
                                 <h2>for the Metro-Birmingham Area</h2>
                                 <div className="fourth columns">
                                     <div className="data border">
-                                        <CountUp
-                                            start={0}
-                                            end={actuals.cases}
-                                            separator=","
-                                            duration={3}
-                                            prefix=""
-                                        >
+                                        <CountUp start={0} end={actuals.cases} separator="," duration={3} redraw={true} >
                                             {({ countUpRef, start }) => (
-                                                <h3>
-                                                    <span ref={countUpRef} onMouseOver={start} />
-                                                </h3>
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <h3>
+                                                        <span ref={countUpRef} />
+                                                    </h3>
+                                                </VisibilitySensor>
                                             )}
                                         </CountUp>
                                         <p>Active Cases</p>
@@ -298,18 +279,13 @@ const Home = () =>
                                 </div>
                                 <div className="fourth columns">
                                     <div className="data border">
-                                        <CountUp
-                                            start={0}
-                                            end={beds.capacity}
-                                            separator=","
-                                            duration={3}
-                                            prefix=""
-                                            suffix=""
-                                        >
+                                        <CountUp start={0} end={beds.capacity} separator="," duration={3} redraw={true} >
                                             {({ countUpRef, start }) => (
-                                                <h3>
-                                                    <span ref={countUpRef} onMouseOver={start} />
-                                                </h3>
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <h3>
+                                                        <span ref={countUpRef} />
+                                                    </h3>
+                                                </VisibilitySensor>
                                             )}
                                         </CountUp>
                                         <p>Beds Available</p>
@@ -317,20 +293,13 @@ const Home = () =>
                                 </div>
                                 <div className="fourth columns">
                                     <div className="data border">
-                                        <CountUp
-                                            start={-0.9999}
-                                            end={metrics.infectionRate}
-                                            separator=","
-                                            decimals={3}
-                                            decimal="."
-                                            duration={3}
-                                            prefix=""
-                                            suffix=""
-                                        >
+                                        <CountUp start={-0.9999} end={metrics.infectionRate} separator="," decimals={3} decimal="." duration={3} redraw={true} >
                                             {({ countUpRef, start }) => (
-                                                <h3>
-                                                    <span ref={countUpRef} onMouseOver={start} />
-                                                </h3>
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <h3>
+                                                        <span ref={countUpRef} />
+                                                    </h3>
+                                                </VisibilitySensor>
                                             )}
                                         </CountUp>
                                         <p>Infection Rate</p>
@@ -338,20 +307,13 @@ const Home = () =>
                                 </div>
                                 <div className="fourth columns">
                                     <div className="data">
-                                        <CountUp
-                                            start={-0.9999}
-                                            end={metrics.vaccinationsInitiatedRatio}
-                                            separator=","
-                                            decimals={3}
-                                            decimal="."
-                                            duration={3}
-                                            prefix=""
-                                            suffix="%"
-                                        >
+                                        <CountUp start={-0.9999} end={metrics.vaccinationsInitiatedRatio} separator="," decimals={3} decimal="." duration={3} suffix="%" redraw={true} >
                                             {({ countUpRef, start }) => (
-                                                <h3>
-                                                    <span ref={countUpRef} onMouseOver={start} />
-                                                </h3>
+                                                <VisibilitySensor onChange={start} delayedCall>
+                                                    <h3>
+                                                        <span ref={countUpRef} />
+                                                    </h3>
+                                                </VisibilitySensor>
                                             )}
                                         </CountUp>
                                         <p>Vaccines Initiated Ratio</p>

@@ -30,8 +30,8 @@ const Covid = () =>
                                     <p>B-Included provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
                                 </div>
                                 <div className="callbutton">
-                                    <Link className="button signup" to="/">Join The Community</Link>
-                                    <Link className="button learnmore" to="/">View Resources</Link>
+                                    <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
+                                    <a className="button learnmore" href="https://jdsb9zx9r21.typeform.com/to/m2w4i2Ju">Share Your Covid Story</a>
                                 </div>
                             </div>
                             <div className="four columns">
@@ -126,6 +126,25 @@ const Covid = () =>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="container partnerUp">
+                    <div className="ten columns">
+                        <div className="content">
+                            <div className="container">
+                                <div className="eight columns offset-by-one">
+                                    <div className="seven columns">
+                                        <p>We want you to be a part of the health conversation.</p>
+                                    </div>
+                                    <div className="three columns">
+                                        <a href="https://jdsb9zx9r21.typeform.com/to/m2w4i2Ju">Share Your Covid Story</a>
                                     </div>
                                 </div>
                             </div>

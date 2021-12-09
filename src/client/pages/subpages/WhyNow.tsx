@@ -34,7 +34,7 @@ const WhyNow = () =>
                     <div className="eight columns offset-by-one">
                         <div className="heading">
                             <h1>Why Now?</h1>
-                            <Link to="https://nowincluded.com/explore/">Click Here to Read the Blog <FontAwesomeIcon icon="arrow-right" /></Link>
+                            <Link to="/blog">Click Here to Read the Blog <FontAwesomeIcon icon="arrow-right" /></Link>
                             <p>B-Included is a movement with a mission to build a community of individuals ready to take control of their health and future.</p>
                         </div>
                     </div>
@@ -77,7 +77,7 @@ const WhyNow = () =>
                             <div className="ten columns">
                                 <div className="break">
                                     <h1>Why Now?</h1>
-                                    <p>Why not now? There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices. B-Included is that space and you can become part of that collective</p>
+                                    <p><span>Why not now?</span> There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices. B-Included is that space and you can become part of that collective</p>
                                 </div>
                             </div>
                         </div>
@@ -97,32 +97,70 @@ const WhyNow = () =>
                         <div className="six columns windowSeal">
                             <div className="container">
                                 <div className="five columns windows">
-                                    <div className="window">
-                                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
-                                        <h1>Melanie Bridgeforth</h1>
-                                        <h6>Women's Fund of Greater Birmingham</h6>
-                                    </div>
+                                    <a href="https://www.linkedin.com/in/jwcarpenter/">
+                                        <div className="window">
+                                            <div className="image">
+                                                <img src="/images/leaders/jw.jpg" alt="" />
+                                            </div>
+                                            <h1>J. W. Carpenter</h1>
+                                            <h6>Propser Birmingham</h6>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div className="five columns windows">
-                                    <div className="window">
-                                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
-                                        <h1>Jimmie Coleman</h1>
-                                        <h6>Birmingham Citizen's Advisory Board</h6>
-                                    </div>
+                                    <a href="https://www.linkedin.com/in/angela-s-abdur-rasheed-558635a3/">
+                                        <div className="window">
+                                            <div className="image">
+                                                <img src="/images/leaders/angela.jpg" alt="" />
+                                            </div>
+                                            <h1>Angela S. Abdur-Rasheed</h1>
+                                            <h6>Prosper Birmingham</h6>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div className="five columns windows">
-                                    <div className="window">
-                                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
-                                        <h1>Kelly Caruso</h1>
-                                        <h6>Shipt</h6>
-                                    </div>
+                                    <a href="https://www.linkedin.com/in/joanice-thompson-712114162/">
+                                        <div className="window">
+                                            <div className="image">
+                                                <img src="/images/leaders/joanice.jpg" alt="" />
+                                            </div>
+                                            <h1>Joanice Thompson</h1>
+                                            <h6>Acclinate</h6>
+                                        </div>
+                                    </a>
                                 </div>
                                 <div className="five columns windows">
-                                    <div className="window">
-                                        <FontAwesomeIcon icon={['fab', 'linkedin']} />
-                                        <h1>Mark Crosswhite</h1>
-                                        <h6>Alabama Power</h6>
-                                    </div>
+                                    <a href="https://www.linkedin.com/in/tiffany-whitlow-50380219/">
+                                        <div className="window">
+                                            <div className="image">
+                                                <img src="/images/leaders/tiffany.jpg" alt="" />
+                                            </div>
+                                            <h1>Tiffany Whitlow</h1>
+                                            <h6>Acclinate</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="five columns windows">
+                                    <a href="https://www.linkedin.com/in/emily-wykle-2937525/">
+                                        <div className="window">
+                                            <div className="image">
+                                                <img src="/images/leaders/emily.jpg" alt="" />
+                                            </div>
+                                            <h1>Emily Wykle</h1>
+                                            <h6>UAB</h6>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="five columns windows">
+                                    <a href="https://www.linkedin.com/in/delmonize/">
+                                        <div className="window">
+                                            <div className="image">
+                                                <img src="/images/leaders/del.jpg" alt="" />
+                                            </div>
+                                            <h1>Del Smith</h1>
+                                            <h6>Acclinate</h6>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +217,31 @@ const WhyNow = () =>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
 
+            <section>
+                <div className="container whyComp">
+                    <div className="eight columns offset-by-one">
+                        <div className="lower">
+                            <h1>What Does This Mean?</h1>
+                            <p>When you sign up to use the platform, you will have access to life-changing resources. These resources can help you make informed decisions about your health. Invite your family and friends, and they will have the opportunity to do the same. All of you will have information about health, education, employment, and financial topics right at your fingertips. The best part? This information comes in many different forms like written, video, audio, and graphic content. There’s literally something for everybody!</p>
+                            <p>When you use your access on a regular basis, you should notice a gradual increase in the confidence to not only make better health choices but better life choices as well.</p>
+                            <p>Get engaged in the community and compete against your friends!</p>
+                        </div>
+                        <div className="buttonwrap" style={{ marginTop: '50px' }}>
+                            <a className="content button solid" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
+                        </div>
+                    </div>
+                    <div className="eight columns offset-by-one">
+                        <div className="lower">
+                            <h1>What Makes B-INCLUDED Different?</h1>
+                            <p>B-INCLUDED is different because the platform was designed specifically with you in mind.  You are not an afterthought on an already existing platform nor are you being included because it’s trendy.  With B-INCLUDED, you are the priority. Everything the platform offers is being provided in consideration of your needs, wants, dreams & aspirations for a healthy and wealthy life.  That’s what we all want, right? Each of us wants to live our best lives on our own terms. The B-INCLUDED community can help you get there. </p>
+                        </div>
+                        <div className="buttonwrap" style={{ marginTop: '50px' }}>
+                            <a className="content button solid" href="https://jdsb9zx9r21.typeform.com/to/fIPHeiqQ">Become a Partner</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>

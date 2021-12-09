@@ -16,8 +16,6 @@
         text-decoration: none;
     }
 
-    .calltext h1 {font-size: 50px; color:#EEC31A}
-
     .callout .content .calltext p {
         display: none
     }
@@ -82,8 +80,9 @@
         background-color: #050236
     }
 
-
-
+    .featStory .story .text ul.featTags {
+        top: 14px;
+    }
     .featStory .story .text h1 {
         display: none;
     }
@@ -115,7 +114,7 @@
 
     .covid19 .phrase .face .overlay h1 {
         font-size: 29px;
-        line-height: 40px;;
+        line-height: 39px;;
     }
 
     .covid19 .pane {
@@ -132,3 +131,27 @@
         display: none;
     }
 
+    .testimony .header h1 {
+        font-size: 35px;
+    
+    }
+
+    .blogContent .heading h1 {
+        color: #050236;
+    }
+    .blogContent .pane .image {
+        width:102%;
+        height:188;
+    }  
+    
+    .whyComp .heading h1{
+        color: #050236
+    }
+    .whyComp .heading a{
+        color: #050236
+    }
+    .whyComp .heading p{
+        color: #050236
+    }
+
+    

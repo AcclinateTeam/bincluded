@@ -75,7 +75,7 @@ const Health = () =>
                             <div className="back">
                                 <h3>PatchRX</h3>
                                 <p>
-                                    How can we use technology to help people be healthier? Since then, our mission has evolved and expanded more than we could have ever expected. With personal instances of non-adherence effecting both founders, it became their dedicated mission to help patients get the most from their medications. And that’s what PatchRx is designed to do. We’re improving prescription adherence and helping our users remember to take their medication through data-driven technology. The service – a universal smart pill bottle device, a patient-facing app, and a pharmacy web app – helps...</p>
+                                We’re sure you want to avoid missing refills. We can help keep your prescriptions top of mind.</p>
 
                                 <a href="https://www.patchrx.io/" target="_blank">Visit Site</a>
                             </div>

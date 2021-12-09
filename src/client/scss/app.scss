@@ -192,3 +192,23 @@ h5 { font-size: 14px; line-height: 14px;}
 ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
 // /*For screens smaller than 320px*/
 
+@media only screen and (max-width:320px) {
+    .call .text h1 {font-size: 57px; color:#EEC31A;}
+
+    .content .featured .face img.health {
+        height: 82px;
+    }
+    .call .text p {
+        
+        font-size: 18px;
+        line-height: 25px;
+        
+        width: 100%;
+        margin: 0 0 30px;
+        color: #eec31a;
+    }
+
+    .featStory .story .text ul.featTags {
+        top: 14px;
+    }
+}

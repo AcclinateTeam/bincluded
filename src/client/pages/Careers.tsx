@@ -23,14 +23,13 @@ const Careers = () =>
                     <img className="imgcallRight" src="images/careerCallRight.png" />
                     <p className="tagline"><span>B-Included places employment opportunities around Birmingham in a central place so that you can level up your career.</span></p>
                     <div className="container">
+                        <div className="gcse-search"></div>
                         <div className="eight columns offset-by-one">
                             <div className="heading">
                                 <h1>Find Your Next Career</h1>
-                                <div>
-                                    
-                                    <script async src="https://cse.google.com/cse.js?cx=e27038f2a37daf23e"></script>
-                                <div className="gcse-search"></div>
-                                </div>
+                                {/* <div>
+                                
+                                </div> */}
                                 {/* <form>
                                     <input type="text" />
                                     <input type="text" />

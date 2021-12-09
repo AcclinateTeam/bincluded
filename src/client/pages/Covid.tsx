@@ -26,7 +26,7 @@ const Covid = () =>
                         <div className="callContent">
                             <div className="five columns offset-by-one">
                                 <div className="text">
-                                    <h1>COVID-19 Resources</h1>
+                                    <h1>COVID-19 Resources!</h1>
                                     <p>B-Included provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
                                 </div>
                                 <div className="callbutton">

@@ -1,3 +1,4 @@
+import moment from 'moment';
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -37,9 +38,9 @@ const SinglePost = () =>
                     <>
                         <div className="image" style={{ backgroundImage: `url(${post.imagelink})` }}></div>
                         <div className="container">
-                            <div className="eight columns offset-by-one">
+                            <div className="six columns offset-by-two">
                                 <div className="text">
-                                    <h3>{post._created} {/*| Wellness and Health*/} | {post.author}</h3>
+                                    <h3>{moment(post._created).format('MMM Do, YYYY')} {/*| Wellness and Health*/} | {post.author}</h3>
                                     <h1>{post.title}</h1>
                                     <p>{post.description}</p>
                                 </div>
@@ -51,13 +52,20 @@ const SinglePost = () =>
 
             <section className="singlePost">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
+                    <div className="six columns offset-by-two">
                         <div className="content">
-                            {blogPosts.map((post, index) => (
-                                <p>
-                                    {`${post.content}`}
-                                </p>
-                            ))}
+                            {blogPosts.map((post, index) => {
+                                
+                                return (
+                                    <p>
+                                        {post.content.split('\\n').map((para: any, i: any) => (
+                                            <>
+                                                <p>{para}</p>
+                                            </>
+                                        ))}
+                                    </p>
+                                )
+                            })}
                         </div>
                         <div className="buttonwrap">
                             <Link className="content button" to="/blog">Back to Blogs <FontAwesomeIcon icon="arrow-right" /></Link>

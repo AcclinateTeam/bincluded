@@ -70,14 +70,13 @@ const Health = () =>
                                 <div className="tag">
                                     <h6>Featured Resource</h6>
                                 </div>
-                                <img className="health" src="/images/patchrx.png" alt="PatchRX" />
+                                <img className="health" src="/images/xllentlife.png" alt="PatchRX" />
                             </div>
                             <div className="back">
-                                <h3>PatchRX</h3>
-                                <p>
-                                We’re sure you want to avoid missing refills. We can help keep your prescriptions top of mind.</p>
+                                <h3>Xcellent Life</h3>
+                                <p>Xcellent Life provides a comprehensive digital health platform that evaluates more factors utilizing a three-dimensional approach involving advanced methodologies (Relational Bayesian Networks, Polytomous, Kaplan-Meier and our Proprietary Method for RtHD) for predictive analytics and Artificial Intelligence and as a result, can provide more personalized health insights and identify potential issues more accurately and faster than any of the other solutions. Our approach of being data source agnostic coupled with our analytics capabilities sets us aside from the existing vendors who are providing generalized insights but not personalized Real-time Human Diagnostics as our solution is designed to do.</p>
 
-                                <a href="https://www.patchrx.io/" target="_blank">Visit Site</a>
+                                <a href="https://xcellentlife.com/" target="_blank">Visit Site</a> or <a href="https://nlp.xcellentlife.com/">Sign Up</a>
                             </div>
                         </div>
                     </div>

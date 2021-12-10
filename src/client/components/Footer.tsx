@@ -155,10 +155,10 @@ const Footer = () =>
                             </ul>
                         </div>
                         <div className="two columns connect">
-                            <h1>Report a Bug</h1>
-                            <p>If you happen to stumble upon any bugs, please let us know!</p>
+                            <h1>Give Us Your Feedback!</h1>
+                            <p>Click the button below to give us any feedback you may have about this website. We'd love to hear from you! </p>
                             <a className="button" href="https://jdsb9zx9r21.typeform.com/to/CNJivpjr">
-                                Report a Bug
+                                Give Feedback
                             </a>
                         </div>
                     </div>

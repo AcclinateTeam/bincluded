@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* COMPONENT IMPORTS */
 import SubHeader from '../../components/SubHeader';
 import Terminal from '../../components/Terminal';
+import moment from 'moment';
 
 const Blog = () =>
 {
@@ -12,7 +13,7 @@ const Blog = () =>
     {
         window.scrollTo(0, 0)
     }, []);
-    
+
     const [blogPosts, setBlogPosts] = useState([]);
 
     useEffect(() =>
@@ -60,21 +61,31 @@ const Blog = () =>
                 <div className="container">
                     <div className="eight columns offset-by-one">
                         <div className="container story" style={{ backgroundColor: "white" }}>
-                            <div className="four columns bg2">
-                                <div className="image" style={{ backgroundImage: `url("/images/featstory.jpg")` }}></div>
-                            </div>
-                            <div className="six columns">
-                                <div className="text">
-                                    <h5>October 6, 2021 | St. Louis, Missouri</h5>
-                                    <ul className="featTags">
-                                        <li>Chronic Illness</li>
-                                        <li>Mental Health</li>
-                                    </ul>
-                                    <h1>Be the Advocate for Your Health</h1>
-                                    <p>Before Donna got her diagnosis, she thought of herself as a musician, a busy professional, a volunteer, a mother, a grandmother. After Donna got her diagnosis – Parkinson’s disease, she thought of herself as a patient. </p>
-                                    <Link to="/">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                </div>
-                            </div>
+                            {blogPosts.map((feat, index) =>
+                            {
+                                if (index === 0)
+                                {
+                                    return (
+                                        <>
+                                            <div className="four columns">
+                                                <div className="image" style={{ backgroundImage: `url(${feat.imagelink})` }}></div>
+                                            </div>
+                                            <div className="six columns">
+                                                <div className="text">
+                                                    <h5>{moment(feat._created).format('MMM Do, YYYY')} | {feat.author}</h5>
+                                                    {/* <ul className="featTags">
+                                                        <li>Chronic Illness</li>
+                                                        <li>Mental Health</li>
+                                                    </ul> */}
+                                                    <h1>{feat.title}</h1>
+                                                    <p>{feat.description}</p>
+                                                    <Link to={`/blog/single/${feat.id}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )
+                                }
+                            })}
                         </div>
                     </div>
                 </div>
@@ -84,22 +95,26 @@ const Blog = () =>
                 <div className="container">
                     <div className="eight columns offset-by-one">
                         <div className="container panel">
-
-                            {blogPosts.map((post, index) => (
-                                <div className="third columns" key={post.id}>
-                                    <div className="panes">
-                                        <div className="pane">
-                                            <div className="image" style={{ backgroundImage: `url(${post.imagelink})` }}></div>
-                                            <div className="text">
-                                                <h2>{post.title}</h2>
-                                                <p>{post.description}</p>
-                                                <Link to={`/blog/single/${post.id}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                            {blogPosts.map((post, index) =>
+                            {
+                                if (index > 0)
+                                {
+                                    return (
+                                        <div className="third columns" key={post.id}>
+                                            <div className="panes">
+                                                <div className="pane">
+                                                    <div className="image" style={{ backgroundImage: `url(${post.imagelink})` }}></div>
+                                                    <div className="text">
+                                                        <h2>{post.title}</h2>
+                                                        <p>{post.description}</p>
+                                                        <Link to={`/blog/single/${post.id}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            ))}
-
+                                    )
+                                }
+                            })}
                         </div>
                     </div>
                 </div>

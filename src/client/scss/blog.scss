@@ -9,21 +9,21 @@
 // .blogContent .panes:hover {               opacity: 0;}
 .blogContent .pane .image {              width: 100%; height: 250px; background-repeat: no-repeat; background-size: cover;}
 .blogContent .pane .text {               padding: 20px;} 
-.blogContent .pane .text h2 {             font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; font-weight: 700; text-transform: none; margin: 0 0 20px;}
-.blogContent .pane .text p {              font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px;}
+.blogContent .pane .text h2 {             min-height: 40px; font-family: 'Roboto', sans-serif; display: block; font-size: 20px; line-height: 20px; font-weight: 700; text-transform: none; margin: 0 0 20px;}
+.blogContent .pane .text p {              min-height: 66px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px;}
 .blogContent .pane .text a {              font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: #050236;}
 .blogContent .pane .text svg {           color: #050236;}
 
 .singleHeader {                             width: 100%; height: 585px; position: relative; background-color: #000;} 
 .singleHeader .image {                      width: 100%; height: 100%; position:absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: 100%; background-position: -250px auto;  opacity: 0.7;}
-.singleHeader .text {                       margin: 150px 0; color: #fff; z-index: 9;}
+.singleHeader .text {                       margin: 170px 0; color: #fff; z-index: 9;}
 .singleHeader .text h3 {                    font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; text-transform: none; margin:0 0 5px; padding: 0; color: #fff;}
 .singleHeader .text h1 {                    font-size: 54px; line-height: 62px; font-weight: 700; margin: 0; padding: 0; color: #fff;}
 .singleHeader .text p {                     width: 50%; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 20px 0 20px;}
 
 .singlePost {                               margin: 100px 0 100px; padding: 0 20px;} 
 .singlePost .content h1 {                      font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 24px; font-weight: 700; text-transform: none; margin:0 0 10px; padding: 0;} 
-.singlePost .content p {                       font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px;}
+.singlePost .content p {                       font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 28px; font-weight: 500; margin: 0 0 20px;}
 .singlePost .buttonWrap {                     margin: 50px 0 20px; padding: 0;}
 .singlePost .buttonWrap .button {          background-color: #CA1D48;}
 

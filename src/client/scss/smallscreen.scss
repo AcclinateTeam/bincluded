@@ -47,9 +47,8 @@
         color: #eec31a;
     }
     /*Stand Up For Your Health-homepage*/
-    .callout {
-        width: 131%;
-    }
+    // .callout {
+    //  height: 
 
     ul.nav {
         margin: 5px 46px;
@@ -94,7 +93,26 @@
         color: #eec31a;
     }
 
+}   
+// @media only screen and (max-width: 1024px) {
+    /*Main Components*/
+//     .container, .header, .content, .footer, {
+//         float: none;
+//         width: auto;
     
+//     }
+//     .callout .content .calltext h1 {
+//         font-size: 9vw;
+//         width: auto;
+//         color: #eec31a;
+//     }
+//     .callimage img {
+//         width: 50%;
+//     }
+//     ul.nav li a {
+//         color: #eec31a;
+//     }
+// }
 
 
 
@@ -117,6 +135,3 @@
 
 
 
-
-
-}

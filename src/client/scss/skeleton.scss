@@ -147,7 +147,7 @@
 /*  #Mobile (HTC)
 ================================================== */
 
-@media only screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (min-width: 360px) and (max-width: 599px) {
     .container .ten.columns,
     .container .nine.columns,
     .container .eight.columns,
@@ -163,8 +163,18 @@
     .container .sixth.columns,
     .container .eighth.columns {                width: 100%;}
 
-    .about.wrapper,
-    .contact.wrapper, .entry.wrapper {         width: 100%; background-color: #fff;}
+    /* Offsets */
+    .container .offset-by-half,
+    .container .offset-by-one,
+    .container .offset-by-one-half,
+    .container .offset-by-two,
+    .container .offset-by-three,
+    .container .offset-by-four,
+    .container .offset-by-five,
+    .container .offset-by-six,
+    .container .offset-by-seven,
+    .container .offset-by-eight,
+    .container .offset-by-nine                  { margin-left: 0; }
 }
 
 

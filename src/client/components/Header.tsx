@@ -1,8 +1,11 @@
-import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () =>
 {
+    const [isActive, setIsActive] = useState<any>(false);
+
     return (
 
         <header>
@@ -12,7 +15,7 @@ const Header = () =>
                         <div className="header wrapper">
                             <div className="logo">
                                 <Link to="/">
-                                    <svg width="278" height="32" viewBox="0 0 278 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg viewBox="0 0 278 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M32 0.775452H41.0636V31.2321H32V0.775452Z" fill="#CA1D48" />
                                         <path d="M44.5596 0.775452H55.5477L69.0192 20.6408H69.0532V0.775452H77.6649V31.2321H66.7157L53.2053 11.1127H53.1713V31.2321H44.5596V0.775452Z" fill="#CA1D48" />
                                         <path d="M80.5726 15.9903C80.5726 6.20829 87.2549 0 97.7862 0C105.8 0 111.962 4.20581 113.639 10.8867L105.348 13.0132C104.507 9.82338 101.635 7.82681 98.034 7.82681C92.9603 7.82681 89.7042 11.0166 89.7042 15.9903C89.7042 20.964 93.3443 24.1597 99.0837 24.1597C103.599 24.1597 106.859 21.7969 107.622 18.1169L116.02 19.948C114.689 27.3023 108.04 31.9866 98.8359 31.9866C87.6728 31.9866 80.5726 26.0736 80.5726 15.9903Z" fill="#CA1D48" />
@@ -24,8 +27,6 @@ const Header = () =>
                                         <path d="M26.1049 15.7736C27.3152 14.6698 28.2092 13.1312 28.6601 11.3757C29.1111 9.62015 29.0963 7.73666 28.6177 5.99195C28.1392 4.24724 27.2211 2.72973 25.9937 1.65434C24.7662 0.578955 23.2915 0.000185246 21.7785 0L0 0.137762V31.6823H20.9437C21.3992 31.6823 21.3796 31.5445 21.7785 31.5445C23.2916 31.5453 24.7667 30.9671 25.9944 29.8921C27.2222 28.817 28.1405 27.2996 28.6192 25.5548C29.0978 23.81 29.1126 21.9263 28.6613 20.1708C28.2101 18.4152 27.3157 16.8768 26.1049 15.7736Z" fill="white" />
                                     </svg>
                                 </Link>
-
-                                {/* <img src="/images/bIncludedLogo.png" alt="" /></Link> */}
                             </div>
 
                             <nav>
@@ -42,6 +43,11 @@ const Header = () =>
                                     <li className="signup"><a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Log In</a></li>
                                     <li className="logins"><a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join the Community</a></li>
                                 </ul>
+                            </div>
+
+                            <div className="navButton">
+                                <FontAwesomeIcon className="open" icon="bars" />
+                                <FontAwesomeIcon className="close" icon="times" />
                             </div>
                         </div>
                     </div>

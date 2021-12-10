@@ -9,7 +9,7 @@ import Accordion from '../../components/Accordion';
 /* UTILS IMPORTS */
 import { accordionData } from '../../utils/content';
 
-const Trials = () =>
+const Trials = (props: any) =>
 {
 
     const [trials, setTrials] = useState([]);

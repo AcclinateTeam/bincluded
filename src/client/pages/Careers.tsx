@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 /* COMPONENT IMPORTS */
 import SubHeader from '../components/SubHeader';
+import BlogPosts from './BlogPosts';
+import RecipeComp from '../components/RecipeComp';
 
 const Careers = () =>
 {
@@ -191,45 +193,7 @@ const Careers = () =>
                         </div>
                         <div className="panel">
                             <div className="container">
-                                <div className="third columns">
-                                    <div className="articles">
-                                        <div className="article">
-                                            <div className="image" style={{ backgroundImage: `url(/images/blog6.jpg)` }}></div>
-                                            <div className="text">
-                                                <h2>In-Demand Skills for 2022</h2>
-                                                <p>The skills gap for in-demand skills has been growing for years, but the acceleration of digitalization across all sectors during the pandemic has....</p>
-                                                {/* <Link to="https://hospitalityinsights.ehl.edu/most-in-demand-skills-future">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
-                                                <a href="https://hospitalityinsights.ehl.edu/most-in-demand-skills-future" target="_blank">Read More <FontAwesomeIcon icon="arrow-right" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="third columns">
-                                    <div className="articles">
-                                        <div className="article">
-                                            <div className="image" style={{ backgroundImage: `url(/images/blog5.jpg)` }}></div>
-                                            <div className="text">
-                                                <h2>How To Stay Focused</h2>
-                                                <p>To stay focused throughout the day and remain productive, it's important to build healthy habits like getting enough sleep and exercising regularly...</p>
-                                                {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
-                                                <a href="https://www.insider.com/how-to-stay-focused" target="_blank">Read More <FontAwesomeIcon icon="arrow-right" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="third columns">
-                                    <div className="articles">
-                                        <div className="article">
-                                            <div className="image" style={{ backgroundImage: `url(/images/blog4.jpg)` }}></div>
-                                            <div className="text">
-                                                <h2>#WFH Tips and Tricks</h2>
-                                                <p>If you're new to the work-from-home lifestyle, whether due to the coronavirus or because you've managed to find a remote-based job, you may have..</p>
-                                                {/* <Link to="https://www.pcmag.com/news/get-organized-20-tips-for-working-from-home">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
-                                                <a href="https://www.pcmag.com/news/get-organized-20-tips-for-working-from-home" target="_blank">Read More <FontAwesomeIcon icon="arrow-right" /></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <BlogPosts />
                                 <div className="buttonwrap">
                                     <Link className="content button" to="/blog">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                                 </div>
@@ -239,50 +203,7 @@ const Careers = () =>
                 </div>
             </section>
 
-            {/* <section className="recipes">
-                <div className="container">
-                    <div className="row">
-                        <div className="eight columns offset-by-one">
-                            <h1>Recipes</h1>
-                            <div className="recpanel">
-
-                                <div className="third columns">
-                                    <div className="recipe">
-                                        <div className="image">
-                                            <img src="/images/food2.jpg" alt="" />
-                                        </div>
-                                        <h2>Birmingham Promise</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                        <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                    </div>
-                                </div>
-                                <div className="third columns">
-                                    <div className="recipe">
-                                        <div className="image">
-                                            <img src="/images/food1.jpg" alt="" />
-                                        </div>
-                                        <h2>Birmingham Promise</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                        <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                    </div>
-                                </div>
-                                <div className="third columns">
-                                    <div className="recipe">
-                                        <div className="image">
-                                            <img src="/images/food3.jpg" alt="" />
-                                        </div>
-                                        <h2>Birmingham Promise</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla ultrices dapibus. Vivamus eget tellus id ligula posuere malesuada vitae volutpat purus.</p>
-                                        <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
-
+            <RecipeComp />
         </>
     );
 }

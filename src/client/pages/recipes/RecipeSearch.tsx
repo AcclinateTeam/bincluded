@@ -79,7 +79,7 @@ const RecipeSearch: React.FC<SearchProps> = (props) =>
                                                         <p>
                                                             Meal Type: {recipe.meals}
                                                         </p>
-                                                        <p style={{ marginBottom: '30px' }}>{recipe.description}</p>
+                                                        <p className="directions" style={{ marginBottom: '30px' }}>{recipe.description}</p>
                                                         <Link to={`/recipes/${recipe.id}`} className='button'>Full Recipe</Link>
                                                     </div>
                                                 </div>

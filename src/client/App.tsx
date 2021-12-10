@@ -15,6 +15,7 @@ import Health from './pages/Health';
 import Family from './pages/Family';
 import Careers from './pages/Careers';
 import Covid from './pages/Covid';
+import NotFound from './pages/NotFound';
 // SUBPAGES
 import Partners from './pages/subpages/Partners';
 import WhyNow from './pages/subpages/WhyNow';
@@ -35,13 +36,18 @@ import Footer from './components/Footer';
 import RecipeSearch from './pages/recipes/RecipeSearch';
 import Recipe from './pages/recipes/Recipe';
 import Submit from './pages/recipes/Submit';
+import * as FullStory from '@fullstory/browser';
 
 library.add(fab, fas, far);
 
 /* HOOK REACT EXAMPLE */
 const App = (props: AppProps) =>
 {
-	
+	FullStory.identify('users', {
+		displayName: 'binc_user',
+		email: 'help@acclinate.com',
+		feature_packs: ['MAPS', 'DEV', 'DATA'],
+	});
 
 	return (
 		<>
@@ -70,8 +76,8 @@ const App = (props: AppProps) =>
 					<Route path="/trials/study/:id" element={<FullStudy />} />
 					{/* Utils Paths */}
 					<Route path="/privacy" element={<Privacy />} />
-					<Route path="/terms" element={<Terms />} />					
-					<Route path="*" element={<Home />} />
+					<Route path="/terms" element={<Terms />} />
+					<Route path="*" element={<NotFound />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

@@ -169,7 +169,7 @@ const Careers = () =>
                                     <div className="whyTextWide">
                                         <h1>Why Now?</h1>
                                         <p>There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices. B-INCLUDED is that space and you can become part of that collective.<br /><br /> B-INCLUDED is meant to address healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health and financial sustainability.</p>
-                                        <Link className="button learnmore" to="/">Learn More</Link>
+                                        <Link className="button learnmore" to="/whynow">Learn More</Link>
                                     </div>
                                 </div>                                
                             </div>

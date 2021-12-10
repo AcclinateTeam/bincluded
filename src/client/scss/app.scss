@@ -108,8 +108,8 @@ body {				min-height: 100%; position: relative;}
 .recComp .recipe {                      box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
 .recComp .recipe .image {               width: 100%; height: 224px; background-repeat: no-repeat; background-size: cover;}
 .recComp .recipe .text {                padding: 20px;}
-.recComp .recipe .text h2 {             font-family: 'Roboto', sans-serif; font-size: 22px; line-height: 22px; font-weight: 700; text-transform: none; margin: 0 0 20px;}
-.recComp .recipe .text p {              font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px;}
+.recComp .recipe .text h2 {             min-height: 44px; font-family: 'Roboto', sans-serif; font-size: 22px; line-height: 22px; font-weight: 700; text-transform: none; margin: 0 0 20px;}
+.recComp .recipe .text p {              min-height: 66px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px;}
 .recComp .recipe .text a {              font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: #050236;}
 .recComp .recipe .text a {              color: #050236;}
 

@@ -32,7 +32,7 @@
     .callimage {                                    width: calc(100% - 40px); position: absolute; top: 60px; left: 20px; display: block;}
     .callimage img {                                width: 100%;  display: block;}
     .callout {                                      width: 100%; margin: 0 0 100px;}
-    .callout .content {                             width: calc(100% - 40px); height: 500px; position: absolute; top: 340px; left: 20px;}
+    .callout .content {                             width: calc(100% - 40px); height: 500px; position: absolute; top: 440px; left: 20px;}
     .callout .content .calltext {                   width: 100%; display: block;}
     .callout .content .calltext h1 {                font-size: 64px; line-height: 64px; font-weight: 700; color: #fff; margin: 0 0 20px;}
     .callout .content .calltext p {                 width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff; }
@@ -61,10 +61,20 @@
     .foot .sponsors .images {                   display: block; margin: 0 20px 50px; text-align: center;}
     .foot .sponsors img {                       width: 100%; display: inline-block; z-index: 99; margin: 0 0 10px;}
 
-    .footer {                                   padding: 65px 0 0; background-color: #050236;}
-    .footEnd {                                  padding: 13px 0; background-color: #cc2; border-top: 1px solid #fff; }
-    .footLogo {                                 margin: 0 20px 30px;}
-    .footer .social {                           margin: 0 20px 40px;}
-    .footer .connect {                           margin: 0 20px 40px;}
+    .footer {                                   width: calc(100% - 40px); padding: 65px 20px 0; background-color: #050236;}
+    .footEnd {                                  padding: 13px 0; border-top: 1px solid #fff; }
+    .footEnd ul {                               float: none; margin: 0 0 0 20px; padding: 0;}
+    .footend ul li {                            padding: 8px 0 0; margin: 0 10px 0 0; display: inline-block;}
+    .footLogo {                                 margin: 0 0 30px;}
+    .footer .social {                           margin: 0 0 40px;}
+    .footer .connect {                           margin: 0 0 40px;}
     .footEnd p {                                margin: 20px;}
 }
+
+// @media only screen and (max-width: 375px) {
+//     .callout .content {                         width: calc(100% - 40px); height: 500px; position: absolute; top: 400px; left: 20px;}
+// }
+
+// @media only screen and (max-width: 320px) {
+//     .callout .content {                         width: calc(100% - 40px); height: 500px; position: absolute; top: 340px; left: 20px;}
+// }

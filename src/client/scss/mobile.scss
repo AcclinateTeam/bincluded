@@ -21,7 +21,7 @@
     ul.log li.signup a {            font-size: 48px; line-height: 56px; margin: 10px 0 40px; color: #fff;}
     ul.log li.logins a {            font-size: 16px; padding: 15px 35px; text-align: center; color: #fff; background-color: #CA1D48;}
     // MENU BUTTON STYLES
-    header .navButton {             width: 36px; height: 36px; position: absolute; top: 12px; right: 20px; padding: 0; margin: 0; border-radius: 22px; background-color: #CA1D48;}
+    header .navButton {             width: 36px; display: block; opacity: 1; visibility: visible; height: 36px; position: absolute; top: 12px; right: 20px; padding: 0; margin: 0; border-radius: 22px; background-color: #CA1D48;}
     header .navButton svg {         display: block; margin: 0 auto; }
     header .navButton svg.open {        font-size: 18px; opacity: 1; position: absolute; top: 9px; left: 10px; color: #fff;}
     header .navButton svg.close {       font-size: 20px; opacity: 0; position: absolute; top: 8px; left: 11px; color: #0F0F10;}

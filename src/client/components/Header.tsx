@@ -1,10 +1,30 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () =>
 {
-    const [isActive, setIsActive] = useState<any>(false);
+    function toggleNav() {
+        const headerWrapper = document.getElementById('header-wrapper');
+        const headWrapHeight = headerWrapper.offsetHeight;
+        const navBg = document.getElementById('navButtonBg');
+        const openButton = document.getElementById('button-open');
+        const closeButton = document.getElementById('button-close');
+
+        console.log(headWrapHeight);
+        
+        if (headWrapHeight <= 61) {
+            headerWrapper.setAttribute('style', `height: 100vh; background-color: #04278E;`);
+            navBg.setAttribute('style', `background-color: #fff;`);
+            openButton.setAttribute('style', `opacity: 0;`);
+            closeButton.setAttribute('style', `opacity: 1;`);
+        } else {
+            headerWrapper.setAttribute('style', `height: 60px; background-color: rgb(0,0,0,0);`);
+            navBg.setAttribute('style', `background-color: #CA1D48;`);
+            openButton.setAttribute('style', `opacity: 1;`);
+            closeButton.setAttribute('style', `opacity: 0;`);
+        }
+    }
 
     return (
 
@@ -12,7 +32,7 @@ const Header = () =>
             <div className="container">
                 <div className="row">
                     <div className="eight columns offset-by-one">
-                        <div className="header wrapper">
+                        <div id="header-wrapper" className="header wrapper">
                             <div className="logo">
                                 <Link to="/">
                                     <svg viewBox="0 0 278 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,9 +65,9 @@ const Header = () =>
                                 </ul>
                             </div>
 
-                            <div className="navButton">
-                                <FontAwesomeIcon className="open" icon="bars" />
-                                <FontAwesomeIcon className="close" icon="times" />
+                            <div id="navButtonBg" className="navButton" onClick={toggleNav}>
+                                <FontAwesomeIcon id="button-open" className="open" icon="bars" />
+                                <FontAwesomeIcon id="button-close" className="close" icon="times" />
                             </div>
                         </div>
                     </div>

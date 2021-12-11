@@ -2,34 +2,69 @@
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 425px) {
+@media only screen and (max-width: 425px) {
     // HEADER STYLES
-    body {
-        width: 100%;
-    }
-    header {                        width: 100%; height: auto; position: absolute; margin: 0; padding: 0; top: 0; left: 0; background:#ac3;}
-    .header.wrapper {               width: 100%; height: 100vh; margin: 0; padding: 0; position: relative;  background-color: #04278E;} 
+    header {                        width: 100%; height: auto; position: absolute; margin: 0; padding: 0; top: 0; left: 0;}
+    .header.wrapper {               width: 100%; height: 60px; overflow: hidden; margin: 0; padding: 0; position: relative; background-color: rgb(0,0,0,0);} 
     .header .logo {                 position: absolute; top:20px; left: 20px;}
-    .header .logo svg {             height: 28px; display: block; margin: 0;}
+    .header .logo svg {             height: 20px; display: block; margin: 0;}
     // NAVBAR STYLES
-    nav {                           padding: 70px 20px 0; float: none; background-color: #cca;}
+    nav {                           padding: 70px 20px 0; float: none;}
     ul.nav {                        margin: 0;}
     ul.nav li {                     margin: 0; font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 48px; line-height: 56px; font-weight: 500; position: relative; display: block; padding: 10px 0; margin: 0 15px 0 0;}
     ul.nav li a {                   text-decoration: none; color: #fff;}
     // LOGIN BUTTONS
     .login {                        float: none; margin: 0;}
-    ul.log {                        margin: 0; padding: 0; list-style: none;}
+    ul.log {                        margin: 0; padding: 0 20px 0; list-style: none;}
     ul.log li {                     font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 16px; font-weight: 500; margin: 0; display: block; margin: 0;}
     ul.log li a {                   display: block; padding: 0; text-decoration: none;}
     ul.log li.signup a {            font-size: 48px; line-height: 56px; margin: 10px 0 40px; color: #fff;}
     ul.log li.logins a {            font-size: 16px; padding: 15px 35px; text-align: center; color: #fff; background-color: #CA1D48;}
     // MENU BUTTON STYLES
-    header .navButton {             width: 44px; height: 44px; position: absolute; top: 12px; right: 20; padding: 0; margin: 0; border-radius: 22px; background-color: #ac3;}
+    header .navButton {             width: 36px; height: 36px; position: absolute; top: 12px; right: 20px; padding: 0; margin: 0; border-radius: 22px; background-color: #CA1D48;}
     header .navButton svg {         display: block; margin: 0 auto; }
-    header .navButton svg.open {        font-size: 32px; opacity: 0.5; position: absolute; top: 6px; left: 8px; color: #fff;}
-    header .navButton svg.close {       font-size: 34px; opacity: 0.7; position: absolute; top: 6px; left: 11px; color: #0F0F10;}
+    header .navButton svg.open {        font-size: 18px; opacity: 1; position: absolute; top: 9px; left: 10px; color: #fff;}
+    header .navButton svg.close {       font-size: 20px; opacity: 0; position: absolute; top: 8px; left: 11px; color: #0F0F10;}
 
+    // CALLOUT STYLES
+    .calloutbg {                                    width: 100%; height: auto; overflow: hidden; position: absolute; top: 0; left: 0; z-index: -9;}
+    .calloutbg svg {                                width: 2000px;}   
+    .callimage {                                    width: calc(100% - 40px); position: absolute; top: 60px; left: 20px; display: block;}
+    .callimage img {                                width: 100%;  display: block;}
+    .callout {                                      width: 100%; margin: 0 0 100px;}
+    .callout .content {                             width: calc(100% - 40px); height: 500px; position: absolute; top: 340px; left: 20px;}
+    .callout .content .calltext {                   width: 100%; display: block;}
+    .callout .content .calltext h1 {                font-size: 64px; line-height: 64px; font-weight: 700; color: #fff; margin: 0 0 20px;}
+    .callout .content .calltext p {                 width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff; }
+    .callout .button {                                       font-family: 'Oswald', sans-serif; display: block; text-transform: uppercase; font-weight: 700; line-height:52px; margin: 0 0 15px;}
+    .button.signup {                                border: 1px solid #CA1D48; background-color: #CA1D48; color: #fff;} 
+    .button.learnmore {                             border: 1px solid #fff; background-color: none !important; color: #fff;}
+    .button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
+    .button.learnmore:hover {                       border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;}
 
-    .callimage {                                    width: 100px; position: absolute; top: 200px; left: 0; display: block;}
-    .callimage img {                                width: 100px;  display: block;}
+    // HOME PAGE STYLES
+    .portal {                               width: calc(100% - 40px); padding: 0 20px; display: inline-block; margin: 70px 0 40px;}
+    .portal .ports {                        display: block;}
+    .portal .ports .port {                  height: 225px; margin: 0 0 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; background: #fff;}
+    .portal .ports .port h1 {               font-size: 42px; line-height: 42px; margin: 0 0 20px; color: #0F0F10;}
+    .portal .ports .port p {                font-size: 18px; line-height: 26px; color: #0F0F10;}
+    .portal .ports .port svg {              font-size: 56px; display: block; position: relative; clear: both; margin: 0 0 30px; color: #CA1D48;}
+    .portal .ports .port h4  {              font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 32px; text-transform: none; margin: 0 0 12px; color: #0F0F10;}
+    .whyNow .whyText {                      margin: 20px; display: inline-block;}
+    .whyNow .whyText h1 {                   text-align: center;}
+    .whyNow .whyText p {                    text-align: center;}
+    .whyNow .stats {                        padding: 20px 0 0;}
+    .whyNow .button.learnmore {             margin: 0 auto; display: block; text-align: center;}
+    .covid h1 {                             margin: 0 20px 20px;}
+    .covid h2 {                             margin: 0 20px 30px;}
+    .foot .sponsors h1 {                        margin: 0 20px 20px; text-align: center;}
+    .foot .sponsors .images {                   display: block; margin: 0 20px 50px; text-align: center;}
+    .foot .sponsors img {                       width: 100%; display: inline-block; z-index: 99; margin: 0 0 10px;}
+
+    .footer {                                   padding: 65px 0 0; background-color: #050236;}
+    .footEnd {                                  padding: 13px 0; background-color: #cc2; border-top: 1px solid #fff; }
+    .footLogo {                                 margin: 0 20px 30px;}
+    .footer .social {                           margin: 0 20px 40px;}
+    .footer .connect {                           margin: 0 20px 40px;}
+    .footEnd p {                                margin: 20px;}
 }

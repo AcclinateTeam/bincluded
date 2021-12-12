@@ -12,34 +12,35 @@ const Partners = () =>
     {
         window.scrollTo(0, 0)
     }, []);
-    
+
     return (
         <>
+
             {/* SUB-HEADER COMPONENT IMPORT */}
             <Header />
             {/* CALL CONTENT SECTION */}
             <section className="call">
-                <div className="callbg" style={{ backgroundImage: `url("/images/healthbg.png")` }}></div>
+                <div className="callbg">
+                    <svg viewBox="0 0 1440 639" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-262.162 -1003.94L1710.77 -637.787L1284.43 565.061L-567 638.585L-262.162 -1003.94Z" fill="#287FDD" />
+                        <path d="M-262.163 -1003.94L1533.63 -671.755L1284.43 565.061L-505.092 305.013L-262.163 -1003.94Z" fill="#CA1D48" />
+                        <path d="M-262.162 -1003.94L1418.37 -692.054L1284.43 565.06L-532.715 453.854L-262.162 -1003.94Z" fill="#050236" />
+                    </svg>
+                </div>
                 {/* CALLOUT CONTENT START */}
-                <div className="container">
-                    <div className="ten columns">
-                        <div className="callContent">
-                            <div className="five columns offset-by-one">
-                                <div className="text">
-                                    <h1>Partners</h1>
-                                    <p>We partner with brands that are passionate about our mission and our community..</p>
-                                </div>
-                                <div className="callbutton">
-                                    <a className="button signup" href="https://nowincluded.com/explore/">Become A Partner</a>
-                                    <a className="button learnmore" href="https://nowincluded.com/explore/">View Partners</a>
-                                </div>
-                            </div>
-                            <div className="four columns">
-                                <div className="image">
-                                    <img className="card-img" src="/images/covidcall.png" />
-                                </div>
-                            </div>
+                <div className="callout">
+                    <div className="content">
+                        <div className="calltext">
+                            <h1>Partners</h1>
+                            <p>We partner with brands that are passionate about our mission and our community..</p>
                         </div>
+                        <div className="callbutton">
+                            <a className="button signup" href="https://jdsb9zx9r21.typeform.com/B-INCLUDED">Become A Partner</a>
+                            <a className="button learnmore" href="#">View Partners</a>
+                        </div>
+                    </div>
+                    <div className="callimage">
+                        <img className="card-img" src="/images/covidcall.png" alt="Callout Image Placeholder" />
                     </div>
                 </div>
             </section>
@@ -445,27 +446,6 @@ const Partners = () =>
                                         </div>
                                     </a>
                                 </div>
-
-                                {/* <div className="ten columns">
-                                    <div className="panes">
-                                        <div className="pane">
-                                            <div className="container">
-                                                <div className="six columns texts">
-                                                    <div className="tag">
-                                                        <h6>Featured Partner</h6>
-                                                    </div>
-                                                    <div className="text">
-                                                        <h1>Alabama United</h1>
-                                                        <p>Birmingham partners are working together to support underserved and vulnerable populations with COVID-19 tests. Led by Michael Mugavero, MD, UAB Professor of Medicine, Division of Infectious Diseases continue to position Birmingham as a leader in serving underserved populations. Community-engaged RADx-UP projects, like Alabama United, help the NIH understand and alleviate the barriers to COVID-19 testing across the nation.</p>
-                                                    </div>
-                                                </div>
-                                                <div className="four columns video">
-                                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yIxZsG8Cew4" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> */}
                             </div>
                         </div>
                     </div>

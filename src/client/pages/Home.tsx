@@ -48,7 +48,7 @@ const Home = () =>
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section>
+            <section className="home">
                 <div className="calloutbg">
                     <svg viewBox="0 0 1440 778" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1244.23 447.955L1393.88 407.283L1389.45 452.089L1240.56 490.845L1244.23 447.955Z" fill="#EEC31A" />
@@ -79,34 +79,7 @@ const Home = () =>
                     <div className="callimage">
                         <img className="card-img" src="/images/callhome.png" alt="Callout Image Placeholder" />
                     </div>
-                </div>
-                {/* <div className="callout" style={{ backgroundImage: "url(/images/callback.png)" }}>
-                    <div className="jumbotron">
-                        <div className="container">
-                            <div className="eight columns offset-by-one">
-                                <div className="five columns">
-                                    <div className="calltext">
-                                        <h1>Stand Up For Your Health</h1>
-                                        <p>
-                                            #BIncluded is a movement with a mission to build a community of individuals ready to take control of their health and future.
-
-                                        </p>
-                                    </div>
-                                    <div className="callbutton">
-                                        <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
-                                        <Link className="button learnmore" to="/whynow">Learn More</Link>
-
-                                    </div>
-                                </div>
-                                <div className="five columns">
-                                    <div className="callimage">
-                                        <img className="card-img" src="/images/callimage.png" alt="Callout Image Placeholder" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> */}
+                </div>                
             </section>
 
             {/* PORTAL COMPONENT */}

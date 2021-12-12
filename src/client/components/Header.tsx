@@ -1,18 +1,59 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () =>
 {
-    const [isActive, setIsActive] = useState<any>(false);
+    // MOBILE NAV MENU TOGGLE CONTROLLER
+    function toggleNav() {
+        // VARIABLE SETTINGS
+        const header = document.querySelector('header');
+        const headerWrapper = document.getElementById('header-wrapper');
+        const headWrapHeight = headerWrapper.offsetHeight;
+        const navBg = document.getElementById('navButtonBg');
+        const openButton = document.getElementById('button-open');
+        const closeButton = document.getElementById('button-close');
+        // MENU TOGGLE
+        if (headWrapHeight <= 61) {
+            header.style.position = 'fixed';
+            headerWrapper.setAttribute('style', `height: 100vh; background-color: #04278E;`);
+            navBg.setAttribute('style', `background-color: #fff;`);
+            openButton.setAttribute('style', `opacity: 0;`);
+            closeButton.setAttribute('style', `opacity: 1;`);
+        } else {
+            header.style.position = 'absolute';
+            headerWrapper.setAttribute('style', `height: 60px; background-color: rgb(0,0,0,0);`);
+            navBg.setAttribute('style', `background-color: #CA1D48;`);
+            openButton.setAttribute('style', `opacity: 1;`);
+            closeButton.setAttribute('style', `opacity: 0;`);
+        }
+    }
+
+    // MOBILE NAV SCROLL ANIMATION
+    window.addEventListener('scroll', function (e)
+    {
+        // VARIABLE SETTINGS
+        var header = document.querySelector('header');
+        var windowWidth = window.innerWidth;
+        var windowPosition = window.scrollY;
+        var headWrapHeight = document.getElementById('header-wrapper').offsetHeight;
+
+        // MOBILE NAV SCROLL ANIMATION
+        if (windowWidth <= 426 && windowPosition >= 900 && headWrapHeight <= 61) {
+            header.setAttribute('style', `position: fixed; background-color: #050236;`);      
+        } else if (windowWidth <= 426 && headWrapHeight >= 61) {
+            header.setAttribute('style', `position: fixed;`);
+        } else {
+            header.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0);`);           
+        }
+    });
 
     return (
-
-        <header>
+        <header id="header">
             <div className="container">
                 <div className="row">
                     <div className="eight columns offset-by-one">
-                        <div className="header wrapper">
+                        <div id="header-wrapper" className="header wrapper">
                             <div className="logo">
                                 <Link to="/">
                                     <svg viewBox="0 0 278 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -45,16 +86,15 @@ const Header = () =>
                                 </ul>
                             </div>
 
-                            <div className="navButton">
-                                <FontAwesomeIcon className="open" icon="bars" />
-                                <FontAwesomeIcon className="close" icon="times" />
+                            <div id="navButtonBg" className="navButton" onClick={toggleNav}>
+                                <FontAwesomeIcon id="button-open" className="open" icon="bars" />
+                                <FontAwesomeIcon id="button-close" className="close" icon="times" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </header >
-
     );
 }
 

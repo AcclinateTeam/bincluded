@@ -20,6 +20,9 @@ ul.log li a {                   display: block; padding: 15px 35px; text-decorat
 ul.log li.signup a {            color: #CA1D48;}
 ul.log li.logins a {            color: #fff; background-color: #CA1D48;}
 
+// DROPMENU STYLES
+header .navButton {             display: none; opacity: 0; visibility: hidden;}
+
 /* SUBHEADER STYLES */
 header.sub {                            width: 100%; display: block; margin: 0; padding: 0; position: relative; top: 0; left: 0; z-index: 99; background-color: #050236;}
 header.sub .header.wrapper {            height: 45px; padding: 20px 0 20px; background-color: #050236;}

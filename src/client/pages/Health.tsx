@@ -24,29 +24,29 @@ const Health = () =>
             <Header />
             {/* CALL CONTENT SECTION */}
             <section className="call">
-                <div className="callbg" style={{ backgroundImage: `url("/images/healthbg.png")` }}></div>
+                <div className="callbg">
+                    <svg viewBox="0 0 1440 639" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M-262.162 -1003.94L1710.77 -637.787L1284.43 565.061L-567 638.585L-262.162 -1003.94Z" fill="#287FDD" />
+                        <path d="M-262.163 -1003.94L1533.63 -671.755L1284.43 565.061L-505.092 305.013L-262.163 -1003.94Z" fill="#CA1D48" />
+                        <path d="M-262.162 -1003.94L1418.37 -692.054L1284.43 565.06L-532.715 453.854L-262.162 -1003.94Z" fill="#050236" />
+                    </svg>
+                </div>
                 {/* CALLOUT CONTENT START */}
-                <div className="container">
-                    <div className="ten columns">
-                        <div className="callContent">
-                            <div className="five columns offset-by-one">
-                                <div className="text">
-                                    <h1>Health Resources</h1>
-                                    <p>
-                                        #BIncluded is a movement with a mission to build a community of individuals ready to take control of their health and future.
-                                    </p>
-                                </div>
-                                <div className="callbutton">
-                                    <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
-                                    <Link className="button learnmore" to="/whynow">Learn More</Link>
-                                </div>
-                            </div>
-                            <div className="four columns">
-                                <div className="image">
-                                    <img className="card-img" src="/images/healthcall.png" />
-                                </div>
-                            </div>
+                <div className="callout">
+                    <div className="content">
+                        <div className="calltext">
+                            <h1>Health Resources</h1>
+                            <p>
+                                #BIncluded is a movement with a mission to build a community of individuals ready to take control of their health and future.
+                            </p>
                         </div>
+                        <div className="callbutton">
+                            <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
+                            <Link className="button learnmore" to="/whynow">Learn More</Link>
+                        </div>
+                    </div>
+                    <div className="callimage">
+                        <img className="card-img" src="/images/healthcall.png" alt="Callout Image Placeholder" />
                     </div>
                 </div>
             </section>

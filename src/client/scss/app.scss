@@ -25,10 +25,10 @@ body {				min-height: 100%; position: relative;}
 @import './utils.scss';
 @import './trials.scss';
 @import './recipes.scss';
-@import './mobile.scss';
 @import './blog.scss';
 @import './xsmallscreen.scss';
 @import './smallscreen.scss';
+@import './mobile.scss';
 
 
 /* FONT IMPORT */
@@ -42,11 +42,7 @@ body {				min-height: 100%; position: relative;}
 /* #GLOBAL STYLES
 ================================================== */
 // CALLOUT STYLE
-.call {                     width: 100%; height: 825px; position: relative;}  
-.call .callbg {             width: 100%; height: 825px; position: absolute; top: 0; left: 0; background-size: 100%; background-position: center; background-repeat: no-repeat;}
-.call .callContent {        margin: 180px 0 0;}
-.call .image {              width: 675px; float: right; margin: 0 20% 0 0;}
-.call .image img {          width: 100%;}
+
 
 // CONTENT HEADER STYLES
 .content .header {                      padding: 80px 0;}
@@ -112,6 +108,7 @@ body {				min-height: 100%; position: relative;}
 .recComp .recipe .text p {              min-height: 66px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px;}
 .recComp .recipe .text a {              font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: #050236;}
 .recComp .recipe .text a {              color: #050236;}
+.recComp .panel .buttonwrap {           margin-top: 50px;}
 
 // RELATED ARTICLES styles
 .related {                              display: block; margin: 100px 0 0;}
@@ -132,7 +129,7 @@ body {				min-height: 100%; position: relative;}
 .related .button:hover {                 background-color: #EEC31A;}
 
 // FEATURED STORY STYLES
-.featStory {                            height: 400px;}
+.featStory {                            height: 400px; margin: 50px 0 100px;}
 .featStory .story {                     box-shadow: 0 0 24px 2px #cecece;}
 .featStory .story .image {              width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: center;}
 .featStory .story .text {               width: 100%; height: 100%; position: relative;}
@@ -197,7 +194,7 @@ h5 { font-size: 14px; line-height: 14px;}
 
 /* #GLOBAL TRANSITION STYLES
 ================================================== */
-ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close, header {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
 
 
 

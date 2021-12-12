@@ -48,7 +48,7 @@ const Home = () =>
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section>
+            <section className="home">
                 <div className="calloutbg">
                     <svg viewBox="0 0 1440 778" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1244.23 447.955L1393.88 407.283L1389.45 452.089L1240.56 490.845L1244.23 447.955Z" fill="#EEC31A" />

@@ -4,21 +4,24 @@ import { Link } from 'react-router-dom';
 
 const Header = () =>
 {
+    // MOBILE NAV MENU TOGGLE CONTROLLER
     function toggleNav() {
+        // VARIABLE SETTINGS
+        const header = document.querySelector('header');
         const headerWrapper = document.getElementById('header-wrapper');
         const headWrapHeight = headerWrapper.offsetHeight;
         const navBg = document.getElementById('navButtonBg');
         const openButton = document.getElementById('button-open');
         const closeButton = document.getElementById('button-close');
-
-        console.log(headWrapHeight);
-        
+        // MENU TOGGLE
         if (headWrapHeight <= 61) {
+            header.style.position = 'fixed';
             headerWrapper.setAttribute('style', `height: 100vh; background-color: #04278E;`);
             navBg.setAttribute('style', `background-color: #fff;`);
             openButton.setAttribute('style', `opacity: 0;`);
             closeButton.setAttribute('style', `opacity: 1;`);
         } else {
+            header.style.position = 'absolute';
             headerWrapper.setAttribute('style', `height: 60px; background-color: rgb(0,0,0,0);`);
             navBg.setAttribute('style', `background-color: #CA1D48;`);
             openButton.setAttribute('style', `opacity: 1;`);
@@ -26,9 +29,27 @@ const Header = () =>
         }
     }
 
-    return (
+    // MOBILE NAV SCROLL ANIMATION
+    window.addEventListener('scroll', function (e)
+    {
+        // VARIABLE SETTINGS
+        var header = document.querySelector('header');
+        var windowWidth = window.innerWidth;
+        var windowPosition = window.scrollY;
+        var headWrapHeight = document.getElementById('header-wrapper').offsetHeight;
 
-        <header>
+        // MOBILE NAV SCROLL ANIMATION
+        if (windowWidth <= 426 && windowPosition >= 900 && headWrapHeight <= 61) {
+            header.setAttribute('style', `position: fixed; background-color: #050236;`);      
+        } else if (windowWidth <= 426 && headWrapHeight >= 61) {
+            header.setAttribute('style', `position: fixed;`);
+        } else {
+            header.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0);`);           
+        }
+    });
+
+    return (
+        <header id="header">
             <div className="container">
                 <div className="row">
                     <div className="eight columns offset-by-one">
@@ -74,7 +95,6 @@ const Header = () =>
                 </div>
             </div>
         </header >
-
     );
 }
 

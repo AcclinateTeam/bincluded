@@ -28,9 +28,6 @@ const RecipeComp = (props: any) =>
                                 <div className="heading">
                                     <h1>Try Our<br /> Healthy Recipes</h1>
                                     <p>B-Included provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
-                                    <div className="buttonwrap" style={{ marginTop: '30px', textAlign: 'left' }}>
-                                        <Link to="/recipes" className="button solid">View All Recipes</Link>
-                                    </div>
                                 </div>
                             </div>
                             <div className="six columns">
@@ -51,6 +48,11 @@ const RecipeComp = (props: any) =>
                                             </div>
                                         </div>
                                     ))}
+                                </div>
+                            </div>
+                            <div className="ten columns">
+                                <div className="buttonwrap" style={{ display: 'block' }}>
+                                    <Link to="/recipes" className="button solid" style={{ marginTop: '100px' }}>View All Recipes</Link>
                                 </div>
                             </div>
                         </div>

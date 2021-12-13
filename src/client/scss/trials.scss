@@ -26,8 +26,8 @@
 // .trials .view .action {                    position: absolute; bottom: 20px; left: 25px; z-index: 77;}
 // .trials .view .action a {                   font-weight: 500; text-decoration: none; color: #fff;}
 // .trials .view .action a svg {               color: #F3E454;}
-
-.trials .search {                           text-align: center; padding: 100px 0;}
+.trials {                                   margin: 0 0 350px;}
+.trials .search {                           width: calc(100% - 40px); text-align: center; padding: 100px 20px; background-color: #050236;}
 .trials .search h1 {                        font-size: 64px; line-height: 64px; margin: 0 0 50px; color: #fff;}
 
 .trials .search ul.toggleForm {             margin: 0 0 35px;}
@@ -46,7 +46,7 @@
 .trials .form a:hover svg {                 color: #F3E454;}
 
 /* ACCORDIAN COMPONENT */
-.trials .accordions {                       padding: 66px 0 132px;}
+.trials .accordions {                       width: calc(100% - 40px); padding: 0 20px 132px;}
 .trials .accordion .accordion-item {        border-bottom: 1px solid #1A3667; padding: 20px 0;}
 .trials .accordion .button {                width: 24px; height: 24px; text-align: center; float: left; margin: 0 10px 0 0;}
 .trials .accordion .title {                 width: calc(100% - 30px); height: 24px; font-size: 20px; line-height: 24px; font-weight: 500; color: #1A3667;}
@@ -83,7 +83,7 @@
 .results .panel {                           padding: 40px 45px; margin: 0 0 40px; box-shadow: 0 0 8px #999; border-left: 5px solid #ca1d48; background-color: #fff;}
 .results .panel h1 {                        font-family: 'Roboto', sans-serif; margin: 0 40px 10px 0; font-size: 18px; line-height: 24px; font-weight: 700; text-transform: none; color: #0F0F10;}
 .results .panel p {                         margin: 0 80px 30px 0; font-size: 16px; line-height: 22px; color: #0F0F10;}
-.results .panel p.type {                    margin: 0; font-weight: 500;}
+.results .panel p.type {                    margin: 0 0 10px; font-weight: 700;}
 .results .panel ul {                        margin: 0 0 40px;}
 .results .panel ul li {                     margin: 0 0 10px 0; font-size: 13px; line-height: 18px; font-weight: 500; line-height: 13px; color: #000;}
 .results .panel ul li svg {                 width: 16px; height: 16px; font-size: 16px; margin: 0 5px 0 0; text-align: center; color: #ca1d48;}
@@ -105,9 +105,9 @@
 .study .info a:hover, .study .bread a:hover {                      color: #ca1d48;}
 .study .overlay {                           width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: linear-gradient(to top, #1A3667, rgba(#1A3667, 0));}
 .study .heading {                           position: absolute; bottom: 50;}
-.study .heading h1 {                        font-family: 'Roboto', sans-serif; margin: 0 0 18px; font-weight: 500; text-transform: none; color: #0F0F10;}
+.study .heading h1 {                        font-family: 'Roboto', sans-serif; margin: 0 0 18px; font-weight: 700; text-transform: none; color: #0F0F10;}
 .study .heading p {                         font-weight: 500; color: #0F0F10;}
-.study .panel {                             padding: 20px 10px 20px 20px; margin: 0 0 10px; border-left: 5px solid #f09;}
+.study .panel {                             padding: 20px 10px 20px 20px; margin: 0 0 10px; border-left: 5px solid #CA1D48;}
 .study .panel {                             padding: 40px 45px; margin: 0 0 40px; box-shadow: 0 0 8px #999; border-left: 5px solid #ca1d48; background-color: #fff;}
 .study .panel h1 {                          font-family: 'Roboto', sans-serif; margin: 0 0 10px; font-size: 24px; line-height: 36px; font-weight: 700; text-transform: none; color: #0F0F10;}
 .study .panel h3 {                          font-family: 'Roboto', sans-serif; margin: 0 0 5px; font-size: 18px; line-height: 26px; font-weight: 500; text-transform: none; color: #0F0F10;}

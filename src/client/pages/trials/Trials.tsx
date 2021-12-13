@@ -12,6 +12,11 @@ import { accordionData } from '../../utils/content';
 const Trials = (props: any) =>
 {
 
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, []);
+
     const [trials, setTrials] = useState([]);
     const [text, setText] = useState('');
 
@@ -26,7 +31,7 @@ const Trials = (props: any) =>
         <>
             <SubHeader />
 
-            <div className="trialback">
+            <div id="trials" className="trialback">
                 <svg viewBox="0 0 1440 591" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 0H1440V336L0 564V0Z" fill="#050236" />
                     <path d="M1081.44 382.129L1234.45 350.953L1227.3 395.384L1075.17 424.695L1081.44 382.129Z" fill="#CA1D48" />
@@ -36,11 +41,9 @@ const Trials = (props: any) =>
                     <path d="M372.49 420.466L524.127 387.98L517.269 432.479L366.494 463.093L372.49 420.466Z" fill="#287FDD" />
                     <path d="M359.637 507.592L511.765 475.198L504.907 519.697L354.132 550.311L359.637 507.592Z" fill="#ECECEC" />
                 </svg>
-
             </div>
 
-
-            <section className="trials" style={{ marginBottom: '350px' }}>
+            <section className="trials">
                 <div className="container search">
                     <div className="seven columns offset-by-one-half">
                         <h1>Clinical Trial Search</h1>

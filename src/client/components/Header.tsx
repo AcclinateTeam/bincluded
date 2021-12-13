@@ -21,7 +21,7 @@ const Header = () =>
             openButton.setAttribute('style', `opacity: 0;`);
             closeButton.setAttribute('style', `opacity: 1;`);
         } else {
-            header.style.position = 'absolute';
+            header.style.position = 'relative';
             headerWrapper.setAttribute('style', `height: 60px; background-color: rgb(0,0,0,0);`);
             navBg.setAttribute('style', `background-color: #CA1D48;`);
             openButton.setAttribute('style', `opacity: 1;`);

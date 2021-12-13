@@ -111,7 +111,7 @@ const Footer = () =>
                                     <Link to="/whynow">Why Now?</Link>
                                 </li>
                                 <li>
-                                    <a href="/blog/">Blog</a>
+                                    <a href="/blog">Blog</a>
                                 </li>
                                 <li>
                                     <a href="https://prosperbham.com/">Prosper</a>

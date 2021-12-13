@@ -42,10 +42,10 @@ const SubHeader = () =>
         var headWrapHeight = document.getElementById('header-wrapper').offsetHeight;
 
         // MOBILE NAV SCROLL ANIMATION
-        if (windowWidth <= 426 && windowPosition >= 900 && headWrapHeight <= 61)
+        if (windowWidth <= 500 && windowPosition >= 900 && headWrapHeight <= 61)
         {
             header.setAttribute('style', `position: fixed; background-color: #050236;`);
-        } else if (windowWidth <= 426 && headWrapHeight >= 61)
+        } else if (windowWidth <= 500 && headWrapHeight >= 61)
         {
             header.setAttribute('style', `position: fixed;`);
         } else

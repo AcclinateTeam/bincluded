@@ -147,7 +147,7 @@
 /*  #Mobile (HTC)
 ================================================== */
 
-@media only screen and (max-width: 499px) and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (max-width: 425px) and (-webkit-min-device-pixel-ratio: 1) {
     .container .ten.columns,
     .container .nine.columns,
     .container .eight.columns,

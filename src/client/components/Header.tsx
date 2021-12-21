@@ -21,8 +21,8 @@ const Header = () =>
             openButton.setAttribute('style', `opacity: 0;`);
             closeButton.setAttribute('style', `opacity: 1;`);
         } else {
-            header.style.position = 'relative';
-            headerWrapper.setAttribute('style', `height: 60px; background-color: rgb(0,0,0,0);`);
+            header.style.position = 'fixed';
+            headerWrapper.setAttribute('style', `height: 60px; background-color: #050236;`);
             navBg.setAttribute('style', `background-color: #CA1D48;`);
             openButton.setAttribute('style', `opacity: 1;`);
             closeButton.setAttribute('style', `opacity: 0;`);
@@ -39,9 +39,9 @@ const Header = () =>
         var headWrapHeight = document.getElementById('header-wrapper').offsetHeight;
 
         // MOBILE NAV SCROLL ANIMATION
-        if (windowWidth <= 500 && windowPosition >= 900 && headWrapHeight <= 61) {
+        if (windowWidth <= 1115 && windowPosition >= 900 && headWrapHeight <= 61) {
             header.setAttribute('style', `position: fixed; background-color: #050236;`);      
-        } else if (windowWidth <= 500 && headWrapHeight >= 61) {
+        } else if (windowWidth <= 1115 && headWrapHeight >= 61) {
             header.setAttribute('style', `position: fixed;`);
         } else {
             header.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0);`);           

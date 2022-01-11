@@ -6,6 +6,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
+import Popup from '../components/Popup';
 
 const Home = () =>
 {
@@ -300,6 +301,8 @@ const Home = () =>
                     </div>
                 </div>
             </section>
+
+            <Popup/>
         </>
     );
 }

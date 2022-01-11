@@ -1,13 +1,16 @@
-
-
-
-
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 499px) and (-webkit-min-device-pixel-ratio: 1) {
     // HEADER STYLES
     header {                        width: 100%; height: auto; position: absolute; margin: 0; padding: 0; top: 0; left: 0;}
     .header.wrapper {               width: 100%; height: 60px; overflow: hidden; margin: 0; padding: 0; position: relative; background-color: rgb(0,0,0,0);} 
     .header .logo {                 position: absolute; top:20px; left: 20px;}
     .header .logo svg {             height: 20px; display: block; margin: 0;}
+    // SUB HEADER STYLES
+    header.sub {                            width: 100%; display: block; margin: 0; padding: 0; position: fixed; top: 0; left: 0; z-index: 99; background-color: #050236;}
+    header.sub .header.wrapper {            width: 100%; height: 60px; padding: 0; background-color: #050236;}
+    header.sub ul.log li.signup a {         color: #fff;}
+    header.sub .header .logo {                 position: absolute; top:20px; left: 20px;}
+    header.sub .header .logo svg {             height: 20px; display: block; left: 0; margin: 0;}
+    
     // NAVBAR STYLES
     nav {                           padding: 70px 20px 0; float: none;}
     ul.nav {                        margin: 0;}
@@ -55,17 +58,247 @@
     .call .callout .callimage {                 width: calc(100% - 40px); position: absolute; top: 60px; left: 20px; display: block;}
     .call .callout .callimage img {             width: 100%; display: block;}        
 
-<<<<<<< HEAD
-    .callimage {                                    width: 100px; position: absolute; top: 200px; left: 0; display: block;}
-    .callimage img {                                width: 100px;  display: block;}
+    // HOME PAGE STYLES
+    .portal {                               width: calc(100% - 40px); padding: 0 20px; display: inline-block; margin: 70px 0 40px;}
+    .portal .ports {                        display: block;}
+    .portal .ports .port {                  height: 225px; margin: 0 0 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; background: #fff;}
+    .portal .ports .port h1 {               font-size: 42px; line-height: 42px; margin: 0 0 20px; color: #0F0F10;}
+    .portal .ports .port p {                font-size: 18px; line-height: 26px; color: #0F0F10;}
+    .portal .ports .port svg {              font-size: 56px; display: block; position: relative; clear: both; margin: 0 0 30px; color: #CA1D48;}
+    .portal .ports .port h4  {              font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 32px; text-transform: none; margin: 0 0 12px; color: #0F0F10;}
+    .whyNow .whyText {                      margin: 20px; display: inline-block;}
+    .whyNow .whyText h1 {                   text-align: center;}
+    .whyNow .whyText p {                    text-align: center;}
+    .whyNow .stats {                        padding: 20px 0 0;}
+    .whyNow .button.learnmore {             margin: 0 auto; display: block; text-align: center;}
+    .covid h1 {                             margin: 0 20px 20px;}
+    .covid h2 {                             margin: 0 20px 30px;}
+    // FEATURED RESOURCE STYLES
+    .health.content .featured {                         width: calc(100% - 80px); padding: 20px; margin: 0 0 0 20px; height: auto; box-shadow: 0 0 24px 2px #ddd;}
+    .health.content .featured .face {                   width: 100%; height: 225px; position: relative; opacity: 1; visibility: visible;}
+    .health.content .featured .face img.health {        width: 80%; text-align: center; position: relative;}
+    .health.content .featured .back {                          width: calc(100%); height: auto; margin: 20px 0; display: block; padding: 0;}
+    .health.content .featured .back h3 {                font-family: 'Roboto', sans-serif; font-size: 36px; line-height: 36px; font-weight: 900; text-transform: none; margin: 0 0 20px; color: #1a1a1a;}
+    .featured .back p {                                 font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 24px; font-weight: 300; margin: 0 0 20px; color: #1a1a1a;}
+    // ADDITIONAL RESOURCES STYLES
+    section.addRes {                                width: calc(100% - 40px); margin: 100px 20px;}    
+    section.addRes ul.terminal {                    width: 100%; display: block; text-align: center; border-bottom: 1px solid #cecece;} 
+    section.addRes ul.terminal li {                 font-weight: 900; display: inline-block; padding: 20px 10px 30px; margin: 0 0 -2px 0; text-align: center; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0); color: #cecece;} 
+    // TESTIMONY STYLES
+    section.testimony {                             padding: 50px 0; background-color: #050236;}
+    section.testimony .slides {                     width: 80%; padding: 50px 0 0; margin: 0 auto;}
+    section.testimony .slide .rating svg {          font-size: 20px; line-height: 20px; margin: 0 10px 0 0; color: #EEC31A;}
+    // RECIPE COMPONENT STYLES
+    section.recComp {                               width: calc(100% - 40px); display: block; margin: 50px 20px;}
+    section.recComp .panel .heading {               text-align: center; padding: 0 0 30px;}   
+    section.recComp .panel .heading h1 {            line-height: 50px; margin: 0 0 20px;}
+    section.recComp .panel .heading p {             font-size: 16px; line-height: 24px;}
+    section.recComp .recwrap {                      padding: 0; margin: 0 0 20px;}
+    section.recComp .panel .buttonwrap {            margin-top: 30px;}
+    // RELATED ARTICLES styles
+    section.related {                               width: calc(100% - 40px); display: block; margin: 50px 20px 0;}
+    // FEATURED STORY STYLES
+    section.featStory {                                     width: calc(100% - 40px); height: auto; margin: 0 20px 100px; }
+    section.featStory .story .image {                       height: 335px;}
+    section.featStory .story .text {                        width: calc(100% - 40px); height: auto; padding: 20px; position: relative;}
+    section.featStory .story .text h5 {                     position: relative; top: 0; left: 0; margin: 0 0 30px;}
+    section.featStory .story .text h1 {                     width: 90%; font-size: 48px; line-height: 56px; position: relative; top: 0; left: 0; margin: 0 0 20px;}
+    section.featStory .story .text p {                      width: 100%; position: relative; bottom: 0; left: 0; margin: 0 0 20px;}
+    section.featStory .story .text a {                      position: relative; bottom: 0; left: 0;}
+    // COVID PHRASE STYLES
+    section .covid19 {                                  width: calc(100% - 40px); margin: 50px 20px 50px;}
+    section .covid19 .phrase {                          width: 100%; height: 375px; display: inline-block; position: relative; box-shadow: 0 0 24px 2px #234951;}
+    section .covid19 .phrase .face {                    width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; opacity: 1; visibility: visible; background-size: cover; background-position: center; background-color: #fff;}
+    section .covid19 .phrase .face .overlay {           width: 100%; height: 100%; background: linear-gradient(0deg, rgba(5,2,54,1) 35%, rgba(0,0,0,0) 100%);}
+    section .covid19 .phrase .face .overlay h1 {        width: 70%; font-size: 38px; line-height: 46px; text-align: center; margin: 0 auto; padding: 70px 0 0; color: #fff;}
+    // COVID VIDEO STYLES
+    section .covid19 .panes {                           padding: 0 20px 20px;}
+    section .covid19 .pane {                            padding: 30px; display: box; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
+    section .covid19 .pane .texts {                     height: auto; position: relative;}
+    section .covid19 .pane .texts .text {               position: relative; top: 0; left: 0;}
+    section .covid19 .pane .texts .text.right {                 margin: 30px 0 0; left: 0; top: 20px;}
+    section .covid19 .pane .text h1 {                   width: 90%; font-size: 40px; line-height: 48px;margin: 50px 100px 0 0; display:block;}
+    section .covid19 .pane .text p {                    font-size: 16px; line-height: 24px; margin: 30px 0; color: #0F0F10;}
+    section .covid19 .pane .texts .tag.right {          top: 20px; left: 0;}
+    section .covid19 .pane .video {                     height: 225px;}
+    // PARTNER PANES [EXTENDS COVID19 PANEL STYLES]
+    .covid19 .pane .partnerImg {                width: 100%; height: 100%; background-size: 50%; background-position: center; background-repeat: no-repeat;}
+    section .partnerUp .content {                       padding: 75px 20px; margin: 0 0 30px; z-index: -99; background-color: #000;}
+    section .partnerUp .content p {                     width: 100%; text-align: center; margin: 0 auto 20px;}
+    section .partnerUp .content a {                     font-size: 24px; width: calc(100% - 60px); margin: 20px auto 0; text-align: center; padding: 15px 30px; color: #fff; background-color: #287FDD;}
+    // COVID INFO STYLES
+    .covid19 .views .view {                     text-align: center; padding: 40px 0; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
+    section .covid19 .views .vue {                      padding: 50px 0 50px;}
+    .covid19 .views .vue h1 {                   font-size: 48px; line-height: 48px; margin: 0 100px 30px 0; color: #0F0F10;}
+    .covid19 .views .vue li {                   font-size: 14px; line-height: 22px; margin: 0 0 10px; color: #0F0F10;}
+    .covid19 .views .vue svg {                  float: left; margin: 0 8px 0 0; color: #CA1D48;}
 
-    //Why Now Styles
-    .whyNow .whyTextWide p {
-        width: 100%;
+    // CALLOUT STYLES
+    section.careers .callout {                         width: 100%; height: 500px; overflow: hidden; position: relative;}
+    section.careers .callout .imgcallLeft {            width: 30%; position: absolute; bottom: 10px; left: -10px;}
+    section.careers .callout .imgcallRight {           width: 30%; position: absolute; bottom: 10px; right: -10px;}
+    section.careers .callout .heading h1 {                 font-family: 'Oswald', sans-serif; font-size: 56px; line-height: 56px; margin: 70px 20px 30px; color: #0F0F10;}
+    section.careers .callout p.tagline {                   width: calc(100% - 40px); font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 25px; font-weight: 500; text-align: center; position: absolute; bottom: 90px; padding: 0 20px; color: #0F0F10;}
+    // HOME PAGE WHYNOW? SECTION STYLES
+    .whyNow {                               width: 100%; overflow: hidden; background-color: #050236;}
+    .whyNow .whyTextWide {                  text-align: center; padding: 50px 20px;}
+    .whyNow .whyTextWide h1 {               font-size: 48px; line-height: 60px; font-weight: 700; margin: 0 0 30px; color: #fff;}
+    .whyNow .whyTextWide p {                width: auto; font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 auto; color: #fff;}
+    // UTILS STYLES
+    section .policy .content {                      margin: 100px 20px 150px; display: block;}
+    // WHYNOW PAGE STYLES
+    .trialback {                                width: 100%; position: absolute; top: 280px; left: 0;}
+    .whyComp .heading {                         width: calc(100% - 40px); padding: 100px 20px 0; text-align: center; margin: 0 0 120px; background-color: #050236;}
+    .whyComp .heading p {                       width: 100%; font-size: 16px; line-height: 24px; margin: 30px 0 30px; color: #fff;}
+    // VIDEO PANEL STYLES
+    .whyComp .videoPanel {                      width: calc(100% - 40px); padding: 20px; display: block; margin: 0 0 100px;}
+    .whyComp .vidPanes {                        display: block; padding: 40px 0 0;}
+    .whyComp .vidPane {                         height: 300px; display: block; margin: 0 0 20px;}
+    .whyComp .panes {                           display: block; margin: 0 0 20px; box-shadow: 0 0 24px 2px #ddd;}
+    // WHYNOW LOWER STYLES
+    .whyComp .videoPanel .break p {                         width: 100%;}
+    // WHYNOW LEADERS PANEL
+    .leaders {                                  width: calc(100% - 40px); display: block; position: relative; overflow: hidden; padding: 0 20px 50px;}
+    .leaders .leadersbg {                       width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: 100%; background-repeat: no-repeat; background-position: 0 0;}
+    .leaders .heading {                         padding: 50px 0 50px;}
+    .leaders .heading h1 {                      font-size: 48px; line-height: 48px; text-align: center; margin: 0 0 30px; color: #0F0F10;}
+    .leaders .heading h3 {                      width: 100%;}
+    .leaders .heading p {                       width: 100%; margin: 0 auto 10px;}  
+    .leaders .window {                          display: block; margin: 0 0 30px 0; padding: 30px; box-shadow: 0 0 24px 2px #ddd; background-color: #fff;}
+    // ORGANIZATIONS PANEL STYLES
+    .orgs {                                     display: block; position: relative; overflow: hidden; margin: 0 0 100px;}
+    .orgs .heading {                            padding: 90px 0 50px;}
+    .orgs .heading h1 {                         font-size: 48px; line-height: 48px; text-align: center; margin: 0 0 30px; color: #0F0F10;}
+    .orgs .heading h3 {                         width: 100%; font-family: 'Roboto', sans-serif; font-size: 32px; line-height: 40px; font-weight: 500; text-transform: none; text-align: center; margin: 0 auto 30px; color: #0F0F10;}
+    .orgs .orgImg {                             width: 100%; height: 240px; display: block; margin: 0 0 30px; background-repeat: no-repeat; background-position: center; background-size: 50%;}
+    // WHYNOW LOWER STYLES
+    .whyComp .lower {                           width: calc(100% - 40px); margin: 0; padding: 20px;}
+    .whyComp .lower h1 {                        text-align: center; margin: 0 0 30px; color: #0F0F10;}
+    .whyComp .lower p {                         width: 100%; text-align: center; margin: 0 auto 20px; font-size: 16px; line-height: 24px; }
+    .whyComp .buttonwrap {                      width: 100%; text-align: center; margin: 0 auto 50px;} 
+    // BLOG PAGE STYLES
+    .blogHeader {                               width: 100%; position: absolute; overflow: hidden; top: 60px; left: 0; z-index: -9; }
+    .blogHeader svg {                           width: 1400px; height: 650px; }
+    .blogContent .heading h1 {                  font-size: 30px; font-weight: 700; color: #fff; margin: 100px 20px 0; padding: 0; }
+    .blogContent .panel {                       width: 100%; margin: 0 0 100px;} 
+    // SINGLE BLOG POST STYLES
+    .singleHeader {                             width: 100%; height: 500px; position: relative; background-color: #000;} 
+    .singleHeader .image {                      width: 100%; height: 100%; position:absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: -250px auto;  opacity: 1;}
+    .singleHeader .text {                       height: calc(100% - 100px); margin: 60px 0 0; padding: 20px; color: #fff; z-index: 9; background-color: rgb(0,0,0,0.8);}
+    .singleHeader .text h3 {                    font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; text-transform: none; margin:0 0 5px; padding: 0; color: #fff;}
+    .singleHeader .text h1 {                    font-size: 28px; line-height: 36px; font-weight: 700; margin: 0; padding: 0; color: #fff;}
+    .singleHeader .text p {                     width: 100%; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 20px 0 20px;}
+    .singlePost {                               margin: 50px 0 100px; padding: 0 20px;} 
+    .singlePost .content p {                    margin: 0 0 40px;}
+    // RECIPE PAGE STYLES
+    .recHeader {                                width: calc(100%); overflow: hidden; padding: 0; margin: 0; position: absolute; top: 60px; left: 0;}
+    .recHeader svg {                            height: 650px;}
+    .recipe .heading {                          padding: 90px 20px 50px;}
+    .recipe .heading h3 {                       width: 100%;}  
+    // RECIPE CARDS STYLES
+    .recipe .deck {                             margin: 0 0 20px; padding: 0 0 100px;}
+    // SINGLE RECIPE STYLES
+    section.recipe {                                width: calc(100% - 40px); padding: 20px;}
+    .recipe .single .header {                       width: 100%;}
+    .recipe .recMarg {                              margin: 0 0 0;}
+    .recipe .single .header h1 {                    width: 100%; font-size: 56px; line-height: 56px; padding: 100px 0 5px;}
+    .recipe .single .header h3 {                    font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; text-transform: none; margin: 0 0 30px 2px; color: #0F0F10;}
+    .recipe .single .image {                        width: 100%; height: 600px;}
+    // TRIALS STYLES
+    .trials {                                   margin: 0 0 100px;}
+    // ACCORDIAN STYLES
+    .trials .accordions {                       width: calc(100% - 40px); padding: 0 20px 50px;}
+    .trials .accordion .title {                 width: calc(100% - 30px); height: auto; font-size: 16px; line-height: 20px; font-weight: 700; color: #1A3667;}
+    .trials .accordion .accordion-content {     font-size: 16px; line-height: 24px; margin: 15px 40px 15px 34px;}
+    // TRIALS RESULTS STYLES
+    .results.space {                            width: calc(100% - 40px); padding: 0 20px 100px;}
+    .results .panel {                           padding: 20px;}
+    .results .panel h1 {                        margin: 0 0 20px 0; font-size: 18px; line-height: 24px; font-weight: 700; text-transform: none; color: #0F0F10;}
+    .results .panel p {                         margin: 0 0 30px 0; font-size: 16px; line-height: 22px; color: #0F0F10;}
+    .results .panel p.button {                  margin: 0 0 0; }
+    // FULLSTUDY STYLES
+    // .study {                                    background-color: #f09;}  
+    .study .callout {                           width: calc(100% - 40px); padding: 80px 20px 0; height: 450px; position: relative; background: center; background-size: cover; background-color: #fff;}
+    .study .callout .heading {                  width: calc(100% - 40px); position: absolute; top: 80;}
+    .study .heading h1 {                        font-size: 36px; line-height: 44px; font-weight: 700; text-transform: none; color: #0F0F10;}
+    .study .info {                              width: 100%; text-align: center; margin: 0 0 10px; float: left; font-weight: 500; color: #1A3667;}
+    .study .bread {                             width: 100%; text-align: center; float: right; font-weight: 500; color: #1A3667;}
+    .study .panel {                             padding: 20px; margin: 0 20px 10px; border-left: 5px solid #CA1D48;}
+    .study .panel p {                           margin: 0 0 30px;}    
+    //FOOTER STYLES
+    .foot .sponsors h1 {                        margin: 0 20px 20px; text-align: center;}
+    .foot .sponsors .images {                   display: block; margin: 0 20px 50px; text-align: center;}
+    .foot .sponsors img {                       width: 100%; display: inline-block; z-index: 99; margin: 0 0 10px;}
+    .footer {                                   width: calc(100% - 40px); padding: 65px 20px 0; background-color: #050236;}
+    .footEnd {                                  padding: 13px 0; border-top: 1px solid #fff; }
+    .footEnd ul {                               float: none; margin: 0 0 0 20px; padding: 0;}
+    .footend ul li {                            padding: 8px 0 0; margin: 0 10px 0 0; display: inline-block;}
+    .footLogo {                                 margin: 0 0 30px;}
+    .footer .social {                           margin: 0 0 40px;}
+    .footer .connect {                           margin: 0 0 40px;}
+    .footEnd p {                                margin: 20px;}
+}
 
-    }
+@media only screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 1) {
 
-=======
+    // HEADER STYLES
+    header {                        width: 100%; height: auto; position: absolute; margin: 0; padding: 0; top: 0; left: 0;}
+    .header.wrapper {               width: 100%; height: 60px; overflow: hidden; margin: 0; padding: 0; position: relative; background-color: rgb(0,0,0,0);} 
+    .header .logo {                 position: absolute; top:20px; left: 20px;}
+    .header .logo svg {             height: 20px; display: block; margin: 0;}
+    // SUB HEADER STYLES
+    header.sub {                            width: 100%; display: block; margin: 0; padding: 0; position: fixed; top: 0; left: 0; z-index: 99; background-color: #050236;}
+    header.sub .header.wrapper {            width: 100%; height: 60px; padding: 0; background-color: #050236;}
+    header.sub ul.log li.signup a {         color: #fff;}
+    header.sub .header .logo {                 position: absolute; top:20px; left: 20px;}
+    header.sub .header .logo svg {             height: 20px; display: block; left: 0; margin: 0;}
+    
+    // NAVBAR STYLES
+    nav {                           padding: 70px 20px 0; float: none;}
+    ul.nav {                        margin: 0;}
+    ul.nav li {                     margin: 0; font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 48px; line-height: 56px; font-weight: 500; position: relative; display: block; padding: 10px 0; margin: 0 15px 0 0;}
+    ul.nav li a {                   text-decoration: none; color: #fff;}
+    // LOGIN BUTTONS
+    .login {                        float: none; margin: 0;}
+    ul.log {                        margin: 0; padding: 0 20px 0; list-style: none;}
+    ul.log li {                     font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 16px; font-weight: 500; margin: 0; display: block; margin: 0;}
+    ul.log li a {                   display: block; padding: 0; text-decoration: none;}
+    ul.log li.signup a {            font-size: 48px; line-height: 56px; margin: 10px 0 40px; color: #fff;}
+    ul.log li.logins a {            font-size: 16px; padding: 15px 35px; text-align: center; color: #fff; background-color: #CA1D48;}
+    // MENU BUTTON STYLES
+    header .navButton {             width: 36px; display: block; opacity: 1; visibility: visible; height: 36px; position: absolute; top: 12px; right: 20px; padding: 0; margin: 0; border-radius: 22px; background-color: #CA1D48;}
+    header .navButton svg {         display: block; margin: 0 auto; }
+    header .navButton svg.open {        font-size: 18px; opacity: 1; position: absolute; top: 9px; left: 10px; color: #fff;}
+    header .navButton svg.close {       font-size: 20px; opacity: 0; position: absolute; top: 8px; left: 11px; color: #0F0F10;}
+    // CALLOUT STYLES
+    .home .calloutbg {                                    width: 2050px; height: auto; overflow: hidden; position: absolute; top: 0; left: 0; z-index: -9;}
+    .home .calloutbg svg {                                width: 2050px;}   
+    .home .callout .callimage {                                    width: calc(100% - 40px); position: absolute; top: 60px; left: 20px; display: block;}
+    .home .callout .callimage img {                                width: 100%;  display: block;}
+    .home .callout {                                      width: 100%; margin: 0 0 100px;}
+    .home .callout .content {                             width: calc(100% - 40px); height: 500px; position: absolute; top: 380px; left: 20px;}
+    .home .callout .content .calltext {                   width: 100%; display: block;}
+    .home .callout .content .calltext h1 {                font-size: 64px; line-height: 64px; font-weight: 700; color: #fff; margin: 0 0 20px;}
+    .home .callout .content .calltext p {                 width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff; }
+    .home .callout .button {                              font-family: 'Oswald', sans-serif; display: block; text-transform: uppercase; font-weight: 700; line-height:52px; margin: 0 0 15px;}
+    .button.signup {                                border: 1px solid #CA1D48; background-color: #CA1D48; color: #fff;} 
+    .button.learnmore {                             border: 1px solid #fff; background-color: none !important; color: #fff;}
+    .button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
+    .button.learnmore:hover {                       border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;}
+    // SUBPAGE CALLOUT STYLES (HOME/FAMILY/ETC)
+    .call {                                             width: 100%; height: 925px; position: relative; background-color: #050236;}  
+    .call .callbg {                                     width: 100%; height: 900px; overflow: hidden; position: absolute; top: 100px; left: 0; z-index: -1;}
+    .call .callbg svg {                                 width: 2000px;}
+    .call .callout {                                    width: 100%; height: auto; position: absolute; top: 0; left: 0;}
+    .call .callout .content {                           width: calc(100% - 40px); height: 500px; position: absolute; top: 380px; left: 20px;}
+    .call .callout .content .calltext {                 width: 100%; display: block;}
+    .call .callout .content .calltext h1 {              font-size: 64px; line-height: 64px; font-weight: 700; color: #fff; margin: 0 0 20px;}
+    .call .callout .content .calltext p {               width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff;}
+    .call .callout .content .callbutton {               width: 100%; display: block; text-transform: uppercase; font-weight: 700; line-height:52px; margin: 0 0 15px; color: #fff;}
+    .call .callout .button {                                   display: block; font-weight: 500; margin: 0 0 20px; padding: 15px 20px; text-align: center; text-decoration: none; color: #fff;}
+    .call .callout .callimage {                 width: calc(100% - 40px); position: absolute; top: 60px; left: 20px; display: block;}
+    .call .callout .callimage img {             width: 100%; display: block;}        
+
     // HOME PAGE STYLES
     .portal {                               width: calc(100% - 40px); padding: 0 20px; display: inline-block; margin: 70px 0 40px;}
     .portal .ports {                        display: block;}
@@ -134,8 +367,8 @@
     // PARTNER PANES [EXTENDS COVID19 PANEL STYLES]
     .covid19 .pane .partnerImg {                width: 100%; height: 100%; background-size: 50%; background-position: center; background-repeat: no-repeat;}
     section .partnerUp .content {                       padding: 75px 20px; margin: 0 0 30px; z-index: -99; background-color: #000;}
-    section .partnerUp .content p {                     width: 100%; text-align: center; margin: 0 auto;}
-    section .partnerUp .content a {                     font-family: 'Oswald', sans-serif; font-size:24px; line-height: 34px; font-weight: 700; display: inline-block; text-transform: uppercase; text-decoration: none; margin: 20px 0 0; padding: 15px 30px; color: #fff; background-color: #287FDD;}
+    section .partnerUp .content p {                     width: 100%; text-align: center; margin: 0 auto 20px;}
+    section .partnerUp .content a {                     font-size: 24px; width: calc(100% - 60px); margin: 20px auto 0; text-align: center; padding: 15px 30px; color: #fff; background-color: #287FDD;}
     // COVID INFO STYLES
     .covid19 .views .view {                     text-align: center; padding: 40px 0; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
     section .covid19 .views .vue {                      padding: 50px 0 50px;}
@@ -143,7 +376,341 @@
     .covid19 .views .vue li {                   font-size: 14px; line-height: 22px; margin: 0 0 10px; color: #0F0F10;}
     .covid19 .views .vue svg {                  float: left; margin: 0 8px 0 0; color: #CA1D48;}
 
+    // CALLOUT STYLES
+    section.careers .callout {                         width: 100%; height: 500px; overflow: hidden; position: relative;}
+    section.careers .callout .imgcallLeft {            width: 30%; position: absolute; bottom: 10px; left: -10px;}
+    section.careers .callout .imgcallRight {           width: 30%; position: absolute; bottom: 10px; right: -10px;}
+    section.careers .callout .heading h1 {                 font-family: 'Oswald', sans-serif; font-size: 56px; line-height: 56px; margin: 70px 20px 30px; color: #0F0F10;}
+    section.careers .callout p.tagline {                   width: calc(100% - 40px); font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 25px; font-weight: 1500; text-align: center; position: absolute; bottom: 90px; padding: 0 20px; color: #0F0F10;}
+    // HOME PAGE WHYNOW? SECTION STYLES
+    .whyNow {                               width: 100%; overflow: hidden; background-color: #050236;}
+    .whyNow .whyTextWide {                  text-align: center; padding: 50px 20px;}
+    .whyNow .whyTextWide h1 {               font-size: 48px; line-height: 60px; font-weight: 700; margin: 0 0 30px; color: #fff;}
+    .whyNow .whyTextWide p {                width: auto; font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 auto; color: #fff;}
+    // UTILS STYLES
+    section .policy .content {                      margin: 100px 20px 150px; display: block;}
+    // WHYNOW PAGE STYLES
+    .trialback {                                width: 100%; position: absolute; top: 280px; left: 0;}
+    .whyComp .heading {                         width: calc(100% - 40px); padding: 100px 20px 0; text-align: center; margin: 0 0 120px; background-color: #050236;}
+    .whyComp .heading p {                       width: 100%; font-size: 16px; line-height: 24px; margin: 30px 0 30px; color: #fff;}
+    // VIDEO PANEL STYLES
+    .whyComp .videoPanel {                      width: calc(100% - 40px); padding: 20px; display: block; margin: 0 0 100px;}
+    .whyComp .vidPanes {                        display: block; padding: 40px 0 0;}
+    .whyComp .vidPane {                         height: 300px; display: block; margin: 0 0 20px;}
+    .whyComp .panes {                           display: block; margin: 0 0 20px; box-shadow: 0 0 24px 2px #ddd;}
+    // WHYNOW LOWER STYLES
+    .whyComp .videoPanel .break p {                         width: 100%;}
+    // WHYNOW LEADERS PANEL
+    .leaders {                                  width: calc(100% - 40px); display: block; position: relative; overflow: hidden; padding: 0 20px 50px;}
+    .leaders .leadersbg {                       width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: 100%; background-repeat: no-repeat; background-position: 0 0;}
+    .leaders .heading {                         padding: 50px 0 50px;}
+    .leaders .heading h1 {                      font-size: 48px; line-height: 48px; text-align: center; margin: 0 0 30px; color: #0F0F10;}
+    .leaders .heading h3 {                      width: 100%;}
+    .leaders .heading p {                       width: 100%; margin: 0 auto 10px;}  
+    .leaders .window {                          display: block; margin: 0 0 30px 0; padding: 30px; box-shadow: 0 0 24px 2px #ddd; background-color: #fff;}
+    // ORGANIZATIONS PANEL STYLES
+    .orgs {                                     display: block; position: relative; overflow: hidden; margin: 0 0 100px;}
+    .orgs .heading {                            padding: 90px 0 50px;}
+    .orgs .heading h1 {                         font-size: 48px; line-height: 48px; text-align: center; margin: 0 0 30px; color: #0F0F10;}
+    .orgs .heading h3 {                         width: 100%; font-family: 'Roboto', sans-serif; font-size: 32px; line-height: 40px; font-weight: 500; text-transform: none; text-align: center; margin: 0 auto 30px; color: #0F0F10;}
+    .orgs .orgImg {                             width: 100%; height: 240px; display: block; margin: 0 0 30px; background-repeat: no-repeat; background-position: center; background-size: 50%;}
+    // WHYNOW LOWER STYLES
+    .whyComp .lower {                           width: calc(100% - 40px); margin: 0; padding: 20px;}
+    .whyComp .lower h1 {                        text-align: center; margin: 0 0 30px; color: #0F0F10;}
+    .whyComp .lower p {                         width: 100%; text-align: center; margin: 0 auto 20px; font-size: 16px; line-height: 24px; }
+    .whyComp .buttonwrap {                      width: 100%; text-align: center; margin: 0 auto 50px;} 
+    // BLOG PAGE STYLES
+    .blogHeader {                               width: 100%; position: absolute; overflow: hidden; top: 60px; left: 0; z-index: -9; }
+    .blogHeader svg {                           width: 1400px; height: 650px; }
+    .blogContent .heading h1 {                  font-size: 30px; font-weight: 700; color: #fff; margin: 100px 20px 0; padding: 0; }
+    .blogContent .panel {                       width: 100%; margin: 0 0 100px;} 
+    // SINGLE BLOG POST STYLES
+    .singleHeader {                             width: 100%; height: 500px; position: relative; background-color: #000;} 
+    .singleHeader .image {                      width: 100%; height: 100%; position:absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: -250px auto;  opacity: 1;}
+    .singleHeader .text {                       height: calc(100% - 100px); margin: 60px 0 0; padding: 20px; color: #fff; z-index: 9; background-color: rgb(0,0,0,0.8);}
+    .singleHeader .text h3 {                    font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; text-transform: none; margin:0 0 5px; padding: 0; color: #fff;}
+    .singleHeader .text h1 {                    font-size: 28px; line-height: 36px; font-weight: 700; margin: 0; padding: 0; color: #fff;}
+    .singleHeader .text p {                     width: 100%; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 20px 0 20px;}
+    .singlePost {                               margin: 50px 0 100px; padding: 0 20px;} 
+    .singlePost .content p {                    margin: 0 0 40px;}
+    // RECIPE PAGE STYLES
+    .recHeader {                                width: calc(100%); overflow: hidden; padding: 0; margin: 0; position: absolute; top: 60px; left: 0;}
+    .recHeader svg {                            height: 650px;}
+    .recipe .heading {                          padding: 90px 20px 50px;}
+    .recipe .heading h3 {                       width: 100%;}  
+    // RECIPE CARDS STYLES
+    .recipe .deck {                             margin: 0 0 20px; padding: 0 0 100px;}
+    // SINGLE RECIPE STYLES
+    section.recipe {                                width: calc(100% - 40px); padding: 20px;}
+    .recipe .single .header {                       width: 100%;}
+    .recipe .recMarg {                              margin: 0 0 0;}
+    .recipe .single .header h1 {                    width: 100%; font-size: 56px; line-height: 56px; padding: 100px 0 5px;}
+    .recipe .single .header h3 {                    font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; text-transform: none; margin: 0 0 30px 2px; color: #0F0F10;}
+    .recipe .single .image {                        width: 100%; height: 600px;}
+    // TRIALS STYLES
+    .trials {                                   margin: 0 0 100px;}
+    // ACCORDIAN STYLES
+    .trials .accordions {                       width: calc(100% - 40px); padding: 0 20px 50px;}
+    .trials .accordion .title {                 width: calc(100% - 30px); height: auto; font-size: 16px; line-height: 20px; font-weight: 700; color: #1A3667;}
+    .trials .accordion .accordion-content {     font-size: 16px; line-height: 24px; margin: 15px 40px 15px 34px;}
+    // TRIALS RESULTS STYLES
+    .results.space {                            width: calc(100% - 40px); padding: 0 20px 100px;}
+    .results .panel {                           padding: 20px;}
+    .results .panel h1 {                        margin: 0 0 20px 0; font-size: 18px; line-height: 24px; font-weight: 700; text-transform: none; color: #0F0F10;}
+    .results .panel p {                         margin: 0 0 30px 0; font-size: 16px; line-height: 22px; color: #0F0F10;}
+    .results .panel p.button {                  margin: 0 0 0; }
+    // FULLSTUDY STYLES
+    // .study {                                    background-color: #f09;}  
+    .study .callout {                           width: calc(100% - 40px); padding: 80px 20px 0; height: 450px; position: relative; background: center; background-size: cover; background-color: #fff;}
+    .study .callout .heading {                  width: calc(100% - 40px); position: absolute; top: 80;}
+    .study .heading h1 {                        font-size: 36px; line-height: 44px; font-weight: 700; text-transform: none; color: #0F0F10;}
+    .study .info {                              width: 100%; text-align: center; margin: 0 0 10px; float: left; font-weight: 500; color: #1A3667;}
+    .study .bread {                             width: 100%; text-align: center; float: right; font-weight: 500; color: #1A3667;}
+    .study .panel {                             padding: 20px; margin: 0 20px 10px; border-left: 5px solid #CA1D48;}
+    .study .panel p {                           margin: 0 0 30px;}    
+    //FOOTER STYLES
+    .foot .sponsors h1 {                        margin: 0 20px 20px; text-align: center;}
+    .foot .sponsors .images {                   display: block; margin: 0 20px 50px; text-align: center;}
+    .foot .sponsors img {                       width: 100%; display: inline-block; z-index: 99; margin: 0 0 10px;}
+    .footer {                                   width: calc(100% - 40px); padding: 65px 20px 0; background-color: #050236;}
+    .footEnd {                                  padding: 13px 0; border-top: 1px solid #fff; }
+    .footEnd ul {                               float: none; margin: 0 0 0 20px; padding: 0;}
+    .footend ul li {                            padding: 8px 0 0; margin: 0 10px 0 0; display: inline-block;}
+    .footLogo {                                 margin: 0 0 30px;}
+    .footer .social {                           margin: 0 0 40px;}
+    .footer .connect {                           margin: 0 0 40px;}
+    .footEnd p {                                margin: 20px;}    
+}
+
+
+@media only screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1) {    
+    // HEADER STYLES
+    header {                        width: 100%; height: auto; position: absolute; margin: 0; padding: 0; top: 0; left: 0;}
+    .header.wrapper {               width: 100%; height: 60px; overflow: hidden; margin: 0; padding: 0; position: relative; background-color: rgb(0,0,0,0);} 
+    .header .logo {                 position: absolute; top:20px; left: 20px;}
+    .header .logo svg {             height: 20px; display: block; margin: 0;}
+    // SUB HEADER STYLES
+    header.sub {                            width: 100%; display: block; margin: 0; padding: 0; position: fixed; top: 0; left: 0; z-index: 99; background-color: #050236;}
+    header.sub .header.wrapper {            width: 100%; height: 60px; padding: 0; background-color: #050236;}
+    header.sub ul.log li.signup a {         color: #fff;}
+    header.sub .header .logo {                 position: absolute; top:20px; left: 20px;}  
+    header.sub .header .logo svg {             height: 20px; display: block; left: 0; margin: 0;}
     
+    // NAVBAR STYLES
+    nav {                           padding: 70px 20px 0; float: none;}
+    ul.nav {                        margin: 0;}
+    ul.nav li {                     margin: 0; font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 48px; line-height: 56px; font-weight: 500; position: relative; display: block; padding: 10px 0; margin: 0 15px 0 0;}
+    ul.nav li a {                   text-decoration: none; color: #fff;}
+    // LOGIN BUTTONS
+    .login {                        float: none; margin: 0;}
+    ul.log {                        margin: 0; padding: 0 20px 0; list-style: none;}
+    ul.log li {                     font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 16px; font-weight: 500; margin: 0; display: block; margin: 0;}
+    ul.log li a {                   display: block; padding: 0; text-decoration: none;}
+    ul.log li.signup a {            font-size: 48px; line-height: 56px; margin: 10px 0 40px; color: #fff;}
+    ul.log li.logins a {            font-size: 16px; padding: 15px 35px; text-align: center; color: #fff; background-color: #CA1D48;}
+    // MENU BUTTON STYLES
+    header .navButton {             width: 36px; display: block; opacity: 1; visibility: visible; height: 36px; position: absolute; top: 12px; right: 20px; padding: 0; margin: 0; border-radius: 22px; background-color: #CA1D48;}
+    header .navButton svg {         display: block; margin: 0 auto; }
+    header .navButton svg.open {        font-size: 18px; opacity: 1; position: absolute; top: 9px; left: 10px; color: #fff;}
+    header .navButton svg.close {       font-size: 20px; opacity: 0; position: absolute; top: 8px; left: 11px; color: #0F0F10;}
+    // CALLOUT STYLES
+    .home .calloutbg {                                    width: 2050px; height: auto; overflow: hidden; position: absolute; top: 0; left: 0; z-index: -9;}
+    .home .calloutbg svg {                                width: 2050px;}   
+    .home .callout .callimage {                                    width: calc(100% - 40px); position: absolute; top: 60px; left: 20px; display: block;}
+    .home .callout .callimage img {                                width: 100%;  display: block;}
+    .home .callout {                                      width: 100%; margin: 0 0 100px;}
+    .home .callout .content {                             width: calc(100% - 40px); height: 500px; position: absolute; top: 330px; left: 20px;}
+    .home .callout .content .calltext {                   width: 100%; display: block;}
+    .home .callout .content .calltext h1 {                font-size: 64px; line-height: 64px; font-weight: 700; color: #fff; margin: 0 0 20px;}
+    .home .callout .content .calltext p {                 width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff; }
+    .home .callout .button {                              font-family: 'Oswald', sans-serif; display: block; text-transform: uppercase; font-weight: 700; line-height:52px; margin: 0 0 15px;}
+    .button.signup {                                border: 1px solid #CA1D48; background-color: #CA1D48; color: #fff;} 
+    .button.learnmore {                             border: 1px solid #fff; background-color: none !important; color: #fff;}
+    .button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
+    .button.learnmore:hover {                       border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;}
+    // SUBPAGE CALLOUT STYLES (HOME/FAMILY/ETC)
+    .call {                                             width: 100%; height: 925px; position: relative; background-color: #050236;}  
+    .call .callbg {                                     width: 100%; height: 900px; overflow: hidden; position: absolute; top: 100px; left: 0; z-index: -1;}
+    .call .callbg svg {                                 width: 2050px;}
+    .call .callout {                                    width: 100%; height: auto; position: absolute; top: 0; left: 0;}
+    .call .callout .content {                           width: calc(100% - 40px); height: 500px; position: absolute; top: 330px; left: 20px;}
+    .call .callout .content .calltext {                 width: 100%; display: block;}
+    .call .callout .content .calltext h1 {              font-size: 48px; line-height: 56px; font-weight: 700; color: #fff; margin: 0 0 20px;}
+    .call .callout .content .calltext p {               width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff;}
+    .call .callout .content .callbutton {               width: 100%; display: block; text-transform: uppercase; font-weight: 700; line-height:52px; margin: 0 0 15px; color: #fff;}
+    .call .callout .button {                                   display: block; font-weight: 500; margin: 0 0 20px; padding: 15px 20px; text-align: center; text-decoration: none; color: #fff;}
+    .call .callout .callimage {                 width: calc(100% - 40px); position: absolute; top: 60px; left: 20px; display: block;}
+    .call .callout .callimage img {             width: 100%; display: block;}        
+
+    // HOME PAGE STYLES
+    .portal {                               width: calc(100% - 40px); padding: 0 20px; display: inline-block; margin: 70px 0 40px;}
+    .portal .ports {                        display: block;}
+    .portal .ports .port {                  height: 225px; margin: 0 0 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; background: #fff;}
+    .portal .ports .port h1 {               font-size: 42px; line-height: 42px; margin: 0 0 20px; color: #0F0F10;}
+    .portal .ports .port p {                font-size: 18px; line-height: 26px; color: #0F0F10;}
+    .portal .ports .port svg {              font-size: 56px; display: block; position: relative; clear: both; margin: 0 0 30px; color: #CA1D48;}
+    .portal .ports .port h4  {              font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 32px; text-transform: none; margin: 0 0 12px; color: #0F0F10;}
+    .whyNow .whyText {                      margin: 20px; display: inline-block;}
+    .whyNow .whyText h1 {                   text-align: center;}
+    .whyNow .whyText p {                    text-align: center;}
+    .whyNow .stats {                        padding: 20px 0 0;}
+    .whyNow .button.learnmore {             margin: 0 auto; display: block; text-align: center;}
+    .covid h1 {                             margin: 0 20px 20px;}
+    .covid h2 {                             margin: 0 20px 30px;}
+    // FEATURED RESOURCE STYLES
+    .health.content .featured {                         width: calc(100% - 80px); padding: 20px; margin: 0 0 0 20px; height: auto; box-shadow: 0 0 24px 2px #ddd;}
+    .health.content .featured .face {                   width: 100%; height: 225px; position: relative; opacity: 1; visibility: visible;}
+    .health.content .featured .face img.health {        width: 80%; text-align: center; position: relative;}
+    .health.content .featured .back {                          width: calc(100%); height: auto; margin: 20px 0; display: block; padding: 0;}
+    .health.content .featured .back h3 {                font-family: 'Roboto', sans-serif; font-size: 36px; line-height: 36px; font-weight: 900; text-transform: none; margin: 0 0 20px; color: #1a1a1a;}
+    .featured .back p {                                 font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 24px; font-weight: 300; margin: 0 0 20px; color: #1a1a1a;}
+    // ADDITIONAL RESOURCES STYLES
+    section.addRes {                                width: calc(100% - 40px); margin: 100px 20px;}    
+    section.addRes ul.terminal {                    width: 100%; display: block; text-align: center; border-bottom: 1px solid #cecece;} 
+    section.addRes ul.terminal li {                 font-weight: 900; display: inline-block; padding: 20px 10px 30px; margin: 0 0 -2px 0; text-align: center; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0); color: #cecece;} 
+    // TESTIMONY STYLES
+    section.testimony {                             padding: 50px 0; background-color: #050236;}
+    section.testimony .slides {                     width: 80%; padding: 50px 0 0; margin: 0 auto;}
+    section.testimony .slide .rating svg {          font-size: 20px; line-height: 20px; margin: 0 10px 0 0; color: #EEC31A;}
+    // RECIPE COMPONENT STYLES
+    section.recComp {                               width: calc(100% - 40px); display: block; margin: 50px 20px;}
+    section.recComp .panel .heading {               text-align: center; padding: 0 0 30px;}   
+    section.recComp .panel .heading h1 {            line-height: 50px; margin: 0 0 20px;}
+    section.recComp .panel .heading p {             font-size: 16px; line-height: 24px;}
+    section.recComp .recwrap {                      padding: 0; margin: 0 0 20px;}
+    section.recComp .panel .buttonwrap {            margin-top: 30px;}
+    // RELATED ARTICLES styles
+    section.related {                               width: calc(100% - 40px); display: block; margin: 50px 20px 0;}
+    // FEATURED STORY STYLES
+    section.featStory {                                     width: calc(100% - 40px); height: auto; margin: 0 20px 100px; }
+    section.featStory .story .image {                       height: 335px;}
+    section.featStory .story .text {                        width: calc(100% - 40px); height: auto; padding: 20px; position: relative;}
+    section.featStory .story .text h5 {                     position: relative; top: 0; left: 0; margin: 0 0 30px;}
+    // section.featStory .story .text ul.featTags {            position: relative; top: 20px; right: 0; z-index: 9;} // THIS IS THE UL TAG THAT IS COMMENTED OUT IN FAMILY.TSX
+    // section.featStory .story .text ul.featTags li {        font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 700; display: inline-block; text-transform: none; margin: 0 0 0 5px; padding: 5px; background-color: #287FDD; color: #0F0F10;}
+    section.featStory .story .text h1 {                     width: 90%; font-size: 48px; line-height: 56px; position: relative; top: 0; left: 0; margin: 0 0 20px;}
+    section.featStory .story .text p {                      width: 100%; position: relative; bottom: 0; left: 0; margin: 0 0 20px;}
+    section.featStory .story .text a {                      position: relative; bottom: 0; left: 0;}
+    // COVID PHRASE STYLES
+    section .covid19 {                                  width: calc(100% - 40px); margin: 50px 20px 50px;}
+    section .covid19 .phrase {                          width: 100%; height: 375px; display: inline-block; position: relative; box-shadow: 0 0 24px 2px #234951;}
+    section .covid19 .phrase .face {                    width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; opacity: 1; visibility: visible; background-size: cover; background-position: center; background-color: #fff;}
+    section .covid19 .phrase .face .overlay {           width: 100%; height: 100%; background: linear-gradient(0deg, rgba(5,2,54,1) 35%, rgba(0,0,0,0) 100%);}
+    section .covid19 .phrase .face .overlay h1 {        width: 70%; font-size: 38px; line-height: 46px; text-align: center; margin: 0 auto; padding: 70px 0 0; color: #fff;}
+    // COVID VIDEO STYLES
+    section .covid19 .panes {                           padding: 0 20px 20px;}
+    section .covid19 .pane {                            padding: 30px; display: box; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
+    section .covid19 .pane .texts {                     height: auto; position: relative;}
+    section .covid19 .pane .texts .text {               position: relative; top: 0; left: 0;}
+    section .covid19 .pane .texts .text.right {                 margin: 30px 0 0; left: 0; top: 20px;}
+    section .covid19 .pane .text h1 {                   width: 90%; font-size: 40px; line-height: 48px;margin: 50px 100px 0 0; display:block;}
+    section .covid19 .pane .text p {                    font-size: 16px; line-height: 24px; margin: 30px 0; color: #0F0F10;}
+    section .covid19 .pane .texts .tag.right {          top: 20px; left: 0;}
+    section .covid19 .pane .video {                     height: 225px;}
+    // PARTNER PANES [EXTENDS COVID19 PANEL STYLES]
+    .covid19 .pane .partnerImg {                width: 100%; height: 100%; background-size: 50%; background-position: center; background-repeat: no-repeat;}
+    section .partnerUp .content {                       padding: 75px 20px; margin: 0 0 30px; z-index: -99; background-color: #000;}
+    section .partnerUp .content p {                     width: 100%; text-align: center; margin: 0 auto 20px;}
+    section .partnerUp .content a {                     font-size: 24px; width: calc(100% - 60px); margin: 20px auto 0; text-align: center; padding: 15px 30px; color: #fff; background-color: #287FDD;}
+    // COVID INFO STYLES
+    .covid19 .views .view {                     text-align: center; padding: 40px 0; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
+    section .covid19 .views .vue {                      padding: 50px 0 50px;}
+    .covid19 .views .vue h1 {                   font-size: 48px; line-height: 48px; margin: 0 100px 30px 0; color: #0F0F10;}
+    .covid19 .views .vue li {                   font-size: 14px; line-height: 22px; margin: 0 0 10px; color: #0F0F10;}
+    .covid19 .views .vue svg {                  float: left; margin: 0 8px 0 0; color: #CA1D48;}
+
+    // CALLOUT STYLES
+    section.careers .callout {                         width: 100%; height: 500px; overflow: hidden; position: relative;}
+    section.careers .callout .imgcallLeft {            width: 30%; position: absolute; bottom: 10px; left: -10px;}
+    section.careers .callout .imgcallRight {           width: 30%; position: absolute; bottom: 10px; right: -10px;}
+    section.careers .callout .heading h1 {                 font-family: 'Oswald', sans-serif; font-size: 56px; line-height: 56px; margin: 70px 20px 30px; color: #0F0F10;}
+    section.careers .callout p.tagline {                   width: calc(100% - 40px); font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 25px; font-weight: 1500; text-align: center; position: absolute; bottom: 45px; padding: 0 20px; color: #0F0F10;}
+    // HOME PAGE WHYNOW? SECTION STYLES
+    .whyNow {                               width: 100%; overflow: hidden; background-color: #050236;}
+    .whyNow .whyTextWide {                  text-align: center; padding: 50px 20px;}
+    .whyNow .whyTextWide h1 {               font-size: 48px; line-height: 60px; font-weight: 700; margin: 0 0 30px; color: #fff;}
+    .whyNow .whyTextWide p {                width: auto; font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 auto; color: #fff;}
+    // UTILS STYLES
+    section .policy .content {                      margin: 100px 20px 150px; display: block;}
+    // WHYNOW PAGE STYLES
+    .trialback {                                width: 100%; position: absolute; top: 280px; left: 0;}
+    .whyComp .heading {                         width: calc(100% - 40px); padding: 100px 20px 0; text-align: center; margin: 0 0 120px; background-color: #050236;}
+    .whyComp .heading p {                       width: 100%; font-size: 16px; line-height: 24px; margin: 30px 0 30px; color: #fff;}
+    // VIDEO PANEL STYLES
+    .whyComp .videoPanel {                      width: calc(100% - 40px); padding: 20px; display: block; margin: 0 0 100px;}
+    .whyComp .vidPanes {                        display: block; padding: 40px 0 0;}
+    .whyComp .vidPane {                         height: 300px; display: block; margin: 0 0 20px;}
+    .whyComp .panes {                           display: block; margin: 0 0 20px; box-shadow: 0 0 24px 2px #ddd;}
+    // WHYNOW LOWER STYLES
+    .whyComp .videoPanel .break p {                         width: 100%;}
+    // WHYNOW LEADERS PANEL
+    .leaders {                                  width: calc(100% - 40px); display: block; position: relative; overflow: hidden; padding: 0 20px 50px;}
+    .leaders .leadersbg {                       width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: 100%; background-repeat: no-repeat; background-position: 0 0;}
+    .leaders .heading {                         padding: 50px 0 50px;}
+    .leaders .heading h1 {                      font-size: 48px; line-height: 48px; text-align: center; margin: 0 0 30px; color: #0F0F10;}
+    .leaders .heading h3 {                      width: 100%;}
+    .leaders .heading p {                       width: 100%; margin: 0 auto 10px;}  
+    .leaders .window {                          display: block; margin: 0 0 30px 0; padding: 30px; box-shadow: 0 0 24px 2px #ddd; background-color: #fff;}
+    // ORGANIZATIONS PANEL STYLES
+    .orgs {                                     display: block; position: relative; overflow: hidden; margin: 0 0 100px;}
+    .orgs .heading {                            padding: 90px 0 50px;}
+    .orgs .heading h1 {                         font-size: 48px; line-height: 48px; text-align: center; margin: 0 0 30px; color: #0F0F10;}
+    .orgs .heading h3 {                         width: 100%; font-family: 'Roboto', sans-serif; font-size: 32px; line-height: 40px; font-weight: 500; text-transform: none; text-align: center; margin: 0 auto 30px; color: #0F0F10;}
+    .orgs .orgImg {                             width: 100%; height: 240px; display: block; margin: 0 0 30px; background-repeat: no-repeat; background-position: center; background-size: 50%;}
+    // WHYNOW LOWER STYLES
+    .whyComp .lower {                           width: calc(100% - 40px); margin: 0; padding: 20px;}
+    .whyComp .lower h1 {                        text-align: center; margin: 0 0 30px; color: #0F0F10;}
+    .whyComp .lower p {                         width: 100%; text-align: center; margin: 0 auto 20px; font-size: 16px; line-height: 24px; }
+    .whyComp .buttonwrap {                      width: 100%; text-align: center; margin: 0 auto 50px;} 
+    // BLOG PAGE STYLES
+    .blogHeader {                               width: 100%; position: absolute; overflow: hidden; top: 60px; left: 0; z-index: -9; }
+    .blogHeader svg {                           width: 1400px; height: 650px; }
+    .blogContent .heading h1 {                  font-size: 30px; font-weight: 700; color: #fff; margin: 100px 20px 0; padding: 0; }
+    .blogContent .panel {                       width: 100%; margin: 0 0 100px;} 
+    // SINGLE BLOG POST STYLES
+    .singleHeader {                             width: 100%; height: 500px; position: relative; background-color: #000;} 
+    .singleHeader .image {                      width: 100%; height: 100%; position:absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: -250px auto;  opacity: 1;}
+    .singleHeader .text {                       height: calc(100% - 100px); margin: 60px 0 0; padding: 20px; color: #fff; z-index: 9; background-color: rgb(0,0,0,0.8);}
+    .singleHeader .text h3 {                    font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; text-transform: none; margin:0 0 5px; padding: 0; color: #fff;}
+    .singleHeader .text h1 {                    font-size: 28px; line-height: 36px; font-weight: 700; margin: 0; padding: 0; color: #fff;}
+    .singleHeader .text p {                     width: 100%; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 20px 0 20px;}
+    .singlePost {                               margin: 50px 0 100px; padding: 0 20px;} 
+    .singlePost .content p {                    margin: 0 0 40px;}
+    // RECIPE PAGE STYLES
+    .recHeader {                                width: calc(100%); overflow: hidden; padding: 0; margin: 0; position: absolute; top: 60px; left: 0;}
+    .recHeader svg {                            height: 650px;}
+    .recipe .heading {                          padding: 90px 20px 50px;}
+    .recipe .heading h3 {                       width: 100%;}  
+    // RECIPE CARDS STYLES
+    .recipe .deck {                             margin: 0 0 20px; padding: 0 0 100px;}
+    // SINGLE RECIPE STYLES
+    section.recipe {                                width: calc(100% - 40px); padding: 20px;}
+    .recipe .single .header {                       width: 100%;}
+    .recipe .recMarg {                              margin: 0 0 0;}
+    .recipe .single .header h1 {                    width: 100%; font-size: 56px; line-height: 56px; padding: 100px 0 5px;}
+    .recipe .single .header h3 {                    font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 14px; font-weight: 500; text-transform: none; margin: 0 0 30px 2px; color: #0F0F10;}
+    .recipe .single .image {                        width: 100%; height: 600px;}
+    // TRIALS STYLES
+    .trials {                                   margin: 0 0 100px;}
+    // ACCORDIAN STYLES
+    .trials .accordions {                       width: calc(100% - 40px); padding: 0 20px 50px;}
+    .trials .accordion .title {                 width: calc(100% - 30px); height: auto; font-size: 16px; line-height: 20px; font-weight: 700; color: #1A3667;}
+    .trials .accordion .accordion-content {     font-size: 16px; line-height: 24px; margin: 15px 40px 15px 34px;}
+    // TRIALS RESULTS STYLES
+    .results.space {                            width: calc(100% - 40px); padding: 0 20px 100px;}
+    .results .panel {                           padding: 20px;}
+    .results .panel h1 {                        margin: 0 0 20px 0; font-size: 18px; line-height: 24px; font-weight: 700; text-transform: none; color: #0F0F10;}
+    .results .panel p {                         margin: 0 0 30px 0; font-size: 16px; line-height: 22px; color: #0F0F10;}
+    .results .panel p.button {                  margin: 0 0 0; }
+    // FULLSTUDY STYLES
+    // .study {                                    background-color: #f09;}  
+    .study .callout {                           width: calc(100% - 40px); padding: 80px 20px 0; height: 450px; position: relative; background: center; background-size: cover; background-color: #fff;}
+    .study .callout .heading {                  width: calc(100% - 40px); position: absolute; top: 80;}
+    .study .heading h1 {                        font-size: 36px; line-height: 44px; font-weight: 700; text-transform: none; color: #0F0F10;}
+    .study .info {                              width: 100%; text-align: center; margin: 0 0 10px; float: left; font-weight: 500; color: #1A3667;}
+    .study .bread {                             width: 100%; text-align: center; float: right; font-weight: 500; color: #1A3667;}
+    .study .panel {                             padding: 20px; margin: 0 20px 10px; border-left: 5px solid #CA1D48;}
+    .study .panel p {                           margin: 0 0 30px;}    
     //FOOTER STYLES
     .foot .sponsors h1 {                        margin: 0 20px 20px; text-align: center;}
     .foot .sponsors .images {                   display: block; margin: 0 20px 50px; text-align: center;}
@@ -156,18 +723,5 @@
     .footer .social {                           margin: 0 0 40px;}
     .footer .connect {                           margin: 0 0 40px;}
     .footEnd p {                                margin: 20px;}
-}
 
-@media only screen and (max-width: 375px) {
-    .home .callout .content {                         width: calc(100% - 40px); height: 500px; position: absolute; top: 380px; left: 20px;}
-    .home .calloutbg svg {                            width: 2050px;} 
-    .call .callout .content {                         top: 380px;}
-}
-
-@media only screen and (max-width: 320px) {
-    .home .callout .content {                           width: calc(100% - 40px); height: 500px; position: absolute; top: 300px; left: 20px;}
-    .call .callbg svg {                                 width: 2050px;} 
-    .call .callout .content .calltext h1 {              font-size: 48px; line-height: 56px; font-weight: 700; color: #fff; margin: 0 0 20px;}
-    .call .callout .content {                           top: 330px;}
->>>>>>> b78d62f407384c674c495c27145b26881dd7855c
 }

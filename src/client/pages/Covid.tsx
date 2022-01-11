@@ -8,10 +8,10 @@ import Header from '../components/Header';
 const Covid = () =>
 {
 
-    // useEffect(() =>
-    // {
-    //     window.scrollTo(0, 0)
-    // }, []);
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, []);
 
     return (
         <>

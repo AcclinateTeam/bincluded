@@ -1,17 +1,68 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SubHeader = () =>
 {
+    // MOBILE NAV MENU TOGGLE CONTROLLER
+    function toggleNav ()
+    {
+        // VARIABLE SETTINGS
+        const header = document.querySelector('header');
+        const headerWrapper = document.getElementById('header-wrapper');
+        const headWrapHeight = headerWrapper.offsetHeight;
+        const navBg = document.getElementById('navButtonBg');
+        const openButton = document.getElementById('button-open');
+        const closeButton = document.getElementById('button-close');
+        // MENU TOGGLE
+        if (headWrapHeight <= 61)
+        {
+            header.style.position = 'fixed';
+            headerWrapper.setAttribute('style', `height: 100vh; background-color: #04278E;`);
+            navBg.setAttribute('style', `background-color: #fff;`);
+            openButton.setAttribute('style', `opacity: 0;`);
+            closeButton.setAttribute('style', `opacity: 1;`);
+        } else
+        {
+            header.style.position = 'fixed';
+            headerWrapper.setAttribute('style', `height: 60px; background-color: rgb(0,0,0,0);`);
+            navBg.setAttribute('style', `background-color: #CA1D48;`);
+            openButton.setAttribute('style', `opacity: 1;`);
+            closeButton.setAttribute('style', `opacity: 0;`);
+        }
+    }
+
+    // MOBILE NAV SCROLL ANIMATION
+    window.addEventListener('scroll', function (e)
+    {
+        // VARIABLE SETTINGS
+        var header = document.querySelector('header');
+        var windowWidth = window.innerWidth;
+        var windowPosition = window.scrollY;
+        var headWrapHeight = document.getElementById('header-wrapper').offsetHeight;
+
+        // MOBILE NAV SCROLL ANIMATION
+        if (windowWidth <= 425 && windowPosition >= 900 && headWrapHeight <= 61)
+        {
+            header.setAttribute('style', `position: fixed; background-color: #050236;`);
+        } else if (windowWidth <= 425 && headWrapHeight >= 61)
+        {
+            header.setAttribute('style', `position: fixed;`);
+        } else if (windowWidth < 425)
+        {
+            header.setAttribute('style', `position: fixed; background-color: #050236;`);
+        }
+    });
+
     return (
         <header className="sub">
             <div className="container">
                 <div className="row">
                     <div className="eight columns offset-by-one">
-                        <div className="header wrapper">
+                        <div id="header-wrapper" className="header wrapper">
                             <div className="logo">
                                 <Link to="/">
-                                    <svg width="278" height="32" viewBox="0 0 278 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg viewBox="0 0 278 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M32 0.775452H41.0636V31.2321H32V0.775452Z" fill="#CA1D48" />
                                         <path d="M44.5596 0.775452H55.5477L69.0192 20.6408H69.0532V0.775452H77.6649V31.2321H66.7157L53.2053 11.1127H53.1713V31.2321H44.5596V0.775452Z" fill="#CA1D48" />
                                         <path d="M80.5726 15.9903C80.5726 6.20829 87.2549 0 97.7862 0C105.8 0 111.962 4.20581 113.639 10.8867L105.348 13.0132C104.507 9.82338 101.635 7.82681 98.034 7.82681C92.9603 7.82681 89.7042 11.0166 89.7042 15.9903C89.7042 20.964 93.3443 24.1597 99.0837 24.1597C103.599 24.1597 106.859 21.7969 107.622 18.1169L116.02 19.948C114.689 27.3023 108.04 31.9866 98.8359 31.9866C87.6728 31.9866 80.5726 26.0736 80.5726 15.9903Z" fill="#CA1D48" />
@@ -39,6 +90,11 @@ const SubHeader = () =>
                                     <li className="signup"><a href="">Log In</a></li>
                                     <li className="logins"><a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a></li>
                                 </ul>
+                            </div>
+
+                            <div id="navButtonBg" className="navButton" onClick={toggleNav}>
+                                <FontAwesomeIcon id="button-open" className="open" icon="bars" />
+                                <FontAwesomeIcon id="button-close" className="close" icon="times" />
                             </div>
                         </div>
                     </div>

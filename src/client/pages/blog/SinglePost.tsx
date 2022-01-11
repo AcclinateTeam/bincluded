@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* COMPONENT IMPORTS */
 import SubHeader from '../../components/SubHeader';
 import Terminal from '../../components/Terminal';
+import BlogPosts from '../BlogPosts';
 
 const SinglePost = () =>
 {
@@ -15,7 +16,7 @@ const SinglePost = () =>
         window.scrollTo(0, 0)
     }, []);
 
-    
+
     const { id } = useParams();
     const [blogPosts, setBlogPosts] = useState([]);
 
@@ -54,8 +55,9 @@ const SinglePost = () =>
                 <div className="container">
                     <div className="six columns offset-by-two">
                         <div className="content">
-                            {blogPosts.map((post, index) => {
-                                
+                            {blogPosts.map((post, index) =>
+                            {
+
                                 return (
                                     <p>
                                         {post.content.split('\\n').map((para: any, i: any) => (
@@ -69,6 +71,24 @@ const SinglePost = () =>
                         </div>
                         <div className="buttonwrap">
                             <Link className="content button" to="/blog">Back to Blogs <FontAwesomeIcon icon="arrow-right" /></Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="related">
+                <div className="container">
+                    <div className="eight columns offset-by-one">
+                        <div className="heading">
+                            <h1>Related Articles</h1>
+                        </div>
+                        <div className="panel">
+                            <div className="container">
+                                <BlogPosts />
+                                <div className="buttonwrap">
+                                    <Link className="content button" to="/blog">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -123,31 +123,42 @@
 
 /* Note: Design for a width of 480px */
 
-@media only screen and (max-width: 599px) {
-    .container .ten.columns,
-    .container .nine.columns,
-    .container .eight.columns,
-    .container .seven.columns,
-    .container .six.columns,
-    .container .five.columns,
-    .container .four.columns,
-    .container .three.columns,
-    .container .two.columns,
-    .container .one.columns, 
-    .container .third.columns,
-    .container .fourth.columns,
-    .container .sixth.columns,
-    .container .eighth.columns {                width: 100%;}
+@media only screen and (min-width: 599px) and (max-width: 1115px) and (-webkit-min-device-pixel-ratio: 1) {
+  .container .ten.columns,
+  .container .nine.columns,
+  .container .eight.columns,
+  .container .seven.columns,
+  .container .six.columns,
+  .container .five.columns,
+  .container .four.columns,
+  .container .three.columns,
+  .container .two.columns,
+  .container .one.columns, 
+  .container .third.columns,
+  .container .twothird.columns,
+  .container .fourth.columns,
+  .container .sixth.columns,
+  .container .eighth.columns {                width: 100%;}
 
-    .about.wrapper,
-    .contact.wrapper, .entry.wrapper {         width: 100%; background-color: #fff;}
+  /* Offsets */
+  .container .offset-by-half,
+  .container .offset-by-one,
+  .container .offset-by-one-half,
+  .container .offset-by-two,
+  .container .offset-by-three,
+  .container .offset-by-four,
+  .container .offset-by-five,
+  .container .offset-by-six,
+  .container .offset-by-seven,
+  .container .offset-by-eight,
+  .container .offset-by-nine                  { margin-left: 0; }
 }
 
 
 /*  #Mobile (HTC)
 ================================================== */
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 499px) and (-webkit-min-device-pixel-ratio: 1) {
     .container .ten.columns,
     .container .nine.columns,
     .container .eight.columns,
@@ -159,6 +170,7 @@
     .container .two.columns,
     .container .one.columns, 
     .container .third.columns,
+    .container .twothird.columns,
     .container .fourth.columns,
     .container .sixth.columns,
     .container .eighth.columns {                width: 100%;}

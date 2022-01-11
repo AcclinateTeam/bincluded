@@ -9,7 +9,7 @@
 // VIDEO PANEL STYLES
 .whyComp .videoPanel {                      display: block; margin: 0 0 100px;}
 .whyComp .vidPanes {                        display: block; padding: 60px;}
-.whyComp .vidPane {                         height: 600px; display: block; background-color: #cb3;}
+.whyComp .vidPane {                         height: 600px; display: block;}
 .whyComp .panes {                           display: block; margin: 0 0 60px; box-shadow: 0 0 24px 2px #ddd;}
 .whyComp .panes:last-child {                margin: 0;}
 .whyComp .pane {                            width: calc(100% - 60px); height: 140px; display: block; padding: 30px; background-color: #fff;}
@@ -22,7 +22,7 @@
 .whyComp .break p {                         width: 50%; margin: 0 auto; text-align: center; font-size: 16px; line-height: 24px; }
 .whyComp .break span {                      font-weight: 700; display: inline-block;}
 
-.whyComp .lower {                            margin: 60px 0 0;}
+.whyComp .lower {                           margin: 60px 0 0;}
 .whyComp .lower h1 {                        text-align: center; margin: 0 0 30px; color: #0F0F10;}
 .whyComp .lower p {                         width: 50%; text-align: center; margin: 0 auto 20px; font-size: 16px; line-height: 24px; }
 .whyComp .lower span {                      font-weight: 700; display: inline-block;}
@@ -38,7 +38,7 @@
 .leaders .windows a {                       text-decoration: none;  }
 .leaders .window {                          display: block; margin: 0 30px 30px 0; padding: 30px; box-shadow: 0 0 24px 2px #ddd; background-color: #fff;}
 .leaders .window:hover {                   transform: scale(1.02);}
-.leaders .window .image {                   width: 150px; height: 150px; background-color: #ac7; margin: 0 0 20px;} 
+.leaders .window .image {                   width: 150px; height: 150px; margin: 0 0 20px;} 
 .leaders .window .image img {               width: 100%; height: 100%; object-fit: cover; box-shadow: 0 0 24px 2px #ddd; display: block;  margin: 0 auto;}              
 .leaders .window svg {                      font-size: 48px; line-height: 48px; margin: 0 0 75px; color: #0F0F10;}
 .leaders .window h1 {                       font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 24px; text-transform: none; margin: 0 0 10px; color: #0F0F10;}

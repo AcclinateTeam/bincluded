@@ -41,7 +41,7 @@ const SingleRecipe: React.FC<RecipeProps> = (props) =>
             </div>
 
             <section className="recipe">
-                <div className="container" style={{ marginTop: '100px' }}>
+                <div className="container recMarg">
                     <div className="eight columns offset-by-one">
                         <div className="container single">
                             <div className="twothird columns">

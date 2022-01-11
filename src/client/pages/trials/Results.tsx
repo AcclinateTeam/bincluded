@@ -27,12 +27,8 @@ const Results = () =>
         }
     }, []);
 
-    console.log(numbers.NStudiesFound);
-
     const studiesFound = numbers.NStudiesFound;
     const studiesReturned = numbers.NStudiesReturned;
-
-
 
     if (studiesFound < 1 || studiesReturned < 1)
     {

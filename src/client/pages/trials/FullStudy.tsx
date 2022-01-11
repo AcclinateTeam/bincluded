@@ -175,13 +175,13 @@ const FullStudy = () =>
                                                             <li>
                                                                 <FontAwesomeIcon icon="door-open" /> Overall Status: {study.Study.ProtocolSection.StatusModule.OverallStatus}
                                                             </li>
-                                                            <li>
+                                                            {/* <li>
                                                                 <FontAwesomeIcon icon="pills" /> Intervention Type: {study.Study.ProtocolSection.ArmsInterventionsModule.InterventionList.Intervention.map((m: { InterventionType: string; }, index: number) => (
                                                                     <>
                                                                         {m.InterventionType}
                                                                     </>
                                                                 ))}
-                                                            </li>
+                                                            </li> */}
                                                             <li>
                                                                 <FontAwesomeIcon icon="thumbs-up" /> FDA Approval: {study.Study.ProtocolSection.OversightModule.IsFDARegulatedDrug}
                                                             </li>

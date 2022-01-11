@@ -7,6 +7,12 @@ import SubHeader from '../../components/SubHeader';
 
 const Terms = () =>
 {
+
+    useEffect(() =>
+    {
+        window.scrollTo(0, 0)
+    }, []);
+
     return (
         <>
             <SubHeader />

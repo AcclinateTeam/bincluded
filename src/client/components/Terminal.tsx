@@ -7,6 +7,7 @@ import Personal from './subComponents/Personal';
 import Mental from './subComponents/Mental';
 import Physical from './subComponents/Physical';
 import Tele from './subComponents/Tele';
+import Careers from './subComponents/Careers';
 
 const Terminal = () =>
 {
@@ -14,12 +15,14 @@ const Terminal = () =>
     const [mental, setMental] = useState(false);
     const [physical, setPhysical] = useState(false);
     const [tele, setTele] = useState(false);
+    const [careers, setCareers] = useState(false);
 
     const mentalLoaded = () =>
     {
         setMental(true);
         setPhysical(false);
         setTele(false);
+        setCareers(false);
     }
 
     const physicalLoaded = () =>
@@ -27,6 +30,7 @@ const Terminal = () =>
         setMental(false);
         setPhysical(true);
         setTele(false);
+        setCareers(false);
     }
 
     const teleLoaded = () =>
@@ -34,16 +38,27 @@ const Terminal = () =>
         setMental(false);
         setPhysical(false);
         setTele(true);
+        setCareers(false);
     }
+
 
     const personalButton = () =>
     {
         setMental(false);
         setPhysical(false);
         setTele(false);
+        setCareers(false);
     }
 
-    if (mental && !physical && !tele)
+    const careersLoaded = () =>
+    {
+        setMental(false);
+        setPhysical(false);
+        setTele(false);
+        setCareers(true);
+    }
+
+    if (mental && !physical && !tele && !careers)
     {
         return (
             <>
@@ -58,6 +73,7 @@ const Terminal = () =>
                                 <a onClick={mentalLoaded}><li className="active">Mental</li></a>
                                 <a onClick={physicalLoaded}><li>Physical</li></a>
                                 <a onClick={teleLoaded}><li>TeleHealth</li></a>
+                                <a onClick={careersLoaded}><li>Careers</li></a>
                             </ul>
                             <div className="panel">
                                 <div className="container">
@@ -72,7 +88,7 @@ const Terminal = () =>
                 </section>
             </>
         );
-    } else if (!mental && physical && !tele)
+    } else if (!mental && physical && !tele && !careers)
     {
         return (
             <>
@@ -87,6 +103,7 @@ const Terminal = () =>
                                 <a onClick={mentalLoaded}><li>Mental</li></a>
                                 <a onClick={physicalLoaded}><li className="active">Physical</li></a>
                                 <a onClick={teleLoaded}><li>TeleHealth</li></a>
+                                <a onClick={careersLoaded}><li>Careers</li></a>
                             </ul>
                             <div className="panel">
                                 <div className="container">
@@ -101,7 +118,8 @@ const Terminal = () =>
                 </section>
             </>
         );
-    } else if (!mental && !physical && tele)
+    
+    } else if (!mental && !physical && !tele && careers)
     {
         return (
             <>
@@ -115,11 +133,12 @@ const Terminal = () =>
                                 <a onClick={personalButton}><li>Personal</li></a>
                                 <a onClick={mentalLoaded}><li>Mental</li></a>
                                 <a onClick={physicalLoaded}><li>Physical</li></a>
-                                <a onClick={teleLoaded}><li className="active">TeleHealth</li></a>
+                                <a onClick={teleLoaded}><li>TeleHealth</li></a>
+                                <a onClick={careersLoaded}><li className="active">Careers</li></a>
                             </ul>
                             <div className="panel">
                                 <div className="container">
-                                    <Tele />
+                                    <Careers />
                                 </div>
                             </div>
                             <div className="buttonwrap">
@@ -130,6 +149,7 @@ const Terminal = () =>
                 </section>
             </>
         );
+
     } else 
     {
         return (
@@ -145,6 +165,7 @@ const Terminal = () =>
                                 <a onClick={mentalLoaded}><li>Mental</li></a>
                                 <a onClick={physicalLoaded}><li>Physical</li></a>
                                 <a onClick={teleLoaded}><li>TeleHealth</li></a>
+                                <a onClick={careersLoaded}><li>Careers</li></a>
                             </ul>
                             <div className="panel">
                                 <div className="container">

@@ -16,6 +16,7 @@ import Family from './pages/Family';
 import Careers from './pages/Careers';
 import Covid from './pages/Covid';
 import NotFound from './pages/NotFound';
+import Resources from './pages/Resources';
 // SUBPAGES
 import Partners from './pages/subpages/Partners';
 import WhyNow from './pages/subpages/WhyNow';
@@ -59,6 +60,7 @@ const App = (props: AppProps) =>
 					<Route path="/family" element={<Family />} />
 					<Route path="/careers" element={<Careers />} />
 					<Route path="/covid" element={<Covid />} />
+					<Route path="/resources" element={<Resources />} />
 					{/* SubPage Paths */}
 					<Route path="/partners" element={<Partners />} />
 					<Route path="/whynow" element={<WhyNow />} />

@@ -66,7 +66,7 @@ const Terminal = () =>
                     <div className="container">
                         <div className="eight columns offset-by-one">
                             <div className="header">
-                                <h1>Additional<br /> Health Resources</h1>
+                                <h1>Additional<br /> Health & Career Resources</h1>
                             </div>
                             <ul className="terminal">
                                 <a onClick={personalButton}><li>Personal</li></a>
@@ -96,7 +96,7 @@ const Terminal = () =>
                     <div className="container">
                         <div className="eight columns offset-by-one">
                             <div className="header">
-                                <h1>Additional<br /> Health Resources</h1>
+                                <h1>Additional<br /> Health & Career Resources</h1>
                             </div>
                             <ul className="terminal">
                                 <a onClick={personalButton}><li>Personal</li></a>
@@ -127,7 +127,7 @@ const Terminal = () =>
                     <div className="container">
                         <div className="eight columns offset-by-one">
                             <div className="header">
-                                <h1>Additional<br /> Health Resources</h1>
+                                <h1>Additional<br /> Health & Career Resources</h1>
                             </div>
                             <ul className="terminal">
                                 <a onClick={personalButton}><li>Personal</li></a>
@@ -158,7 +158,7 @@ const Terminal = () =>
                     <div className="container">
                         <div className="eight columns offset-by-one">
                             <div className="header">
-                                <h1>Additional<br /> Health Resources</h1>
+                                <h1>Additional<br /> Health & Career Resources</h1>
                             </div>
                             <ul className="terminal">
                                 <a onClick={personalButton}><li className="active">Personal</li></a>

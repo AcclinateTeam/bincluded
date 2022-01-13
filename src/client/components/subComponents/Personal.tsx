@@ -59,7 +59,7 @@ const Personal = () =>
                     <div className="panes">
                         <div className="pane">
                             <div className="image" style={{ backgroundImage: `url("/images/partners/uway.jpg")`, backgroundColor: '#ffffff' }}></div>
-                            <h2>United Way Area Agency on Aging </h2>
+                            <h2>United Way Area Agency</h2>
                             <p>Engaging with the people of Birmingham and providing paths out of poverty.</p>
                             {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                         </div>

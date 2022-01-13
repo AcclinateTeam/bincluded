@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 /* COMPONENT IMPORTS */
 import SubHeader from '../components/SubHeader';
+import Terminal from '../components/Terminal';
 import BlogPosts from './BlogPosts';
 import RecipeComp from '../components/RecipeComp';
 
+<script async src="https://cse.google.com/cse.js?cx=6706cfd20be09ae17"></script>
 const Careers = () =>
 {
 
@@ -23,10 +25,11 @@ const Careers = () =>
                 <div className="callout">
                     <img className="imgcallLeft" src="images/careerCallLeft.png" />
                     <img className="imgcallRight" src="images/careerCallRight.png" />
-                    <p className="tagline"><span>B-Included places employment opportunities around Birmingham in a central place so that you can level up your career.</span></p>
+                    {/* <p className="tagline"><span>Use the above search tool to find jobs in Jefferson County.</span></p> */}
                     <div className="container">
                         <div className="eight columns offset-by-one">
                             <div className="heading">
+                                <span/>
                                 <h1>Find Your Next Career</h1>
                                 <div className="gcse-search"></div>
                             </div>
@@ -35,7 +38,7 @@ const Careers = () =>
                 </div>
             </section>
 
-            
+            <Terminal />
 
             <section>
                 <div className="container">

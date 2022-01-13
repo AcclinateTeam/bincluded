@@ -21,7 +21,7 @@ const Careers = () =>
                     <div className="panes">
                         <div className="pane">
                             <div className="image" style={{ backgroundImage: `url("/images/partners/ExpressEmploymentPros.jpeg")`, backgroundColor: '#ffffff' }}></div>
-                            <h2>Express Employment Professionals</h2>
+                            <h2>Express Employment Pros</h2>
                             <p>A leading staffing provider helping job seekers find work with a wide variety of local businesses.</p>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ const Careers = () =>
                         <div className="pane">
                             <div className="image" style={{ backgroundImage: `url("/images/partners/Snelling.png")`, backgroundColor: '#ffffff' }}></div>
                             <h2>Snelling</h2>
-                            <p>Snelling Birmingham specializes in placing great talent in several demanding business sectors.</p>
+                            <p>Snelling specializes in placing great talent in several demanding business sectors.</p>
                             {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                         </div>
                     </div>

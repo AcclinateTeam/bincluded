@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import SubHeader from '../../components/SubHeader';
 import Accordion from '../../components/Accordion';
+import Terminal from '../../components/Terminal';
 
 /* UTILS IMPORTS */
 import { accordionData } from '../../utils/content';
@@ -109,12 +110,15 @@ const Trials = (props: any) =>
                                 {accordionData.map(({ title, content }) => (
                                     <Accordion content={content} title={title} />
                                 ))}
+            <Terminal />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
         </>
+
+        
     )
 }
 

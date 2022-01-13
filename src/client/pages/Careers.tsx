@@ -7,7 +7,7 @@ import Terminal from '../components/Terminal';
 import BlogPosts from './BlogPosts';
 import RecipeComp from '../components/RecipeComp';
 
-<script async src="https://cse.google.com/cse.js?cx=6706cfd20be09ae17"></script>
+
 const Careers = () =>
 {
 

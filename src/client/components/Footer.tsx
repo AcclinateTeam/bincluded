@@ -170,24 +170,24 @@ const Footer = () =>
                     <div className="footend">
                         <ul>
                             <li>
-                                <Link className="iconFace" to={{ pathname: "https://facebook.com" }} target="_blank">
+                                <a className="iconFace" href="https://www.facebook.com/prosperbham" target="_blank">
                                     <FontAwesomeIcon icon={['fab', 'facebook-f']} /> FaceBook
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link className="iconTwit" to={{ pathname: "https://twitter.com" }} target="_blank">
+                                <a className="iconTwit" href="https://twitter.com/prosperbham" target="_blank">
                                     <FontAwesomeIcon icon={['fab', 'twitter']} /> Twitter
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link className="iconTube" to={{ pathname: "https://instgram.com" }} target="_blank">
+                                <a className="iconTube" href="https://www.instagram.com/prosperbham/" target="_blank">
                                     <FontAwesomeIcon icon={['fab', 'instagram']} /> Instagram
-                                </Link>
+                                </a>
                             </li>
                             <li>
-                                <Link className="iconLink" to={{ pathname: "https://linkedin.com" }} target="_blank">
+                                <a className="iconLink" href="https://www.linkedin.com/company/prosperbham/" target="_blank">
                                     <FontAwesomeIcon icon={['fab', 'linkedin']} /> LinkedIn
-                                </Link>
+                                </a>
                             </li>
                         </ul>
                         <p>© 2021 #BINCLUDED | <Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms &#38; Conditions</Link> | Data Breach Response Policy</p>

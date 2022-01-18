@@ -64,6 +64,7 @@ const App = (props: AppProps) =>
 					{/* SubPage Paths */}
 					<Route path="/partners" element={<Partners />} />
 					<Route path="/whynow" element={<WhyNow />} />
+					<Route path="/resources" element={<Resources />} />
 					{/* Blog Paths */}
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />

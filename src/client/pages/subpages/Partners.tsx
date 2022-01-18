@@ -36,7 +36,7 @@ const Partners = () =>
                         </div>
                         <div className="callbutton">
                             <a className="button signup" href="https://jdsb9zx9r21.typeform.com/B-INCLUDED">Become A Partner</a>
-                            <a className="button learnmore" href="#">View Partners</a>
+                            <Link className="button learnmore" to="/resources">Partner Resources</Link>
                         </div>
                     </div>
                     <div className="callimage">

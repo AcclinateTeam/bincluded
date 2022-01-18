@@ -24,7 +24,7 @@ const Popup = () =>
                     <div className="popContent">
                         <h1>B-Included Is <span>Live!</span></h1>
                         <p>Join a community of people focuse on improves health, overall wellness, and elevated financial practices.</p>
-                        <a className="button" href="https://jdsb9zx9r21.typeform.com/to/CNJivpjr">
+                        <a className="button" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">
                             Join The Community
                         </a>
                     </div>

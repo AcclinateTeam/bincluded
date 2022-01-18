@@ -44,14 +44,14 @@ const Trials = (props: any) =>
                 </svg>
             </div>
 
-            <section className="trials">
+            <section className="trials space">
                 <div className="container search">
                     <div className="seven columns offset-by-one-half">
                         <h1>Clinical Trial Search</h1>
 
                         <div className="container">
                             <div className="six columns offset-by-two">
-                            <div className="form">
+                                <div className="form">
                                     <input className="control" placeholder="Enter a Condition | ex: Cancer" type="text" name="Search" onChange={e => setText(e.target.value)} />
                                     <Link to={`/trials/results/${text}`}>
                                         <div className="submit">
@@ -61,7 +61,7 @@ const Trials = (props: any) =>
                                 </div>
                                 <div className="viewStudies">
                                     <Link to="/">
-                                         View Volunteer Studies <FontAwesomeIcon icon="arrow-right" />
+                                        View Volunteer Studies <FontAwesomeIcon icon="arrow-right" />
                                     </Link>
                                 </div>
                             </div>
@@ -69,37 +69,6 @@ const Trials = (props: any) =>
                     </div>
                 </div>
             </section>
-
-            {/* <section>
-                <h1>Trials</h1>
-                <div className="container">
-                    {trials.map((trial, index) =>
-                    {
-                        let singleCondition = trial.Condition.map((c: string, index: number) =>
-                        {
-                            return (c.replace(/\s/g, "+").replace(/,/g, ""));
-                        });
-                        // console.log(singleCondition);
-                        return (
-                            <div className="third columns" key={trial.Rank}>
-                                <div className="view">
-                                    <div className="overlay"></div>
-                                    <div className="content">
-                                        <h3>{trial.BriefTitle}</h3>
-                                        <h5>{trial.Condition}</h5>
-                                        <p className="summary">{trial.BriefSummary}</p>
-                                    </div>
-                                    <div className="action">
-                                        <Link to={`/trials/study/${trial.NCTId}`}>
-                                            See Full Study <FontAwesomeIcon icon="arrow-right" />
-                                        </Link>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-                    })}
-                </div>
-            </section> */}
 
             <section className="trials">
                 <div className="container">
@@ -110,7 +79,6 @@ const Trials = (props: any) =>
                                 {accordionData.map(({ title, content }) => (
                                     <Accordion content={content} title={title} />
                                 ))}
-            <Terminal />
                             </div>
                         </div>
                     </div>
@@ -118,7 +86,7 @@ const Trials = (props: any) =>
             </section>
         </>
 
-        
+
     )
 }
 

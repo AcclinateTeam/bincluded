@@ -26,7 +26,7 @@
 // .trials .view .action {                    position: absolute; bottom: 20px; left: 25px; z-index: 77;}
 // .trials .view .action a {                   font-weight: 500; text-decoration: none; color: #fff;}
 // .trials .view .action a svg {               color: #F3E454;}
-.trials {                                   margin: 0 0 350px;}
+.trials.space {                                   margin: 0 0 350px;}
 .trials .search {                           width: calc(100% - 40px); text-align: center; padding: 100px 20px; background-color: #050236;}
 .trials .search h1 {                        font-size: 64px; line-height: 64px; margin: 0 0 50px; color: #fff;}
 
@@ -114,7 +114,7 @@
 .study .panel p {                           margin: 0 80px 30px 0; font-size: 16px; line-height: 24px; color: #000;}
 .study .panel p.type {                      margin: 0; font-weight: 500;}
 .study .panel ul {                          margin: 0 0 40px;}
-.study .panel ul li {                       margin: 0 0 10px 0; height: 24px; padding: 0 0 10px 5px; font-size: 13px; line-height: 24px; font-weight: 500; line-height: 24px; color: #000;}
+.study .panel ul li {                       margin: 0 0 10px 0; height: 24px; padding: 0 0 10px 5px; font-size: 13px; line-height: 24px; font-weight: 500; color: #000;}
 .study .panel  svg {                   width: 16px; height: 16px; padding: 4px 0 0; font-size: 18px; margin: 0 5px 0 0; display: inline-block; text-align: center; color: #ca1d48;}
 .study .return {                          text-align: center;}
 .study .return a.button {                 padding: 10px 45px; margin: 40px 0 0; display: inline-block; font-size: 16px; line-height: 28px; font-weight: 500; text-decoration: none; color: #fff; background-color: #ca1d48;}

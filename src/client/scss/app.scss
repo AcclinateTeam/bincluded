@@ -27,13 +27,8 @@ body {				min-height: 100%; position: relative;}
 @import './recipes.scss';
 @import './blog.scss';
 @import './resources.scss';
-@import './laptop.scss';
-@import './tablet.scss';
-@import './mobile.scss';
-
 
 /* FONT IMPORT */
-/* Font Imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Oswald:wght@300;400;500;700&family=Poppins:wght@300&display=swap');
 
 .bg2 {      background-color: #f098;}
@@ -105,8 +100,8 @@ body {				min-height: 100%; position: relative;}
 .recComp .recipe {                      box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
 .recComp .recipe .image {               width: 100%; height: 224px; background-repeat: no-repeat; background-size: cover;}
 .recComp .recipe .text {                padding: 20px;}
-.recComp .recipe .text h2 {             min-height: 44px; font-family: 'Roboto', sans-serif; font-size: 22px; line-height: 22px; font-weight: 700; text-transform: none; margin: 0 0 20px;}
-.recComp .recipe .text p {              min-height: 66px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px;}
+.recComp .recipe .text h2 {             min-height: 44px; font-family: 'Roboto', sans-serif; font-size: 22px; line-height: 22px; font-weight: 700; text-transform: none; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
+.recComp .recipe .text p {              min-height: 66px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
 .recComp .recipe .text a {              font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: #050236;}
 .recComp .recipe .text a {              color: #050236;}
 .recComp .panel .buttonwrap {           margin-top: 50px;}
@@ -121,8 +116,8 @@ body {				min-height: 100%; position: relative;}
 .related .articles:hover {               transform: scale(1.02);}
 .related .article .image {              width: 100%; height: 250px; background-repeat: no-repeat; background-size: cover;}
 .related .article .text {               padding: 20px;} 
-.related .article .text h2 {             font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; display: block; font-weight: 700; min-height: 40px; overflow: hidden; text-transform: none; margin: 0 0 20px;}
-.related .article .text p {              font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; min-height: 66px; margin: 0 0 20px;}
+.related .article .text h2 {             font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; font-weight: 700; min-height: 40px; text-transform: none; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin: 0 0 10px;}
+.related .article .text p {              font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; min-height: 66px; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;}
 .related .article .text a {              font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: #050236;}
 .related .article .text svg {           color: #050236;}
 .related .buttonwrap {                  display: block; margin: 20px 0 50px;}
@@ -214,9 +209,13 @@ h5 { font-size: 14px; line-height: 14px;}
 
 /* #GLOBAL TRANSITION STYLES
 ================================================== */
-ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close, header, header.sub, header.sub .header.wrapper {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close, header, header.sub, header.sub .header.wrapper, .covid19 .panes {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
 
 
-
-
-
+/* #RESPONSIVE SCSS IMPORTS
+================================================== */ 
+//must stay BELOW all other SCSS/imports in this file to maintain cascading order.
+@import './desktop.scss';
+@import './laptop.scss';
+@import './tablet.scss';
+@import './mobile.scss';

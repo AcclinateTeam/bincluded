@@ -1,0 +1,36 @@
+@media only screen and (min-width: 1440px) and (max-width: 1700px) {
+
+    // HOME PAGE STYLES
+    .home .callout {                                      height: 818px;}
+    .home .callout .callimage {                           width: 600px; top: 170px;}
+    .home .callout .content .calltext h1 {                font-size: 96px; line-height: 96px; font-weight: 700; color: #fff; margin: 0 0 20px;}
+    // HEALTH PAGE STYLES
+    .call {                                             height: 675px;}
+    .call .callout .content .calltext h1 {              font-size: 64px; line-height: 64px; margin: 20px 0 20px;}
+    .call .callout .callimage {                         width: 500px;}
+    // FEAT RESOURCES STYLES
+    .health.content .featured .back {               width: auto; height: calc(100% - 200px); margin: 0 0 0 30%; display: block; padding: 45px;}
+    // ADDITIONAL RESOURCES STYLES
+    .addRes .pane h2 {                              min-height: 40px;}
+    section.related .article .text p {                     min-height: 88px; }
+    // FEAT STORY STYLES
+    section.featStory .story .text h1 {                    width: 90%; font-size: 52px; line-height: 60px;  }
+    // BLOG PAGE STYLES
+    .blogContent .pane .text p {                    min-height: 88px; }
+    // RECIPE PAGE STYLES
+    .recipe .heading {                              padding: 110px 0 50px;}
+    .recipe .card .content p.directions {           min-height: 96px;}
+    .recHeader {                                    width: 100%; position: absolute; top: 60px; left: 0;}
+    // BLOG PAGE STYLES
+    .trials .search {                           background-color: rgb(0,0,0,0);}
+
+
+
+    
+
+
+
+
+
+
+}

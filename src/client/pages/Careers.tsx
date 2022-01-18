@@ -31,9 +31,16 @@ const Careers = () =>
                             <div className="heading">
                                 <br></br>
                                 <h1>Find Your Next Career</h1>
-                                <div className="gcse-search"></div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div className="container">
+                    <div className="eight columns offset-by-one">
+                        <div className="gcse-search"></div>
                     </div>
                 </div>
             </section>

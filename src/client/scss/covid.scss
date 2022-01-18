@@ -23,7 +23,7 @@
 .covid19 .pane .video {                     height: 400px;}
 
 // PARTNER PANES [EXTENDS COVID19 PANEL STYLES]
-.covid19 .pane .partnerImg {                width: 100%; height: 100%; background-size: 50%; background-position: center; background-repeat: no-repeat;}
+.covid19 .pane .partnerImg {                width: 100%; height: 100%; background-size: 50%; background-position: center; background-repeat: no-repeat; border: 1px solid #cecece;}
 .partnerUp .content {                       padding: 75px 0; margin: 0 0 75px; z-index: -99; background-color: #000;}
 .partnerUp .content p {                     width: 75%; font-size: 48px; line-height: 56px; font-weight: 700; color: #fff;}
 .partnerUp .content a {                     font-family: 'Oswald', sans-serif; font-size:28px; line-height: 36px; font-weight: 700; display: inline-block; text-transform: uppercase; text-decoration: none; margin: 20px 0 0; padding: 15px 30px; color: #fff; background-color: #287FDD;}

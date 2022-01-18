@@ -86,9 +86,7 @@ const Partners = () =>
                                                         </div>
                                                     </div>
                                                     <div className="four columns video">
-                                                        <div className="partnerImg">
-                                                            <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/christ-health.png")`, backgroundColor: '#ffffff' }}></div>
-                                                        </div>
+                                                        <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/christ-health.png")`, backgroundColor: '#ffffff' }}></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -136,9 +134,7 @@ const Partners = () =>
                                                         </div>
                                                     </div>
                                                     <div className="four columns video">
-                                                        <div className="partnerImg">
-                                                            <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/mpower.jpg")`, backgroundColor: '#ffffff' }}></div>
-                                                        </div>
+                                                        <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/mpower.jpg")`, backgroundColor: '#ffffff' }}></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -187,9 +183,7 @@ const Partners = () =>
                                                         </div>
                                                     </div>
                                                     <div className="four columns video">
-                                                        <div className="partnerImg">
-                                                            <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/cofbham.png")`, backgroundColor: '#ffffff' }}></div>
-                                                        </div>
+                                                        <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/cofbham.png")`, backgroundColor: '#ffffff' }}></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -237,9 +231,7 @@ const Partners = () =>
                                                         </div>
                                                     </div>
                                                     <div className="four columns video">
-                                                        <div className="partnerImg">
-                                                            <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/uway.jpg")`, backgroundColor: '#ffffff' }}></div>
-                                                        </div>
+                                                        <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/uway.jpg")`, backgroundColor: '#ffffff' }}></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -287,9 +279,7 @@ const Partners = () =>
                                                         </div>
                                                     </div>
                                                     <div className="four columns video">
-                                                        <div className="partnerImg">
-                                                            <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/crisis.webp")`, backgroundColor: '#ffffff' }}></div>
-                                                        </div>
+                                                        <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/crisis.webp")`, backgroundColor: '#ffffff' }}></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -337,9 +327,7 @@ const Partners = () =>
                                                         </div>
                                                     </div>
                                                     <div className="four columns video">
-                                                        <div className="partnerImg">
-                                                            <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/meals.svg")`, backgroundColor: '#ffffff' }}></div>
-                                                        </div>
+                                                        <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/meals.svg")`, backgroundColor: '#ffffff' }}></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -387,9 +375,7 @@ const Partners = () =>
                                                         </div>
                                                     </div>
                                                     <div className="four columns video">
-                                                        <div className="partnerImg">
-                                                            <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/m4a.png")`, backgroundColor: '#ffffff' }}></div>
-                                                        </div>
+                                                        <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/m4a.png")`, backgroundColor: '#ffffff' }}></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -437,9 +423,7 @@ const Partners = () =>
                                                         </div>
                                                     </div>
                                                     <div className="four columns video">
-                                                        <div className="partnerImg">
-                                                            <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/medicare.svg")`, backgroundColor: '#ffffff' }}></div>
-                                                        </div>
+                                                        <div className="partnerImg" style={{ backgroundImage: `url("/images/partners/medicare.svg")`, backgroundColor: '#ffffff' }}></div>
                                                     </div>
                                                 </div>
                                             </div>

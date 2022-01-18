@@ -13,7 +13,7 @@ const Popup = () =>
 
     return (
         <>
-            {/* <div className="popBack" id="popBack">
+            <div className="popBack" id="popBack">
                 <div className="popContainer">
                     <div className="popClose" onClick={closePopup}>
                         <FontAwesomeIcon id="button-close" className="close" icon="times" />
@@ -22,14 +22,14 @@ const Popup = () =>
                         <img src="images/poptop.png" alt="" />
                     </div>
                     <div className="popContent">
-                        <h1>B-Included<br/> Is <span>Live!</span></h1>
+                        <h1>B-Included Is <span>Live!</span></h1>
                         <p>Join a community of people focuse on improves health, overall wellness, and elevated financial practices.</p>
                         <a className="button" href="https://jdsb9zx9r21.typeform.com/to/CNJivpjr">
                             Join The Community
                         </a>
                     </div>
                 </div>
-            </div> */}
+            </div>
         </>
     )
 }

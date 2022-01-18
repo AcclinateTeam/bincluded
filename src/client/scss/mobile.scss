@@ -224,7 +224,17 @@
     .study .info {                              width: 100%; text-align: center; margin: 0 0 10px; float: left; font-weight: 500; color: #1A3667;}
     .study .bread {                             width: 100%; text-align: center; float: right; font-weight: 500; color: #1A3667;}
     .study .panel {                             padding: 20px; margin: 0 20px 10px; border-left: 5px solid #CA1D48;}
-    .study .panel p {                           margin: 0 0 30px;}    
+    .study .panel p {                           margin: 0 0 30px;}  
+    // POPUP STYLES
+    .popBack {                              width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 99; background-color: rgb(0,0,0,0.7);}
+    .popback .popContainer {                width: 70%; position: absolute; top: 10%; left: 15%; transform: none; z-index: 100; background-color: #050236;}
+    .popback .popClose {                    width: 35px; height: 30px; position: absolute; cursor: pointer; top: -15px; right: -15px; background-color: #CA1D48;}
+    .popBack .popClose:hover {              background-color: #EEC31A;}
+    .popBack .popClose svg{                 font-size: 20px; margin: 5px 10px; color: #fff;}
+    .popBack .popClose:hover svg {          color: #000;}
+    .popBack .popContent h1 {               font-size: 40px; line-height: 48px; display: inline-block; color: #fff;}
+    .popBack .popContent p {                width: 100%; font-size: 18px; line-height: 26px; font-weight: 500; margin: 20px 0 20px; color: #fff;}
+    .popBack .popContent .button {          font-size: 18px; line-height: 72px; margin: 0 0 10px; background-color: #CA1D48; }  
     //FOOTER STYLES
     .foot .sponsors h1 {                        margin: 0 20px 20px; text-align: center;}
     .foot .sponsors .images {                   display: block; margin: 0 20px 50px; text-align: center;}
@@ -710,7 +720,17 @@
     .study .info {                              width: 100%; text-align: center; margin: 0 0 10px; float: left; font-weight: 500; color: #1A3667;}
     .study .bread {                             width: 100%; text-align: center; float: right; font-weight: 500; color: #1A3667;}
     .study .panel {                             padding: 20px; margin: 0 20px 10px; border-left: 5px solid #CA1D48;}
-    .study .panel p {                           margin: 0 0 30px;}    
+    .study .panel p {                           margin: 0 0 30px;}   
+    // POPUP STYLES
+    .popBack {                              width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 99; background-color: rgb(0,0,0,0.7);}
+    .popback .popContainer {                width: 80%; position: absolute; top: 50%; left: 10%; transform: translateY(-50%); z-index: 100; background-color: #050236;}
+    .popback .popClose {                    width: 35px; height: 30px; position: absolute; cursor: pointer; top: -15px; right: -15px; background-color: #CA1D48;}
+    .popBack .popClose:hover {              background-color: #EEC31A;}
+    .popBack .popClose svg{                 font-size: 20px; margin: 5px 10px; color: #fff;}
+    .popBack .popClose:hover svg {          color: #000;}
+    .popBack .popContent h1 {               font-size: 32px; line-height: 40px; display: inline-block; color: #fff;}
+    .popBack .popContent p {                width: 100%; font-size: 18px; line-height: 26px; font-weight: 500; margin: 20px 0 20px; color: #fff;}
+    .popBack .popContent .button {          font-size: 14px; line-height: 72px; margin: 0 0 10px; background-color: #CA1D48; }   
     //FOOTER STYLES
     .foot .sponsors h1 {                        margin: 0 20px 20px; text-align: center;}
     .foot .sponsors .images {                   display: block; margin: 0 20px 50px; text-align: center;}

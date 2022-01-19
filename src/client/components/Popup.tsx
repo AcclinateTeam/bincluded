@@ -20,6 +20,10 @@ const Popup = () =>
                     </div>
                     <div className="popTopImage">
                         <img src="images/poptop.png" alt="" />
+                        <svg viewBox="0 0 1083 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1083 0L0 168H1083V0Z" fill="#287FDD" />
+                            <path d="M1083 52L0 168H1083V52Z" fill="#CA1D48" />
+                        </svg>
                     </div>
                     <div className="popContent">
                         <h1>B-Included Is <span>Live!</span></h1>

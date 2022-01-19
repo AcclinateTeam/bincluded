@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import React from 'react';
 
 import SubHeader from '../components/SubHeader';
@@ -40,16 +40,16 @@ const Resources = () =>
                 <div className="container">
                     <div className="eight columns offset-by-one">
                         <ul className="terminal">
-                            <a><li>Tools &amp; Services</li></a>
-                            <a><li className="active">Things To Know</li></a>
-                            <a><li>Our Mission</li></a>
-                            <a><li>Become a Partner</li></a>
+                            <Link to="/resources#tools"><li>Tools &amp; Services</li></Link>
+                            <Link to="/resources#thingsToKnow"><li className="active">Things To Know</li></Link>
+                            <Link to="/resources#ourMission"><li>Our Mission</li></Link>
+                            <Link to="/resources#becomeApartner"><li>Become a Partner</li></Link>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <section className="resources bgBlue">
+            <section id="tools" className="resources bgBlue">
                 <div className="container">
                     <div className="eight columns offset-by-one">
                         <div className="six columns">
@@ -68,11 +68,14 @@ const Resources = () =>
                                     </svg>
                                 </div>
                                 <ul>
-                                    <li><a href="#">This is a Link to a Resource</a></li>
-                                    <li><a href="#">This is a Link to a Resource</a></li>
-                                    <li><a href="#">This is a Link to a Resource</a></li>
-                                    <li><a href="#">This is a Link to a Resource</a></li>
-                                    <li><a href="#">This is a Link to a Resource</a></li>
+                                    <li><a href="https://www.canva.com/design/DAE0xAXHQSY/i1-_oa3prgnyxQjM303-cg/view?utm_content=DAE0xAXHQSY&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">Sponsor Outreach Guide</a></li>
+                                    <li><a href="https://www.canva.com/design/DAE0xfIiSh4/ZkwbWisIWXtoBjtPAQDynw/view?utm_content=DAE0xfIiSh4&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">Messaging Guide</a></li>
+                                    <li><a href="https://www.canva.com/design/DAE0xFXTI4w/PRuWi56fglIJY7aR_bkzFg/view?utm_content=DAE0xFXTI4w&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">Social Media Post Template (Facebook)</a></li>
+                                    <li><a href="https://www.canva.com/design/DAE0xFQhQwU/bXp8zwoaRvKZtkfgDMHflw/view?utm_content=DAE0xFQhQwU&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu#1" target="_blank">Business Card Template</a></li>
+                                    <li><a href="https://www.canva.com/design/DAE0xB4NwcE/IesEwXjFx_NFmSlO9NOZ8A/view?utm_content=DAE0xB4NwcE&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">Social Media Post Template (Instagram)</a></li>
+                                    <li><a href="https://www.canva.com/design/DAE0xGg10Ck/RcqWZ5Nv5xbGcYvkQ_IYPw/view?utm_content=DAE0xGg10Ck&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">Advertisement Template</a></li>
+                                    <li><a href="https://www.canva.com/design/DAE0xOfr6RM/yKfTWKTdMz4Gv12oRWqtLg/view?utm_content=DAE0xOfr6RM&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">Letterhead Template</a></li>
+                                    <li><a href="https://www.canva.com/design/DAEx4EXYqYA/im0o_qLQi9-bMduGRsU24w/view?utm_content=DAEx4EXYqYA&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">B-INCLUDED Flyer Template</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -80,7 +83,7 @@ const Resources = () =>
                 </div>
             </section>
 
-            <section className="resources knows">
+            <section id="thingsToKnow" className="resources knows">
                 <div className="container">
                     <div className="eight columns offset-by-one">
                         <div className="six columns">
@@ -101,7 +104,7 @@ const Resources = () =>
                 </div>
             </section>
 
-            <section>
+            <section id="ourMission" style={{ marginBottom: '100px' }}>
                 <div className="container">
                     <div className="row whyNow">
                         <div className="eight columns offset-by-one">
@@ -111,7 +114,7 @@ const Resources = () =>
                                         <h3>Our Mission</h3>
                                         <h1>Stand Up For Your Health</h1>
                                         <p>B-INCLUDED is a digital health platform personalized for the Black community of Jefferson County. Its goal is to empower the county's Black residents and low-income individuals to make informed decisions about their health to improve their financial positions. </p>
-                                        <Link className="button learnmore" to="/whynow">Join The Community</Link>
+                                        <a className="button learnmore" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
                                     </div>
                                 </div>
                             </div>
@@ -123,6 +126,25 @@ const Resources = () =>
                         <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow3.jpg)` }}></div>
                         <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow2.jpg)` }}></div>
                         <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow5.jpg)` }}></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="becomeApartner">
+                <div className="container partnerUp">
+                    <div className="ten columns">
+                        <div className="content">
+                            <div className="container">
+                                <div className="eight columns offset-by-one">
+                                    <div className="seven columns">
+                                        <p>We want you to be a part of the health conversation.</p>
+                                    </div>
+                                    <div className="three columns">
+                                        <a href="https://jdsb9zx9r21.typeform.com/B-INCLUDED">Partner With Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

@@ -13,7 +13,7 @@ const Popup = () =>
 
     return (
         <>
-            <div className="popBack" id="popBack">
+            {/* <div className="popBack" id="popBack">
                 <div className="popContainer">
                     <div className="popClose" onClick={closePopup}>
                         <FontAwesomeIcon id="button-close" className="close" icon="times" />
@@ -33,7 +33,7 @@ const Popup = () =>
                         </a>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

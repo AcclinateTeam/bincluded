@@ -30,7 +30,7 @@ const Resources = () =>
                             <h3>Partner Resources</h3>
                             <h1>Let's Improve Our Community Together</h1>
                             {/* <Link to="/blog">Click Here to Read the Blog <FontAwesomeIcon icon="arrow-right" /></Link> */}
-                            <p>B-Included is a bold initiative focused on using the power of data and tech to help people find what they need to succeed, easier. Our partners offer products, services, and resources to improve your life.</p>
+                            <p>B-INCLUDED is a bold initiative focused on using the power of data and tech to help people find what they need to succeed, easier. Our partners offer products, services, and resources to improve your life.</p>
                         </div>
                     </div>
                 </div>
@@ -54,9 +54,9 @@ const Resources = () =>
                     <div className="eight columns offset-by-one">
                         <div className="six columns">
                             <div className="info">
-                                <h3>How To Promote and B-Included</h3>
+                                <h3>How To Promote and B-INCLUDED</h3>
                                 <h1>B-Included Tools And Materials</h1>
-                                <p>Jefferson County is making it easy to live healthier and wealthier by providing various information, ideas, and tools. B-Included helps you find your way through the steps of building community collaboration around health and financial well-being. Use these resources for ideas on partnering, rallying your networks, and inspiring others.</p>
+                                <p>Jefferson County is making it easy to live healthier and wealthier by providing various information, ideas, and tools. B-INCLUDED helps you find your way through the steps of building community collaboration around health and financial well-being. Use these resources for ideas on partnering, rallying your networks, and inspiring others.</p>
                             </div>
                         </div>
                         <div className="four columns">
@@ -67,7 +67,7 @@ const Resources = () =>
                                         <path d="M402 0H0V298L402 166V0Z" fill="#EEC31A" />
                                     </svg>
                                 </div>
-                                {/* <ul>
+                                <ul>
                                     <li><a href="https://www.canva.com/design/DAE0xAXHQSY/i1-_oa3prgnyxQjM303-cg/view?utm_content=DAE0xAXHQSY&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Sponsor Outreach Guide</a></li>
                                     <li><a href="https://www.canva.com/design/DAE0xfIiSh4/ZkwbWisIWXtoBjtPAQDynw/view?utm_content=DAE0xfIiSh4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Messaging Guide</a></li>
                                     <li><a href="https://www.canva.com/design/DAE0xFXTI4w/PRuWi56fglIJY7aR_bkzFg/view?utm_content=DAE0xFXTI4w&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Social Media Post Template (Facebook)</a></li>
@@ -75,8 +75,8 @@ const Resources = () =>
                                     <li><a href="https://www.canva.com/design/DAE0xB4NwcE/IesEwXjFx_NFmSlO9NOZ8A/view?utm_content=DAE0xB4NwcE&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Social Media Post Template (Instagram)</a></li>
                                     <li><a href="https://www.canva.com/design/DAE0xGg10Ck/RcqWZ5Nv5xbGcYvkQ_IYPw/view?utm_content=DAE0xGg10Ck&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Advertisement Template</a></li>
                                     <li><a href="https://www.canva.com/design/DAE0xOfr6RM/yKfTWKTdMz4Gv12oRWqtLg/view?utm_content=DAE0xOfr6RM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Letterhead Template</a></li>
-                                    <li><a href="https://www.canva.com/design/DAEx4EXYqYA/im0o_qLQi9-bMduGRsU24w/view?utm_content=DAEx4EXYqYA&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">B-INCLUDED Flyer Template</a></li>
-                                </ul> */}
+                                    <li><a href="https://www.canva.com/design/DAEx4EXYqYA/im0o_qLQi9-bMduGRsU24w/view?utm_content=DAEx4EXYqYA&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">B-INCLUDED Flyer (Drop Template PDF)</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>

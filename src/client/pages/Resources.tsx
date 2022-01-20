@@ -67,7 +67,7 @@ const Resources = () =>
                                         <path d="M402 0H0V298L402 166V0Z" fill="#EEC31A" />
                                     </svg>
                                 </div>
-                                <ul>
+                                {/* <ul>
                                     <li><a href="https://www.canva.com/design/DAE0xAXHQSY/i1-_oa3prgnyxQjM303-cg/view?utm_content=DAE0xAXHQSY&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Sponsor Outreach Guide</a></li>
                                     <li><a href="https://www.canva.com/design/DAE0xfIiSh4/ZkwbWisIWXtoBjtPAQDynw/view?utm_content=DAE0xfIiSh4&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Messaging Guide</a></li>
                                     <li><a href="https://www.canva.com/design/DAE0xFXTI4w/PRuWi56fglIJY7aR_bkzFg/view?utm_content=DAE0xFXTI4w&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Social Media Post Template (Facebook)</a></li>
@@ -76,7 +76,7 @@ const Resources = () =>
                                     <li><a href="https://www.canva.com/design/DAE0xGg10Ck/RcqWZ5Nv5xbGcYvkQ_IYPw/view?utm_content=DAE0xGg10Ck&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Advertisement Template</a></li>
                                     <li><a href="https://www.canva.com/design/DAE0xOfr6RM/yKfTWKTdMz4Gv12oRWqtLg/view?utm_content=DAE0xOfr6RM&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton&mode=preview" target="_blank">Letterhead Template</a></li>
                                     <li><a href="https://www.canva.com/design/DAEx4EXYqYA/im0o_qLQi9-bMduGRsU24w/view?utm_content=DAEx4EXYqYA&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu" target="_blank">B-INCLUDED Flyer Template</a></li>
-                                </ul>
+                                </ul> */}
                             </div>
                         </div>
                     </div>

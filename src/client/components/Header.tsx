@@ -81,8 +81,8 @@ const Header = () =>
 
                             <div className="login">
                                 <ul className="log">
-                                    <li className="signup"><a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Log In</a></li>
-                                    <li className="logins"><a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join the Community</a></li>
+                                    <li className="signup"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Log In</a></li>
+                                    <li className="logins"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join the Community</a></li>
                                 </ul>
                             </div>
 

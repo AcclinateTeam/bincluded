@@ -34,7 +34,7 @@ const Covid = () =>
                             <p>#B-Included provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
                         </div>
                         <div className="callbutton">
-                            <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
+                            <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
                             <a className="button learnmore" href="https://jdsb9zx9r21.typeform.com/to/m2w4i2Ju">Share Your Covid Story</a>
                         </div>
                     </div>

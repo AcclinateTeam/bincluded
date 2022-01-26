@@ -35,7 +35,7 @@ const Partners = () =>
                             <p>We partner with brands that are passionate about our mission and our community..</p>
                         </div>
                         <div className="callbutton">
-                            <a className="button signup" href="https://jdsb9zx9r21.typeform.com/B-INCLUDED">Become A Partner</a>
+                            <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Become A Partner</a>
                             <Link className="button learnmore" to="/resources">Partner Resources</Link>
                         </div>
                     </div>

@@ -143,7 +143,7 @@ const Footer = () =>
                                     {/* <a href="/Partners">Partners</a> */}
                                 </li>
                                 <li>
-                                    <a href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join the Community</a>
+                                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join the Community</a>
                                 </li>
                                 <li>
                                     <Link to="/blog">Blog</Link>

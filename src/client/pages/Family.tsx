@@ -46,7 +46,7 @@ const Family = () =>
                             <p>#B-Included provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
                         </div>
                         <div className="callbutton">
-                            <a className="button signup" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
+                            <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
                             <Link className="button learnmore" to="/whynow">Learn More</Link>
                         </div>
                     </div>

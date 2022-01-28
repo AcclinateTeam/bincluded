@@ -302,7 +302,7 @@ const Home = () =>
                 </div>
             </section>
 
-            <Popup/>
+            {/* <Popup/> */}
         </>
     );
 }

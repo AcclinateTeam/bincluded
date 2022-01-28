@@ -8,6 +8,7 @@ import Header from '../components/Header';
 import Terminal from '../components/Terminal';
 import RecipeComp from '../components/RecipeComp';
 import BlogPosts from './BlogPosts';
+import Slider from '../components/Slider';
 
 const Health = () =>
 {
@@ -85,7 +86,9 @@ const Health = () =>
 
             <Terminal />
 
-            <section className="testimony">
+            <Slider />
+
+            {/* <section className="testimony">
                 <div className="container">
                     <div className="eight columns offset-by-one">
                         <div className="header">
@@ -112,7 +115,7 @@ const Health = () =>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <RecipeComp />
 

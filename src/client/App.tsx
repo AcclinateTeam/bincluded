@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import ReactGA from 'react-ga';
 
 /* FONT AWESOME IMPORTS */
 import { library } from '@fortawesome/fontawesome-svg-core'; // import fa library
@@ -44,6 +45,11 @@ library.add(fab, fas, far);
 /* HOOK REACT EXAMPLE */
 const App = (props: AppProps) =>
 {
+
+	useEffect(() => {
+		ReactGA.pageview(window.location.pathname + window.location.search);
+	});
+
 	FullStory.identify('users', {
 		displayName: 'binc_user',
 		email: 'help@acclinate.com',

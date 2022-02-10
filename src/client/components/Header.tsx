@@ -1,11 +1,24 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 const Header = () =>
 {
+    // GOOGLE ANALYTICS
+    const handleClickJoinCommunity = () =>
+    {
+        ReactGA.event({
+            category: 'Links',
+            action: 'GitHub',
+            label: 'GitHub button clicked!',
+            value: 1
+        });
+    }
+
     // MOBILE NAV MENU TOGGLE CONTROLLER
-    function toggleNav() {
+    function toggleNav ()
+    {
         // VARIABLE SETTINGS
         const header = document.querySelector('header');
         const headerWrapper = document.getElementById('header-wrapper');
@@ -14,13 +27,15 @@ const Header = () =>
         const openButton = document.getElementById('button-open');
         const closeButton = document.getElementById('button-close');
         // MENU TOGGLE
-        if (headWrapHeight <= 61) {
+        if (headWrapHeight <= 61)
+        {
             header.style.position = 'fixed';
             headerWrapper.setAttribute('style', `height: 100vh; background-color: #04278E;`);
             navBg.setAttribute('style', `background-color: #fff;`);
             openButton.setAttribute('style', `opacity: 0;`);
             closeButton.setAttribute('style', `opacity: 1;`);
-        } else {
+        } else
+        {
             header.style.position = 'fixed';
             headerWrapper.setAttribute('style', `height: 60px; background-color: #050236;`);
             navBg.setAttribute('style', `background-color: #CA1D48;`);
@@ -39,12 +54,15 @@ const Header = () =>
         var headWrapHeight = document.getElementById('header-wrapper').offsetHeight;
 
         // MOBILE NAV SCROLL ANIMATION
-        if (windowWidth <= 1115 && windowPosition >= 900 && headWrapHeight <= 61) {
-            header.setAttribute('style', `position: fixed; background-color: #050236;`);      
-        } else if (windowWidth <= 1115 && headWrapHeight >= 61) {
+        if (windowWidth <= 1115 && windowPosition >= 900 && headWrapHeight <= 61)
+        {
+            header.setAttribute('style', `position: fixed; background-color: #050236;`);
+        } else if (windowWidth <= 1115 && headWrapHeight >= 61)
+        {
             header.setAttribute('style', `position: fixed;`);
-        } else {
-            header.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0);`);           
+        } else
+        {
+            header.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0);`);
         }
     });
 
@@ -82,7 +100,7 @@ const Header = () =>
                             <div className="login">
                                 <ul className="log">
                                     <li className="signup"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Log In</a></li>
-                                    <li className="logins"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join the Community</a></li>
+                                    <li className="logins"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" onClick={handleClickJoinCommunity}>Join the Community</a></li>
                                 </ul>
                             </div>
 

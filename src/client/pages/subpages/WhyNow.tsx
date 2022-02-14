@@ -35,7 +35,7 @@ const WhyNow = () =>
                         <div className="heading">
                             <h1>Why Now?</h1>
                             <Link to="/blog">Click Here to Read the Blog <FontAwesomeIcon icon="arrow-right" /></Link>
-                            <p>B-Included is a movement with a mission to build a community of individuals ready to take control of their health and future.</p>
+                            <p>B-INCLUDED is a movement with a mission to build a community of individuals ready to take control of their health and future.</p>
                         </div>
                     </div>
                 </div>
@@ -230,7 +230,7 @@ const WhyNow = () =>
                             <p>Get engaged in the community and compete against your friends!</p>
                         </div>
                         <div className="buttonwrap" style={{ marginTop: '50px' }}>
-                            <a className="content button solid" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
+                            <a className="content button solid" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
                         </div>
                     </div>
                     <div className="eight columns offset-by-one">
@@ -239,7 +239,7 @@ const WhyNow = () =>
                             <p>B-INCLUDED is different because the platform was designed specifically with you in mind.  You are not an afterthought on an already existing platform nor are you being included because it’s trendy.  With B-INCLUDED, you are the priority. Everything the platform offers is being provided in consideration of your needs, wants, dreams & aspirations for a healthy and wealthy life.  That’s what we all want, right? Each of us wants to live our best lives on our own terms. The B-INCLUDED community can help you get there. </p>
                         </div>
                         <div className="buttonwrap" style={{ marginTop: '50px' }}>
-                            <a className="content button solid" href="https://jdsb9zx9r21.typeform.com/to/fIPHeiqQ">Become a Partner</a>
+                            <a className="content button solid" href="https://jdsb9zx9r21.typeform.com/B-INCLUDED?typeform-source=b-included.com">Become a Partner</a>
                         </div>
                     </div>
                 </div>

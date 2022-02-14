@@ -114,7 +114,7 @@ const Resources = () =>
                                         <h3>Our Mission</h3>
                                         <h1>Stand Up For Your Health</h1>
                                         <p>B-INCLUDED is a digital health platform personalized for the Black community of Jefferson County. Its goal is to empower the county's Black residents and low-income individuals to make informed decisions about their health to improve their financial positions. </p>
-                                        <a className="button learnmore" href="https://nowincluded.mn.co/groups/6170862?utm_source=manual">Join The Community</a>
+                                        <a className="button learnmore" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
                                     </div>
                                 </div>
                             </div>

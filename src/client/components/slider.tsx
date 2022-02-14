@@ -4,7 +4,7 @@ const Slider = () =>
 {
     return (
         <>
-            Slider Content Here
+            {/* Slider Content Here */}
         </>
     )
 }

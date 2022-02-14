@@ -15,14 +15,12 @@ const Terminal = () =>
     const [mental, setMental] = useState(false);
     const [physical, setPhysical] = useState(false);
     const [tele, setTele] = useState(false);
-    const [careers, setCareers] = useState(false);
 
     const mentalLoaded = () =>
     {
         setMental(true);
         setPhysical(false);
         setTele(false);
-        setCareers(false);
     }
 
     const physicalLoaded = () =>
@@ -30,7 +28,6 @@ const Terminal = () =>
         setMental(false);
         setPhysical(true);
         setTele(false);
-        setCareers(false);
     }
 
     const teleLoaded = () =>
@@ -38,7 +35,6 @@ const Terminal = () =>
         setMental(false);
         setPhysical(false);
         setTele(true);
-        setCareers(false);
     }
 
 
@@ -47,7 +43,6 @@ const Terminal = () =>
         setMental(false);
         setPhysical(false);
         setTele(false);
-        setCareers(false);
     }
 
     const careersLoaded = () =>
@@ -55,10 +50,9 @@ const Terminal = () =>
         setMental(false);
         setPhysical(false);
         setTele(false);
-        setCareers(true);
     }
 
-    if (mental && !physical && !tele && !careers)
+    if (mental && !physical && !tele )
     {
         return (
             <>
@@ -73,7 +67,6 @@ const Terminal = () =>
                                 <a onClick={mentalLoaded}><li className="active">Mental</li></a>
                                 <a onClick={physicalLoaded}><li>Physical</li></a>
                                 <a onClick={teleLoaded}><li>TeleHealth</li></a>
-                                <a onClick={careersLoaded}><li>Careers</li></a>
                             </ul>
                             <div className="panel">
                                 <div className="container">
@@ -88,7 +81,7 @@ const Terminal = () =>
                 </section>
             </>
         );
-    } else if (!mental && physical && !tele && !careers)
+    } else if (!mental && physical && !tele)
     {
         return (
             <>
@@ -103,7 +96,6 @@ const Terminal = () =>
                                 <a onClick={mentalLoaded}><li>Mental</li></a>
                                 <a onClick={physicalLoaded}><li className="active">Physical</li></a>
                                 <a onClick={teleLoaded}><li>TeleHealth</li></a>
-                                <a onClick={careersLoaded}><li>Careers</li></a>
                             </ul>
                             <div className="panel">
                                 <div className="container">
@@ -119,7 +111,7 @@ const Terminal = () =>
             </>
         );
     
-    } else if (!mental && !physical && !tele && careers)
+    } else if (!mental && !physical && !tele)
     {
         return (
             <>
@@ -130,11 +122,10 @@ const Terminal = () =>
                                 <h1>Additional<br /> Health & Career Resources</h1>
                             </div>
                             <ul className="terminal">
-                                <a onClick={personalButton}><li>Personal</li></a>
+                                <a onClick={personalButton}><li className="active">Personal</li></a>
                                 <a onClick={mentalLoaded}><li>Mental</li></a>
                                 <a onClick={physicalLoaded}><li>Physical</li></a>
                                 <a onClick={teleLoaded}><li>TeleHealth</li></a>
-                                <a onClick={careersLoaded}><li className="active">Careers</li></a>
                             </ul>
                             <div className="panel">
                                 <div className="container">
@@ -165,7 +156,6 @@ const Terminal = () =>
                                 <a onClick={mentalLoaded}><li>Mental</li></a>
                                 <a onClick={physicalLoaded}><li>Physical</li></a>
                                 <a onClick={teleLoaded}><li>TeleHealth</li></a>
-                                <a onClick={careersLoaded}><li>Careers</li></a>
                             </ul>
                             <div className="panel">
                                 <div className="container">

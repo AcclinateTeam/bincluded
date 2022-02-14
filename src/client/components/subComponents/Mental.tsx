@@ -41,7 +41,7 @@ const Mental = () =>
             </div>
             {/* NEW ROW */}
             <div className="third columns">
-                <a href="https://www.uwaaa.org/greatdiet/">
+                <a href="https://www.m4a.org/greatdiet/">
                     <div className="panes">
                         <div className="pane">
                             <div className="image" style={{ backgroundImage: `url("/images/partners/m4a.png")`, backgroundColor: '#ffffff' }}></div>

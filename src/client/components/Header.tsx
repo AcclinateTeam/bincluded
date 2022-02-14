@@ -6,13 +6,12 @@ import ReactGA from 'react-ga';
 const Header = () =>
 {
     // GOOGLE ANALYTICS
-    const handleClickJoinCommunity = () =>
+    const eventTrack = (category: string, action: string, label: string, value: number) =>
     {
         ReactGA.event({
-            category: 'Links',
-            action: 'GitHub',
-            label: 'GitHub button clicked!',
-            value: 1
+            category: category,
+            action: action,
+            label: label
         });
     }
 
@@ -100,7 +99,7 @@ const Header = () =>
                             <div className="login">
                                 <ul className="log">
                                     <li className="signup"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Log In</a></li>
-                                    <li className="logins"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" onClick={handleClickJoinCommunity}>Join the Community</a></li>
+                                    <li className="logins"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" onClick={eventTrack.bind(this, "Header", "Sign Up Button", "Button")}>Join the Community</a></li>
                                 </ul>
                             </div>
 

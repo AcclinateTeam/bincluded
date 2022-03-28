@@ -1,7 +1,7 @@
 /* HEADER SCSS STYLES
 ============================================================== */
 /* HEADER STYLES */
-header {                        width: 100%; display: block; margin: 0; padding: 0; position: absolute; top: 0; left: 0; z-index: 99;}
+header {                        width: 100%; display: block; margin: 0; padding: 0; position: fixed; top: 0; left: 0; z-index: 99;}
 .header.wrapper {               padding: 50px 0 10px;} 
 .header .logo {                 margin: 0 0 0; float: left;}
 .header .logo svg {             height: 35px; margin: 5px 0 0;}
@@ -25,7 +25,7 @@ header .navButton {             display: none; opacity: 0; visibility: hidden;}
 
 /* SUBHEADER STYLES */
 header.sub {                            width: 100%; display: block; margin: 0; padding: 0; position: relative; top: 0; left: 0; z-index: 99; background-color: #050236;}
-header.sub .header.wrapper {            height: 45px; padding: 20px 0 20px; background-color: #050236;}
+header.sub .header.wrapper {            height: 45px; padding: 20px 0 20px; }
 header.sub ul.log li.signup a { color: #fff;}
 
 /* HOVER STYLES */

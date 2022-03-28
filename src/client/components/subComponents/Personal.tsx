@@ -9,6 +9,18 @@ const Personal = () =>
                 <a href="https://www.cahabamedicalcare.com/">
                     <div className="panes">
                         <div className="pane">
+                            <div className="image" style={{ backgroundImage: `url("/images/partners/prosperPath.png")`, backgroundColor: '#ffffff' }}></div>
+                            <h2>Prosper's Path To Wellness</h2>
+                            <p>Provides comprehensive primary care services</p>
+                            {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div className="third columns">
+                <a href="https://www.cahabamedicalcare.com/">
+                    <div className="panes">
+                        <div className="pane">
                             <div className="image" style={{ backgroundImage: `url("/images/partners/cahaba.png")`, backgroundColor: '#ffffff' }}></div>
                             <h2>Cahaba Medical Care</h2>
                             <p>Provides comprehensive primary care services</p>

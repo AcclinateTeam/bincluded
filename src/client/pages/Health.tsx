@@ -9,6 +9,7 @@ import Terminal from '../components/Terminal';
 import RecipeComp from '../components/RecipeComp';
 import BlogPosts from './BlogPosts';
 import Slider from '../components/Slider';
+import Prosper from '../components/Prosper';
 
 const Health = () =>
 {
@@ -66,7 +67,7 @@ const Health = () =>
             <section className="health content">
                 <div className="container">
                     <div className="eight columns offset-by-one">
-                        <div className="featured">
+                        <div className="featured" style={{ marginBottom: '100px' }}>
                             <div className="face">
                                 <div className="tag">
                                     <h6>Featured Resource</h6>
@@ -83,6 +84,8 @@ const Health = () =>
                     </div>
                 </div>
             </section>
+
+            <Prosper />
 
             <Terminal />
 

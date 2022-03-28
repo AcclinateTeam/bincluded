@@ -31,7 +31,7 @@ const Covid = () =>
                     <div className="content">
                         <div className="calltext">
                             <h1>Covid-19</h1>
-                            <p>#B-Included provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
+                            <p>#B-INCLUDED provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
                         </div>
                         <div className="callbutton">
                             <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>

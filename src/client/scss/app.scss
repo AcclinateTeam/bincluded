@@ -80,14 +80,16 @@ body {				min-height: 100%; position: relative;}
 .testimony {                            padding: 100px 0; background-color: #050236;}
 .testimony .header {                    margin: 0 auto; text-align: center;}
 .testimony .header h1 {                 line-height: 50px; color: #fff;}
-.testimony .slider {                    padding: 50px 0 0;}
-.testimony .slides {                    width: 60%; padding: 50px 0 0; margin: 0 auto;}
-.testimony .slide {                     text-align: center; display: block; position: relative; padding: 80px 40px 40px; border: 1px solid #287FDD;}
+.testimony .slider {                    padding: 100px 0 0; position: relative; background-color: #a26;}
+.testimony .slider .chevronLeft {       font-size: 70px; line-height: 70px; position: absolute; top: calc(50% - 70px); left: 0; color: #fff;}
+.testimony .slider .chevronRight {      font-size: 70px; line-height: 70px; position: absolute; top: calc(50% - 70px); right: 0; color: #fff;}
+.testimony .slides {                    width: 60%; height: 326px; position: relative; padding: 0; margin: 0 auto; background-color: #f09;}
+.testimony .slide {                     width: calc(100% - 82px); text-align: center; display: inline-block; position: absolute; top: 0; left: 0; padding: 80px 40px 40px; border: 1px solid #287FDD;}
 .testimony .slide .image {              width: 100px; height: 100px; display: block; position: absolute; top: -50px; left: calc(50% - 50px);}
 .testimony .slide .image img {          width: 100%; border-radius: 50px;}
 .testimony .slide h2 {                  font-family: 'Roboto', sans-serif; font-weight: 700; text-transform: none; padding: 0; margin: 0 0 20px; color: #fff;}
 .testimony .slide h4 {                  font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 18px; font-weight: 500; text-transform: none; margin: 0 0 20px; color: #287FDD;}
-.testimony .slide p {                   font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 300; font-style: italic; margin: 0 0 20px; color: #fff;}
+.testimony .slide p {                   height: 66px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 300; font-style: italic; margin: 0 0 20px; color: #fff;}
 .testimony .slide .rating svg {         font-size: 24px; line-height: 24px; margin: 0 10px 0 0; color: #EEC31A;}
 
 // RECIPE COMPONENT STYLES
@@ -210,7 +212,7 @@ h5 { font-size: 14px; line-height: 14px;}
 
 /* #GLOBAL TRANSITION STYLES
 ================================================== */
-ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close, header, header.sub, header.sub .header.wrapper, .covid19 .panes, .resources ul.terminal li {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close, header, header.sub, header.sub .header.wrapper, .covid19 .panes, .resources ul.terminal li, .home .callout .playModal a .card-img, .homeVideo, .homeVideo .frame {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
 
 
 /* #RESPONSIVE SCSS IMPORTS

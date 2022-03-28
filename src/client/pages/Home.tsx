@@ -6,29 +6,24 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
-import Popup from '../components/Popup';
 
 const Home = () =>
 {
+    // Window scroll-to-top function
     useEffect(() =>
     {
         window.scrollTo(0, 0)
     }, [])
 
+    // Metro Track State & Effect
     const [tracker, setTracker] = useState<any>([]);
     const [actuals, setActuals] = useState<any>([]);
     const [beds, setBeds] = useState<any>([]);
     const [metrics, setMetrics] = useState<any>([]);
 
-    // function kFormatter (num: number)
-    // {
-    //     return Math.abs(num) > 999 ? Math.sign(num) * (Math.round(Math.abs(num)/100)/10) + 'k' : Math.sign(num) * Math.abs(num) 
-    // }
-
+    // Hook for covid stats tracker
     useEffect(() =>
     {
-
-
         getMetroTracker();
         async function getMetroTracker ()
         {
@@ -42,6 +37,78 @@ const Home = () =>
 
     }, []);
 
+    // Close Play Modal by clicking the 'whitespace' area of the modal.
+    const whiteSpace = document.querySelector('.homeVideo');
+    
+    document.body.addEventListener('click', (e) => function (e: { target: Node; })
+    {
+        if (whiteSpace.contains(e.target))
+        {
+            console.log('This is the white space');
+        } else
+        {
+            console.log('This is not the white space');
+        }
+    });
+
+    const openPlayModal = async () =>
+    {
+        // console.log('This opens the play modal');
+
+        // Play Modal container element selector
+        const playContainer = document.getElementById('playContainer');
+
+        // New div (sub-container) element creation and class name assignment
+        const newDiv = document.createElement('div');
+        newDiv.className = 'homeVideo';
+
+        // New Frame (sub-div container) element creation and class name assignment
+        const newFrame = document.createElement('div');
+        newFrame.className = 'frame';
+
+        // New Close Button (sub-div container) element creation and class name assignment
+        const newCloseBtn = document.createElement('div');
+        newCloseBtn.className = 'popClose';
+
+        // New Close Button Image
+        const newCloseBtnImg = document.createElement('img');
+        newCloseBtnImg.src = '/images/close.png';
+        newCloseBtnImg.addEventListener('click', () => { closePlayModal() }); // Closes Play Modal by clicking the image.
+
+        // Create iframe for youtube video and set attributes
+        const newVideo = document.createElement('iframe');
+        newVideo.setAttribute('src', 'https://www.youtube.com/embed/MXduRSowWmU?autoplay=1');
+        newVideo.setAttribute('frameborder', '0');
+        newVideo.setAttribute('allow', 'autoplay');
+        newVideo.setAttribute('style', 'width: 100%; height: 100%;');
+
+        // Constructs "HomeVideoObject" with appended elements.
+        playContainer.appendChild(newDiv);
+        newDiv.appendChild(newFrame);
+        newFrame.appendChild(newVideo);
+        newFrame.appendChild(newCloseBtn);
+        newCloseBtn.appendChild(newCloseBtnImg);
+
+        // Play Modal animations
+        const wait = (t: number) => new Promise(r => setTimeout(r, t));
+        await wait(20);
+        newDiv.style.opacity = '1';
+        newFrame.style.top = '20%';       
+
+        // Close Play Modal function 
+        const closePlayModal = async () =>
+        {
+            // console.log('This closes the play modal');
+
+            // Animate "homeVideo" and "frame" div(s).
+            newDiv.style.opacity = '0';
+            newFrame.style.top = '35%';
+
+            // Wait first, then remove parent "homeVideo" element, which resets the play modal. Wait is used BEFORE remove() to ensure the animation is complete.
+            await wait(500);
+            newDiv.remove();
+        }
+    }
 
     return (
         <>
@@ -77,10 +144,13 @@ const Home = () =>
                             <Link className="button learnmore" to="/whynow">Learn More</Link>
                         </div>
                     </div>
-                    <div className="callimage">
-                        <img className="card-img" src="/images/callhome.png" alt="Callout Image Placeholder" />
+                    <div className="playModal">
+                        <a onClick={openPlayModal} className="">
+                            <img className="card-img" src="/images/callhome.png" />
+                            <img className="playButton" src="/images/play.png" />
+                        </a>
                     </div>
-                </div>                
+                </div>
             </section>
 
             {/* PORTAL COMPONENT */}
@@ -303,6 +373,17 @@ const Home = () =>
             </section>
 
             {/* <Popup/> */}
+
+            {/* <div id="homeVideo" className="homeVideo">
+                <div className="frame">
+                    <div className="popClose" onClick={openPlayModal}>
+                        <FontAwesomeIcon id="button-close" className="close" icon="times" />
+                    </div>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MXduRSowWmU?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                </div>
+            </div> */}
+
+            <div id="playContainer"></div>
         </>
     );
 }

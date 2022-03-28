@@ -91,7 +91,7 @@ const Header = () =>
                                 <ul className="nav">
                                     <li><Link to='/health'>Health</Link></li>
                                     <li><Link to='/family'>Family</Link></li>
-                                    <li><Link to='/careers'>Careers</Link></li>
+                                    {/* <li><Link to='/careers'>Careers</Link></li> */}
                                     <li><Link to='/covid'>COVID-19</Link></li>
                                 </ul>
                             </nav>

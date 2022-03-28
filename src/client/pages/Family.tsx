@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../components/Header';
 import Terminal from '../components/Terminal';
 import BlogPosts from './BlogPosts';
+import Prosper from '../components/Prosper';
 
 const Family = () =>
 {
@@ -100,6 +101,8 @@ const Family = () =>
                     </div>
                 </div>
             </section>
+
+            <Prosper />
 
             <Terminal />
 

@@ -111,7 +111,7 @@ const Terminal = () =>
             </>
         );
     
-    } else if (!mental && !physical && !tele)
+    } else if (!mental && !physical && tele)
     {
         return (
             <>
@@ -122,14 +122,14 @@ const Terminal = () =>
                                 <h1>Additional<br /> Health & Career Resources</h1>
                             </div>
                             <ul className="terminal">
-                                <a onClick={personalButton}><li className="active">Personal</li></a>
+                                <a onClick={personalButton}><li>Personal</li></a>
                                 <a onClick={mentalLoaded}><li>Mental</li></a>
                                 <a onClick={physicalLoaded}><li>Physical</li></a>
-                                <a onClick={teleLoaded}><li>TeleHealth</li></a>
+                                <a onClick={teleLoaded}><li className="active">TeleHealth</li></a>
                             </ul>
                             <div className="panel">
                                 <div className="container">
-                                    <Careers />
+                                    <Tele />
                                 </div>
                             </div>
                             <div className="buttonwrap">

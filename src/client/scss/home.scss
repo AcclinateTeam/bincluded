@@ -26,7 +26,7 @@
 
 .homeVideo {                                    width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 99; background-color: rgba(0,0,0,0.8); opacity: 0; display: block; visibility: visible;}
 .homeVideo .frame {                             width: 50%; height: 60%; position: absolute; top: 35%; left: 25%; z-index: 99;}
-.homeVideo .popClose {                          width: 40px; height: 40px; padding: 10px; position: absolute; top: -60px; right: -60px; z-index: 99;}
+.homeVideo .popClose {                          width: 40px; height: 40px; padding: 10px; position: absolute; top: -60px; right: -60px; z-index: 99; background-color: #CA1D48;}
 .homeVideo .popClose img {                       width: 40px; height: 40px; }
 
 .home .callout .playModal a:hover .card-img {     transform: scale(1.02);}

@@ -10,6 +10,14 @@
     header.sub ul.log li.signup a {         color: #fff;}
     header.sub .header .logo {                 position: absolute; top:20px; left: 20px;}
     header.sub .header .logo svg {             height: 20px; display: block; left: 0; margin: 0;}
+
+    .home .callout .playModal {                     width: calc(100% - 40px); position: absolute; top: 80px; left: 20px; display: block;}
+    .home .callout .playModal img.card-img {                 width: 100%; cursor: pointer;}
+    .home .callout .playButton {                    width: 150px; height: 150px; position: absolute; top: 50%; transform: translateY(-50%); left: calc(58%); margin-left: -110px;}
+
+    .homeVideo .frame {                             width: 80%; height: 300px; position: absolute; top: 35%; left: 10%; z-index: 99;}
+    .homeVideo .popClose {                          width: 20px; height: 20px; padding: 10px; position: absolute; top: -40px; right: 0; z-index: 99;}
+    .homeVideo .popClose img {                       width: 20px; height: 20px; }
     
     // NAVBAR STYLES
     nav {                           padding: 70px 20px 0; float: none;}

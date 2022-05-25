@@ -171,7 +171,7 @@ const WhyNow = () =>
                                     <div className="text">
                                         <h1>Prosper + Acclinate</h1>
                                         <p>Acclinate and Birmingham Prosper have been hard at work to develop a Birmingham-specific community platform; B-INCLUDED. This platform will further Prosper's initiative to reduce racial inequities in Jefferson County by providing county residents access to long needed resources.</p>
-                                        <a href="https://prosperbham.com/">Read About How This Partnership Was Formed <FontAwesomeIcon icon="arrow-right" /></a>
+                                        <a href="https://www.bizjournals.com/birmingham/inno/stories/news/2022/01/12/acclinate-and-prosper-partner-on-new-platform.html">Read About How This Partnership Was Formed <FontAwesomeIcon icon="arrow-right" /></a>
                                     </div>
                                 </div>
                             </div>

@@ -250,7 +250,7 @@ const Home = () =>
                                 </Link>
                             </div>
                             <div className="fourth columns rack">
-                                <Link to="/blog/angelica">
+                                <Link to="/blog/calanda">
                                     <div className="frames">
                                         <div className="frame">
                                             <div className="image">
@@ -268,36 +268,40 @@ const Home = () =>
                                 </Link>
                             </div>
                             <div className="fourth columns rack">
-                                <div className="frames">
-                                    <div className="frame">
-                                        <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                            <video playsInline autoPlay muted loop id="myVideo">
-                                                <source src='http://nowincluded.com/wp-content/uploads/2022/05/jasmineDebruce.mp4' type="video/mp4" />
-                                                Your browser does not support HTML5 video.
-                                            </video>
-                                        </div>
-                                        <div className="text">
-                                            <h1>Jasmine DeBruce</h1>
-                                            <p>Bessemer Public Housing</p>
+                                <Link to="/blog/jasmine">
+                                    <div className="frames">
+                                        <div className="frame">
+                                            <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
+                                                <video playsInline autoPlay muted loop id="myVideo">
+                                                    <source src='http://nowincluded.com/wp-content/uploads/2022/05/jasmineDebruce.mp4' type="video/mp4" />
+                                                    Your browser does not support HTML5 video.
+                                                </video>
+                                            </div>
+                                            <div className="text">
+                                                <h1>Jasmine DeBruce</h1>
+                                                <p>Bessemer Public Housing</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
                             <div className="fourth columns rack">
-                                <div className="frames">
-                                    <div className="frame">
-                                        <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                            <video playsInline autoPlay muted loop id="myVideo">
-                                                <source src='http://nowincluded.com/wp-content/uploads/2022/05/miriamC.mp4' type="video/mp4" />
-                                                Your browser does not support HTML5 video.
-                                            </video>
-                                        </div>
-                                        <div className="text">
-                                            <h1>Mariam Cunningham</h1>
-                                            <p>Bessemer Public Housing</p>
+                                <Link to="/blog/mariam">
+                                    <div className="frames">
+                                        <div className="frame">
+                                            <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
+                                                <video playsInline autoPlay muted loop id="myVideo">
+                                                    <source src='http://nowincluded.com/wp-content/uploads/2022/05/miriamC.mp4' type="video/mp4" />
+                                                    Your browser does not support HTML5 video.
+                                                </video>
+                                            </div>
+                                            <div className="text">
+                                                <h1>Mariam Cunningham</h1>
+                                                <p>Bessemer Public Housing</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </Link>
                             </div>
                         </div>
                     </div>

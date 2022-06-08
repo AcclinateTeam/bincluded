@@ -32,6 +32,7 @@
 .whoWeAre .deck .cards .card .text h3 {             font-size: 32px; line-height: 32px; font-weight: 900; color: #fff; margin: 0;}
 .whoWeAre .deck .cards .card .text p {              font-size: 18px; line-height: 24px; font-weight: 300; border: none; padding: 10px 0 20px; color: #ffffff99; margin: 0;}
 .whoWeAre .deck .cards .card .text a {              font-size: 20px; line-height: 20px; font-weight: 700; border: none; padding: 0; text-decoration: none; color: #ffffff; margin: 0;}
+.whoWeAre .deck .cards .card .text a svg {          font-size: 18px; line-height: 20px; color: #CA1D48;}
 
 // HOME PAGE WHAT WE DO STYLES
 .whatwedo {                                         background-color: #fff; padding: 100px 15%;}  
@@ -48,7 +49,7 @@
 .whatwedo .deck .cards svg {                        color: #CA1D48;}
 .whatwedo .deck .cards svg.icon {                   border: 2px solid #CA1D48; font-size: 30px; border-radius: 35px; padding: 20px; margin: 0 0 20px; color: #CA1D48;}
 .whatwedo .deck .cards h4  {                        padding: 0 0 10px; text-transform: none; }
-.whatwedo .deck .cards p  {                         height: 104px; font-size: 18px; line-height: 26px;}
+.whatwedo .deck .cards p  {                         height: 104px; font-size: 18px; margin: 0 0 20px; line-height: 26px;}
 
 // HOME PAGE STORIES STYLESs
 .stories {                                          padding: 100px 15% 50px; background-color: #fff;}

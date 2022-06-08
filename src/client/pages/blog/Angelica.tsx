@@ -32,7 +32,7 @@ const Angelica = () =>
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section className="hero" style={{ height: `600px` }}>
+            <section className="singBlog hero" style={{ height: `600px` }}>
                 <div className="calloutbg" style={{ backgroundImage: `url(/images/stories.jpg)` }}>
 
                 </div>
@@ -42,7 +42,7 @@ const Angelica = () =>
                 <div className="callout">
                     <div className="calltext">
                         <h1>Featured Story</h1>
-                        <p>Angelica Woods - Bessemer Public Housing</p>
+                        <p>Angelica Woods - Voice From Our Community</p>
                     </div>
                 </div>
             </section>

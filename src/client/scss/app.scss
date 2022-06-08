@@ -42,7 +42,7 @@ body {				min-height: 100%; position: relative;}
 // CALLOUT STYLE
 .hero {                                                 width: 100%; position: relative; overflow: hidden;}
 .hero .callbg img {                                     width: 100%; }     
-.hero .calloutbg {                                      width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332; opacity: 0.7;}
+.hero .calloutbg {                                      width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332; opacity: 0.7; background-color: #000;}
 .hero .callout {                                        width: 100%; height: 100vh;}
 .hero .callout {                                        width: 40%; height: 500px; position: absolute; top: 250px; left: 30%;}
 .hero .callout .calltext {                              width: 100%; display: block;}
@@ -228,7 +228,6 @@ span.logo {                     font-family: 'Montserrat', sans-serif; display: 
 .call .text p {                 font-family: 'Firs Sans', sans-serif; font-size: 16px; line-height: 24px; font-weight: 300; width: 50%; margin: 0 0 30px; color: #fff;}
 
 // CONTENT STYLES
-.content h2 {                   text-align: center;}
 .recipes h1 {                   margin: 50px 0; color: #fff;}
 .recipes .text h2 {             margin: 0 0 20px; color: #1a1a1a;}
 .recipes .text p {              font-size: 14px; line-height: 22px; margin: 0 0 20px; color: #1a1a1a;}

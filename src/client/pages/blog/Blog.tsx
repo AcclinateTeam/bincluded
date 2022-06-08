@@ -151,6 +151,23 @@ const Blog = () =>
                                     </div>
                                 </Link>
                             </div>
+
+                            {/* NEW ROW */}
+                            <div className="fourth columns rack">
+                                <Link to="/blog/angela">
+                                    <div className="frames">
+                                        <div className="frame">
+                                            <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
+                                                <img src="/images/angela.jpg" alt="" />
+                                            </div>
+                                            <div className="text">
+                                                <h1>Angela Abdur-Rasheed</h1>
+                                                <p>Voices From Our Community</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                     <div className="ten columns">

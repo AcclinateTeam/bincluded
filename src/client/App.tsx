@@ -43,6 +43,7 @@ import Angelica from './pages/blog/Angelica';
 import Calanda from './pages/blog/Calanda';
 import Jasmine from './pages/blog/Jasmine';
 import Mariam from './pages/blog/Mariam';
+import Angela from './pages/blog/Angela';
 
 library.add(fab, fas, far);
 
@@ -81,6 +82,7 @@ const App = (props: AppProps) =>
 					<Route path="/blog/calanda" element={<Calanda />} />
 					<Route path="/blog/jasmine" element={<Jasmine />} />
 					<Route path="/blog/mariam" element={<Mariam />} />
+					<Route path="/blog/angela" element={<Angela />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />
 					{/* Recipe Paths */}
 					<Route path="/recipes" element={<RecipeSearch />} />

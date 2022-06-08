@@ -108,7 +108,7 @@ const Footer = () =>
                                 </a>
                             </li>
                         </ul>
-                        <p>© 2021 #BINCLUDED | <Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms &#38; Conditions</Link> | Data Breach Response Policy</p>
+                        <p>© 2022 #BINCLUDED | <Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms &#38; Conditions</Link> | Data Breach Response Policy</p>
                     </div>
                 </div>
             </div>

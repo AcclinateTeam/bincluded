@@ -32,7 +32,7 @@ const Calanda = () =>
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section className="hero" style={{ height: `600px` }}>
+            <section className="singBlog hero" style={{ height: `600px` }}>
                 <div className="calloutbg" style={{ backgroundImage: `url(/images/stories.jpg)` }}>
 
                 </div>

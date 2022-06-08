@@ -105,7 +105,7 @@ const Home = () =>
                                             <div className="text">
                                                 <h3>Your story matters</h3>
                                                 <p>Hear from the community and share your story.</p>
-                                                <a href="#">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
+                                                <Link to="/blog">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></Link>
                                             </div>
                                         </div>
                                     </Link>
@@ -119,7 +119,7 @@ const Home = () =>
                                             <div className="text">
                                                 <h3>Bettering Birmingham</h3>
                                                 <p>Learn why now is the time to take control of your health and future.</p>
-                                                <a href="#">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
+                                                <Link to="/whynow">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></Link>
                                             </div>
                                         </div>
                                     </Link>
@@ -133,7 +133,7 @@ const Home = () =>
                                             <div className="text">
                                                 <h3>Join our community</h3>
                                                 <p>Click here to learn, share and grow with others in the B-INCLUDED community.</p>
-                                                <a href="#">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
+                                                <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
                                             </div>
                                         </div>
                                     </a>
@@ -187,12 +187,12 @@ const Home = () =>
                                     </Link>
                                 </div>
                                 <div className="third columns">
-                                    <a href="#">
+                                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">
                                         <div className="cards shadow hover">
                                             <FontAwesomeIcon className="icon" icon="comments" />
                                             <h4>Community</h4>
                                             <p>Join to the community to like, share, comment, and connect with people like you.</p>
-                                            <a href="/health">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
+                                            <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
                                         </div>
                                     </a>
                                 </div>
@@ -243,7 +243,7 @@ const Home = () =>
                                             </div>
                                             <div className="text">
                                                 <h1>Angelica Woods</h1>
-                                                <p>Bessemer Public Housing</p>
+                                                <p>Voices From Our Community</p>
                                             </div>
                                         </div>
                                     </div>
@@ -261,7 +261,7 @@ const Home = () =>
                                             </div>
                                             <div className="text">
                                                 <h1>Calanda Marks</h1>
-                                                <p>Bessemer Public Housing</p>
+                                                <p>Voices From Our Community</p>
                                             </div>
                                         </div>
                                     </div>
@@ -279,7 +279,7 @@ const Home = () =>
                                             </div>
                                             <div className="text">
                                                 <h1>Jasmine DeBruce</h1>
-                                                <p>Bessemer Public Housing</p>
+                                                <p>Voices From Our Community</p>
                                             </div>
                                         </div>
                                     </div>
@@ -297,7 +297,7 @@ const Home = () =>
                                             </div>
                                             <div className="text">
                                                 <h1>Mariam Cunningham</h1>
-                                                <p>Bessemer Public Housing</p>
+                                                <p>Voices From Our Community</p>
                                             </div>
                                         </div>
                                     </div>
@@ -509,19 +509,21 @@ const Home = () =>
                 </div>
             </section>
 
-            {/* CLINICAL TRAILS */}
+            {/* PRE-FOOTER JOIN THE COMMUNITY */}
             <section>
                 <div className="community">
                     <div className="bg" style={{ backgroundImage: "url(/images/laptop.png)" }}></div>
                     <div className="container">
                         <div className="three columns">
                             <div className="content">
-                                <h1>Join our Community</h1>
-                                <div className="break" style={{ backgroundImage: `url(/images/sep-white.png)`, height: `11px`, width: `120px`, marginTop: `10px` }}></div>
-                                <p>We are a community that shares stories and supports anyone affected by colorectal cancer. We are here to be informative, relational, helpful, and supportive. By joining this community, you will find engaging content about preventative care, clinical research, and funding options from experts and people just like you.</p>
-
-                                {/* <div className="container">
-                                    <div className="five columns right">
+                                <h2>Join our <span className="blue">Community</span></h2>
+                                <p>We are a community that shares stories and supports minority communities. We are here to be informative, relational, helpful, and supportive. By joining this community, you will find engaging content about preventative care, clinical research, and funding options from experts and people just like you.</p>
+                            </div>
+                        </div>
+                        <div className="three columns">
+                            <div className="con">
+                                <div className="container">
+                                    <div className="ten columns right">
                                         <h3>What We Offer</h3>
                                         <ul>
                                             <li><FontAwesomeIcon icon="star" />
@@ -538,31 +540,31 @@ const Home = () =>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div className="five columns left">
+                                    <div className="ten columns left">
                                         <h3>Get Started</h3>
                                         <ul>
-                                            <li>
-                                                <FontAwesomeIcon icon={['fab', 'google-play']} />
-                                                <h6>Google Play Store</h6>
-                                                Click here to download and install our app from Google Play App Store.
-                                            </li>
-                                            <li>
-                                                <FontAwesomeIcon icon={['fab', 'itunes']} />
-                                                <h6>Apple Itunes Store</h6>
-                                                Click here to download and install our app from Google Play App Store.
-                                            </li>
+                                            <a href="https://play.google.com/store/apps/details?id=com.mightybell.nowincluded">
+                                                <li>
+                                                    <FontAwesomeIcon icon={['fab', 'google-play']} />
+                                                    <h6>Google Play Store</h6>
+                                                    <p>Click <span>here</span> to download and install our app from Google Play App Store.</p>
+                                                </li>
+                                            </a>
+                                            <a href="https://apps.apple.com/ng/app/nowincluded/id1597990720">
+                                                <li>
+                                                    <FontAwesomeIcon icon={['fab', 'itunes']} />
+                                                    <h6>Apple Itunes Store</h6>
+                                                    <p>Click <span>here</span> to download and install our app from Apple Itunes Store.</p>
+                                                </li>
+                                            </a>
                                         </ul>
                                     </div>
-                                </div> */}
-
+                                </div>
                             </div>
                         </div>
-                        <div className="seven columns">
+                        <div className="four columns">
                             <div className="image1">
-                                <img src="images/phone.png" alt="" />
-                            </div>
-                            <div className="image2">
-                                <img src="images/webshare.png" alt="" />
+                                <img src="images/screens.png" alt="" />
                             </div>
                         </div>
                     </div>

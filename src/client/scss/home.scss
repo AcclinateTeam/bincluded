@@ -56,12 +56,13 @@
 .stories .header h2 {                               text-align: center; color: #050236;}
 .stories .header p {                                font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: #050236;}
 .stories .case {                                    margin: 50px 0;}
-.stories .rack {                                    height: 300px;}
-.stories .rack .frames {                            width: calc(100% - 40px); height: 100%; border-radius: 15px; margin: 0 20px; overflow: hidden;}
+.stories .rack {                                    height: 300px; margin: 0 0 40px;}
+.stories .rack .frames {                            width: calc(100% - 40px); height: 100%; border-radius: 15px; margin: 0 20px 20px; overflow: hidden;}
 .stories .rack .frames:hover {                      transform: scale(1.03);}
 .stories .rack .frames .frame {                     width: 100%; height: 100%; position: relative; overflow: hidden;}
 .stories .rack .frames .frame .image {              width: 100%; height: 100%; }
 .stories .rack .frames .frame .image video {        width: 100%; height: 100%; object-fit: cover;} 
+.stories .rack .frames .frame .image img {        width: 100%; height: 100%; object-fit: cover;} 
 .stories .rack .frames .frame .text {               width: calc(100% - 20px); position: absolute; padding: 20px; bottom: -120px; left: 0; background-color: #050236;}
 .stories .rack .frames:hover .text {       bottom: 0;}
 .stories .rack .frames .frame .text h1 {            font-size: 24px; line-height: 24px; font-weight: 900; color: #fff; margin: 0;}
@@ -79,8 +80,8 @@
 // HOME PAGE WHYNOW? SECTION STYLES
 .whyNow {                               background-color: #050236;}
 .whyNow .whyImage {                     width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
-.whyNow .whyText {                      margin: 100px 100px 100px 0; display: inline-block;}
-.whyNow .whyText h2 {                   font-size: 48px; line-height: 60px; font-weight: 900; margin: 0 0 30px; color: #fff;}
+.whyNow .whyText {                      margin: 150px 40px; display: inline-block;}
+.whyNow .whyText h2 {                   font-size: 72px; line-height: 72px; font-weight: 900; margin: 0 0 30px; color: #fff;}
 .whyNow .whyText p {                    font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 0 30px; color: #fff;}
 
 .whyNow .whyTextWide {                  text-align: center; padding: 90px 0;}
@@ -122,27 +123,38 @@
 .research .content .text .button.solid:hover {      background-color: #EEC31A;}
 
 // JOIN COMMUNITY STYLES
-.community {                                    height: 569px; position: relative; padding: 0 15%; background-color: #050236; z-index: -99;}
+.community {                                    position: relative; padding: 0 15%; background-color: #050236;}
 .community .frame {                             margin: 0 10%;}
-.community .bg {                                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.05; z-index: -11;}
-.community .image1 {                             width: 30%; float: left;}
-.community .image1 img {                         width: calc(100% - 60px); padding: 50px 0 0;}
+.community .bg {                                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.05;}
+.community .image1 {                             width: 100%; float: left;}
+.community .image1 img {                         width: 100%; padding: 50px 0 0;}
 .community .image2 img {                         width: 70%; padding: 90px 0 0;}
-.community .content {                           padding: 100px 50px 0 0; color: #fff; z-index: 99;}
-.community .content h1 {                        font-size: 42px; line-height: 42px; color: #fff;}
-.community .content p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
+.community .content {                           padding: 80px 50px 0 0; color: #fff; }
+.community .con {                               padding: 80px 0 0 75px; color: #fff; }
 
-.community .right h3 {                          width: 70%; margin: 0 0 10px; color: #fff;}
-.community .right p {                           display: inline-block; padding: 0 100px 0 0;}
-.community .right ul li {                       margin: 0 0 10px;}
-.community .right ul li svg {                   font-size: 20px; line-height: 20px; display:inline-block; padding: 0 8px 0 0; }
-.community .right ul li p {                     font-size: 20px; line-height:20px; margin: 0; padding: 0;}
+.community .content h2 {                        font-size: 64px; line-height: 64px; color: #fff;}
+.community .content p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
+.community .con h2 {                        font-size: 64px; line-height: 64px; color: #fff;}
+.community .con p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
+
 .community .left h3 {                           width: 70%; padding: 0 0 10px; color: #fff;}
 .community .left p {                            display: inline-block; padding: 0;}
-.community .left ul li {                        font-family: 'Fira Sans', sans-serif; display: block; font-weight: 300; padding: 0 0 20px;}
-.community .left ul li svg {                    font-size: 50px; line-height: 50px; float: left; padding: 0 12px 0 0; }
+.community .left ul li {                        font-family: 'DM Sans', sans-serif; display: block; font-weight: 300; padding: 0 0 20px;}
+.community .left ul li svg {                    font-size: 20px; line-height: 18; float: left; margin: -2px 8px 0 0; color:#CA1D48;}
 .community .left ul li h6 {                     font-size: 18px; color: #fff; margin: 0 0 5px;}
-.community .left ul li p {                      font-size: 14px; line-height: 22px; width: auto; display: inline-block; margin: 0; padding: 0;}
+.community .left ul li p {                      font-size: 16px; line-height: 16px; width: auto; display: inline-block; margin: 0; padding: 0;}
+.community .left ul a {                        text-decoration: none; color: #fff;}
+.community .left span {                         color: #CA1D48; font-weight: 700; display: inline-block;}
+.community .right h3 {                          font-size: 36px; line-height: 36px; margin: 0 0 10px; color: #fff;}
+.community .right h6 {                          font-size: 20px; line-height: 20px; margin: 0 0 5px; color: #fff;}
+.community .right p {                           display: inline-block; padding: 0 100px 0 0;}
+.community .right ul {                           margin: 0 0 30px}
+.community .right ul li {                       margin: 0 0 15px;}
+.community .right ul li svg {                   font-size: 16px; line-height: 16px; float: left; padding: 0 8px 0 0; color:#CA1D48;}
+.community .right ul li p {                     width: 70%; font-size: 16px; line-height:16px; margin: 0; padding: 0;}
+.community .right ul a {                        text-decoration: none; color: #fff;}
+.community .right span {                         color: #CA1D48; font-weight: 700; display: inline-block;}
+
 .community .image {                             width: 100%;}
 
 // SPONSOR STYLES

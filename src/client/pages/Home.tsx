@@ -101,7 +101,7 @@ const Home = () =>
                                 <div className="cards">
                                     <Link to="/blog">
                                         <div className="card">
-                                            <img src="/images/joanice2.jpg" alt="Who_We_Are" />
+                                            <img src="/images/joanice.png" alt="Who_We_Are" />
                                             <div className="text">
                                                 <h3>Your story matters</h3>
                                                 <p>Hear from the community and share your story.</p>

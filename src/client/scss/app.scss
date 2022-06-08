@@ -19,6 +19,7 @@ body {				min-height: 100%; position: relative;}
 @import './footer.scss';
 @import './home.scss';
 @import './health.scss';
+@import './family.scss';
 @import './careers.scss';
 @import './covid.scss';
 @import './whyNow.scss';
@@ -27,9 +28,10 @@ body {				min-height: 100%; position: relative;}
 @import './recipes.scss';
 @import './blog.scss';
 @import './resources.scss';
+@import './partners.scss';
 
 /* FONT IMPORT */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&family=Oswald:wght@300;400;500;700&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,500;1,700&family=Montserrat:wght@300;500;900&display=swap');
 
 .bg2 {      background-color: #f098;}
 .bg3 {      background-color: #cc45c5;}
@@ -38,43 +40,74 @@ body {				min-height: 100%; position: relative;}
 /* #GLOBAL STYLES
 ================================================== */
 // CALLOUT STYLE
+.hero {                                                 width: 100%; position: relative; overflow: hidden;}
+.hero .callbg img {                                     width: 100%; }     
+.hero .calloutbg {                                      width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332; opacity: 0.7;}
+.hero .callout {                                        width: 100%; height: 100vh;}
+.hero .callout {                                        width: 40%; height: 500px; position: absolute; top: 250px; left: 30%;}
+.hero .callout .calltext {                              width: 100%; display: block;}
+.hero .callout .calltext h1 {                           font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 94px; line-height: 97px; font-weight: 900; text-align: center; color: #fff; margin: 46px 0 10px;}
+.hero .callout .calltext p {                            font-size: 24px; line-height: 36px; font-weight: 400; text-align: center; color: #fff; margin: 40px 0 0; }
+.hero .callout .callbutton {                            text-align: center; margin: 30px 0 0; display: block;}
+/* CALLOUT BUTTONS */
+.hero .button {                                       font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: 900; line-height:52px; margin: 0 15px 0 0;}
+.hero .button.signup {                                border: 1px solid #CA1D48; background-color: #CA1D48; color: #fff;} 
+.hero .button.learnmore {                             border: 1px solid #fff; background-color: none !important; color: #cecece;}
+.hero .button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
+.hero .button.learnmore:hover {                       border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;}
+//SCROLL DOWN BUTTON
+.scrollDown {                               position: absolute; bottom: 50px; text-align: center; left: calc(50% - 44px);}
+.scrollDown svg {                           padding: 10px 12px; font-size: 24px; border-radius: 50%; color: #fff; cursor: pointer; background-color: #CA1D48;}
+.scrollDown h3 {                            font-size: 18px; font-weight: 700; color: #fff;}
 
+svg.logo {                                  height: 14px; display: inline-block;}
+span.blue {                                 display: inline-block; color: #CA1D48;}
+span.red {                                  display: inline-block; color: #CA1D48;}
+
+.breadcrumbs {                                  margin: 100px 0 30px; color: #050236;}
+.breadcrumbs .bread a {                         font-weight: 700; text-decoration: none; color: #050236;}
+
+.divider {                                  width: 100%;}
+.divider img {                              width: 100%;}
 
 // CONTENT HEADER STYLES
 .content .header {                      padding: 80px 0;}
 
 // FEATURED RESOURCE STYLES
-.content .featured {                    width: 100%; height: 400px; display: inline-block; position: relative; box-shadow: 0 0 24px 2px #ddd;}
-.content .featured .face {              width: 30%; height: 100%; display: block; position: absolute; top: 0; left: 0; opacity: 1; visibility: visible;}
-.content .featured .face img.health {          width: 80%; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-.content .featured .back {              width: calc(70% - 200px); height: calc(100% - 200px); margin: 0 0 0 30%; display: block; padding: 50px;}
-.content .featured .back a {            font-weight: 900; text-decoration: none; color: #CA1D48;}
+.content .featured {                            width: 100%; height: 400px; display: inline-block; position: relative; box-shadow: 0 0 24px 2px #ddd;}
+.content .featured .face {                      width: 30%; height: 100%; display: block; position: absolute; top: 0; left: 0; opacity: 1; visibility: visible;}
+.content .featured .face img.health {           width: 80%; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.content .featured .back {                      width: calc(70% - 200px); height: calc(100% - 200px); margin: 0 0 0 30%; display: block; padding: 50px;}
+.content .featured .back a {                    font-weight: 900; text-decoration: none; color: #CA1D48;}
 // .content .featured .face:hover {        opacity: 0; visibility: hidden;}
-.content .featured .tag {               position: absolute; top: 20px; left: 20px; z-index: 9;}
-.content .featured .tag h6 {            font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: none; padding: 8px 10px; display: inline-block; background-color: #aed1f7;}
+.content .featured .tag {                       position: absolute; top: 20px; left: 20px; z-index: 9;}
+.content .featured .tag h6 {                    font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: none; padding: 8px 10px; display: inline-block; background-color: #aed1f7;}
 
 
 // ADDITIONAL RESOURCE STYLES
-.addRes {                               margin: 100px 0;}
+.addRes {                               margin: 100px 0 0; padding: 100px 0; background-color: #287FDD55;}
 .addRes .header {                       margin: 0 auto 50px; text-align: center;}
-.addRes .header h1 {                    font-size: 48px; line-height: 54px; padding: 0; margin: 0;}
-.addRes ul.terminal {                   width: 100%; display: block; text-align: center; border-bottom: 1px solid #cecece;} 
-.addRes ul.terminal li {                font-weight: 900; display: inline-block; padding: 20px 20px 30px; margin: 0 40px -2px 0; text-align: center; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0); color: #cecece;}
-.addRes ul.terminal li.active {         font-weight: 900; border-bottom: 3px solid #050236; background-color: #cecece; color: #050236;}
-.addRes ul.terminal li a {              text-decoration: none; color: #cecece;}
-.addRes ul.terminal li:hover {          text-decoration: none; border-bottom: 3px solid #050236; color: #050236; background-color: #cecece;}
-.addRes ul.terminal li.active a {       text-decoration: none; color: #050236;}
-.addRes .panel {                        margin: 30px -20px;}
+.addRes .header h2 {                    font-size: 64px; line-height: 64px; padding: 0 0 30px; margin: 0;}
+.addRes .header p {                     font-size: 18px; line-height: 24px; padding: 0; margin: 0;}
+.addRes .list {                         width: 100%; height: 56px; margin: 0 0 50px; position: relative; display: block;} 
+.addRes ul.terminal {                   position: absolute; top: 0; left: 50%; padding: 10px; border-radius: 56px; transform: translateX(-50%); text-align: center; background-color: #050236;} 
+.addRes ul.terminal li {                font-weight: 900; display: inline-block; padding: 10px; margin: 0 2px; border-radius: 30px; text-align: center; cursor: pointer; color: #fff;}
+.addRes ul.terminal li.active {         font-weight: 900; background-color: #CA1D48; color: #fff;}
+.addRes ul.terminal li a {              text-decoration: none; color: #fff;}
+.addRes ul.terminal li:hover {          text-decoration: none; color: #fff; background-color: #CA1D48;}
+.addRes ul.terminal li.active a {       text-decoration: none; color: #CA1D48;}
+.addRes .panel {                        margin: 30px -10px;}
 .addres .panel a {                      text-decoration: none;}
-.addRes .panes {                        padding: 20px;}
+.addRes .panes {                        height: 300px; padding: 20px; border-radius: 15px; overflow: hidden; margin: 0 10px 20px; position: relative; background-color: #fff;}
 .addRes .panes:hover {                  transform: scale(1.02);}
-.addRes .pane {                         padding: 30px; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
-.addRes .pane .image {                  width: 116px; height: 86px; position: relative; margin: 0 0 30px; box-shadow: 0 0 24px 2px #dfdfdf; background-size: 70%; background-repeat: no-repeat; background-position: center;}
-.addRes .pane .image img {              padding: 10px; width: 100%; height: 100%; object-fit: contain;}
-.addRes .pane h2 {                      font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; text-transform: none; padding: 0; margin: 0 0 20px;}
-.addRes .pane p {                       display: none; visibility: hidden; opacity: 0; min-height: 44px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500;}
-.addRes .button {                       background-color: #CA1D48;}
-.addRes .button:hover {                 background-color: #EEC31A;}
+.addRes .panes:hover .pane {            bottom: 0;}
+.addRes .pane {                         padding: 80px 30px 0; width: calc(100% - 60px); text-align: center; height: 260px; position: absolute; bottom: -340px; left: 0; background-color: #050236; z-index: 9;}
+.addRes .panes .image {                  width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-size: 70%; background-repeat: no-repeat; background-position: center;}
+.addRes .panes .image img {                 padding: 10px; width: 100%; height: 100%; object-fit: contain;}
+.addRes .pane h2 {                          font-size: 26px; line-height: 26px; text-transform: none; font-weight: 700; padding: 0; margin: 0 0 10px; color: #fff;}
+.addRes .pane p {                           font-size: 18px; line-height: 26px; font-weight: 300; margin: 0 0 30px; color: #FFFFFF99;}
+.addRes .button {                           background-color: #CA1D48;}
+.addRes .button:hover {                     background-color: #EEC31A;}
 
 // TESTIMONY STYLES
 .testimony {                            padding: 100px 0; background-color: #050236;}
@@ -109,22 +142,22 @@ body {				min-height: 100%; position: relative;}
 .recComp .panel .buttonwrap {           margin-top: 50px;}
 
 // RELATED ARTICLES styles
-.related {                              display: block; margin: 100px 0 0;}
-.related .heading {                     text-align: center;}
-.related .heading h1 {                  line-height: 50px; margin: 50px 0 70px;} 
-.related .panel {                       margin: 0 -20px;} 
-.related .articles {                    padding: 0 20px; display: block;} 
-.related .article {                     margin: 0 0 40px; box-shadow: 0 0 24px 2px #cecece;}
-.related .articles:hover {               transform: scale(1.02);}
-.related .article .image {              width: 100%; height: 250px; background-repeat: no-repeat; background-size: cover;}
-.related .article .text {               padding: 20px;} 
-.related .article .text h2 {             font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; font-weight: 700; min-height: 40px; text-transform: none; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin: 0 0 10px;}
-.related .article .text p {              font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; min-height: 66px; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;}
-.related .article .text a {              font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: #050236;}
-.related .article .text svg {           color: #050236;}
-.related .buttonwrap {                  display: block; margin: 20px 0 50px;}
-.related .button {                       background-color: #CA1D48;}
-.related .button:hover {                 background-color: #EEC31A;}
+.related {                                  display: block; margin: 100px 0 0;}
+.related .heading {                         text-align: center;}
+.related .heading h1 {                      line-height: 50px; margin: 50px 0 70px;} 
+.related .panel {                           margin: 0 -20px;} 
+.related .articles {                        padding: 0 20px; display: block;} 
+.related .article {                         margin: 0 0 40px; box-shadow: 0 0 24px 2px #cecece;}
+.related .articles:hover {                  transform: scale(1.02);}
+.related .article .image {                  width: 100%; height: 250px; background-repeat: no-repeat; background-size: cover;}
+.related .article .text {                   padding: 20px;} 
+.related .article .text h2 {                font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; font-weight: 700; min-height: 40px; text-transform: none; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin: 0 0 10px;}
+.related .article .text p {                 font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; min-height: 66px; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;}
+.related .article .text a {                 font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: #050236;}
+.related .article .text svg {               color: #050236;}
+.related .buttonwrap {                      display: block; margin: 20px 0 50px;}
+.related .button {                          background-color: #CA1D48;}
+.related .button:hover {                    background-color: #EEC31A;}
 
 // FEATURED STORY STYLES
 .featStory {                            height: 400px; margin: 50px 0 100px;}
@@ -148,7 +181,7 @@ body {				min-height: 100%; position: relative;}
 
 /* BUTTONS */
 .buttonwrap {                               width: 100%; text-align: center; position: relative; }
-.button {                                   font-weight: 500; padding: 15px 20px; text-align: center; text-decoration: none; color: #fff;}
+.button {                                   font-weight: 900; padding: 15px 20px; text-align: center; text-decoration: none; color: #fff;}
 .button.solid {                             background-color: #CA1D48; }
 .button.solid:hover {                       background-color: #EEC31A; color: #0F0F10;}
 .button.partner {                               background-color: #CA1D48; } 
@@ -177,23 +210,25 @@ body {				min-height: 100%; position: relative;}
 
 /* #GLOBAL TYPOGRAPHY
 ================================================== */
-body {              font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 16px; font-weight: 300;}
+body {              font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 16px; font-weight: 300;}
 
-h1, h2, h3, h4, h5, h6 {	font-family: 'Oswald', sans-serif; font-weight: 900; text-transform: uppercase; color: #0F0F10;}
-h1 { font-size: 42px; line-height: 42px;}
-h2 { font-size: 36px; line-height: 36px;}
-h3 { font-size: 24px; line-height: 24px;}
-h4 { font-size: 18px; line-height: 18px;}
-h5 { font-size: 14px; line-height: 14px;}
+h1, h2, h3, h4, h5, h6 {	font-family: 'DM Sans', sans-serif; font-weight: 900; color: #050236;}
+h1 { font-size: 85px; line-height: 56px;}
+h2 { font-size: 64px; line-height: 64px;}
+h3 { font-size: 36px; line-height: 36px;}
+h4 { font-size: 24px; line-height: 24px;}
+h5 { font-size: 16px; line-height: 16px;}
+p { color: #050236;}
+
+span.logo {                     font-family: 'Montserrat', sans-serif; display: inline-block; font-weight: 900;}
 
 /* #GLOBAL TEXT STYLES*/
 // CALLOUT STYLES
 .call .text h1 {                font-family: 'Oswald', sans-serif; font-size: 72px; line-height: 72px; margin: 70px 0 30px; color: #fff;}
-.call .text p {                 font-family: 'Poppins', sans-serif; font-size: 16px; line-height: 24px; font-weight: 300; width: 50%; margin: 0 0 30px; color: #fff;}
+.call .text p {                 font-family: 'Firs Sans', sans-serif; font-size: 16px; line-height: 24px; font-weight: 300; width: 50%; margin: 0 0 30px; color: #fff;}
 
 // CONTENT STYLES
 .content h2 {                   text-align: center;}
-
 .recipes h1 {                   margin: 50px 0; color: #fff;}
 .recipes .text h2 {             margin: 0 0 20px; color: #1a1a1a;}
 .recipes .text p {              font-size: 14px; line-height: 22px; margin: 0 0 20px; color: #1a1a1a;}
@@ -212,8 +247,11 @@ h5 { font-size: 14px; line-height: 14px;}
 
 /* #GLOBAL TRANSITION STYLES
 ================================================== */
-ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close, header, header.sub, header.sub .header.wrapper, .covid19 .panes, .resources ul.terminal li, .home .callout .playModal a .card-img, .homeVideo, .homeVideo .frame {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close, header, header.sub, header.sub .header.wrapper, .covid19 .panes, .resources ul.terminal li, .home .callout .playModal a .card-img, .homeVideo, .homeVideo .frame, .featured .panes {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
 
+.whatwedo .deck .cards, .stories .rack .frames, .whoWeAre .deck .cards .card .cardimg, .stories .rack .frames .frame .text, .partners .image, .whoWeAre .deck .cards, .covid19 .pane, .addRes .pane, li, ul li ul, .leaders .panes, .leaders .pane, .whatwedo .deck .cards h4, .whatwedo .deck .cards p, .whatwedo .deck .cards a {
+    transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);
+}
 
 /* #RESPONSIVE SCSS IMPORTS
 ================================================== */ 

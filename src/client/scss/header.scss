@@ -3,20 +3,43 @@
 /* HEADER STYLES */
 header {                        width: 100%; display: block; margin: 0; padding: 0; position: fixed; top: 0; left: 0; z-index: 99;}
 .header.wrapper {               padding: 50px 0 10px;} 
-.header .logo {                 margin: 0 0 0; float: left;}
+.header .logo {                 margin: 10px 0 0; float: left;}
 .header .logo svg {             height: 35px; margin: 5px 0 0;}
 
 /* NAV STYLES */
-nav {                           margin: 0; float: left;}
-ul.nav {                        margin: 5px 40px;}
-ul.nav li {                     margin: 0; font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 16px; font-weight: 500; position: relative; display: inline-block; padding: 10px; margin: 0 15px 0 0;}
-ul.nav li a {                   text-decoration: none; color: #fff;}
+nav {                           margin: 8px 0 0 50px; float: left;}
+nav ul {                        list-style: none; margin: 0; padding:  0; }  
+nav li {                          color: #fff; display: block; float: left; padding: 1rem; margin: 0 10px 0 0; border-radius: 15px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 18px; font-weight: 700; position: relative; transition-duration: 0.5s;}    
+nav li a {                        color: #fff; text-decoration: none; }  
+nav li:hover {                    background: #CA1D48; cursor: pointer; }  
+nav ul li ul {                  background: #CA1D48; visibility: hidden; opacity: 0; width: 100%; border-radius: 15px; position: absolute; margin-top: 1rem; left: 0; display: none; }  
+nav ul li:hover > ul,
+nav ul li:focus-within > ul, /* this is the line we add */
+nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+nav ul li ul li {
+    clear: both;
+    width: calc(100% - 2rem);
+  }
+
+// ul {                        margin: 25px 0; list-style: none; position: relative;}
+// ul li {                     padding: 20px; margin: 0 15px 0 0; border-radius: 15px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 18px; font-weight: 700; position: relative; display: inline-block;}
+// ul li a {                   text-decoration: none; color: #fff;}
+// ul li a:hover {             background-color: #CA1D48;}
+// ul li ul.subnav {                     background-color: #CA1D48; display: none; visibility: hidden; border-radius: 15px; position: absolute; top: calc(100% + 10px); left: 0; width: 100%; z-index: 99;}
+// ul li ul.subnav li {                  color: #fff;}
+// ul li:hover ul.subnav {    display: block; visibility: visible;}
+
 
 /* LOGIN/SIGNUP NAV BUTTON STYLES */
 .login {                        float: right; margin: 0;}
 ul.log {                        margin: 0; padding: 0; list-style: none;}
-ul.log li {                     font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 16px; font-weight: 700; margin: 0; display: inline-block; margin: 0 15px 0 0;}
-ul.log li a {                   display: block; padding: 15px 35px; text-decoration: none;}
+ul.log li {                     font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 16px; font-weight: 900; margin: 0; display: inline-block; margin: 0 15px 0 0;}
+ul.log li a {                   display: block; padding: 15px 25px; text-decoration: none;}
 ul.log li.signup a {            color: #CA1D48;}
 ul.log li.logins a {            color: #fff; background-color: #CA1D48;}
 

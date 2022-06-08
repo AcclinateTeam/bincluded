@@ -1,5 +1,18 @@
 /* BLOG SCSS
 ================================================== */
+// HERO STYLES STYLES
+.blogga.hero {                                      background-color: #000;}
+
+.story {                                margin: 0 0 100px;}
+.story .text {                       margin: 100px 0;}
+.story .text h3 {                    text-align: none; margin: 0 0 10px 0; } 
+.story h4 {                         padding: 10px 0 50px; color: #00000099;}       
+.story .text h6 {                   margin: 0 0 5px;}
+.story .text p {                    font-size: 24px; line-height: 32px; margin: 0 0 30px;}
+.story .text .image {               width: calc(100% - 200px); padding: 50px; margin: 0 auto;}
+.story .text .image img {           width: 100%;}
+
+
 .blogHeader {                        width: 100%; position: absolute; top: 85px; left: 0; z-index: -9; }
 
 .blogContent .heading h1 {          font-size: 30px; font-weight: 700; color: #fff; margin: 50px 0 0; padding: 0; }

@@ -6,6 +6,8 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
+import Logo from '../components/subComponents/Logo';
+import ShareYourStory from '../components/ShareYourStory';
 
 const Home = () =>
 {
@@ -37,77 +39,17 @@ const Home = () =>
 
     }, []);
 
-    // Close Play Modal by clicking the 'whitespace' area of the modal.
-    const whiteSpace = document.querySelector('.homeVideo');
-    
-    document.body.addEventListener('click', (e) => function (e: { target: Node; })
+    // Scrolls to bottom of Hero Section OnClick
+    const scrollToRef = () =>
     {
-        if (whiteSpace.contains(e.target))
-        {
-            console.log('This is the white space');
-        } else
-        {
-            console.log('This is not the white space');
-        }
-    });
+        let hero = document.getElementById('hero');
+        let heroHeight = hero.offsetHeight;
 
-    const openPlayModal = async () =>
-    {
-        // console.log('This opens the play modal');
-
-        // Play Modal container element selector
-        const playContainer = document.getElementById('playContainer');
-
-        // New div (sub-container) element creation and class name assignment
-        const newDiv = document.createElement('div');
-        newDiv.className = 'homeVideo';
-
-        // New Frame (sub-div container) element creation and class name assignment
-        const newFrame = document.createElement('div');
-        newFrame.className = 'frame';
-
-        // New Close Button (sub-div container) element creation and class name assignment
-        const newCloseBtn = document.createElement('div');
-        newCloseBtn.className = 'popClose';
-
-        // New Close Button Image
-        const newCloseBtnImg = document.createElement('img');
-        newCloseBtnImg.src = '/images/close.png';
-        newCloseBtnImg.addEventListener('click', () => { closePlayModal() }); // Closes Play Modal by clicking the image.
-
-        // Create iframe for youtube video and set attributes
-        const newVideo = document.createElement('iframe');
-        newVideo.setAttribute('src', 'https://www.youtube.com/embed/MXduRSowWmU?autoplay=1');
-        newVideo.setAttribute('frameborder', '0');
-        newVideo.setAttribute('allow', 'autoplay');
-        newVideo.setAttribute('style', 'width: 100%; height: 100%;');
-
-        // Constructs "HomeVideoObject" with appended elements.
-        playContainer.appendChild(newDiv);
-        newDiv.appendChild(newFrame);
-        newFrame.appendChild(newVideo);
-        newFrame.appendChild(newCloseBtn);
-        newCloseBtn.appendChild(newCloseBtnImg);
-
-        // Play Modal animations
-        const wait = (t: number) => new Promise(r => setTimeout(r, t));
-        await wait(20);
-        newDiv.style.opacity = '1';
-        newFrame.style.top = '20%';       
-
-        // Close Play Modal function 
-        const closePlayModal = async () =>
-        {
-            // console.log('This closes the play modal');
-
-            // Animate "homeVideo" and "frame" div(s).
-            newDiv.style.opacity = '0';
-            newFrame.style.top = '35%';
-
-            // Wait first, then remove parent "homeVideo" element, which resets the play modal. Wait is used BEFORE remove() to ensure the animation is complete.
-            await wait(500);
-            newDiv.remove();
-        }
+        window.scrollTo({
+            top: heroHeight,
+            left: 0,
+            behavior: 'smooth'
+        });
     }
 
     return (
@@ -116,120 +58,268 @@ const Home = () =>
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section className="home">
-                <div className="calloutbg">
-                    <svg viewBox="0 0 1440 778" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1244.23 447.955L1393.88 407.283L1389.45 452.089L1240.56 490.845L1244.23 447.955Z" fill="#EEC31A" />
-                        <path d="M1397.55 364.393L1547.2 323.721L1542.77 368.527L1393.88 407.283L1397.55 364.393Z" fill="#287FDD" />
-                        <path d="M1389.45 452.088L1539.59 411.482L1535.16 456.288L1386.27 495.044L1389.45 452.088Z" fill="#ECECEC" />
-                        <path d="M1022.07 385.467L1148.81 296.106L1159.96 339.73L1033.27 427.029L1022.07 385.467Z" fill="#CA1D48" />
-                        <path d="M1133.61 264.545L1260.35 178.502L1274 223.5L1144.81 306.108L1133.61 264.545Z" fill="#287FDD" />
-                        <path d="M1159.96 339.728L1287.19 250.26L1298.33 293.883L1171.65 381.183L1159.96 339.728Z" fill="#F8F8F8" />
-                        <path d="M0 0H934.5L841.5 587L0 728V0Z" fill="#287FDD" />
-                        <path d="M0 0L850.5 -0.5L841.5 587L0 620V0Z" fill="#CA1D48" />
-                        <path d="M0 0H796L841.499 587L0 690.5V0Z" fill="#050236" />
-                    </svg>
+            <section id="hero" className="home">
+                <div className="callbg">
+                    <video playsInline autoPlay muted loop id="myVideo">
+                        <source src='http://nowincluded.com/wp-content/uploads/2022/05/header.mp4' type="video/mp4" />
+                        Your browser does not support HTML5 video.
+                    </video>
                 </div>
                 <div className="callout">
-                    <div className="content">
-                        <div className="calltext">
-                            <h1>Stand Up For Your Health</h1>
-                            <p>
-                                #BIncluded is a movement with a mission to build a community of individuals ready to take control of their health and future.
+                    <div className="calltext">
+                        <h1>Stand Up For Your Health</h1>
+                        <p>
+                            <Logo color="#ffffff" /> is a movement with a mission to build a community of individuals ready to take control of their health and future
 
-                            </p>
-                        </div>
-                        <div className="callbutton">
-                            <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
-                            <Link className="button learnmore" to="/whynow">Learn More</Link>
-                        </div>
+                        </p>
                     </div>
-                    <div className="playModal">
-                        <a onClick={openPlayModal} className="">
-                            <img className="card-img" src="/images/callhome.png" />
-                            <img className="playButton" src="/images/play.png" />
-                        </a>
+                    <div className="callbutton">
+                        <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
+                        <Link className="button learnmore" to="/whynow">Learn More</Link>
                     </div>
+                </div>
+                <div className="scrollDown">
+                    <FontAwesomeIcon icon="arrow-down" onClick={scrollToRef} />
+                    <h3>Scroll Down</h3>
                 </div>
             </section>
 
-            {/* PORTAL COMPONENT */}
-            <section>
+            {/* WHO WE ARE */}
+            <section className="whoWeAre">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <div className="portal">
-                            <div className="third columns ports">
-                                <div className="port">
-                                    <h1>Resources at your fingertips</h1>
-                                    <p>These resources are all located within one area for ease of use. </p>
+                    <div className="four columns left">
+                        <h2>We <span className="blue">Listen.</span><br /> We <span className="blue">Represent.</span><br /> We <span className="blue">Share.</span></h2>
+                    </div>
+                    <div className="six columns">
+                        <p>
+                            <Logo color="#050236" /> addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.
+                        </p>
+                    </div>
+                    <div className="ten columns">
+                        <div className="container box">
+                            <div className="third columns deck">
+                                <div className="cards">
+                                    <Link to="/blog">
+                                        <div className="card">
+                                            <img src="/images/joanice2.jpg" alt="Who_We_Are" />
+                                            <div className="text">
+                                                <h3>Your story matters</h3>
+                                                <p>Hear from the community and share your story.</p>
+                                                <a href="#">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
+                                            </div>
+                                        </div>
+                                    </Link>
                                 </div>
                             </div>
-                            <Link to="/health">
-                                <div className="third columns ports">
-                                    <div className="port shadow hover">
-                                        <FontAwesomeIcon icon="user-md" />
-                                        <h4>Health</h4>
-                                        <p>Find reliable, fact-based health information you can trust.</p>
-                                    </div>
+                            <div className="third columns deck">
+                                <div className="cards">
+                                    <Link to="/whynow">
+                                        <div className="card">
+                                            <img src="/images/callout3.jpg" alt="Who_We_Are" />
+                                            <div className="text">
+                                                <h3>Bettering Birmingham</h3>
+                                                <p>Learn why now is the time to take control of your health and future.</p>
+                                                <a href="#">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
+                                            </div>
+                                        </div>
+                                    </Link>
                                 </div>
-                            </Link>
-                            <Link to="/family">
-                                <div className="third columns ports">
-                                    <div className="port shadow hover">
-                                        <FontAwesomeIcon icon="users" />
-                                        <h4>Family</h4>
-                                        <p>Find information on how to make your family’s health a priority.</p>
-                                    </div>
+                            </div>
+                            <div className="third columns deck">
+                                <div className="cards">
+                                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">
+                                        <div className="card">
+                                            <img src="/images/charger1.jpg" alt="Who_We_Are" />
+                                            <div className="text">
+                                                <h3>Join our community</h3>
+                                                <p>Click here to learn, share and grow with others in the B-INCLUDED community.</p>
+                                                <a href="#">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </Link>
-                            <Link to="/careers">
-                                <div className="third columns ports">
-                                    <div className="port shadow hover">
-                                        <FontAwesomeIcon icon="hard-hat" />
-                                        <h4>Careers</h4>
-                                        <p>Connect with resources to elevate your careers and increase your wealth.</p>
-                                    </div>
-                                </div>
-                            </Link>
-                            <Link to="/covid">
-                                <div className="third columns ports">
-                                    <div className="port shadow hover">
-                                        <FontAwesomeIcon icon="viruses" />
-                                        <h4>COVID-19</h4>
-                                        <p>Stay up-to-date on the latest COVID-19 news and stats.</p>
-                                    </div>
-                                </div>
-                            </Link>
-                            <Link to="/blog">
-                                <div className="third columns ports">
-                                    <div className="port shadow hover">
-                                        <FontAwesomeIcon icon="newspaper" />
-                                        <h4>Blog</h4>
-                                        <p>Share your story! We’d love to feature you.</p>
-                                    </div>
-                                </div>
-                            </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
+            {/* WHAT WE DO SECTION */}
+            <section className="whatwedo">
+                <div className="container">
+                    <div className="third columns">
+                        <div className="text">
+                            <h2>Resources<br /> At Your <span className="blue">Fingertips</span></h2>
+                            <p>Learn more about each of the resources available to you in the Birmingham area</p>
+                        </div>
+                    </div>
+                    <div className="twothird columns">
+                        <div className="deck">
+                            <div className="container">
+                                <div className="third columns">
+                                    <Link to="/health">
+                                        <div className="cards shadow hover">
+                                            <FontAwesomeIcon className="icon" icon="user-md" />
+                                            <h4>Health</h4>
+                                            <p>Find reliable, fact-based health information you can trust.</p>
+                                            <Link to="/health">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className="third columns">
+                                    <Link to="/family">
+                                        <div className="cards shadow hover">
+                                            <FontAwesomeIcon className="icon" icon="users" />
+                                            <h4>Family</h4>
+                                            <p>Find information on how  to make your family's health a priority.</p>
+                                            <Link to="/family">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className="third columns">
+                                    <Link to="/careers">
+                                        <div className="cards shadow hover">
+                                            <FontAwesomeIcon className="icon" icon="hard-hat" />
+                                            <h4>Careers</h4>
+                                            <p>Connect with resources to elevate your careers and increase your wealth.</p>
+                                            <Link to="/careers">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className="third columns">
+                                    <a href="#">
+                                        <div className="cards shadow hover">
+                                            <FontAwesomeIcon className="icon" icon="comments" />
+                                            <h4>Community</h4>
+                                            <p>Join to the community to like, share, comment, and connect with people like you.</p>
+                                            <a href="/health">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="third columns">
+                                    <Link to="/blog">
+                                        <div className="cards shadow hover">
+                                            <FontAwesomeIcon className="icon" icon="newspaper" />
+                                            <h4>Stories</h4>
+                                            <p>Share your story! We’d love to feature you.</p>
+                                            <Link to="/blog">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                        </div>
+                                    </Link>
+                                </div>
+                                <div className="third columns">
+                                    <Link to="/covid">
+                                        <div className="cards shadow hover">
+                                            <FontAwesomeIcon className="icon" icon="viruses" />
+                                            <h4>COVID-19</h4>
+                                            <p>Stay up-to-date on the latest COVID-19 news, stats, and resources.</p>
+                                            <Link to="/covid">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* FEATURED STORIES SECTION */}
+            <section className="stories">
+                <div className="container">
+                    <div className="ten columns header">
+                        <h2>Featured <span className="blue">Stories</span></h2>
+                        <p>Click below to hear from the community</p>
+                    </div>
+                    <div className="ten columns">
+                        <div className="container case">
+                            <div className="fourth columns rack">
+                                <Link to="/blog/angelica">
+                                    <div className="frames">
+                                        <div className="frame">
+                                            <div className="image">
+                                                <video playsInline autoPlay muted loop id="myVideo">
+                                                    <source src='http://nowincluded.com/wp-content/uploads/2022/05/angelicaWoods.mp4' type="video/mp4" />
+                                                    Your browser does not support HTML5 video.
+                                                </video>
+                                            </div>
+                                            <div className="text">
+                                                <h1>Angelica Woods</h1>
+                                                <p>Bessemer Public Housing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="fourth columns rack">
+                                <Link to="/blog/angelica">
+                                    <div className="frames">
+                                        <div className="frame">
+                                            <div className="image">
+                                                <video playsInline autoPlay muted loop id="myVideo">
+                                                    <source src='/images/media/calanda.mp4' type="video/mp4" />
+                                                    Your browser does not support HTML5 video.
+                                                </video>
+                                            </div>
+                                            <div className="text">
+                                                <h1>Calanda Marks</h1>
+                                                <p>Bessemer Public Housing</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="fourth columns rack">
+                                <div className="frames">
+                                    <div className="frame">
+                                        <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
+                                            <video playsInline autoPlay muted loop id="myVideo">
+                                                <source src='http://nowincluded.com/wp-content/uploads/2022/05/jasmineDebruce.mp4' type="video/mp4" />
+                                                Your browser does not support HTML5 video.
+                                            </video>
+                                        </div>
+                                        <div className="text">
+                                            <h1>Jasmine DeBruce</h1>
+                                            <p>Bessemer Public Housing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="fourth columns rack">
+                                <div className="frames">
+                                    <div className="frame">
+                                        <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
+                                            <video playsInline autoPlay muted loop id="myVideo">
+                                                <source src='http://nowincluded.com/wp-content/uploads/2022/05/miriamC.mp4' type="video/mp4" />
+                                                Your browser does not support HTML5 video.
+                                            </video>
+                                        </div>
+                                        <div className="text">
+                                            <h1>Mariam Cunningham</h1>
+                                            <p>Bessemer Public Housing</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="ten columns">
+                        <div className="buttonwrap">
+                            <Link className="content button solid" to="/blog">See More Stories</Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* SHAR YOUR STORY SECTION */}
+            <ShareYourStory />
 
             {/* WHY_NOW? COMPONENT */}
             <section>
                 <div className="container">
                     <div className="row whyNow">
-                        <div className="eight columns offset-by-one">
+                        <div className="seven columns offset-by-one-half">
                             <div className="container">
-                                <div className="four columns">
-                                    <div className="whyText">
-                                        <h1>Why Now?</h1>
-                                        <p>There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices.   B-INCLUDED is that space and you can become part of that collective.<br /><br />B-INCLUDED is meant to address healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health and financial sustainability.</p>
-                                        <Link className="button learnmore" to="/WhyNow">Learn More</Link>
-                                    </div>
-                                </div>
-                                <div className="six columns stats">
-                                    <div className="five columns stat">
+                                <div className="third columns stats">
+                                    <div className="ten columns stat">
                                         <div className="point">
                                             <CountUp start={0} end={43} duration={3} suffix="%" redraw={true}>
                                                 {({ countUpRef, start }) => (
@@ -243,7 +333,7 @@ const Home = () =>
                                             <p>of Jefferson County's population is Black or African-American</p>
                                         </div>
                                     </div>
-                                    <div className="five columns stat">
+                                    <div className="ten columns stat">
                                         <div className="point">
                                             <CountUp start={0} end={16} duration={3} suffix="%" redraw={true}>
                                                 {({ countUpRef, start }) => (
@@ -257,7 +347,16 @@ const Home = () =>
                                             <p>of Black Residents in Jefferson County live with a disability</p>
                                         </div>
                                     </div>
-                                    <div className="five columns stat">
+                                </div>
+                                <div className="third columns">
+                                    <div className="whyText" style={{ textAlign: 'center' }}>
+                                        <h2>Why Now?</h2>
+                                        <p>There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices.   B-INCLUDED is that space and you can become part of that collective.</p>
+                                        <Link className="button learnmore" to="/WhyNow">Learn More</Link>
+                                    </div>
+                                </div>
+                                <div className="third columns stats">
+                                    <div className="ten columns stat">
                                         <div className="point">
                                             <CountUp start={0} end={43} duration={3} prefix="" suffix="%" >
                                                 {({ countUpRef, start }) => (
@@ -271,7 +370,7 @@ const Home = () =>
                                             <p>of the county's residents who live in impoverished or low-income communities are Black</p>
                                         </div>
                                     </div>
-                                    <div className="five columns stat">
+                                    <div className="ten columns stat">
                                         <div className="point">
                                             <CountUp start={0} end={15} duration={3} prefix="" suffix="%" >
                                                 {({ countUpRef, start }) => (
@@ -288,13 +387,37 @@ const Home = () =>
                                 </div>
                             </div>
                         </div>
-
-                        {/* IMAGE BACKGROUNDS */}
-                        <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow1.jpg)` }}></div>
+                        {/* <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow1.jpg)` }}></div>
                         <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow4.jpg)` }}></div>
                         <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow3.jpg)` }}></div>
                         <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow2.jpg)` }}></div>
-                        <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow5.jpg)` }}></div>
+                        <div className="two columns whyimage" style={{ backgroundImage: `url(/images/whynow5.jpg)` }}></div> */}
+                    </div>
+                </div>
+            </section>
+
+            {/* CLINICAL TRAILS */}
+            <section className="research">
+                <div className="container">
+                    <div className="six columns">
+                        <div className="panes">
+                            <div className="image" style={{ backgroundImage: "url(/images/andrea.jpg)" }}></div>
+                            <div className="heading">
+                                <h1>Have you<br /> participated in<br /> clinical research?</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="four columns">
+                        <div className="content">
+                            <div className="text">
+                                <h1>Why you should get involved</h1>
+                                <p>There are many reasons why people choose to join a clinical trial. Some join a trial because the treatments they have tried for their health problem did not work. Others participate because there is no treatment for their health problem.</p>
+                                <div className="button">
+                                    <Link className="button solid" to="/covid">More Info</Link>
+                                </div>
+                            </div>
+                            <div className="bg" style={{ backgroundImage: "url(/images/research.jpg)" }}></div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -305,62 +428,48 @@ const Home = () =>
                     <div className="row covid">
                         <div className="ten columns">
                             <div className="eight columns offset-by-one">
-                                <h1>The latest data related to Covid-19</h1>
-                                <h2>for the Metro-Birmingham Area</h2>
-                                <div className="fourth columns">
+                                <h2>The latest data related to <span className="blue">Covid-19</span></h2>
+                                <h3>for the Metro-Birmingham Area</h3>
+                                <div className="third columns">
                                     <div className="data border">
                                         <CountUp start={0} end={actuals.cases} separator="," duration={3} redraw={true} >
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <h3>
+                                                    <h4>
                                                         <span ref={countUpRef} />
-                                                    </h3>
+                                                    </h4>
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
                                         <p>Active Cases</p>
                                     </div>
                                 </div>
-                                <div className="fourth columns">
+                                <div className="third columns">
                                     <div className="data border">
                                         <CountUp start={0} end={beds.capacity} separator="," duration={3} redraw={true} >
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <h3>
+                                                    <h4>
                                                         <span ref={countUpRef} />
-                                                    </h3>
+                                                    </h4>
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
                                         <p>Beds Available</p>
                                     </div>
                                 </div>
-                                <div className="fourth columns">
-                                    <div className="data border">
+                                <div className="third columns">
+                                    <div className="data">
                                         <CountUp start={-0.9999} end={metrics.infectionRate} separator="," decimals={3} decimal="." duration={3} redraw={true} >
                                             {({ countUpRef, start }) => (
                                                 <VisibilitySensor onChange={start} delayedCall>
-                                                    <h3>
+                                                    <h4>
                                                         <span ref={countUpRef} />
-                                                    </h3>
+                                                    </h4>
                                                 </VisibilitySensor>
                                             )}
                                         </CountUp>
                                         <p>Infection Rate</p>
-                                    </div>
-                                </div>
-                                <div className="fourth columns">
-                                    <div className="data">
-                                        <CountUp start={-0.9999} end={metrics.vaccinationsInitiatedRatio} separator="," decimals={3} decimal="." duration={3} suffix="%" redraw={true} >
-                                            {({ countUpRef, start }) => (
-                                                <VisibilitySensor onChange={start} delayedCall>
-                                                    <h3>
-                                                        <span ref={countUpRef} />
-                                                    </h3>
-                                                </VisibilitySensor>
-                                            )}
-                                        </CountUp>
-                                        <p>Vaccines Initiated Ratio</p>
                                     </div>
                                 </div>
                                 <div className="buttonwrap">
@@ -372,20 +481,98 @@ const Home = () =>
                 </div>
             </section>
 
-            {/* <Popup/> */}
-
-            {/* <div id="homeVideo" className="homeVideo">
-                <div className="frame">
-                    <div className="popClose" onClick={openPlayModal}>
-                        <FontAwesomeIcon id="button-close" className="close" icon="times" />
+            {/* PRE-FOOTER (PARTNERS) COMPONENT */}
+            <section className="partners">
+                <div className="container">
+                    <div className="ten columns">
+                        <h2>Featured <span className="blue">Partners</span></h2>
                     </div>
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/MXduRSowWmU?autoplay=1" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <div className="fourth columns">
+                        <div className="image" style={{ backgroundImage: `url(/images/partners/cooper.png)` }}>
+                            {/* <img src="/images/partners/uablive.png" alt="" /> */}
+                        </div>
+                    </div>
+                    <div className="fourth columns">
+                        <div className="image" style={{ backgroundImage: `url(/images/partners/uablive.png)` }}>
+                            {/* <img src="/images/partners/viva.png" alt="" /> */}
+                        </div>
+                    </div>
+                    <div className="fourth columns">
+                        <div className="image" style={{ backgroundImage: `url(/images/partners/viva.png)` }}>
+                            {/* <img src="/images/partners/uway.jpg" alt="" /> */}
+                        </div>
+                    </div>
+                    <div className="fourth columns">
+                        <div className="image" style={{ backgroundImage: `url(/images/partners/uway.jpg)` }}>
+                            {/* <img src="/images/partners/cooper.png" alt="" /> */}
+                        </div>
+                    </div>
                 </div>
-            </div> */}
+            </section>
 
-            <div id="playContainer"></div>
+            {/* CLINICAL TRAILS */}
+            <section>
+                <div className="community">
+                    <div className="bg" style={{ backgroundImage: "url(/images/laptop.png)" }}></div>
+                    <div className="container">
+                        <div className="three columns">
+                            <div className="content">
+                                <h1>Join our Community</h1>
+                                <div className="break" style={{ backgroundImage: `url(/images/sep-white.png)`, height: `11px`, width: `120px`, marginTop: `10px` }}></div>
+                                <p>We are a community that shares stories and supports anyone affected by colorectal cancer. We are here to be informative, relational, helpful, and supportive. By joining this community, you will find engaging content about preventative care, clinical research, and funding options from experts and people just like you.</p>
+
+                                {/* <div className="container">
+                                    <div className="five columns right">
+                                        <h3>What We Offer</h3>
+                                        <ul>
+                                            <li><FontAwesomeIcon icon="star" />
+                                                <p>Community Engagement</p>
+                                            </li>
+                                            <li><FontAwesomeIcon icon="star" />
+                                                <p>Clinical Research Opportunities</p>
+                                            </li>
+                                            <li><FontAwesomeIcon icon="star" />
+                                                <p>Educational Forums</p>
+                                            </li>
+                                            <li><FontAwesomeIcon icon="star" />
+                                                <p>Shared Perspectives</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div className="five columns left">
+                                        <h3>Get Started</h3>
+                                        <ul>
+                                            <li>
+                                                <FontAwesomeIcon icon={['fab', 'google-play']} />
+                                                <h6>Google Play Store</h6>
+                                                Click here to download and install our app from Google Play App Store.
+                                            </li>
+                                            <li>
+                                                <FontAwesomeIcon icon={['fab', 'itunes']} />
+                                                <h6>Apple Itunes Store</h6>
+                                                Click here to download and install our app from Google Play App Store.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div> */}
+
+                            </div>
+                        </div>
+                        <div className="seven columns">
+                            <div className="image1">
+                                <img src="images/phone.png" alt="" />
+                            </div>
+                            <div className="image2">
+                                <img src="images/webshare.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
     );
 }
 
 export default Home;
+
+

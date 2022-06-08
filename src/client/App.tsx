@@ -39,6 +39,10 @@ import RecipeSearch from './pages/recipes/RecipeSearch';
 import Recipe from './pages/recipes/Recipe';
 import Submit from './pages/recipes/Submit';
 import * as FullStory from '@fullstory/browser';
+import Angelica from './pages/blog/Angelica';
+import Calanda from './pages/blog/Calanda';
+import Jasmine from './pages/blog/Jasmine';
+import Mariam from './pages/blog/Mariam';
 
 library.add(fab, fas, far);
 
@@ -73,6 +77,10 @@ const App = (props: AppProps) =>
 					<Route path="/resources" element={<Resources />} />
 					{/* Blog Paths */}
 					<Route path="/blog" element={<Blog />} />
+					<Route path="/blog/angelica" element={<Angelica />} />
+					<Route path="/blog/calanda" element={<Calanda />} />
+					<Route path="/blog/jasmine" element={<Jasmine />} />
+					<Route path="/blog/mariam" element={<Mariam />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />
 					{/* Recipe Paths */}
 					<Route path="/recipes" element={<RecipeSearch />} />

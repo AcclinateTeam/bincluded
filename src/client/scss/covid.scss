@@ -1,7 +1,10 @@
 /* COVID-19 PAGE SCSS STYLES
 ============================================================== */
+// HERO STYLES STYLES
+.cov.hero {                                      background-color: #000;}
+
 // COVID PHRASE STYLES
-.covid19 {                                  margin: 100px 0;}
+.covid19 {                                  margin: 100px 0 0; padding: 0 0 100px; background-color: #287FDD22;}
 .covid19 .phrase {                          width: 100%; height: 400px; display: inline-block; position: relative; box-shadow: 0 0 24px 2px #234951;}
 .covid19 .phrase .face {                    width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; opacity: 1; visibility: visible; background-size: cover; background-position: center -275px; background-color: #fff;}
 .covid19 .phrase .face .overlay {           width: 60%; height: 100%; background: linear-gradient(90deg, rgba(5,2,54,1) 35%, rgba(0,0,0,0) 100%);}
@@ -10,8 +13,8 @@
 // COVID VIDEO STYLES
 .covid19 .panel {                           margin: 30px -20px;}
 .covid19 .panes {                           padding: 20px;}
-.covid19 .panes:hover {                     transform: scale(1.02);}
-.covid19 .pane {                            padding: 30px; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
+.covid19 .panes:hover .pane {                     border: 2px solid #287FDD; transform: scale(1.02);}
+.covid19 .pane {                            padding: 30px; border-radius: 15px; border: 2px solid #fff; background-color: #fff;}
 .covid19 .pane .texts {                     height: 400px; position: relative;}
 .covid19 .pane .texts .text {               position: absolute; bottom: 20px; left: 0;}
 .covid19 .pane .texts .text.right {         left: 50px;}
@@ -24,9 +27,7 @@
 
 // PARTNER PANES [EXTENDS COVID19 PANEL STYLES]
 .covid19 .pane .partnerImg {                width: 100%; height: 100%; background-size: 50%; background-position: center; background-repeat: no-repeat; border: 1px solid #cecece;}
-.partnerUp .content {                       padding: 75px 0; margin: 0 0 75px; z-index: -99; background-color: #000;}
-.partnerUp .content p {                     width: 75%; font-size: 48px; line-height: 56px; font-weight: 700; color: #fff;}
-.partnerUp .content a {                     font-family: 'Oswald', sans-serif; font-size:28px; line-height: 36px; font-weight: 700; display: inline-block; text-transform: uppercase; text-decoration: none; margin: 20px 0 0; padding: 15px 30px; color: #fff; background-color: #287FDD;}
+
 
 // .covid19 .views {                           background-color: #0a114a;}
 .covid19 .views .view {                     text-align: center; padding: 40px 0; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
@@ -35,5 +36,22 @@
 .covid19 .views .vue h1 {                   font-size: 48px; line-height: 48px; margin: 0 100px 30px 0; color: #0F0F10;}
 .covid19 .views .vue li {                   font-size: 14px; line-height: 22px; margin: 0 0 10px; color: #0F0F10;}
 .covid19 .views .vue svg {                  float: left; margin: 0 8px 0 0; color: #CA1D48;}
+
+// WHY YOU SHOULD GET INVOLVED STYLES
+.covidstats {                                      padding: 0 15% 0 0;}
+.covidstats .text {                                 padding: 100px 0 0 100px;}
+.covidstats .text p {                              font-size: 22px; line-height: 30px; padding: 30px 0 25px 0; font-weight: 300;}
+.covidstats .text iframe {                         width: 100%; padding: -50px 0;}
+.covidstats .image {                               height: auto;}
+.covidstats .image img {                           width: 100%; }
+
+// WHY IT MATTERS SECTION STYLES
+.vaxxinfo {                                         margin: 100px 15%;}
+.vaxxinfo h2 {                                      padding: 0 0 50px; text-align: center;}
+.vaxxinfo .heading ul {                              font-size: 16px; line-height: 24px; margin: 0 100px 0 0; padding: 70px 100px 70px 0; border-right: 5px solid #000; font-weight: 300;}
+.vaxxinfo .heading ul li {                      margin: 0 0 10px;}
+.vaxxinfo .heading svg {                        float: left; margin: 5px 8px 0 0; color: #CA1D48;}
+.vaxxinfo .image video {                         width: 100%; position: relative; background-color: #fff; overflow: hidden;}
+.vaxxinfo .text {                                padding: 25px 50px 0;}
 
 

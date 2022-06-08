@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
 import SubHeader from '../../components/SubHeader';
-import Terminal from '../../components/Terminal';
 import BlogPosts from '../BlogPosts';
 
 const SinglePost = () =>

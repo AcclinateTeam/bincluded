@@ -1,52 +1,57 @@
 /* TRIALS PAGES SCSS STYLES
 ============================================================== */
+// HERO STYLES STYLES
+.trials.hero {                                      background-color: #000;}
+
 // TRIAL MAIN HEADER STYLES
 .trialback {                width: 100%; position: absolute; top: 0; left: 0;}
-
 .trials.error {             text-align: center; margin: 100px 0;} 
 .trials.error h1 {          font-size: 72px; line-height: 80px; width: 50%; font-weight: 700; margin: 0 auto 40px; color: #0F0F10;}   
 .trials.error h1 span {     display: inline-block; color: #CA1D48;}  
 .trials.error a {           font-size: 20px; line-height: 22px; font-weight: 700;text-align: center; text-decoration: none; color: #0F0F10;}
 
-/* TRIALS PAGE SCSS STYLES
-============================================================== */
-// .trials .spacer {                          height: 118px; background-color: #1A3667;}
-// .trials .spacer h1 {                       width: 600px; margin: 0 auto;}
-// .trials .spacer svg {                      height: 106px; margin: 25px 0 -25px 15px; display: inline-block; fill: #1A3667;}
-// .trials .spacer p {                        width: 550px; margin: 33px auto;}
+// WHAT IS CLINICAL RESEARCH STYLES
+.studies {                                      margin: 0 15% 100px;}
+.studies h2 {                                    padding: 50px 0 0;}
+.studies .image video {                         width: 100%; position: relative; background-color: #fff; overflow: hidden;}
+// .studies .text {                                background-color: #cc3;}
+.studies .text p {                              font-size: 22px; line-height: 30px; margin: 0 100px 0 100px; padding: 20px 0 30px 100px; border-left: 5px solid #050236; font-weight: 300;}
 
-// .trials .views {                           padding: 66px 0 132px; margin-left: -10px; margin-right: -10px;}
-// .trials .views h1 {                        margin: 0 0 33px; text-align: center;}
+// WHY IT MATTERS SECTION STYLES
+.whyStudies {                                      margin: 100px 15%;}
+.whyStudies h2 {                                    padding: 20px 0 0;}
+.whyStudies .image video {                         width: 100%; position: relative; background-color: #fff; overflow: hidden;}
+// .whyStudies .text {                                background-color: #cc3;}
+.whyStudies .text p {                              font-size: 22px; line-height: 30px; margin: 0 100px 0 0; padding: 35px 100px 25px 0; border-right: 5px solid #050236; font-weight: 300;}
 
-// .trials .view {                            height: 425px; margin: 0 10px; position: relative; overflow: hidden; text-align: left; background: #1A3667;}
-// .trials .view .overlay {                   width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 55; background: linear-gradient(to top, #1A3667, rgba(#1A3667, 0))}
-// .trials .view .image {                     width: 100%; height: 100%; margin: 0; padding: 0; background: center; background-size: cover;}
-// .trials .view .image img {                 width: 100%; height: auto; margin: 0; padding: 0; background: center; background-size: cover;}
-// .trials .view .content {                   vertical-align: bottom; position: absolute; overflow: hidden; bottom: 53px; left: 0; z-index: 77; padding: 0 25px 0;}
-// .trials .view .action {                    position: absolute; bottom: 20px; left: 25px; z-index: 77;}
-// .trials .view .action a {                   font-weight: 500; text-decoration: none; color: #fff;}
-// .trials .view .action a svg {               color: #F3E454;}
-.trials.space {                                   margin: 0 0 350px;}
-.trials .search {                           width: calc(100% - 40px); text-align: center; padding: 100px 20px; background-color: #050236;}
-.trials .search h1 {                        font-size: 64px; line-height: 64px; margin: 0 0 50px; color: #fff;}
+// WHY YOU SHOULD GET INVOLVED STYLES
+.getInvolved {                                      padding: 0 0 0 15%;}
+.getInvolved .text {                                 padding: 100px 100px 100px 0;}
+.getInvolved .text p {                              font-size: 22px; line-height: 30px; padding: 30px 0 25px 0; font-weight: 300;}
+.getInvolved .image {                               height: auto;}
+.getInvolved .image img {                           width: 100%; }
+
+.trials.space {                                   margin: 0 0 100px;}
+.trials .search {                           width: calc(100% - 40px); text-align: center; padding: 100px 20px;}
+.trials .search h2 {                        margin: 0 0 50px; color: #000;}
 
 .trials .search ul.toggleForm {             margin: 0 0 35px;}
 .trials .search ul.toggleForm li {          font-weight: 500; padding: 8px 16px; margin: 0 15px 0 0; border: 2px solid #fff; border-radius: 5px; display: inline-block; color: #fff;}
 .trials .search ul.toggleForm li.active {   background-color: #fff; color: #1A3667;}
 .trials .search .viewStudies {              display: block; margin: 35px 0 0;}
-.trials .search .viewStudies a {            font-size: 24px; line-height: 24px; font-weight: 500; text-decoration: none; color: #fff;}
-.trials .search .viewStudies a svg {        color:#F3E454;}
+.trials .search .viewStudies a {            font-size: 24px; line-height: 24px; font-weight: 500; text-decoration: none; color: #000;}
+.trials .search .viewStudies a svg {        color:#CA1D48;}
 .trials .search .viewStudies a:hover {      color: #30A1B7;}
 
 .trials .form {                             width: 100%; height: 70px; margin: 0 0 35px; display: block; text-align: center;}
-.trials .form input {                       width: calc(100% - 76px); height: 70px; padding: 0 20px; font-size: 26px; font-weight: 300; line-height: 28px; display: block; float: left;  border: 1px solid #fff;}
-.trials .form a {                           width: 70px; height: 50px; padding: 20px 0 0; display: block; float: left; background-color: #CA1D48; color: #fff;}
+.trials .form input {                       width: calc(100% - 76px); height: 70px; padding: 0 20px; font-size: 26px; font-weight: 300; line-height: 28px; display: block; float: left;  border: 2px solid #287FDD; border-radius:  15px 0 0 15px; background-color: #287FDD22;}
+.trials .form a {                           width: 70px; height: 50px; padding: 20px 0 0; display: block; border-radius: 0 15px 15px 0; float: left; background-color: #287FDD; color: #fff;}
 .trials .form a svg {                       font-size: 32px; line-height: 50px; text-align: center; }
-.trials .form a:hover {                     background-color: #30A1B7;}
-.trials .form a:hover svg {                 color: #F3E454;}
+.trials .form a:hover svg {                 color: #CA1D48;}
 
 /* ACCORDIAN COMPONENT */
 .trials .accordions {                       width: calc(100% - 40px); padding: 0 20px 132px;}
+.trials .accordions h2 {                    text-align: center; padding: 0 0 50px;}
 .trials .accordion .accordion-item {        border-bottom: 1px solid #1A3667; padding: 20px 0;}
 .trials .accordion .button {                width: 24px; height: 24px; text-align: center; float: left; margin: 0 10px 0 0;}
 .trials .accordion .title {                 width: calc(100% - 30px); height: 24px; font-size: 20px; line-height: 24px; font-weight: 500; color: #1A3667;}

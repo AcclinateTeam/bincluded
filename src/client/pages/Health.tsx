@@ -1,99 +1,164 @@
-import React, { useEffect } from 'react';
+import moment from 'moment';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
-import Terminal from '../components/Terminal';
-import RecipeComp from '../components/RecipeComp';
+import HealthTerminal from '../components/HealthTerminal';
+import Logo from '../components/subComponents/Logo';
 import BlogPosts from './BlogPosts';
-import Slider from '../components/Slider';
 import Prosper from '../components/Prosper';
 
 const Health = () =>
 {
+    // Scrolls to bottom of Hero Section OnClick
+    const scrollToRef = () =>
+    {
+        let hero = document.getElementById('hero');
+        let heroHeight = hero.offsetHeight;
 
+        window.scrollTo({
+            top: heroHeight,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Automatic Scroll To Top on Refresh
     useEffect(() =>
     {
         window.scrollTo(0, 0)
     }, []);
 
+    const [blogPosts, setBlogPosts] = useState([]);
+
+    // Blog Posts Component Fetch
+    useEffect(() =>
+    {
+        fetch('api/blogPosts/blog')
+            .then(res => res.json())
+            .then(blogPosts => setBlogPosts(blogPosts))
+    }, []);
 
     return (
         <>
-            {/* SUB-HEADER COMPONENT IMPORT */}
+            {/* HEADER COMPONENT */}
             <Header />
-            {/* CALL CONTENT SECTION */}
-            <section className="call">
-                <div className="callbg">
-                    <svg viewBox="0 0 1440 639" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M-262.162 -1003.94L1710.77 -637.787L1284.43 565.061L-567 638.585L-262.162 -1003.94Z" fill="#287FDD" />
-                        <path d="M-262.163 -1003.94L1533.63 -671.755L1284.43 565.061L-505.092 305.013L-262.163 -1003.94Z" fill="#CA1D48" />
-                        <path d="M-262.162 -1003.94L1418.37 -692.054L1284.43 565.06L-532.715 453.854L-262.162 -1003.94Z" fill="#050236" />
-                    </svg>
-                </div>
-                {/* CALLOUT CONTENT START */}
+
+            {/* JUMBOTRON COMPONENT */}
+            <section id="hero" className="hero health" style={{ height: `100vh` }}>
+                <div className="calloutbg" style={{ backgroundImage: `url(/images/healthres.jpg)`, backgroundPosition: `0 0` }}></div>
                 <div className="callout">
-                    <div className="content">
-                        <div className="calltext">
-                            <h1>Health Resources</h1>
-                            <p>
-                                #BIncluded is a movement with a mission to build a community of individuals ready to take control of their health and future.
-                            </p>
-                        </div>
-                        <div className="callbutton">
-                            <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
-                            <Link className="button learnmore" to="/whynow">Learn More</Link>
-                        </div>
+                    <div className="calltext">
+                        <h1>Health Resources</h1>
+                        <p><Logo color="#ffffff" /> provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
+
                     </div>
-                    <div className="callimage">
-                        <img className="card-img" src="/images/healthcall.png" alt="Callout Image Placeholder" />
+                    <div className="callbutton">
+                        <a className="button signup" style={{ margin: `0` }} href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
+                    </div>
+                </div>
+                <div className="scrollDown">
+                    <FontAwesomeIcon icon="arrow-down" onClick={scrollToRef} />
+                    <h3>Scroll Down</h3>
+                </div>
+            </section>
+
+            {/* BREADCRUMB SECTION */}
+            <section className="breadcrumbs">
+                <div className="container">
+                    <div className="seven columns offset-by-one-half bread">
+                        <a href="/">Home</a> {'>'} Health Resources
                     </div>
                 </div>
             </section>
 
-            {/* CONTENT HEADER SECTION */}
-            <section className="health content">
+            {/* SECTORS OF INCLUSIVITY */}
+            <section className="incHealth">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <div className="header">
-                            <h2>Helping Jefferson County's Community and More</h2>
+                    <div className="four columns">
+                        <div className="heading">
+                            <h2>Your health is <span className="blue">your wealth</span></h2>
+                        </div>
+                    </div>
+                    <div className="six columns text">
+                        <p>Heath doesn’t end at the doctors office, <Logo color="#050236" /> focuses on all aspects of your health. Here you’ll find the resources available in your community to help you live a healthier lifestyle.</p>
+                    </div>
+                </div>
+            </section>
+
+            {/* IMAGE DIVIDER SECTION */}
+            <section className="divider">
+                <img src="/images/healthmid.png" alt="birmingham" />
+            </section>
+
+            {/* WHY IT MATTERS SECTION */}
+            <section className="resHealth">
+                <div className="container">
+                    <div className="five columns text">
+                        <p><Logo color="#050236"/> seeks to close the health equity gap in Jefferson County. Health equity is achieved when every person has the opportunity to attain their full health potential, and no one is left behind.</p>
+                    </div>
+                    <div className="five columns">
+                        <div className="heading">
+                            <h2>Holistic approach to <span className="blue">improving wellness</span> </h2>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section className="health content">
+            {/* WHO WE ARE */}
+            <section className="healthRes">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <div className="featured" style={{ marginBottom: '100px' }}>
-                            <div className="face">
-                                <div className="tag">
-                                    <h6>Featured Resource</h6>
+                    <div className="ten columns">
+                        <div className="container box">
+                            <div className="third columns deck">
+                                <div className="cards">
+                                    <div className="card">
+                                        <img src="/images/mentalHealth.jpg" alt="Who_We_Are" />
+                                        <div className="text">
+                                            <h3>Mental Health Resources</h3>
+                                            <p>Access local services to support your emotional and behavioral health.</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <img className="health" src="/images/xllentlife.png" alt="PatchRX" />
                             </div>
-                            <div className="back">
-                                <h3>Xcellent Life</h3>
-                                <p>Xcellent Life provides a comprehensive digital health platform that evaluates more factors utilizing a three-dimensional approach involving advanced methodologies (Relational Bayesian Networks, Polytomous, Kaplan-Meier and our Proprietary Method for RtHD) for predictive analytics and Artificial Intelligence and as a result, can provide more personalized health insights and identify potential issues more accurately and faster than any of the other solutions. Our approach of being data source agnostic coupled with our analytics capabilities sets us aside from the existing vendors who are providing generalized insights but not personalized Real-time Human Diagnostics as our solution is designed to do.</p>
-
-                                <a href="https://xcellentlife.com/" target="_blank">Visit Site</a> or <a href="https://nlp.xcellentlife.com/">Sign Up</a>
+                            <div className="third columns deck">
+                                <div className="cards">
+                                    <a href="">
+                                        <div className="card">
+                                            <img src="/images/physicalHealth.jpg" alt="Who_We_Are" />
+                                            <div className="text">
+                                                <h3>Physical Health Resources</h3>
+                                                <p>Access local community resources to support your overall health and wellness.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="third columns deck">
+                                <div className="cards">
+                                    <a href="">
+                                        <div className="card">
+                                            <img src="/images/spiritHealth.jpg" alt="Who_We_Are" />
+                                            <div className="text">
+                                                <h3>Spiritual Health Resources</h3>
+                                                <p>Access faith-based resources to support your spiritual health and wellness.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <Prosper />
-
-            <Terminal />
-
-            <Slider />
+            <HealthTerminal />
 
             {/* <section className="testimony">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
+                    <div className="seven columns offset-by-one-half">
                         <div className="header">
                             <h1>Reviews By Our<br /> Community Members</h1>
                         </div>
@@ -118,9 +183,7 @@ const Health = () =>
                         </div>
                     </div>
                 </div>
-            </section> */}
-
-            <RecipeComp />
+            </section>
 
             <section className="related">
                 <div className="container">
@@ -138,10 +201,8 @@ const Health = () =>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
-
-
     );
 }
 

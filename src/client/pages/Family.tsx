@@ -1,17 +1,31 @@
 import moment from 'moment';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
-import Terminal from '../components/Terminal';
+import FamilyTerminal from '../components/FamilyTerminal';
 import BlogPosts from './BlogPosts';
 import Prosper from '../components/Prosper';
+import Logo from '../components/subComponents/Logo';
 
 const Family = () =>
 {
+    // Scrolls to bottom of Hero Section OnClick
+    const scrollToRef = () =>
+    {
+        let hero = document.getElementById('hero');
+        let heroHeight = hero.offsetHeight;
+        
+        window.scrollTo({
+            top: heroHeight,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }    
 
+    // Automatic Scroll To Top on Refresh
     useEffect(() =>
     {
         window.scrollTo(0, 0)
@@ -19,6 +33,7 @@ const Family = () =>
 
     const [blogPosts, setBlogPosts] = useState([]);
 
+    // Blog Posts Component Fetch
     useEffect(() =>
     {
         fetch('api/blogPosts/blog')
@@ -28,130 +43,133 @@ const Family = () =>
 
     return (
         <>
-            {/* SUB-HEADER COMPONENT IMPORT */}
+            {/* HEADER COMPONENT */}
             <Header />
-            {/* CALL CONTENT SECTION */}
-            <section className="call">
-                <div className="callbg">
-                    <svg viewBox="0 0 1440 639" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M-262.162 -1003.94L1710.77 -637.787L1284.43 565.061L-567 638.585L-262.162 -1003.94Z" fill="#287FDD" />
-                        <path d="M-262.163 -1003.94L1533.63 -671.755L1284.43 565.061L-505.092 305.013L-262.163 -1003.94Z" fill="#CA1D48" />
-                        <path d="M-262.162 -1003.94L1418.37 -692.054L1284.43 565.06L-532.715 453.854L-262.162 -1003.94Z" fill="#050236" />
-                    </svg>
-                </div>
-                {/* CALLOUT CONTENT START */}
+
+            {/* JUMBOTRON COMPONENT */}
+            <section id="hero" className="hero family" style={{ height: `100vh` }}>
+                <div className="calloutbg" style={{ backgroundImage: `url(/images/familyhead.jpg)`, backgroundPosition: `0 0` }}></div>
                 <div className="callout">
-                    <div className="content">
-                        <div className="calltext">
-                            <h1>Family Resources</h1>
-                            <p>#B-Included provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
-                        </div>
-                        <div className="callbutton">
-                            <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
-                            <Link className="button learnmore" to="/whynow">Learn More</Link>
-                        </div>
+                    <div className="calltext">
+                        <h1>Family Resources</h1>
+                        <p><Logo color="#ffffff" /> provides easy access to resources that inspire well-being and success in the lives of families.</p>
+
                     </div>
-                    <div className="callimage">
-                        <img className="card-img" src="/images/callfamily.png" alt="Callout Image Placeholder" />
+                    <div className="callbutton">
+                        <a className="button signup" style={{ margin: `0` }} href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
+                    </div>
+                </div>
+                <div className="scrollDown">
+                    <FontAwesomeIcon icon="arrow-down" onClick={scrollToRef} />
+                    <h3>Scroll Down</h3>
+                </div>
+            </section>
+
+            {/* BREADCRUMB SECTION */}
+            <section className="breadcrumbs">
+                <div className="container">
+                    <div className="seven columns offset-by-one-half bread">
+                        <a href="/">Home</a> {'>'} Family Resources
                     </div>
                 </div>
             </section>
 
-            {/* CONTENT HEADER SECTION */}
-            <section className="health content">
+            {/* SECTORS OF INCLUSIVITY */}
+            <section className="incFamily">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <div className="header">
-                            <h2>Helping Jefferson County's Community and More</h2>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="featStory">
-                <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <div className="container story" style={{ backgroundColor: "white" }}>
-                            {blogPosts.map((feat, index) =>
-                            {
-                                if (index === 0)
-                                {
-                                    return (
-                                        <>
-                                            <div className="four columns">
-                                                <div className="image" style={{ backgroundImage: `url(${feat.imagelink})` }}></div>
-                                            </div>
-                                            <div className="six columns">
-                                                <div className="text">
-                                                    <h5>{moment(feat._created).format('MMM Do, YYYY')} | {feat.author}</h5>
-                                                    {/* <ul className="featTags">
-                                                        <li>Chronic Illness</li>
-                                                        <li>Mental Health</li>
-                                                    </ul> */}
-                                                    <h1>{feat.title}</h1>
-                                                    <p>{feat.description}</p>
-                                                    <Link to={`/blog/single/${feat.id}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                                </div>
-                                            </div>
-                                        </>
-                                    )
-                                }
-                            })}
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <Prosper />
-
-            <Terminal />
-
-            <section className="testimony">
-                <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <div className="header">
-                            <h1>Reviews By Our<br /> Community Members</h1>
-                        </div>
-                        <div className="slider">
-                            <div className="slides">
-                                <div className="slide">
-                                    <div className="image">
-                                        <img src="/images/torry.png" alt="" />
-                                    </div>
-                                    <h2>Torry Butler</h2>
-                                    <h4>Birmingham, Alabama</h4>
-                                    <p>"The health of a community is defined by the physical and mental health, education, employment, and finances of its members. "Where You Work, Live and Play Determines Your Health".</p>
-                                    <div className="rating">
-                                        <FontAwesomeIcon icon={['fas', 'star']} />
-                                        <FontAwesomeIcon icon={['fas', 'star']} />
-                                        <FontAwesomeIcon icon={['fas', 'star']} />
-                                        <FontAwesomeIcon icon={['fas', 'star']} />
-                                        <FontAwesomeIcon icon={['far', 'star']} />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="related">
-                <div className="container">
-                    <div className="eight columns offset-by-one">
+                    <div className="four columns">
                         <div className="heading">
-                            <h1>Related Articles</h1>
+                            <h2>Our families are <span className="blue">our foundation</span></h2>
                         </div>
-                        <div className="panel">
-                            <div className="container">
-                                <BlogPosts />
-                                <div className="buttonwrap">
-                                    <Link className="content button" to="/blog">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                    </div>
+                    <div className="six columns text">
+                        <p>Family is the cornerstone of community. Building a healthier community starts with healthy families. <Logo color="#050236" /> provides a place for families to access local resources and connect with the broader community </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* IMAGE DIVIDER SECTION */}
+            <section className="divider">
+                <img src="/images/familymid.png" alt="birmingham" />
+            </section>
+
+            {/* WHY IT MATTERS SECTION */}
+            <section className="resFam">
+                <div className="container">
+                    <div className="five columns text">
+                        <p>Every family deserves to thrive and have access to a strong and effective support network through family.</p>
+                    </div>
+                    <div className="five columns">
+                        <div className="heading">
+                            <h2>Strengthening community through <span className="blue">family resources</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>           
+
+            {/* WHO WE ARE */}
+            <section className="familyRes">
+                <div className="container">
+                    <div className="ten columns">
+                        <div className="container box">
+                            <div className="fourth columns deck">
+                                <div className="cards">
+                                    <Link to="/whyNow">
+                                        <div className="card">
+                                            <img src="/images/youthRes.jpg" alt="Who_We_Are" />
+                                            <div className="text">
+                                                <h3>Educational Resources</h3>
+                                                <p>Access education services to support learning and development.</p>
+                                            </div>
+                                        </div>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="fourth columns deck">
+                                <div className="cards">
+                                    <a href="">
+                                        <div className="card">
+                                            <img src="/images/research.jpg" alt="Who_We_Are" />
+                                            <div className="text">
+                                                <h3>Transportation Resources</h3>
+                                                <p>Access affordable transportation services across the Birmingham area</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="fourth columns deck">
+                                <div className="cards">
+                                    <a href="">
+                                        <div className="card">
+                                            <img src="/images/youthRes.jpg" alt="Who_We_Are" />
+                                            <div className="text">
+                                                <h3>Youth Resources</h3>
+                                                <p>Access child development, mentoring and other resources for children and youth</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div className="fourth columns deck">
+                                <div className="cards">
+                                    <a href="">
+                                        <div className="card">
+                                            <img src="/images/seniorRes.jpg" alt="Who_We_Are" />
+                                            <div className="text">
+                                                <h3>Legal Resources</h3>
+                                                <p>Access child development, mentoring and other resources for children and youth</p>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>           
+
+            <FamilyTerminal />            
         </>
     );
 }

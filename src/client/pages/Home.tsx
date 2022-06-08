@@ -325,7 +325,7 @@ const Home = () =>
                                 <div className="third columns stats">
                                     <div className="ten columns stat">
                                         <div className="point">
-                                            <CountUp start={0} end={43} duration={3} suffix="%" redraw={true}>
+                                            <CountUp start={0} end={51} duration={3} suffix="%" redraw={true}>
                                                 {({ countUpRef, start }) => (
                                                     <VisibilitySensor onChange={start} delayedCall>
                                                         <h3>
@@ -334,12 +334,12 @@ const Home = () =>
                                                     </VisibilitySensor>
                                                 )}
                                             </CountUp>
-                                            <p>of Jefferson County's population is Black or African-American</p>
+                                            <p>of Jefferson County residents are minorities.</p>
                                         </div>
                                     </div>
                                     <div className="ten columns stat">
                                         <div className="point">
-                                            <CountUp start={0} end={16} duration={3} suffix="%" redraw={true}>
+                                            <CountUp start={0} end={54} duration={3} suffix="%" redraw={true}>
                                                 {({ countUpRef, start }) => (
                                                     <VisibilitySensor onChange={start} delayedCall>
                                                         <h3>
@@ -348,7 +348,7 @@ const Home = () =>
                                                     </VisibilitySensor>
                                                 )}
                                             </CountUp>
-                                            <p>of Black Residents in Jefferson County live with a disability</p>
+                                            <p>of disabled Jefferson County residents are minorities.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -362,7 +362,7 @@ const Home = () =>
                                 <div className="third columns stats">
                                     <div className="ten columns stat">
                                         <div className="point">
-                                            <CountUp start={0} end={43} duration={3} prefix="" suffix="%" >
+                                            <CountUp start={0} end={77} duration={3} prefix="" suffix="%" >
                                                 {({ countUpRef, start }) => (
                                                     <VisibilitySensor onChange={start} delayedCall>
                                                         <h3>
@@ -371,12 +371,12 @@ const Home = () =>
                                                     </VisibilitySensor>
                                                 )}
                                             </CountUp>
-                                            <p>of the county's residents who live in impoverished or low-income communities are Black</p>
+                                            <p>of low-income and impoverished Jefferson County residents are minorities.</p>
                                         </div>
                                     </div>
                                     <div className="ten columns stat">
                                         <div className="point">
-                                            <CountUp start={0} end={15} duration={3} prefix="" suffix="%" >
+                                            <CountUp start={0} end={59} duration={3} prefix="" suffix="%" >
                                                 {({ countUpRef, start }) => (
                                                     <VisibilitySensor onChange={start} delayedCall>
                                                         <h3>
@@ -385,7 +385,7 @@ const Home = () =>
                                                     </VisibilitySensor>
                                                 )}
                                             </CountUp>
-                                            <p>of Jefferson County's Black residents are more likely to die from all causes</p>
+                                            <p>of Jefferson County's years of life lost prematurely came from minority residents.</p>
                                         </div>
                                     </div>
                                 </div>

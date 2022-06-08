@@ -115,7 +115,7 @@ const Trials = (props: any) =>
                     <div className="four columns">
                         <div className="text">
                             <h2>Why you should get involved in <span className="blue">clinical research</span></h2>
-                            <p>Racial and ethnic minorities makeup 43% of the U.S. population, and are growing, yet they often represent as little as 2% to 16% of clinical trial participants Source. This leads to treatments that are less effective on people of color. </p>
+                            <p>Racial and ethnic minorities makeup 43% of the U.S. population, and are growing, yet they often represent as little as 2% to 16% of clinical trial participants <a href="https://drive.google.com/file/d/11pgj_6s3gtnSVeuKMBaiuX1BDCnQocLE/view">Source</a>. This leads to treatments that are less effective on people of color. </p>
                         </div>
                     </div>
                     <div className="six columns">

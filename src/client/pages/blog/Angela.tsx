@@ -45,7 +45,7 @@ const Angela = () =>
             {/* BREADCRUMB SECTION */}
             <section className="breadcrumbs">
                 <div className="container">
-                    <div className="seven columns offset-by-one-half bread">
+                    <div className="six columns offset-by-two bread">
                         <a href="/">Home</a> {'>'} <a href="/blog">Stories</a> {'>'} Angela Abdur-Rasheed - Voices From Our Community
                     </div>
                 </div>
@@ -53,16 +53,17 @@ const Angela = () =>
 
             <section className="story">
                 <div className="container">
-                    <div className="seven columns offset-by-one-half">
+                    <div className="six columns offset-by-two">
                         <div className="storie">
                             <h2>Angela Abdur-Rasheed</h2>
-                            <h4>Voices From Our Community</h4>                            
+                            <h4>Voices From Our Community</h4>
+                            <iframe width="100%" height="550px" src="https://www.youtube.com/embed/liCjNRWAZrM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className="six columns offset-by-two">
                         <div className="text">
                             <p>As we continue to live in a world where COVID-19 still exists, it's important to recognize the role burnout plays in people’s decision-making. Many people, especially those who are still deciding whether or not they want to be vaccinated, have already been told to do so. This approach, often accompanied by strong feelings and little explanation, can lead to further skepticism. Angela Abdur Rasheed is sharing her story in order to encourage others to be vaccinated.</p>
-                            
+
                         </div>
                     </div>
                     <div className="ten columns">

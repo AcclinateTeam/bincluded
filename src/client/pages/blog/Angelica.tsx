@@ -50,7 +50,7 @@ const Angelica = () =>
             {/* BREADCRUMB SECTION */}
             <section className="breadcrumbs">
                 <div className="container">
-                    <div className="seven columns offset-by-one-half bread">
+                    <div className="six columns offset-by-two bread">
                         <a href="/">Home</a> {'>'} <a href="/blog">Stories</a> {'>'} Angelica Woods - Voices From Our Community
                     </div>
                 </div>
@@ -58,11 +58,11 @@ const Angelica = () =>
 
             <section className="story">
                 <div className="container">
-                    <div className="seven columns offset-by-one-half">
+                    <div className="six columns offset-by-two">
                         <div className="storie">
                             <h2>Angelica Woods</h2>
                             <h4>Voices From Our Community</h4>
-                            <iframe width="100%" height="800px" src="https://www.youtube.com/embed/UHzjDM6ex98" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="100%" height="550px" src="https://www.youtube.com/embed/UHzjDM6ex98" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className="six columns offset-by-two">

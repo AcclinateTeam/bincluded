@@ -97,17 +97,20 @@ span.red {                                  display: inline-block; color: #CA1D4
 .addRes ul.terminal li:hover {          text-decoration: none; color: #fff; background-color: #CA1D48;}
 .addRes ul.terminal li.active a {       text-decoration: none; color: #CA1D48;}
 .addRes .panel {                        margin: 30px -10px;}
-.addres .panel a {                      text-decoration: none;}
-.addRes .panes {                        height: 300px; padding: 20px; border-radius: 15px; overflow: hidden; margin: 0 10px 20px; position: relative; background-color: #fff;}
+.addres .panel a {                      color: #fff; font-weight: 700; text-decoration: none;}
+.addres .panel a svg {                  color: #CA1D48;}
+.addRes .panes {                        height: 350px; padding: 20px; border-radius: 15px; overflow: hidden; margin: 0 10px 20px; position: relative; background-color: #fff;}
 .addRes .panes:hover {                  transform: scale(1.02);}
-.addRes .panes:hover .pane {            bottom: 0;}
-.addRes .pane {                         padding: 80px 30px 0; width: calc(100% - 60px); text-align: center; height: 260px; position: absolute; bottom: -340px; left: 0; background-color: #050236; z-index: 9;}
+.addRes .panes:hover .pane {            bottom: -20px;}
+.addRes .pane {                         padding: 40px 30px 30px; width: calc(100% - 60px); height: 350px; position: absolute; bottom: -450px; left: 0; background-color: #050236; z-index: 9;}
 .addRes .panes .image {                  width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-size: 70%; background-repeat: no-repeat; background-position: center;}
 .addRes .panes .image img {                 padding: 10px; width: 100%; height: 100%; object-fit: contain;}
-.addRes .pane h2 {                          font-size: 26px; line-height: 26px; text-transform: none; font-weight: 700; padding: 0; margin: 0 0 10px; color: #fff;}
-.addRes .pane p {                           font-size: 18px; line-height: 26px; font-weight: 300; margin: 0 0 30px; color: #FFFFFF99;}
+.addRes .pane h2 {                          font-size: 20px; line-height: 20px; text-transform: none; font-weight: 700; padding: 0; margin: 0; color: #fff;}
+.addRes .pane p {                           font-size: 14px; line-height: 22px; font-weight: 300; margin: 0 0 20px; color: #FFFFFF99;}
 .addRes .button {                           background-color: #CA1D48;}
 .addRes .button:hover {                     background-color: #EEC31A;}
+
+// 
 
 // TESTIMONY STYLES
 .testimony {                            padding: 100px 0; background-color: #050236;}

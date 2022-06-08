@@ -65,7 +65,7 @@ const Terminal = () =>
                             </div>
                             <div className="list">
                                 <ul className="terminal">
-                                    <a onClick={personalButton}><li>All</li></a>
+                                    <a onClick={personalButton}><li>General</li></a>
                                     <a onClick={mentalLoaded}><li className="active">Mental</li></a>
                                     <a onClick={physicalLoaded}><li>Physical</li></a>
                                     <a onClick={teleLoaded}><li>Spiritual</li></a>
@@ -97,7 +97,7 @@ const Terminal = () =>
                             </div>
                             <div className="list">
                                 <ul className="terminal">
-                                    <a onClick={personalButton}><li>All</li></a>
+                                    <a onClick={personalButton}><li>General</li></a>
                                     <a onClick={mentalLoaded}><li>Mental</li></a>
                                     <a onClick={physicalLoaded}><li className="active">Physical</li></a>
                                     <a onClick={teleLoaded}><li>Spiritual</li></a>
@@ -130,7 +130,7 @@ const Terminal = () =>
                             </div>
                             <div className="list">
                                 <ul className="terminal">
-                                    <a onClick={personalButton}><li>All</li></a>
+                                    <a onClick={personalButton}><li>General</li></a>
                                     <a onClick={mentalLoaded}><li>Mental</li></a>
                                     <a onClick={physicalLoaded}><li>Physical</li></a>
                                     <a onClick={teleLoaded}><li className="active">Spiritual</li></a>
@@ -163,7 +163,7 @@ const Terminal = () =>
                             </div>
                             <div className="list">
                                 <ul className="terminal">
-                                    <a onClick={personalButton}><li className="active">All</li></a>
+                                    <a onClick={personalButton}><li className="active">General</li></a>
                                     <a onClick={mentalLoaded}><li>Mental</li></a>
                                     <a onClick={physicalLoaded}><li>Physical</li></a>
                                     <a onClick={teleLoaded}><li>Spiritual</li></a>
@@ -173,9 +173,6 @@ const Terminal = () =>
                                 <div className="container">
                                     <AllFamily />
                                 </div>
-                            </div>
-                            <div className="buttonwrap">
-                                <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                             </div>
                         </div>
                     </div>

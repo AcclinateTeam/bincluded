@@ -12,10 +12,10 @@
 
 // WHAT IS CLINICAL RESEARCH STYLES
 .studies {                                      margin: 0 15% 100px;}
-.studies h2 {                                    padding: 50px 0 0;}
+.studies h2 {                                    padding: 35px 0 0;}
 .studies .image video {                         width: 100%; position: relative; background-color: #fff; overflow: hidden;}
 // .studies .text {                                background-color: #cc3;}
-.studies .text p {                              font-size: 22px; line-height: 30px; margin: 0 100px 0 100px; padding: 20px 0 30px 100px; border-left: 5px solid #050236; font-weight: 300;}
+.studies .text p {                              font-size: 22px; line-height: 30px; margin: 0 100px 0 100px; padding: 40px 0 40px 100px; border-left: 5px solid #050236; font-weight: 300;}
 
 // WHY IT MATTERS SECTION STYLES
 .whyStudies {                                      margin: 100px 15%;}
@@ -82,7 +82,7 @@
 /* RESULTS PAGE SCSS STYLES
 ============================================================== */
 .results.space {                            padding: 0 0 100px;}
-.results .callout {                         height: 144px; text-align: center; padding: 100px 0 0; background-color: #fff;}
+.results .callout {                         height: 144px; text-align: center; padding: 300px 0 0; background-color: #fff;}
 .results .info {                            margin: 0 0 30px; font-weight: 500; color: #000;}
 .results .panels {                          margin: 0 0 80px;}
 .results .panel {                           padding: 40px 45px; margin: 0 0 40px; box-shadow: 0 0 8px #999; border-left: 5px solid #ca1d48; background-color: #fff;}
@@ -100,7 +100,7 @@
 .results .return p.button:hover {           color: #0F0F10; background-color: #F3E454;}
 
 .study.space {                              padding: 0 0 100px;}
-.study .callout {                           padding: 80px 0 0; height: 140px; position: relative; background: center; background-size: cover; background-color: #fff;}
+.study .callout {                           padding: 350px 0 0; height: 140px; position: relative; background: center; background-size: cover; background-color: #fff;}
 .study .head {                              height: 60px;}
 .study .info {                              float: left; font-weight: 500; color: #1A3667;}
 .study .info a {                            text-decoration: none; text-transform: capitalize; color: #0F0F10;}
@@ -110,7 +110,7 @@
 .study .info a:hover, .study .bread a:hover {                      color: #ca1d48;}
 .study .overlay {                           width: 100%; height: 100%; position: absolute; top: 0; left: 0; background: linear-gradient(to top, #1A3667, rgba(#1A3667, 0));}
 .study .heading {                           position: absolute; bottom: 50;}
-.study .heading h1 {                        font-family: 'Roboto', sans-serif; margin: 0 0 18px; font-weight: 700; text-transform: none; color: #0F0F10;}
+.study .heading h1 {                        font-family: 'DM Sans', sans-serif; font-size: 64px; line-height: 72px; margin: 0 0 18px; font-weight: 700; text-transform: none; color: #0F0F10;}
 .study .heading p {                         font-weight: 500; color: #0F0F10;}
 .study .panel {                             padding: 20px 10px 20px 20px; margin: 0 0 10px; border-left: 5px solid #CA1D48;}
 .study .panel {                             padding: 40px 45px; margin: 0 0 40px; box-shadow: 0 0 8px #999; border-left: 5px solid #ca1d48; background-color: #fff;}

@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
 const AllFamily = () =>
@@ -6,19 +7,42 @@ const AllFamily = () =>
         <>
             {/* NEW ROW */}
             <div className="third columns">
-                <a href="https://www.birminghamal.gov/community-development/community-resource-services-division/">
+                <a href="http://impactal.org/index.html">
                     <div className="panes">
-                        <div className="image" style={{ backgroundImage: `url("/images/partners/christ-health.png")`, backgroundColor: '#ffffff' }}></div>
+                        <div className="image" style={{ backgroundImage: `url("/images/partners/impact.jpg")`, backgroundColor: '#ffffff' }}></div>
                         <div className="pane">
                             <h2>Christ Health Center</h2>
-                            <p>IMPACT Family Counseling is a 501 (c)(3) Christian-affiliated, United Way agency located in Birmingham, AL.</p>
-                            <div className="callbutton">
+                            <p>The agency provides outpatient counseling and a variety of other services such as mentoring, relationship education, family strengthening and anger management to all people, regardless of religion, sex, race, ethnicity, age, or disability.</p>
+                            <h2>Who Will Benefit</h2>
+                            <p>Anyone seeking mentorship, relationship education, family strengthening and/or anger management.</p>
+                            <a href="http://impactal.org/index.html">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
+                            {/* <div className="callbutton">
                                 <a className="button signup" style={{ margin: `0` }}>Learn More</a>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </a>
             </div>
+
+            {/* NEW ROW */}
+            <div className="third columns">
+                <a href="https://ywcabham.org/">
+                    <div className="panes">
+                        <div className="image" style={{ backgroundImage: `url("/images/partners/ymcabham.jpg")`, backgroundColor: '#ffffff' }}></div>
+                        <div className="pane">
+                            <h2>YWCA Child Development Center</h2>
+                            <p>Dedicated to eliminating racism, empowering women and promoting peace, justice, freedom and dignity for all. Our focus is on three main areas: affordable housing, quality child development programs for children of homeless and working poor families, and domestic violence services.</p>
+                            <h2>Who Will Benefit</h2>
+                            <p>Individuals suffering or stuggling with housing insecurity, expecially those with children, having trouble finding work or in violent situations</p>
+                            <a href="https://ywcabham.org/">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
+                            {/* <div className="callbutton">
+                                <a className="button signup" style={{ margin: `0` }}>Learn More</a>
+                            </div> */}
+                        </div>
+                    </div>
+                </a>
+            </div>
+
             <div className="third columns">
                 <a href="https://railroadpark.org/">
                     <div className="panes">

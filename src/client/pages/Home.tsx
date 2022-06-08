@@ -74,7 +74,7 @@ const Home = () =>
                         </p>
                     </div>
                     <div className="callbutton">
-                        <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
+                        <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join The Community</a>
                         <Link className="button learnmore" to="/whynow">Learn More</Link>
                     </div>
                 </div>
@@ -127,13 +127,13 @@ const Home = () =>
                             </div>
                             <div className="third columns deck">
                                 <div className="cards">
-                                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">
+                                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">
                                         <div className="card">
                                             <img src="/images/charger1.jpg" alt="Who_We_Are" />
                                             <div className="text">
                                                 <h3>Join our community</h3>
                                                 <p>Click here to learn, share and grow with others in the B-INCLUDED community.</p>
-                                                <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
+                                                <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
                                             </div>
                                         </div>
                                     </a>
@@ -187,12 +187,12 @@ const Home = () =>
                                     </Link>
                                 </div>
                                 <div className="third columns">
-                                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">
+                                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">
                                         <div className="cards shadow hover">
                                             <FontAwesomeIcon className="icon" icon="comments" />
                                             <h4>Community</h4>
                                             <p>Join to the community to like, share, comment, and connect with people like you.</p>
-                                            <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
+                                            <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
                                         </div>
                                     </a>
                                 </div>

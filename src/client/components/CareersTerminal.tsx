@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
-import AllFamily from './subComponents/Health/AllFamily';
-import AllYouth from './subComponents/Health/AllYouth';
-import AllAdult from './subComponents/Health/AllAdult';
-import AllSenior from './subComponents/Health/AllSenior';
+import AllFamily from './subComponents/Careers/AllFamily';
+import AllYouth from './subComponents/Careers/AllYouth';
+import AllAdult from './subComponents/Careers/AllAdult';
+import AllSenior from './subComponents/Careers/AllSenior';
 import Careers from './subComponents/Careers';
 
 const Terminal = () =>
@@ -66,9 +66,9 @@ const Terminal = () =>
                             <div className="list">
                                 <ul className="terminal">
                                     <a onClick={personalButton}><li>All</li></a>
-                                    <a onClick={mentalLoaded}><li className="active">Education</li></a>
-                                    <a onClick={physicalLoaded}><li>Job-Access</li></a>
-                                    <a onClick={teleLoaded}><li>Career</li></a>
+                                    <a onClick={mentalLoaded}><li className="active">Career Matching</li></a>
+                                    <a onClick={physicalLoaded}><li>Workforce Development</li></a>
+                                    <a onClick={teleLoaded}><li>Finances</li></a>
                                 </ul>
                             </div>
                             <div className="panel">
@@ -98,9 +98,9 @@ const Terminal = () =>
                             <div className="list">
                                 <ul className="terminal">
                                     <a onClick={personalButton}><li>All</li></a>
-                                    <a onClick={mentalLoaded}><li>Education</li></a>
-                                    <a onClick={physicalLoaded}><li className="active">Job-Access</li></a>
-                                    <a onClick={teleLoaded}><li>Career</li></a>
+                                    <a onClick={mentalLoaded}><li>Career Matching</li></a>
+                                    <a onClick={physicalLoaded}><li className="active">Workforce Development</li></a>
+                                    <a onClick={teleLoaded}><li>Finances</li></a>
                                 </ul>
                             </div>
                             <div className="panel">
@@ -131,9 +131,9 @@ const Terminal = () =>
                             <div className="list">
                                 <ul className="terminal">
                                     <a onClick={personalButton}><li>All</li></a>
-                                    <a onClick={mentalLoaded}><li>Education</li></a>
-                                    <a onClick={physicalLoaded}><li>Job-Access</li></a>
-                                    <a onClick={teleLoaded}><li className="active">Career</li></a>
+                                    <a onClick={mentalLoaded}><li>Career Matching</li></a>
+                                    <a onClick={physicalLoaded}><li>Workforce Development</li></a>
+                                    <a onClick={teleLoaded}><li className="active">Finances</li></a>
                                 </ul>
                             </div>
                             <div className="panel">
@@ -164,9 +164,9 @@ const Terminal = () =>
                             <div className="list">
                                 <ul className="terminal">
                                     <a onClick={personalButton}><li className="active">All</li></a>
-                                    <a onClick={mentalLoaded}><li>Education</li></a>
-                                    <a onClick={physicalLoaded}><li>Job-Access</li></a>
-                                    <a onClick={teleLoaded}><li>Career</li></a>
+                                    <a onClick={mentalLoaded}><li>Career Matching</li></a>
+                                    <a onClick={physicalLoaded}><li>Workforce Development</li></a>
+                                    <a onClick={teleLoaded}><li>Finances</li></a>
                                 </ul>
                             </div>
                             <div className="panel">

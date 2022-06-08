@@ -77,9 +77,16 @@ const SubHeader = () =>
 
                         <nav>
                             <ul className="nav">
-                                <li><Link to='/health'>Health</Link></li>
-                                <li><Link to='/family'>Family</Link></li>
-                                <li><Link to='/careers'>Careers</Link></li>
+                                <li><Link to='/blog'>Stories</Link></li>
+                                <li>
+                                    <Link to='/'>Resources</Link>
+                                    <ul className="subnav">
+                                        <li><Link to='/health'>Health</Link></li>
+                                        <li><Link to='/family'>Family</Link></li>
+                                        <li><Link to='/careers'>Careers</Link></li>
+                                    </ul>
+                                </li>
+                                <li><Link to='/trials'>Clinical Research</Link></li>
                                 <li><Link to='/covid'>COVID-19</Link></li>
                             </ul>
                         </nav>

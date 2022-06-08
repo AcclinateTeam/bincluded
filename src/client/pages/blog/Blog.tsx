@@ -52,7 +52,7 @@ const Blog = () =>
                         <p>Voices from the community.</p>
                     </div>
                     <div className="callbutton">
-                        <a className="button signup" href="https://jdsb9zx9r21.typeform.com/B-INCLUDED">Share Your Story</a>
+                        <a className="button signup" href="https://www.videoask.com/fyxp7akhq" target="_blank" rel="noopener noreferrer">Share Your Story</a>
                     </div>
                 </div>
                 <div className="scrollDown">
@@ -79,6 +79,23 @@ const Blog = () =>
                     </div>
                     <div className="ten columns">
                         <div className="container case">
+                            {/* NEW ROW */}
+                            <div className="fourth columns rack">
+                                <Link to="/blog/pmj">
+                                    <div className="frames">
+                                        <div className="frame">
+                                            <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
+                                                <img src="/images/pmj.jpg" alt="" />
+                                            </div>
+                                            <div className="text">
+                                                <h1>Pastor Mike Jr</h1>
+                                                <p>Voices From Our Community</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+
                             <div className="fourth columns rack">
                                 <Link to="/blog/angelica">
                                     <div className="frames">
@@ -97,6 +114,24 @@ const Blog = () =>
                                     </div>
                                 </Link>
                             </div>
+                            
+                            {/* NEW ROW */}
+                            <div className="fourth columns rack">
+                                <Link to="/blog/angela">
+                                    <div className="frames">
+                                        <div className="frame">
+                                            <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
+                                                <img src="/images/angela.jpg" alt="" />
+                                            </div>
+                                            <div className="text">
+                                                <h1>Angela Abdur-Rasheed</h1>
+                                                <p>Voices From Our Community</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
+
                             <div className="fourth columns rack">
                                 <Link to="/blog/calanda">
                                     <div className="frames">
@@ -115,6 +150,44 @@ const Blog = () =>
                                     </div>
                                 </Link>
                             </div>
+
+
+                            <div className="fourth columns rack">
+                                <Link to="/blog/mariam">
+                                    <div className="frames">
+                                        <div className="frame">
+                                            <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
+                                                <video playsInline autoPlay muted loop id="myVideo">
+                                                    <source src='http://nowincluded.com/wp-content/uploads/2022/05/miriamC.mp4' type="video/mp4" />
+                                                    Your browser does not support HTML5 video.
+                                                </video>
+                                            </div>
+                                            <div className="text">
+                                                <h1>Mariam Cunningham</h1>
+                                                <p>Voices From Our Community</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>                            
+
+                            {/* NEW ROW */}
+                            <div className="fourth columns rack">
+                                <Link to="/blog/gaynell">
+                                    <div className="frames">
+                                        <div className="frame">
+                                            <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
+                                                <img src="/images/gaynell.jpg" alt="" />
+                                            </div>
+                                            <div className="text">
+                                                <h1>Gaynell Hendricks</h1>
+                                                <p>Voices From Our Community</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>   
+
                             <div className="fourth columns rack">
                                 <Link to="/blog/jasmine">
                                     <div className="frames">
@@ -133,18 +206,17 @@ const Blog = () =>
                                     </div>
                                 </Link>
                             </div>
+
+                            {/* NEW ROW */}
                             <div className="fourth columns rack">
-                                <Link to="/blog/mariam">
+                                <Link to="/blog/willy">
                                     <div className="frames">
                                         <div className="frame">
                                             <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                                <video playsInline autoPlay muted loop id="myVideo">
-                                                    <source src='http://nowincluded.com/wp-content/uploads/2022/05/miriamC.mp4' type="video/mp4" />
-                                                    Your browser does not support HTML5 video.
-                                                </video>
+                                                <img src="/images/willy.jpg" alt="" />
                                             </div>
                                             <div className="text">
-                                                <h1>Mariam Cunningham</h1>
+                                                <h1>Willy Etheridge</h1>
                                                 <p>Voices From Our Community</p>
                                             </div>
                                         </div>
@@ -152,22 +224,7 @@ const Blog = () =>
                                 </Link>
                             </div>
 
-                            {/* NEW ROW */}
-                            <div className="fourth columns rack">
-                                <Link to="/blog/angela">
-                                    <div className="frames">
-                                        <div className="frame">
-                                            <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                                <img src="/images/angela.jpg" alt="" />
-                                            </div>
-                                            <div className="text">
-                                                <h1>Angela Abdur-Rasheed</h1>
-                                                <p>Voices From Our Community</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
+
                         </div>
                     </div>
                     <div className="ten columns">

@@ -9,6 +9,7 @@ import Terminal from '../../components/FamilyTerminal';
 
 /* UTILS IMPORTS */
 import { accordionData } from '../../utils/content';
+import Logo from '../../components/subComponents/Logo';
 
 const Trials = (props: any) =>
 {
@@ -52,12 +53,12 @@ const Trials = (props: any) =>
                 <div className="callout">
                     <div className="calltext">
                         <h1>Clinical Research</h1>
-                        <p>#B-INCLUDED provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
+                        <p><Logo color="#ffffff" /> provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
 
                     </div>
                     <div className="callbutton">
-                        <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
-                        <a className="button learnmore" href="https://jdsb9zx9r21.typeform.com/to/m2w4i2Ju">Share Your Covid Story</a>
+                        <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join The Community</a>
+                        <a className="button learnmore" href="https://jdsb9zx9r21.typeform.com/to/m2w4i2Ju" target="_blank" rel="noopener noreferrer">Share Your Covid Story</a>
                     </div>
                 </div>
                 <div className="scrollDown">
@@ -84,7 +85,7 @@ const Trials = (props: any) =>
                         </div>
                     </div>
                     <div className="six columns text">
-                        <p>Clinical trials are research studies performed in people that are aimed at evaluating a medical, surgical, or behavioral intervention. They are the primary way that researchers find out if a new treatment, like a new drug or diet or medical device (for example, a pacemaker) is safe and effective in people.</p>
+                        <p>Clinical trials are research studies that evaluate safety and effectiveness of drugs, medical devices and/or behavioral interventions in people.</p>
                     </div>
                 </div>
             </section>
@@ -141,7 +142,7 @@ const Trials = (props: any) =>
                                     </Link>
                                 </div>
                                 <div className="viewStudies">
-                                    <Link to="/">
+                                    <Link to="/trials/results/all">
                                         View Volunteer Studies <FontAwesomeIcon icon="arrow-right" />
                                     </Link>
                                 </div>
@@ -151,7 +152,7 @@ const Trials = (props: any) =>
                 </div>
             </section>
 
-            <section className="trials">
+            {/* <section className="trials">
                 <div className="container">
                     <div className="seven columns offset-by-one-half">
                         <div className="accordions">
@@ -164,7 +165,7 @@ const Trials = (props: any) =>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
 
 

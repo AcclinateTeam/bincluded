@@ -48,7 +48,7 @@ const Health = () =>
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="hero health" style={{ height: `100vh` }}>
-                <div className="calloutbg" style={{ backgroundImage: `url(/images/healthres.jpg)`, backgroundPosition: `0 0` }}></div>
+                <div className="calloutbg" style={{ backgroundImage: `url(/images/yoga.jpg)`, backgroundPosition: `0 0` }}></div>
                 <div className="callout">
                     <div className="calltext">
                         <h1>Health Resources</h1>
@@ -83,7 +83,7 @@ const Health = () =>
                         </div>
                     </div>
                     <div className="six columns text">
-                        <p>Heath doesn’t end at the doctors office, <Logo color="#050236" /> focuses on all aspects of your health. Here you’ll find the resources available in your community to help you live a healthier lifestyle.</p>
+                        <p>Health doesn’t end at the doctor's office, <Logo color="#050236" /> focuses on all aspects of your health. Here you’ll find the resources available in your community to help you live a healthier lifestyle.</p>
                     </div>
                 </div>
             </section>
@@ -97,7 +97,7 @@ const Health = () =>
             <section className="resHealth">
                 <div className="container">
                     <div className="five columns text">
-                        <p><Logo color="#050236"/> seeks to close the health equity gap in Jefferson County. Health equity is achieved when every person has the opportunity to attain their full health potential, and no one is left behind.</p>
+                        <p><Logo color="#050236" /> seeks to close the health equity gap in Jefferson County. Health equity is achieved when every person has the opportunity to attain their full health potential, and no one is left behind.</p>
                     </div>
                     <div className="five columns">
                         <div className="heading">
@@ -125,28 +125,24 @@ const Health = () =>
                             </div>
                             <div className="third columns deck">
                                 <div className="cards">
-                                    <a href="">
-                                        <div className="card">
-                                            <img src="/images/physicalHealth.jpg" alt="Who_We_Are" />
-                                            <div className="text">
-                                                <h3>Physical Health Resources</h3>
-                                                <p>Access local community resources to support your overall health and wellness.</p>
-                                            </div>
+                                    <div className="card">
+                                        <img src="/images/physicalHealth.jpg" alt="Who_We_Are" />
+                                        <div className="text">
+                                            <h3>Physical Health Resources</h3>
+                                            <p>Access local community resources to support your overall health and wellness.</p>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                             <div className="third columns deck">
                                 <div className="cards">
-                                    <a href="">
-                                        <div className="card">
-                                            <img src="/images/spiritHealth.jpg" alt="Who_We_Are" />
-                                            <div className="text">
-                                                <h3>Spiritual Health Resources</h3>
-                                                <p>Access faith-based resources to support your spiritual health and wellness.</p>
-                                            </div>
+                                    <div className="card">
+                                        <img src="/images/spiritHealth.jpg" alt="Who_We_Are" />
+                                        <div className="text">
+                                            <h3>Spiritual Health Resources</h3>
+                                            <p>Access faith-based resources to support your spiritual health and wellness.</p>
                                         </div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -43,7 +43,7 @@ const Footer = () =>
                                     <a href="https://prosperbham.com/">Prosper</a>
                                 </li>                                
                                 <li>
-                                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join the Community</a>
+                                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join the Community</a>
                                 </li>
                                 <li>
                                     <Link to="/Trials">Clinical Trials</Link>

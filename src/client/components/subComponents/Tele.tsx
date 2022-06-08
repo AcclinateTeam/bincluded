@@ -25,7 +25,7 @@ const Tele = () =>
                         </div>
                         <h2>Christ Health</h2>
                         <p>Providing affordable, compassionate care</p>
-                        {/* <Link to="">Read More <FontAwesomeIcon icon="arrow-right" /></Link> */}
+                        {/* <Link to="">Change that nobody can seeRead More <FontAwesomeIcon icon="arrow-right" /></Link> */}
                     </div>
                 </div>
             </div>

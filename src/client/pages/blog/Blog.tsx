@@ -85,7 +85,7 @@ const Blog = () =>
                                     <div className="frames">
                                         <div className="frame">
                                             <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                                <img src="/images/pastormike.jpg" alt="" />
+                                                <img src="/images/madam.jpg" alt="" />
                                             </div>
                                             <div className="text">
                                                 <h1>Pastor Mike Jr</h1>

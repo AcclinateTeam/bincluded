@@ -42,7 +42,7 @@ const Covid = () =>
                     </div>
                     <div className="callbutton">
                         <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
-                        <a className="button learnmore" href="https://jdsb9zx9r21.typeform.com/to/m2w4i2Ju">Share Your Covid Story</a>
+                        <a className="button learnmore" href="https://www.videoask.com/ftmqd7gt3">Share Your Covid Story</a>
                     </div>
                 </div>
                 <div className="scrollDown">

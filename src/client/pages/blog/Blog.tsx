@@ -52,7 +52,7 @@ const Blog = () =>
                         <p>Voices from the community.</p>
                     </div>
                     <div className="callbutton">
-                        <a className="button signup" href="https://www.videoask.com/fyxp7akhq" target="_blank" rel="noopener noreferrer">Share Your Story</a>
+                        <a className="button signup" href="https://www.videoask.com/ftmqd7gt3" target="_blank" rel="noopener noreferrer">Share Your Story</a>
                     </div>
                 </div>
                 <div className="scrollDown">

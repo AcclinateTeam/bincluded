@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>B-INCLUDED</title>
     <meta charset="utf-8">
@@ -10,41 +11,88 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-99P06YTR29"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'G-99P06YTR29');
     </script>
     <!-- Facebook Pixel Code -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window,document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1372477926543849'); 
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1372477926543849');
         fbq('track', 'PageView');
-        </script>
-        <noscript>
-        <img height="1" width="1" 
-        src="https://www.facebook.com/tr?id=1372477926543849&ev=PageView
-        &noscript=1"/>
+    </script>
+    <noscript>
+        <img height="1" width="1" src="https://www.facebook.com/tr?id=1372477926543849&ev=PageView
+        &noscript=1" />
     </noscript>
     <!-- End Facebook Pixel Code -->
-    
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .loader-wrapper {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #0b0b0b;
+            display: grid;
+            place-items: center;
+        }
+
+        .loader {
+            border: 16px solid #e3e3e3;
+            border-top: 16px solid #3498db;
+            border-radius: 50%;
+            width: 140px;
+            height: 140px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
 </head>
+
 <body>
     <noscript>
         You need to enable JavaScript to run this app.
     </noscript>
-    <div id="root"></div>
-    
+    <div id="root">
+        <div class="loader-wrapper">
+            <div class="loader"></div>
+        </div>
+    </div>
+
     </div>
     <script src="/js/app.js"></script>
-    
-    
+
+
 </body>
+
 </html>

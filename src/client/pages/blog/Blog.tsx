@@ -79,22 +79,7 @@ const Blog = () =>
                     </div>
                     <div className="ten columns">
                         <div className="container case">
-                            {/* NEW ROW */}
-                            <div className="fourth columns rack">
-                                <Link to="/blog/pmj">
-                                    <div className="frames">
-                                        <div className="frame">
-                                            <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                                <img src="/images/madam.jpg" alt="" />
-                                            </div>
-                                            <div className="text">
-                                                <h1>Pastor Mike Jr</h1>
-                                                <p>Voices From Our Community</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
+                            
 
                             <div className="fourth columns rack">
                                 <Link to="/blog/angelica">

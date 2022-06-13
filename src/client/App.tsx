@@ -54,7 +54,8 @@ library.add(fab, fas, far);
 const App = (props: AppProps) =>
 {
 
-	useEffect(() => {
+	useEffect(() =>
+	{
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	});
 
@@ -63,6 +64,8 @@ const App = (props: AppProps) =>
 		email: 'help@acclinate.com',
 		feature_packs: ['MAPS', 'DEV', 'DATA'],
 	});
+
+
 
 	return (
 		<>
@@ -104,7 +107,6 @@ const App = (props: AppProps) =>
 					<Route path="/terms" element={<Terms />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
-				<Footer />
 			</BrowserRouter>
 		</>
 	);

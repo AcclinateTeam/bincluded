@@ -332,7 +332,7 @@ const Home = () =>
                         <div className="container">
                             <div className="row whyNow">
                                 <div className="seven columns offset-by-one-half">
-                                    <div className="container">
+                                    <div className="container statis">
                                         <div className="third columns stats">
                                             <div className="ten columns stat">
                                                 <div className="point">
@@ -363,7 +363,7 @@ const Home = () =>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="third columns">
+                                        <div className="third columns text">
                                             <div className="whyText" style={{ textAlign: 'center' }}>
                                                 <h2>Why Now?</h2>
                                                 <p>There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices.   B-INCLUDED is that space and you can become part of that collective.</p>

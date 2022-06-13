@@ -25,7 +25,7 @@
     ul.log li.signup a {            font-size: 48px; line-height: 56px; margin: 10px 0 40px; color: #fff;}
     ul.log li.logins a {            width: 90%; font-size: 16px; padding: 20px 0; border-radius: 5px; margin: 30px 5%; text-align: center; color: #fff; background-color: #CA1D48;}
     // SCROLL DOWN STYLES
-    .scrollDown {                   position: absolute; bottom: 30px; text-align: center; left: calc(50% - 44px);}
+    .scrollDown {                   position: absolute; bottom: 30px; text-align: center; left: calc(50% - 44px); display: none; visibility: hidden; opacity: 0;}
 
 
     // MENU BUTTON STYLES
@@ -49,10 +49,7 @@
     .button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
     .button.learnmore:hover {                       border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;}
     // HOME BUTTON STYLES
-    .home .button {                                 width: 90%; display: inline-block; margin: 0 0 15px; line-height: 16px;}
-
-
-    
+    .home .button {                                 width: 90%; display: inline-block; margin: 0 0 15px; line-height: 16px;}    
     // SUBPAGE CALLOUT STYLES (HOME/FAMILY/ETC)
     .call {                                             width: 100%; height: 925px; position: relative; background-color: #050236;}  
     .call .callbg {                                     width: 100%; height: 900px; overflow: hidden; position: absolute; top: 100px; left: 0; z-index: -1;}
@@ -68,21 +65,81 @@
     .call .callout .callimage img {             width: 100%; display: block;}     
     
     // HOME PAGE WHO WE ARE STYLES
-    .whoWeAre {                                     margin:100px 5%; background-color: #f09;}
-    .whoWeAre h2 {                                  margin: 10px 0 0;}
-    .whoWeAre p {                                   font-size: 24px; line-height: 40px; padding: 50px 0 50px 100px; border-left: 5px solid #050236; font-weight: 400; }
-    .whoWeAre .box {                                width: auto; margin: 100px -20px 0;}
-    .whoWeAre .deck .cards {                            width: calc(100% - 40px); height: 417px; border-radius: 15px; margin: 0 20px; overflow: hidden;}
-    .whoWeAre .deck .cards:hover {                      transform: scale(1.03);}
-    .whoWeAre .deck .cards .card {                      width: 100%; height: 100%; position: relative; overflow: hidden;}
-    .whoWeAre .deck .cards .card img {                  width: 100%;}
-    .whoWeAre .deck .cards .card .cardimg {             width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: center;}
-    .whoWeAre .deck .cards .card:hover .cardimg {       transform: scale(1.03);}
-    .whoWeAre .deck .cards .card .text {                width: calc(100% - 60px); height: calc(45% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
-    .whoWeAre .deck .cards .card .text h3 {             font-size: 32px; line-height: 32px; font-weight: 900; color: #fff; margin: 0;}
-    .whoWeAre .deck .cards .card .text p {              font-size: 18px; line-height: 24px; font-weight: 300; border: none; padding: 10px 0 20px; color: #ffffff99; margin: 0;}
-    .whoWeAre .deck .cards .card .text a {              font-size: 20px; line-height: 20px; font-weight: 700; border: none; padding: 0; text-decoration: none; color: #ffffff; margin: 0;}
-    .whoWeAre .deck .cards .card .text a svg {          font-size: 18px; line-height: 20px; color: #CA1D48;}
+    .whoWeAre {                                     margin: 25px 5%;}
+    .whoWeAre h2 {                                  font-size: 54px; line-height: 54px; margin: 10px 0 0;}
+    .whoWeAre p {                                   font-size: 24px; line-height: 32px; padding: 30px 0; border: none; font-weight: 400; }
+    .whoWeAre .box {                                width: auto; margin: 10px -20px 0;}
+    .whoWeAre .deck .cards {                            width: calc(100% - 40px); height: 417px; border-radius: 15px; margin: 0 20px 5%; overflow: hidden;}
+    .whoWeAre .deck .cards .card .text {                width: calc(100% - 60px); height: calc(50% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
+    .whoWeAre .deck .cards .card .text h3 {             font-size: 30px; line-height: 30px; font-weight: 900; color: #fff; margin: 0;}
+
+    // HOME PAGE WHAT WE DO STYLES
+    .whatwedo {                                         background-color: #fff; padding: 50px 5%;}  
+    .whatwedo .text {                                   margin: 0 50px 0 0;}
+    .whatwedo .text p {                                 font-size: 18px; line-height: 26px; padding: 30px 0; font-weight: 400; }
+    .whatwedo .deck {                                   margin: 0 -4px;}
+    .whatwedo .deck .cards {                            margin: 0 5px 5%; border: 2px solid #050236; border-radius: 15px; padding: 30px;}
+    .whatwedo .deck .cards p  {                         height: auto; }
+
+    // HOME PAGE STORIES STYLESs
+    .stories {                                          padding: 25px 5%; background-color: #fff;}
+    .stories .header h2 {                               text-align: center; color: #050236;}
+    .stories .header p {                                font-size: 18px; line-height: 26px; padding: 30px 0 0; font-weight: 400; text-align: center; color: #050236;}
+    .stories .case {                                    margin: 50px 0;}
+    .stories .rack {                                    height: 300px; margin: 0 -10px 40px;}
+    .stories .rack .frames {                            width: calc(100% - 40px); height: 100%; border-radius: 15px; margin: 0 20px 20px; overflow: hidden;}
+    .stories .rack .frames:hover {                      transform: scale(1.03);}
+    .stories .rack .frames .frame .text {               width: calc(100% - 20px); position: absolute; padding: 20px; bottom: 0px; left: 0; background-color: #050236;}
+
+    // SHARE YOUR STORY STYLES
+    .share {                                        padding: 25px 5% 0;}
+    .share .sharr {                                 display: flex; flex-direction: column;}
+    .share .container {                             border-radius: 5px;}
+    .share .image {                                 width: 100%; margin: 30px 0 0; height: auto; order: 2;}
+    .share .words {                                 order: 1;}
+    .share .image img {                             width: 100%;}
+    .share .text {                                  height: auto; padding: 0; text-align: center;}
+    .share .text h2 {                               color: #050236; margin: 20px 0 30px;}
+    .share .text p {                                font-size: 18px; line-height: 26px; text-align: center; margin: 0 0 30px; font-weight: 300; color: #050236;}
+    .share .button {                                margin: 0 auto; text-align: center;}
+
+    // HOME PAGE WHYNOW? SECTION STYLES
+    .whyNow .whyText {                      margin: 50px 5%; display: inline-block;}
+    .whyNow .whyTextWide {                  text-align: center; padding: 90px 0;}
+    .whyNow .whyTextWide h3 {               font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 24px; text-transform: none; margin: 0 0 30px; color: #fff;}
+    .whyNow .whyTextWide h1 {               font-size: 48px; line-height: 60px; font-weight: 700; margin: 0 0 30px; color: #fff;}
+    .whyNow .whyTextWide p {                width: 500px; font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 auto 30px; color: #fff;}
+    .whyNow .statis {                   display: flex; flex-direction: column;}
+    .whyNow .text {                     padding: 0; order: 1;}
+    .whyNow .stats {                    padding: 0; order: 2;}    
+
+    // CLINICAL RESEARCH STYLES
+    .research {                             height: auto; display: block;}
+    .research .panes {                      width: 100%; height: 350px; display: block; position: relative; background-color: #050236;}
+    .research .image {                      width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0;  background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.5;}
+    .research .heading {                    width: 90%; height: 100%; display: block; position: relative; top: 0; transform: none; left: 0; margin: 0; padding: 70px 5% 0;}
+    .research .content {                    height: 400px; display: block; position: relative; text-align: center; background-color: #CA1D48;}
+    .research .content .text {              padding: 50px 50px; color: #fff;}
+    .research .content .bg {                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.09;}
+
+    .covid {                                padding: 50px 0; text-align: center;}
+    .covid h3 {                             font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: #050236; text-transform: none; padding: 0; margin: 0 15% 50px;}
+
+    .partners {                             padding: 50px 15%;}
+    .partners .image {                      width: calc(100% - 70px); height: 100px; margin: 20px 35px; background-repeat: no-repeat; background-size: contain; background-position: center; filter: grayscale(100%);}
+
+    .community {                                    position: relative; padding: 0 5%; background-color: #050236;}
+    .community .content {                           padding: 50px 0 0; color: #fff; }
+    .community .con {                               padding: 10px 0 0; color: #fff; }
+    .community .image1 img {                         width: 100%; padding: 10px 0 0;}
+
+    .community .left ul li {                        width: 70%; font-family: 'DM Sans', sans-serif; display: block; font-weight: 300; padding: 0 0 20px;}
+
+    .community .left ul li p {                      font-size: 16px; line-height: 16px; width: auto; display: inline-block; margin: 0; padding: 0;}
+
+
+
+
 
     
     //FOOTER STYLES

@@ -5,17 +5,15 @@ const ShareYourStory = () =>
 {
     return (
         <section className="share">
-            <div className="container">
+            <div className="container sharr">
                 <div className="four columns image">
                     <img src="/images/face.png" alt="" />
                 </div>
-                <div className="six columns">
+                <div className="six columns words">
                     <div className="text">
                         <h2>Share <span className="blue">Your Story</span></h2>
                         <p>Our community is built on the shared stories of our members and other community members living, working, and playing in Birmingham. Separate yourself from the noise, share your story with us.</p>
-                        <div className="buttonwrap" style={{ textAlign: `left` }}>
-                            <a className="content button solid" href="https://www.videoask.com/ftmqd7gt3" target="_blank" rel="noopener noreferrer">Share Your Story</a>
-                        </div>
+                        <a className="content button solid" href="https://www.videoask.com/ftmqd7gt3" target="_blank" rel="noopener noreferrer">Share Your Story</a>
                     </div>
                 </div>
             </div>

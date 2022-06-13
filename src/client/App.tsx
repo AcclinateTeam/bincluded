@@ -107,6 +107,7 @@ const App = (props: AppProps) =>
 					<Route path="/terms" element={<Terms />} />
 					<Route path="*" element={<NotFound />} />
 				</Routes>
+				<Footer />
 			</BrowserRouter>
 		</>
 	);

@@ -79,17 +79,17 @@ const Partners = () =>
             </section>
 
             {/* IMAGE DIVIDER SECTION */}
-            <section className="divider">
+            <section className="divider partna">
                 <img src="/images/bham.jpg" alt="birmingham" />
             </section>
 
             {/* PARTNER COMMIT SECTION */}
             <section className="commit">
-                <div className="container">
+                <div className="container rePartna">
                     <div className="six columns text">
                         <p>We commit to the collaborative effort to build a healthier and wealthier Jefferson County that drives Birmingham to become a world leader in developing health solutions that benefit an increasingly diverse population and deliver better health outcomes for the residents of Jefferson County. </p>
                     </div>
-                    <div className="four columns">
+                    <div className="four columns head">
                         <div className="heading">
                             <h2>Committed to a better future for <span className="blue">all of us</span></h2>
                         </div>

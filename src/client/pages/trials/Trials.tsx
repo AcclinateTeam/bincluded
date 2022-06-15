@@ -58,7 +58,6 @@ const Trials = (props: any) =>
                     </div>
                     <div className="callbutton">
                         <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join The Community</a>
-                        <a className="button learnmore" href="https://jdsb9zx9r21.typeform.com/to/m2w4i2Ju" target="_blank" rel="noopener noreferrer">Share Your Covid Story</a>
                     </div>
                 </div>
                 <div className="scrollDown">
@@ -91,17 +90,17 @@ const Trials = (props: any) =>
             </section>
 
             {/* IMAGE DIVIDER SECTION */}
-            <section className="divider">
+            <section className="divider trials">
                 <img src="/images/trials2.png" alt="birmingham" />
             </section>
 
             {/* WHY IT MATTERS SECTION */}
             <section className="whyStudies">
-                <div className="container">
+                <div className="container reTrials">
                     <div className="five columns text">
                         <p>Racial and ethnic minorities makeup 43% of the U.S. population, and are growing, yet they often represent as little as 2% to 16% of clinical trial participants Source. This leads to treatments that are less effective on people of color. </p>
                     </div>
-                    <div className="five columns">
+                    <div className="five columns head">
                         <div className="heading">
                             <h2>Why clinical research matters for <span className="blue">minority communities</span></h2>
                         </div>
@@ -111,14 +110,14 @@ const Trials = (props: any) =>
 
             {/* WHY YOU SHOULD GET INVOLVED SECTION */}
             <section className="getInvolved">
-                <div className="container">
-                    <div className="four columns">
+                <div className="container reTrials">
+                    <div className="four columns bot">
                         <div className="text">
                             <h2>Why you should get involved in <span className="blue">clinical research</span></h2>
                             <p>Racial and ethnic minorities makeup 43% of the U.S. population, and are growing, yet they often represent as little as 2% to 16% of clinical trial participants <a href="https://drive.google.com/file/d/11pgj_6s3gtnSVeuKMBaiuX1BDCnQocLE/view">Source</a>. This leads to treatments that are less effective on people of color. </p>
                         </div>
                     </div>
-                    <div className="six columns">
+                    <div className="six columns top">
                         <div className="image">
                             <img src="/images/newdoctor.jpg" alt="" />
                         </div>

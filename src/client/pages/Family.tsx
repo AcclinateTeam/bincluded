@@ -48,7 +48,7 @@ const Family = () =>
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="hero family" style={{ height: `100vh` }}>
-                <div className="calloutbg" style={{ backgroundImage: `url(/images/familyhead.jpg)`, backgroundPosition: `0 0` }}></div>
+                <div className="calloutbg" style={{ backgroundImage: `url(/images/familyhead.jpg)`}}></div>
                 <div className="callout">
                     <div className="calltext">
                         <h1>Family Resources</h1>
@@ -89,17 +89,17 @@ const Family = () =>
             </section>
 
             {/* IMAGE DIVIDER SECTION */}
-            <section className="divider">
+            <section className="divider family">
                 <img src="/images/familymid.png" alt="birmingham" />
             </section>
 
             {/* WHY IT MATTERS SECTION */}
             <section className="resFam">
-                <div className="container">
+                <div className="container reFam">
                     <div className="five columns text">
                         <p>Every family deserves to thrive and have access to a strong and effective support network through family.</p>
                     </div>
-                    <div className="five columns">
+                    <div className="five columns head">
                         <div className="heading">
                             <h2>Strengthening community through <span className="blue">family resources</span></h2>
                         </div>

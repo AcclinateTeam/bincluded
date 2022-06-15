@@ -4,7 +4,7 @@
 .cov.hero {                                      background-color: #000;}
 
 // COVID PHRASE STYLES
-.covid19 {                                  margin: 100px 0 0; padding: 0 0 100px; background-color: #287FDD22;}
+.covid19 {                                  margin: 100px 0 0; padding: 0 0 100px; background-color: #287FDD33;}
 .covid19 .phrase {                          width: 100%; height: 400px; display: inline-block; position: relative; box-shadow: 0 0 24px 2px #234951;}
 .covid19 .phrase .face {                    width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; opacity: 1; visibility: visible; background-size: cover; background-position: center -275px; background-color: #fff;}
 .covid19 .phrase .face .overlay {           width: 60%; height: 100%; background: linear-gradient(90deg, rgba(5,2,54,1) 35%, rgba(0,0,0,0) 100%);}
@@ -22,7 +22,7 @@
 .covid19 .pane .text p {                    font-size: 16px; line-height: 24px; margin: 30px 100px 0 0; color: #0F0F10;}
 .covid19 .pane .texts .tag {                position: absolute; top: 0; left: 0; z-index: 9;}
 .covid19 .pane .texts .tag.right {          left: 50px;}
-.covid19 .pane .texts .tag h6 {             font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 700; text-transform: none; padding: 8px 10px; display: inline-block; background-color: #CA1D48; color: #fff;}
+.covid19 .pane .texts .tag h6 {             font-family: 'DM Sans', sans-serif; font-size: 12px; line-height: 12px; font-weight: 700; text-transform: none; padding: 8px 10px; display: inline-block; background-color: #CA1D48; color: #fff;}
 .covid19 .pane .video {                     height: 400px;}
 
 // PARTNER PANES [EXTENDS COVID19 PANEL STYLES]

@@ -32,7 +32,7 @@ const WhyNow = () =>
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="why hero" style={{ height: `100vh` }}>
-                <div className="calloutbg" style={{ backgroundImage: `url(/images/whyNow.jpeg)`, backgroundPosition: `0 0` }}></div>
+                <div className="calloutbg" style={{ backgroundImage: `url(/images/whyNow.jpeg)` }}></div>
                 <div className="callout">
                     <div className="calltext">
                         <h1>Why Now?</h1>
@@ -235,13 +235,13 @@ const WhyNow = () =>
 
             {/* WHY YOU SHOULD GET INVOLVED SECTION */}
             <section className="bInvolved">
-                <div className="container">
-                    <div className="four columns">
+                <div className="container bInv">
+                    <div className="four columns bot">
                         <div className="image">
                             <img src="/images/whysome2.jpg" alt="" />
                         </div>
                     </div>
-                    <div className="six columns">
+                    <div className="six columns top">
                         <div className="text">
                             <h2>What Makes<br /> B-INCLUDED <span className="blue">Different?</span></h2>
                             <p>B-INCLUDED is different because the platform was designed specifically with you in mind.  You are not an afterthought on an already existing platform nor are you being included because it’s trendy.  With B-INCLUDED, you are the priority. Everything the platform offers is being provided in consideration of your needs, wants, dreams & aspirations for a healthy and wealthy life.  That’s what we all want, right? Each of us wants to live our best lives on our own terms. The B-INCLUDED community can help you get there. </p>

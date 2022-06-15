@@ -89,17 +89,17 @@ const Careers = () =>
             </section>
 
             {/* IMAGE DIVIDER SECTION */}
-            <section className="divider">
+            <section className="divider career">
                 <img src="/images/careermid.png" alt="birmingham" />
             </section>
 
             {/* WHY IT MATTERS SECTION */}
             <section className="resCareer">
-                <div className="container">
+                <div className="container reCareer">
                     <div className="five columns text">
                         <p>Making money is one thing, managing it is another. Check out the financial resources below to learn more about making the money you work for work for you.</p>
                     </div>
-                    <div className="five columns">
+                    <div className="five columns head">
                         <div className="heading">
                             <h2>Improving access to <span className="blue">growth oppurtunities</span></h2>
                         </div>

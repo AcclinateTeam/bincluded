@@ -13,6 +13,27 @@
 .story .text p {                    font-size: 24px; line-height: 32px; margin: 0 0 30px;}
 .story .text .image {               width: calc(100% - 200px); padding: 50px; margin: 0 auto;}
 .story .text .image img {           width: 100%;}
+.story .storie iframe {             height: 650px;}
+.story .storie h2 {                 font-size: 56px; line-height: 56px;}
+.story .storie h4 {                 color: #CA1D48;}
+
+
+// HOME PAGE STORIES STYLESs
+.storied {                                          padding: 100px 15% 50px; background-color: #fff;}
+.storied .header h2 {                               text-align: center; color: #050236;}
+.storied .header p {                                font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: #050236;}
+.storied .case {                                    margin: 50px 0;}
+.storied .rack {                                    height: 300px; margin: 0 0 40px;}
+.storied .rack .frames {                            width: calc(100% - 40px); height: 100%; border-radius: 15px; margin: 0 20px 20px; overflow: hidden;}
+.storied .rack .frames:hover {                      transform: scale(1.03);}
+.storied .rack .frames .frame {                     width: 100%; height: 100%; position: relative; overflow: hidden;}
+.storied .rack .frames .frame .image {              width: 100%; height: 100%; }
+.storied .rack .frames .frame .image video {        width: 100%; height: 100%; object-fit: cover;} 
+.storied .rack .frames .frame .image img {          width: 100%; height: 100%; object-fit: cover;} 
+.storied .rack .frames .frame .text {               width: calc(100% - 20px); position: absolute; padding: 20px; bottom: -120px; left: 0; background-color: #050236;}
+.storied .rack .frames:hover .text {                bottom: 0;}
+.storied .rack .frames .frame .text h1 {            font-size: 24px; line-height: 24px; font-weight: 900; color: #fff; margin: 0;}
+.storied .rack .frames .frame .text p {             font-size: 18px; line-height: 26px; font-weight: 400; padding: 10px 0 0; color: #ffffff99; margin: 0;}
 
 
 .blogHeader {                        width: 100%; position: absolute; top: 85px; left: 0; z-index: -9; }

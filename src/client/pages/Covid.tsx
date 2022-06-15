@@ -33,7 +33,7 @@ const Covid = () =>
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="cov hero" style={{ height: `100vh` }}>
-                <div className="calloutbg" style={{ backgroundImage: `url(/images/covid.jpg)`, backgroundPosition: `0 0` }}></div>
+                <div className="calloutbg" style={{ backgroundImage: `url(/images/covid.jpg)` }}></div>
                 <div className="callout">
                     <div className="calltext">
                         <h1>COVID-19</h1>
@@ -41,8 +41,7 @@ const Covid = () =>
 
                     </div>
                     <div className="callbutton">
-                        <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a>
-                        <a className="button learnmore" href="https://www.videoask.com/ftmqd7gt3">Share Your Covid Story</a>
+                        <a className="button signup" href="https://www.videoask.com/ftmqd7gt3">Share Your Covid Story</a>
                     </div>
                 </div>
                 <div className="scrollDown">
@@ -75,17 +74,17 @@ const Covid = () =>
             </section>
 
             {/* IMAGE DIVIDER SECTION */}
-            <section className="divider">
+            <section className="divider trials">
                 <img src="/images/covidsplit.png" alt="birmingham" />
             </section>
 
             {/* WHY IT MATTERS SECTION */}
             <section className="whyStudies">
-                <div className="container">
+                <div className="container reTrials">
                     <div className="five columns text">
                         <p>Racial and ethnic minorities makeup 43% of the U.S. population, and are growing, yet they often represent as little as 2% to 16% of clinical trial participants Source. This leads to treatments that are less effective on people of color. </p>
                     </div>
-                    <div className="five columns">
+                    <div className="five columns head">
                         <div className="heading">
                             <h2>How COVID-19 research impacted <span className="blue">minority communities</span></h2>
                         </div>

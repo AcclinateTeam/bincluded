@@ -62,7 +62,7 @@ const Jasmine = () =>
                         <div className="storie">
                             <h2>Mariam Cunningham</h2>
                             <h4>Voices From Our Community</h4>
-                            <iframe width="100%%" height="550px" src="https://www.youtube.com/embed/DhT4qE-CtK8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe width="100%" src="https://www.youtube.com/embed/DhT4qE-CtK8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                     </div>
                     <div className="six columns offset-by-two">

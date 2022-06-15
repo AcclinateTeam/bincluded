@@ -58,7 +58,7 @@ const Home = () =>
     // LOADING ANIMATION 
     useEffect(() =>
     {
-        setTimeout(() => setLoading(false), 0)
+        setTimeout(() => setLoading(false), 4500)
     }, []);
 
     return (

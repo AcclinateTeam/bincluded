@@ -22,9 +22,6 @@ const Terminal = () =>
                                 <AllAdult />
                             </div>
                         </div>
-                        <div className="buttonwrap">
-                            <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                        </div>
                     </div>
                 </div>
             </section>

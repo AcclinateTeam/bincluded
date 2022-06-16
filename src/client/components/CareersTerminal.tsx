@@ -75,9 +75,6 @@ const Terminal = () =>
                                     <Career />
                                 </div>
                             </div>
-                            <div className="buttonwrap">
-                                <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -106,9 +103,6 @@ const Terminal = () =>
                                 <div className="container">
                                     <WorkDev />
                                 </div>
-                            </div>
-                            <div className="buttonwrap">
-                                <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                             </div>
                         </div>
                     </div>
@@ -140,9 +134,6 @@ const Terminal = () =>
                                     <Finances />
                                 </div>
                             </div>
-                            <div className="buttonwrap">
-                                <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                            </div>
                         </div>
                     </div>
                 </section>
@@ -172,9 +163,6 @@ const Terminal = () =>
                                 <div className="container">
                                     <All />
                                 </div>
-                            </div>
-                            <div className="buttonwrap">
-                                <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                             </div>
                         </div>
                     </div>

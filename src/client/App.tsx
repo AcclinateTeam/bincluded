@@ -48,6 +48,13 @@ import Gaynell from './pages/blog/Gaynell';
 import PMJ from './pages/blog/PMJ';
 import Willy from './pages/blog/Willy';
 import JBrooklere from './pages/blog/JBrooklere';
+import Celeste from './pages/blog/Celeste';
+import Danny from './pages/blog/Danny';
+import Sonja from './pages/blog/Sonja';
+import CooperGreen from './pages/subpages/CooperGreen';
+import LHSA from './pages/subpages/LHSA';
+import Viva from './pages/subpages/Viva';
+import UWay from './pages/subpages/UWay';
 
 library.add(fab, fas, far);
 
@@ -81,6 +88,10 @@ const App = (props: AppProps) =>
 					<Route path="/resources" element={<Resources />} />
 					{/* SubPage Paths */}
 					<Route path="/partners" element={<Partners />} />
+					<Route path="/partners/coopergreen" element={<CooperGreen />} />
+					<Route path="/partners/lhsa" element={<LHSA />} />
+					<Route path="/partners/vivahealth" element={<Viva />} />
+					<Route path="/partners/unitedway" element={<UWay />} />
 					<Route path="/whynow" element={<WhyNow />} />
 					<Route path="/resources" element={<Resources />} />
 					{/* Blog Paths */}
@@ -94,6 +105,9 @@ const App = (props: AppProps) =>
 					<Route path="/blog/pmj" element={<PMJ />} />
 					<Route path="/blog/willy" element={<Willy />} />
 					<Route path="/blog/jbrooklere" element={<JBrooklere />} />
+					<Route path="/blog/celeste" element={<Celeste />} />
+					<Route path="/blog/danny" element={<Danny />} />
+					<Route path="/blog/sonja" element={<Sonja />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />
 					{/* Recipe Paths */}
 					<Route path="/recipes" element={<RecipeSearch />} />

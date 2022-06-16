@@ -304,6 +304,14 @@
     .rePartna {                                         display: flex; flex-direction: column;}
     .rePartna .text {                                   order: 2;}
     .rePartna .head {                                   order: 1;} 
+    .homies {                                      margin: 50px 5%;}
+    .homies .heading h2 {                           margin: 0 0 50px;}
+    .homies .content {                          margin: 0 50px 0 0;}
+    .homies .content h3 {                       font-size: 34px; line-height: 34px;}
+    .homies .content h4 {                       font-size: 24px; line-height: 24px;}
+    .homies .content p {                        font-size: 18px; line-height: 26px; margin: 0 0 30px;}
+    .homies .content p span {                   font-weight: 700; color: #CA1D48;}
+    .homies .image {                            height: 450px; border: 2px solid #050236; border-radius: 15px; overflow: hidden;}
 
     // UTILS PAGES STYLES
     .policy .content {                      margin: 200px 5% 150px; display: block;}

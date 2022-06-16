@@ -64,7 +64,7 @@ const Home = () =>
     return (
         <>
             {loading === false ? (
-                <>
+                <> 
                     {/* HEADER COMPONENT IMPORT */}
                     <Header />
 
@@ -85,7 +85,7 @@ const Home = () =>
                                 </p>
                             </div>
                             <div className="callbutton">
-                                <a className="button signup" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join The Community</a>
+                                <a className="button signup joinCommunity" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join The Community</a>
                                 <Link className="button learnmore" to="/whynow">Learn More</Link>
                             </div>
                         </div>

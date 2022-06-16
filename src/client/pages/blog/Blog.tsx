@@ -7,6 +7,7 @@ import Header from '../../components/Header';
 import moment from 'moment';
 import ShareYourStory from '../../components/ShareYourStory';
 import Loading from '../../components/Loading';
+import BlogItem from './BlogItem';
 
 const Blog = () =>
 {
@@ -89,23 +90,9 @@ const Blog = () =>
                             <div className="ten columns">
                                 <div className="container case">
 
-                                    <div className="fourth columns rack">
-                                        <Link to="/blog/PMJ">
-                                            <div className="frames">
-                                                <div className="frame">
-                                                    <div className="image">
-                                                        <img src='/images/pastormike.jpg' alt="" />
-                                                    </div>
-                                                    <div className="text">
-                                                        <h1>Pastor Mike Jr.</h1>
-                                                        <p>Voices From Our Community</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    <BlogItem path="pmj" img="media/pastormike.jpg" member="Pastor Mike Jr." title="Voice From Our Community" />                                    
 
-                                    <div className="fourth columns rack">
+                                    <div className="third columns rack">
                                         <Link to="/blog/angelica">
                                             <div className="frames">
                                                 <div className="frame">
@@ -124,24 +111,10 @@ const Blog = () =>
                                         </Link>
                                     </div>
 
-                                    {/* NEW ROW */}
-                                    <div className="fourth columns rack">
-                                        <Link to="/blog/angela">
-                                            <div className="frames">
-                                                <div className="frame">
-                                                    <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                                        <img src="/images/angela.jpg" alt="" />
-                                                    </div>
-                                                    <div className="text">
-                                                        <h1>Angela Abdur-Rasheed</h1>
-                                                        <p>Voices From Our Community</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    <BlogItem path="angela" img="media/angela.jpg" member="Angela Abdur-Rasheed" title="Voice From Our Community" />
 
-                                    <div className="fourth columns rack">
+
+                                    <div className="third columns rack">
                                         <Link to="/blog/calanda">
                                             <div className="frames">
                                                 <div className="frame">
@@ -160,8 +133,7 @@ const Blog = () =>
                                         </Link>
                                     </div>
 
-
-                                    <div className="fourth columns rack">
+                                    <div className="third columns rack">
                                         <Link to="/blog/mariam">
                                             <div className="frames">
                                                 <div className="frame">
@@ -180,24 +152,9 @@ const Blog = () =>
                                         </Link>
                                     </div>
 
-                                    {/* NEW ROW */}
-                                    <div className="fourth columns rack">
-                                        <Link to="/blog/gaynell">
-                                            <div className="frames">
-                                                <div className="frame">
-                                                    <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                                        <img src="/images/gaynell.jpg" alt="" />
-                                                    </div>
-                                                    <div className="text">
-                                                        <h1>Gaynell Hendricks</h1>
-                                                        <p>Voices From Our Community</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    <BlogItem path="gaynell" img="media/gaynell.jpg" member="Gaynell Hendricks" title="Voice From Our Community" />
 
-                                    <div className="fourth columns rack">
+                                    <div className="third columns rack">
                                         <Link to="/blog/jasmine">
                                             <div className="frames">
                                                 <div className="frame">
@@ -216,40 +173,19 @@ const Blog = () =>
                                         </Link>
                                     </div>
 
-                                    {/* NEW ROW */}
-                                    <div className="fourth columns rack">
-                                        <Link to="/blog/willy">
-                                            <div className="frames">
-                                                <div className="frame">
-                                                    <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                                        <img src="/images/willy.jpg" alt="" />
-                                                    </div>
-                                                    <div className="text">
-                                                        <h1>Willy Etheridge</h1>
-                                                        <p>Voices From Our Community</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    {/* <BlogItem path="" img="media/" member="" title="Voice From Our Community" /> */}
 
-                                    {/* NEW ROW */}
-                                    <div className="fourth columns rack">
-                                        <Link to="/blog/jbrooklere">
-                                            <div className="frames">
-                                                <div className="frame">
-                                                    <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                                        <img src="/images/jbrook.jpg" alt="" />
-                                                    </div>
-                                                    <div className="text">
-                                                        <h1>Johnny Brooklere</h1>
-                                                        <p>Voices From Our Community</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    <BlogItem path="willy" img="media/willy.jpg" member="Willy Etheridge" title="Voice From Our Community" />
 
+                                    <BlogItem path="jbrooklere" img="media/jbrook.jpg" member="Johnny Brooklere" title="Voices From Our Community" />
+
+                                    <BlogItem path="celeste" img="media/drharris.jpg" member="Dr. Celeste Reese-Willis" title="Voices From Our Community" />
+
+                                    <BlogItem path="danny" img="media/danny.jpg" member="Danny Carr" title="Voices From Our Community" />
+
+                                    <BlogItem path="sonja" img="media/sonja.jpg" member="Sonja Smith" title="Voices From Our Community" />
+
+                                    <BlogItem path="walladean" img="media/walladean.jpg" member="Walladean Streeter" title="Voices From Our Community" />
 
                                 </div>
                             </div>
@@ -266,7 +202,7 @@ const Blog = () =>
                 </>
             ) : (
                 <Loading />
-            )}
+            )}22
         </>
     );
 }

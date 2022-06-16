@@ -7,7 +7,6 @@ import AllFamily from './subComponents/Health/AllFamily';
 import AllYouth from './subComponents/Health/AllYouth';
 import AllAdult from './subComponents/Health/AllAdult';
 import AllSenior from './subComponents/Health/AllSenior';
-import Careers from './subComponents/Careers';
 
 const Terminal = () =>
 {

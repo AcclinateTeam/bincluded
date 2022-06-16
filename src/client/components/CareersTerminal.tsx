@@ -3,11 +3,10 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
-import AllFamily from './subComponents/Careers/AllFamily';
-import AllYouth from './subComponents/Careers/AllYouth';
-import AllAdult from './subComponents/Careers/AllAdult';
-import AllSenior from './subComponents/Careers/AllSenior';
-import Careers from './subComponents/Careers';
+import All from './subComponents/Careers/All';
+import Career from './subComponents/Careers/Career';
+import WorkDev from './subComponents/Careers/WorkDev';
+import Finances from './subComponents/Careers/Finances';
 
 const Terminal = () =>
 {
@@ -73,7 +72,7 @@ const Terminal = () =>
                             </div>
                             <div className="panel">
                                 <div className="container">
-                                    <AllYouth />
+                                    <Career />
                                 </div>
                             </div>
                             <div className="buttonwrap">
@@ -105,7 +104,7 @@ const Terminal = () =>
                             </div>
                             <div className="panel">
                                 <div className="container">
-                                    <AllAdult />
+                                    <WorkDev />
                                 </div>
                             </div>
                             <div className="buttonwrap">
@@ -138,7 +137,7 @@ const Terminal = () =>
                             </div>
                             <div className="panel">
                                 <div className="container">
-                                    <AllSenior />
+                                    <Finances />
                                 </div>
                             </div>
                             <div className="buttonwrap">
@@ -171,7 +170,7 @@ const Terminal = () =>
                             </div>
                             <div className="panel">
                                 <div className="container">
-                                    <AllFamily />
+                                    <All />
                                 </div>
                             </div>
                             <div className="buttonwrap">

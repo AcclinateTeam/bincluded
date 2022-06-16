@@ -42,7 +42,7 @@ const Blog = () =>
     // LOADING ANIMATION 
     useEffect(() =>
     {
-        setTimeout(() => setLoading(false), 4500)
+        setTimeout(() => setLoading(false), 0)
     }, []);
 
     return (
@@ -226,6 +226,23 @@ const Blog = () =>
                                                     </div>
                                                     <div className="text">
                                                         <h1>Willy Etheridge</h1>
+                                                        <p>Voices From Our Community</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+
+                                    {/* NEW ROW */}
+                                    <div className="fourth columns rack">
+                                        <Link to="/blog/jbrooklere">
+                                            <div className="frames">
+                                                <div className="frame">
+                                                    <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
+                                                        <img src="/images/jbrook.jpg" alt="" />
+                                                    </div>
+                                                    <div className="text">
+                                                        <h1>Johnny Brooklere</h1>
                                                         <p>Voices From Our Community</p>
                                                     </div>
                                                 </div>

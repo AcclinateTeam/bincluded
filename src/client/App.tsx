@@ -47,6 +47,7 @@ import Angela from './pages/blog/Angela';
 import Gaynell from './pages/blog/Gaynell';
 import PMJ from './pages/blog/PMJ';
 import Willy from './pages/blog/Willy';
+import JBrooklere from './pages/blog/JBrooklere';
 
 library.add(fab, fas, far);
 
@@ -92,6 +93,7 @@ const App = (props: AppProps) =>
 					<Route path="/blog/gaynell" element={<Gaynell />} />
 					<Route path="/blog/pmj" element={<PMJ />} />
 					<Route path="/blog/willy" element={<Willy />} />
+					<Route path="/blog/jbrooklere" element={<JBrooklere />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />
 					{/* Recipe Paths */}
 					<Route path="/recipes" element={<RecipeSearch />} />

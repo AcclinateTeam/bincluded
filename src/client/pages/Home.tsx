@@ -64,7 +64,7 @@ const Home = () =>
     return (
         <>
             {loading === false ? (
-                <> 
+                <>
                     {/* HEADER COMPONENT IMPORT */}
                     <Header />
 
@@ -498,24 +498,32 @@ const Home = () =>
                                 <h2>Featured <span className="blue">Partners</span></h2>
                             </div>
                             <div className="fourth columns">
-                                <div className="image" style={{ backgroundImage: `url(/images/partners/cooper.png)` }}>
-                                    {/* <img src="/images/partners/uablive.png" alt="" /> */}
-                                </div>
+                                <Link to="/partners/coopergreen">
+                                    <div className="image" style={{ backgroundImage: `url(/images/partners/cooper.png)` }}>
+                                        {/* <img src="/images/partners/uablive.png" alt="" /> */}
+                                    </div>
+                                </Link>
                             </div>
                             <div className="fourth columns">
-                                <div className="image" style={{ backgroundImage: `url(/images/partners/uablive.png)` }}>
-                                    {/* <img src="/images/partners/viva.png" alt="" /> */}
-                                </div>
+                                <Link to="/partners/lhsa">
+                                    <div className="image" style={{ backgroundImage: `url(/images/partners/uablive.png)` }}>
+                                        {/* <img src="/images/partners/viva.png" alt="" /> */}
+                                    </div>
+                                </Link>
                             </div>
                             <div className="fourth columns">
-                                <div className="image" style={{ backgroundImage: `url(/images/partners/viva.png)` }}>
-                                    {/* <img src="/images/partners/uway.jpg" alt="" /> */}
-                                </div>
+                                <Link to="/partners/vivahealth">
+                                    <div className="image" style={{ backgroundImage: `url(/images/partners/viva.png)` }}>
+                                        {/* <img src="/images/partners/uway.jpg" alt="" /> */}
+                                    </div>
+                                </Link>
                             </div>
                             <div className="fourth columns">
-                                <div className="image" style={{ backgroundImage: `url(/images/partners/uway.jpg)` }}>
-                                    {/* <img src="/images/partners/cooper.png" alt="" /> */}
-                                </div>
+                                <Link to="/partners/unitedway">
+                                    <div className="image" style={{ backgroundImage: `url(/images/partners/uway.jpg)` }}>
+                                        {/* <img src="/images/partners/cooper.png" alt="" /> */}
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </section>

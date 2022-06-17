@@ -60,7 +60,7 @@ const Terminal = () =>
                         <div className="seven columns offset-by-one-half">
                             <div className="header">
                                 <h2>Career Resources</h2>
-                                <p>Click the button below to select resources by category. Hover over</p>
+                                <p>Click the button below to select resources by category. Click the resource card to view more information.</p>
                             </div>
                             <div className="list">
                                 <ul className="terminal">
@@ -89,7 +89,7 @@ const Terminal = () =>
                         <div className="seven columns offset-by-one-half">
                             <div className="header">
                                 <h2>Career Resources</h2>
-                                <p>Click the button below to select resources by category.</p>
+                                <p>Click the button below to select resources by category. Click the resource card to view more information.</p>
                             </div>
                             <div className="list">
                                 <ul className="terminal">
@@ -119,7 +119,7 @@ const Terminal = () =>
                         <div className="seven columns offset-by-one-half">
                             <div className="header">
                                 <h2>Career Resources</h2>
-                                <p>Click the button below to select resources by category. Hover over</p>
+                                <p>Click the button below to select resources by category. Click the resource card to view more information.</p>
                             </div>
                             <div className="list">
                                 <ul className="terminal">
@@ -149,7 +149,7 @@ const Terminal = () =>
                         <div className="seven columns offset-by-one-half">
                             <div className="header">
                                 <h2>Career Resources</h2>
-                                <p>Click the button below to select resources by category. Hover over</p>
+                                <p>Click the button below to select resources by category. Click the resource card to view more information.</p>
                             </div>
                             <div className="list">
                                 <ul className="terminal">

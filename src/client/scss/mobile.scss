@@ -103,6 +103,18 @@
     .share .text p {                                font-size: 18px; line-height: 26px; text-align: center; margin: 0 0 30px; font-weight: 300; color: #050236;}
     .share .button {                                margin: 0 auto; text-align: center;}
 
+    // SHARE YOUR STORY STYLES
+    .partWithUs {                                        padding: 25px 5% 0;}
+    .partWithUs .sharr {                                 display: flex; flex-direction: column;}
+    .partWithUs .container {                             border-radius: 5px;}
+    .partWithUs .image {                                 width: 100%; margin: 30px 0 0; height: auto; order: 2;}
+    .partWithUs .words {                                 order: 1;}
+    .partWithUs .image img {                             width: 100%;}
+    .partWithUs .text {                                  height: auto; padding: 0; text-align: center;}
+    .partWithUs .text h2 {                               color: #050236; margin: 20px 0 30px;}
+    .partWithUs .text p {                                font-size: 18px; line-height: 26px; text-align: center; margin: 0 0 30px; font-weight: 300; color: #050236;}
+    .partWithUs .button {                                margin: 0 auto; text-align: center;}
+
     // HOME PAGE WHYNOW? SECTION STYLES
     .whyNow .whyText {                      margin: 50px 5%; display: inline-block;}
     .whyNow .whyTextWide {                  text-align: center; padding: 90px 0;}
@@ -179,7 +191,7 @@
     .healthRes {                                        margin: 0 5%;}   
     .healthRes .box {                                   width: auto; margin: 50px -20px 0;}
     .healthRes .deck {                                  margin: 0 0 30px;}
-    .healthRes .deck .cards .card .text {                width: calc(100% - 60px); height: calc(40% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
+    .healthRes .deck .cards .card .text {                width: calc(100% - 60px); height: calc(45% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
     .healthRes .deck .cards .card .text h3 {             font-size: 24px; line-height: 24px; font-weight: 900; color: #fff; margin: 0;}
     .healthRes .deck .cards .card .text p {              font-size: 18px; line-height: 24px; font-weight: 300; border: none; padding: 10px 0 0; color: #ffffff99; margin: 0;}
 
@@ -312,6 +324,10 @@
     .homies .content p {                        font-size: 18px; line-height: 26px; margin: 0 0 30px;}
     .homies .content p span {                   font-weight: 700; color: #CA1D48;}
     .homies .image {                            height: 450px; border: 2px solid #050236; border-radius: 15px; overflow: hidden;}
+    .featured .panel {                              margin: 75px 0 10px 5px;}
+    .featured .frame {                              width: calc(100% - 20px); height: 250px; margin: 0 0 20px; text-decoration: none; position: relative;}
+
+
 
     // UTILS PAGES STYLES
     .policy .content {                      margin: 200px 5% 150px; display: block;}

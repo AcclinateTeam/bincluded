@@ -47,31 +47,37 @@ const Terminal = () =>
                     <div className="seven columns offset-by-one-half">
                         <div className="header">
                             <h2>Featured <span className="blue">Partners</span></h2>
-                            <p>We partner with brands that are passionate about our mission and our community..</p>
+                            <p>We partner with brands that are passionate about our mission and our community.<br /> Click on the partner logo below to see more information.</p>
                         </div>
 
                         <div className="container panel">
                             <div className="fourth columns">
-                                <a href="http://google.com">
+                                <Link to="/partners/coopergreen">
                                     <div className="frame">
-                                        <div className="panes active" onClick={cooperLoaded} style={{ backgroundImage: `url("/images/partners/cooper.png")` }}></div>
+                                        <div className="panes" onClick={cooperLoaded} style={{ backgroundImage: `url("/images/partners/cooper.png")` }}></div>
                                     </div>
-                                </a>
+                                </Link>
                             </div>
                             <div className="fourth columns">
-                                <div className="frame">
-                                    <div className="panes" onClick={lhsLoaded} style={{ backgroundImage: `url("/images/partners/uablive.png")` }}></div>
-                                </div>
+                                <Link to="/partners/lhsa">
+                                    <div className="frame">
+                                        <div className="panes" onClick={lhsLoaded} style={{ backgroundImage: `url("/images/partners/uablive.png")` }}></div>
+                                    </div>
+                                </Link>
                             </div>
                             <div className="fourth columns">
-                                <div className="frame">
-                                    <div className="panes" onClick={vivaLoaded} style={{ backgroundImage: `url("/images/partners/viva.png")` }}></div>
-                                </div>
+                                <Link to="/partners/vivahealth">
+                                    <div className="frame">
+                                        <div className="panes" onClick={vivaLoaded} style={{ backgroundImage: `url("/images/partners/viva.png")` }}></div>
+                                    </div>
+                                </Link>
                             </div>
                             <div className="fourth columns">
-                                <div className="frame">
-                                    <div className="panes" onClick={uwayLoaded} style={{ backgroundImage: `url("/images/partners/uway.jpg")` }}></div>
-                                </div>
+                                <Link to="/partners/unitedway">
+                                    <div className="frame">
+                                        <div className="panes" onClick={uwayLoaded} style={{ backgroundImage: `url("/images/partners/uway.jpg")` }}></div>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </div>

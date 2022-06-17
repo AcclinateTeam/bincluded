@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Header from '../../components/Header';
-import PartnerTerminal from '../../components/PartnerTerminal';
+import PartnerWithUs from '../../components/PartnerWithUs';
 
 
 const UWay = () =>
@@ -76,24 +76,7 @@ const UWay = () =>
                 </div>
             </section>
 
-            {/* <section className="partners">
-                <div className="container partnerUp">
-                    <div className="ten columns">
-                        <div className="content">
-                            <div className="container">
-                                <div className="eight columns offset-by-one">
-                                    <div className="seven columns">
-                                        <p>We want you to be a part of the health conversation.</p>
-                                    </div>
-                                    <div className="three columns">
-                                        <a href="https://jdsb9zx9r21.typeform.com/B-INCLUDED">Partner With Us</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+            <PartnerWithUs />
         </>
     )
 }

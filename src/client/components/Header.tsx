@@ -36,7 +36,7 @@ const Header = () =>
         } else
         {
             header.style.position = 'fixed';
-            headerWrapper.setAttribute('style', `height: 60px; background-color: #050236;`);
+            headerWrapper.setAttribute('style', `height: 60px; background-color: #00000000;`);
             navBg.setAttribute('style', `background-color: #CA1D48;`);
             openButton.setAttribute('style', `opacity: 1;`);
             closeButton.setAttribute('style', `opacity: 0;`);
@@ -58,7 +58,7 @@ const Header = () =>
             header.setAttribute('style', `position: fixed; background-color: #050236;`);
         } else if (windowWidth <= 1115 && headWrapHeight >= 61)
         {
-            header.setAttribute('style', `position: fixed;`);
+            header.setAttribute('style', `position: fixed; background-color: #00000000;`);
         } else
         {
             header.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0);`);
@@ -100,6 +100,7 @@ const Header = () =>
                                     </li>
                                     <li><Link to='/trials'>Clinical Research</Link></li>
                                     <li><Link to='/covid'>COVID-19</Link></li>
+                                    <li><Link to='/partners'>Partners</Link></li>
                                 </ul>
                             </nav>
 

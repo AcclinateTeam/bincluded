@@ -55,7 +55,7 @@ const Terminal = () =>
     {
         return (
             <>
-                <section className="addRes">
+                <section className="addRes cars">
                     <div className="container">
                         <div className="seven columns offset-by-one-half">
                             <div className="header">
@@ -84,7 +84,7 @@ const Terminal = () =>
     {
         return (
             <>
-                <section className="addRes">
+                <section className="addRes cars">
                     <div className="container">
                         <div className="seven columns offset-by-one-half">
                             <div className="header">
@@ -114,7 +114,7 @@ const Terminal = () =>
     {
         return (
             <>
-                <section className="addRes">
+                <section className="addRes cars">
                     <div className="container">
                         <div className="seven columns offset-by-one-half">
                             <div className="header">
@@ -144,7 +144,7 @@ const Terminal = () =>
     {
         return (
             <>
-                <section className="addRes">
+                <section className="addRes cars">
                     <div className="container">
                         <div className="seven columns offset-by-one-half">
                             <div className="header">

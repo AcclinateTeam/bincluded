@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import CountUp, { useCountUp } from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
+// import { SiteSearch360 } from 'site-search-360-react';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
@@ -58,7 +59,7 @@ const Home = () =>
     // LOADING ANIMATION 
     useEffect(() =>
     {
-        setTimeout(() => setLoading(false), 4500)
+        setTimeout(() => setLoading(false), 0)
     }, []);
 
     return (
@@ -67,6 +68,8 @@ const Home = () =>
                 <>
                     {/* HEADER COMPONENT IMPORT */}
                     <Header />
+
+                    {/* <SiteSearch360 siteId="yoursite.com" /> */}
 
                     {/* JUMBOTRON COMPONENT */}
                     <section id="hero" className="home">
@@ -94,6 +97,8 @@ const Home = () =>
                             <h3>Scroll Down</h3>
                         </div>
                     </section>
+
+                    <script async src="https://js.sitesearch360.com/plugin/bundle/3007.js"></script>
 
                     {/* WHO WE ARE */}
                     <section className="whoWeAre">

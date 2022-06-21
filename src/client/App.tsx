@@ -51,6 +51,7 @@ import JBrooklere from './pages/blog/JBrooklere';
 import Celeste from './pages/blog/Celeste';
 import Danny from './pages/blog/Danny';
 import Sonja from './pages/blog/Sonja';
+import Walladean from './pages/blog/Walladean';
 import CooperGreen from './pages/subpages/CooperGreen';
 import LHSA from './pages/subpages/LHSA';
 import Viva from './pages/subpages/Viva';
@@ -108,6 +109,7 @@ const App = (props: AppProps) =>
 					<Route path="/blog/celeste" element={<Celeste />} />
 					<Route path="/blog/danny" element={<Danny />} />
 					<Route path="/blog/sonja" element={<Sonja />} />
+					<Route path="/blog/walladean" element={<Walladean />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />
 					{/* Recipe Paths */}
 					<Route path="/recipes" element={<RecipeSearch />} />

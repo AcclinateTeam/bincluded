@@ -356,7 +356,7 @@
     .footEnd p {                                margin: 20px;}
 }
 
-@media only screen and (max-width: 375px) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (max-width: 400px) and (-webkit-min-device-pixel-ratio: 1) {
     // HOME PAGE CALLOUT STYLES
     .home {                                                 width: 100%; height: 100%; position: relative;  background-color: #050236; overflow: hidden;}
     .home video {                                           object-fit: contain; opacity: 0.9; object-position: -698px;}     

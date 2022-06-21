@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import CountUp, { useCountUp } from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
-// import { SiteSearch360 } from 'site-search-360-react';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
@@ -69,7 +68,7 @@ const Home = () =>
                     {/* HEADER COMPONENT IMPORT */}
                     <Header />
 
-                    {/* <SiteSearch360 siteId="yoursite.com" /> */}
+                    
 
                     {/* JUMBOTRON COMPONENT */}
                     <section id="hero" className="home">

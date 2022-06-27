@@ -17,7 +17,7 @@ const WhyNow = () =>
     const scrollToRef = () =>
     {
         let hero = document.getElementById('hero');
-        let heroHeight = hero.offsetHeight;
+        let heroHeight = hero!.offsetHeight;
 
         window.scrollTo({
             top: heroHeight,
@@ -118,7 +118,7 @@ const WhyNow = () =>
             <section className="leaders">
                 <div className="leadersbg" style={{ backgroundImage: `url("/images/leadersbg.png")` }}></div>
                 <div className="container">
-                    <div className="seven columns offset-by-one-half">
+                    <div className="seven columns offset-by-one-half addResWide">
                         <div className="heading">
                             <h2>Leadership <span className="blue">At Our Core</span></h2>
                             <p>Acclinate™, a Birmingham-based company specializing in digital health products, is partnering with Jefferson County to help 50,000 county residents control their future by taking charge of their health. The B-Included website will engage residents and provide easy access to pertinent health resources and job assistance.</p>

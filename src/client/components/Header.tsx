@@ -21,25 +21,25 @@ const Header = () =>
         // VARIABLE SETTINGS
         const header = document.querySelector('header');
         const headerWrapper = document.getElementById('header-wrapper');
-        const headWrapHeight = headerWrapper.offsetHeight;
+        const headWrapHeight = headerWrapper!.offsetHeight;
         const navBg = document.getElementById('navButtonBg');
         const openButton = document.getElementById('button-open');
         const closeButton = document.getElementById('button-close');
         // MENU TOGGLE
         if (headWrapHeight <= 61)
         {
-            header.style.position = 'fixed';
-            headerWrapper.setAttribute('style', `height: 100vh; background-color: #04278E;`);
-            navBg.setAttribute('style', `background-color: #fff;`);
-            openButton.setAttribute('style', `opacity: 0;`);
-            closeButton.setAttribute('style', `opacity: 1;`);
+            header!.style.position = 'fixed';
+            headerWrapper!.setAttribute('style', `height: 100vh; background-color: #04278E;`);
+            navBg!.setAttribute('style', `background-color: #fff;`);
+            openButton!.setAttribute('style', `opacity: 0;`);
+            closeButton!.setAttribute('style', `opacity: 1;`);
         } else
         {
-            header.style.position = 'fixed';
-            headerWrapper.setAttribute('style', `height: 60px; background-color: #00000000;`);
-            navBg.setAttribute('style', `background-color: #CA1D48;`);
-            openButton.setAttribute('style', `opacity: 1;`);
-            closeButton.setAttribute('style', `opacity: 0;`);
+            header!.style.position = 'fixed';
+            headerWrapper!.setAttribute('style', `height: 60px; background-color: #00000000;`);
+            navBg!.setAttribute('style', `background-color: #CA1D48;`);
+            openButton!.setAttribute('style', `opacity: 1;`);
+            closeButton!.setAttribute('style', `opacity: 0;`);
         }
     }
 
@@ -50,18 +50,18 @@ const Header = () =>
         var header = document.querySelector('header');
         var windowWidth = window.innerWidth;
         var windowPosition = window.scrollY;
-        var headWrapHeight = document.getElementById('header-wrapper').offsetHeight;
+        var headWrapHeight = document.getElementById('header-wrapper')!.offsetHeight;
 
         // MOBILE NAV SCROLL ANIMATION
         if (windowWidth <= 1115 && windowPosition >= 900 && headWrapHeight <= 61)
         {
-            header.setAttribute('style', `position: fixed; background-color: #050236;`);
+            header!.setAttribute('style', `position: fixed; background-color: #050236;`);
         } else if (windowWidth <= 1115 && headWrapHeight >= 61)
         {
-            header.setAttribute('style', `position: fixed; background-color: #00000000;`);
+            header!.setAttribute('style', `position: fixed; background-color: #00000000;`);
         } else
         {
-            header.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0);`);
+            header!.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0);`);
         }
     });
 
@@ -90,7 +90,7 @@ const Header = () =>
                             <nav>
                                 <ul className="nav">
                                     <li><Link to='/blog'>Stories</Link></li>
-                                    <li>
+                                    <li id="drop">
                                         <Link to='/'>Resources</Link>
                                         <ul className="subnav">
                                             <li><Link to='/health'>Health</Link></li>

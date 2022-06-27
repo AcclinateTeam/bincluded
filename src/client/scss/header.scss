@@ -9,16 +9,17 @@ header {                        width: 100%; display: block; margin: 0; padding:
 /* NAV STYLES */
 nav {                           margin: 0 0 0 50px; float: left;}
 nav ul {                        list-style: none; margin: 0; padding:  0; }  
-nav li {                          color: #fff; display: block; float: left; padding: 1rem; margin: 0 10px 0 0; border-radius: 15px; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 18px; font-weight: 700; position: relative; transition-duration: 0.5s;}    
+nav li {                          color: #fff; display: block; float: left; padding: 1rem; margin: 0 ; border-radius: 5px; font-family: 'DM Sans', sans-serif; font-size: 18px; font-weight: 700; position: relative; transition-duration: 0.5s;}    
 nav li a {                        color: #fff; text-decoration: none; }  
-nav li:hover {                    background: #CA1D48; cursor: pointer; }  
-nav ul li ul {                  background: #CA1D48; visibility: hidden; opacity: 0; width: 100%; border-radius: 15px; position: absolute; margin-top: 1rem; left: 0; display: none; }  
+nav li:hover {                    background: #CA1D48; cursor: pointer; border-radius: 5px;}  
+nav li#drop {                     border-radius: 5px 5px 0 0;}
+nav ul li ul {                  background: #CA1D48; visibility: hidden; opacity: 0; width: 100%; border-radius: 0 0 5px 5px; position: absolute; margin-top: 1rem; left: 0; }  
+nav li:hover > #drop {          border-radius: 20px;}
 nav ul li:hover > ul,
 nav ul li:focus-within > ul, /* this is the line we add */
 nav ul li ul:hover {
     visibility: visible;
     opacity: 1;
-    display: block;
   }
   
 nav ul li ul li {
@@ -38,8 +39,8 @@ nav ul li ul li {
 /* LOGIN/SIGNUP NAV BUTTON STYLES */
 .login {                        float: right; margin: 0;}
 ul.log {                        margin: 0; padding: 0; list-style: none;}
-ul.log li {                     font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 16px; font-weight: 900; margin: 0; display: inline-block; margin: 0 15px 0 0;}
-ul.log li a {                   display: block; padding: 15px 25px; text-decoration: none;}
+ul.log li {                     font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 900; margin: 0; display: inline-block; margin: 0 15px 0 0;}
+ul.log li a {                   display: block; padding: 15px 25px; text-decoration: none; border-radius: 5px;}
 ul.log li.signup a {            color: #CA1D48;}
 ul.log li.logins a {            color: #fff; background-color: #CA1D48;}
 

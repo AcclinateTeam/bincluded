@@ -16,7 +16,7 @@ const Careers = () =>
     const scrollToRef = () =>
     {
         let hero = document.getElementById('hero');
-        let heroHeight = hero.offsetHeight;
+        let heroHeight = hero!.offsetHeight;
 
         window.scrollTo({
             top: heroHeight,

@@ -9,6 +9,7 @@ import Header from '../components/Header';
 import Logo from '../components/subComponents/Logo';
 import ShareYourStory from '../components/ShareYourStory';
 import Loading from '../components/Loading';
+import SiteSearch360 from 'site-search-360-react';
 
 const Home = () =>
 {
@@ -44,7 +45,7 @@ const Home = () =>
     const scrollToRef = () =>
     {
         let hero = document.getElementById('hero');
-        let heroHeight = hero.offsetHeight;
+        let heroHeight = hero!.offsetHeight;
 
         window.scrollTo({
             top: heroHeight,
@@ -66,9 +67,7 @@ const Home = () =>
             {loading === false ? (
                 <>
                     {/* HEADER COMPONENT IMPORT */}
-                    <Header />
-
-                    
+                    <Header />                    
 
                     {/* JUMBOTRON COMPONENT */}
                     <section id="hero" className="home">
@@ -95,9 +94,7 @@ const Home = () =>
                             <FontAwesomeIcon icon="arrow-down" onClick={scrollToRef} />
                             <h3>Scroll Down</h3>
                         </div>
-                    </section>
-
-                    <script async src="https://js.sitesearch360.com/plugin/bundle/3007.js"></script>
+                    </section>                    
 
                     {/* WHO WE ARE */}
                     <section className="whoWeAre">
@@ -158,6 +155,8 @@ const Home = () =>
                             </div>
                         </div>
                     </section>
+
+                    <SiteSearch360 siteId="b-included.com_1" />asdasdasdad
 
                     {/* WHAT WE DO SECTION */}
                     <section className="whatwedo">
@@ -329,13 +328,13 @@ const Home = () =>
                     </section>
 
                     {/* SHAR YOUR STORY SECTION */}
-                    <ShareYourStory />
+                    {/* <ShareYourStory /> */}
 
                     {/* WHY_NOW? COMPONENT */}
                     <section>
                         <div className="container">
                             <div className="row whyNow">
-                                <div className="seven columns offset-by-one-half">
+                                <div className="seven columns offset-by-one-half whyNum">
                                     <div className="container statis">
                                         <div className="third columns stats">
                                             <div className="ten columns stat">
@@ -430,7 +429,6 @@ const Home = () =>
                                             <Link className="button solid" to="/covid">More Info</Link>
                                         </div>
                                     </div>
-                                    <div className="bg" style={{ backgroundImage: "url(/images/research.jpg)" }}></div>
                                 </div>
                             </div>
                         </div>

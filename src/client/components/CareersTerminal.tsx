@@ -146,7 +146,7 @@ const Terminal = () =>
             <>
                 <section className="addRes cars">
                     <div className="container">
-                        <div className="seven columns offset-by-one-half">
+                        <div className="seven columns offset-by-one-half addResWide">
                             <div className="header">
                                 <h2>Career Resources</h2>
                                 <p>Click the button below to select resources by category. Click the resource card to view more information.</p>

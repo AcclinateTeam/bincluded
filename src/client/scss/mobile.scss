@@ -150,7 +150,7 @@
     .hero .callout .calltext h1 {                                   font-size: 64px; line-height: 64px;}
     .health.hero .calltext h1, .family.hero .calltext h1, .career.hero .calltext h1, .cov.hero .calltext h1, .why.hero .calltext h1 {                                     font-size: 56px; line-height: 56px;}   
     
-    .health.hero .calloutbg {                       background-position: -600px 0;}
+    .health.hero .calloutbg {                    background-position: -600px 0;}
     .cov.hero .calloutbg {                       background-position: -600px 0;}
     .why.hero .calloutbg {                       background-position: -500px 0;}
 
@@ -247,6 +247,9 @@
     .trials .search h2 {                        margin: 0 0 50px; color: #050236;}
 
     // COVID PAGE STYLES
+    .covids {                                          margin: 0 5% 50px;}
+    .covids h2 {                                       padding: 0;}
+    .covids .text p {                                  font-size: 22px; line-height: 30px; margin: 0; padding: 30px 0 0; border-left: none; font-weight: 300;}
     .covidstats {                                      padding: 0;}
     .covidstats .text {                                 padding: 50px 5% 0;}
     .covidstats .text iframe {                         width: 100%; padding: 0;}

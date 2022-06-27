@@ -16,7 +16,7 @@ const Family = () =>
     const scrollToRef = () =>
     {
         let hero = document.getElementById('hero');
-        let heroHeight = hero.offsetHeight;
+        let heroHeight = hero!.offsetHeight;
         
         window.scrollTo({
             top: heroHeight,
@@ -116,7 +116,7 @@ const Family = () =>
                                 <div className="cards">
                                     <Link to="/whyNow">
                                         <div className="card">
-                                            <img src="/images/youthRes.jpg" alt="Who_We_Are" />
+                                            <img src="/images/research.jpg" alt="Who_We_Are" />
                                             <div className="text">
                                                 <h3>Educational Resources</h3>
                                                 <p>Access education services to support learning and development.</p>
@@ -129,7 +129,7 @@ const Family = () =>
                                 <div className="cards">
                                     <a href="">
                                         <div className="card">
-                                            <img src="/images/research.jpg" alt="Who_We_Are" />
+                                            <img src="/images/transpoCareers.jpg" alt="Who_We_Are" />
                                             <div className="text">
                                                 <h3>Transportation Resources</h3>
                                                 <p>Access affordable transportation services across the Birmingham area</p>

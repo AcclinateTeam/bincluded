@@ -10,7 +10,7 @@ const Footer = () =>
 
             {/* FOOTER COMPONENT */}
             <div className="container footer">
-                <div className="seven columns offset-by-one-half">
+                <div className="seven columns offset-by-one-half addResWide">
                     <div className="container">
                         <div className="fourth columns">
                             <div className="footLogo">
@@ -36,7 +36,7 @@ const Footer = () =>
                                     <Link to="/whynow">Why Now?</Link>
                                 </li>
                                 <li>
-                                    <a href="/blog">Blog</a>
+                                    <a href="/blog">Stories</a>
                                 </li>
                                 <li>
                                     <a href="https://prosperbham.com/">Prosper</a>
@@ -83,7 +83,7 @@ const Footer = () =>
             </div>
 
             <div className="container">
-                <div className="seven columns offset-by-one-half">
+                <div className="seven columns offset-by-one-half addResWide">
                     <div className="footend">
                         <ul>
                             <li>

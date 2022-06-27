@@ -10,25 +10,25 @@ const SubHeader = () =>
         // VARIABLE SETTINGS
         const header = document.querySelector('header');
         const headerWrapper = document.getElementById('header-wrapper');
-        const headWrapHeight = headerWrapper.offsetHeight;
+        const headWrapHeight = headerWrapper!.offsetHeight;
         const navBg = document.getElementById('navButtonBg');
         const openButton = document.getElementById('button-open');
         const closeButton = document.getElementById('button-close');
         // MENU TOGGLE
         if (headWrapHeight <= 61)
         {
-            header.style.position = 'fixed';
-            headerWrapper.setAttribute('style', `height: 100vh; background-color: #04278E;`);
-            navBg.setAttribute('style', `background-color: #fff;`);
-            openButton.setAttribute('style', `opacity: 0;`);
-            closeButton.setAttribute('style', `opacity: 1;`);
+            header!.style.position = 'fixed';
+            headerWrapper!.setAttribute('style', `height: 100vh; background-color: #04278E;`);
+            navBg!.setAttribute('style', `background-color: #fff;`);
+            openButton!.setAttribute('style', `opacity: 0;`);
+            closeButton!.setAttribute('style', `opacity: 1;`);
         } else
         {
-            header.style.position = 'fixed';
-            headerWrapper.setAttribute('style', `height: 60px; background-color: rgb(0,0,0,0);`);
-            navBg.setAttribute('style', `background-color: #CA1D48;`);
-            openButton.setAttribute('style', `opacity: 1;`);
-            closeButton.setAttribute('style', `opacity: 0;`);
+            header!.style.position = 'fixed';
+            headerWrapper!.setAttribute('style', `height: 60px; background-color: rgb(0,0,0,0);`);
+            navBg!.setAttribute('style', `background-color: #CA1D48;`);
+            openButton!.setAttribute('style', `opacity: 1;`);
+            closeButton!.setAttribute('style', `opacity: 0;`);
         }
     }
 
@@ -39,18 +39,18 @@ const SubHeader = () =>
         var header = document.querySelector('header');
         var windowWidth = window.innerWidth;
         var windowPosition = window.scrollY;
-        var headWrapHeight = document.getElementById('header-wrapper').offsetHeight;
+        var headWrapHeight = document.getElementById('header-wrapper')!.offsetHeight;
 
         // MOBILE NAV SCROLL ANIMATION
         if (windowPosition >= 900 && headWrapHeight <= 61 || windowPosition >= 900 && headWrapHeight >= 61)
         {
-            header.setAttribute('style', `position: fixed; background-color: #050236;`);
+            header!.setAttribute('style', `position: fixed; background-color: #050236;`);
         } else if (windowWidth <= 425 && headWrapHeight >= 61 || windowPosition >= 900 && headWrapHeight >= 61)
         {
-            header.setAttribute('style', `position: fixed; background-color: #050236;`);
+            header!!.setAttribute('style', `position: fixed; background-color: #050236;`);
         } else if (windowPosition <= 900 && headWrapHeight <= 61 || windowPosition <= 900 && headWrapHeight >= 61)
         {
-            header.setAttribute('style', `position: fixed; background-color: #050236;`);
+            header!.setAttribute('style', `position: fixed; background-color: #050236;`);
         }
     });
 
@@ -88,12 +88,12 @@ const SubHeader = () =>
                                 </li>
                                 <li><Link to='/trials'>Clinical Research</Link></li>
                                 <li><Link to='/covid'>COVID-19</Link></li>
+                                <li><Link to='/partners'>Partners</Link></li>
                             </ul>
                         </nav>
 
                         <div className="login">
                             <ul className="log">
-                                <li className="signup"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Log In</a></li>
                                 <li className="logins"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">Join The Community</a></li>
                             </ul>
                         </div>

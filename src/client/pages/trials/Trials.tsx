@@ -23,7 +23,7 @@ const Trials = (props: any) =>
     const scrollToRef = () =>
     {
         let hero = document.getElementById('hero');
-        let heroHeight = hero.offsetHeight;
+        let heroHeight = hero!.offsetHeight;
         
         window.scrollTo({
             top: heroHeight,
@@ -128,7 +128,7 @@ const Trials = (props: any) =>
             <section className="trials space">
                 <div className="container search">
                     <div className="seven columns offset-by-one-half">
-                        <h2>Clinical Trial Search</h2>
+                        <h2>Clinical Trial <span className="blue">Search</span></h2>
 
                         <div className="container">
                             <div className="six columns offset-by-two">

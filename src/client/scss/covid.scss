@@ -10,6 +10,13 @@
 .covid19 .phrase .face .overlay {           width: 60%; height: 100%; background: linear-gradient(90deg, rgba(5,2,54,1) 35%, rgba(0,0,0,0) 100%);}
 .covid19 .phrase .face .overlay h1 {        font-size: 64px; line-height: 64px; padding: 125px 0 0 50px; color: #fff;}
 
+// WHAT IS CLINICAL RESEARCH STYLES
+.covids {                                      margin: 0 15% 100px;}
+.covids h2 {                                    padding: 35px 0 0;}
+.covids .image video {                         width: 100%; position: relative; background-color: #fff; overflow: hidden;}
+// .covids .text {                                background-color: #cc3;}
+.covids .text p {                              font-size: 22px; line-height: 30px; margin: 0 100px 0 100px; padding: 40px 0 40px 100px; border-left: 5px solid #050236; font-weight: 300;}
+
 // COVID VIDEO STYLES
 .covid19 .panel {                           margin: 30px -20px;}
 .covid19 .panes {                           padding: 20px;}
@@ -48,8 +55,8 @@
 // WHY IT MATTERS SECTION STYLES
 .vaxxinfo {                                         margin: 100px 15%;}
 .vaxxinfo h2 {                                      padding: 0 0 50px; text-align: center;}
-.vaxxinfo .heading ul {                              font-size: 16px; line-height: 24px; margin: 0 100px 0 0; padding: 70px 100px 70px 0; border-right: 5px solid #000; font-weight: 300;}
-.vaxxinfo .heading ul li {                      margin: 0 0 10px;}
+.vaxxinfo .heading ul {                              font-size: 16px; line-height: 24px; margin: 0 100px 0 0; padding: 70px 100px 70px 0; border-right: 5px solid #050236; font-weight: 300;}
+.vaxxinfo .heading ul li {                      margin: 0 0 10px; color: #050236;}
 .vaxxinfo .heading svg {                        float: left; margin: 5px 8px 0 0; color: #CA1D48;}
 .vaxxinfo .image video {                         width: 100%; position: relative; background-color: #fff; overflow: hidden;}
 .vaxxinfo .text {                                padding: 25px 50px 0;}

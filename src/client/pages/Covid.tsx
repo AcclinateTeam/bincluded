@@ -12,7 +12,7 @@ const Covid = () =>
     const scrollToRef = () =>
     {
         let hero = document.getElementById('hero');
-        let heroHeight = hero.offsetHeight;
+        let heroHeight = hero!.offsetHeight;
         
         window.scrollTo({
             top: heroHeight,
@@ -60,7 +60,7 @@ const Covid = () =>
             </section>
 
             {/* WHAT IS COVID-19 SECTION */}
-            <section className="studies">
+            <section className="covids">
                 <div className="container">
                     <div className="four columns">
                         <div className="heading">
@@ -139,7 +139,7 @@ const Covid = () =>
                 <div className="ten columns">
                         <h2 style={{ textAlign: 'center', paddingTop: '100px'}}>COVID <span className="blue">Partners</span></h2>
                     </div>
-                    <div className="seven columns offset-by-one-half">
+                    <div className="seven columns offset-by-one-half addResWide">
                         <div className="panel">
                             <div className="container">
                                 <div className="ten columns">

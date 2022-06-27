@@ -156,8 +156,6 @@ const Home = () =>
                         </div>
                     </section>
 
-                    {/* <SiteSearch360 siteId="b-included.com_1" />asdasdasdad */}
-
                     {/* WHAT WE DO SECTION */}
                     <section className="whatwedo">
                         <div className="container">

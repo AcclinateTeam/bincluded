@@ -156,7 +156,7 @@ const Home = () =>
                         </div>
                     </section>
 
-                    <SiteSearch360 siteId="b-included.com_1" />asdasdasdad
+                    {/* <SiteSearch360 siteId="b-included.com_1" />asdasdasdad */}
 
                     {/* WHAT WE DO SECTION */}
                     <section className="whatwedo">
@@ -328,7 +328,7 @@ const Home = () =>
                     </section>
 
                     {/* SHAR YOUR STORY SECTION */}
-                    {/* <ShareYourStory /> */}
+                    <ShareYourStory />
 
                     {/* WHY_NOW? COMPONENT */}
                     <section>

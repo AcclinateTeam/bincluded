@@ -67,6 +67,11 @@
     .promise .text p {                              font-size: 22px; line-height: 30px; margin: 0; padding: 40px 0 40px 100px;}
     .commit {                                       margin: 100px 10%;}
     .partWithUs .image img {                       width: 126%; margin: 25px 0 0 -40px;}
+    .homies {                                      margin: 50px 5%;}
+    .homies .heading h2 {                           margin: 0 0 75px;}
+    .homies .image {                                width: calc(100% - 50px); margin: 0 0 0 50px;}
+    .featured {                                     padding: 0 0 100px; background-color: #fff;}
+
 
     .whyWeAre {                                     margin: 0 10% 100px;}
     .leaders .addResWide {                          width: 80% !important; margin: 0 10% !important;}
@@ -79,7 +84,7 @@
 }
 
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1540px) {
 
     .home .callout {                width: 40%; height: 600px; position: absolute; top: 80px; left: 5%;}
 

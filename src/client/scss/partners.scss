@@ -43,3 +43,21 @@
 .homies .content p {                        font-size: 18px; line-height: 26px; margin: 0 0 30px;}
 .homies .content p span {                   font-weight: 700; color: #CA1D48;}
 .homies .image {                            height: 450px; border: 2px solid #050236; border-radius: 15px; overflow: hidden;}
+
+// HOME PAGE WHO WE ARE STYLES
+.healthTech {                                     margin:100px 15%;}
+.healthTech h2 {                                  margin: 0 0 50px; text-align: center;}
+.healthTech .header p {                                   text-align: center;}
+.healthTech .box {                                width: auto; margin: 70px -20px 0;}
+.healthTech .deck .cards {                            width: calc(100% - 40px); height: 560px; border-radius: 15px; margin: 0 20px 40px; overflow: hidden;}
+.healthTech .deck .cards:hover {                      transform: scale(1.03);}
+.healthTech .deck .cards .card {                      width: 100%; height: 100%; position: relative; overflow: hidden;}
+.healthTech .deck .cards .card img {                  width: 100%;}
+.healthTech .deck .cards .card .cardimg {             width: 100%; height: 100%; background-repeat: no-repeat; background-size: contain; background-position: center;}
+.healthTech .deck .cards .card:hover .cardimg {       transform: scale(1.03);}
+.healthTech .deck .cards .card .image {               width: calc(100% - 4px); height: 200px; border-radius: 15px 15px 0 0; border: 2px solid #050236; background-repeat: no-repeat; background-size: 50%; background-position: center;}
+.healthTech .deck .cards .card .text {                width: calc(100% - 60px); height: 300px; position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
+.healthTech .deck .cards .card .text h3 {             font-size: 24px; line-height: 24px; font-weight: 900; color: #fff; margin: 0;}
+.healthTech .deck .cards .card .text p {              font-size: 16px; line-height: 22px; font-weight: 300; border: none; padding: 10px 0 20px; color: #ffffff99; margin: 0;}
+.healthTech .deck .cards .card .text a {              font-size: 20px; line-height: 20px; font-weight: 700; border: none; padding: 0; text-decoration: none; color: #ffffff; margin: 0;}
+.healthTech .deck .cards .card .text a svg {          font-size: 18px; line-height: 20px; color: #CA1D48;}

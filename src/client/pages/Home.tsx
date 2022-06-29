@@ -67,7 +67,7 @@ const Home = () =>
             {loading === false ? (
                 <>
                     {/* HEADER COMPONENT IMPORT */}
-                    <Header />                    
+                    <Header />
 
                     {/* JUMBOTRON COMPONENT */}
                     <section id="hero" className="home">
@@ -94,7 +94,7 @@ const Home = () =>
                             <FontAwesomeIcon icon="arrow-down" onClick={scrollToRef} />
                             <h3>Scroll Down</h3>
                         </div>
-                    </section>                    
+                    </section>
 
                     {/* WHO WE ARE */}
                     <section className="whoWeAre">
@@ -104,7 +104,7 @@ const Home = () =>
                             </div>
                             <div className="six columns">
                                 <p>
-                                    <Logo color="#050236" /> addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.
+                                    <Logo color="#050236" /> addresses healthcare needs and subsequently educational, employment, and financial gaps so that metro-Birmingham area residents can work towards improved health.
                                 </p>
                             </div>
                             <div className="ten columns">
@@ -162,7 +162,10 @@ const Home = () =>
                             <div className="third columns">
                                 <div className="text">
                                     <h2>Resources<br /> At Your <span className="blue">Fingertips</span></h2>
-                                    <p>Learn more about each of the resources available to you in the Birmingham area</p>
+                                    <p>Learn more about each of the resources available to you in the Birmingham area.</p>
+                                    <h4>Looking for something <span className="blue">specific?</span></h4>
+                                    <p>Use the search feature below to search our resources.</p>
+                                    <SiteSearch360 siteId="b-included.com_1" />
                                 </div>
                             </div>
                             <div className="twothird columns">
@@ -233,6 +236,15 @@ const Home = () =>
                             </div>
                         </div>
                     </section>
+
+                    {/* <section className="search">
+                        <div className="container">
+                            <div className="ten columns">
+                                <h2>Search <span className="blue">Resources</span></h2>
+                                <p>Looking for something specific? Enter your search critera below to get started.</p>                                
+                            </div>
+                        </div>
+                    </section> */}
 
                     {/* FEATURED STORIES SECTION */}
                     <section className="stories">
@@ -438,7 +450,7 @@ const Home = () =>
                             <div className="row covid">
                                 <div className="ten columns">
                                     <div className="eight columns offset-by-one">
-                                        <h2>The latest data related to <span className="blue">Covid-19</span></h2>
+                                        <h2>The latest data related to <span className="blue">COVID-19</span></h2>
                                         <h3>for the Metro-Birmingham Area</h3>
                                         <div className="third columns">
                                             <div className="data border">

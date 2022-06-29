@@ -52,10 +52,10 @@ import Celeste from './pages/blog/Celeste';
 import Danny from './pages/blog/Danny';
 import Sonja from './pages/blog/Sonja';
 import Walladean from './pages/blog/Walladean';
-import CooperGreen from './pages/subpages/CooperGreen';
-import LHSA from './pages/subpages/LHSA';
-import Viva from './pages/subpages/Viva';
-import UWay from './pages/subpages/UWay';
+import CooperGreen from './pages/subpages/partners/CooperGreen';
+import LHSA from './pages/subpages/partners/LHSA';
+import Viva from './pages/subpages/partners/Viva';
+import UWay from './pages/subpages/partners/UWay';
 
 library.add(fab, fas, far);
 

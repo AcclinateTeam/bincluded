@@ -13,9 +13,9 @@
 /* CALLOUT BUTTONS */
 .button {                                       font-family: 'DM Sans', sans-serif; border-radius: 5px; font-weight: 900; line-height:52px; margin: 0 15px 0 0;}
 .button.signup {                                border: 1px solid #CA1D48; background-color: #CA1D48; color: #fff;} 
-.button.learnmore {                             border: 1px solid #fff; background-color: none !important; color: #cecece;}
+.button.learnmore {                             border: none; background-color: #050236 !important; color: #fff;}
 .button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
-.button.learnmore:hover {                       border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;}
+.button.learnmore:hover {                       border: none; background-color: #EEC31A !important; color: #0F0F10;}
 
 // HOME PAGE WHO WE ARE STYLES
 .whoWeAre {                                     margin:100px 15%;}
@@ -37,7 +37,7 @@
 // HOME PAGE WHAT WE DO STYLES
 .whatwedo {                                         background-color: #fff; padding: 100px 15%;}  
 .whatwedo .text {                                   margin: 0 50px 0 0;}
-.whatwedo .text p {                                 font-size: 18px; line-height: 26px; padding: 30px 0 0; font-weight: 400; }
+.whatwedo .text p {                                 font-size: 18px; line-height: 26px; padding: 30px 0 50px; font-weight: 400; }
 .whatwedo .deck .cards {                            margin: 0 5px 10px; border: 2px solid #050236; border-radius: 15px; padding: 30px;}
 .whatwedo .deck a {                                 color:#000; text-decoration: none;}
 .whatwedo .deck .cards a {                          font-size: 20px; font-weight: 700; color: #050236;}
@@ -50,6 +50,13 @@
 .whatwedo .deck .cards svg.icon {                   border: 2px solid #CA1D48; font-size: 30px; border-radius: 35px; padding: 20px; margin: 0 0 20px; color: #CA1D48;}
 .whatwedo .deck .cards h4  {                        padding: 0 0 10px; text-transform: none; }
 .whatwedo .deck .cards p  {                         height: 104px; font-size: 18px; margin: 0 0 20px; line-height: 26px;}
+
+.whatwedo .ss360-custom-search {                    justify-content: left;}
+.whatwedo .ss360-ac-bg {                              background-color: #050236;}
+.whatwedo .ss360-ac-b {                               background-color: #050236;}
+.whatwedo .ss360-custom-search .ss360-custom-search__searchbox {                  width: 75%; border: 2px solid #050236;}
+.whatwedo .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid #050236;}
+.whatwedo .ss360-custom-search .ss360-custom-search__searchbutton:hover {               border: 2px solid #3d8fff;}
 
 // HOME PAGE STORIES STYLESs
 .stories {                                          padding: 100px 15% 50px; background-color: #fff;}
@@ -103,7 +110,7 @@
 
 .whyNow .stats {                    padding: 100px 0 0;}
 .whyNow .stats .stat {              display: block;}
-.whyNow .stat .point {              margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; border: 1px solid #287FDD;}
+.whyNow .stat .point {              margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; border: 1px solid #287FDD; border-radius: 5px;}
 .whyNow .stat .point h3 {           font-family: 'Montserrat', sans-serif; font-size: 92px; line-height: 92px; font-weight: 900; color: #fff; margin: 0 0 20px; text-transform: none;}
 .whyNow .stat .point p {            height: 40px; font-size: 14px; line-height: 20px; font-weight: 400; color: #fff; margin: 0; text-transform: none;}
 
@@ -124,7 +131,7 @@
 .research .panes {                      width: 100%; height: 550px; display: block; position: relative; background-color: #050236;}
 .research .image {                      width: 100%; height: 550px; display: block; position: absolute; top: 0; left: 0;  background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.5;}
 .research .heading {                    display: block; position: absolute; top: 50%; transform: translateY(-50%); left: 50%; margin-left: -290px;}
-.research .heading h1 {                 font-size: 47px; line-height: 47px; text-align: center; color: #fff;}
+.research .heading h1 {                 font-size: 64px; line-height: 64px; text-align: left; color: #fff;}
 .research .content {                    height: 550px; display: block; position: relative; text-align: center; background-color: #CA1D48;}
 .research .content .bg {                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.5;}
 .research .content .text {                          padding: 180px 100px; color: #fff; z-index: 9;}

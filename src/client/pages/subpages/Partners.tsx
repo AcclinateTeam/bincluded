@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../../components/Header';
 import PartnerTerminal from '../../components/PartnerTerminal';
 import PartnerWithUs from '../../components/PartnerWithUs';
+import HealthTechTerminal from '../../components/HealthTechTerminal';
 
 
 const Partners = () =>
@@ -19,7 +20,7 @@ const Partners = () =>
     const scrollToRef = () =>
     {
         let hero = document.getElementById('hero');
-        let heroHeight = hero.offsetHeight;
+        let heroHeight = hero!.offsetHeight;
         
         window.scrollTo({
             top: heroHeight,
@@ -100,6 +101,9 @@ const Partners = () =>
 
             {/* FEATURED PARTNER LOGOS */}
             <PartnerTerminal />
+
+            {/* PROSPER HEALTH-TECH LOGOS */}
+            <HealthTechTerminal />
 
             <PartnerWithUs />
         </>

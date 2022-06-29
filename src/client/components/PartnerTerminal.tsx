@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useState } from 'react';
 
-const Terminal = () =>
+const PartnerTerminal = () =>
 {
 
     const [lhs, setLhs] = useState(false);
@@ -87,5 +87,5 @@ const Terminal = () =>
     )
 }
 
-export default Terminal;
+export default PartnerTerminal;
 

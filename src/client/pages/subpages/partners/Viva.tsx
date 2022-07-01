@@ -70,7 +70,7 @@ const VivaHealth = () =>
                     <div className="four columns">
                         <div className="content">
                             <h3>Description</h3>
-                            <p>Viva Health, Inc. is a health maintenance organization providing quality, accessible health care. With backing from the UAB Health System, a world leader in quaternary and tertiary health care services Viva Health simplifies and improves health care through a network that includes many of the most respected physicians and hospital providers in the market..</p>
+                            <p>Viva Health, Inc. is a health maintenance organization providing quality, accessible health care. With backing from the UAB Health System, a world leader in quaternary and tertiary health care services Viva Health simplifies and improves health care through a network that includes many of the most respected physicians and hospital providers in the market.</p>
                             <h3>Who Will Benefit</h3>
                             <p>Viva Health offers a continuum of care that covers everything from routine office visits, emergencies, and major and minor care to adult, obstetrical, and pediatric care. Individuals seeking a primary care physician, a particular medication or prescription, or information of medicare insurance would find Viva Health beneficial.</p>
                             <div className="container">

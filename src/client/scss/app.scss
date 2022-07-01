@@ -85,7 +85,7 @@ span.red {                                  display: inline-block; color: #CA1D4
 
 
 // ADDITIONAL RESOURCE STYLES
-.addRes {                               margin: 100px 0 0; padding: 100px 0; background-color: #287FDD55;}
+.addRes {                               margin: 0; padding: 100px 0; background-color: #fff;}
 .addRes .header {                       margin: 0 auto 50px; text-align: center;}
 .addRes .header h2 {                    font-size: 64px; line-height: 64px; padding: 0 0 30px; margin: 0;}
 .addRes .header p {                     font-size: 18px; line-height: 24px; padding: 0; margin: 0;}
@@ -99,7 +99,7 @@ span.red {                                  display: inline-block; color: #CA1D4
 .addRes .panel {                        margin: 30px -10px;}
 .addres .panel a {                      color: #fff; font-weight: 700; text-decoration: none;}
 .addres .panel a svg {                  color: #CA1D48;}
-.addRes .panes {                        height: 350px; padding: 20px; border-radius: 15px; overflow: hidden; margin: 0 10px 20px; position: relative; background-color: #fff;}
+.addRes .panes {                        height: 350px; padding: 20px; border-radius: 15px; border: 2px solid #050236; overflow: hidden; margin: 0 10px 20px; position: relative; background-color: #fff;}
 .addRes .panes:hover {                  transform: scale(1.02);}
 .addRes .panes:hover .pane {            bottom: -20px;}
 .addRes .pane {                         padding: 40px 30px 30px; width: calc(100% - 60px); height: 350px; position: absolute; bottom: -450px; left: 0; background-color: #050236; z-index: 9;}

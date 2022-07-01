@@ -1,10 +1,21 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import ResPartner from '../ResPartner';
 
 const AllAdult = () =>
 {
     return (
         <>
+            <ResPartner title="Cooper Green Mercy Hospital" image="cooper.png" description="Full-service ambulatory care facility that includes both primary and specialty care, urgent care, physical, occupational, and speech therapy, laboratory services, radiology and a pharmacy, regardless of ability to pay." benefit="Individuals with or without health care seeking any type of medical care including a primary physician, specialist, or pharmacy." url="https://coopergreen.org/"/>
+
+            <ResPartner title="Live Health Smart Alabama" image="uablive.png" description="Live HealthSmart Alabama (LHSA) is a transformational movement to make good health simple for all Alabamians. Fueled by a network of more than 100 trusted community relationships and partners LHSA strives to decrease the incidence of chronic disease and provide greater health equity across the state." benefit="Residents of the Bush Hills, East Lake, Kingston, or Titusville communities. Anyone interested in learning how to lead a healthy lifestyle, seeking access to healthy food options, or access to health screenings." url="https://www.uab.edu/livehealthsmartal/"/>
+
+            <ResPartner title="Viva Health" image="viva.png" description="Viva Health, Inc. is a health maintenance organization providing quality, accessible health care. With backing from the UAB Health System, a world leader in quaternary and tertiary health care services Viva Health simplifies and improves health care through a network that includes many of the most respected physicians and hospital providers in the market." benefit="Viva Health offers a continuum of care that covers everything from routine office visits, emergencies, and major and minor care to adult, obstetrical, and pediatric care." url="https://www.vivahealth.com"/>
+
+            <ResPartner title="The United Way" image="uway.jpg" description="United Way of Central Alabama builds a great community and advances the common good by bringing people together to help others. By pooling our resources and working together, we pave the way for real, tangible change in health, education and financial stability." benefit="Individuals looking for hunger assistance, financial and housing education, health care or information, Veteran services, and/or senior & disability care." url="https://www.uwca.org/"/>
+            
+            <ResPartner title="Impact Family Counseling" image="impact.jpg" description="The agency provides outpatient counseling and a variety of other services such as mentoring, relationship education, family strengthening and anger management to all people, regardless of religion, sex, race, ethnicity, age, or disability." benefit="Anyone seeking mentorship, relationship education, family strengthening and/or anger management." url="http://impactal.org/index.html"/>
+            
             {/* NEW ROW */}
             <div className="third columns">
                 <a href="https://christhealthcenter.org/new-patients/">
@@ -12,9 +23,9 @@ const AllAdult = () =>
                         <div className="image" style={{ backgroundImage: `url("/images/partners/christ-health.png")`, backgroundColor: '#ffffff' }}></div>
                         <div className="pane">
                             <h2>Christ Health Center</h2>
-                            <p>The agency provides outpatient counseling and a variety of other services such as mentoring, relationship education, family strengthening and anger management to all people, regardless of religion, sex, race, ethnicity, age, or disability.</p>
+                            <p>Providing affordable, compassionate care to improve the physical, mental and spiritual wellbeing of children, women and families.</p>
                             <h2>Who Will Benefit</h2>
-                            <p>Anyone seeking mentorship, relationship education, family strengthening and/or anger management.</p>
+                            <p>Individuals with or without insurance seeking primary care, dental services, and professional counseling, as well as medication therapy</p>
                             <a href="https://christhealthcenter.org/new-patients/">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
                         </div>
                     </div>

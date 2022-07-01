@@ -2,7 +2,7 @@
     // HEADER STYLES
     header {                        width: 100%; height: auto; position: absolute; margin: 0; padding: 0; top: 0; left: 0; z-index: 88;}
     .header.wrapper {               width: 100%; height: 60px; overflow: hidden; margin: 0; padding: 0; position: relative; background-color: rgb(0,0,0,0); } 
-    .header .logo {                 position: absolute; top:20px; left: 20px;}
+    .header .logo {                 position: absolute; top: 20px; left: 20px;}
     .header .logo svg {             height: 20px; display: block; margin: 0;}
     // SUB HEADER STYLES
     header.sub {                            width: 100%; display: block; margin: 0; padding: 0; position: relative; top: 0; left: 0; z-index: 99;}
@@ -13,14 +13,15 @@
     // NAVBAR STYLES
     nav {                           padding: 70px 0 0; float: none; margin: 0 0 0 5%;}
     ul.nav {                        margin: 0;}
-    ul.nav li {                     margin: 0; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 38px; line-height: 46px; font-weight: 900; position: relative; display: block; padding: 10px 0; margin: 0 15px 0 0;}
+    ul.nav li {                     width: calc(100% - 35px); font-family: 'DM Sans', sans-serif; text-transform: none; font-size: 28px; line-height: 28px; font-weight: 900; position: relative; display: block; padding: 10px; margin: 0 15px 0 0;}
+    nav li:hover {                    background: #CA1D48; cursor: pointer; border-radius: 5px;} 
     ul.nav li a {                   text-decoration: none; color: #fff;}
     nav ul li ul {                  height: auto; background: #CA1D48; visibility: visible; opacity: 1; width: 100%; position: relative; margin: 1rem; left: 0; display: block; } 
     nav ul li ul li a {             font-size: 24px; line-height: 24px;}    
     // LOGIN BUTTONS
     .login {                        width: 100%; float: left; margin: 0;}
     ul.log {                        margin: 0; padding: 0; list-style: none;}
-    ul.log li {                     font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 16px; font-weight: 900; margin: 0; display: block; margin: 0;}
+    ul.log li {                     font-family: 'DM Sans', sans-serif; text-transform: none; font-size: 16px; font-weight: 900; margin: 0; display: block; margin: 0;}
     ul.log li a {                   display: block; padding: 0; text-decoration: none;}
     ul.log li.signup a {            font-size: 48px; line-height: 56px; margin: 10px 0 40px; color: #fff;}
     ul.log li.logins a {            width: 90%; font-size: 16px; padding: 20px 0; border-radius: 5px; margin: 30px 5%; text-align: center; color: #fff; background-color: #CA1D48;}
@@ -39,7 +40,7 @@
     .home .calloutbg {                                      width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
     .home .callout {                               width: 90%; height: 500px; position: absolute; top: 90px; left: 5%;}
     .home .callout .calltext {                     width: 100%; display: block;}
-    .home .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 75px; line-height: 75px; font-weight: 900; color: #fff; margin: 0 0 30px;}
+    .home .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 85px; line-height: 85px; font-weight: 900; color: #fff; margin: 0 0 30px;}
     .home .callout .calltext p {                   width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff; }
     .home .callout .callbutton {                   margin: 30px 0 0; display: block;}
     /* CALLOUT BUTTONS */
@@ -63,7 +64,7 @@
     // HOME PAGE WHO WE ARE STYLES
     .whoWeAre {                                     margin: 25px 5%;}
     .whoWeAre h2 {                                  font-size: 54px; line-height: 54px; margin: 10px 0 0;}
-    .whoWeAre p {                                   font-size: 24px; line-height: 32px; padding: 30px 0; border: none; font-weight: 400; }
+    .whoWeAre p {                                   font-size: 24px; line-height: 32px; padding: 30px 0; margin: 0; border: none; font-weight: 400; }
     .whoWeAre .box {                                width: auto; margin: 10px -20px 0;}
     .whoWeAre .deck .cards {                            width: calc(100% - 40px); height: 417px; border-radius: 15px; margin: 0 20px 5%; overflow: hidden;}
     .whoWeAre .deck .cards .card .text {                width: calc(100% - 60px); height: calc(50% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
@@ -71,7 +72,7 @@
 
     // HOME PAGE WHAT WE DO STYLES
     .whatwedo {                                         background-color: #fff; padding: 50px 5%;}  
-    .whatwedo .text {                                   margin: 0 50px 0 0;}
+    .whatwedo .text {                                   margin: 0 0 50px;}
     .whatwedo .text p {                                 font-size: 18px; line-height: 26px; padding: 30px 0; font-weight: 400; }
     .whatwedo .deck {                                   margin: 0 -4px;}
     .whatwedo .deck .cards {                            margin: 0 5px 5%; border: 2px solid #050236; border-radius: 15px; padding: 30px;}
@@ -119,17 +120,22 @@
     .whyNow .whyTextWide p {                width: 500px; font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 auto 30px; color: #fff;}
     .whyNow .statis {                   display: flex; flex-direction: column;}
     .whyNow .text {                     padding: 0; order: 1;}
-    .whyNow .stats {                    padding: 0; order: 2;}    
+    .whyNow .stats {                    padding: 0; order: 2;}
+    .whyNow .stat .point h3 {           font-size: 80px; line-height: 80px; }
+    .whyNow .stat .point p {            padding: 0; height: 40px;}
+
 
     // CLINICAL RESEARCH STYLES
     .research {                             height: auto; display: block;}
     .research .panes {                      width: 100%; height: 350px; display: block; position: relative; background-color: #050236;}
     .research .image {                      width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0;  background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.5;}
-    .research .heading {                    width: 90%; height: 100%; display: block; position: relative; top: 0; transform: none; left: 0; margin: 0; padding: 70px 5% 0;}
+    .research .heading {                    width: 90%; height: 100%; display: block; position: relative; top: 0; transform: none; left: 0; margin: 0; padding: 60px 5% 0;}
+    .research .heading h1 {                 font-size: 58px; line-height: 58px; text-align: center;}
+
     .research .content {                    height: 400px; display: block; position: relative; text-align: center; background-color: #CA1D48;}
     .research .content .text {              padding: 50px 50px; color: #fff;}
     .research .content .bg {                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.09;}
-    .covid {                                padding: 50px 0; text-align: center;}
+    .covid {                                padding: 50px 5%; text-align: center;}
     .covid h3 {                             font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: #050236; text-transform: none; padding: 0; margin: 0 15% 50px;}
     .partners {                             padding: 50px 5%;}
     .partners .image {                      width: calc(100% - 70px); height: 100px; margin: 20px 35px; background-repeat: no-repeat; background-size: contain; background-position: center; filter: grayscale(100%);}
@@ -356,13 +362,14 @@
 }
 
 @media only screen and (max-width: 400px) and (-webkit-min-device-pixel-ratio: 1) {
+    .header .logo {                 position: absolute; top: 20px; left: 20px;}
     // HOME PAGE CALLOUT STYLES
     .home {                                                 width: 100%; height: 100%; position: relative;  background-color: #050236; overflow: hidden;}
     .home video {                                           object-fit: contain; opacity: 0.9; object-position: -698px;}     
     .home .calloutbg {                                      width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
     .home .callout {                               width: 90%; height: 500px; position: absolute; top: 90px; left: 5%;}
     .home .callout .calltext {                     width: 100%; display: block;}
-    .home .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 55px; line-height: 55px; font-weight: 900; color: #fff; margin: 0 0 30px;}
+    .home .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 68px; line-height: 68px; font-weight: 900; color: #fff; margin: 0 0 30px;}
     .home .callout .calltext p {                   width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff; }
     .home .callout .callbutton {                   margin: 30px 0 0; display: block;}
     .button {                                           padding: 15px 15px;}
@@ -380,6 +387,7 @@
     .stories .case {                                    margin: 50px 0;}
     .stories .rack {                                    height: 300px; margin: 0 0 20px;}
     .stories .rack .frames {                            width: 100%; height: 100%; border-radius: 15px; margin: 0 0 20px; overflow: hidden;}
+    .whyNow .stat .point p {                padding: 0; height: 80px;}
     .research .heading {                    width: 90%; display: block; position: relative; top: 0; transform: none; left: 0; margin: 0 auto; padding: 75px 0 0;}
     .research .heading h1 {                 font-size: 48px; line-height: 48px; text-align: center;}
     .research .content .text {              padding: 40px 5%; color: #fff;}
@@ -464,6 +472,7 @@
     .stories .case {                                    margin: 50px 0;}
     .stories .rack {                                    height: 300px; margin: 0 0 20px;}
     .stories .rack .frames {                            width: 100%; height: 100%; border-radius: 15px; margin: 0 0 20px; overflow: hidden;}
+    .whyNow .stat .point p {                padding: 0; height: 80px;}
     .research .heading {                    width: 90%; display: block; position: relative; top: 0; transform: none; left: 0; margin: 0 auto; padding: 75px 0 0;}
     .research .heading h1 {                 font-size: 40px; line-height: 40px; text-align: center;}
     .research .content .text {              padding: 30px 5%; color: #fff;}

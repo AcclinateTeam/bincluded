@@ -237,15 +237,6 @@ const Home = () =>
                         </div>
                     </section>
 
-                    {/* <section className="search">
-                        <div className="container">
-                            <div className="ten columns">
-                                <h2>Search <span className="blue">Resources</span></h2>
-                                <p>Looking for something specific? Enter your search critera below to get started.</p>                                
-                            </div>
-                        </div>
-                    </section> */}
-
                     {/* FEATURED STORIES SECTION */}
                     <section className="stories">
                         <div className="container">
@@ -380,7 +371,7 @@ const Home = () =>
                                             <div className="whyText" style={{ textAlign: 'center' }}>
                                                 <h2>Why Now?</h2>
                                                 <p>There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices.   B-INCLUDED is that space and you can become part of that collective.</p>
-                                                <Link className="button learnmore" to="/WhyNow">Learn More</Link>
+                                                <Link className="button signup" to="/WhyNow">Learn More</Link>
                                             </div>
                                         </div>
                                         <div className="third columns stats">

@@ -5,7 +5,7 @@
 .home video {                                           object-fit: contain; opacity: 0.9;}     
 .home .calloutbg {                                      width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
 .home .callout {                                        width: 100%; height: 100vh;}
-.home .callout {                               width: 30%; height: 500px; position: absolute; top: 200px; left: 15%;}
+.home .callout {                               width: 30%; height: 500px; position: absolute; top: 150px; left: 15%;}
 .home .callout .calltext {                     width: 100%; display: block;}
 .home .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 94px; line-height: 97px; font-weight: 900; color: #fff; margin: 46px 0;}
 .home .callout .calltext p {                   width: 90%; font-size: 24px; line-height: 36px; font-weight: 400; color: #fff; }
@@ -110,7 +110,7 @@
 
 .whyNow .stats {                    padding: 100px 0 0;}
 .whyNow .stats .stat {              display: block;}
-.whyNow .stat .point {              margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; border: 1px solid #287FDD; border-radius: 5px;}
+.whyNow .stat .point {              margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; border: 2px solid #287FDD; border-radius: 5px;}
 .whyNow .stat .point h3 {           font-family: 'Montserrat', sans-serif; font-size: 92px; line-height: 92px; font-weight: 900; color: #fff; margin: 0 0 20px; text-transform: none;}
 .whyNow .stat .point p {            height: 40px; font-size: 14px; line-height: 20px; font-weight: 400; color: #fff; margin: 0; text-transform: none;}
 

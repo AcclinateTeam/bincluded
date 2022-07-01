@@ -129,7 +129,7 @@ const HealthTech = () =>
                                             <div className="cards">
                                                 <a href="http://peakmindllc.com" target="_blank" rel="noopener noreferrer">
                                                     <div className="card">
-                                                        <div className="image" style={{ backgroundImage: `url("/images/partners/trudiary.png")` }}></div>
+                                                        <div className="image" style={{ backgroundImage: `url("/images/partners/peakmind.jpg")` }}></div>
                                                         <div className="text">
                                                             <h3>PeakMind</h3>
                                                             <p>Peak Mind’s mental well-being platform addresses the $1.1T problem of work-related stress,

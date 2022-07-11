@@ -90,32 +90,32 @@ const Blog = () =>
                             <div className="ten columns">
                                 <div className="container case">
 
-                                    <BlogItem path="pmj" img="media/pastormike.jpg" member="Pastor Mike Jr." title="Voice From Our Community" />
-                                    
-                                    <BlogItem path="angelica" img="media/angelica.png" member="Angelica Woods" title="Voice From Our Community" />
+                                    <BlogItem path="pmj" img="media/pastormike.webp" member="Pastor Mike Jr." title="Voice From Our Community" />
 
-                                    <BlogItem path="angela" img="media/angela.jpg" member="Angela Abdur-Rasheed" title="Voice From Our Community" />
+                                    <BlogItem path="angelica" img="media/angelica.webp" member="Angelica Woods" title="Voice From Our Community" />
 
-                                    <BlogItem path="calanda" img="media/calanda.png" member="Calanda Marks" title="Voice From Our Community" />
+                                    <BlogItem path="angela" img="media/angela.webp" member="Angela Abdur-Rasheed" title="Voice From Our Community" />
 
-                                    <BlogItem path="mariam" img="media/miriam.png" member="Mariam Cunningham" title="Voice From Our Community" />
+                                    <BlogItem path="calanda" img="media/calanda.webp" member="Calanda Marks" title="Voice From Our Community" />
 
-                                    <BlogItem path="gaynell" img="media/gaynell.jpg" member="Gaynell Hendricks" title="Voice From Our Community" />
+                                    <BlogItem path="mariam" img="media/miriam.webp" member="Mariam Cunningham" title="Voice From Our Community" />
+
+                                    <BlogItem path="gaynell" img="media/gaynell.webp" member="Gaynell Hendricks" title="Voice From Our Community" />
 
                                     {/* <BlogItem path="" img="media/" member="" title="Voice From Our Community" /> */}
-                                    <BlogItem path="jasmine" img="media/jasmine.png" member="Jasmine DeBruce" title="Voice From Our Community" />
+                                    <BlogItem path="jasmine" img="media/jasmine.webp" member="Jasmine DeBruce" title="Voice From Our Community" />
 
-                                    <BlogItem path="willy" img="media/willy.jpg" member="Willy Etheridge" title="Voice From Our Community" />
+                                    <BlogItem path="willy" img="media/willy.webp" member="Willy Etheridge" title="Voice From Our Community" />
 
-                                    <BlogItem path="jbrooklere" img="media/jbrook.jpg" member="Johnny Brooklere" title="Voices From Our Community" />
+                                    <BlogItem path="jbrooklere" img="media/jbrook.webp" member="Johnny Brooklere" title="Voices From Our Community" />
 
-                                    <BlogItem path="celeste" img="media/drharris.jpg" member="Dr. Celeste Reese-Willis" title="Voices From Our Community" />
+                                    <BlogItem path="celeste" img="media/drharris.webp" member="Dr. Celeste Reese-Willis" title="Voices From Our Community" />
 
-                                    <BlogItem path="danny" img="media/danny.jpg" member="Danny Carr" title="Voices From Our Community" />
+                                    <BlogItem path="danny" img="media/danny.webp" member="Danny Carr" title="Voices From Our Community" />
 
-                                    <BlogItem path="sonja" img="media/sonja.jpg" member="Sonja Smith" title="Voices From Our Community" />
+                                    <BlogItem path="sonja" img="media/sonja.webp" member="Sonja Smith" title="Voices From Our Community" />
 
-                                    <BlogItem path="walladean" img="media/walladean.jpg" member="Walladean Streeter" title="Voices From Our Community" />
+                                    <BlogItem path="walladean" img="media/walladean.webp" member="Walladean Streeter" title="Voices From Our Community" />
 
                                 </div>
                             </div>

@@ -51,28 +51,28 @@ const PartnerTerminal = () =>
                         </div>
 
                         <div className="container panel">
-                            <div className="fourth columns">
+                            <div className="fourth columns panet">
                                 <Link to="/partners/coopergreen">
                                     <div className="frame">
                                         <div className="panes" onClick={cooperLoaded} style={{ backgroundImage: `url("/images/partners/cooper.png")` }}></div>
                                     </div>
                                 </Link>
                             </div>
-                            <div className="fourth columns">
+                            <div className="fourth columns panet">
                                 <Link to="/partners/lhsa">
                                     <div className="frame">
                                         <div className="panes" onClick={lhsLoaded} style={{ backgroundImage: `url("/images/partners/uablive.png")` }}></div>
                                     </div>
                                 </Link>
                             </div>
-                            <div className="fourth columns">
+                            <div className="fourth columns panet">
                                 <Link to="/partners/vivahealth">
                                     <div className="frame">
                                         <div className="panes" onClick={vivaLoaded} style={{ backgroundImage: `url("/images/partners/viva.png")` }}></div>
                                     </div>
                                 </Link>
                             </div>
-                            <div className="fourth columns">
+                            <div className="fourth columns panet">
                                 <Link to="/partners/unitedway">
                                     <div className="frame">
                                         <div className="panes" onClick={uwayLoaded} style={{ backgroundImage: `url("/images/partners/uway.jpg")` }}></div>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 /* COMPONENT IMPORTS */
 import Header from '../components/Header';
+import Logo from '../components/subComponents/Logo';
 
 const Covid = () =>
 {
@@ -37,7 +38,7 @@ const Covid = () =>
                 <div className="callout">
                     <div className="calltext">
                         <h1>COVID-19</h1>
-                        <p>#B-INCLUDED provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
+                        <p><Logo color="#ffffff" /> provides Birmingham residents COVID-19 information, current statistics and resources to take action against the virus</p>
 
                     </div>
                     <div className="callbutton">
@@ -68,7 +69,7 @@ const Covid = () =>
                         </div>
                     </div>
                     <div className="six columns text">
-                        <p>Clinical trials are research studies performed in people that are aimed at evaluating a medical, surgical, or behavioral intervention. They are the primary way that researchers find out if a new treatment, like a new drug or diet or medical device (for example, a pacemaker) is safe and effective in people.</p>
+                        <p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people become severely ill. Older adults and people who have certain underlying medical conditions are more likely to get severely ill. <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html">Read More</a></p>
                     </div>
                 </div>
             </section>
@@ -82,7 +83,7 @@ const Covid = () =>
             <section className="whyStudies">
                 <div className="container reTrials">
                     <div className="five columns text">
-                        <p>Racial and ethnic minorities makeup 43% of the U.S. population, and are growing, yet they often represent as little as 2% to 16% of clinical trial participants Source. This leads to treatments that are less effective on people of color. </p>
+                        <p>Early in the pandemic, the CDC reported 21.8% of COVID-19 cases in the US were African Americans and 33.8% were LatinX, despite that these groups comprise only 13% and 18% of the US population.</p>
                     </div>
                     <div className="five columns head">
                         <div className="heading">
@@ -118,11 +119,9 @@ const Covid = () =>
                     <div className="seven columns">
                         <div className="heading">
                             <ul>
-                                <FontAwesomeIcon icon="head-side-mask" /><li>Masks are now recommended for vaccinated individuals in public indoor spaces to reduce the spread of the Delta variant. Unvaccinated people should continue to mask in all public spaces. See guidance on masks.</li>
-                                <FontAwesomeIcon icon="users" /><li>Indoor gatherings should be avoided with people outside the immediate household, unless you are fully vaccinated. See guidance for vaccinated individuals. Outdoor gatherings with masks and distancing are a safer alternative.</li>
-                                <FontAwesomeIcon icon="exclamation-triangle" /><li>Add your phone to Alabama's exposure notification system to receive alerts when you have been in close contact with someone who later tests positive for COVID.</li>
-                                <FontAwesomeIcon icon="school" /><li>Schools can safely offer in-person learning only when these infection control measures are in place.</li>
-                                <FontAwesomeIcon icon="plane-departure" /><li>Travel should be avoided unless it is necessary or you are fully vaccinated.</li>
+                                <FontAwesomeIcon icon="users" /><li>Stay up to date with Birmingham’s COVID strategy. <a href="https://www.birminghamal.gov/coronavirus">Read More</a></li>
+                                <FontAwesomeIcon icon="head-side-mask" /><li>Get access to free at-home COVID tests. <a href="https://www.covid.gov/tests">Order Here</a></li>
+                                <FontAwesomeIcon icon="exclamation-triangle" /><li>Find information on vaccination in Birmingham. <a href="https://www.alabamapublichealth.gov/covid19vaccine/">Read More</a></li>
                             </ul>
                         </div>
                     </div>
@@ -197,71 +196,7 @@ const Covid = () =>
                         </div>
                     </div>
                 </div>
-            </section>
-
-            {/* <section>
-                <div className="container partnerUp">
-                    <div className="ten columns">
-                        <div className="content">
-                            <div className="container">
-                                <div className="eight columns offset-by-one">
-                                    <div className="seven columns">
-                                        <p>We want you to be a part of the health conversation.</p>
-                                    </div>
-                                    <div className="three columns">
-                                        <a href="https://jdsb9zx9r21.typeform.com/to/m2w4i2Ju">Share Your Covid Story</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <div className="container covid19">
-                    <div className="seven columns offset-by-one-half">
-                        <div className="views">
-                            <div className="ten columns" style={{ marginBottom: '100px' }}>
-                                <div className="container">
-                                    <div className="six columns">
-                                        <div className="vue">
-
-                                        </div>
-                                    </div>
-                                    <div className="four columns">
-                                        <div className="view">
-                                            <iframe src="https://covidactnow.org/embed/us/fips/01" title="CoVid Act Now" width="330" height="370" frameBorder="0" scrolling="no"></iframe>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="ten columns">
-                                <div className="container">
-                                    <div className="four columns">
-                                        <div className="view">
-                                            <iframe src="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-finder-widget_1.html" scrolling="no" height="400" frameBorder="0" width="280" title="Vaccine Finder Widget" style={{ overflow: 'hidden' }}> </iframe>
-                                        </div>
-                                    </div>
-                                    <div className="six columns">
-                                        <div className="vue">
-                                            <h1>Vaccination Information</h1>
-                                            <ul>
-                                                <FontAwesomeIcon icon="head-side-mask" /><li>Masks are now recommended for vaccinated individuals in public indoor spaces to reduce the spread of the Delta variant. Unvaccinated people should continue to mask in all public spaces. See guidance on masks.</li>
-                                                <FontAwesomeIcon icon="users" /><li>Indoor gatherings should be avoided with people outside the immediate household, unless you are fully vaccinated. See guidance for vaccinated individuals. Outdoor gatherings with masks and distancing are a safer alternative.</li>
-                                                <FontAwesomeIcon icon="exclamation-triangle" /><li>Add your phone to Alabama's exposure notification system to receive alerts when you have been in close contact with someone who later tests positive for COVID.</li>
-                                                <FontAwesomeIcon icon="school" /><li>Schools can safely offer in-person learning only when these infection control measures are in place.</li>
-                                                <FontAwesomeIcon icon="plane-departure" /><li>Travel should be avoided unless it is necessary or you are fully vaccinated.</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
+            </section>            
         </>
     )
 }

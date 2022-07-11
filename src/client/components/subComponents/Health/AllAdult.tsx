@@ -15,6 +15,36 @@ const AllAdult = () =>
             <ResPartner title="The United Way" image="uway.jpg" description="United Way of Central Alabama builds a great community and advances the common good by bringing people together to help others. By pooling our resources and working together, we pave the way for real, tangible change in health, education and financial stability." benefit="Individuals looking for hunger assistance, financial and housing education, health care or information, Veteran services, and/or senior & disability care." url="https://www.uwca.org/"/>
             
             <ResPartner title="Impact Family Counseling" image="impact.jpg" description="The agency provides outpatient counseling and a variety of other services such as mentoring, relationship education, family strengthening and anger management to all people, regardless of religion, sex, race, ethnicity, age, or disability." benefit="Anyone seeking mentorship, relationship education, family strengthening and/or anger management." url="http://impactal.org/index.html"/>
+
+            {/* NEW ROW */}
+            <div className="third columns">
+                <a href="http://joinoben.com">
+                    <div className="panes">
+                        <div className="image" style={{ backgroundImage: `url("/images/partners/obenhealth.png")`, backgroundColor: '#ffffff' }}></div>
+                        <div className="pane">
+                            <h2>Oben Health</h2>
+                            <p>Oben (formerly Lapis) is a culturally competent digital health treatment that safely and sustainably reverses heart disease without medication or surgery. Starting off with hypertension, the treatment is based on the clinical work of Lapis's Chief Medical Officer (Michelle Routhenstien)  -  where she's been able to help 90% of her patients lower/normalize their blood pressure and 70% achieve medication reductions in 3 months.</p>
+                            <a href="http://joinoben.com">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            {/* NEW ROW */}
+            <div className="third columns">
+                <a href="https://healthopx.com">
+                    <div className="panes">
+                        <div className="image" style={{ backgroundImage: `url("/images/partners/healthopx.png")`, backgroundColor: '#ffffff' }}></div>
+                        <div className="pane">
+                            <h2>HealthOpx</h2>
+                            <p>HealthOpX is a software platform that partners community-based organizations and home care
+                                agencies with health insurers, providers, and government to engage and improve the health of
+                                at-risk patients.</p>
+                            <a href="https://healthopx.com">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
+                        </div>
+                    </div>
+                </a>
+            </div>
             
             {/* NEW ROW */}
             <div className="third columns">

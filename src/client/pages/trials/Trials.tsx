@@ -53,7 +53,7 @@ const Trials = (props: any) =>
                 <div className="callout">
                     <div className="calltext">
                         <h1>Clinical Research</h1>
-                        <p><Logo color="#ffffff" /> provides easy access to resources that are beneficial in reaching one’s goals in maintaining a healthy lifestyle.</p>
+                        <p><Logo color="#ffffff" /> provides Birmingham residents resources to better understand clinical trials and the opportunity to access research studies.</p>
 
                     </div>
                     <div className="callbutton">

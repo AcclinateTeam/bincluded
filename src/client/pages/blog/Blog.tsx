@@ -90,90 +90,20 @@ const Blog = () =>
                             <div className="ten columns">
                                 <div className="container case">
 
-                                    <BlogItem path="pmj" img="media/pastormike.jpg" member="Pastor Mike Jr." title="Voice From Our Community" />                                    
-
-                                    <div className="third columns rack">
-                                        <Link to="/blog/angelica">
-                                            <div className="frames">
-                                                <div className="frame">
-                                                    <div className="image">
-                                                        <video playsInline autoPlay muted loop id="myVideo">
-                                                            <source src='http://nowincluded.com/wp-content/uploads/2022/05/angelicaWoods.mp4' type="video/mp4" />
-                                                            Your browser does not support HTML5 video.
-                                                        </video>
-                                                    </div>
-                                                    <div className="text">
-                                                        <h1>Angelica Woods</h1>
-                                                        <p>Voices From Our Community</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    <BlogItem path="pmj" img="media/pastormike.jpg" member="Pastor Mike Jr." title="Voice From Our Community" />
+                                    
+                                    <BlogItem path="angelica" img="media/angelica.png" member="Angelica Woods" title="Voice From Our Community" />
 
                                     <BlogItem path="angela" img="media/angela.jpg" member="Angela Abdur-Rasheed" title="Voice From Our Community" />
 
+                                    <BlogItem path="calanda" img="media/calanda.png" member="Calanda Marks" title="Voice From Our Community" />
 
-                                    <div className="third columns rack">
-                                        <Link to="/blog/calanda">
-                                            <div className="frames">
-                                                <div className="frame">
-                                                    <div className="image">
-                                                        <video playsInline autoPlay muted loop id="myVideo">
-                                                            <source src='/images/media/calanda.mp4' type="video/mp4" />
-                                                            Your browser does not support HTML5 video.
-                                                        </video>
-                                                    </div>
-                                                    <div className="text">
-                                                        <h1>Calanda Marks</h1>
-                                                        <p>Voices From Our Community</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
-
-                                    <div className="third columns rack">
-                                        <Link to="/blog/mariam">
-                                            <div className="frames">
-                                                <div className="frame">
-                                                    <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                                        <video playsInline autoPlay muted loop id="myVideo">
-                                                            <source src='http://nowincluded.com/wp-content/uploads/2022/05/miriamC.mp4' type="video/mp4" />
-                                                            Your browser does not support HTML5 video.
-                                                        </video>
-                                                    </div>
-                                                    <div className="text">
-                                                        <h1>Mariam Cunningham</h1>
-                                                        <p>Voices From Our Community</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
+                                    <BlogItem path="mariam" img="media/miriam.png" member="Mariam Cunningham" title="Voice From Our Community" />
 
                                     <BlogItem path="gaynell" img="media/gaynell.jpg" member="Gaynell Hendricks" title="Voice From Our Community" />
 
-                                    <div className="third columns rack">
-                                        <Link to="/blog/jasmine">
-                                            <div className="frames">
-                                                <div className="frame">
-                                                    <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
-                                                        <video playsInline autoPlay muted loop id="myVideo">
-                                                            <source src='http://nowincluded.com/wp-content/uploads/2022/05/jasmineDebruce.mp4' type="video/mp4" />
-                                                            Your browser does not support HTML5 video.
-                                                        </video>
-                                                    </div>
-                                                    <div className="text">
-                                                        <h1>Jasmine DeBruce</h1>
-                                                        <p>Voices From Our Community</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    </div>
-
                                     {/* <BlogItem path="" img="media/" member="" title="Voice From Our Community" /> */}
+                                    <BlogItem path="jasmine" img="media/jasmine.png" member="Jasmine DeBruce" title="Voice From Our Community" />
 
                                     <BlogItem path="willy" img="media/willy.jpg" member="Willy Etheridge" title="Voice From Our Community" />
 

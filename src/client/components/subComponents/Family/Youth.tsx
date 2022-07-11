@@ -17,6 +17,11 @@ const Youth = () =>
 
             <ResPartner title="Childcare Resources of Birmingham" image="ccrbham.webp" description="Central Alabama’s only child care resource and referral agency, who's mission is to make quality care and education of children happen by providing information, education, and assistance to families, providers of child care, and the community." benefit="Familys in need of financial assistance with childcare, education or training, and or resources for child development." url=""/>
             
+            <ResPartner title="i3 Academy" image="i3.webp" description="I3 Academy is a tuition-free, public charter school located in the heart of the Woodlawn community of Birmingham, Alabama. Serving kindergarten through fifth grade students." benefit="Parents looking for a high quality school for their kindergarten through 5th grade children." url="https://www.i3academy.org/"/>
+
+            <ResPartner title="Rushton Early Learning Center" image="jrush.png" description="The James Rushton Early Learning Center provides children with exceptionally high standards of learning and development opportunities building minds and curiosity today for growth, development and learning in years ahead." benefit="Any parent looking for an early learning center for their young children" url="https://jrelc.org/"/>
+
+            <ResPartner title="Breakthrough Birmingham" image="breakbham.png" description="Breakthrough Birmingham strives to reverse educational inequity by providing free, year-round, high quality, multi-year programs for middle and high school students. As a proud member of the Birmingham community, we constantly strive for equity and seek to create opportunities for our families." benefit="Families looking for low cost high quality educational programs for their middle or high schooler" url="https://breakthroughbham.org/"/>
 
         </>
     );

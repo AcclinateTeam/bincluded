@@ -80,7 +80,7 @@ const HealthTech = () =>
                                                             <h3>HealthOpX</h3>
                                                             <p>HealthOpX is a software platform that partners community-based organizations and home care
                                                                 agencies with health insurers, providers, and government to engage and improve the health of
-                                                                at-risk patients..</p>
+                                                                at-risk patients.</p>
                                                             <a href="http://healthopx.com">Visit HealthOpX <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
                                                         </div>
                                                     </div>

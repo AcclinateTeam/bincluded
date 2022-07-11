@@ -131,7 +131,6 @@
     .research .image {                      width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0;  background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.5;}
     .research .heading {                    width: 90%; height: 100%; display: block; position: relative; top: 0; transform: none; left: 0; margin: 0; padding: 60px 5% 0;}
     .research .heading h1 {                 font-size: 58px; line-height: 58px; text-align: center;}
-
     .research .content {                    height: 400px; display: block; position: relative; text-align: center; background-color: #CA1D48;}
     .research .content .text {              padding: 50px 50px; color: #fff;}
     .research .content .bg {                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.09;}
@@ -332,7 +331,23 @@
     .featured .panel {                              margin: 75px 0 10px 5px;}
     .featured .frame {                              width: calc(100% - 20px); height: 250px; margin: 0 0 20px; text-decoration: none; position: relative;}
 
-
+    // HOME PAGE WHO WE ARE STYLES
+    .healthTech {                                     margin: 0 5%;}
+    .healthTech h2 {                                  font-size: 48px; line-height: 56px; margin: 0 0 50px; text-align: center;}
+    .healthTech .header p {                                   text-align: center;}
+    .healthTech .box {                                width: auto; margin: 70px -20px 0;}
+    .healthTech .deck .cards {                            width: calc(100% - 40px); height: auto; border-radius: 15px; margin: 0 20px 40px; overflow: hidden;}
+    .healthTech .deck .cards:hover {                      transform: scale(1.03);}
+    .healthTech .deck .cards .card {                      width: calc(100% - 4px); height: auto; border-radius: 15px; border: 2px solid #050236; position: relative; overflow: hidden;}
+    .healthTech .deck .cards .card img {                  width: 100%;}
+    .healthTech .deck .cards .card .cardimg {             width: 100%; height: 100%; background-repeat: no-repeat; background-size: contain; background-position: center;}
+    .healthTech .deck .cards .card:hover .cardimg {       transform: scale(1.03);}
+    .healthTech .deck .cards .card .image {               width: 100%; height: 200px; background-repeat: no-repeat; background-size: 50%; background-position: center;}
+    .healthTech .deck .cards .card .text {                width: calc(100% - 60px); height: auto; position: absolute; padding: 30px; top: 200px; bottom: 0; left: 0;}
+    .healthTech .deck .cards .card .text h3 {             font-size: 26px; line-height: 26px; font-weight: 700; color: #050236; margin: 0;}
+    .healthTech .deck .cards .card .text p {              font-size: 16px; line-height: 22px; font-weight: 300; border: none; padding: 10px 0 20px; color: #050236; margin: 0;}
+    .healthTech .deck .cards .card .text a {              font-size: 20px; line-height: 20px; font-weight: 700; border: none; padding: 0; text-decoration: none; color: #050236; margin: 0;}
+    .healthTech .deck .cards .card .text a svg {          font-size: 18px; line-height: 20px; color: #CA1D48;}
 
     // UTILS PAGES STYLES
     .policy .content {                      margin: 200px 5% 150px; display: block;}
@@ -443,6 +458,7 @@
     .whyInvolved .text h2, .bInvolved .text h2 {                            font-size: 48px; line-height: 48px;}
     .orgs .heading h1 {                                 font-size: 33px; line-height: 33px;}
     .policy .content h1 {                   font-size: 48px; line-height: 48px; margin: 0 0 20px; color: #050236;}
+    .healthTech {                                     margin: 0 10%;}
     
 }
 

@@ -171,7 +171,7 @@ const Home = () =>
                             <div className="twothird columns">
                                 <div className="deck">
                                     <div className="container">
-                                        <div className="third columns">
+                                        <div className="third columns split">
                                             <Link to="/health">
                                                 <div className="cards shadow hover">
                                                     <FontAwesomeIcon className="icon" icon="user-md" />
@@ -181,7 +181,7 @@ const Home = () =>
                                                 </div>
                                             </Link>
                                         </div>
-                                        <div className="third columns">
+                                        <div className="third columns split">
                                             <Link to="/family">
                                                 <div className="cards shadow hover">
                                                     <FontAwesomeIcon className="icon" icon="users" />
@@ -191,7 +191,7 @@ const Home = () =>
                                                 </div>
                                             </Link>
                                         </div>
-                                        <div className="third columns">
+                                        <div className="third columns split">
                                             <Link to="/careers">
                                                 <div className="cards shadow hover">
                                                     <FontAwesomeIcon className="icon" icon="hard-hat" />
@@ -201,7 +201,7 @@ const Home = () =>
                                                 </div>
                                             </Link>
                                         </div>
-                                        <div className="third columns">
+                                        <div className="third columns split">
                                             <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">
                                                 <div className="cards shadow hover">
                                                     <FontAwesomeIcon className="icon" icon="comments" />
@@ -211,7 +211,7 @@ const Home = () =>
                                                 </div>
                                             </a>
                                         </div>
-                                        <div className="third columns">
+                                        <div className="third columns split">
                                             <Link to="/blog">
                                                 <div className="cards shadow hover">
                                                     <FontAwesomeIcon className="icon" icon="newspaper" />
@@ -221,7 +221,7 @@ const Home = () =>
                                                 </div>
                                             </Link>
                                         </div>
-                                        <div className="third columns">
+                                        <div className="third columns split">
                                             <Link to="/covid">
                                                 <div className="cards shadow hover">
                                                     <FontAwesomeIcon className="icon" icon="viruses" />

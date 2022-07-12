@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
 import Header from '../../components/Header';
-import moment from 'moment';
 import ShareYourStory from '../../components/ShareYourStory';
 import Loading from '../../components/Loading';
 import BlogItem from './BlogItem';

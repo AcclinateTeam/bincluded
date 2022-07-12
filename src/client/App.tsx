@@ -38,7 +38,6 @@ import Footer from './components/Footer';
 import RecipeSearch from './pages/recipes/RecipeSearch';
 import Recipe from './pages/recipes/Recipe';
 import Submit from './pages/recipes/Submit';
-import * as FullStory from '@fullstory/browser';
 import Angelica from './pages/blog/Angelica';
 import Calanda from './pages/blog/Calanda';
 import Jasmine from './pages/blog/Jasmine';
@@ -66,12 +65,6 @@ const App = (props: AppProps) =>
 	useEffect(() =>
 	{
 		ReactGA.pageview(window.location.pathname + window.location.search);
-	});
-
-	FullStory.identify('users', {
-		displayName: 'binc_user',
-		email: 'help@acclinate.com',
-		feature_packs: ['MAPS', 'DEV', 'DATA'],
 	});
 
 

@@ -1,5 +1,6 @@
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
+const CompressionPlugin = require("compression-webpack-plugin");
 
 const serverConfig = {
 	mode: process.env.NODE_ENV || 'development',
@@ -60,3 +61,6 @@ const clientConfig = {
 };
 
 module.exports = [serverConfig, clientConfig];
+module.exports = {
+	plugins: [new CompressionPlugin()],
+};

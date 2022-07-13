@@ -67,8 +67,6 @@ const App = (props: AppProps) =>
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	});
 
-
-
 	return (
 		<>
 			<BrowserRouter>

@@ -107,6 +107,8 @@ span.red {                                  display: inline-block; color: #CA1D4
 .addRes .panes .image img {                 padding: 10px; width: 100%; height: 100%; object-fit: contain;}
 .addRes .pane h2 {                          font-size: 20px; line-height: 20px; text-transform: none; font-weight: 700; padding: 0; margin: 0; color: #fff;}
 .addRes .pane p {                           font-size: 14px; line-height: 22px; font-weight: 300; margin: 0 0 20px; color: #FFFFFF99;}
+.addRes .pane a {                           font-size: 20px; line-height: 20px; font-weight: 500; text-decoration: none; margin: 0 0 20px; color: #fff;}
+.addRes .pane a svg {                       color: #CA1D48;}
 .addRes .button {                           background-color: #CA1D48;}
 .addRes .button:hover {                     background-color: #EEC31A;}
 

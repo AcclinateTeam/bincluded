@@ -74,7 +74,7 @@ const Home = () =>
                     <section id="hero" className="home">
                         <div className="callbg">
                             <video playsInline autoPlay muted loop id="myVideo">
-                                <source src='http://nowincluded.com/wp-content/uploads/2022/05/header.mp4' type="video/mp4" />
+                                <source src='images/header.mp4' type="video/mp4" />
                                 Your browser does not support HTML5 video.
                             </video>
                         </div>

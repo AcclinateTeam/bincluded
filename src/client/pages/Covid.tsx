@@ -103,7 +103,7 @@ const Covid = () =>
                     </div>
                     <div className="four columns">
                         <div className="text">
-                            <h2>COVID <span className="blue">Statsistics</span></h2>
+                            <h2>COVID <span className="blue">Statistics</span></h2>
                             <iframe src="https://covidactnow.org/embed/us/fips/01" title="CoVid Act Now" width="330" height="370" frameBorder="0" scrolling="no"></iframe>
                         </div>
                     </div>

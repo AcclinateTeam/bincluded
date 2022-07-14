@@ -196,7 +196,7 @@ const Home = () =>
                                                 <div className="frame">
                                                     <div className="image">
                                                         <video playsInline autoPlay muted loop id="myVideo">
-                                                            <source src='http://nowincluded.com/wp-content/uploads/2022/05/angelicaWoods.mp4' type="video/mp4" />
+                                                            <source src='images/media/angelicaWoods.mp4' type="video/mp4" />
                                                             Your browser does not support HTML5 video.
                                                         </video>
                                                     </div>
@@ -232,7 +232,7 @@ const Home = () =>
                                                 <div className="frame">
                                                     <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
                                                         <video playsInline autoPlay muted loop id="myVideo">
-                                                            <source src='http://nowincluded.com/wp-content/uploads/2022/05/jasmineDebruce.mp4' type="video/mp4" />
+                                                            <source src='images/media/jasmineDebruce.mp4' type="video/mp4" />
                                                             Your browser does not support HTML5 video.
                                                         </video>
                                                     </div>
@@ -250,7 +250,7 @@ const Home = () =>
                                                 <div className="frame">
                                                     <div className="image" style={{ backgroundImage: `url(/images/charger1.jpg)` }}>
                                                         <video playsInline autoPlay muted loop id="myVideo">
-                                                            <source src='http://nowincluded.com/wp-content/uploads/2022/05/miriamC.mp4' type="video/mp4" />
+                                                            <source src='images/media/miriamC.mp4' type="video/mp4" />
                                                             Your browser does not support HTML5 video.
                                                         </video>
                                                     </div>

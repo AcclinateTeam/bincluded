@@ -24,11 +24,11 @@ const HomeWhoWeAre = () =>
                                 <div className="cards">
                                     <Link to="/blog">
                                         <div className="card">
-                                            <img src="/images/joanice.png" alt="Who_We_Are" />
+                                            <img src="/images/joanice.webp" alt="Who_We_Are" />
                                             <div className="text">
                                                 <h3>Your story matters</h3>
                                                 <p>Hear from the community and share your story.</p>
-                                                <Link to="/blog">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></Link>
+                                                <p className="mink">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></p>
                                             </div>
                                         </div>
                                     </Link>
@@ -38,11 +38,11 @@ const HomeWhoWeAre = () =>
                                 <div className="cards">
                                     <Link to="/whynow">
                                         <div className="card">
-                                            <img src="/images/callout3.jpg" alt="Who_We_Are" />
+                                            <img src="/images/callout3.webp" alt="Who_We_Are" />
                                             <div className="text">
                                                 <h3>Bettering Birmingham</h3>
                                                 <p>Learn why now is the time to take control of your health and future.</p>
-                                                <Link to="/whynow">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></Link>
+                                                <p className="mink">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></p>
                                             </div>
                                         </div>
                                     </Link>
@@ -52,11 +52,11 @@ const HomeWhoWeAre = () =>
                                 <div className="cards">
                                     <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">
                                         <div className="card">
-                                            <img src="/images/charger1.jpg" alt="Who_We_Are" />
+                                            <img src="/images/charger1.webp" alt="Who_We_Are" />
                                             <div className="text">
                                                 <h3>Join our community</h3>
                                                 <p>Click here to learn, share and grow with others in the B-INCLUDED community.</p>
-                                                <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></a>
+                                                <p className="mink">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></p>
                                             </div>
                                         </div>
                                     </a>

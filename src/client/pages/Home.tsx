@@ -62,6 +62,7 @@ const Home = () =>
     {
         setTimeout(() => setLoading(false), 0)
     }, []);
+    
 
     return (
         <>

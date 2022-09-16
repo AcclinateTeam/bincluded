@@ -15,18 +15,19 @@ const Logo = (props: any) =>
         <>
             {/* NEW ROW */}
             <div className="third columns">
-                <a href={url} target="_blank" rel="noopener noreferrer">
-                    <div className="panes">
+
+                <div className="panes">
+                    <a href={url} className={tags} target="_blank" rel="noopener noreferrer">
                         <div className="image" style={{ backgroundImage: `url("/images/partners/${image}")`, backgroundColor: '#ffffff' }}></div>
-                        <div className="pane">
-                            <h2>{title}</h2>
-                            <p>{description}</p>
-                            <h2>Who Will Benefit</h2>
-                            <p>{benefit}</p>
-                            <a href={url} className={tags} target="_blank" rel="noopener noreferrer">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
-                        </div>
+                    </a>
+                    <div className="pane">
+                        <h2>{title}</h2>
+                        <p>{description}</p>
+                        <h2>Who Will Benefit</h2>
+                        <p>{benefit}</p>
+                        <a href={url} className={tags} target="_blank" rel="noopener noreferrer">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
                     </div>
-                </a>
+                </div>
             </div>
         </>
     )

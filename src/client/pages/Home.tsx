@@ -62,7 +62,7 @@ const Home = () =>
     {
         setTimeout(() => setLoading(false), 0)
     }, []);
-    
+
 
     return (
         <>
@@ -510,20 +510,20 @@ const Home = () =>
                                             <div className="ten columns left">
                                                 <h3>Get Started</h3>
                                                 <ul>
-                                                    <a href="https://play.google.com/store/apps/details?id=com.mightybell.nowincluded">
-                                                        <li>
+                                                    <li>
+                                                        <a href="https://play.google.com/store/apps/details?id=com.mightybell.nowincluded">
                                                             <FontAwesomeIcon icon={['fab', 'google-play']} />
                                                             <h6>Google Play Store</h6>
                                                             <p>Click <span>here</span> to download and install our app from Google Play App Store.</p>
-                                                        </li>
-                                                    </a>
-                                                    <a href="https://apps.apple.com/ng/app/nowincluded/id1597990720">
-                                                        <li>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://apps.apple.com/ng/app/nowincluded/id1597990720">
                                                             <FontAwesomeIcon icon={['fab', 'itunes']} />
                                                             <h6>Apple Itunes Store</h6>
                                                             <p>Click <span>here</span> to download and install our app from Apple Itunes Store.</p>
-                                                        </li>
-                                                    </a>
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                             </div>
                                         </div>

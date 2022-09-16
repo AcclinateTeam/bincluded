@@ -9,6 +9,7 @@ const Logo = (props: any) =>
     const title = props.title;
     const description = props.description;
     const benefit = props.benefit;
+    const tags = props.tags;
 
     return (
         <>
@@ -22,7 +23,7 @@ const Logo = (props: any) =>
                             <p>{description}</p>
                             <h2>Who Will Benefit</h2>
                             <p>{benefit}</p>
-                            <a href={url} target="_blank" rel="noopener noreferrer">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
+                            <a href={url} className={tags} target="_blank" rel="noopener noreferrer">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
                         </div>
                     </div>
                 </a>

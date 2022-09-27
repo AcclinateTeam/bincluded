@@ -89,6 +89,8 @@ const Blog = () =>
                             <div className="ten columns">
                                 <div className="container case">
 
+                                    <BlogItem path="alzheimers" img="blogs/alzheimers.jpeg" member="10 early warning signs of Alzheimer’s disease" />
+
                                     <BlogItem path="pmj" img="media/pastormike.webp" member="Pastor Mike Jr." title="Voice From Our Community" />
 
                                     <BlogItem path="angelica" img="media/angelica.webp" member="Angelica Woods" title="Voice From Our Community" />

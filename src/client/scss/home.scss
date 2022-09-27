@@ -1,7 +1,7 @@
 /* HOME PAGE SCSS STYLES
 ============================================================== */
 // HOME PAGE CALLOUT STYLES
-.home {                                                 width: 100%; height: 100vh; position: relative;  background-color: #050236; overflow: hidden;}
+.home {                                                 width: 100%; height: 100vh; position: relative;  background-color: var(--navy); overflow: hidden;}
 .home video {                                           object-fit: contain; opacity: 0.9;}     
 .home .calloutbg {                                      width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
 .home .callout {                                        width: 100%; height: 100vh;}
@@ -12,15 +12,15 @@
 .home .callout .callbutton {                   margin: 30px 0 0; display: block;}
 /* CALLOUT BUTTONS */
 .button {                                       font-family: 'DM Sans', sans-serif; border-radius: 5px; font-weight: 900; line-height:52px; margin: 0 15px 0 0;}
-.button.signup {                                border: 1px solid #CA1D48; background-color: #CA1D48; color: #fff;} 
-.button.learnmore {                             border: none; background-color: #050236 !important; color: #fff;}
+.button.signup {                                border: 1px solid var(--red); background-color: var(--red); color: #fff;} 
+.button.learnmore {                             border: none; background-color: var(--navy) !important; color: #fff;}
 .button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
 .button.learnmore:hover {                       border: none; background-color: #EEC31A !important; color: #0F0F10;}
 
 // HOME PAGE WHO WE ARE STYLES
 .whoWeAre {                                     margin:100px 15%;}
 .whoWeAre h2 {                                  margin: 10px 0 0;}
-.whoWeAre p {                                   font-size: 24px; line-height: 40px; padding: 50px 0 50px 100px; border-left: 5px solid #050236; font-weight: 400; }
+.whoWeAre p {                                   font-size: 24px; line-height: 40px; padding: 50px 0 50px 100px; border-left: 5px solid var(--navy); font-weight: 400; }
 .whoWeAre .box {                                width: auto; margin: 100px -20px 0;}
 .whoWeAre .deck .cards {                            width: calc(100% - 40px); height: 417px; border-radius: 15px; margin: 0 20px; overflow: hidden;}
 .whoWeAre .deck .cards:hover {                      transform: scale(1.03);}
@@ -28,42 +28,42 @@
 .whoWeAre .deck .cards .card img {                  width: 100%;}
 .whoWeAre .deck .cards .card .cardimg {             width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: center;}
 .whoWeAre .deck .cards .card:hover .cardimg {       transform: scale(1.03);}
-.whoWeAre .deck .cards .card .text {                width: calc(100% - 60px); height: calc(45% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
+.whoWeAre .deck .cards .card .text {                width: calc(100% - 60px); height: calc(45% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: var(--navy);}
 .whoWeAre .deck .cards .card .text h3 {             font-size: 32px; line-height: 32px; font-weight: 900; color: #fff; margin: 0;}
 .whoWeAre .deck .cards .card .text p {              font-size: 18px; line-height: 24px; font-weight: 300; border: none; padding: 10px 0 20px; color: #ffffff99; margin: 0;}
 .whoWeAre .deck .cards .card .text a {              font-size: 20px; line-height: 20px; font-weight: 700; border: none; padding: 0; text-decoration: none; color: #ffffff; margin: 0;}
 .whoWeAre .deck .cards .card .text .mink {          font-size: 20px; line-height: 20px; font-weight: 700; border: none; padding: 0; text-decoration: none; color: #ffffff; margin: 0;}
-.whoWeAre .deck .cards .card .text a svg {          font-size: 18px; line-height: 20px; color: #CA1D48;}
-.whoWeAre .deck .cards .card .text .mink svg {          font-size: 18px; line-height: 20px; color: #CA1D48;}
+.whoWeAre .deck .cards .card .text a svg {          font-size: 18px; line-height: 20px; color: var(--red);}
+.whoWeAre .deck .cards .card .text .mink svg {          font-size: 18px; line-height: 20px; color: var(--red);}
 
 // HOME PAGE WHAT WE DO STYLES
 .whatwedo {                                         background-color: #fff; padding: 100px 15%;}  
 .whatwedo .text {                                   margin: 0 50px 0 0;}
 .whatwedo .text p {                                 font-size: 18px; line-height: 26px; padding: 30px 0 50px; font-weight: 400; }
-.whatwedo .deck .cards {                            margin: 0 5px 10px; border: 2px solid #050236; border-radius: 15px; padding: 30px;}
+.whatwedo .deck .cards {                            margin: 0 5px 10px; border: 2px solid var(--navy); border-radius: 15px; padding: 30px;}
 .whatwedo .deck a {                                 color:#000; text-decoration: none;}
-.whatwedo .deck .cards a {                          font-size: 20px; font-weight: 700; color: #050236;}
-.whatwedo .deck .cards:hover {                      border: 2px solid #050236; background-color: #050236;}
+.whatwedo .deck .cards a {                          font-size: 20px; font-weight: 700; color: var(--navy);}
+.whatwedo .deck .cards:hover {                      border: 2px solid var(--navy); background-color: var(--navy);}
 .whatwedo .deck .cards:hover h4 {                   color: #fff;}
 .whatwedo .deck .cards:hover p {                    color: #ffffff99;}
 .whatwedo .deck .cards:hover a {                    color: #fff;}
 
-.whatwedo .deck .cards svg {                        color: #CA1D48;}
-.whatwedo .deck .cards svg.icon {                   border: 2px solid #CA1D48; font-size: 30px; border-radius: 35px; padding: 20px; margin: 0 0 20px; color: #CA1D48;}
+.whatwedo .deck .cards svg {                        color: var(--red);}
+.whatwedo .deck .cards svg.icon {                   border: 2px solid var(--red); font-size: 30px; border-radius: 35px; padding: 20px; margin: 0 0 20px; color: var(--red);}
 .whatwedo .deck .cards h4  {                        padding: 0 0 10px; text-transform: none; }
 .whatwedo .deck .cards p  {                         height: 104px; font-size: 18px; margin: 0 0 20px; line-height: 26px;}
 
 .whatwedo .ss360-custom-search {                    justify-content: left;}
-.whatwedo .ss360-ac-bg {                              background-color: #050236;}
-.whatwedo .ss360-ac-b {                               background-color: #050236;}
-.whatwedo .ss360-custom-search .ss360-custom-search__searchbox {                  width: 75%; border: 2px solid #050236;}
-.whatwedo .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid #050236;}
+.whatwedo .ss360-ac-bg {                              background-color: var(--navy);}
+.whatwedo .ss360-ac-b {                               background-color: var(--navy);}
+.whatwedo .ss360-custom-search .ss360-custom-search__searchbox {                  width: 75%; border: 2px solid var(--navy);}
+.whatwedo .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid var(--navy);}
 .whatwedo .ss360-custom-search .ss360-custom-search__searchbutton:hover {               border: 2px solid #3d8fff;}
 
 // HOME PAGE STORIES STYLESs
 .stories {                                          padding: 100px 15% 50px; background-color: #fff;}
-.stories .header h2 {                               text-align: center; color: #050236;}
-.stories .header p {                                font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: #050236;}
+.stories .header h2 {                               text-align: center; color: var(--navy);}
+.stories .header p {                                font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
 .stories .case {                                    margin: 50px 0;}
 .stories .rack {                                    height: 300px; margin: 0 0 40px;}
 .stories .rack .frames {                            width: calc(100% - 40px); height: 100%; border-radius: 15px; margin: 0 20px 20px; overflow: hidden;}
@@ -72,7 +72,7 @@
 .stories .rack .frames .frame .image {              width: 100%; height: 100%; }
 .stories .rack .frames .frame .image video {        width: 100%; height: 100%; object-fit: cover;} 
 .stories .rack .frames .frame .image img {        width: 100%; height: 100%; object-fit: cover;} 
-.stories .rack .frames .frame .text {               width: calc(100% - 20px); position: absolute; padding: 20px; bottom: -120px; left: 0; background-color: #050236;}
+.stories .rack .frames .frame .text {               width: calc(100% - 20px); position: absolute; padding: 20px; bottom: -120px; left: 0; background-color: var(--navy);}
 .stories .rack .frames:hover .text {       bottom: 0;}
 .stories .rack .frames .frame .text h1 {            font-size: 24px; line-height: 24px; font-weight: 900; color: #fff; margin: 0;}
 .stories .rack .frames .frame .text p {             font-size: 18px; line-height: 26px; font-weight: 400; padding: 10px 0 0; color: #ffffff99; margin: 0;}
@@ -83,8 +83,8 @@
 .share .image {                                 width: 100%; height: 538px;}
 .share .image img {                             width: 100%;}
 .share .text {                                  height: 308px; padding: 100px 100px 0;}
-.share .text h2 {                               color: #050236; margin: 60px 0 30px;}
-.share .text p {                                font-size: 18px; line-height: 26px; margin: 0 0 30px; font-weight: 300; color: #050236;}
+.share .text h2 {                               color: var(--navy); margin: 60px 0 30px;}
+.share .text p {                                font-size: 18px; line-height: 26px; margin: 0 0 30px; font-weight: 300; color: var(--navy);}
 .share .button {                                margin: 0; text-align: none !important;}
 
 // SHARE YOUR STORY STYLES
@@ -93,13 +93,13 @@
 .partWithUs .image {                                 width: 100%; height: 450px;}
 .partWithUs .image img {                             width: 120%; margin: 25px 0 0 -15px;}
 .partWithUs .text {                                  height: 308px; padding: 100px 100px 0;}
-.partWithUs .text h2 {                               color: #050236; margin: 60px 0 30px;}
-.partWithUs .text p {                                font-size: 18px; line-height: 26px; margin: 0 0 30px; font-weight: 300; color: #050236;}
+.partWithUs .text h2 {                               color: var(--navy); margin: 60px 0 30px;}
+.partWithUs .text p {                                font-size: 18px; line-height: 26px; margin: 0 0 30px; font-weight: 300; color: var(--navy);}
 .partWithUs .button {                                margin: 0; text-align: none !important;}
 
 
 // HOME PAGE WHYNOW? SECTION STYLES
-.whyNow {                               background-color: #050236;}
+.whyNow {                               background-color: var(--navy);}
 .whyNow .whyImage {                     width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
 .whyNow .whyText {                      margin: 150px 40px; display: inline-block;}
 .whyNow .whyText h2 {                   font-size: 72px; line-height: 72px; font-weight: 900; margin: 0 0 30px; color: #fff;}
@@ -120,31 +120,31 @@
 .c19 {                              position: relative;}
 .covidbg {                          height: 100%; position: absolute; top: 0; left: 0; width: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; z-index: -99;}
 .covid {                            padding: 100px 0; text-align: center;}
-.covid h2 {                          font-weight: 900; color: #050236; margin: 0 0 20px;}
-.covid h3 {                          font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: #050236; text-transform: none; padding: 0 0 50px; margin: 0 50px 30px 100px;}
+.covid h2 {                          font-weight: 900; color: var(--navy); margin: 0 0 20px;}
+.covid h3 {                          font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: var(--navy); text-transform: none; padding: 0 0 50px; margin: 0 50px 30px 100px;}
 .covid .data {                      padding: 0 40px; margin: 0 0 80px;}
 .covid .data.border {               border-right: 1px solid #cecece;}
 .covid .data h4 {                   font-family: 'Montserrat', sans-serif; font-size: 54px; line-height: 54px; font-weight: 900; color: #0F0F10; margin: 0 0 10px; text-transform: none;}
-.covid .data h4 span {              color: #CA1D48;}
+.covid .data h4 span {              color: var(--red);}
 .covid .data p {                    font-size: 14px; line-height: 20px; font-weight: 400; color: #0F0F10; margin: 0 0 20px; text-transform: none;}
 
 // CLINICAL RESEARCH STYLES
 .research {                             width: 100%; display: block;}
-.research .panes {                      width: 100%; height: 550px; display: block; position: relative; background-color: #050236;}
+.research .panes {                      width: 100%; height: 550px; display: block; position: relative; background-color: var(--navy);}
 .research .image {                      width: 100%; height: 550px; display: block; position: absolute; top: 0; left: 0;  background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.5;}
 .research .heading {                    display: block; position: absolute; top: 50%; transform: translateY(-50%); left: 50%; margin-left: -290px;}
 .research .heading h1 {                 font-size: 64px; line-height: 64px; text-align: left; color: #fff;}
-.research .content {                    height: 550px; display: block; position: relative; text-align: center; background-color: #CA1D48;}
+.research .content {                    height: 550px; display: block; position: relative; text-align: center; background-color: var(--red);}
 .research .content .bg {                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.5;}
 .research .content .text {                          padding: 180px 100px; color: #fff; z-index: 9;}
 .research .content .text h1 {                       font-size: 30px; line-height: 30px; color: #fff; opacity: 1; margin: 0 0 10px;}
 .research .content .text p {                        font-size: 16px; line-height: 24px; font-weight: 400; color: #fff; margin: 0 0 30px;}
 .research .content .text .button {                  margin: 0;}
-.research .content .text .button.solid {            background-color: #050236;}
+.research .content .text .button.solid {            background-color: var(--navy);}
 .research .content .text .button.solid:hover {      background-color: #EEC31A;}
 
 // JOIN COMMUNITY STYLES
-.community {                                    position: relative; padding: 0 15%; background-color: #050236;}
+.community {                                    position: relative; padding: 0 15%; background-color: var(--navy);}
 .community .frame {                             margin: 0 10%;}
 .community .bg {                                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.05;}
 .community .image1 {                             width: 100%; float: left;}
@@ -161,20 +161,20 @@
 .community .left h3 {                           width: 70%; padding: 0 0 10px; color: #fff;}
 .community .left p {                            display: inline-block; padding: 0;}
 .community .left ul li {                        font-family: 'DM Sans', sans-serif; display: block; font-weight: 300; padding: 0 0 20px;}
-.community .left ul li svg {                    font-size: 20px; line-height: 18; float: left; margin: -2px 8px 0 0; color:#CA1D48;}
+.community .left ul li svg {                    font-size: 20px; line-height: 18; float: left; margin: -2px 8px 0 0; color:var(--red);}
 .community .left ul li h6 {                     font-size: 18px; color: #fff; margin: 0 0 5px;}
 .community .left ul li p {                      font-size: 16px; line-height: 16px; width: auto; display: inline-block; margin: 0; padding: 0;}
 .community .left ul a {                        text-decoration: none; color: #fff;}
-.community .left span {                         color: #CA1D48; font-weight: 700; display: inline-block;}
+.community .left span {                         color: var(--red); font-weight: 700; display: inline-block;}
 .community .right h3 {                          font-size: 36px; line-height: 36px; margin: 0 0 10px; color: #fff;}
 .community .right h6 {                          font-size: 20px; line-height: 20px; margin: 0 0 5px; color: #fff;}
 .community .right p {                           display: inline-block; padding: 0 100px 0 0;}
 .community .right ul {                           margin: 0 0 30px}
 .community .right ul li {                       margin: 0 0 15px;}
-.community .right ul li svg {                   font-size: 16px; line-height: 16px; float: left; padding: 0 8px 0 0; color:#CA1D48;}
+.community .right ul li svg {                   font-size: 16px; line-height: 16px; float: left; padding: 0 8px 0 0; color:var(--red);}
 .community .right ul li p {                     width: 70%; font-size: 16px; line-height:16px; margin: 0; padding: 0;}
 .community .right ul a {                        text-decoration: none; color: #fff;}
-.community .right span {                         color: #CA1D48; font-weight: 700; display: inline-block;}
+.community .right span {                         color: var(--red); font-weight: 700; display: inline-block;}
 
 .community .image {                             width: 100%;}
 

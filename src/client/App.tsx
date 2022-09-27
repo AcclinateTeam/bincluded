@@ -55,6 +55,7 @@ import CooperGreen from './pages/subpages/partners/CooperGreen';
 import LHSA from './pages/subpages/partners/LHSA';
 import Viva from './pages/subpages/partners/Viva';
 import UWay from './pages/subpages/partners/UWay';
+import Alzheimers from './pages/blog/written/Alzheimers';
 
 library.add(fab, fas, far);
 
@@ -101,6 +102,7 @@ const App = (props: AppProps) =>
 					<Route path="/blog/danny" element={<Danny />} />
 					<Route path="/blog/sonja" element={<Sonja />} />
 					<Route path="/blog/walladean" element={<Walladean />} />
+					<Route path="/blog/alzheimers" element={<Alzheimers />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />
 					{/* Recipe Paths */}
 					<Route path="/recipes" element={<RecipeSearch />} />

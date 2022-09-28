@@ -16,7 +16,8 @@
 .story .text h4 {                   color: var(--red); padding: 0 0 10px;}
 .story .text ul {                   margin: 0 0 0 10px;}
 .story .text li {                   font-size: 18px; line-height: 26px;}
-.story .text a {                    margin: 0 0 0 6px; color: var(--red);}
+.story .text a {                    color: var(--red);}
+.story .text li a {                 margin: 0 0 0 6px; color: var(--red);}
 .story .text .image {               width: calc(100% - 200px); padding: 50px; margin: 0 auto;}
 .story .text .image img {           width: 100%;}
 .story .storie iframe {             height: 650px;}

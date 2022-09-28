@@ -70,7 +70,7 @@ const Alzheimers = () =>
                     </div>
                     <div className="six columns offset-by-two">
                         <div className="text">
-                            <p>According to the Alzheimer’s Association, there are several <a href="https://www.alz.org/alzheimers-dementia/10_signs">early warning signs</a> of Alzheimer’s disease. Here are 10 you should watch out for1:</p>
+                            <p>According to the Alzheimer’s Association, there are several <a href="https://www.alz.org/alzheimers-dementia/10_signs">early warning signs</a> of Alzheimer’s disease. Here are 10 you should watch out for<sup>1</sup>:</p>
                             <h4>1. Loss of memory that consistently interferes with your everyday life.</h4>
                             <p>If memory loss affects someone’s everyday life, it could show up in a number of ways. Maybe
                                 they forget information they learned recently, or have started to forget important dates or events
@@ -113,8 +113,9 @@ const Alzheimers = () =>
                                 emotions and mental changes. Their overall mood and personality can change too. People with
                                 Alzheimer’s may feel more irritable, anxious, and may experience more negative emotions than
                                 they did previously.</p>
-                            <p>This <a href="">worksheet</a> from the Alzheimer’s Association may help you better understand and keep
-                                track of the warning signs previously discussed.2</p>
+                            <p>This <a href="https://www.alz.org/media/Documents/alzheimers-dementia-10-steps-to-approach-
+                                    memory-concerns.pdf">worksheet</a> from the Alzheimer’s Association may help you better understand and keep
+                                track of the warning signs previously discussed.<sup>2</sup> </p>
                             <h4>References</h4>
                             <ul>
                                 <li>1. 10 Warning Signs of Alzheimer’s Worksheet -

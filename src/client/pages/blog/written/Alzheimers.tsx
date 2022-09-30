@@ -41,7 +41,7 @@ const Alzheimers = () =>
                 </div>
                 <div className="callout btext">
                     <div className="calltext">
-                        <h1 className="textPost">10 early warning signs of Alzheimer’s disease</h1>
+                        <h1 className="textPost">Ten Early Warning Signs of Alzheimer’s Disease</h1>
                     </div>
                 </div>
                 <div className="scrollDown">
@@ -54,7 +54,7 @@ const Alzheimers = () =>
             <section className="breadcrumbs">
                 <div className="container">
                     <div className="six columns offset-by-two bread">
-                        <a href="/">Home</a> {'>'} <a href="/blog">Stories</a> {'>'} 10 early warning signs of Alzheimer’s disease
+                        <a href="/">Home</a> {'>'} <a href="/blog">Stories</a> {'>'} Ten early warning signs of Alzheimer’s disease
                     </div>
                 </div>
             </section>
@@ -63,7 +63,7 @@ const Alzheimers = () =>
                 <div className="container">
                     <div className="six columns offset-by-two">
                         <div className="storie">
-                            <h2>10 early warning signs of Alzheimer’s disease</h2>
+                            <h2>Ten early warning signs of Alzheimer’s disease</h2>
                             {/* <h4>Voices From Our Community</h4> */}
                             {/* <iframe width="100%" height="550px" src="https://www.youtube.com/embed/liCjNRWAZrM" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
                         </div>

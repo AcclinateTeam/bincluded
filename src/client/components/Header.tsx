@@ -89,7 +89,14 @@ const Header = () =>
 
                             <nav>
                                 <ul className="nav">
-                                    <li><Link to='/blog'>Stories</Link></li>
+                                    {/* <li><Link to='/blog'>Stories</Link></li> */}
+                                    <li id="drop">
+                                        <Link to='/'>Stories</Link>
+                                        <ul className="subnav">
+                                            <li><Link to='/blog'>Articles</Link></li>
+                                            <li><Link to='/stories'>Stories</Link></li>
+                                        </ul>
+                                    </li>
                                     <li id="drop">
                                         <Link to='/'>Resources</Link>
                                         <ul className="subnav">

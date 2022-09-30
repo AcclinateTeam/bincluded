@@ -372,7 +372,7 @@ const Home = () =>
                                         <h1>Why you should get involved</h1>
                                         <p>There are many reasons why people choose to join a clinical trial. Some join a trial because the treatments they have tried for their health problem did not work. Others participate because there is no treatment for their health problem.</p>
                                         <div className="button">
-                                            <Link className="button solid" to="/covid">More Info</Link>
+                                            <Link className="button solid" to="/trials">More Info</Link>
                                         </div>
                                     </div>
                                 </div>

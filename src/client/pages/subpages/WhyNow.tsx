@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Header from '../../components/Header';
+import Logo from '../../components/subComponents/Logo';
 
 const WhyNow = () =>
 {
@@ -256,7 +257,7 @@ const WhyNow = () =>
                     <div className="eight columns offset-by-one">
                         <div className="heading">
                             <h1>Aligned With The <span className="blue">Best Organizations</span></h1>
-                            <p>Birmingham Included gives its residents a chance at a happier, healthier life.</p>
+                            <p><Logo color="#050236"/> gives its residents a chance at a happier, healthier life.</p>
                         </div>
                         <div className="container">
                             <div className="fourth columns">

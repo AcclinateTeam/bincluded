@@ -11,15 +11,18 @@
 .story .text h3 {                    text-align: none; margin: 0 0 10px 0; } 
 .story h4 {                         padding: 10px 0 50px; color: #00000099;}       
 .story .text h6 {                   margin: 0 0 5px;}
-.story .text p {                    font-size: 24px; line-height: 32px; margin: 0 0 30px;}
+.story .text p {                    font-size: 24px; line-height: 32px; display: inline-block; margin: 0 0 30px;}
 .story .text p a {                  color: var(--red);}
 .story .text h4 {                   color: var(--red); padding: 0 0 10px;}
 .story .text ul {                   margin: 0 0 0 10px;}
 .story .text li {                   font-size: 18px; line-height: 26px;}
 .story .text a {                    color: var(--red);}
 .story .text li a {                 margin: 0 0 0 6px; color: var(--red);}
+.story .text p b {                 font-weight: 700;}
 .story .text .image {               width: calc(100% - 200px); padding: 50px; margin: 0 auto;}
 .story .text .image img {           width: 100%;}
+.story .text .blockquote {           width: calc(100% - 200px); font-size: 56px; line-height: 64px;  padding: 5px 50px; margin: 30px auto 30px; border-left: 5px solid var(--navy); color: var(--red);}
+.story .text .blockquote span {      font-size: 16px;}
 .story .storie iframe {             height: 650px;}
 .story .storie h2 {                 font-size: 56px; line-height: 56px;}
 .story .storie h4 {                 color: var(--red);}

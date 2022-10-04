@@ -28,15 +28,6 @@ const Blog = () =>
         });
     }
 
-    const [blogPosts, setBlogPosts] = useState([]);
-
-    useEffect(() =>
-    {
-        fetch('api/blogPosts/blog')
-            .then(res => res.json())
-            .then(blogPosts => setBlogPosts(blogPosts))
-    }, []);
-
     // LOADING ANIMATION STATE CONTROLLER
     const [loading, setLoading] = useState(true);
     // LOADING ANIMATION 

@@ -91,6 +91,8 @@ const App = (props: AppProps) =>
 					<Route path="/resources" element={<Resources />} />
 					{/* Blog Paths */}
 					<Route path="/blog" element={<Blog />} />
+					<Route path="/blog/alzheimers" element={<Alzheimers />} />
+					<Route path="/blog/BrainHealth" element={<BrainHealth />} />
 					<Route path="/stories" element={<Stories />} />
 					<Route path="/stories/angelica" element={<Angelica />} />
 					<Route path="/stories/calanda" element={<Calanda />} />
@@ -105,8 +107,6 @@ const App = (props: AppProps) =>
 					<Route path="/stories/danny" element={<Danny />} />
 					<Route path="/stories/sonja" element={<Sonja />} />
 					<Route path="/stories/walladean" element={<Walladean />} />
-					<Route path="/stories/alzheimers" element={<Alzheimers />} />
-					<Route path="/stories/BrainHealth" element={<BrainHealth />} />
 					<Route path="/stories/single/:id" element={<SinglePost />} />
 					{/* Recipe Paths */}
 					<Route path="/recipes" element={<RecipeSearch />} />

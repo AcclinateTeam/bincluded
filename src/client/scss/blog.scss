@@ -28,11 +28,24 @@
 .story .storie h4 {                 color: var(--red);}
 
 
-// HOME PAGE STORIES STYLESs
+// HOME PAGE STORIES STYLES
+// section.stories-grid {                          padding: 100px 15% 50px; background-color: var(--white);
+//     .header h2 {                                text-align: center; color: var(--navy);}
+//     .header p {                                 font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
+//     .case {                                     margin: 50px 0;
+//         .rack {                                     margin: 0 0 20px; background-color: var(--blue);
+//             .frames {                               width: calc(100% - 20px); height: 100%; border-radius: 15px; margin: 0 10px 20px; overflow: hidden;
+//                 img {                                   width: 150px;}                
+//             }            
+//         }
+//     }
+// }
+
 .storied {                                          padding: 100px 15% 50px; background-color: var(--white);}
 .storied .header h2 {                               text-align: center; color: var(--navy);}
 .storied .header p {                                font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
 .storied .case {                                    margin: 50px 0;}
+
 .storied .rack {                                    height: 300px; margin: 0 0 20px;}
 .storied .rack .frames {                            width: calc(100% - 20px); height: 100%; border-radius: 15px; margin: 0 10px 20px; overflow: hidden;}
 .storied .rack .frames:hover {                      transform: scale(1.03);}

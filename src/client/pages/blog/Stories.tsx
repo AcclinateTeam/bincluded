@@ -7,6 +7,7 @@ import Header from '../../components/Header';
 import ShareYourStory from '../../components/ShareYourStory';
 import Loading from '../../components/Loading';
 import BlogItem from './BlogItem';
+import StoriesItem from './StoriesItem';
 
 const Blog = () =>
 {
@@ -89,32 +90,32 @@ const Blog = () =>
                             <div className="ten columns">
                                 <div className="container case">
 
-                                    <BlogItem path="walladean" img="media/walladean.webp" member="Walladean Streeter" title="Voices From Our Community" />
+                                    <StoriesItem path="walladean" img="media/walladean.webp" member="Walladean Streeter" title="Voices From Our Community" />
 
-                                    <BlogItem path="pmj" img="media/pastormike.webp" member="Pastor Mike Jr." title="Voice From Our Community" />
+                                    <StoriesItem path="pmj" img="media/pastormike.webp" member="Pastor Mike Jr." title="Voice From Our Community" />
 
-                                    <BlogItem path="angelica" img="media/angelica.webp" member="Angelica Woods" title="Voice From Our Community" />
+                                    <StoriesItem path="angelica" img="media/angelica.webp" member="Angelica Woods" title="Voice From Our Community" />
 
-                                    <BlogItem path="angela" img="media/angela.webp" member="Angela Abdur-Rasheed" title="Voice From Our Community" />
+                                    <StoriesItem path="angela" img="media/angela.webp" member="Angela Abdur-Rasheed" title="Voice From Our Community" />
 
-                                    <BlogItem path="calanda" img="media/calanda.webp" member="Calanda Marks" title="Voice From Our Community" />
+                                    <StoriesItem path="calanda" img="media/calanda.webp" member="Calanda Marks" title="Voice From Our Community" />
 
-                                    <BlogItem path="mariam" img="media/miriam.webp" member="Mariam Cunningham" title="Voice From Our Community" />
+                                    <StoriesItem path="mariam" img="media/miriam.webp" member="Mariam Cunningham" title="Voice From Our Community" />
 
-                                    <BlogItem path="gaynell" img="media/gaynell.webp" member="Gaynell Hendricks" title="Voice From Our Community" />
+                                    <StoriesItem path="gaynell" img="media/gaynell.webp" member="Gaynell Hendricks" title="Voice From Our Community" />
 
-                                    {/* <BlogItem path="" img="media/" member="" title="Voice From Our Community" /> */}
-                                    <BlogItem path="jasmine" img="media/jasmine.webp" member="Jasmine DeBruce" title="Voice From Our Community" />
+                                    {/* <StoriesItem path="" img="media/" member="" title="Voice From Our Community" /> */}
+                                    <StoriesItem path="jasmine" img="media/jasmine.webp" member="Jasmine DeBruce" title="Voice From Our Community" />
 
-                                    <BlogItem path="willy" img="media/willy.webp" member="Willy Etheridge" title="Voice From Our Community" />
+                                    <StoriesItem path="willy" img="media/willy.webp" member="Willy Etheridge" title="Voice From Our Community" />
 
-                                    <BlogItem path="jbrooklere" img="media/jbrook.webp" member="Johnny Brooklere" title="Voices From Our Community" />
+                                    <StoriesItem path="jbrooklere" img="media/jbrook.webp" member="Johnny Brooklere" title="Voices From Our Community" />
 
-                                    <BlogItem path="celeste" img="media/drharris.webp" member="Dr. Celeste Reese-Willis" title="Voices From Our Community" />
+                                    <StoriesItem path="celeste" img="media/drharris.webp" member="Dr. Celeste Reese-Willis" title="Voices From Our Community" />
 
-                                    <BlogItem path="danny" img="media/danny.webp" member="Danny Carr" title="Voices From Our Community" />
+                                    <StoriesItem path="danny" img="media/danny.webp" member="Danny Carr" title="Voices From Our Community" />
 
-                                    <BlogItem path="sonja" img="media/sonja.webp" member="Sonja Smith" title="Voices From Our Community" />
+                                    <StoriesItem path="sonja" img="media/sonja.webp" member="Sonja Smith" title="Voices From Our Community" />
 
                                 </div>
                             </div>

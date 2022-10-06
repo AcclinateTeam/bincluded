@@ -36,7 +36,7 @@ const BrainHealth = () =>
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="singBlog hero" style={{ height: `100vh` }}>
-                <div className="calloutbg" style={{ backgroundImage: `url(/images/blogs/alzheimers.jpeg)` }}>
+                <div className="calloutbg" style={{ backgroundImage: `url(/images/blogs/brainhealth2.jpeg)` }}>
 
                 </div>
                 <div className="callout btext">
@@ -73,7 +73,7 @@ const BrainHealth = () =>
                             <p>Recently, NOWINCLUDED community member Cheryl Adams shared that she’s committed to understanding Alzheimer’s disease better so that she can “identify any signs of Alzheimer’s early in [her] family.”</p>
                             <p>The word “early” is key.</p>
                             <p>Think about your own experiences. Before someone you know was diagnosed with Alzheimer’s disease, were there early signs that their mental ability was declining? Oftentimes, there are.</p>
-                            <p>Detecting and diagnosing Alzheimer’s as early as possible is important.1 If someone knows they have the disease, they can get treated for it sooner. And treatment is essential for helping slow down the progress of the disease.</p>
+                            <p><a href="https://www.alz.org/professionals/public-health/public-health-topics/early-detection-diagnosis">Detecting and diagnosing</a> Alzheimer’s as early as possible is important.<sup>1</sup> If someone knows they have the disease, they can get treated for it sooner. And treatment is essential for helping slow down the progress of the disease.</p>
                             <h4>Why talking about brain health with your loved ones is important for Black families</h4>
                             <p>According to the <a href="https://www.alz.org/help-support/resources/black-americans-and-alzheimers">Alzheimer’s Association</a>, Black Americans are twice as likely as white Americans to develop Alzheimer’s or other types of dementia.<sup>2</sup> In fact, scientists predict that <a href="https://www.cdc.gov/media/releases/2018/p0920-alzheimers-burden-double-2060.html">more than 2 million</a> Black Americans will be living with Alzheimer’s disease or other types of dementia by the year 2060.<sup>3</sup></p>
                             <div className="blockquote">
@@ -109,7 +109,7 @@ const BrainHealth = () =>
                     </div>
                     <div className="ten columns">
                         <div className="buttonwrap">
-                            <Link className="content button solid" to="/blog">Back To Featured Stories</Link>
+                            <Link className="content button solid" to="/blog">Back To Featured Articles</Link>
                         </div>
                     </div>
                 </div>

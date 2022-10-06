@@ -84,7 +84,7 @@ const BrainHealth = () =>
                             <p>There’s an old saying that hindsight is 20/20. It means that, looking back on a situation, you can more clearly understand what was happening and why. Right now, there’s no cure for Alzheimer’s disease, and it’s a progressive disease, which means a person’s condition gets worse over time.</p>
                             <p>For these reasons, it’s best not to rely on hindsight, if possible. Instead, learn and be aware of the early warning signs of Alzheimer’s disease. That way, if someone begins to show these signs, they can get help as soon as possible and hopefully slow the progression of the disease.</p>
                             <div className="image">
-                                <img src="/images/blogs/brainhealth2.jpeg" alt="" />
+                                <img src="/images/blogs/brainhealth1.jpeg" alt="" />
                             </div>
                             <h4>What to do if you suspect a loved one may have Alzheimer’s</h4>
                             <div className="blockquote">

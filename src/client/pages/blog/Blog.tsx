@@ -71,7 +71,7 @@ const Blog = () =>
                     </section>
 
                     {/* FEATURED STORIES SECTION */}
-                    <section className="storied">
+                    <section className="stories-grid">
                         <div className="container"><div className="ten columns header">
                                 <h2>Featured <span className="blue">Articles</span></h2>
                                 <p>Listen to the stories we collected from our community. Click on the story to view the entire video.</p>
@@ -79,10 +79,9 @@ const Blog = () =>
                             <div className="ten columns">
                                 <div className="container case">
 
-                                    <BlogItem path="alzheimers" img="blogs/alzheimers.jpeg" member="Ten Early Warning Signs of Alzheimer’s Disease" />
+                                    <BlogItem path="BrainHealth" img="blogs/brainhealth2.jpeg" title="How to Talk to Family Members About Brain Health" date="Oct. 6, 2022" excerpt="If you suspect you or a loved one may have Alzheimer’s disease, you may be balancing many different thoughts, fears, and feelings..."  />
 
-                                    <BlogItem path="BrainHealth" img="blogs/brainhealth2.jpeg" member="How to Talk to Family Members About Brain Health" />
-
+                                    <BlogItem path="alzheimers" img="blogs/alzheimers.jpeg" title="Ten Early Warning Signs of Alzheimer’s Disease" date="Oct. 4, 2022" excerpt="According to the Alzheimer’s Association, there are several early warning signs of Alzheimer’s disease..."  />
 
                                 </div>
                             </div>                            

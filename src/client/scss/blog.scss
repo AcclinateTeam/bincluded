@@ -24,39 +24,51 @@
 .story .text .blockquote {           width: calc(100% - 200px); font-size: 56px; line-height: 64px;  padding: 5px 50px; margin: 30px auto 30px; border-left: 5px solid var(--navy); color: var(--red);}
 .story .text .blockquote span {      font-size: 16px;}
 .story .storie iframe {             height: 650px;}
-.story .storie h2 {                 font-size: 56px; line-height: 56px;}
+.story .storie span {               font-weight: 900; color: var(--red);}
+.story .storie h2 {                 font-size: 56px; line-height: 56px; color: var(--navy);}
 .story .storie h4 {                 color: var(--red);}
 
 
 // HOME PAGE STORIES STYLES
-// section.stories-grid {                          padding: 100px 15% 50px; background-color: var(--white);
-//     .header h2 {                                text-align: center; color: var(--navy);}
-//     .header p {                                 font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
-//     .case {                                     margin: 50px 0;
-//         .rack {                                     margin: 0 0 20px; background-color: var(--blue);
-//             .frames {                               width: calc(100% - 20px); height: 100%; border-radius: 15px; margin: 0 10px 20px; overflow: hidden;
-//                 img {                                   width: 150px;}                
-//             }            
-//         }
-//     }
-// }
+section.stories-grid {                          padding: 100px 15% 50px; background-color: var(--white);
+    .header h2 {                                text-align: center; color: var(--navy);}
+    .header p {                                 font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
+    .case {                                     margin: 50px 0;
+        .rack {                                     margin: 0 0 20px;
+            .frames {                               width: calc(100% - 40px); height: 100%; margin: 0 20px 20px; overflow: hidden;
+                .image {                                height: 350px;
+                    img {                               width: 100%; height: 100%; border-radius: 15px; object-fit: cover;}
+                }
+                .text {                             width: 100%; background-color: var(--white);
+                    h4 {                            font-size: 24px; line-height: 32px; font-weight: 900; color: var(--black); margin: 0;}
+                    span {                          font-size: 14px; font-weight: 700; margin: 20px 0 0; color: var(--navy);}
+                    p {                             font-size: 18px; line-height: 26px; border: none; border-left: 3px solid #050236; margin: 20px 0; padding: 0 0 0 15px; color: var(--navy);}
+                    a {                             font-size: 20px; font-weight: 700; text-decoration: none; color: var(--navy);
+                        h4 {                            color: var(--red);}
+                    }
+                    svg {                           color: var(--red);}
+                }             
+            }            
+        }
+    }
+}
 
-.storied {                                          padding: 100px 15% 50px; background-color: var(--white);}
-.storied .header h2 {                               text-align: center; color: var(--navy);}
-.storied .header p {                                font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
-.storied .case {                                    margin: 50px 0;}
+// .storied {                                          padding: 100px 15% 50px; background-color: var(--white);}
+// .storied .header h2 {                               text-align: center; color: var(--navy);}
+// .storied .header p {                                font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
+// .storied .case {                                    margin: 50px 0;}
 
-.storied .rack {                                    height: 300px; margin: 0 0 20px;}
-.storied .rack .frames {                            width: calc(100% - 20px); height: 100%; border-radius: 15px; margin: 0 10px 20px; overflow: hidden;}
-.storied .rack .frames:hover {                      transform: scale(1.03);}
-.storied .rack .frames .frame {                     width: 100%; height: 100%; position: relative; overflow: hidden;}
-.storied .rack .frames .frame .image {              width: 100%; height: 100%; }
-.storied .rack .frames .frame .image video {        width: 100%; height: 100%; object-fit: cover;} 
-.storied .rack .frames .frame .image img {          width: 572px; height: 100%; object-fit: cover;} 
-.storied .rack .frames .frame .text {               width: calc(100% - 20px); position: absolute; padding: 20px; bottom: -120px; left: 0; background-color: var(--navy);}
-.storied .rack .frames:hover .text {                bottom: 0;}
-.storied .rack .frames .frame .text h1 {            font-size: 20px; line-height: 20px; font-weight: 900; color: var(--white); margin: 0;}
-.storied .rack .frames .frame .text p {             font-size: 18px; line-height: 26px; font-weight: 400; padding: 10px 0 0; color: #ffffff99; margin: 0;}
+// .storied .rack {                                    height: 300px; margin: 0 0 20px;}
+// .storied .rack .frames {                            width: calc(100% - 20px); height: 100%; border-radius: 15px; margin: 0 10px 20px; overflow: hidden;}
+// .storied .rack .frames:hover {                      transform: scale(1.03);}
+// .storied .rack .frames .frame {                     width: 100%; height: 100%; position: relative; overflow: hidden;}
+// .storied .rack .frames .frame .image {              width: 100%; height: 100%; }
+// .storied .rack .frames .frame .image video {        width: 100%; height: 100%; object-fit: cover;} 
+// .storied .rack .frames .frame .image img {          width: 572px; height: 100%; object-fit: cover;} 
+// .storied .rack .frames .frame .text {               width: calc(100% - 20px); position: absolute; padding: 20px; bottom: -120px; left: 0; background-color: var(--navy);}
+// .storied .rack .frames:hover .text {                bottom: 0;}
+// .storied .rack .frames .frame .text h1 {            font-size: 20px; line-height: 20px; font-weight: 900; color: var(--white); margin: 0;}
+// .storied .rack .frames .frame .text p {             font-size: 18px; line-height: 26px; font-weight: 400; padding: 10px 0 0; color: #ffffff99; margin: 0;}
 
 
 .blogHeader {                        width: 100%; position: absolute; top: 85px; left: 0; z-index: -9; }

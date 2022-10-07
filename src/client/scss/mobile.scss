@@ -172,6 +172,7 @@
     .story {                                margin: 0 5% 50px;}
     .story .text {                          margin: 50px 0;}
     .story .storie iframe {                 height: 300px;}
+
     
     // DIVIDER STYLES
     .divider {                                  width: 100%; overflow: hidden;}
@@ -378,6 +379,9 @@
     .footer .connect {                           margin: 0 0 40px;}
     .footEnd p {                                margin: 20px;}
 
+    .story .text .blockquote {              width: calc(100% - 24px); font-size: 32px; line-height: 40px; font-weight: 900; padding: 10px 0 10px 20px; margin: 0 0 30px; border-left: 3px solid var(--navy); color: var(--red);}
+    .story .text .blockquote span {         font-size: 16px; line-height: 16px; margin: 10px 0 0;}
+
     section.stories-grid {                          padding: 0 5% 0; background-color: var(--white);
         .header h2 {                                text-align: center; color: var(--navy);}
         .header p {                                 font-size: 18px; line-height: 26px; padding: 30px 0 0; font-weight: 400; text-align: center; color: var(--navy);}
@@ -477,6 +481,9 @@
     .policy .content h1 {                   font-size: 48px; line-height: 48px; margin: 0 0 20px; color: #050236;}
     .healthTech {                                     margin: 0 10%;}
 
+    .story .text .blockquote {              width: calc(100% - 24px); font-size: 32px; line-height: 40px; font-weight: 900; padding: 10px 0 10px 20px; margin: 0 0 30px; border-left: 3px solid var(--navy); color: var(--red);}
+    .story .text .blockquote span {         font-size: 16px; line-height: 16px; margin: 10px 0 0;}
+
     section.stories-grid {                          padding: 0 5% 0; background-color: var(--white);
         .header h2 {                                text-align: center; color: var(--navy);}
         .header p {                                 font-size: 18px; line-height: 26px; padding: 30px 0 0; font-weight: 400; text-align: center; color: var(--navy);}
@@ -534,6 +541,9 @@
     .story .storie h4 {                         font-size: 18px; line-height: 18px;}
     .story .button {                        margin: 0;}
     .share .text h2 {                       font-size: 48px; line-height: 48px; margin: 0 0 30px;}
+    .story .text .blockquote {              width: calc(100% - 24px); font-size: 32px; line-height: 40px; font-weight: 900; padding: 10px 0 10px 20px; margin: 0 0 30px; border-left: 3px solid var(--navy); color: var(--red);}
+    .story .text .blockquote span {         font-size: 16px; line-height: 16px; margin: 10px 0 0;}
+
     .incHealth h2, .resHealth h2 {                         font-size: 44px; line-height: 44px;}
     .incHealth .text p, .resHealth .text p {                    font-size: 18px; line-height: 26px;}
     .healthRes .deck .cards {                            height: 335px;}

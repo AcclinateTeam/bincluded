@@ -21,8 +21,8 @@
 .story .text p b {                 font-weight: 700;}
 .story .text .image {               width: calc(100% - 200px); padding: 50px; margin: 0 auto;}
 .story .text .image img {           width: 100%;}
-.story .text .blockquote {           width: calc(100% - 200px); font-size: 56px; line-height: 64px;  padding: 5px 50px; margin: 30px auto 30px; border-left: 5px solid var(--navy); color: var(--red);}
-.story .text .blockquote span {      font-size: 16px;}
+.story .text .blockquote {           width: calc(100% - 200px); font-size: 56px; line-height: 64px; font-weight: 900; padding: 5px 50px; margin: 30px auto 30px; border-left: 5px solid var(--navy); color: var(--red);}
+.story .text .blockquote span {      font-size: 16px; font-weight: 500;}
 .story .storie iframe {             height: 650px;}
 .story .storie span {               font-weight: 900; color: var(--red);}
 .story .storie h2 {                 font-size: 56px; line-height: 56px; color: var(--navy);}

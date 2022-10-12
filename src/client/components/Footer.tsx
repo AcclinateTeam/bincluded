@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Footer = () =>
 {
     return (
-        <footer>           
+        <footer>
 
             {/* FOOTER COMPONENT */}
             <div className="container footer">
@@ -40,7 +40,7 @@ const Footer = () =>
                                 </li>
                                 <li>
                                     <a href="https://prosperbham.com/">Prosper</a>
-                                </li>                                
+                                </li>
                                 <li>
                                     <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join the Community</a>
                                 </li>
@@ -110,6 +110,10 @@ const Footer = () =>
                         <p>© 2022 #BINCLUDED | <Link to="/privacy">Privacy Policy</Link> | <Link to="/terms">Terms &#38; Conditions</Link></p>
                     </div>
                 </div>
+            </div>
+
+            <div className="toTop">
+                <FontAwesomeIcon icon="chevron-up" />
             </div>
 
         </footer>

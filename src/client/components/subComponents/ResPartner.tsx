@@ -20,13 +20,15 @@ const Logo = (props: any) =>
                     <a href={url} className={tags} target="_blank" rel="noopener noreferrer">
                         <div className="image" style={{ backgroundImage: `url("/images/partners/${image}")`, backgroundColor: '#ffffff' }}></div>
                     </a>
-                    <div className="pane">
-                        <h2>{title}</h2>
-                        <p>{description}</p>
-                        <h2>Who Will Benefit</h2>
-                        <p>{benefit}</p>
-                        <a href={url} className={tags} target="_blank" rel="noopener noreferrer">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
-                    </div>
+                    <a href={url} className={tags} target="_blank" rel="noopener noreferrer">
+                        <div className="pane">
+                            <h2>{title}</h2>
+                            <p>{description}</p>
+                            <h2>Who Will Benefit</h2>
+                            <p>{benefit}</p>
+                            <span>Read More</span> <FontAwesomeIcon className="readmo" icon="arrow-right" />
+                        </div>
+                    </a>
                 </div>
             </div>
         </>

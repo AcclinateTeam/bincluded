@@ -71,7 +71,7 @@ const BrainHealth = () =>
                     </div>
                     <div className="six columns offset-by-two">
                         <div className="text">
-                            <p>Recently, NOWINCLUDED community member Cheryl Adams shared that she’s committed to understanding Alzheimer’s disease better so that she can “identify any signs of Alzheimer’s early in [her] family.”</p>
+                            <p>Recently, <Logo color="#050236" /> community member Cheryl Adams shared that she’s committed to understanding Alzheimer’s disease better so that she can “identify any signs of Alzheimer’s early in [her] family.”</p>
                             <p>The word “early” is key.</p>
                             <p>Think about your own experiences. Before someone you know was diagnosed with Alzheimer’s disease, were there early signs that their mental ability was declining? Oftentimes, there are.</p>
                             <p><a href="https://www.alz.org/professionals/public-health/public-health-topics/early-detection-diagnosis">Detecting and diagnosing</a> Alzheimer’s as early as possible is important.<sup>1</sup> If someone knows they have the disease, they can get treated for it sooner. And treatment is essential for helping slow down the progress of the disease.</p>
@@ -79,7 +79,7 @@ const BrainHealth = () =>
                             <p>According to the <a href="https://www.alz.org/help-support/resources/black-americans-and-alzheimers">Alzheimer’s Association</a>, Black Americans are twice as likely as white Americans to develop Alzheimer’s or other types of dementia.<sup>2</sup> In fact, scientists predict that <a href="https://www.cdc.gov/media/releases/2018/p0920-alzheimers-burden-double-2060.html">more than 2 million</a> Black Americans will be living with Alzheimer’s disease or other types of dementia by the year 2060.<sup>3</sup></p>
                             <div className="blockquote">
                                 “I know people that passed that had Alzheimer's disease."
-                                <span>NOWINCLUDED community member Esther Richard</span>
+                                <span><Logo color="#050236" /> community member Esther Richard</span>
                             </div>
                             <p>Because this disease affects Black communities at such high rates, it is critical to talk about it openly with loved ones. While the conversation likely won’t be comfortable, it’s a necessary one to have.</p>
                             <p>There’s an old saying that hindsight is 20/20. It means that, looking back on a situation, you can more clearly understand what was happening and why. Right now, there’s no cure for Alzheimer’s disease, and it’s a progressive disease, which means a person’s condition gets worse over time.</p>
@@ -90,7 +90,7 @@ const BrainHealth = () =>
                             <h4>What to do if you suspect a loved one may have Alzheimer’s</h4>
                             <div className="blockquote">
                                 “[Understanding Alzheimer’s disease is] important for all of us. [Alzheimer’s] does not run in my family."
-                                <span>NOWINCLUDED community member Janice Thomas</span>
+                                <span><Logo color="#050236" /> community member Janice Thomas</span>
                             </div>
                             <p>As Janice Thomas noted, it is important for everyone to understand Alzheimer’s disease, whether or not you know someone with the condition.</p>
                             <p>If you suspect you or a loved one may have Alzheimer’s disease, you may be balancing many different thoughts, fears, and feelings. But any uncomfortable conversations or reflections that might follow are necessary because when it comes to Alzheimer’s disease, early testing and detection is key.</p>

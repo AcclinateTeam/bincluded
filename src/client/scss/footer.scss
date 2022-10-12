@@ -28,3 +28,9 @@ footer {                            background-color: #050236;}
 .footend ul li svg {        font-size: 13px;}
 .footend ul li a {          font-size: 13px; color: #fff; text-decoration: none;}
 .footend p a {              text-decoration: none; color: #fff;}
+
+footer {
+    .toTop {                display: none; visibility: hidden; opacity: 0; width: 100px; height: 100px; background-color: #f09; position: fixed; bottom: 100px; left: 100px;
+        svg {                   font-size: 40px; color: var(--white);}
+    }
+}

@@ -7,7 +7,7 @@ const ShareYourStory = () =>
         <section className="share">
             <div className="container sharr">
                 <div className="four columns image">
-                    <img src="/images/face.png" alt="" />
+                    <img src="/images/face.webp" alt="" />
                 </div>
                 <div className="six columns words">
                     <div className="text">

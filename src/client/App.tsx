@@ -58,6 +58,7 @@ import UWay from './pages/subpages/partners/UWay';
 import Alzheimers from './pages/blog/written/Alzheimers';
 import Stories from './pages/blog/Stories';
 import BrainHealth from './pages/blog/written/BrainHealth';
+import SickleCell from './pages/blog/written/SickleCell';
 
 library.add(fab, fas, far);
 
@@ -93,6 +94,8 @@ const App = (props: AppProps) =>
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/blog/alzheimers" element={<Alzheimers />} />
 					<Route path="/blog/BrainHealth" element={<BrainHealth />} />
+					<Route path="/blog/SickleCell" element={<SickleCell />} />
+					{/* Stories Paths */}		
 					<Route path="/stories" element={<Stories />} />
 					<Route path="/stories/angelica" element={<Angelica />} />
 					<Route path="/stories/calanda" element={<Calanda />} />

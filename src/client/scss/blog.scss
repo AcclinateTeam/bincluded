@@ -16,6 +16,12 @@
 .story .text h4 {                   color: var(--red); padding: 0 0 10px;}
 .story .text ul {                   margin: 0 0 0 10px;}
 .story .text li {                   font-size: 18px; line-height: 26px;}
+.story .text ul.list, .story .text ol.list {                   margin: 0 0 30px 60px;}
+.story .text ul.list li {                   font-size: 24px; line-height: 32px; list-style-type: disc; font-weight: 700; color: var(--red);}
+.story .text ol.list li {                   font-size: 24px; line-height: 32px; margin: 0 0 20px; color: var(--navy);}
+.story .text ol.list li b {                 font-weight: 700; color: var(--red);}
+
+
 .story .text a {                    color: var(--red);}
 .story .text li a {                 margin: 0 0 0 6px; color: var(--red);}
 .story .text p b {                 font-weight: 700;}

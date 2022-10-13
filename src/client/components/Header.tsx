@@ -91,14 +91,14 @@ const Header = () =>
                                 <ul className="nav">
                                     {/* <li><Link to='/blog'>Stories</Link></li> */}
                                     <li id="drop">
-                                        <Link to='/'>Stories</Link>
+                                        <a href="javascript:void(0)">Stories</a>
                                         <ul className="subnav">
                                             <li><Link to='/blog'>Articles</Link></li>
                                             <li><Link to='/stories'>Stories</Link></li>
                                         </ul>
                                     </li>
                                     <li id="drop">
-                                        <Link to='/'>Resources</Link>
+                                        <a href="javascript:void(0)">Resources</a>
                                         <ul className="subnav">
                                             <li><Link to='/health'>Health</Link></li>
                                             <li><Link to='/family'>Family</Link></li>

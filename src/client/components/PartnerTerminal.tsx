@@ -9,12 +9,14 @@ const PartnerTerminal = () =>
     const [lhs, setLhs] = useState(false);
     const [viva, setViva] = useState(false);
     const [uway, setUway] = useState(false);
+    const [conhealth, setConhealth] = useState(false);
 
     const lhsLoaded = () =>
     {
         setLhs(true);
         setViva(false);
         setUway(false);
+        setConhealth(false);
     }
 
     const vivaLoaded = () =>
@@ -22,6 +24,7 @@ const PartnerTerminal = () =>
         setLhs(false);
         setViva(true);
         setUway(false);
+        setConhealth(false);
     }
 
     const uwayLoaded = () =>
@@ -29,15 +32,25 @@ const PartnerTerminal = () =>
         setLhs(false);
         setViva(false);
         setUway(true);
+        setConhealth(false);
     }
 
+    const conhealthLoaded = () =>
+    {
+        setLhs(false);
+        setViva(false);
+        setUway(false);
+        setConhealth(true);
+    }
 
     const cooperLoaded = () =>
     {
         setLhs(false);
         setViva(false);
         setUway(false);
+        setConhealth(false);
     }
+
 
     return (
         // COOPER GREEN LOADED
@@ -76,6 +89,13 @@ const PartnerTerminal = () =>
                                 <Link to="/partners/unitedway">
                                     <div className="frame">
                                         <div className="panes" onClick={uwayLoaded} style={{ backgroundImage: `url("/images/partners/uway.jpg")` }}></div>
+                                    </div>
+                                </Link>
+                            </div>
+                            <div className="fourth columns panet">
+                                <Link to="/partners/conHealth">
+                                    <div className="frame">
+                                        <div className="panes" onClick={uwayLoaded} style={{ backgroundImage: `url("/images/partners/connecthealth.jpg")` }}></div>
                                     </div>
                                 </Link>
                             </div>

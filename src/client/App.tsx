@@ -59,6 +59,7 @@ import Alzheimers from './pages/blog/written/Alzheimers';
 import Stories from './pages/blog/Stories';
 import BrainHealth from './pages/blog/written/BrainHealth';
 import SickleCell from './pages/blog/written/SickleCell';
+import ConnectionHealth from './pages/subpages/partners/ConnectionHealth';
 
 library.add(fab, fas, far);
 
@@ -88,6 +89,7 @@ const App = (props: AppProps) =>
 					<Route path="/partners/lhsa" element={<LHSA />} />
 					<Route path="/partners/vivahealth" element={<Viva />} />
 					<Route path="/partners/unitedway" element={<UWay />} />
+					<Route path="/partners/conHealth" element={<ConnectionHealth />} />
 					<Route path="/whynow" element={<WhyNow />} />
 					<Route path="/resources" element={<Resources />} />
 					{/* Blog Paths */}

@@ -146,7 +146,7 @@
     .community .left ul li p {                      font-size: 16px; line-height: 16px; width: auto; display: inline-block; margin: 0; padding: 0;}
 
     // FEAT STORIES STYLES
-    .blogga.hero .callout, .singBlog.hero .callout, .health.hero .callout, .family.hero .callout, .why.hero .callout, .partna.hero .callout {                                         width: 90%; height: 500px; position: absolute; top: 175px; left: 5%;}
+    .blogga.hero .callout, .singBlog.hero .callout, .health.hero .callout, .family.hero .callout, .why.hero .callout, .partna.hero .callout {                                         width: 90%; height: 500px; position: absolute; top: 100px; left: 5%;}
     .career.hero .callout, .trials.hero .callout, .cov.hero .callout {                                         width: 90%; height: 500px; position: absolute; top: 150px; left: 5%;}
     .singBlog.hero .callout.btext {                     width: 100%; height: auto; left: 0; top: 50%; transform: translateY(-50%);}
     
@@ -154,7 +154,7 @@
     .health.hero .calltext h1, .family.hero .calltext h1, .career.hero .calltext h1, .cov.hero .calltext h1, .why.hero .calltext h1 {                                     font-size: 56px; line-height: 56px;}   
     
     .health.hero .calloutbg {                    background-position: -600px 0;}
-    .cov.hero .calloutbg {                       background-position: -600px 0;}
+    .cov.hero .calloutbg {                       background-position: -500px 0;}
     .why.hero .calloutbg {                       background-position: -500px 0;}
 
     // BREADCRUMBS
@@ -460,7 +460,7 @@
     .studies h2, .whyStudies h2, .getInvolved h2, .trials .search h2 {                                       font-size: 48px; line-height: 48px; padding: 0;}
     .studies .text p, .whyStudies .text p, .getInvolved .text p {             font-size: 18px; line-height: 26px; margin: 0; padding: 30px 0 0; border-left: none; font-weight: 300;}
     .trials.space {                                   margin: 0 0 50px;}
-    .trials .form input {                       width: calc(100% - 76px); height: 70px; padding: 0 20px; font-size: 20px; font-weight: 300; line-height: 28px; display: block; float: left;  border: 2px solid #287FDD; border-radius:  15px 0 0 15px; background-color: #287FDD22;}
+    .trials .form input {                       width: calc(100% - 115px); height: 66px; padding: 0 20px; font-size: 20px; font-weight: 300; line-height: 28px; display: block; float: left;  border: 2px solid #287FDD; border-radius:  15px 0 0 15px; background-color: #287FDD22;}
     .trials .search .viewStudies a {            font-size: 18px; line-height: 18px;}
     .vaxxinfo h2, .covidstats h2 {                                    font-size: 48px; line-height: 48px; padding: 0 0 30px; text-align: left;}
     .vaxxinfo .text {                                padding: 30px 0 0;}
@@ -551,7 +551,7 @@
     .healthRes .deck .cards .card .text {                width: calc(100% - 40px); height: calc(50% - 40px); position: absolute; padding: 20px; bottom: 0; left: 0; background-color: #050236;}
     .addRes .header {                       margin: 0 5% 50px; text-align: center;}
     .addRes .header h2 {                    font-size: 48px; line-height: 48px;}
-    .health.hero .calltext h1, .family.hero .calltext h1, .career.hero .calltext h1, .cov.hero .calltext h1, .why.hero .calltext h1 {                                     font-size: 44px; line-height: 44px;} 
+    .health.hero .calltext h1, .family.hero .calltext h1, .career.hero .calltext h1, .cov.hero .calltext h1, .why.hero .calltext h1 {                                     font-size: 38px; line-height: 38px;} 
     .incFamily h2 {                                     font-size: 38px; line-height: 38px; padding: 0;}
     .incFamily .text p, .resFam .text p {                                font-size: 18px; line-height: 26px; }
     .resFam h2 {                                        font-size: 40px; line-height: 40px; padding: 0;}

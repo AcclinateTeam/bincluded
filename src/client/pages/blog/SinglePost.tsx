@@ -4,39 +4,62 @@ import { Link, useParams } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
-import SubHeader from '../../components/SubHeader';
+import Header from '../../components/Header';
 import BlogPosts from '../BlogPosts';
 
-const SinglePost = () =>
-{
+const SinglePost = () => {
 
-    useEffect(() =>
-    {
+    useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
-
 
     const { id } = useParams();
     const [blogPosts, setBlogPosts] = useState([]);
 
-    useEffect(() =>
-    {
+    useEffect(() => {
         fetch(`/api/blogPosts/${id}`)
             .then(res => res.json())
             .then(blogPosts => setBlogPosts(blogPosts))
     }, []);
 
-    console.log(blogPosts);
+    // Scrolls to bottom of Hero Section OnClick
+    const scrollToRef = () => {
+        let hero = document.getElementById('hero');
+        let heroHeight = hero!.offsetHeight;
+
+        window.scrollTo({
+            top: heroHeight,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
 
     return (
         <>
             {/* SUB-HEADER COMPONENT IMPORT */}
-            <SubHeader />
+            <Header />
+
+            {/* JUMBOTRON COMPONENT */}
+            <section id="hero" className="singBlog hero" style={{ height: `100vh` }}>
+                {blogPosts.map((post: any, index) => (
+                    <>
+                        <div className="calloutbg" style={{ backgroundImage: `url(${post.imagelink})` }}></div>
+                        <div className="callout btext">
+                            <div className="calltext">
+                                <h1 className="textPost">{post.title}</h1>
+                            </div>
+                        </div>
+                        <div className="scrollDown">
+                            <FontAwesomeIcon icon="arrow-down" onClick={scrollToRef} />
+                            <h3>Scroll Down</h3>
+                        </div>
+                    </>
+                ))}
+            </section>
 
             <div className="singleHeader">
                 {blogPosts.map((post: any, index) => (
                     <>
-                        <div className="image" style={{ backgroundImage: `url(${post.imagelink})` }}></div>
                         <div className="container">
                             <div className="six columns offset-by-two">
                                 <div className="text">
@@ -50,21 +73,48 @@ const SinglePost = () =>
                 ))}
             </div>
 
+            {/* BREADCRUMB SECTION */}
+            <section className="breadcrumbs">
+                <div className="container">
+                    <div className="six columns offset-by-two bread">
+                        {blogPosts.map((post: any, index) => (
+                            <>
+                                <a href="/">Home</a> {'>'} <a href="/blog">Stories</a> {'>'} {post.title}
+                            </>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            <section className="story">
+                <div className="container">
+                    <div className="six columns offset-by-two">
+                        <div className="storie">
+                            {blogPosts.map((post: any, index) => (
+                                <>
+                                    <span>{moment(post._created).format('MMM Do, YYYY')}</span>
+                                    <h2>{post.title}</h2>
+                                </>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section className="singlePost">
                 <div className="container">
                     <div className="six columns offset-by-two">
-                        <div className="content">
-                            {blogPosts.map((post: any, index) =>
-                            {
+                        <div className="text">
+                            {blogPosts.map((post: any, index) => {
                                 var htmlText = post.content;
 
                                 return (
-                                    <div dangerouslySetInnerHTML={{ __html: htmlText }}></div>
+                                    <div className="content" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
                                 )
                                 // return (
                                 //     <p>
                                 //         {post.content.split('\\n').map((para: any, i: any) => (
-                                            
+
                                 //             <>
                                 //                 <p>{para}</p>
                                 //             </>

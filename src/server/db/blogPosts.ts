@@ -5,7 +5,7 @@ const getBlogPosts = async () => Query(
 );
 
 const getBlogs = async () => Query(
-    `SELECT * FROM blogPosts`
+    `SELECT * FROM blogPosts ORDER by id DESC`
 );
 
 const getPost = async (id: any) => Query(

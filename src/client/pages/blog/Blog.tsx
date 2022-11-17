@@ -7,17 +7,15 @@ import Header from '../../components/Header';
 import ShareYourStory from '../../components/ShareYourStory';
 import Loading from '../../components/Loading';
 import BlogItem from './BlogItem';
+import moment from 'moment';
 
-const Blog = () =>
-{
-    useEffect(() =>
-    {
+const Blog = () => {
+    useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
 
     // Scrolls to bottom of Hero Section OnClick
-    const scrollToRef = () =>
-    {
+    const scrollToRef = () => {
         let hero = document.getElementById('hero');
         let heroHeight = hero!.offsetHeight;
 
@@ -30,8 +28,7 @@ const Blog = () =>
 
     const [blogPosts, setBlogPosts] = useState([]);
 
-    useEffect(() =>
-    {
+    useEffect(() => {
         fetch('api/blogPosts/blog')
             .then(res => res.json())
             .then(blogPosts => setBlogPosts(blogPosts))
@@ -90,46 +87,25 @@ const Blog = () =>
                     <div className="ten columns">
                         <div className="container case">
 
-                            {blogPosts.map((post: any, index) =>
-                            {
-                                if (index > 0)
-                                {
-                                    return (
-
-
-                                        <>
-
-                                            {/* <div className="third columns rack">
-                                                <div className="frames">
-                                                    <div className="image">
-                                                        <Link to={post.id}><img src={`${post.imageLink}`} alt="" /></Link>
-                                                    </div>
-                                                    <div className="text">
-                                                        <span>{date}</span>
-                                                        <Link to={path}><h4>{title}</h4></Link>
-                                                        <p>{excerpt}</p>
-                                                        <Link to={path}>Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
-                                                    </div>
+                            {blogPosts.map((post: any, index) => {
+                                return (
+                                    <>
+                                        <div className="third columns rack" key={post.id}>
+                                            <div className="frames">
+                                                <div className="image">
+                                                    <Link to={`/blog/single/${post.id}`}><img className="image" src={post.imagelink} alt="" /></Link>
                                                 </div>
-                                            </div> */}
-
-                                            <div className="third columns" key={post.id}>
-                                                <div className="panes">
-                                                    <div className="pane">
-                                                        <img className="image" src={post.imagelink} />
-                                                        <div className="text">
-                                                            <h2>{post.title}</h2>
-                                                            <p>{post.description}</p>
-                                                            <Link to={`/blog/single/${post.id}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                                        </div>
-                                                    </div>
+                                                <div className="text">
+                                                    <span>{moment(post._created).format('MMM Do, YYYY')}</span>
+                                                    <Link to={`/blog/single/${post.id}`}><h4>{post.title}</h4></Link>
+                                                    <p>{post.description}</p>
+                                                    <Link to={`/blog/single/${post.id}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                                                 </div>
                                             </div>
-                                        </>
-                                    )
-                                }
+                                        </div>
+                                    </>
+                                )
                             })}
-
                         </div>
                     </div>
                     {/* <div className="ten columns">

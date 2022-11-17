@@ -34,7 +34,7 @@ const SinglePost = () =>
             <SubHeader />
 
             <div className="singleHeader">
-                {blogPosts.map((post, index) => (
+                {blogPosts.map((post: any, index) => (
                     <>
                         <div className="image" style={{ backgroundImage: `url(${post.imagelink})` }}></div>
                         <div className="container">
@@ -54,18 +54,23 @@ const SinglePost = () =>
                 <div className="container">
                     <div className="six columns offset-by-two">
                         <div className="content">
-                            {blogPosts.map((post, index) =>
+                            {blogPosts.map((post: any, index) =>
                             {
+                                var htmlText = post.content;
 
                                 return (
-                                    <p>
-                                        {post.content.split('\\n').map((para: any, i: any) => (
-                                            <>
-                                                <p>{para}</p>
-                                            </>
-                                        ))}
-                                    </p>
+                                    <div dangerouslySetInnerHTML={{ __html: htmlText }}></div>
                                 )
+                                // return (
+                                //     <p>
+                                //         {post.content.split('\\n').map((para: any, i: any) => (
+                                            
+                                //             <>
+                                //                 <p>{para}</p>
+                                //             </>
+                                //         ))}
+                                //     </p>
+                                // )
                             })}
                         </div>
                         <div className="buttonwrap">

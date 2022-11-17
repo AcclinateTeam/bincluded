@@ -16,7 +16,7 @@ const BlogItem = (props: any) =>
             <div className="third columns rack">
                 <div className="frames">
                     <div className="image">
-                        <Link to={path}><img src={`/images/${img}`} alt="" /></Link>
+                        <Link to={path}><img src={`${img}`} alt="" /></Link>
                     </div>
                     <div className="text">
                         <span>{date}</span>

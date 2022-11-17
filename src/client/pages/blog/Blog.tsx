@@ -28,79 +28,120 @@ const Blog = () =>
         });
     }
 
-    // LOADING ANIMATION STATE CONTROLLER
-    const [loading, setLoading] = useState(true);
-    // LOADING ANIMATION 
+    const [blogPosts, setBlogPosts] = useState([]);
+
     useEffect(() =>
     {
-        setTimeout(() => setLoading(false), 0)
+        fetch('api/blogPosts/blog')
+            .then(res => res.json())
+            .then(blogPosts => setBlogPosts(blogPosts))
     }, []);
 
     return (
         <>
-            {loading === false ? (
-                <>
-                    {/* SUB-HEADER COMPONENT IMPORT */}
-                    <Header />
+            {/* SUB-HEADER COMPONENT IMPORT */}
+            <Header />
 
-                    {/* JUMBOTRON COMPONENT */}
-                    <section id="hero" className="blogga hero" style={{ height: `100vh` }}>
-                        <div className="calloutbg" style={{ backgroundImage: `url(/images/stories.jpg)` }}></div>
-                        <div className="callout">
-                            <div className="calltext">
-                                <h1>Featured Articles</h1>
-                                <p>Voices from the community.</p>
-                            </div>
-                            <div className="callbutton">
-                                <a className="button signup" href="https://www.videoask.com/ftmqd7gt3" target="_blank" rel="noopener noreferrer">Share Your Story</a>
-                            </div>
+            {/* JUMBOTRON COMPONENT */}
+            <section id="hero" className="blogga hero" style={{ height: `100vh` }}>
+                <div className="calloutbg" style={{ backgroundImage: `url(/images/stories.jpg)` }}></div>
+                <div className="callout">
+                    <div className="calltext">
+                        <h1>Featured Articles</h1>
+                        <p>Voices from the community.</p>
+                    </div>
+                    <div className="callbutton">
+                        <a className="button signup" href="https://www.videoask.com/ftmqd7gt3" target="_blank" rel="noopener noreferrer">Share Your Story</a>
+                    </div>
+                </div>
+                <div className="scrollDown">
+                    <FontAwesomeIcon icon="arrow-down" onClick={scrollToRef} />
+                    <h3>Scroll Down</h3>
+                </div>
+            </section>
+
+            {/* BREADCRUMB SECTION */}
+            <section className="breadcrumbs">
+                <div className="container">
+                    <div className="seven columns offset-by-one-half bread">
+                        <a href="/">Home</a> {'>'} Featured Articles
+                    </div>
+                </div>
+            </section>
+
+            {/* FEATURED STORIES SECTION */}
+            <section className="stories-grid">
+                <div className="container"><div className="ten columns header">
+                    <h2>Featured <span className="blue">Articles</span></h2>
+                    <p>Listen to the stories we collected from our community. Click on the story to view the entire video.</p>
+                </div>
+                    {/* <div className="ten columns">
+                        <div className="container case">
+
+                            <BlogItem path="SickleCell" img="blogs/sicklecell1.webp" title="How to Support a Loved One with Sickle Cell Disease" date="Oct. 13, 2022" excerpt="People living with SCD benefit from the support of family and friends. Below, you’ll learn more about SCD and ways..." />
+
+                            <BlogItem path="BrainHealth" img="blogs/brainhealth2.jpeg" title="How to Talk to Family Members About Brain Health" date="Oct. 6, 2022" excerpt="If you suspect you or a loved one may have Alzheimer’s disease, you may be balancing many different thoughts, fears, and feelings..." />
+
+                            <BlogItem path="alzheimers" img="blogs/alzheimers.jpeg" title="Ten Early Warning Signs of Alzheimer’s Disease" date="Oct. 4, 2022" excerpt="According to the Alzheimer’s Association, there are several early warning signs of Alzheimer’s disease..." />
+
                         </div>
-                        <div className="scrollDown">
-                            <FontAwesomeIcon icon="arrow-down" onClick={scrollToRef} />
-                            <h3>Scroll Down</h3>
+                    </div> */}
+
+                    <div className="ten columns">
+                        <div className="container case">
+
+                            {blogPosts.map((post: any, index) =>
+                            {
+                                if (index > 0)
+                                {
+                                    return (
+
+
+                                        <>
+
+                                            {/* <div className="third columns rack">
+                                                <div className="frames">
+                                                    <div className="image">
+                                                        <Link to={post.id}><img src={`${post.imageLink}`} alt="" /></Link>
+                                                    </div>
+                                                    <div className="text">
+                                                        <span>{date}</span>
+                                                        <Link to={path}><h4>{title}</h4></Link>
+                                                        <p>{excerpt}</p>
+                                                        <Link to={path}>Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                                    </div>
+                                                </div>
+                                            </div> */}
+
+                                            <div className="third columns" key={post.id}>
+                                                <div className="panes">
+                                                    <div className="pane">
+                                                        <img className="image" src={post.imagelink} />
+                                                        <div className="text">
+                                                            <h2>{post.title}</h2>
+                                                            <p>{post.description}</p>
+                                                            <Link to={`/blog/single/${post.id}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </>
+                                    )
+                                }
+                            })}
+
                         </div>
-                    </section>
-
-                    {/* BREADCRUMB SECTION */}
-                    <section className="breadcrumbs">
-                        <div className="container">
-                            <div className="seven columns offset-by-one-half bread">
-                                <a href="/">Home</a> {'>'} Featured Articles
-                            </div>
-                        </div>
-                    </section>
-
-                    {/* FEATURED STORIES SECTION */}
-                    <section className="stories-grid">
-                        <div className="container"><div className="ten columns header">
-                            <h2>Featured <span className="blue">Articles</span></h2>
-                            <p>Listen to the stories we collected from our community. Click on the story to view the entire video.</p>
-                        </div>
-                            <div className="ten columns">
-                                <div className="container case">
-
-                                    <BlogItem path="SickleCell" img="blogs/sicklecell1.webp" title="How to Support a Loved One with Sickle Cell Disease" date="Oct. 13, 2022" excerpt="People living with SCD benefit from the support of family and friends. Below, you’ll learn more about SCD and ways..." />
-
-                                    <BlogItem path="BrainHealth" img="blogs/brainhealth2.jpeg" title="How to Talk to Family Members About Brain Health" date="Oct. 6, 2022" excerpt="If you suspect you or a loved one may have Alzheimer’s disease, you may be balancing many different thoughts, fears, and feelings..." />
-
-                                    <BlogItem path="alzheimers" img="blogs/alzheimers.jpeg" title="Ten Early Warning Signs of Alzheimer’s Disease" date="Oct. 4, 2022" excerpt="According to the Alzheimer’s Association, there are several early warning signs of Alzheimer’s disease..." />
-
-                                </div>
-                            </div>
-                            {/* <div className="ten columns">
+                    </div>
+                    {/* <div className="ten columns">
                                 <div className="buttonwrap">
                                     <Link className="content button solid" to="/blog">See More Stories</Link>
                                 </div>
                             </div> */}
-                        </div>
-                    </section>
+                </div>
+            </section>
 
-                    {/* SHAR YOUR STORY SECTION */}
-                    <ShareYourStory />
-                </>
-            ) : (
-                <Loading />
-            )}
+            {/* SHAR YOUR STORY SECTION */}
+            <ShareYourStory />
         </>
     );
 }

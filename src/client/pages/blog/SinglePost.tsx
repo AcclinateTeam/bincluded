@@ -7,23 +7,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../../components/Header';
 import BlogPosts from '../BlogPosts';
 
-const SinglePost = () => {
+const SinglePost = () =>
+{
 
-    useEffect(() => {
+    useEffect(() =>
+    {
         window.scrollTo(0, 0)
     }, []);
 
     const { id } = useParams();
     const [blogPosts, setBlogPosts] = useState([]);
 
-    useEffect(() => {
+    useEffect(() =>
+    {
         fetch(`/api/blogPosts/${id}`)
             .then(res => res.json())
             .then(blogPosts => setBlogPosts(blogPosts))
     }, []);
 
     // Scrolls to bottom of Hero Section OnClick
-    const scrollToRef = () => {
+    const scrollToRef = () =>
+    {
         let hero = document.getElementById('hero');
         let heroHeight = hero!.offsetHeight;
 
@@ -57,22 +61,6 @@ const SinglePost = () => {
                 ))}
             </section>
 
-            <div className="singleHeader">
-                {blogPosts.map((post: any, index) => (
-                    <>
-                        <div className="container">
-                            <div className="six columns offset-by-two">
-                                <div className="text">
-                                    <h3>{moment(post._created).format('MMM Do, YYYY')} {/*| Wellness and Health*/} | {post.author}</h3>
-                                    <h1>{post.title}</h1>
-                                    <p>{post.description}</p>
-                                </div>
-                            </div>
-                        </div>
-                    </>
-                ))}
-            </div>
-
             {/* BREADCRUMB SECTION */}
             <section className="breadcrumbs">
                 <div className="container">
@@ -101,28 +89,17 @@ const SinglePost = () => {
                 </div>
             </section>
 
-            <section className="singlePost">
+            <section className="story">
                 <div className="container">
                     <div className="six columns offset-by-two">
-                        <div className="text">
-                            {blogPosts.map((post: any, index) => {
-                                var htmlText = post.content;
+                        {blogPosts.map((post: any, index) =>
+                        {
+                            var htmlText = post.content;
 
-                                return (
-                                    <div className="content" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
-                                )
-                                // return (
-                                //     <p>
-                                //         {post.content.split('\\n').map((para: any, i: any) => (
-
-                                //             <>
-                                //                 <p>{para}</p>
-                                //             </>
-                                //         ))}
-                                //     </p>
-                                // )
-                            })}
-                        </div>
+                            return (
+                                <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
+                            )
+                        })}
                         <div className="buttonwrap">
                             <Link className="content button" to="/blog">Back to Blogs <FontAwesomeIcon icon="arrow-right" /></Link>
                         </div>
@@ -130,7 +107,7 @@ const SinglePost = () => {
                 </div>
             </section>
 
-            <section className="related">
+            {/* <section className="related">
                 <div className="container">
                     <div className="eight columns offset-by-one">
                         <div className="heading">
@@ -146,7 +123,7 @@ const SinglePost = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
         </>
     );
 }

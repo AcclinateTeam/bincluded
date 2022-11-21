@@ -8,7 +8,7 @@ import SubHeader from '../../components/SubHeader';
 const Results = () =>
 {
 
-    const { text }: { text: string; } = useParams();
+    const { text }: { text: any; } = useParams();
 
     const [numbers, setNumbers] = useState<any>([]);
     const [trials, setTrials] = useState([]);
@@ -63,7 +63,7 @@ const Results = () =>
                             Showing {numbers.NStudiesReturned} of {numbers.NStudiesFound} Search Results for "{text.replace(/\+/g, " ").replace(/,/g, "")}"
                         </div>
                         <div className="panels">
-                            {trials.map((trial, index) => (
+                            {trials.map((trial: any, index) => (
                                 <Link key={index} to={`/trials/results/study/${text}/${trial.Study.ProtocolSection.IdentificationModule.NCTId}`}>
                                     <div className="panel">
                                         <div className="container">

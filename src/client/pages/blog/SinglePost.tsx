@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* COMPONENT IMPORTS */
 import Header from '../../components/Header';
 import BlogPosts from '../BlogPosts';
+import ShareYourStory from '../../components/ShareYourStory';
 
 const SinglePost = () =>
 {
@@ -106,6 +107,9 @@ const SinglePost = () =>
                     </div>
                 </div>
             </section>
+
+            {/* SHARE YOUR STORY SECTION */}
+            <ShareYourStory />
 
             {/* <section className="related">
                 <div className="container">

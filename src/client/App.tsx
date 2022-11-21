@@ -55,12 +55,8 @@ import CooperGreen from './pages/subpages/partners/CooperGreen';
 import LHSA from './pages/subpages/partners/LHSA';
 import Viva from './pages/subpages/partners/Viva';
 import UWay from './pages/subpages/partners/UWay';
-import Alzheimers from './pages/blog/written/Alzheimers';
 import Stories from './pages/blog/Stories';
-import BrainHealth from './pages/blog/written/BrainHealth';
-import SickleCell from './pages/blog/written/SickleCell';
 import ConnectionHealth from './pages/subpages/partners/ConnectionHealth';
-import MultipleMyeloma from './pages/blog/written/MultipleMyeloma';
 
 library.add(fab, fas, far);
 
@@ -93,13 +89,6 @@ const App = (props: AppProps) =>
 					<Route path="/partners/conHealth" element={<ConnectionHealth />} />
 					<Route path="/whynow" element={<WhyNow />} />
 					<Route path="/resources" element={<Resources />} />
-					{/* Blog Paths */}
-					{/* <Route path="/blog" element={<Blog />} /> */}
-					<Route path="/blog/multiplemyeloma" element={<MultipleMyeloma />} />
-					<Route path="/blog/alzheimers" element={<Alzheimers />} />
-					<Route path="/blog/BrainHealth" element={<BrainHealth />} />
-					<Route path="/blog/SickleCell" element={<SickleCell />} />
-
 					{/* Blog Paths */}
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />

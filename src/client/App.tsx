@@ -38,19 +38,6 @@ import Footer from './components/Footer';
 import RecipeSearch from './pages/recipes/RecipeSearch';
 import Recipe from './pages/recipes/Recipe';
 import Submit from './pages/recipes/Submit';
-import Angelica from './pages/blog/Angelica';
-import Calanda from './pages/blog/Calanda';
-import Jasmine from './pages/blog/Jasmine';
-import Mariam from './pages/blog/Mariam';
-import Angela from './pages/blog/Angela';
-import Gaynell from './pages/blog/Gaynell';
-import PMJ from './pages/blog/PMJ';
-import Willy from './pages/blog/Willy';
-import JBrooklere from './pages/blog/JBrooklere';
-import Celeste from './pages/blog/Celeste';
-import Danny from './pages/blog/Danny';
-import Sonja from './pages/blog/Sonja';
-import Walladean from './pages/blog/Walladean';
 import CooperGreen from './pages/subpages/partners/CooperGreen';
 import LHSA from './pages/subpages/partners/LHSA';
 import Viva from './pages/subpages/partners/Viva';
@@ -93,24 +80,9 @@ const App = (props: AppProps) =>
 					{/* Blog Paths */}
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />
+					{/* Stories Paths */}
 					<Route path="/stories" element={<Stories />} />
-					<Route path="/stories/single/:slug" element={<SingleStory />} />0
-					{/* Stories Paths */}		
-					<Route path="/stories" element={<Stories />} />
-					<Route path="/stories/angelica" element={<Angelica />} />
-					<Route path="/stories/calanda" element={<Calanda />} />
-					<Route path="/stories/jasmine" element={<Jasmine />} />
-					<Route path="/stories/mariam" element={<Mariam />} />
-					<Route path="/stories/angela" element={<Angela />} />
-					<Route path="/stories/gaynell" element={<Gaynell />} />
-					<Route path="/stories/pmj" element={<PMJ />} />
-					<Route path="/stories/willy" element={<Willy />} />
-					<Route path="/stories/jbrooklere" element={<JBrooklere />} />
-					<Route path="/stories/celeste" element={<Celeste />} />
-					<Route path="/stories/danny" element={<Danny />} />
-					<Route path="/stories/sonja" element={<Sonja />} />
-					<Route path="/stories/walladean" element={<Walladean />} />
-					<Route path="/stories/single/:id" element={<SinglePost />} />
+					<Route path="/stories/single/:slug" element={<SingleStory />} />
 					{/* Recipe Paths */}
 					<Route path="/recipes" element={<RecipeSearch />} />
 					<Route path="/recipes/:id" element={<Recipe />} />

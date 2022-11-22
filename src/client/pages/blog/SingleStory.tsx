@@ -99,7 +99,7 @@ const SingleStory = () => {
                     })}
                     <div className="ten columns">
                         <div className="buttonwrap">
-                            <Link className="content button solid" to="/blog">Back To Featured Stories</Link>
+                            <Link className="content button solid" to="/stories">Back To Featured Stories</Link>
                         </div>
                     </div>
                 </div>

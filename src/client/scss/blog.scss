@@ -26,7 +26,8 @@
 .story .text a {                    color: var(--red);}
 .story .text li a {                 margin: 0 0 0 6px; color: var(--red);}
 .story .text p b {                 font-weight: 700;}
-.stroy .text p .italic {                    font-style: italic;}
+.story .text p .italic {                    font-style: italic;}
+.story .text p span {               font-family: 'Montserrat', sans-serif; font-weight: 900; display: inline-block; color: var(--red);}
 .story .text .image {               width: calc(100% - 200px); padding: 50px; margin: 0 auto;}
 .story .text .image img {           width: 100%;}
 .story .text .blockquote {           width: calc(100% - 200px); font-size: 56px; line-height: 64px; font-weight: 900; padding: 5px 50px; margin: 30px auto 30px; border-left: 5px solid var(--navy); color: var(--red);}

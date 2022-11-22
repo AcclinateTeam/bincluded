@@ -57,6 +57,7 @@ import Viva from './pages/subpages/partners/Viva';
 import UWay from './pages/subpages/partners/UWay';
 import Stories from './pages/blog/Stories';
 import ConnectionHealth from './pages/subpages/partners/ConnectionHealth';
+import SingleStory from './pages/blog/SingleStory';
 
 library.add(fab, fas, far);
 
@@ -92,6 +93,8 @@ const App = (props: AppProps) =>
 					{/* Blog Paths */}
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />
+					<Route path="/stories" element={<Stories />} />
+					<Route path="/stories/single/:slug" element={<SingleStory />} />0
 					{/* Stories Paths */}		
 					<Route path="/stories" element={<Stories />} />
 					<Route path="/stories/angelica" element={<Angelica />} />

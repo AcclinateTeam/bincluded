@@ -1,6 +1,7 @@
 import * as mysql from 'mysql';
 import blogPosts from './blogPosts'
 import Recipes from './recipes';
+import stories from './stories';
 
 
 require('dotenv').config();
@@ -28,5 +29,6 @@ export const Query = (query: string, values?: Array<string | number>) =>{
 
 export default {
     Recipes,
-    blogPosts
+    blogPosts,
+    stories
 }

@@ -1,0 +1,204 @@
+/* HOME PAGE SCSS STYLES
+============================================================== */
+// HOME PAGE CALLOUT STYLES
+.home {                                                 width: 100%; height: 100vh; position: relative;  background-color: var(--navy); overflow: hidden;}
+.home video {                                           object-fit: contain; opacity: 0.9;}     
+.home .calloutbg {                                      width: 100%; height: 100vh; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
+.home .callout {                               width: 30%; height: 500px; position: absolute; top: 150px; left: 15%;}
+.home .callout .calltext {                     width: 100%; display: block;}
+.home .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 94px; line-height: 97px; font-weight: 900; color: #fff; margin: 46px 0;}
+.home .callout .calltext p {                   width: 90%; font-size: 24px; line-height: 36px; font-weight: 400; color: var(--white); }
+.home .callout .callbutton {                   margin: 30px 0 0; display: block;}
+/* CALLOUT BUTTONS */
+.button {                                       font-family: 'Montserrat', sans-serif; border-radius: 5px; font-size: 18px; font-weight: 900; line-height: 52px; text-transform: uppercase; margin: 0 15px 0 0;}
+.button.signup {                                border: 1px solid var(--red); background-color: var(--red); color: var(--white);} 
+.button.learnmore {                             border: none; background-color: var(--blue) !important; color: var(--white);}
+.button.signup:hover {                          border: 1px solid var(--blue); background-color: var(--blue); color: var(--white);} 
+.button.learnmore:hover {                       border: none; background-color: var(--red) !important; color: var(--white);}
+
+// WHO WE ARE SECTION STYLES
+section.whoWeAre {                              padding: 100px 0; background-color: var(--navy);
+    .text {
+        h2 {                                    font-family: 'Montserrat', sans-serif; font-size: 96px; line-height:96px; font-weight: 900; text-transform: uppercase; margin: 0 0 30px; color: var(--white);
+            span {                              display: inline-block; color: var(--blue);}
+        }
+        p {                                     width: 80%; font-size: 24px; line-height: 32px; color: var(--white);
+            span {                              font-family: 'Montserrat', sans-serif; display: inline-block; font-weight: 900; text-transform: uppercase; color: var(--blue)}
+        }
+    }
+}
+
+// WHAT WE DO SECTION STYLES
+section.whatwedo {                              padding: 100px 0 0; background-color: var(--white);
+    .content {
+        h3 {                                    font-family: 'Montserrat', sans-serif; font-size: 40px; line-height: 40px; font-weight: 900; text-transform: uppercase; margin: 0 0 8px; color: var(--navy);
+            span {                              display: inline-block; color: var(--red);}
+        }
+        p {                                     width: 80%; font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 28px; margin: 0 0 12px; color: var(--navy);
+            span { display: inline-block; font-weight: 900; text-transform: uppercase; color: var(--red)}
+        }
+        a {                                     font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 24px; font-weight: 900; text-decoration: none; color: var(--navy);
+            svg {                               color: var(--red);}
+        }
+        a:hover {                               color: var(--red); }
+        a:hover svg {                           color: var(--navy); }
+        hr {                                    width: 80%; margin: 20px 0; border-top: 2px solid var(--navy); }
+    }
+    .image {                    width: 100%; height: 613px; display: block;}
+}
+
+// HOME RESOURCE PORTAL STYLES
+section.resportal {                 background-color: var(--navy); padding: 100px 10%;
+    .text {                             margin: 0 50px 0 0;
+        h2 {                                font-weight: 900; text-transform: uppercase; color: var(--white);
+            span {                              color: var(--red);}
+        }
+        p {                                 font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; padding: 30px 0 50px; font-weight: 400; color: var(--white);}
+        h4 {                                color: var(--red);}
+    }
+    .deck {
+        .cards {                            margin: 0 15px 30px; border: 2px solid var(--white); border-radius: 15px; padding: 30px;}
+        .cards a {                          font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; color: var(--white);}
+        .cards:hover {                      border: 2px solid var(--white); background-color: var(--white);}
+        .cards:hover h4 {                   color: var(--navy);}
+        .cards:hover p {                    color: var(--navy);}
+        .cards:hover a {                    color: var(--navy);}
+
+        .cards svg {                        color: var(--red);}
+        .cards svg.icon {                   border: 2px solid var(--red); font-size: 30px; border-radius: 35px; padding: 20px; margin: 0 0 20px; color: var(--red);}
+        .cards:hover svg {                        color: var(--red);}
+        .cards:hover svg.icon {                        border: 2px solid var(--red);}
+        .cards h4  {                        padding: 0 0 10px; font-size: 28px; text-transform: none; color: var(--white);}
+        .cards p  {                         height: 140px; font-size: 20px; margin: 0 0 50px; line-height: 28lpx; color: var(--white);}
+    }
+    .deck a {                                 color:var(--black); text-decoration: none;} 
+    .ss360-custom-search {                    justify-content: left;}
+    .ss360-ac-bg {                              background-color: var(--red);}
+    .ss360-ac-b {                               background-color: var(--red);}
+    .ss360-custom-search .ss360-custom-search__searchbox {                  width: 75%; border: 2px solid var(--red);}
+    .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid var(--red);}
+    .ss360-custom-search .ss360-custom-search__searchbutton:hover {               border: 2px solid #3d8fff;}
+}  
+
+
+// HOME PAGE STORIES STYLES
+section.homestories {                  padding: 100px 10% 50px; background-color: #fff;
+    .header h2 {                               text-transform: uppercase; text-align: center; color: var(--navy);}
+    .header p {                                font-size: 24px; line-height: 32px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
+    .case {                                    margin: 50px 0;}
+    .rack {                                    margin: 0 0 40px;}
+    .rack .frames {                            width: calc(100% - 40px); height: 100%; margin: 0 20px 20px; position: relative;}
+    .rack .frames:hover {                      transform: scale(1.03);}
+    .rack .frames .frame {                     width: 100%; height: auto;  position: relative;}
+    .rack .frames .frame .image {              width: 100%; height: 300px; margin: 0 0 -20px; }
+    .rack .frames .frame .image video {        width: 100%; height: 100%; object-fit: cover;} 
+    .rack .frames .frame .image img {           width: 100%; height: 100%; border-radius: 15px; object-fit: cover;} 
+    .rack .frames .frame .text {               width: calc(100% - 40px); border-radius: 15px; padding: 20px; position: absolute; top: 270px; left: 0; background-color: var(--navy);}
+    .rack .frames .frame .text h1 {            font-size: 24px; line-height: 24px; font-weight: 900; color: var(--white); margin: 0;}
+    .rack .frames .frame .text p {             font-size: 18px; line-height: 26px; font-weight: 400; padding: 10px 0 0; color: var(--white); margin: 0;}
+
+    .buttonwrap {                               margin: 50px 0 0;}
+}
+
+
+// SHARE YOUR STORY STYLES
+section.shareyourstory {                      margin: 20px 0 0;                    
+    .container {                             border-radius: 5px;}
+    .image {                                 height: 550px;}
+    .image img {                             height: 550px; padding: 0; margin: 0;}
+    .text {                                  height: 308px; padding: 50px 0 0;}
+    .text h2 {                               text-transform: uppercase; margin: 30px 0 30px; color: var(--navy);
+        span {                                  color: var(--blue);}
+    }
+    .text p {                                font-family: 'DM Sans', sans-serif; font-size: 24px; line-height: 32px; margin: 0 0 30px; font-weight: 700; color: var(--navy); }
+    .button {                                margin: 0; text-align: none !important;}
+}
+
+// HOME PAGE WHYNOW? SECTION STYLES
+.whyNow {                               background-color: var(--navy);
+    .whyImage {                     width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
+    .whyText {                      margin: 100px 40px; display: inline-block;
+        h2 {                        font-size: 72px; line-height: 72px; font-weight: 900; text-transform: uppercase; margin: 0 0 30px; color: #fff;}
+        p {                         font-size: 20px; line-height: 28px; font-weight: 400; margin: 0 0 30px; color: #fff;}
+    }
+    .stats {                    padding: 100px 0 50px;}
+    .stats .stat {              display: block;}
+    .stat .point {              margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; border: 2px solid #287FDD; border-radius: 5px;}
+    .stat .point h3 {           font-family: 'Montserrat', sans-serif; font-size: 92px; line-height: 92px; font-weight: 900; color: #fff; margin: 0 0 20px; text-transform: none;}
+    .stat .point p {            height: 56px; font-size: 20px; line-height: 28px; font-weight: 400; color: #fff; margin: 0; text-transform: none;}
+}
+
+
+// // HOME PAGE COVID-19 SECTION STYLES
+// .c19 {                              position: relative;}
+// .covidbg {                          height: 100%; position: absolute; top: 0; left: 0; width: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; z-index: -99;}
+// .covid {                            padding: 100px 0; text-align: center;}
+// .covid h2 {                          font-weight: 900; color: var(--navy); margin: 0 0 20px;}
+// .covid h3 {                          font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: var(--navy); text-transform: none; padding: 0 0 50px; margin: 0 50px 30px 100px;}
+// .covid .data {                      padding: 0 40px; margin: 0 0 80px;}
+// .covid .data.border {               border-right: 1px solid #cecece;}
+// .covid .data h4 {                   font-family: 'Montserrat', sans-serif; font-size: 54px; line-height: 54px; font-weight: 900; color: #0F0F10; margin: 0 0 10px; text-transform: none;}
+// .covid .data h4 span {              color: var(--red);}
+// .covid .data p {                    font-size: 14px; line-height: 20px; font-weight: 400; color: #0F0F10; margin: 0 0 20px; text-transform: none;}
+
+// CLINICAL RESEARCH STYLES
+.research {                             width: 100%; display: block;}
+.research .panes {                      width: 100%; height: 792px; display: block; position: relative; background-color: var(--white);}
+.research .image {                      width: 100%; display: block;
+    img {                           width: 100%;}
+}
+.research .heading {                    display: block; position: absolute; top: 50%; transform: translateY(-50%); left: 50%; margin-left: -290px;}
+.research .heading h1 {                 font-size: 64px; line-height: 64px; text-align: left; color: #fff;}
+.research .content {                    height: 792px; display: block; position: relative; text-align: center;}
+.research .content .bg {                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.5;}
+.research .content .text {                          padding: 180px 100px; color: #fff; z-index: 9;}
+.research .content .text h1 {                       font-size: 48px; line-height: 48px; text-transform: uppercase; margin: 0 0 10px; color: var(--navy);}
+.research .content .text p {                        font-size: 24px; line-height: 32px; font-weight: 500; color: var(--navy); margin: 0 0 30px;}
+.research .content .text .button {                  margin: 0;}
+.research .content .text .button.solid {            background-color: var(--navy);}
+.research .content .text .button.solid:hover {      background-color: #EEC31A;}
+
+// // JOIN COMMUNITY STYLES
+// .community {                                    position: relative; padding: 0 15%; background-color: var(--navy);}
+// .community .frame {                             margin: 0 10%;}
+// .community .bg {                                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.05;}
+// .community .image1 {                             width: 100%; float: left;}
+// .community .image1 img {                         width: 100%; padding: 50px 0 0;}
+// .community .image2 img {                         width: 70%; padding: 90px 0 0;}
+// .community .content {                           padding: 80px 50px 0 0; color: #fff; }
+// .community .con {                               padding: 80px 0 0 75px; color: #fff; }
+
+// .community .content h2 {                        font-size: 64px; line-height: 64px; color: #fff;}
+// .community .content p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
+// .community .con h2 {                        font-size: 64px; line-height: 64px; color: #fff;}
+// .community .con p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
+
+// .community .left h3 {                           width: 70%; padding: 0 0 10px; color: #fff;}
+// .community .left p {                            display: inline-block; padding: 0;}
+// .community .left ul li {                        font-family: 'DM Sans', sans-serif; display: block; font-weight: 300; padding: 0 0 20px;}
+// .community .left ul li svg {                    font-size: 20px; line-height: 18; float: left; margin: -2px 8px 0 0; color:var(--red);}
+// .community .left ul li h6 {                     font-size: 18px; color: #fff; margin: 0 0 5px;}
+// .community .left ul li p {                      font-size: 16px; line-height: 16px; width: auto; display: inline-block; margin: 0; padding: 0;}
+// .community .left ul a {                        text-decoration: none; color: #fff;}
+// .community .left span {                         color: var(--red); font-weight: 700; display: inline-block;}
+// .community .right h3 {                          font-size: 36px; line-height: 36px; margin: 0 0 10px; color: #fff;}
+// .community .right h6 {                          font-size: 20px; line-height: 20px; margin: 0 0 5px; color: #fff;}
+// .community .right p {                           display: inline-block; padding: 0 100px 0 0;}
+// .community .right ul {                           margin: 0 0 30px}
+// .community .right ul li {                       margin: 0 0 15px;}
+// .community .right ul li svg {                   font-size: 16px; line-height: 16px; float: left; padding: 0 8px 0 0; color:var(--red);}
+// .community .right ul li p {                     width: 70%; font-size: 16px; line-height:16px; margin: 0; padding: 0;}
+// .community .right ul a {                        text-decoration: none; color: #fff;}
+// .community .right span {                         color: var(--red); font-weight: 700; display: inline-block;}
+
+// .community .image {                             width: 100%;}
+
+// // SPONSOR STYLES
+// .partners {                           padding: 100px 15%;}
+// .partners h2 {                        margin: 0 0 50px; text-align: center;}
+// .partners .image {                    width: calc(100% - 70px); height: 200px; margin: 50px 35px 50px; background-repeat: no-repeat; background-size: contain; background-position: center; filter: grayscale(100%);}
+// .partners .image:hover {                      filter: grayscale(0%);}
+// // .partners img {                       width: 100%; display: inline-block;}
+
+
+

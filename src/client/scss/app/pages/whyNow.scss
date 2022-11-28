@@ -1,0 +1,112 @@
+/* #WHYNOW STYLES
+================================================== */
+// HERO STYLES STYLES
+.why.hero {                                      background-color: #000;}
+
+// HOME PAGE WHO WE ARE STYLES
+.whyWeAre {                                     margin:100px 15%;}
+.whyWeAre span {                                font-weight: 700; display: inline-block;}
+.whyWeAre h2 {                                  font-size: 72px; line-height: 72px; margin: 60px 0 0;}
+.whyWeAre p {                                   font-size: 20px; line-height: 28px; padding: 30px 0 30px 100px; border-left: 5px solid #050236; font-weight: 400; }
+.whyWeAre .box {                                width: auto; margin: 100px -20px 0;}
+.whyWeAre .deck .cards {                            width: calc(100% - 40px); height: 417px; border-radius: 15px; margin: 0 20px; overflow: hidden;}
+.whyWeAre .deck .cards:hover {                      transform: scale(1.03);}
+.whyWeAre .deck .cards .card {                      width: 100%; height: 100%; position: relative; overflow: hidden;}
+.whyWeAre .deck .cards .card img {                  width: 100%;}
+.whyWeAre .deck .cards .card .cardimg {             width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: center;}
+.whyWeAre .deck .cards .card:hover .cardimg {       transform: scale(1.03);}
+.whyWeAre .deck .cards .card .text {                width: calc(100% - 60px); height: calc(45% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
+.whyWeAre .deck .cards .card .text h3 {             font-size: 24px; line-height: 24px; font-weight: 900; color: #fff; margin: 0;}
+.whyWeAre .deck .cards .card .text p {              font-size: 18px; line-height: 24px; font-weight: 300; border: none; padding: 10px 0 0; color: #ffffff99; margin: 0;}
+
+.included {                                     height: 657px; position: relative;}
+.included .image {                              width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -99;}
+.included .vidPane {                            width: calc(60% - 100px); padding: 0 50px 0; margin: 0 0 0 20%; height: 100%; background-color: #fff;}
+
+// CONTENT STYLES
+.whyComp .heading {                         padding: 150px 0 250px; text-align: center; margin: 0 0 100px;}
+.whyComp .heading h1 {                      font-size: 64px; line-height: 64px; margin: 0 0 30px; color: #fff;}
+.whyComp .heading a {                       font-weight: 700; text-decoration: none; margin: 0 0 30px; color: #fff;}
+.whyComp .heading p {                       width: 400px; font-size: 16px; line-height: 24px; margin: 30px auto 30px; color: #fff;}
+
+// VIDEO PANEL STYLES
+.whyComp .videoPanel {                      display: block; margin: 0 0 100px;}
+.whyComp .vidPanes {                        display: block; padding: 60px;}
+.whyComp .vidPane {                         height: 600px; display: block;}
+.whyComp .panes {                           display: block; margin: 0 0 60px; box-shadow: 0 0 24px 2px #ddd;}
+.whyComp .panes:last-child {                margin: 0;}
+.whyComp .pane {                            width: calc(100% - 60px); height: 140px; display: block; padding: 30px; background-color: #fff;}
+.whyComp .pane.end {                        margin: 0;}
+.whyComp .pane h1 {                         font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 24px; text-transform: none; margin: 0 0 30px; color: #0F0F10;}
+.whyComp .pane p {                          font-size: 16px; line-height: 24px; margin: 0 0 30px; color: #0F0F10;}
+
+.whyComp .break {                           margin: 60px 0 0;}
+.whyComp .break h1 {                        text-align: center; margin: 0 0 30px; color: #0F0F10;}
+.whyComp .break p {                         width: 50%; margin: 0 auto; text-align: center; font-size: 16px; line-height: 24px; }
+.whyComp .break span {                      font-weight: 700; display: inline-block;}
+
+.whyComp .lower {                           margin: 60px 0 0;}
+.whyComp .lower h1 {                        text-align: center; margin: 0 0 30px; color: #0F0F10;}
+.whyComp .lower p {                         width: 50%; text-align: center; margin: 0 auto 20px; font-size: 16px; line-height: 24px; }
+.whyComp .lower span {                      font-weight: 700; display: inline-block;}
+
+// LEADERSHIP PANEL STYLES
+.leaders {                                  display: block; position: relative; overflow: hidden; padding: 0 0 100px;}
+.leaders .leadersbg {                       width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: 100%; background-repeat: no-repeat; background-position: 0 -200px;}
+.leaders .heading {                         padding: 90px 0 50px;}
+.leaders .heading h2 {                      font-size: 48px; line-height: 48px; text-align: center; margin: 0 0 30px; color: #050236;}
+.leaders .heading h3 {                      width: 700px; font-family: 'Roboto', sans-serif; font-size: 32px; line-height: 40px; font-weight: 500; text-transform: none; text-align: center; margin: 0 auto 30px; color: #050236;}
+.leaders .heading p {                       width: 500px; font-size: 16px; line-height: 24px; text-align: center; margin: 0 auto 30px; color: #050236;}   
+.leaders .windows {                         display: block;}
+.leaders .windows a {                       text-decoration: none;  }
+.leaders .window {                          display: block; margin: 0 30px 30px 0; padding: 30px; box-shadow: 0 0 24px 2px #ddd; background-color: #fff;}
+.leaders .window:hover {                   transform: scale(1.02);}
+.leaders .window .image {                   width: 150px; height: 150px; margin: 0 0 20px;} 
+.leaders .window .image img {               width: 100%; height: 100%; object-fit: cover; box-shadow: 0 0 24px 2px #ddd; display: block;  margin: 0 auto;}              
+.leaders .window svg {                      font-size: 48px; line-height: 48px; margin: 0 0 75px; color: #0F0F10;}
+.leaders .window h1 {                       font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 24px; text-transform: none; margin: 0 0 10px; color: #0F0F10;}
+.leaders .window h6 {                       font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 24px; font-weight: 500; text-transform: none; margin: 0; color: #0F0F10;}
+.leaders .deck {                            margin: 0 0 0;}    
+.leaders .cards {                           display: block; border-radius: 15px;}
+.leaders .card {                            display: block; border-radius: 15px; margin: 0 30px 30px; box-shadow: 0 0 24px 2px #ddd; background-color: #050236;}
+.leaders .image {                           width: 100%;}
+.leaders .text {                            padding: 30px;}   
+.leaders .card img {                        width: 100%; border-radius: 15px 15px 0 0;}
+.leaders .card h1 {                         font-family: 'DM Sans', sans-serif; font-size: 24px; line-height: 24px; text-transform: none; margin: 0 0 10px; color: #fff;}
+.leaders .card p {                          font-size: 16px; line-height: 24px; font-weight: 400; margin: 0 0 30px; color: #ffffff99;}
+.leaders .card a {                          font-size: 16px; line-height: 16px; font-weight: 700; text-decoration: none; color: #fff;}
+.leaders .card a svg {                      color: #CA1D48;}
+
+.leaders .panel {                        position: relative;}
+.leaders .panel a {                      text-decoration: none;}
+.leaders .panes {                        height: 400px; border-radius: 15px; overflow: hidden; margin: 0 10px 20px; position: relative; background-color: #fff;}
+.leaders .panes:hover {                  transform: scale(1.02);}
+.leaders .panes:hover .pane {            bottom: 0;}
+.leaders .pane {                         padding: 20px; width: calc(100% - 40px); position: absolute; bottom: -100px; left: 0; background-color: #050236; z-index: 9;}
+.leaders .panes .image {                  width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; background-position: center;}
+.leaders .panes .image img {                 padding: 10px; width: 100%; height: 100%; object-fit: contain;}
+.leaders .pane h2 {                          font-size: 24px; line-height: 24px; text-transform: none; font-weight: 700; padding: 0; margin: 0 0 10px; color: #fff;}
+.leaders .pane p {                           font-size: 18px; line-height: 26px; font-weight: 300; margin: 0; color: #FFFFFF99;}
+
+// ORGANIZATIONS PANEL STYLES
+.orgs {                                     display: block; position: relative; overflow: hidden; margin: 0 0 100px;}
+.orgs .heading {                            padding: 100px 0 30px;}
+.orgs .heading h1 {                         font-size: 56px; line-height: 56px; text-align: center; margin: 0 0 30px;}
+.orgs .heading p {                          width: 700px; font-family: 'DM Sans', sans-serif; font-size: 18px; line-height: 26px; font-weight: 300; text-transform: none; text-align: center; margin: 0 auto; color: #0F0F10;}
+.orgs .orgImg {                             width: 100%; height: 240px; display: block; margin: 0 0 30px; background-repeat: no-repeat; background-position: center; background-size: 50%;}
+
+// WHY YOU SHOULD GET INVOLVED STYLES
+.whyInvolved {                                      padding: 0 0 0 15%;}
+.whyInvolved .text {                                 padding: 66px 100px 75px 0;}
+.whyInvolved .text h2 {                             padding: 0 0 30px;}
+.whyInvolved .text p {                              font-size: 16px; line-height: 24px; padding: 0 0 20px 0; font-weight: 300;}
+.whyInvolved .image {                               height: auto;}
+.whyInvolved .image img {                           width: 100%; }
+
+// WHY YOU SHOULD GET INVOLVED STYLES
+.bInvolved {                                      padding: 100px 0 0 0;}
+.bInvolved .text {                                 padding: 106px 30% 75px 100px;}
+.bInvolved .text h2 {                             padding: 0 0 30px;}
+.bInvolved .text p {                              font-size: 16px; line-height: 24px; padding: 0 0 20px 0; font-weight: 300;}
+.bInvolved .image {                               height: auto;}
+.bInvolved .image img {                           width: 100%; }

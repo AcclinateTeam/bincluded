@@ -1,0 +1,61 @@
+/* HEADER SCSS STYLES
+============================================================== */
+/* HEADER STYLES */
+
+header {                        width: 100%; display: block; margin: 0; padding: 0; position: fixed; top: 0; left: 0; z-index: 99;
+  // HEADER/LOGO STYLES
+  .header.wrapper {               padding: 50px 0 10px;
+    .logo {                         margin: 0; float: left;}
+    .logo svg {                     height: 35px; margin: 5px 0 0;}
+  }
+
+  /* NAV STYLES */
+  nav {                           margin: 0 0 0 50px; float: right;
+    ul {                        list-style: none; margin: 0; padding:  0; 
+      li:hover > ul,
+      li:focus-within > ul, /* this is the line we add */
+      li ul:hover {          visibility: visible; opacity: 1;}    
+      li ul li {             clear: both; width: calc(100% - 2rem);}
+      li ul {                  background: var(--blue); visibility: hidden; opacity: 0; width: 100%; border-radius: 0 0 5px 5px; position: absolute; margin-top: 1rem; left: 0; }  
+    }  
+    li {                          color: var(--white); display: block; float: left; padding: 1rem; margin: 0 ; border-radius: 5px; font-family: 'DM Sans', sans-serif; font-size: 18px; font-weight: 700; position: relative; transition-duration: 0.5s;}    
+    li a {                        color: var(--white); text-decoration: none; }  
+    li:hover {                    background: var(--blue); cursor: pointer; border-radius: 5px;}  
+    li#drop {                     border-radius: 5px 5px 0 0;}
+    li:hover > #drop {          border-radius: 20px;}
+    li.logins {                 margin: 0 0 0 20px; background-color: var(--blue);}
+    li.logins a {            color: var(--white);}
+  }
+
+  /* LOGIN/SIGNUP NAV BUTTON STYLES */
+  .login {                        margin: 0;
+    ul.log {                        margin: 0; padding: 0; list-style: none;
+      li {                     font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 900; margin: 0; display: inline-block; margin: 0 15px 0 0;}
+      li a {                   display: block; padding: 15px 25px; text-decoration: none; border-radius: 5px;}
+      li.signup a {            color: var(--blue);}
+      
+    }  
+  }
+}
+
+// DROPMENU STYLES
+header .navButton {             display: none; opacity: 0; visibility: hidden;}
+
+/* SUBHEADER STYLES */
+header.sub {                            width: 100%; display: block; margin: 0; padding: 0; position: relative; top: 0; left: 0; z-index: 99; background-color: #050236;}
+header.sub .header.wrapper {            height: 45px; padding: 30px 0 30px; }
+header.sub ul.log li.signup a { color: #fff;}
+
+/* HOVER STYLES */
+ul.log li.signup a:hover {        background-color: #EEC31A; color: #0F0F10;}
+ul.log li.logins a:hover {        background-color: #EEC31A; color: #0F0F10;}
+
+ul.nav.active {				    margin-top: 7px}
+.header-logo.active {			margin-top: 5px;}
+.menu-button.active {			margin-top: 10px;}
+ul.settings.active {			margin-top: 11px;}
+
+
+
+
+

@@ -11,7 +11,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'; // import fa regular 
 
 /* PAGE IMPORTS */
 // CORE PAGES
-import Home from './pages/Home';
+import Home from './app/pages/home/Home';
 import Health from './pages/Health';
 import Family from './pages/Family';
 import Careers from './pages/Careers';
@@ -79,12 +79,11 @@ const App = (props: AppProps) =>
 				<Routes>
 					{/* Core Paths */}
 					<Route path="/" element={<Home />} />
-					<Route path="/health" element={<Health />} />
+					{/* <Route path="/health" element={<Health />} />
 					<Route path="/family" element={<Family />} />
 					<Route path="/careers" element={<Careers />} />
 					<Route path="/covid" element={<Covid />} />
 					<Route path="/resources" element={<Resources />} />
-					{/* SubPage Paths */}
 					<Route path="/partners" element={<Partners />} />
 					<Route path="/partners/coopergreen" element={<CooperGreen />} />
 					<Route path="/partners/lhsa" element={<LHSA />} />
@@ -93,17 +92,12 @@ const App = (props: AppProps) =>
 					<Route path="/partners/conHealth" element={<ConnectionHealth />} />
 					<Route path="/whynow" element={<WhyNow />} />
 					<Route path="/resources" element={<Resources />} />
-					{/* Blog Paths */}
-					{/* <Route path="/blog" element={<Blog />} /> */}
 					<Route path="/blog/multiplemyeloma" element={<MultipleMyeloma />} />
 					<Route path="/blog/alzheimers" element={<Alzheimers />} />
 					<Route path="/blog/BrainHealth" element={<BrainHealth />} />
 					<Route path="/blog/SickleCell" element={<SickleCell />} />
-
-					{/* Blog Paths */}
 					<Route path="/blog" element={<Blog />} />
 					<Route path="/blog/single/:id" element={<SinglePost />} />
-					{/* Stories Paths */}		
 					<Route path="/stories" element={<Stories />} />
 					<Route path="/stories/angelica" element={<Angelica />} />
 					<Route path="/stories/calanda" element={<Calanda />} />
@@ -119,19 +113,16 @@ const App = (props: AppProps) =>
 					<Route path="/stories/sonja" element={<Sonja />} />
 					<Route path="/stories/walladean" element={<Walladean />} />
 					<Route path="/stories/single/:id" element={<SinglePost />} />
-					{/* Recipe Paths */}
 					<Route path="/recipes" element={<RecipeSearch />} />
 					<Route path="/recipes/:id" element={<Recipe />} />
 					<Route path="/submit" element={<Submit />} />
-					{/* Trial Paths */}
 					<Route path="/trials" element={<Trials />} />
 					<Route path="/trials/results/:text" element={<Results />} />
 					<Route path="/trials/results/study/:text/:id" element={<FullStudy />} />
 					<Route path="/trials/study/:id" element={<FullStudy />} />
-					{/* Utils Paths */}
 					<Route path="/privacy" element={<Privacy />} />
 					<Route path="/terms" element={<Terms />} />
-					<Route path="*" element={<NotFound />} />
+					<Route path="*" element={<NotFound />} /> */}
 				</Routes>
 				<Footer />
 			</BrowserRouter>

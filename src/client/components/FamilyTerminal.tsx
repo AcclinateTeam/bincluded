@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
 
 import General from './subComponents/Family/General';
 import Youth from './subComponents/Family/Youth';
@@ -9,32 +8,36 @@ import Education from './subComponents/Family/Education';
 import Transportation from './subComponents/Family/Transportation';
 import Legal from './subComponents/Family/Legal';
 
-const Terminal = () =>
-{
+const Terminal = () => {
+
+    const [cards, setCards] = useState([]);
+
+    useEffect(() => {
+        fetch('/api/resources/allres')
+            .then(res => res.json())
+            .then(cards => setCards(cards))
+    }, []);
 
     const [mental, setMental] = useState(false);
     const [physical, setPhysical] = useState(false);
     const [tele, setTele] = useState(false);
     const [legal, setLegal] = useState(false);
 
-    const mentalLoaded = () =>
-    {
+    const mentalLoaded = () => {
         setMental(true);
         setPhysical(false);
         setTele(false);
         setLegal(false);
     }
 
-    const physicalLoaded = () =>
-    {
+    const physicalLoaded = () => {
         setMental(false);
         setPhysical(true);
         setTele(false);
         setLegal(false);
     }
 
-    const teleLoaded = () =>
-    {
+    const teleLoaded = () => {
         setMental(false);
         setPhysical(false);
         setLegal(false);
@@ -42,24 +45,21 @@ const Terminal = () =>
     }
 
 
-    const personalButton = () =>
-    {
+    const personalButton = () => {
         setMental(false);
         setPhysical(false);
         setTele(false);
         setLegal(false);
     }
 
-    const legalLoaded = () =>
-    {
+    const legalLoaded = () => {
         setMental(false);
         setPhysical(false);
         setTele(false);
         setLegal(true);
     }
 
-    if (mental && !physical && !tele && !legal)
-    {
+    if (mental && !physical && !tele && !legal) {
         return (
             <>
                 <section className="addRes">
@@ -92,7 +92,7 @@ const Terminal = () =>
             </>
         );
     } else if (!mental && !physical && !tele && legal) {
-        return(
+        return (
             <>
                 <section className="addRes">
                     <div className="container">
@@ -107,12 +107,33 @@ const Terminal = () =>
                                     <a onClick={mentalLoaded}><li>Youth</li></a>
                                     <a onClick={physicalLoaded}><li>Education</li></a>
                                     <a onClick={teleLoaded}><li>Transportation</li></a>
-                                    <a onClick={legalLoaded}><li className="active">Legal</li></a>                                    
+                                    <a onClick={legalLoaded}><li className="active">Legal</li></a>
                                 </ul>
                             </div>
                             <div className="panel">
                                 <div className="container">
-                                    <Legal />
+                                    {cards.map((post: any, index) => {
+                                        if (post.f_general == 'true') {
+                                            return (
+                                                <div className="third columns" key={post.id}>
+                                                    <div className="panes">
+                                                        <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                            <div className="image" style={{ backgroundImage: `url("/images/partners/${post.image}")`, backgroundColor: '#ffffff' }}></div>
+                                                        </a>
+                                                        <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                            <div className="pane">
+                                                                <h2>{post.title}</h2>
+                                                                <p>{post.description}</p>
+                                                                <h2>Who Will Benefit</h2>
+                                                                <p>{post.benefit}</p>
+                                                                <span>Read More</span> <FontAwesomeIcon className="readmo" icon="arrow-right" />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+                                    })}
                                 </div>
                             </div>
                         </div>
@@ -120,8 +141,7 @@ const Terminal = () =>
                 </section>
             </>
         )
-    } else if (!mental && physical && !tele && !legal) 
-    {
+    } else if (!mental && physical && !tele && !legal) {
         return (
             <>
                 <section className="addRes">
@@ -137,12 +157,33 @@ const Terminal = () =>
                                     <a onClick={mentalLoaded}><li>Youth</li></a>
                                     <a onClick={physicalLoaded}><li className="active">Education</li></a>
                                     <a onClick={teleLoaded}><li>Transportation</li></a>
-                                    <a onClick={legalLoaded}><li>Legal</li></a>                                    
+                                    <a onClick={legalLoaded}><li>Legal</li></a>
                                 </ul>
                             </div>
                             <div className="panel">
                                 <div className="container">
-                                    <Education />
+                                    {cards.map((post: any, index) => {
+                                        if (post.f_educ == 'true') {
+                                            return (
+                                                <div className="third columns" key={post.id}>
+                                                    <div className="panes">
+                                                        <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                            <div className="image" style={{ backgroundImage: `url("/images/partners/${post.image}")`, backgroundColor: '#ffffff' }}></div>
+                                                        </a>
+                                                        <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                            <div className="pane">
+                                                                <h2>{post.title}</h2>
+                                                                <p>{post.description}</p>
+                                                                <h2>Who Will Benefit</h2>
+                                                                <p>{post.benefit}</p>
+                                                                <span>See Featured Partners</span> <FontAwesomeIcon className="readmo" icon="arrow-right" />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+                                    })}
                                 </div>
                             </div>
                             <div className="buttonwrap">
@@ -154,8 +195,7 @@ const Terminal = () =>
             </>
         );
 
-    } else if (!mental && !physical && !legal && tele)
-    {
+    } else if (!mental && !physical && !legal && tele) {
         return (
             <>
                 <section className="addRes">
@@ -188,8 +228,7 @@ const Terminal = () =>
             </>
         );
 
-    } else 
-    {
+    } else {
         return (
             <>
                 <section className="addRes">
@@ -210,11 +249,32 @@ const Terminal = () =>
                             </div>
                             <div className="panel">
                                 <div className="container">
-                                    <General />
+                                    {cards.map((post: any, index) => {
+                                        if (post.f_general == 'true') {
+                                            return (
+                                                <div className="third columns" key={post.id}>
+                                                    <div className="panes">
+                                                        <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                            <div className="image" style={{ backgroundImage: `url("/images/partners/${post.image}")`, backgroundColor: '#ffffff' }}></div>
+                                                        </a>
+                                                        <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                            <div className="pane">
+                                                                <h2>{post.title}</h2>
+                                                                <p>{post.description}</p>
+                                                                <h2>Who Will Benefit</h2>
+                                                                <p>{post.benefit}</p>
+                                                                <span>Read More</span> <FontAwesomeIcon className="readmo" icon="arrow-right" />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+                                    })}
                                 </div>
                             </div>
                             <div className="buttonwrap">
-                                <Link className="button" to="/partners">Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                <Link className="button" to="/partners">See Featured Partners <FontAwesomeIcon icon="arrow-right" /></Link>
                             </div>
                         </div>
                     </div>

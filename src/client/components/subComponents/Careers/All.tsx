@@ -5,7 +5,7 @@ const All = () =>
 {
     return (
         <>
-            <ResPartner title="Central Six" image="centralsix.png" description="Central Six Parterns with local industires and employers to connect individuals not just to jobs but career paths." benefit="Unemployed or low-wage, low-skill workers looking to start a career with higher-wage potential, and higher-skilled positions." url="https://centralsix.org/" tags="CentralSix" />
+            <ResPartner title="Central Six" image="centralsix.png" description="Central Six Parterns with local industires and employers to connect individuals not just to jobs but career paths." benefit="Unemployed or low-wage, low-skill workers looking to start a career with higher-wage potential, and higher-skilled positions." url="https://centralsix.org/" tags="CentralSix" />            
 
             <ResPartner title="Community Care Development Network" image="ccdn.webp" description=" Community Care Development Network is a faith-based non-profit 501c3 Organization that specializes in healing and helping the whole family. Our purpose is to help heal the whole family through our community-based programs." benefit="Low income familes seeking reources to help them reach a place of self sufficiency and generate more income." url="https://www.ccommunitycaredn.org/" tags="CCDN" />
 

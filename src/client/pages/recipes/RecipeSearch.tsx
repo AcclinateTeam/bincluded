@@ -57,7 +57,7 @@ const RecipeSearch: React.FC<SearchProps> = (props) =>
                         <div className="container" style={{ marginBottom: '100px' }}>
                             <div className="deck">
                                 {/* component start */}
-                                {recipes.map(recipe => (
+                                {recipes.map((recipe: any, index) => (
                                     <>
                                         <div className="third columns">
                                             <div className="cards">

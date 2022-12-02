@@ -1,6 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
-import { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -26,7 +24,7 @@ const BlogPosts = () =>
     return (
         <>
             <div className="container featwrap">
-                {blogPosts.map((post, index) => (
+                {blogPosts.map((post: any, index) => (
                     <div className="third columns" key={post.id}>
                         <div className="articles">
                             <div className="article">

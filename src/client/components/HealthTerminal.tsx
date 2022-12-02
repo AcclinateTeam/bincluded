@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useState } from 'react';
-
 
 import AllAdult from './subComponents/Health/AllAdult';
 
-const Terminal = () =>
-{
+const Terminal = () => {
+
+    const [cards, setCards] = useState([]);
+
+    useEffect(() => {
+        fetch('/api/resources/allres')
+            .then(res => res.json())
+            .then(cards => setCards(cards))
+    }, []);
+
     return (
         <>
             <section className="addRes health">
@@ -19,7 +25,34 @@ const Terminal = () =>
                         </div>
                         <div className="panel">
                             <div className="container">
-                                <AllAdult />
+                                {cards.map((post: any, index) => {
+                                    if (post.health == 'true') {
+                                        return (
+                                            <div className="third columns" key={post.id}>
+                                                <div className="panes">
+                                                    <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                        <div className="image" style={{ backgroundImage: `url("/images/partners/${post.image}")`, backgroundColor: '#ffffff' }}></div>
+                                                    </a>
+                                                    <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                        <div className="pane">
+                                                            <h2>{post.title}</h2>
+                                                            <p>{post.description}</p>
+                                                            <h2>Who Will Benefit</h2>
+                                                            <p>{post.benefit}</p>
+                                                            <span>Read More</span> <FontAwesomeIcon className="readmo" icon="arrow-right" />
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        )
+                                    } if (post.career = null) {
+                                        return (
+                                            <>
+                                                hahahhahahaha
+                                            </>
+                                        )
+                                    }
+                                })}
                             </div>
                         </div>
                     </div>

@@ -6,7 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Header from '../../components/Header';
 import ShareYourStory from '../../components/ShareYourStory';
 import Loading from '../../components/Loading';
-import BlogItem from './BlogItem';
 import moment from 'moment';
 
 const Blog = () => {

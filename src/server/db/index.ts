@@ -1,6 +1,7 @@
 import * as mysql from 'mysql';
 import blogPosts from './blogPosts'
 import Recipes from './recipes';
+import resources from './resources';
 import stories from './stories';
 
 
@@ -30,5 +31,6 @@ export const Query = (query: string, values?: Array<string | number>) =>{
 export default {
     Recipes,
     blogPosts,
-    stories
+    stories,
+    resources
 }

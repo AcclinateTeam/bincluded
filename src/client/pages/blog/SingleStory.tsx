@@ -81,21 +81,38 @@ const SingleStory = () => {
                 <div className="container">
                     {single.map((post: any, index) => {
                         var htmlText = post.content;
-                        
-                        return (
-                            <>
-                                <div className="six columns offset-by-two">
-                                    <div className="storie">
-                                        <h2>{post.title}</h2>
-                                        <h4>{post.subTitle}</h4>
-                                        <iframe width="100%" height="100%" src={post.videolink} title={post.type} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        if (post.type == 'YouTube video player') {
+                            return (
+                                <>
+                                    <div className="six columns offset-by-two">
+                                        <div className="storie">
+                                            <h2>{post.title}</h2>
+                                            <h4>{post.subTitle}</h4>
+                                            <iframe width="100%" height="100%" src={post.videolink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="six columns offset-by-two">
-                                    <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
-                                </div>
-                            </>
-                        )
+                                    <div className="six columns offset-by-two">
+                                        <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
+                                    </div>
+                                </>
+                            )
+                        } else if (post.type == 'vimeo-player') {
+                            return (
+                                <>
+                                    <div className="six columns offset-by-two">
+                                        <div className="storie">
+                                            <h2>{post.title}</h2>
+                                            <h4>{post.subTitle}</h4>
+                                            <iframe title="vimeo-player" src={post.videoLink} width="100%" height="100%" frameBorder="0" allowFullScreen></iframe>
+                                        </div>
+                                    </div>
+                                    <div className="six columns offset-by-two">
+                                        <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
+                                    </div>
+                                </>
+                            )
+                        }
+                        
                     })}
                     <div className="ten columns">
                         <div className="buttonwrap">

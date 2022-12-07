@@ -103,7 +103,7 @@ const SingleStory = () => {
                                         <div className="storie">
                                             <h2>{post.title}</h2>
                                             <h4>{post.subTitle}</h4>
-                                            <iframe title="vimeo-player" src={post.videoLink} width="100%" height="100%" frameBorder="0" allowFullScreen></iframe>
+                                            <iframe title="vimeo-player" src={"https://player.vimeo.com/video/773985832?h=802b4f3948"} width="100%" height="100%" frameBorder="0" allowFullScreen></iframe>
                                         </div>
                                     </div>
                                     <div className="six columns offset-by-two">

@@ -51,7 +51,7 @@ section.whatwedo {                              padding: 100px 0 0; background-c
 section.resportal {                 background-color: var(--navy); padding: 100px 10%;
     .text {                             margin: 0 50px 0 0;
         h2 {                                font-weight: 900; text-transform: uppercase; color: var(--white);
-            span {                              color: var(--red);}
+            span {                              color: var(--blue);}
         }
         p {                                 font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; padding: 30px 0 50px; font-weight: 400; color: var(--white);}
         h4 {                                color: var(--red);}
@@ -65,41 +65,44 @@ section.resportal {                 background-color: var(--navy); padding: 100p
         .cards:hover a {                    color: var(--navy);}
 
         .cards svg {                        color: var(--red);}
-        .cards svg.icon {                   border: 2px solid var(--red); font-size: 30px; border-radius: 35px; padding: 20px; margin: 0 0 20px; color: var(--red);}
-        .cards:hover svg {                        color: var(--red);}
-        .cards:hover svg.icon {                        border: 2px solid var(--red);}
+        .cards svg.icon {                   border: 2px solid var(--blue); font-size: 30px; border-radius: 35px; padding: 20px; margin: 0 0 20px; color: var(--blue);}
+        .cards:hover svg {                        color: var(--blue);}
+        .cards:hover svg.icon {                        border: 2px solid var(--blue);}
         .cards h4  {                        padding: 0 0 10px; font-size: 28px; text-transform: none; color: var(--white);}
         .cards p  {                         height: 140px; font-size: 20px; margin: 0 0 50px; line-height: 28lpx; color: var(--white);}
     }
     .deck a {                                 color:var(--black); text-decoration: none;} 
     .ss360-custom-search {                    justify-content: left;}
-    .ss360-ac-bg {                              background-color: var(--red);}
-    .ss360-ac-b {                               background-color: var(--red);}
-    .ss360-custom-search .ss360-custom-search__searchbox {                  width: 75%; border: 2px solid var(--red);}
-    .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid var(--red);}
+    .ss360-ac-bg {                              background-color: var(--blue);}
+    .ss360-ac-b {                               background-color: var(--blue);}
+    .ss360-custom-search .ss360-custom-search__searchbox {                  width: 75%; border: 2px solid var(--blue);}
+    .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid var(--blue);}
     .ss360-custom-search .ss360-custom-search__searchbutton:hover {               border: 2px solid #3d8fff;}
 }  
 
-
 // HOME PAGE STORIES STYLES
-section.homestories {                  padding: 100px 10% 50px; background-color: #fff;
-    .header h2 {                               text-transform: uppercase; text-align: center; color: var(--navy);}
-    .header p {                                font-size: 24px; line-height: 32px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
-    .case {                                    margin: 50px 0;}
-    .rack {                                    margin: 0 0 40px;}
-    .rack .frames {                            width: calc(100% - 40px); height: 100%; margin: 0 20px 20px; position: relative;}
-    .rack .frames:hover {                      transform: scale(1.03);}
-    .rack .frames .frame {                     width: 100%; height: auto;  position: relative;}
-    .rack .frames .frame .image {              width: 100%; height: 300px; margin: 0 0 -20px; }
-    .rack .frames .frame .image video {        width: 100%; height: 100%; object-fit: cover;} 
-    .rack .frames .frame .image img {           width: 100%; height: 100%; border-radius: 15px; object-fit: cover;} 
-    .rack .frames .frame .text {               width: calc(100% - 40px); border-radius: 15px; padding: 20px; position: absolute; top: 270px; left: 0; background-color: var(--navy);}
-    .rack .frames .frame .text h1 {            font-size: 24px; line-height: 24px; font-weight: 900; color: var(--white); margin: 0;}
-    .rack .frames .frame .text p {             font-size: 18px; line-height: 26px; font-weight: 400; padding: 10px 0 0; color: var(--white); margin: 0;}
+section.homestories {               padding: 100px 10% 50px; background-color: #fff;
+    .header h2 {                        text-transform: uppercase; text-align: center; color: var(--navy);}
+    .header h2 span {                   display: inline-block; color: var(--blue);}
+    .header p {                         font-size: 24px; line-height: 32px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
+    .case {                             margin: 50px 0;}
+    .rack {                             margin: 0 0 40px;
+        .frames {                           width: calc(100% - 40px); height: 100%; margin: 0 20px 20px; position: relative;
+            .frame {                            width: 100%; height: auto;  position: relative;}
+            .frame .image {                     width: 100%; height: 300px; margin: 0 0 -20px; }
+            .frame .image video {               width: 100%; height: 100%; object-fit: cover;} 
+            .frame .image img {                 width: 100%; height: 100%; border-radius: 15px; object-fit: cover;} 
+            .frame .text {                      width: calc(100% - 40px); border-radius: 15px; padding: 20px; position: absolute; top: 270px; left: 0; background-color: var(--blue);}
+            .frame .text h1 {                   font-size: 24px; line-height: 24px; font-weight: 900; color: var(--white); margin: 0;}
+            .frame .text p {                    font-size: 18px; line-height: 26px; font-weight: 400; padding: 10px 0 0; color: var(--white); margin: 0;}
+        }
+        .frames:hover {                     transform: scale(1.03);}
+        
+    }
+    
 
     .buttonwrap {                               margin: 50px 0 0;}
 }
-
 
 // SHARE YOUR STORY STYLES
 section.shareyourstory {                      margin: 20px 0 0;                    
@@ -129,76 +132,84 @@ section.shareyourstory {                      margin: 20px 0 0;
 }
 
 
-// // HOME PAGE COVID-19 SECTION STYLES
+// CLINICAL RESEARCH STYLES
+section.research {                     width: 100%; display: block;
+    .panes {                      width: 100%; height: auto; display: block; position: relative; background-color: var(--white);
+        .image {                      width: 100%; height: 602px; display: block;
+            img {                           width: 100%;}
+        }
+    }
+    
+    .heading {                    display: block; position: absolute; top: 50%; transform: translateY(-50%); left: 50%; margin-left: -290px;}
+    .heading h1 {                 font-size: 64px; line-height: 64px; text-align: left; color: #fff;}
+    .content {                    display: block; position: relative; text-align: left;
+        .text {                          padding: 130px 100px 0; color: #fff; z-index: 9;}
+        .text h1 {                       font-size: 54px; line-height: 54px; text-transform: uppercase; margin: 0 0 30px; color: var(--navy);}
+        .text h1 span {                    color: var(--blue);}
+        .text p {                        width: 80%; font-size: 24px; line-height: 32px; font-weight: 500; color: var(--navy); margin: 0 0 30px;}
+        .text div.button {                  margin: 0; text-align: left; padding: 0;}
+        .text .button.solid {            background-color: var(--red);}
+        .text .button.solid:hover {      background-color: var(--blue); color: var(--white);}
+    }    
+}
+
+// HOME PAGE COVID-19 SECTION STYLES
 // .c19 {                              position: relative;}
 // .covidbg {                          height: 100%; position: absolute; top: 0; left: 0; width: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; z-index: -99;}
-// .covid {                            padding: 100px 0; text-align: center;}
-// .covid h2 {                          font-weight: 900; color: var(--navy); margin: 0 0 20px;}
-// .covid h3 {                          font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: var(--navy); text-transform: none; padding: 0 0 50px; margin: 0 50px 30px 100px;}
-// .covid .data {                      padding: 0 40px; margin: 0 0 80px;}
-// .covid .data.border {               border-right: 1px solid #cecece;}
-// .covid .data h4 {                   font-family: 'Montserrat', sans-serif; font-size: 54px; line-height: 54px; font-weight: 900; color: #0F0F10; margin: 0 0 10px; text-transform: none;}
-// .covid .data h4 span {              color: var(--red);}
-// .covid .data p {                    font-size: 14px; line-height: 20px; font-weight: 400; color: #0F0F10; margin: 0 0 20px; text-transform: none;}
-
-// CLINICAL RESEARCH STYLES
-.research {                             width: 100%; display: block;}
-.research .panes {                      width: 100%; height: 792px; display: block; position: relative; background-color: var(--white);}
-.research .image {                      width: 100%; display: block;
-    img {                           width: 100%;}
+section.covid {                            padding: 100px 0; text-align: center; background-color: var(--navy);
+    h2 {                          font-weight: 900; color: var(--white); text-transform: uppercase; margin: 0 0 20px;}
+    h2 span {                    color: var(--blue);}
+    h3 {                          font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: var(--red); text-transform: none; padding: 0 0 50px; margin: 0 50px 30px 50px;}
+    .data {                      padding: 0 40px; margin: 0 0 80px;}
+    .data.border {               border-right: 1px solid #cecece;}
+    .data h4 {                   font-family: 'Montserrat', sans-serif; font-size: 54px; line-height: 54px; font-weight: 900; color: #0F0F10; margin: 0 0 10px; text-transform: none;}
+    .data h4 span {              color: var(--white);}
+    .data p {                    font-size: 18px; line-height: 24px; font-weight: 400; color: var(--blue); margin: 0 0 20px; text-transform: none;}
 }
-.research .heading {                    display: block; position: absolute; top: 50%; transform: translateY(-50%); left: 50%; margin-left: -290px;}
-.research .heading h1 {                 font-size: 64px; line-height: 64px; text-align: left; color: #fff;}
-.research .content {                    height: 792px; display: block; position: relative; text-align: center;}
-.research .content .bg {                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.5;}
-.research .content .text {                          padding: 180px 100px; color: #fff; z-index: 9;}
-.research .content .text h1 {                       font-size: 48px; line-height: 48px; text-transform: uppercase; margin: 0 0 10px; color: var(--navy);}
-.research .content .text p {                        font-size: 24px; line-height: 32px; font-weight: 500; color: var(--navy); margin: 0 0 30px;}
-.research .content .text .button {                  margin: 0;}
-.research .content .text .button.solid {            background-color: var(--navy);}
-.research .content .text .button.solid:hover {      background-color: #EEC31A;}
 
-// // JOIN COMMUNITY STYLES
-// .community {                                    position: relative; padding: 0 15%; background-color: var(--navy);}
-// .community .frame {                             margin: 0 10%;}
-// .community .bg {                                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.05;}
-// .community .image1 {                             width: 100%; float: left;}
-// .community .image1 img {                         width: 100%; padding: 50px 0 0;}
-// .community .image2 img {                         width: 70%; padding: 90px 0 0;}
-// .community .content {                           padding: 80px 50px 0 0; color: #fff; }
-// .community .con {                               padding: 80px 0 0 75px; color: #fff; }
 
-// .community .content h2 {                        font-size: 64px; line-height: 64px; color: #fff;}
-// .community .content p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
-// .community .con h2 {                        font-size: 64px; line-height: 64px; color: #fff;}
-// .community .con p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
 
-// .community .left h3 {                           width: 70%; padding: 0 0 10px; color: #fff;}
-// .community .left p {                            display: inline-block; padding: 0;}
-// .community .left ul li {                        font-family: 'DM Sans', sans-serif; display: block; font-weight: 300; padding: 0 0 20px;}
-// .community .left ul li svg {                    font-size: 20px; line-height: 18; float: left; margin: -2px 8px 0 0; color:var(--red);}
-// .community .left ul li h6 {                     font-size: 18px; color: #fff; margin: 0 0 5px;}
-// .community .left ul li p {                      font-size: 16px; line-height: 16px; width: auto; display: inline-block; margin: 0; padding: 0;}
-// .community .left ul a {                        text-decoration: none; color: #fff;}
-// .community .left span {                         color: var(--red); font-weight: 700; display: inline-block;}
-// .community .right h3 {                          font-size: 36px; line-height: 36px; margin: 0 0 10px; color: #fff;}
-// .community .right h6 {                          font-size: 20px; line-height: 20px; margin: 0 0 5px; color: #fff;}
-// .community .right p {                           display: inline-block; padding: 0 100px 0 0;}
-// .community .right ul {                           margin: 0 0 30px}
-// .community .right ul li {                       margin: 0 0 15px;}
-// .community .right ul li svg {                   font-size: 16px; line-height: 16px; float: left; padding: 0 8px 0 0; color:var(--red);}
-// .community .right ul li p {                     width: 70%; font-size: 16px; line-height:16px; margin: 0; padding: 0;}
-// .community .right ul a {                        text-decoration: none; color: #fff;}
-// .community .right span {                         color: var(--red); font-weight: 700; display: inline-block;}
+// JOIN COMMUNITY STYLES
+.community {                                    position: relative; padding: 0 15%; background-color: var(--navy);}
+.community .frame {                             margin: 0 10%;}
+.community .bg {                                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.05;}
+.community .image1 {                             width: 100%; float: left;}
+.community .image1 img {                         width: 100%; padding: 50px 0 0;}
+.community .image2 img {                         width: 70%; padding: 90px 0 0;}
+.community .content {                           padding: 80px 50px 0 0; color: #fff; }
+.community .con {                               padding: 80px 0 0 75px; color: #fff; }
 
-// .community .image {                             width: 100%;}
+.community .content h2 {                        font-size: 64px; line-height: 64px; color: #fff;}
+.community .content p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
+.community .con h2 {                        font-size: 64px; line-height: 64px; color: #fff;}
+.community .con p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
 
-// // SPONSOR STYLES
-// .partners {                           padding: 100px 15%;}
-// .partners h2 {                        margin: 0 0 50px; text-align: center;}
-// .partners .image {                    width: calc(100% - 70px); height: 200px; margin: 50px 35px 50px; background-repeat: no-repeat; background-size: contain; background-position: center; filter: grayscale(100%);}
-// .partners .image:hover {                      filter: grayscale(0%);}
-// // .partners img {                       width: 100%; display: inline-block;}
+.community .left h3 {                           width: 70%; padding: 0 0 10px; color: #fff;}
+.community .left p {                            display: inline-block; padding: 0;}
+.community .left ul li {                        font-family: 'DM Sans', sans-serif; display: block; font-weight: 300; padding: 0 0 20px;}
+.community .left ul li svg {                    font-size: 20px; line-height: 18; float: left; margin: -2px 8px 0 0; color:var(--red);}
+.community .left ul li h6 {                     font-size: 18px; color: #fff; margin: 0 0 5px;}
+.community .left ul li p {                      font-size: 16px; line-height: 16px; width: auto; display: inline-block; margin: 0; padding: 0;}
+.community .left ul a {                        text-decoration: none; color: #fff;}
+.community .left span {                         color: var(--red); font-weight: 700; display: inline-block;}
+.community .right h3 {                          font-size: 36px; line-height: 36px; margin: 0 0 10px; color: #fff;}
+.community .right h6 {                          font-size: 20px; line-height: 20px; margin: 0 0 5px; color: #fff;}
+.community .right p {                           display: inline-block; padding: 0 100px 0 0;}
+.community .right ul {                           margin: 0 0 30px}
+.community .right ul li {                       margin: 0 0 15px;}
+.community .right ul li svg {                   font-size: 16px; line-height: 16px; float: left; padding: 0 8px 0 0; color:var(--red);}
+.community .right ul li p {                     width: 70%; font-size: 16px; line-height:16px; margin: 0; padding: 0;}
+.community .right ul a {                        text-decoration: none; color: #fff;}
+.community .right span {                         color: var(--red); font-weight: 700; display: inline-block;}
+
+.community .image {                             width: 100%;}
+
+// SPONSOR STYLES
+.partners {                           padding: 100px 0;}
+.partners h2 {                        margin: 0 0 50px; text-align: center;}
+.partners .image {                    width: calc(100% - 70px); height: 300px; margin: 50px 35px 50px; background-repeat: no-repeat; background-size: contain; background-position: center; filter: grayscale(100%);}
+.partners .image:hover {                      filter: grayscale(0%);}
+.partners img {                       width: 100%; display: inline-block;}
 
 
 

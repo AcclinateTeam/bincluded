@@ -9,7 +9,7 @@ const HomeStories = () => {
             <section className="homestories">
                 <div className="container">
                     <div className="ten columns header">
-                        <h2>Featured Stories</h2>
+                        <h2>Featured <span>Stories</span></h2>
                         <p>Click below to hear from the community</p>
                     </div>
 

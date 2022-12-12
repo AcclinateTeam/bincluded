@@ -2,12 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import General from './subComponents/Family/General';
-import Youth from './subComponents/Family/Youth';
-import Education from './subComponents/Family/Education';
-import Transportation from './subComponents/Family/Transportation';
-import Legal from './subComponents/Family/Legal';
-
 const Terminal = () => {
 
     const [cards, setCards] = useState([]);
@@ -80,7 +74,28 @@ const Terminal = () => {
                             </div>
                             <div className="panel">
                                 <div className="container">
-                                    <Youth />
+                                    {cards.map((post: any, index) => {
+                                        if (post.f_youth == 'true') {
+                                            return (
+                                                <div className="third columns" key={post.id}>
+                                                    <div className="panes">
+                                                        <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                            <div className="image" style={{ backgroundImage: `url("/images/partners/${post.image}")`, backgroundColor: '#ffffff' }}></div>
+                                                        </a>
+                                                        <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                            <div className="pane">
+                                                                <h2>{post.title}</h2>
+                                                                <p>{post.description}</p>
+                                                                <h2>Who Will Benefit</h2>
+                                                                <p>{post.benefit}</p>
+                                                                <span>Read More</span> <FontAwesomeIcon className="readmo" icon="arrow-right" />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+                                    })}
                                 </div>
                             </div>
                             <div className="buttonwrap">
@@ -216,7 +231,28 @@ const Terminal = () => {
                             </div>
                             <div className="panel">
                                 <div className="container">
-                                    <Transportation />
+                                    {cards.map((post: any, index) => {
+                                        if (post.f_transpo == 'true') {
+                                            return (
+                                                <div className="third columns" key={post.id}>
+                                                    <div className="panes">
+                                                        <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                            <div className="image" style={{ backgroundImage: `url("/images/partners/${post.image}")`, backgroundColor: '#ffffff' }}></div>
+                                                        </a>
+                                                        <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                            <div className="pane">
+                                                                <h2>{post.title}</h2>
+                                                                <p>{post.description}</p>
+                                                                <h2>Who Will Benefit</h2>
+                                                                <p>{post.benefit}</p>
+                                                                <span>Read More</span> <FontAwesomeIcon className="readmo" icon="arrow-right" />
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
+                                    })}
                                 </div>
                             </div>
                             <div className="buttonwrap">

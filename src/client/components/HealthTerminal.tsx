@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import AllAdult from './subComponents/Health/AllAdult';
-
 const Terminal = () => {
 
     const [cards, setCards] = useState([]);

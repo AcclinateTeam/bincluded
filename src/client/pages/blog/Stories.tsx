@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
-import Header from '../../components/Header';
+import Header from '../../theme/Header';
 import ShareYourStory from '../../components/ShareYourStory';
 
 const Blog = () => {

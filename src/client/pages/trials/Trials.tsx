@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Header from '../../components/Header';
+import Header from '../../theme/Header';
 import Accordion from '../../components/Accordion';
 import Terminal from '../../components/FamilyTerminal';
 

@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
 /* COMPONENT IMPORTS */
-import Header from '../components/Header';
+import Header from '../theme/Header';
 import Logo from '../components/subComponents/Logo';
 
 const Covid = () =>

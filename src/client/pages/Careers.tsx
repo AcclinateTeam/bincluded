@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
-import Header from '../components/Header';
+import Header from '../theme/Header';
 import CareersTerminal from '../components/CareersTerminal';
 import BlogPosts from './BlogPosts';
 import Prosper from '../components/Prosper';

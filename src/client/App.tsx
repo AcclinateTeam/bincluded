@@ -11,7 +11,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'; // import fa regular 
 
 /* PAGE IMPORTS */
 // CORE PAGES
-import Home from './pages/Home';
+import Home from './pages/Home/Home';
 import Health from './pages/Health';
 import Family from './pages/Family';
 import Careers from './pages/Careers';
@@ -33,8 +33,8 @@ import Privacy from './pages/utils/Privacy';
 import Terms from './pages/utils/Terms';
 
 /* COMPONENT IMPORTS */
-import Header from './components/Header';
-import Footer from './components/Footer';
+import Header from './theme/Header';
+import Footer from './theme/Footer';
 import RecipeSearch from './pages/recipes/RecipeSearch';
 import Recipe from './pages/recipes/Recipe';
 import Submit from './pages/recipes/Submit';
@@ -63,39 +63,39 @@ const App = (props: AppProps) =>
 				<Routes>
 					{/* Core Paths */}
 					<Route path="/" element={<Home />} />
-					<Route path="/health" element={<Health />} />
+					{/* <Route path="/health" element={<Health />} />
 					<Route path="/family" element={<Family />} />
 					<Route path="/careers" element={<Careers />} />
 					<Route path="/covid" element={<Covid />} />
-					<Route path="/resources" element={<Resources />} />
+					<Route path="/resources" element={<Resources />} /> */}
 					{/* SubPage Paths */}
-					<Route path="/partners" element={<Partners />} />
+					{/* <Route path="/partners" element={<Partners />} />
 					<Route path="/partners/coopergreen" element={<CooperGreen />} />
 					<Route path="/partners/lhsa" element={<LHSA />} />
 					<Route path="/partners/vivahealth" element={<Viva />} />
 					<Route path="/partners/unitedway" element={<UWay />} />
 					<Route path="/partners/conHealth" element={<ConnectionHealth />} />
 					<Route path="/whynow" element={<WhyNow />} />
-					<Route path="/resources" element={<Resources />} />
+					<Route path="/resources" element={<Resources />} /> */}
 					{/* Blog Paths */}
-					<Route path="/blog" element={<Blog />} />
-					<Route path="/blog/single/:id" element={<SinglePost />} />
+					{/* <Route path="/blog" element={<Blog />} />
+					<Route path="/blog/single/:id" element={<SinglePost />} /> */}
 					{/* Stories Paths */}
-					<Route path="/stories" element={<Stories />} />
-					<Route path="/stories/single/:slug" element={<SingleStory />} />
+					{/* <Route path="/stories" element={<Stories />} />
+					<Route path="/stories/single/:slug" element={<SingleStory />} /> */}
 					{/* Recipe Paths */}
-					<Route path="/recipes" element={<RecipeSearch />} />
+					{/* <Route path="/recipes" element={<RecipeSearch />} />
 					<Route path="/recipes/:id" element={<Recipe />} />
-					<Route path="/submit" element={<Submit />} />
+					<Route path="/submit" element={<Submit />} /> */}
 					{/* Trial Paths */}
-					<Route path="/trials" element={<Trials />} />
+					{/* <Route path="/trials" element={<Trials />} />
 					<Route path="/trials/results/:text" element={<Results />} />
 					<Route path="/trials/results/study/:text/:id" element={<FullStudy />} />
-					<Route path="/trials/study/:id" element={<FullStudy />} />
+					<Route path="/trials/study/:id" element={<FullStudy />} /> */}
 					{/* Utils Paths */}
-					<Route path="/privacy" element={<Privacy />} />
+					{/* <Route path="/privacy" element={<Privacy />} />
 					<Route path="/terms" element={<Terms />} />
-					<Route path="*" element={<NotFound />} />
+					<Route path="*" element={<NotFound />} /> */}
 				</Routes>
 				<Footer />
 			</BrowserRouter>

@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../Logo';
+import Logo from '../../../components/subComponents/Logo';
 
-const HomeWhoWeAre = () =>
+const WhoWeAre = () =>
 {
 
     return (
@@ -70,4 +70,4 @@ const HomeWhoWeAre = () =>
     )
 }
 
-export default HomeWhoWeAre;
+export default WhoWeAre;

@@ -10,7 +10,8 @@ import Logo from '../../components/subComponents/Logo';
 import ShareYourStory from '../../components/ShareYourStory';
 import Loading from '../../components/Loading';
 import SiteSearch360 from 'site-search-360-react';
-import HomeWhoWeAre from '../../components/subComponents/HomePage/HomeWhoWeAre';
+import HomeWhoWeAre from './components/WhoWeAre';
+import WhoWeAre from './components/WhoWeAre';
 
 const Home = () =>
 {
@@ -109,7 +110,7 @@ const Home = () =>
                         </div>
                     </section>
 
-                    HELLO WORLD!
+                    <WhoWeAre />
                 </>
             ) : (
                 <Loading />

@@ -1,7 +1,7 @@
 /* HOME PAGE SCSS STYLES
 ============================================================== */
 // HOME PAGE CALLOUT STYLES
-section.home {                                  width: 100%; height: 100vh; position: relative;  background-color: var(--navy); overflow: hidden;
+section.home {                               width: 100%; height: 100vh; position: relative;  background-color: var(--navy); overflow: hidden;
     video {                                  object-fit: cover; opacity: 0.9;}     
     .calloutbg {                             width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
     .callout {                               width: 30%; height: 500px; position: absolute; top: 150px; left: 10%;}
@@ -9,6 +9,7 @@ section.home {                                  width: 100%; height: 100vh; posi
     .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 94px; line-height: 97px; font-weight: 900; color: #fff; margin: 46px 0;}
     .callout .calltext p {                   font-family: 'DM Sans', sans-serif; width: 90%; font-size: 24px; line-height: 36px; font-weight: 400; color: #fff; }
     .callout .callbutton {                   margin: 30px 0 0; display: block;}
+    svg.logo {                                  height: 14px; display: inline-block;}
 }
 
 /* CALLOUT BUTTONS */
@@ -19,7 +20,14 @@ section.home {                                  width: 100%; height: 100vh; posi
 .button.learnmore:hover {                       border: none; background-color: #EEC31A !important; color: #0F0F10;}
 
 // HOME PAGE WHO WE ARE STYLES
-// .whoWeAre {                                     margin:100px 15%;}
+section.whoWeAre {                              padding: 100px 0; background-color: var(--navy);
+    .text {
+        h2 {                                        font-size: 96px; line-height: 96px; display: inline-block; color: var(--white);}
+        h2 span {                                   display: inline-block; color: var(--blue);}
+        p {                                         width: 80%; font-size: 24px; line-height: 36px; margin: 30px 0 0; color: var(--white);}
+        svg {                                       height: 14px; display: inline-block;}
+    }
+}
 // .whoWeAre h2 {                                  margin: 10px 0 0;}
 // .whoWeAre p {                                   font-size: 24px; line-height: 40px; padding: 50px 0 50px 100px; border-left: 5px solid var(--navy); font-weight: 400; }
 // .whoWeAre .box {                                width: auto; margin: 100px -20px 0;}

@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';    
+import Logo from '../../../components/subComponents/Logo';
 
 const WhoWeAre = () => {
 
@@ -16,7 +17,7 @@ const WhoWeAre = () => {
                     <div className="six columns">
                         <div className="text">
                             <h2>We <span className="blue">Listen.</span><br /> We <span className="blue">Represent.</span><br /> We <span className="blue">Share.</span></h2>
-                            <p><span>B-INCLUDED</span> addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.</p>
+                            <p><Logo color="#287FDD" /> addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.</p>
                         </div>
                     </div>
                 </div>

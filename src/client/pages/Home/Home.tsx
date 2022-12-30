@@ -12,6 +12,7 @@ import Loading from '../../components/Loading';
 import SiteSearch360 from 'site-search-360-react';
 import HomeWhoWeAre from './components/WhoWeAre';
 import WhoWeAre from './components/WhoWeAre';
+import HomeWhatWeDo from './components/WhatWeDo';
 
 const Home = () => {
     // Window scroll-to-top function
@@ -93,7 +94,11 @@ const Home = () => {
                 </div>
             </section>
 
+            {/* WHO WE ARE SECTION */}
             <WhoWeAre />
+
+            {/* WHAT WE DO SECTION */}
+            <HomeWhatWeDo />
         </>
     );
 }

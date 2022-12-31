@@ -28,24 +28,21 @@ section.whoWeAre {                              padding: 100px 0; background-col
         svg {                                       height: 14px; display: inline-block;}
     }
 }
-// .whoWeAre h2 {                                  margin: 10px 0 0;}
-// .whoWeAre p {                                   font-size: 24px; line-height: 40px; padding: 50px 0 50px 100px; border-left: 5px solid var(--navy); font-weight: 400; }
-// .whoWeAre .box {                                width: auto; margin: 100px -20px 0;}
-// .whoWeAre .deck .cards {                            width: calc(100% - 40px); height: 417px; border-radius: 15px; margin: 0 20px; overflow: hidden;}
-// .whoWeAre .deck .cards:hover {                      transform: scale(1.03);}
-// .whoWeAre .deck .cards .card {                      width: 100%; height: 100%; position: relative; overflow: hidden;}
-// .whoWeAre .deck .cards .card img {                  width: 100%;}
-// .whoWeAre .deck .cards .card .cardimg {             width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: center;}
-// .whoWeAre .deck .cards .card:hover .cardimg {       transform: scale(1.03);}
-// .whoWeAre .deck .cards .card .text {                width: calc(100% - 60px); height: calc(45% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: var(--navy);}
-// .whoWeAre .deck .cards .card .text h3 {             font-size: 32px; line-height: 32px; font-weight: 900; color: #fff; margin: 0;}
-// .whoWeAre .deck .cards .card .text p {              font-size: 18px; line-height: 24px; font-weight: 300; border: none; padding: 10px 0 20px; color: #ffffff99; margin: 0;}
-// .whoWeAre .deck .cards .card .text a {              font-size: 20px; line-height: 20px; font-weight: 700; border: none; padding: 0; text-decoration: none; color: #ffffff; margin: 0;}
-// .whoWeAre .deck .cards .card .text .mink {          font-size: 20px; line-height: 20px; font-weight: 700; border: none; padding: 0; text-decoration: none; color: #ffffff; margin: 0;}
-// .whoWeAre .deck .cards .card .text a svg {          font-size: 18px; line-height: 20px; color: var(--red);}
-// .whoWeAre .deck .cards .card .text .mink svg {          font-size: 18px; line-height: 20px; color: var(--red);}
 
 // HOME PAGE WHAT WE DO STYLES
+section.HomeWhatWeDo {                      padding: 100px 0 0;
+    .content {
+        h3 {                                        font-size: 44px; margin: 0 0 15px;}
+        h3 span {                                   display: inline-block; color: var(--blue);}
+        p {                                         width: 90%; font-size: 24px; line-height: 32px;}
+        hr {                                        width: 90%; border: 1px solid var(--navy); margin: 30px 0;}
+        svg {                                       height: 14px; display: inline-block;}
+    }
+    .image {
+        img {                                       height: 100%; margin: 0 0 -5px;}
+    }
+}
+
 .whatwedo {                                         background-color: #fff; padding: 100px 15%;}  
 .whatwedo .text {                                   margin: 0 50px 0 0;}
 .whatwedo .text p {                                 font-size: 18px; line-height: 26px; padding: 30px 0 50px; font-weight: 400; }

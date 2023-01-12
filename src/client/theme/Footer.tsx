@@ -10,7 +10,7 @@ const Footer = () =>
 
             {/* FOOTER COMPONENT */}
             <div className="container footer">
-                <div className="seven columns offset-by-one-half addResWide">
+                <div className="eight columns offset-by-one addResWide">
                     <div className="container">
                         <div className="fourth columns">
                             <div className="footLogo">
@@ -83,7 +83,7 @@ const Footer = () =>
             </div>
 
             <div className="container">
-                <div className="seven columns offset-by-one-half addResWide">
+                <div className="eight columns offset-by-one addResWide">
                     <div className="footend">
                         <ul>
                             <li>

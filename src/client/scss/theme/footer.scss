@@ -1,0 +1,36 @@
+/* FOOTER SCSS STYLES
+============================================================== */
+/* FOOTER STYLES */
+footer {                             padding: 50px 0 0px; background-color: #050236;}
+
+/* FOOTER HOVER STYLES */
+.foot a.button:hover {              background-color: #050236;}
+
+.footer {                                   padding: 65px 0 40px; background-color: #050236;}
+.footLogo {                                 width: 180px; margin: 0 0 30px;}
+.footer img {                               height: 146px; margin: 0 0 20px;}
+.footer p {                                 font-size: 12px; margin: 0 0 10px; text-align: left; color: #fff;}
+.footLogo p {                               padding: 0 40px 0 0;}
+.footer svg {                               display: inline-block; font-size: 12px; margin: 0 6px 0 0; color: #fff;}
+.footer h1 {                                font-size: 22px; margin: 0 0 10px; color: #fff;}
+.footer .social svg {                       display: inline-block; font-size: 28px; margin: 12px 12px 0 0;}
+.footer .social {                           margin: 0 0 40px;}
+.footer .social li {                        font-family: 'DM Sans', sans-serif; font-size: 18px; line-height: 28px; font-weight: 900; color: #fff; }
+.footer .social li a {                      text-decoration: none; color: #fff;}
+.footer .connect p {                        width: 275px; font-family: 'DM Sans', sans-serif; margin: 0 0 33px; font-size: 18px; line-height: 24px; font-weight: 900; color: #fff;}
+.footer .connect a {                        font-size: 14px; font-weight: 900; padding: 15px 20px; text-decoration: none; text-transform: uppercase; color: #fff; background-color: #ca1d48;}
+.footer .connect a:hover {                  background-color: #F3E454; color: #0F0F10;}
+
+.footend {                  padding: 13px 0; border-top: 1px solid #fff; }
+.footend p {                font-size: 13px; font-weight: 900; display: inline-block; height: 12px; padding: 10px 0 10px; color: #fff;}
+.footend ul {               float: right;}
+.footend ul li {            padding: 8px 0 0; margin: 0 0 0 20px; display: inline-block;}
+.footend ul li svg {        font-size: 13px;}
+.footend ul li a {          font-size: 13px; color: #fff; text-decoration: none;}
+.footend p a {              text-decoration: none; color: #fff;}
+
+footer {
+    .toTop {                display: none; visibility: hidden; opacity: 0; width: 100px; height: 100px; background-color: #f09; position: fixed; bottom: 100px; left: 100px;
+        svg {                   font-size: 40px; color: var(--white);}
+    }
+}

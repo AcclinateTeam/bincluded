@@ -1,0 +1,96 @@
+/* #PARTNER RESOURCE STYLES
+================================================== */
+// CONTENT STYLES
+section.intro {
+    .text {                             padding: 0 0 75px;
+        h2 {                                font-size: 46px; line-height: 54px; margin: 0 0 10px;
+            span {                              color: var(--blue);}
+        }
+        p {                                 font-size: 24px; line-height: 32px; margin: 0 0 50px;}
+    }
+}
+
+// RESOURCE TERMINAL STYLES
+.addRes {                               margin: 0; padding: 0; background-color: #fff;
+    .header {                               margin: 0 auto 50px; text-align: center;
+        h2 {                                    font-size: 64px; line-height: 64px; padding: 0 0 30px; margin: 0;
+            span {                                  display: inline-block; color: var(--blue);}
+        }
+        p {                                     font-size: 18px; line-height: 24px; padding: 0; margin: 0;}
+    }
+    
+    .list {                             width: 100%; height: 56px; margin: 0 0 50px; position: relative; display: block;} 
+    ul.terminal {                       position: absolute; top: 0; left: 50%; padding: 10px; border-radius: 56px; transform: translateX(-50%); text-align: center; background-color: var(--navy);} 
+    ul.terminal li {                    font-weight: 900; display: inline-block; padding: 10px; margin: 0 2px; border-radius: 30px; text-align: center; cursor: pointer; color: #fff;}
+    ul.terminal li.active {             font-weight: 900; background-color: var(--red); color: #fff;}
+    ul.terminal li a {                  text-decoration: none; color: #fff;}
+    ul.terminal li:hover {              text-decoration: none; color: #fff; background-color: var(--red);}
+    ul.terminal li.active a {           text-decoration: none; color: var(--red);}
+    
+    .panel {                            margin: 30px -20px 100px;
+        .panes {                            height: 350px; padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); overflow: hidden; margin: 0 20px 40px; position: relative; background-color: #fff;
+            .image {                  width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-size: 70%; background-repeat: no-repeat; background-position: center;}
+            .image img {                 padding: 10px; width: 100%; height: 100%; object-fit: contain;}
+        }
+        .panes:hover {                      transform: scale(1.02);}
+        .panes:hover .pane {                bottom: -20px;}
+    }
+}
+
+.homeVideo {                                    width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 99; background-color: rgba(0,0,0,0.8); opacity: 1; display: block; visibility: visible;
+    .frame {                                        width: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 15px; z-index: 99; background-color: var(--gray);
+        .header {                                       width: 100%; height: 200px; border-radius: 15px; margin: 0; background-color: var(--white);
+            .image {                                        width: 40%; height: 100%; float: left; position: relative;
+                img {                                           width: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+            }
+            .title {                                        width: 60%; height: 100%; float: right; position: relative;
+                .text {                                         width: calc(100% - 75px); padding: 0 50px 0 25px; position: absolute; top: 50%; left: 0; transform: translate(0, -50%);
+                    h2 {                                            font-size: 24px; line-height: 24px; text-align: left; padding: 0 0 5px; color: var(--navy);}
+                    p {                                             text-align: left;}
+                }
+            }
+        }
+        .content {                                  width: calc(100% - 80px); padding: 40px 40px 20px;
+            h2 {                                        font-size: 32px; line-height: 32px;}
+            p {                                         font-size: 18px; line-height: 26px; margin: 0 0 30px;}    
+        }
+    }
+    .popClose {                          width: 40px; height: 40px; padding: 10px; position: absolute; top: -60px; right: -60px; z-index: 99; background-color: #CA1D48;}
+    .popClose img {                       width: 40px; height: 40px; }
+}
+
+
+
+
+
+
+
+
+
+
+// .resources .heading {                           padding: 100px 0 290px; text-align: center; margin: 0 0 100px;}
+// .resources .heading h1 {                        width: 50%; font-size: 64px; line-height: 64px; margin: 0 auto 30px; color: #fff;}
+// .resources .heading h3 {                        font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 24px; text-transform: none; color: #fff; margin: 0 0 30px;}
+// .resources .heading a {                         font-weight: 700; text-decoration: none; margin: 0 0 30px; color: #fff;}
+// .resources .heading p {                         width: 400px; font-size: 16px; line-height: 24px; margin: 30px auto 30px; color: #fff;}
+
+// .resources ul.terminal {                        width: 100%; display: flex; align-items: stretch; justify-content: space-between; text-align: center; border-top: 1px solid #cecece;} 
+// .resources ul.terminal li {                     font-weight: 900; display: inline-block; padding: 20px 20px 30px; margin: 0 40px -2px 0; text-align: center; cursor: pointer; border-bottom: 1px solid rgba(255,255,255,0); color: #cecece;}
+// .resources ul.terminal li:hover {               color: #0F0F10;}
+// .resources.bgBlue {                             padding: 100px 0; background-color:rgb(40,127,221,0.2);}
+// .resources .info {                              width: 80%; padding: 220px 0 0;}
+// .resources .info h3 {                           font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 24px; text-transform: none; margin: 0 0 30px;}
+// .resources .info h1 {                           width: 55%; font-size: 36px; line-height: 52px; margin: 0 0 30px;}
+// .resources .info p {                            font-size: 16px; line-height: 24px; margin: 30px auto 30px;}
+// .resources .imgBox {                            background-color:#fff;}
+// .resources .imgBox .image {                     width: 100%; height: 450px; position: relative; overflow: hidden;}
+// .resources .imgBox .image img{                  width: 100%; position: absolute; top: 0; left: 0;  z-index: 55;}
+// .resources .imgBox .image svg{                  position: absolute; top: 0; left: 0; z-index: 1;}
+// .resources .imgBox ul {                         padding: 40px;}
+// .resources .imgBox ul li a {                    font-size: 16px; line-height: 26px; font-weight: 700; color: #0F0F10;}
+
+// .resources.knows {                              padding: 100px 0;}
+// .resources .know {                              width: 80%;}
+// .resources .know h3 {                           font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 24px; text-transform: none; margin: 0 0 30px;}
+// .resources .know h1 {                           width: 55%; font-size: 36px; line-height: 52px; margin: 0 0 30px;}
+// .resources .know p {                            font-size: 16px; line-height: 24px; margin: 30px auto 30px;}

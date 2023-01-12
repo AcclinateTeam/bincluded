@@ -9,15 +9,9 @@ section.home {                               width: 100%; height: 100vh; positio
     .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 94px; line-height: 97px; font-weight: 900; color: #fff; margin: 46px 0;}
     .callout .calltext p {                   font-family: 'DM Sans', sans-serif; width: 90%; font-size: 24px; line-height: 36px; font-weight: 400; color: #fff; }
     .callout .callbutton {                   margin: 30px 0 0; display: block;}
-    svg.logo {                                  height: 14px; display: inline-block;}
 }
 
-/* CALLOUT BUTTONS */
-.button {                                       font-family: 'DM Sans', sans-serif; border-radius: 5px; font-weight: 900; line-height:52px; margin: 0 15px 0 0;}
-.button.signup {                                border: 1px solid var(--red); background-color: var(--red); color: #fff;} 
-.button.learnmore {                             border: none; background-color: var(--navy) !important; color: #fff;}
-.button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
-.button.learnmore:hover {                       border: none; background-color: #EEC31A !important; color: #0F0F10;}
+
 
 // HOME PAGE WHO WE ARE STYLES
 section.whoWeAre {                              padding: 100px 0; background-color: var(--navy);
@@ -25,7 +19,6 @@ section.whoWeAre {                              padding: 100px 0; background-col
         h2 {                                        font-size: 96px; line-height: 96px; display: inline-block; color: var(--white);}
         h2 span {                                   display: inline-block; color: var(--blue);}
         p {                                         width: 80%; font-size: 24px; line-height: 36px; margin: 30px 0 0; color: var(--white);}
-        svg {                                       height: 14px; display: inline-block;}
     }
 }
 
@@ -36,160 +29,169 @@ section.HomeWhatWeDo {                      padding: 100px 0 0;
         h3 span {                                   display: inline-block; color: var(--blue);}
         p {                                         width: 90%; font-size: 24px; line-height: 32px;}
         hr {                                        width: 90%; border: 1px solid var(--navy); margin: 30px 0;}
-        svg {                                       height: 14px; display: inline-block;}
     }
     .image {
-        img {                                       height: 100%; margin: 0 0 -5px;}
+        img {                                       height: 100%; margin: 0 0 -3px;}
     }
 }
 
-.whatwedo {                                         background-color: #fff; padding: 100px 15%;}  
-.whatwedo .text {                                   margin: 0 50px 0 0;}
-.whatwedo .text p {                                 font-size: 18px; line-height: 26px; padding: 30px 0 50px; font-weight: 400; }
-.whatwedo .deck .cards {                            margin: 0 5px 10px; border: 2px solid var(--navy); border-radius: 15px; padding: 30px;}
-.whatwedo .deck a {                                 color:#000; text-decoration: none;}
-.whatwedo .deck .cards a {                          font-size: 20px; font-weight: 700; color: var(--navy);}
-.whatwedo .deck .cards:hover {                      border: 2px solid var(--navy); background-color: var(--navy);}
-.whatwedo .deck .cards:hover h4 {                   color: #fff;}
-.whatwedo .deck .cards:hover p {                    color: #ffffff99;}
-.whatwedo .deck .cards:hover a {                    color: #fff;}
 
-.whatwedo .deck .cards svg {                        color: var(--red);}
-.whatwedo .deck .cards svg.icon {                   border: 2px solid var(--red); font-size: 30px; border-radius: 35px; padding: 20px; margin: 0 0 20px; color: var(--red);}
-.whatwedo .deck .cards h4  {                        padding: 0 0 10px; text-transform: none; }
-.whatwedo .deck .cards p  {                         height: 104px; font-size: 18px; margin: 0 0 20px; line-height: 26px;}
+// HOME RESOURCE PORTAL STYLES
+section.portal {                 background-color: var(--navy); padding: 100px 10%;
+    .text {                             margin: 0 50px 0 0;
+        h2 {                                font-weight: 900; text-transform: uppercase; color: var(--white);
+            span {                              color: var(--blue);}
+        }
+        p {                                 font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; padding: 30px 0 50px; font-weight: 400; color: var(--white);}
+        h4 {                                color: var(--red);}
+    }
+    .deck {
+        .cards {                            margin: 0 15px 30px; border: 2px solid var(--white); border-radius: 15px; padding: 30px;}
+        .cards a {                          font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; color: var(--white);}
+        .cards:hover {                      border: 2px solid var(--white); background-color: var(--white);}
+        .cards:hover h4 {                   color: var(--navy);}
+        .cards:hover p {                    color: var(--navy);}
+        .cards:hover a {                    color: var(--navy);}
 
-.whatwedo .ss360-custom-search {                    justify-content: left;}
-.whatwedo .ss360-ac-bg {                              background-color: var(--navy);}
-.whatwedo .ss360-ac-b {                               background-color: var(--navy);}
-.whatwedo .ss360-custom-search .ss360-custom-search__searchbox {                  width: 75%; border: 2px solid var(--navy);}
-.whatwedo .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid var(--navy);}
-.whatwedo .ss360-custom-search .ss360-custom-search__searchbutton:hover {               border: 2px solid #3d8fff;}
+        .cards svg {                        color: var(--red);}
+        .cards svg.icon {                   border: 2px solid var(--blue); font-size: 30px; border-radius: 35px; padding: 20px; margin: 0 0 20px; color: var(--blue);}
+        .cards:hover svg {                        color: var(--blue);}
+        .cards:hover svg.icon {                        border: 2px solid var(--blue);}
+        .cards h4  {                        padding: 0 0 10px; font-size: 28px; text-transform: none; color: var(--white);}
+        .cards p  {                         height: 140px; font-size: 20px; margin: 0 0 50px; line-height: 28px; color: var(--white);}
+    }
+    .deck a {                                 color:var(--black); text-decoration: none;} 
+    .ss360-custom-search {                    justify-content: left;}
+    .ss360-ac-bg {                              background-color: var(--blue);}
+    .ss360-ac-b {                               background-color: var(--blue);}
+    .ss360-custom-search .ss360-custom-search__searchbox {                  width: 75%; border: 2px solid var(--blue);}
+    .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid var(--blue);}
+    .ss360-custom-search .ss360-custom-search__searchbutton:hover {               border: 2px solid #3d8fff;}
+} 
 
-// HOME PAGE STORIES STYLESs
-.stories {                                          padding: 100px 15% 50px; background-color: #fff;}
-.stories .header h2 {                               text-align: center; color: var(--navy);}
-.stories .header p {                                font-size: 18px; line-height: 26px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
-.stories .case {                                    margin: 50px 0;}
-.stories .rack {                                    height: 300px; margin: 0 0 40px;}
-.stories .rack .frames {                            width: calc(100% - 40px); height: 100%; border-radius: 15px; margin: 0 20px 20px; overflow: hidden;}
-.stories .rack .frames:hover {                      transform: scale(1.03);}
-.stories .rack .frames .frame {                     width: 100%; height: 100%; position: relative; overflow: hidden;}
-.stories .rack .frames .frame .image {              width: 100%; height: 100%; }
-.stories .rack .frames .frame .image video {        width: 100%; height: 100%; object-fit: cover;} 
-.stories .rack .frames .frame .image img {        width: 100%; height: 100%; object-fit: cover;} 
-.stories .rack .frames .frame .text {               width: calc(100% - 20px); position: absolute; padding: 20px; bottom: -120px; left: 0; background-color: var(--navy);}
-.stories .rack .frames:hover .text {       bottom: 0;}
-.stories .rack .frames .frame .text h1 {            font-size: 24px; line-height: 24px; font-weight: 900; color: #fff; margin: 0;}
-.stories .rack .frames .frame .text p {             font-size: 18px; line-height: 26px; font-weight: 400; padding: 10px 0 0; color: #ffffff99; margin: 0;}
+// HOME PAGE STORIES STYLES
+section.homestories {               padding: 100px 10%; background-color: #fff;
+    .header h2 {                        text-transform: uppercase; text-align: center; color: var(--navy);}
+    .header h2 span {                   display: inline-block; color: var(--blue);}
+    .header p {                         font-size: 24px; line-height: 32px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
+    .case {                             margin: 50px 0 0;}
+    .rack {                             margin: 0;
+        a {                                 text-decoration: none;}
+        .frames {                           width: calc(100% - 40px); height: 100%; margin: 0 20px 20px; position: relative;
+            .frame {                            width: 100%; height: auto; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); position: relative; background-color: var(--gray);}
+            .frame .image {                     width: 100%; height: 300px; margin: 0 0 -20px; }
+            .frame .image video {               width: 100%; height: 100%; object-fit: cover;} 
+            .frame .image img {                 width: 100%; height: 100%; border-radius: 15px; object-fit: cover;} 
+            .frame .text {                      width: calc(100% - 40px); border-radius: 15px; padding: 20px;}
+            .frame .text h1 {                   font-size: 24px; line-height: 24px; font-weight: 900; padding: 15px 0 0; color: var(--navy); margin: 0;}
+            .frame .text p {                    font-size: 18px; line-height: 26px; font-weight: 400; color: var(--navy); margin: 0;}
+        }
+        .frames:hover {                     transform: scale(1.03);}        
+    } 
+    .buttonwrap {                               margin: 50px 0 100px;}
+}
 
 // SHARE YOUR STORY STYLES
-.share {                                        padding: 0 15%;}
-.share .container {                             border-radius: 5px;}
-.share .image {                                 width: 100%; height: 538px;}
-.share .image img {                             width: 100%;}
-.share .text {                                  height: 308px; padding: 100px 100px 0;}
-.share .text h2 {                               color: var(--navy); margin: 60px 0 30px;}
-.share .text p {                                font-size: 18px; line-height: 26px; margin: 0 0 30px; font-weight: 300; color: var(--navy);}
-.share .button {                                margin: 0; text-align: none !important;}
+section.shareyourstory {                      margin: 20px 0 0;                    
+    .container {                             border-radius: 5px;}
+    .image {                                 height: 550px;}
+    .image img {                             height: 550px; padding: 0; margin: 0;}
+    .text {                                  height: 308px; padding: 50px 0 0;}
+    .text h2 {                               text-transform: uppercase; margin: 30px 0 30px; color: var(--navy);
+        span {                                  color: var(--blue);}
+    }
+    .text p {                                font-family: 'DM Sans', sans-serif; font-size: 24px; line-height: 32px; margin: 0 0 30px; font-weight: 700; color: var(--navy); }
+    .button {                                margin: 0; text-align: none !important;}
+}
 
-// SHARE YOUR STORY STYLES
-.partWithUs {                                        padding: 0 15%;}
-.partWithUs .container {                             border-radius: 5px;}
-.partWithUs .image {                                 width: 100%; height: 450px;}
-.partWithUs .image img {                             width: 120%; margin: 25px 0 0 -15px;}
-.partWithUs .text {                                  height: 308px; padding: 100px 100px 0;}
-.partWithUs .text h2 {                               color: var(--navy); margin: 60px 0 30px;}
-.partWithUs .text p {                                font-size: 18px; line-height: 26px; margin: 0 0 30px; font-weight: 300; color: var(--navy);}
-.partWithUs .button {                                margin: 0; text-align: none !important;}
+
 
 
 // HOME PAGE WHYNOW? SECTION STYLES
-.whyNow {                               background-color: var(--navy);}
-.whyNow .whyImage {                     width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
-.whyNow .whyText {                      margin: 150px 40px; display: inline-block;}
-.whyNow .whyText h2 {                   font-size: 72px; line-height: 72px; font-weight: 900; margin: 0 0 30px; color: #fff;}
-.whyNow .whyText p {                    font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 0 30px; color: #fff;}
+.whyNow {                           background-color: var(--navy); padding: 25px 0;
+    .whyImage {                         width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
+    .whyText {                          margin: 75px 40px; display: inline-block;
+        h2 {                                font-size: 72px; line-height: 72px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
+        p {                                 font-size: 24px; line-height: 32px; font-weight: 400; margin: 0 0 30px; color: var(--white);}
+    }   
 
-.whyNow .whyTextWide {                  text-align: center; padding: 90px 0;}
-.whyNow .whyTextWide h3 {               font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 24px; text-transform: none; margin: 0 0 30px; color: #fff;}
-.whyNow .whyTextWide h1 {               font-size: 48px; line-height: 60px; font-weight: 700; margin: 0 0 30px; color: #fff;}
-.whyNow .whyTextWide p {                width: 500px; font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 auto 30px; color: #fff;}
+    .whyTextWide {                      text-align: center; padding: 90px 0;
+        h3 {                                font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 24px; text-transform: none; margin: 0 0 30px; color: var(--white);}
+        h1 {                                font-size: 48px; line-height: 60px; font-weight: 700; margin: 0 0 30px; color: var(--white);}
+        p {                                 width: 500px; font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 auto 30px; color: var(--white);}
+    }    
 
-.whyNow .stats {                    padding: 100px 0 0;}
-.whyNow .stats .stat {              display: block;}
-.whyNow .stat .point {              margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; border: 2px solid #287FDD; border-radius: 5px;}
-.whyNow .stat .point h3 {           font-family: 'Montserrat', sans-serif; font-size: 92px; line-height: 92px; font-weight: 900; color: #fff; margin: 0 0 20px; text-transform: none;}
-.whyNow .stat .point p {            height: 40px; font-size: 14px; line-height: 20px; font-weight: 400; color: #fff; margin: 0; text-transform: none;}
-
-// HOME PAGE COVID-19 SECTION STYLES
-.c19 {                              position: relative;}
-.covidbg {                          height: 100%; position: absolute; top: 0; left: 0; width: 100%; background-size: cover; background-position: center; background-repeat: no-repeat; z-index: -99;}
-.covid {                            padding: 100px 0; text-align: center;}
-.covid h2 {                          font-weight: 900; color: var(--navy); margin: 0 0 20px;}
-.covid h3 {                          font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: var(--navy); text-transform: none; padding: 0 0 50px; margin: 0 50px 30px 100px;}
-.covid .data {                      padding: 0 40px; margin: 0 0 80px;}
-.covid .data.border {               border-right: 1px solid #cecece;}
-.covid .data h4 {                   font-family: 'Montserrat', sans-serif; font-size: 54px; line-height: 54px; font-weight: 900; color: #0F0F10; margin: 0 0 10px; text-transform: none;}
-.covid .data h4 span {              color: var(--red);}
-.covid .data p {                    font-size: 14px; line-height: 20px; font-weight: 400; color: #0F0F10; margin: 0 0 20px; text-transform: none;}
+    .stats {                            padding: 100px 0 0;
+        .stat {                             display: block;
+            .point {                            margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; border: 2px solid var(--blue); border-radius: 5px;}
+            .point h3 {                         font-family: 'Montserrat', sans-serif; font-size: 92px; line-height: 92px; font-weight: 900; color: var(--white); margin: 0 0 20px; text-transform: none;}
+            .point p {                          height: 52px; font-size: 18px; line-height: 26px; font-weight: 400; color: var(--white); margin: 0; text-transform: none;}
+        }
+    }
+}
 
 // CLINICAL RESEARCH STYLES
-.research {                             width: 100%; display: block;}
-.research .panes {                      width: 100%; height: 550px; display: block; position: relative; background-color: var(--navy);}
-.research .image {                      width: 100%; height: 550px; display: block; position: absolute; top: 0; left: 0;  background-repeat: no-repeat; background-position: center; background-size: cover; opacity: 0.5;}
-.research .heading {                    display: block; position: absolute; top: 50%; transform: translateY(-50%); left: 50%; margin-left: -290px;}
-.research .heading h1 {                 font-size: 64px; line-height: 64px; text-align: left; color: #fff;}
-.research .content {                    height: 550px; display: block; position: relative; text-align: center; background-color: var(--red);}
-.research .content .bg {                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.5;}
-.research .content .text {                          padding: 180px 100px; color: #fff; z-index: 9;}
-.research .content .text h1 {                       font-size: 30px; line-height: 30px; color: #fff; opacity: 1; margin: 0 0 10px;}
-.research .content .text p {                        font-size: 16px; line-height: 24px; font-weight: 400; color: #fff; margin: 0 0 30px;}
-.research .content .text .button {                  margin: 0;}
-.research .content .text .button.solid {            background-color: var(--navy);}
-.research .content .text .button.solid:hover {      background-color: #EEC31A;}
+.research {                             width: 100%; display: block;
+    .panes {                                width: 100%; display: block; position: relative;}
+    .image {                                width: 100%; display: block;
+        img {                                   width: 100%; margin: -1px 0 -4px -2px;}
+    }
+    .heading {                              display: block; position: absolute; top: 50%; transform: translateY(-50%); left: 50%; margin-left: -290px;
+        h1 {                                    width: 90%; font-size: 64px; line-height: 64px; text-align: left; color: var(--white);}
+    }
+    .content {                          display: block; position: relative; text-align: center;
+        .bg {                               width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.5;}
+        .text {                             padding: 220px 0 0 150px; color: var(--navy); z-index: 9;
+            h1 {                                font-size: 60px; line-height: 60px; color: var(--navy); opacity: 1; margin: 0 0 10px;}
+            h1 span {                           color: var(--blue);}
+            p {                                 font-size: 24px; line-height: 32px; font-weight: 400; color: var(--navy); margin: 0 0 30px;}
+            .button {                           margin: 0;}
+            .button.solid {                     background-color: var(--red);}
+            .button.solid:hover {               background-color: var(--blue); color: var(--white);}
+        }        
+    }    
+}
 
-// JOIN COMMUNITY STYLES
-.community {                                    position: relative; padding: 0 15%; background-color: var(--navy);}
-.community .frame {                             margin: 0 10%;}
-.community .bg {                                width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.05;}
-.community .image1 {                             width: 100%; float: left;}
-.community .image1 img {                         width: 100%; padding: 50px 0 0;}
-.community .image2 img {                         width: 70%; padding: 90px 0 0;}
-.community .content {                           padding: 80px 50px 0 0; color: #fff; }
-.community .con {                               padding: 80px 0 0 75px; color: #fff; }
-
-.community .content h2 {                        font-size: 64px; line-height: 64px; color: #fff;}
-.community .content p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
-.community .con h2 {                        font-size: 64px; line-height: 64px; color: #fff;}
-.community .con p {                         font-size: 16px; line-height: 24px; margin: 20px 0 30px; color: #fff;}
-
-.community .left h3 {                           width: 70%; padding: 0 0 10px; color: #fff;}
-.community .left p {                            display: inline-block; padding: 0;}
-.community .left ul li {                        font-family: 'DM Sans', sans-serif; display: block; font-weight: 300; padding: 0 0 20px;}
-.community .left ul li svg {                    font-size: 20px; line-height: 18; float: left; margin: -2px 8px 0 0; color:var(--red);}
-.community .left ul li h6 {                     font-size: 18px; color: #fff; margin: 0 0 5px;}
-.community .left ul li p {                      font-size: 16px; line-height: 16px; width: auto; display: inline-block; margin: 0; padding: 0;}
-.community .left ul a {                        text-decoration: none; color: #fff;}
-.community .left span {                         color: var(--red); font-weight: 700; display: inline-block;}
-.community .right h3 {                          font-size: 36px; line-height: 36px; margin: 0 0 10px; color: #fff;}
-.community .right h6 {                          font-size: 20px; line-height: 20px; margin: 0 0 5px; color: #fff;}
-.community .right p {                           display: inline-block; padding: 0 100px 0 0;}
-.community .right ul {                           margin: 0 0 30px}
-.community .right ul li {                       margin: 0 0 15px;}
-.community .right ul li svg {                   font-size: 16px; line-height: 16px; float: left; padding: 0 8px 0 0; color:var(--red);}
-.community .right ul li p {                     width: 70%; font-size: 16px; line-height:16px; margin: 0; padding: 0;}
-.community .right ul a {                        text-decoration: none; color: #fff;}
-.community .right span {                         color: var(--red); font-weight: 700; display: inline-block;}
-
-.community .image {                             width: 100%;}
+// HOME PAGE COVID-19 SECTION STYLES
+.covid {                            padding: 100px 0; text-align: center; background-color: var(--navy);
+    h2 {                                font-weight: 900; color: var(--white); margin: 0 0 20px;}
+    h3 {                                font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: var(--red); text-transform: none; padding: 0 0 50px; margin: 0 50px 30px 100px;}
+    .data {                             padding: 0 40px; margin: 0 0 80px;
+        h4 {                                font-family: 'Montserrat', sans-serif; font-size: 54px; line-height: 54px; font-weight: 900; color: var(--white); margin: 0 0 10px; text-transform: none;}
+        h4 span {                           color: var(--white);}
+        p {                                 font-size: 14px; line-height: 20px; font-weight: 400; color: var(--blue); margin: 0 0 20px; text-transform: none;}
+    }
+    .data.border {                      border-right: 1px solid var(--white);}    
+}
 
 // SPONSOR STYLES
-.partners {                           padding: 100px 15%;}
-.partners h2 {                        margin: 0 0 50px; text-align: center;}
-.partners .image {                    width: calc(100% - 70px); height: 200px; margin: 50px 35px 50px; background-repeat: no-repeat; background-size: contain; background-position: center; filter: grayscale(100%);}
-.partners .image:hover {                      filter: grayscale(0%);}
-// .partners img {                       width: 100%; display: inline-block;}
+.homepartners {                         padding: 100px 10%;
+    .partner {                             padding: 0 0 50px;}
+    h2 {                                margin: 0 0 50px; text-align: center;}
+    .image {                            width: calc(100% - 70px); height: 200px; position: relative; 
+        img {                               width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); filter: grayscale(100%);}
+    }
+    .image img:hover {                      filter: grayscale(0%);}
+}
 
-
-
+// JOIN COMMUNITY STYLES
+.homecommunity {                        position: relative; padding: 0 10%;
+    .content {                          margin: 75px 50px 0 0;
+        h2 {                                font-size: 54px; line-height: 54px; color: var(--navy);}
+        p {                                 font-size: 24px; line-height: 32px; margin: 20px 0 30px; color: var(--navy);}
+    }
+    .image {                            width: 95%; margin: 0 0 -3px;}
+    .right {                            margin: 75px 0 0;
+        h3 {                                font-size: 44px; line-height: 44px; color: var(--navy);}
+        ul {                                margin: 30px 0;}
+        ul li {                             margin: 0 0 15px;}
+        ul li svg {                         font-size: 24px; line-height: 24px; float: left; padding: 0 8px 0 0; color:var(--red);}
+        ul li p {                           font-size: 24px; line-height: 24px; margin: 0; padding: 0;}
+        span {                              color: var(--red); font-weight: 700; display: inline-block;}
+    }
+    .left {                             
+        h3 {                           font-size: 44px; line-height: 44px; color: var(--navy);}
+        p {                            font-size: 24px; line-height: 32px; margin: 20px 0 30px; color: var(--navy);}
+        img {                          width: 35%; padding: 0 15px 0 0; display: inline-block;}
+    }
+}

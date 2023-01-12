@@ -11,7 +11,7 @@ const WhoWeAre = () => {
                 <div className="container">
                     <div className="three columns offset-by-one">
                         <div className="image">
-                            <img src="/images/homewhoweare.png" alt="Who_We_Are" />
+                            <img src="/images/theme/homewhoweare.png" alt="Who_We_Are" />
                         </div>
                     </div>
                     <div className="six columns">

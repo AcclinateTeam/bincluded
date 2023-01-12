@@ -1,19 +1,19 @@
 import { Query } from './index';
 
 const getBlogPosts = async () => Query(
-    `SELECT * FROM blogPosts WHERE userid = '1' LIMIT 3`
+    `SELECT * FROM blogPosts WHERE userid = '1' ORDER by id DESC`
 );
 
 const getBlogs = async () => Query(
-    `SELECT * FROM blogPosts ORDER by id DESC`
+    `SELECT * FROM blogPosts WHERE userid = '1' ORDER by id DESC LIMIT 4`
 );
 
-const getPost = async (id: any) => Query(
-    `SELECT * FROM blogPosts WHERE id = ?`, [id]
+const getPost = async (slug: any) => Query(
+    `SELECT * FROM blogPosts WHERE slug = ?`, [slug]
 );
 
 const getFeatPosts = async () => Query(
-    `SELECT * FROM blogPosts WHERE userid = '2' LIMIT 4`
+    `SELECT * FROM blogPosts WHERE userid = '1' LIMIT 4`
 );
 
 export default {

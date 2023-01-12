@@ -7,12 +7,19 @@ import VisibilitySensor from 'react-visibility-sensor';
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
 import Logo from '../../components/subComponents/Logo';
-import ShareYourStory from '../../components/ShareYourStory';
 import Loading from '../../components/Loading';
 import SiteSearch360 from 'site-search-360-react';
 import HomeWhoWeAre from './components/WhoWeAre';
 import WhoWeAre from './components/WhoWeAre';
 import HomeWhatWeDo from './components/WhatWeDo';
+import HomePortal from './components/HomePortal';
+import HomeStories from './components/HomeStories';
+import ShareYourStory from '../blog/components/ShareYourStory';
+import HomeWhyNow from './components/HomeWhyNow';
+import HomeResearch from './components/HomeClinicalResearch';
+import HomeCovid from './components/HomeCovid';
+import HomePartners from './components/HomePartners';
+import HomeCommunity from './components/HomeCommunity';
 
 const Home = () => {
     // Window scroll-to-top function
@@ -28,27 +35,25 @@ const Home = () => {
             .then(stories => setStories(stories))
     }, []);
 
-    console.log(stories);
-
     // Metro Track State & Effect
     const [tracker, setTracker] = useState<any>([]);
     const [actuals, setActuals] = useState<any>([]);
     const [beds, setBeds] = useState<any>([]);
     const [metrics, setMetrics] = useState<any>([]);
 
-    // Hook for covid stats tracker
-    useEffect(() => {
-        getMetroTracker();
-        async function getMetroTracker() {
-            const response = await fetch('https://api.covidactnow.org/v2/cbsa/13820.json?apiKey=3221244a929540bdb7c557ce3d60b092');
-            const metro = await response.json();
-            setTracker(metro);
-            setActuals(metro.actuals);
-            setBeds(metro.actuals.hospitalBeds);
-            setMetrics(metro.metrics);
-        }
+    // // Hook for covid stats tracker
+    // useEffect(() => {
+    //     getMetroTracker();
+    //     async function getMetroTracker() {
+    //         const response = await fetch('https://api.covidactnow.org/v2/cbsa/13820.json?apiKey=3221244a929540bdb7c557ce3d60b092');
+    //         const metro = await response.json();
+    //         setTracker(metro);
+    //         setActuals(metro.actuals);
+    //         setBeds(metro.actuals.hospitalBeds);
+    //         setMetrics(metro.metrics);
+    //     }
 
-    }, []);
+    // }, []);
 
     // Scrolls to bottom of Hero Section OnClick
     const scrollToRef = () => {
@@ -94,11 +99,35 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* WHO WE ARE SECTION */}
+            {/* HOME - Who We Are Section */}
             <WhoWeAre />
 
-            {/* WHAT WE DO SECTION */}
+            {/* HOME - What We Do Section */}
             <HomeWhatWeDo />
+
+            {/* HOME - Resource Portal Section */}
+            <HomePortal />
+
+            {/* HOME - Stories Section */}
+            <HomeStories />
+
+            {/* HOME - Share Your Story Section */}
+            <ShareYourStory />
+
+            {/* HOME - Why Now? Section */}
+            <HomeWhyNow />
+
+            {/* HOME - Clinical Research Section */}
+            <HomeResearch />
+
+            {/* HOME - COVID Statistics Section */}
+            <HomeCovid />
+
+            {/* HOME - Partners Section */}
+            <HomePartners />
+
+            {/* HOME - Join The Community Section */}
+            <HomeCommunity />
         </>
     );
 }

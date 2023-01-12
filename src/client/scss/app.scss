@@ -14,21 +14,23 @@ body {				min-height: 100%; position: relative;}
 
 
 /* COMPONENT SCSS IMPORTS */
-@import './skeleton.scss';
+// THEME
 @import './theme/header.scss';
-@import './footer.scss';
+@import './theme/footer.scss';
+@import './theme/skeleton.scss';
+//PAGES
 @import './pages/home.scss';
-@import './health.scss';
+@import './pages/blog.scss';
+@import './pages/resources.scss';
+@import './pages/covid.scss';
+@import './pages/whyNow.scss';
+@import './pages/utils.scss';
+@import './pages/partners.scss';
+@import './pages/trials.scss';
+// MISC
 @import './family.scss';
 @import './careers.scss';
-@import './covid.scss';
-@import './whyNow.scss';
-@import './utils.scss';
-@import './trials.scss';
 @import './recipes.scss';
-@import './blog.scss';
-@import './resources.scss';
-@import './partners.scss';
 
 /* FONT IMPORT */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;1,500;1,700&family=Montserrat:ital,wght@0,300;0,500;0,900;1,300;1,500;1,900&display=swap');
@@ -44,11 +46,52 @@ body {				min-height: 100%; position: relative;}
     --navy: #050236;
     --white: #fff;
     --black: #000;
+    --gray: #e5e5e5;
 }
 
 
 /* #GLOBAL STYLES
 ================================================== */
+/* SUB-HERO STYLES */
+#hero.hero {                                background-color: var(--navy);
+    .callout {                                  margin-top: 150px; margin-bottom: 100px;                              
+        .image {                                    float: left; margin: 0 75px 0 0;}
+        .text {                                     
+            h1 {                                        line-height: 85px; margin: 0 0 30px; color: var(--white);}
+            p {                                         width: 80%; font-size: 24px; line-height: 32px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
+        }
+    }
+    .blogcall {                                     width: 100%; height: 70vh; background-color: var(--red);
+        img {                                       width: 100%; height: 100%; object-fit: cover;}
+    }
+    .fill {                                     height:150px;}
+}
+
+/* BUTTONS */
+.buttonwrap {                               width: 100%; position: relative; }
+.buttonwrap.center {                        text-align: center;}
+.button {                                   font-family: 'Montserrat', sans-serif; font-size: 20px; border-radius: 5px; font-weight: 900; padding: 15px 20px; text-decoration: none; color: #fff;}
+.button.solid {                             background-color: var(--red); }
+.button.solid:hover {                       background-color: #EEC31A; color: #0F0F10;}
+.button.partner {                           background-color: var(--red); } 
+.button.partner:hover {                     background-color: #EEC31A; color: #fff;}
+.sponsors .button {                         font-weight: 500; color: #fff;}
+
+/* CALLOUT BUTTONS */
+.button {                                       line-height:52px; margin: 0 15px 0 0;}
+.button.signup {                                border: 1px solid var(--red); background-color: var(--red); color: #fff;} 
+.button.learnmore {                             border: none; background-color: var(--navy) !important; color: #fff;}
+.button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
+.button.learnmore:hover {                       border: none; background-color: #EEC31A !important; color: #0F0F10;}
+
+/* BREADCRUMBS */
+section.breadcrumbs {                       padding: 50px 0; color: var(--navy);
+    .bread {                                    font-size: 18px; line-height: 18px;}
+    a {                                         font-weight: 900; text-decoration: none;}
+    a:visited {                                 color: var(--navy);}
+}
+
+
 // CALLOUT STYLE
 // .hero {                                                 width: 100%; position: relative; overflow: hidden;}
 // .hero .callbg img {                                     width: 100%; }     
@@ -93,35 +136,6 @@ body {				min-height: 100%; position: relative;}
 // .content .featured .tag {                       position: absolute; top: 20px; left: 20px; z-index: 9;}
 // .content .featured .tag h6 {                    font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: none; padding: 8px 10px; display: inline-block; background-color: #aed1f7;}
 
-
-// // ADDITIONAL RESOURCE STYLES
-// .addRes {                               margin: 0; padding: 100px 0; background-color: #fff;}
-// .addRes .header {                       margin: 0 auto 50px; text-align: center;}
-// .addRes .header h2 {                    font-size: 64px; line-height: 64px; padding: 0 0 30px; margin: 0;}
-// .addRes .header p {                     font-size: 18px; line-height: 24px; padding: 0; margin: 0;}
-// .addRes .list {                         width: 100%; height: 56px; margin: 0 0 50px; position: relative; display: block;} 
-// .addRes ul.terminal {                   position: absolute; top: 0; left: 50%; padding: 10px; border-radius: 56px; transform: translateX(-50%); text-align: center; background-color: var(--navy);} 
-// .addRes ul.terminal li {                font-weight: 900; display: inline-block; padding: 10px; margin: 0 2px; border-radius: 30px; text-align: center; cursor: pointer; color: #fff;}
-// .addRes ul.terminal li.active {         font-weight: 900; background-color: var(--red); color: #fff;}
-// .addRes ul.terminal li a {              text-decoration: none; color: #fff;}
-// .addRes ul.terminal li:hover {          text-decoration: none; color: #fff; background-color: var(--red);}
-// .addRes ul.terminal li.active a {       text-decoration: none; color: var(--red);}
-// .addRes .panel {                        margin: 30px -10px;}
-// .addres .panel a {                      color: #fff; font-weight: 700; text-decoration: none;}
-// .addres .panel a svg {                  color: var(--red);}
-// .addRes .panes {                        height: 350px; padding: 20px; border-radius: 15px; border: 2px solid var(--navy); overflow: hidden; margin: 0 10px 20px; position: relative; background-color: #fff;}
-// .addRes .panes:hover {                  transform: scale(1.02);}
-// .addRes .panes:hover .pane {            bottom: -20px;}
-// .addRes .pane {                         padding: 40px 30px 30px; width: calc(100% - 60px); height: 350px; position: absolute; bottom: -450px; left: 0; background-color: var(--navy); z-index: 9;}
-// .addRes .panes .image {                  width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-size: 70%; background-repeat: no-repeat; background-position: center;}
-// .addRes .panes .image img {                 padding: 10px; width: 100%; height: 100%; object-fit: contain;}
-// .addRes .panes a {                      text-decoration: none;}
-// .addRes .pane h2 {                          font-size: 20px; line-height: 20px; text-transform: none; font-weight: 700; padding: 0; margin: 0; color: #fff;}
-// .addRes .pane p {                           font-size: 14px; line-height: 22px; font-weight: 300; margin: 0 0 20px; color: #FFFFFF99;}
-// .addRes .pane span {                           font-size: 20px; line-height: 20px; display: inline-block; font-weight: 700; text-decoration: none; margin: 0 0 20px; color: #fff;}
-// .addRes .pane svg {                       color: var(--red);}
-// .addRes .button {                           background-color: var(--red);}
-// .addRes .button:hover {                     background-color: #EEC31A;}
 
 // // 
 
@@ -196,8 +210,8 @@ body {				min-height: 100%; position: relative;}
 // .error .heading a {                     font-size: 24px; line-height: 32px; font-weight: 500; text-decoration: none; margin: 0 0 20px; color: var(--navy);}
 
 // /* BUTTONS */
-// .buttonwrap {                               width: 100%; text-align: center; position: relative; }
-// .button {                                   font-weight: 900; padding: 15px 20px; text-align: center; text-decoration: none; color: #fff;}
+// .buttonwrap {                               width: 100%; position: relative; }
+// .button {                                   font-weight: 900; padding: 15px 20px; text-decoration: none; color: #fff;}
 // .button.solid {                             background-color: var(--red); }
 // .button.solid:hover {                       background-color: #EEC31A; color: #0F0F10;}
 // .button.partner {                               background-color: var(--red); } 
@@ -236,6 +250,11 @@ h4 { font-size: 24px; line-height: 24px;}
 h5 { font-size: 16px; line-height: 16px;}
 p { color: var(--navy);}
 
+/* #LOGO STYLES
+================================================== */
+svg.logo {                                  height: 16px; display: inline-block;}
+
+
 // span.logo {                     font-family: 'Montserrat', sans-serif; display: inline-block; font-weight: 900;}
 
 // /* #GLOBAL TEXT STYLES*/
@@ -262,7 +281,10 @@ p { color: var(--navy);}
 
 // /* #GLOBAL TRANSITION STYLES
 // ================================================== */
-// ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close, header, header.sub, header.sub .header.wrapper, .covid19 .panes, .resources ul.terminal li, .home .callout .playModal a .card-img, .homeVideo, .homeVideo .frame, .featured .panes {                               transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+.button.solid, .button.partner, .button.signup, .button.learnmore, .cards, .cards h4, .cards p, .cards a, .cards svg, .frames, .homepartners .image img, section.stories-grid .case .rack .frames .text a, section.stories-grid .case .rack .frames .text.lead a, section.stories-grid .case .rack .frames .text a svg {                     transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+
+
+// ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close, header, header.sub, header.sub .header.wrapper, .covid19 .panes, .resources ul.terminal li, .home .callout .playModal a .card-img, .homeVideo, .homeVideo .frame, .featured .panes {   
 
 // .whatwedo .deck .cards, .stories .rack .frames, .whoWeAre .deck .cards .card .cardimg, .stories .rack .frames .frame .text, .partners .image, .whoWeAre .deck .cards, .covid19 .pane, .addRes .pane, li, ul li ul, .leaders .panes, .leaders .pane, .whatwedo .deck .cards h4, .whatwedo .deck .cards p, .whatwedo .deck .cards a, nav ul li ul, nav li#drop ul li, .storied .rack .frames, .storied .rack .frames .frame .text, .healthRes .deck .cards, .healthTech .deck .cards {
 //     transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);

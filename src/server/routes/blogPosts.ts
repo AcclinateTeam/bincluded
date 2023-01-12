@@ -24,9 +24,9 @@ router.get('/blog', async (req, res) => {
     }
 });
 
-router.get('/:id', async (req, res) => {
+router.get('/:slug', async (req, res) => {
     try {
-        const getPost = await db.blogPosts.getPost(req.params.id);
+        const getPost = await db.blogPosts.getPost(req.params.slug);
         res.json(getPost);
     } catch (error) {
         console.log(error);

@@ -97,18 +97,18 @@ const Header = () =>
                                 <ul className="nav">
                                     {/* <li><Link to='/blog'>Stories</Link></li> */}
                                     <li id="drop">
-                                        <a href="javascript:void(0)">Stories</a>
+                                        <Link to="/blog">Stories</Link>
                                         <ul className="subnav">
-                                            <li><Link to='/blog'>Articles</Link></li>
+                                            <li><Link to='/articles'>Articles</Link></li>
                                             <li><Link to='/stories'>Stories</Link></li>
                                         </ul>
                                     </li>
                                     <li id="drop">
-                                        <a href="javascript:void(0)">Resources</a>
+                                        <a href="#">Resources</a>
                                         <ul className="subnav">
-                                            <li><Link to='/health'>Health</Link></li>
-                                            <li><Link to='/family'>Family</Link></li>
-                                            <li><Link to='/careers'>Careers</Link></li>
+                                            <li><Link to='/resources/health'>Health</Link></li>
+                                            <li><Link to='/resources/family'>Family</Link></li>
+                                            <li><Link to='/resources/careers'>Careers</Link></li>
                                         </ul>
                                     </li>
                                     <li><Link to='/trials'>Clinical Research</Link></li>

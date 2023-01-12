@@ -6,38 +6,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
 import BlogPosts from '../BlogPosts';
-import ShareYourStory from '../../components/ShareYourStory';
+import ShareYourStory from '../blog/components/ShareYourStory';
 
-const SinglePost = () =>
-{
 
-    useEffect(() =>
-    {
+const SinglePost = () => {
+
+    useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
 
-    const { id } = useParams();
+    const { slug } = useParams();
     const [blogPosts, setBlogPosts] = useState([]);
 
-    useEffect(() =>
-    {
-        fetch(`/api/blogPosts/${id}`)
+    useEffect(() => {
+        fetch(`/api/blogPosts/${slug}`)
             .then(res => res.json())
             .then(blogPosts => setBlogPosts(blogPosts))
     }, []);
-
-    // Scrolls to bottom of Hero Section OnClick
-    const scrollToRef = () =>
-    {
-        let hero = document.getElementById('hero');
-        let heroHeight = hero!.offsetHeight;
-
-        window.scrollTo({
-            top: heroHeight,
-            left: 0,
-            behavior: 'smooth'
-        });
-    }
 
     return (
         <>
@@ -45,18 +30,11 @@ const SinglePost = () =>
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="singBlog hero" style={{ height: `100vh` }}>
+            <section id="hero" className="hero">
                 {blogPosts.map((post: any, index) => (
                     <>
-                        <div className="calloutbg" style={{ backgroundImage: `url(${post.imagelink})` }}></div>
-                        <div className="callout btext">
-                            <div className="calltext">
-                                <h1 className="textPost">{post.title}</h1>
-                            </div>
-                        </div>
-                        <div className="scrollDown">
-                            <FontAwesomeIcon icon="arrow-down" onClick={scrollToRef} />
-                            <h3>Scroll Down</h3>
+                        <div className="blogcall">
+                            <img src={`${post.imagelink}`} alt="" />
                         </div>
                     </>
                 ))}
@@ -65,10 +43,10 @@ const SinglePost = () =>
             {/* BREADCRUMB SECTION */}
             <section className="breadcrumbs">
                 <div className="container">
-                    <div className="six columns offset-by-two bread">
+                    <div className="eight columns offset-by-one bread">
                         {blogPosts.map((post: any, index) => (
                             <>
-                                <a href="/">Home</a> {'>'} <a href="/blog">Stories</a> {'>'} {post.title}
+                                <a href="/">Home</a> {'>'} <a href="/articles">Featured Articles</a> {'>'} {post.title}
                             </>
                         ))}
                     </div>
@@ -77,7 +55,7 @@ const SinglePost = () =>
 
             <section className="story">
                 <div className="container">
-                    <div className="six columns offset-by-two">
+                    <div className="eight columns offset-by-one">
                         <div className="storie">
                             {blogPosts.map((post: any, index) => (
                                 <>
@@ -92,9 +70,8 @@ const SinglePost = () =>
 
             <section className="story">
                 <div className="container">
-                    <div className="six columns offset-by-two">
-                        {blogPosts.map((post: any, index) =>
-                        {
+                    <div className="eight columns offset-by-one">
+                        {blogPosts.map((post: any, index) => {
                             var htmlText = post.content;
 
                             return (

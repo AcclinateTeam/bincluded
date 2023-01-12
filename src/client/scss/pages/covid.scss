@@ -1,0 +1,63 @@
+/* COVID-19 PAGE SCSS STYLES
+============================================================== */
+section.covidstats {                                background-color: var(--red);
+    .stats {                                             padding: 100px; background-color: var(--blue);
+        h2 {                                                font-size: 44px; line-height: 44px; text-align: center; margin: 0 0 10px; color: var(--white);
+            span {                                              display: inline-block; color: var(--navy);}
+        }
+        p {                                                 font-size: 24px; line-height: 32px; margin: 0 0 30px; text-align: center; color: var(--white);}
+        .frame {                                            margin: 0 auto;
+            iframe {                                            display: block;  margin: 44px auto;}
+        }
+    }
+    .vaxx {                                             padding: 100px; background-color: var(--navy);
+        h2 {                                                font-size: 44px; line-height: 44px; text-align: center; margin: 0 0 10px; color: var(--white);
+            span {                                              display: inline-block; color: var(--blue);}
+        }
+        p {                                                 font-size: 24px; line-height: 32px; margin: 0 0 30px; text-align: center; color: var(--white);}
+        .frame {                                            margin: 0 auto;
+            iframe {                                            display: block;  margin: 0 auto 30px;}
+        }
+    }
+}
+
+
+// COVID VIDEO STYLES
+section.covid19 {                       margin: 0 0 100px;
+    h2 {                                    text-align: center;
+        span {                                  display: inline-block; color: var(--blue); margin: 0 0 30px}
+    }
+    .panel {                                margin: 30px -20px;}
+    .panes {                                padding: 0; margin: 0 0 50px; overflow: visible;}
+    .panes:hover .pane {                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); transform: scale(1.02);}
+    .pane {                                 padding: 0; border-radius: 15px; background-color: #fff;
+        .texts {                                height: 400px; position: relative;}
+        .texts .text {                          position: absolute; bottom: 80px; left: 80px;}
+        .texts .text.right {                    left: 50px;}
+        .text h2 {                              font-size: 56px; line-height: 56px; text-align: left; margin: 0 100px 0 0; color: var(--navy);
+            span {                                  margin: 0;}
+        }
+        .text p {                               font-size: 16px; line-height: 24px; margin: 30px 100px 0 0; color: var(--navy);}
+        .texts .tag {                           position: absolute; top: 0; left: 0; z-index: 9;}
+        .texts .tag.right {                     left: 50px;}
+        .texts .tag h6 {                        font-family: 'DM Sans', sans-serif; font-size: 12px; line-height: 12px; font-weight: 700; text-transform: none; padding: 8px 10px; display: inline-block; background-color: #CA1D48; color: #fff;}
+        .video {                                height: 400px;
+            iframe {                            border-radius: 15px;}
+        }
+    }
+    
+}
+
+// PARTNER PANES [EXTENDS COVID19 PANEL STYLES]
+.covid19 .pane .partnerImg {                width: 100%; height: 100%; background-size: 50%; background-position: center; background-repeat: no-repeat; border: 1px solid #cecece;}
+
+
+.covid19 .views {                           background-color: #0a114a;}
+.covid19 .views .view {                     text-align: center; padding: 40px 0; box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
+.covid19 .views .vue {                      padding: 60px;}
+.covid19 .views .vue p {                    font-size: 18px; line-height: 22px;}
+.covid19 .views .vue h1 {                   font-size: 48px; line-height: 48px; margin: 0 100px 30px 0; color: #0F0F10;}
+.covid19 .views .vue li {                   font-size: 14px; line-height: 22px; margin: 0 0 10px; color: #0F0F10;}
+.covid19 .views .vue svg {                  float: left; margin: 0 8px 0 0; color: #CA1D48;}
+
+

@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
 import BlogPosts from '../BlogPosts';
-import ShareYourStory from '../../components/ShareYourStory';
+import ShareYourStory from '../blog/components/ShareYourStory';
+
 
 const SingleStory = () => {
 
@@ -23,53 +24,30 @@ const SingleStory = () => {
             .then(single => setSingle(single))
     }, []);
 
-    // Scrolls to bottom of Hero Section OnClick
-    const scrollToRef = () => {
-        let hero = document.getElementById('hero');
-        let heroHeight = hero!.offsetHeight;
-
-        window.scrollTo({
-            top: heroHeight,
-            left: 0,
-            behavior: 'smooth'
-        });
-    }
-
     return (
         <>
             {/* SUB-HEADER COMPONENT IMPORT */}
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section className="singBlog hero" style={{ height: `600px` }}>
-                <div className="calloutbg" style={{ backgroundImage: `url(/images/stories.jpg)` }}>
-
-                </div>
-                {/* <div className="callbg">
-                    <img src="/images/partners.jpg" alt="" />
-                </div> */}
-                <div className="callout">
-                    <div className="calltext">
-                        {single.map((post: any, index) => {
-                            return (
-                                <>
-                                    <h1>Featured Story</h1>
-                                    <p>{post.title} - {post.subTitle}</p>
-                                </>
-                            )
-                        })}
-                    </div>
-                </div>
+            <section id="hero" className="hero">
+                {single.map((post: any, index) => (
+                    <>
+                        <div className="blogcall">
+                            <img src={`/images/${post.imagelink}`} alt="" />
+                        </div>
+                    </>
+                ))}
             </section>
 
             {/* BREADCRUMB SECTION */}
             <section className="breadcrumbs">
                 <div className="container">
-                    <div className="six columns offset-by-two bread">
+                    <div className="eight columns offset-by-one bread">
                         {single.map((post: any, index) => {
                             return (
                                 <>
-                                    <a href="/">Home</a> {'>'} <a href="/stories">Stories</a> {'>'} {post.title} - {post.subTitle}
+                                    <a href="/">Home</a> {'>'} <a href="/stories">Featured Stories</a> {'>'} {post.title} - {post.subTitle}
                                 </>
                             )
                         })}
@@ -84,14 +62,14 @@ const SingleStory = () => {
                         if (post.type == 'YouTube video player') {
                             return (
                                 <>
-                                    <div className="six columns offset-by-two">
+                                    <div className="eight columns offset-by-one">
                                         <div className="storie">
+                                            <span>{post.subTitle}</span>
                                             <h2>{post.title}</h2>
-                                            <h4>{post.subTitle}</h4>
                                             <iframe width="100%" height="100%" src={post.videolink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                         </div>
                                     </div>
-                                    <div className="six columns offset-by-two">
+                                    <div className="eight columns offset-by-one">
                                         <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
                                     </div>
                                 </>
@@ -99,14 +77,14 @@ const SingleStory = () => {
                         } else if (post.type == 'vimeo-player') {
                             return (
                                 <>
-                                    <div className="six columns offset-by-two">
+                                    <div className="eight columns offset-by-one">
                                         <div className="storie">
                                             <h2>{post.title}</h2>
                                             <h4>{post.subTitle}</h4>
                                             <iframe title="vimeo-player" src={"https://player.vimeo.com/video/773985832?h=802b4f3948"} width="100%" height="100%" frameBorder="0" allowFullScreen></iframe>
                                         </div>
                                     </div>
-                                    <div className="six columns offset-by-two">
+                                    <div className="eight columns offset-by-one">
                                         <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
                                     </div>
                                 </>
@@ -115,7 +93,7 @@ const SingleStory = () => {
                         
                     })}
                     <div className="ten columns">
-                        <div className="buttonwrap">
+                        <div className="buttonwrap center">
                             <Link className="content button solid" to="/stories">Back To Featured Stories</Link>
                         </div>
                     </div>

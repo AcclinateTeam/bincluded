@@ -13,22 +13,22 @@ const HomeCovid = () => {
     const [metrics, setMetrics] = useState<any>([]);
 
     // Hook for covid stats tracker
-    // useEffect(() => {
-    //     getMetroTracker();
-    //     async function getMetroTracker() {
-    //         const response = await fetch('https://api.covidactnow.org/v2/cbsa/13820.json?apiKey=3221244a929540bdb7c557ce3d60b092');
-    //         const metro = await response.json();
-    //         setTracker(metro);
-    //         setActuals(metro.actuals);
-    //         setBeds(metro.actuals.hospitalBeds);
-    //         setMetrics(metro.metrics);
-    //     }
+    useEffect(() => {
+        getMetroTracker();
+        async function getMetroTracker() {
+            const response = await fetch('https://api.covidactnow.org/v2/cbsa/13820.json?apiKey=3221244a929540bdb7c557ce3d60b092');
+            const metro = await response.json();
+            setTracker(metro);
+            setActuals(metro.actuals);
+            setBeds(metro.actuals.hospitalBeds);
+            setMetrics(metro.metrics);
+        }
 
-    // }, []);
+    }, []);
 
     return (
         <>
-            {/* <section className="covid">
+            <section className="covid">
                 <div className="container">
                     <div className="row">
                         <div className="ten columns">
@@ -84,7 +84,7 @@ const HomeCovid = () => {
                         </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
         </>
     )
 }

@@ -31,7 +31,7 @@ const FeatArticlesComponent = () => {
                                         <>
                                             {/* NEW ROW */}
                                             <div className="fourth columns rack">
-                                                <Link to={`/stories/single/${post.slug}`}>
+                                                <Link to={`/stories/${post.slug}`}>
                                                     <div className="frames">
                                                         <div className="frame">
                                                             <div className="image">

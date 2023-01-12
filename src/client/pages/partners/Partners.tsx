@@ -31,7 +31,7 @@ const Partners = () => {
                         <div className="text">
                             <div className="calltext">
                                 <h1>Partners</h1>
-                                <p>B-INCLUDED addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.</p>
+                                <p>We partner with brands that are passionate about our B-INCLUDED mission and our community.</p>
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@ const Partners = () => {
                     <div className="four columns offset-by-one">
                         <div className="text" style={{ 'padding': '150px 0 0' }}>
                             <h2>Making a promise of <span>prosperity to our city</span></h2>
-                            <p>As a <Logo color="#287fdd" /> Partner we agree to support <Logo color="#287fdd" /> stakeholders, the residents living, working, and playing in Jefferson County, by deploying our resources in a way that enriches their lives and helps to move them from dependency to self-sufficiency. </p>
+                            <p>Our <Logo color="#287fdd" /> Partners agree to support <Logo color="#287fdd" /> stakeholders, the residents living, working, and playing in Jefferson County, by deploying resources in a way that enriches lives and helps us move towards healthy dependency as a collective unit.</p>
                         </div>
                     </div>
                     <div className="four columns offset-by-one">

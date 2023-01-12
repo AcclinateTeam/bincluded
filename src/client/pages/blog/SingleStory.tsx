@@ -1,11 +1,9 @@
 import moment from 'moment';
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
-import BlogPosts from '../BlogPosts';
 import ShareYourStory from '../blog/components/ShareYourStory';
 
 

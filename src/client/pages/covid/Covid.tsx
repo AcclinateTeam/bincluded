@@ -27,7 +27,7 @@ const Covid = () => {
                         <div className="text">
                             <div className="calltext">
                                 <h1>COVID-19</h1>
-                                <p>B-INCLUDED addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.</p>
+                                <p><Logo color="#287fdd" /> provides Birmingham residents COVID-19 information, current statistics and resources to take action against the virus.</p>
                             </div>
                         </div>
                     </div>

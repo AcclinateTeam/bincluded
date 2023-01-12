@@ -6,9 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
 import Logo from '../../components/subComponents/Logo';
-import BlogPosts from '../BlogPosts';
-import Prosper from '../../components/Prosper';
-import Loading from '../../components/Loading';
 import HealthTerminal from './components/HealthTerminal';
 
 const Health = () => {
@@ -30,10 +27,10 @@ const Health = () => {
                         <div className="image blog">
                             <img src="/images/theme/resources.png" alt="" />
                         </div>
-                        <div className="text">
+                        <div className="text" style={{ 'margin': '140px 0 0'}}>
                             <div className="calltext">
                                 <h1>Health<br /> Resources</h1>
-                                <p>B-INCLUDED addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.</p>
+                                <p>Our health plays a big factor in our livelihood, and we understand the challenges that may arise when finding resources that align with your health needs. Find resources from our local community related to your health and wellness needs from our <Logo color="#287fdd" /> community.</p>
                             </div>
                         </div>
                     </div>

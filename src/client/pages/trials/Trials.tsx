@@ -76,13 +76,13 @@ const Trials = (props: any) => {
                     <div className="four columns offset-by-one">
                         <div className="text">
                             <h2>What Is <span>Clinical Research?</span></h2>
-                            <p>Clinical trials are research studies that evaluate safety and effectiveness of drugs, medical devices and/or behavioral interventions in people.</p>
+                            <p>Clinical Research provides community members an opportunity to participate in studies that directly affect their person and community health outcomes. With their consent, participants are able to take part in studies that address health conditions prominent in communities of color. In turn, providing researchers the opportunity to build trust with community members and better understand the health outcomes of study participants. </p>
                             <h2>Why Clinical Research <span>Matters for Minorities</span></h2>
                             <p>Racial and ethnic minorities makeup 43% of the U.S. population, and are growing, yet they often represent as little as 2% to 16% of clinical trial participants Source. This leads to treatments that are less effective on people of color.</p>
                         </div>
                     </div>
                     <div className="four columns offset-by-one">
-                        <img style={{ 'margin': '0 0 -3px' }} src="/images/theme/trialsintro.png" alt="" />
+                        <img style={{ 'margin': '100px 0 -3px' }} src="/images/theme/trialsintro.png" alt="" />
                     </div>
                 </div>
             </section>
@@ -97,9 +97,8 @@ const Trials = (props: any) => {
                                     <img src="/images/theme/trialspart.png" alt="" />
                                 </div>
                                 <div className="text">
-                                    <h2>Prosper + <span>Acclinate</span></h2>
-                                    <p>Acclinate and Birmingham Prosper have been hard at work to develop a Birmingham-specific community platform; B-INCLUDED. This platform will further Prosper's initiative to reduce racial inequities in Jefferson County by providing county residents access to long needed resources.</p>
-                                    <a href="https://www.bizjournals.com/birmingham/inno/stories/news/2022/01/12/acclinate-and-prosper-partner-on-new-platform.html">Read About How This Partnership Was Formed <FontAwesomeIcon icon="arrow-right" /></a>
+                                    <h2>Why minority participation in <span>clinical trials is important</span></h2>
+                                    <p>Racial and ethnic minorities makeup 43% of the U.S. population, and are growing, yet they often represent as little as 2% to 16% of clinical trial participants Source. This leads to treatments that are less effective on people of color.</p>
                                 </div>
                             </div>
                         </div>

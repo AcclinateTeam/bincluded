@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
-import BlogPosts from '../BlogPosts';
 import ShareYourStory from '../blog/components/ShareYourStory';
 
 

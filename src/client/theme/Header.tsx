@@ -114,6 +114,7 @@ const Header = () =>
                                     <li><Link to='/trials'>Clinical Research</Link></li>
                                     <li><Link to='/covid'>COVID-19</Link></li>
                                     <li><Link to='/partners'>Partners</Link></li>
+                                    <li><Link to='/toolkit'>ToolKit</Link></li>
                                 </ul>
                             </nav>                            
 

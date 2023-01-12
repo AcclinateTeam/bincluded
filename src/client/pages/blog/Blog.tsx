@@ -5,6 +5,7 @@ import Header from '../../theme/Header';
 import ShareYourStory from '../blog/components/ShareYourStory';
 import FeatStoriesComponent from './components/FeatStoriesComponent';
 import FeatArticlesComponent from './components/FeatArticlesComponent';
+import Logo from '../../components/subComponents/Logo';
 
 const Blog = () => {
     useEffect(() => {
@@ -23,10 +24,10 @@ const Blog = () => {
                         <div className="image blog">
                             <img src="images/theme/blog.png" alt="" />
                         </div>
-                        <div className="text">
+                        <div className="text" style={{ 'margin': '110px 0 0'}}>
                             <div className="calltext">
                                 <h1>Stories &<br /> Articles</h1>
-                                <p>B-INCLUDED addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.</p>
+                                <p>A community is founded on the history and culture of a collective group. To honor our history, present experiences, and in preparation of what’s to come; our Articles and Stories page is here to help you understand our <Logo color="#287fdd" /> community.</p>
                             </div>
                             <div className="callbutton">
                                 <a className="button signup" href="https://www.videoask.com/ftmqd7gt3" target="_blank" rel="noopener noreferrer">Share Your Story</a>

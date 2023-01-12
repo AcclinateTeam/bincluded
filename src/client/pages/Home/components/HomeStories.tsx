@@ -14,7 +14,7 @@ const HomeStories = () => {
 
     return (
         <>
-            <section className="stories">
+            <section className="homestories">
                 <div className="container">
                     <div className="ten columns header">
                         <h2>Featured <span className="blue">Stories</span></h2>

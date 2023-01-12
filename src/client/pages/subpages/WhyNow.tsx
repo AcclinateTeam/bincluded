@@ -34,7 +34,7 @@ const WhyNow = () =>
                         <div className="text">
                             <div className="calltext">
                                 <h1>Why Now?</h1>
-                                <p>B-INCLUDED addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.</p>
+                                <p>There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices. <Logo color="#287fdd" /> is that space and you can become part of that collective.</p>
                             </div>
                         </div>
                     </div>

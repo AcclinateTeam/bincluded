@@ -70,7 +70,7 @@ section.portal {                 background-color: var(--navy); padding: 100px 1
 } 
 
 // HOME PAGE STORIES STYLES
-section.homestories {               padding: 100px 10%; background-color: #fff;
+section.homestories {               padding: 100px 10% 0; background-color: #fff;
     .header h2 {                        text-transform: uppercase; text-align: center; color: var(--navy);}
     .header h2 span {                   display: inline-block; color: var(--blue);}
     .header p {                         font-size: 24px; line-height: 32px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
@@ -83,8 +83,8 @@ section.homestories {               padding: 100px 10%; background-color: #fff;
             .frame .image video {               width: 100%; height: 100%; object-fit: cover;} 
             .frame .image img {                 width: 100%; height: 100%; border-radius: 15px; object-fit: cover;} 
             .frame .text {                      width: calc(100% - 40px); border-radius: 15px; padding: 20px;}
-            .frame .text h1 {                   font-size: 24px; line-height: 24px; font-weight: 900; padding: 15px 0 0; color: var(--navy); margin: 0;}
-            .frame .text p {                    font-size: 18px; line-height: 26px; font-weight: 400; color: var(--navy); margin: 0;}
+            .frame .text h1 {                   font-size: 20px; line-height: 20px; font-weight: 900; text-transform: none; padding: 15px 0 0; color: var(--navy); margin: 0;}
+            .frame .text p {                    font-size: 16px; line-height: 26px; font-weight: 400; color: var(--navy); margin: 0;}
         }
         .frames:hover {                     transform: scale(1.03);}        
     } 

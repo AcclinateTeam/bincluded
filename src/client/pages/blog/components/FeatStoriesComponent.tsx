@@ -20,7 +20,7 @@ const FeatArticlesComponent = () => {
                 <div className="container">
                     <div className="ten columns header">
                         <h2>Featured <span className="blue">Stories</span></h2>
-                        <p>Read to the stories we collected from our community. Click on the story to view the entire video.</p>
+                        <p>Read and listen to stories from community members just like you. </p>
                     </div>
 
                     <div className="ten columns">

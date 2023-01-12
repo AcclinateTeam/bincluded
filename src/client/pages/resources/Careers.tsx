@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
-import BlogPosts from '../BlogPosts';
 import Prosper from '../../components/Prosper';
 import Logo from '../../components/subComponents/Logo';
 import CareersTerminal from './components/CareersTerminal';
@@ -49,10 +48,10 @@ const Careers = () => {
                         <div className="image blog">
                             <img src="/images/theme/resources.png" alt="" />
                         </div>
-                        <div className="text">
+                        <div className="text" style={{ 'margin': '140px 0 0'}}>
                             <div className="calltext">
                                 <h1>Career<br /> Resources</h1>
-                                <p>B-INCLUDED addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.</p>
+                                <p>Employment provides us with the opportunity to build a fulfilling career in a field that serves a purpose to the greater community. Find employment opportunities from local businesses and organizations from our <Logo color="#287fdd" /> community.</p>
                             </div>
                         </div>
                     </div>

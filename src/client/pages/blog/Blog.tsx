@@ -5,7 +5,7 @@ import Header from '../../theme/Header';
 import ShareYourStory from '../blog/components/ShareYourStory';
 import FeatStoriesComponent from './components/FeatStoriesComponent';
 import FeatArticlesComponent from './components/FeatArticlesComponent';
-import Logo from '../../components/subComponents/Logo';
+import Logo from '../../theme/Logo';
 
 const Blog = () => {
     useEffect(() => {

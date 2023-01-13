@@ -6,7 +6,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
-import Logo from '../../components/subComponents/Logo';
+import Logo from '../../theme/Logo';
 import Loading from '../../components/Loading';
 import SiteSearch360 from 'site-search-360-react';
 import HomeWhoWeAre from './components/WhoWeAre';

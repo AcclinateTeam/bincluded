@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
 import FamilyTerminal from './components/FamilyTerminal';
-import Logo from '../../components/subComponents/Logo';
+import Logo from '../../theme/Logo';
 
 const Family = () => {
 

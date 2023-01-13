@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
 import Prosper from '../../components/Prosper';
-import Logo from '../../components/subComponents/Logo';
+import Logo from '../../theme/Logo';
 import CareersTerminal from './components/CareersTerminal';
 
 const Careers = () => {

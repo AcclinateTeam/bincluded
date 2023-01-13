@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Header from '../../theme/Header';
-import Logo from '../../components/subComponents/Logo';
+import Logo from '../../theme/Logo';
 import WhyNowIntro from './components/WhyNowIntro';
 import WhyNowMission from './components/WhyNowMission';
 import WhyNowMeaning from './components/WhyNowMeaning';

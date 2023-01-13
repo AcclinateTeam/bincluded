@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
-import Logo from '../../components/subComponents/Logo';
+import Logo from '../../theme/Logo';
 
 const Covid = () => {
     // SCROLL TO TOP

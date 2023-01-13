@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../../../components/subComponents/Logo';
+import Logo from '../../../theme/Logo';
 
 
 const HomeWhatWeDo = () => {
@@ -21,7 +21,7 @@ const HomeWhatWeDo = () => {
                             <Link to="/covid">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
                             <hr />
                             <h3>Join Our <span>Community</span></h3>
-                            <p>Click here to learn, share and grow with others in the <Logo color="#050236" /> community. </p>
+                            <p>Click here to learn, share and grow with others in the <Logo color="#287fdd" /> community. </p>
                             <Link to="/covid">Join Now <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
                         </div>
                     </div>

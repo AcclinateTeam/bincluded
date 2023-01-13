@@ -4,7 +4,6 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Header from '../../../theme/Header';
-import Logo from '../../../components/subComponents/Logo';
 
 
 

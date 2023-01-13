@@ -9,7 +9,7 @@ import Terminal from '../resources/components/FamilyTerminal';
 
 /* UTILS IMPORTS */
 import { accordionData } from '../../utils/content';
-import Logo from '../../components/subComponents/Logo';
+import Logo from '../../theme/Logo';
 import HomeCommunity from '../Home/components/HomeCommunity';
 
 const Trials = (props: any) => {

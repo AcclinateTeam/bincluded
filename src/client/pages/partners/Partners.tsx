@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Header from '../../theme/Header';
-import Logo from '../../components/subComponents/Logo';
+import Logo from '../../theme/Logo';
 import PartnerTerminal from './components/PartnerTerminal';
 import HealthTechTerminal from './components/HealthTechTerminal';
 import PartnerWithUs from './components/PartnerWithUs';
@@ -31,7 +31,7 @@ const Partners = () => {
                         <div className="text">
                             <div className="calltext">
                                 <h1>Partners</h1>
-                                <p>We partner with brands that are passionate about our B-INCLUDED mission and our community.</p>
+                                <p>We partner with brands that are passionate about our <Logo color="#287fdd" /> mission and our community.</p>
                             </div>
                         </div>
                     </div>

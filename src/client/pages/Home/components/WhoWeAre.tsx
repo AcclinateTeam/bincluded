@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';    
-import Logo from '../../../components/subComponents/Logo';
+import Logo from '../../../theme/Logo';
 
 const WhoWeAre = () => {
 

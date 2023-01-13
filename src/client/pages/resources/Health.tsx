@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
-import Logo from '../../components/subComponents/Logo';
+import Logo from '../../theme/Logo';
 import HealthTerminal from './components/HealthTerminal';
 
 const Health = () => {

@@ -4,7 +4,7 @@
 section.home {                               width: 100%; height: 100vh; position: relative;  background-color: var(--navy); overflow: hidden;
     video {                                  object-fit: cover; opacity: 0.9;}     
     .calloutbg {                             width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
-    .callout {                               width: 30%; height: 500px; position: absolute; top: 150px; left: 10%;}
+    .callout {                               width: 30%; height: 500px; position: absolute; top: 50%; left: 10%; transform: translate(0, -50%);}
     .callout .calltext {                     width: 100%; display: block;}
     .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 94px; line-height: 97px; font-weight: 900; color: #fff; margin: 46px 0;}
     .callout .calltext p {                   font-family: 'DM Sans', sans-serif; width: 90%; font-size: 24px; line-height: 36px; font-weight: 400; color: #fff; }

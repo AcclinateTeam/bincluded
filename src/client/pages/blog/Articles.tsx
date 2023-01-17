@@ -26,8 +26,6 @@ const Articles = () => {
     }, []);
 
     const postlength = blogPosts.length;
-    console.log(blogPosts.length);
-    console.log(blogPosts);
 
     return (
         <>

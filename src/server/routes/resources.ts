@@ -14,6 +14,26 @@ router.get('/allres', async (req, res) => {
     }
 });
 
+router.get('/partners', async (req, res) => {
+    try {
+        const partners = await db.resources.getPartners();
+        res.json(partners);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ msg: `This did not work!`, error });
+    }
+});
+
+router.get('/partners/:slug', async (req, res) => {
+    try {
+        const partners = await db.resources.getPartner(req.params.slug);
+        res.json(partners);
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({ msg: `This did not work!`, error });
+    }
+});
+
 // GET /api/featPosts
 // router.get('/', async (req, res) => {
 //     try {

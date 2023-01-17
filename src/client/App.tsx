@@ -17,11 +17,13 @@ import Health from './pages/resources/Health';
 import Family from './pages/resources/Family';
 import Careers from './pages/resources/Careers';
 import Covid from './pages/covid/Covid';
-import Partners from './pages/partners/Partners';
+import ToolKit from './pages/subpages/ToolKit';
 import NotFound from './pages/NotFound';
+// PARTNER PAGES
+import Partners from './pages/partners/Partners';
+import SinglePartner from './pages/partners/SingleParnter';
 // SUBPAGES
 import WhyNow from './pages/subpages/WhyNow';
-import UWay from './pages/partners/subpages/UWay';
 // BLOG PAGES
 import Blog from './pages/blog/Blog';
 import SinglePost from './pages/blog/SinglePost';
@@ -42,13 +44,6 @@ import Submit from './pages/recipes/Submit';
 import Stories from './pages/blog/Stories';
 import SingleStory from './pages/blog/SingleStory';
 import Articles from './pages/blog/Articles';
-import CooperGreen from './pages/partners/subpages/CooperGreen';
-import LHSA from './pages/partners/subpages/LHSA';
-import ConnectionHealth from './pages/partners/subpages/ConnectionHealth';
-import Viva from './pages/partners/subpages/Viva';
-import ToolKit from './pages/subpages/ToolKit';
-
-
 
 library.add(fab, fas, far);
 
@@ -73,13 +68,11 @@ const App = (props: AppProps) =>
 					<Route path="/resources/careers" element={<Careers />} />
 					<Route path="/covid" element={<Covid />} />
 
-					{/* SubPage Paths */}
+					{/* Partner Page Paths */}
 					<Route path="/partners" element={<Partners />} />
-					<Route path="/partners/coopergreen" element={<CooperGreen />} />
-					<Route path="/partners/lhsa" element={<LHSA />} />
-					<Route path="/partners/vivahealth" element={<Viva />} />
-					<Route path="/partners/unitedway" element={<UWay />} />
-					<Route path="/partners/conHealth" element={<ConnectionHealth />} />
+					<Route path="/partners/:slug" element={<SinglePartner />} />
+
+					{/* SubPage Paths */}
 					<Route path="/whynow" element={<WhyNow />} />
 					<Route path="/toolkit" element={<ToolKit />} />
 					

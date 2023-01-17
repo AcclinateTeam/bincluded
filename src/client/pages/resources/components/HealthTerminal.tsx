@@ -12,12 +12,6 @@ const Terminal = () => {
             .then(cards => setCards(cards))
     }, []);
 
-
-
-    function wait(arg0: number) {
-        throw new Error('Function not implemented.');
-    }
-
     return (
         <>
             <section className="addRes health">
@@ -41,6 +35,7 @@ const Terminal = () => {
                                         // New div (sub-container) element creation and class name assignment
                                         const newDiv = document.createElement('div');
                                         newDiv.className = 'homeVideo';
+                                        newDiv.id = 'homeVideo';
 
                                         // New Frame (sub-div container) element creation and class name assignment
                                         const newFrame = document.createElement('div');
@@ -136,20 +131,19 @@ const Terminal = () => {
                                             await wait(500);
                                             newDiv.remove();
                                         }
-                                    }
+                                    }                           
 
 
 
                                     if (post.health == 'true') {
                                         return (
-                                            <>
-                                                <div className="third columns" key={post.id}>
-                                                    <div className="panes">
-                                                        <a onClick={openPlayModal} className="">
-                                                            <div className="image" style={{ backgroundImage: `url("/images/partners/${post.image}")`, backgroundColor: '#ffffff' }}></div>
-                                                        </a>
+                                            <div className="third columns" key={post.id}>
+                                                <div className="panes">
+                                                    <a onClick={openPlayModal} className="">
+                                                        <div className="image" style={{ backgroundImage: `url("/images/partners/${post.image}")`, backgroundColor: '#ffffff' }}></div>
+                                                    </a>
 
-                                                        {/* <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
+                                                    {/* <a href={post.link} className={post.tags} target="_blank" rel="noopener noreferrer">
                                                         <div className="pane">
                                                             <h2>{post.title}</h2>
                                                             <p>{post.description}</p>
@@ -158,10 +152,9 @@ const Terminal = () => {
                                                             <span>Read More</span> <FontAwesomeIcon className="readmo" icon="arrow-right" />
                                                         </div>
                                                     </a> */}
-                                                    </div>
                                                 </div>
-                                                <div id="playContainer"></div>
-                                            </>
+                                            </div>
+                                            
                                         )
                                     } if (post.career = null) {
                                         return (
@@ -177,6 +170,8 @@ const Terminal = () => {
                         </div>
                     </div>
                 </div>
+                <div id="playContainer"></div>
+                
             </section>
         </>
     );

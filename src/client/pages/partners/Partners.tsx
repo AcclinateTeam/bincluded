@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Header from '../../theme/Header';
 import Logo from '../../theme/Logo';
-import PartnerTerminal from './components/PartnerTerminal';
 import HealthTechTerminal from './components/HealthTechTerminal';
 import PartnerWithUs from './components/PartnerWithUs';
 
@@ -14,6 +13,17 @@ const Partners = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
+
+    const [cards, setCards] = useState([]);
+
+    useEffect(() => {
+        fetch('/api/resources/partners')
+            .then(res => res.json())
+            .then(cards => setCards(cards))
+    }, []);
+
+    console.log(cards);
+
 
     return (
         <>
@@ -57,7 +67,7 @@ const Partners = () => {
                         </div>
                     </div>
                     <div className="four columns offset-by-one">
-                        <img style={{ 'margin': '0 0 -3px'}} src="/images/theme/partnerintro.png" alt="" />
+                        <img style={{ 'margin': '0 0 -3px' }} src="/images/theme/partnerintro.png" alt="" />
                     </div>
                 </div>
             </section>
@@ -70,7 +80,7 @@ const Partners = () => {
                             <img src="/images/theme/partnercommit.png" alt="" />
                         </div>
                     </div>
-                    <div className="six columns" style={{ 'position': 'relative'}}>
+                    <div className="six columns" style={{ 'position': 'relative' }}>
                         <div className="text">
                             <h2>Committed to a better<span> future for all of us</span></h2>
                             <p>We commit to the collaborative effort to build a healthier and wealthier Jefferson County that drives Birmingham to become a world leader in developing health solutions that benefit an increasingly diverse population and deliver better health outcomes for the residents of Jefferson County. </p>
@@ -80,7 +90,56 @@ const Partners = () => {
             </section>
 
             {/* FEATURED PARTNER LOGOS */}
-            <PartnerTerminal />
+            <section className="featured">
+                <div className="container">
+                    <div className="eight columns offset-by-one">
+                        <div className="header">
+                            <h2>Featured <span>Partners</span></h2>
+                            <p>We partner with brands that are passionate about our mission and our community.<br /> Click on the partner logo below to see more information.</p>
+                        </div>
+
+                        <div className="container panel">
+                            {cards.map((p: any, index) => {
+                                if (p.id <= 3) {
+                                    return (
+                                        <div className="third columns panet" key={index}>
+                                            <Link to={`/partners/${p.slug}`}>
+                                                <div className="frame">
+                                                    <div className="panes" style={{ backgroundImage: `url(${p.logo})` }}></div>
+                                                    <div className="text">
+                                                        <h3>{p.title}</h3>
+                                                        <p>Featured Partner</p>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </div>
+                        <div className="container panel">
+                            <div className="bottom">a</div>
+                            {cards.map((p: any, index) => {
+                                if (p.id >= 4) {
+                                    return (
+                                        <div className="third columns panet" key={index}>
+                                            <Link to={`/partners/${p.slug}`}>
+                                                <div className="frame">
+                                                    <div className="panes" style={{ backgroundImage: `url(${p.logo})` }}></div>
+                                                    <div className="text">
+                                                        <h3>{p.title}</h3>
+                                                        <p>Featured Partner</p>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* PROSPER HEALTH-TECH LOGOS */}
             <HealthTechTerminal />

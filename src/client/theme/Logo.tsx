@@ -6,7 +6,7 @@ const Logo = (props: any) =>
 
     return (
         <>
-            <p style={{ 'width': 'auto', 'fontWeight': 700, 'display': 'inline-block', 'margin': 0, 'padding': 0, 'fontFamily': 'Montserrat', 'color': color }}>B-INCLUDED</p>
+            <span style={{ 'width': 'auto', 'fontWeight': 700, 'display': 'inline-block', 'margin': 0, 'padding': 0, 'fontFamily': 'Montserrat', 'color': color }}>B-INCLUDED</span>
             {/* <svg className="logo" viewBox="0 0 278 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M32 0.775452H41.0636V31.2321H32V0.775452Z" fill={color} />
                 <path d="M44.5596 0.775452H55.5477L69.0192 20.6408H69.0532V0.775452H77.6649V31.2321H66.7157L53.2053 11.1127H53.1713V31.2321H44.5596V0.775452Z" fill={color} />

@@ -1,0 +1,133 @@
+@media only screen and (max-width: 499px) and (-webkit-min-device-pixel-ratio: 1) { 
+    /* BLOG SCSS
+    ================================================== */
+    // HERO STYLES
+    #hero.hero.cov {                                
+        .callout {                      width: 90%; margin: 70px 5% 5%;
+            .image {                    width: 100%; display: inline-block;
+                img {                       width: 100%;}
+            }
+            .text {                     margin: 0; display: inline-block; margin: 30px 0 0;
+                h1 {                        font-size: 54px; line-height: 54px;}
+                p {                         width: 100%;}
+            }
+        }
+    }
+
+    // CONTENT STYLES
+    section.intro.covii {
+        .text {                             padding: 0 5% 0;
+            h2 {                                font-size: 32px; line-height: 40px; margin: 0 0 10px;
+                span {                              color: var(--blue);}
+            }
+            p {                                 font-size: 24px; line-height: 32px; margin: 0 0 50px;}
+        }
+        img {                               width: 90%; margin: 0 5% -3px;}
+    }
+
+    section.covidstats {                                background-color: var(--red);
+        .stats {                                             padding: 40px 5%; background-color: var(--blue);
+            h2 {                                                font-size: 32px; line-height: 32px; text-align: center; margin: 0 0 10px; color: var(--white);
+                span {                                              display: inline-block; color: var(--navy);}
+            }
+        }
+        .vaxx {                                             padding: 40px 5%; background-color: var(--navy);
+            h2 {                                                font-size: 32px; line-height: 32px; text-align: center; margin: 0 0 10px; color: var(--white);
+                span {                                              display: inline-block; color: var(--blue);}
+            }
+        }
+    }
+
+    // COVID VIDEO STYLES
+    section.covid19 {                           margin: 5%;
+        .header {                                   margin: 0 0 50px;
+            h2 {                                        font-size: 32px; line-height: 32px; text-align: center;
+                span {                                      display: inline-block; color: var(--blue);}
+            }
+        }
+        .panel {                                    
+            .panes {                                    display: flex; flex-flow: row wrap; margin: 0 0 50px; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                .texts {                                    width: 100%; display: inline-block; position: relative; order: 2;
+                    .text {                                     width: calc(100% - 40px); position: relative; top: 0; left: 0; padding: 20px; transform: translate(0, 0);
+                        h2 {                                        font-size: 32px; line-height: 32px; text-align: left; margin: 0 100px 20px 0; color: var(--navy);
+                            span {                                      margin: 0; color: var(--blue); }
+                        }
+                        p {                                         font-size: 18px; line-height: 26px; color: var(--navy);}
+                    }
+                }
+                .video {                                    width: 100%; height: 350px; display: inline-block; order:1;
+                    iframe {                                    border-radius: 15px;}
+                }
+            }
+            .panes:hover {                                  transform: scale(1.02);}
+        }
+    }
+}
+
+@media only screen and (max-width: 499px) and (-webkit-min-device-pixel-ratio: 1) { 
+    /* BLOG SCSS
+    ================================================== */
+    // HERO STYLES
+    #hero.hero.cov {                                
+        .callout {                      width: 90%; margin: 70px 5% 5%;
+            .image {                    width: 100%; display: inline-block;
+                img {                       width: 100%;}
+            }
+            .text {                     margin: 0; display: inline-block; margin: 30px 0 0;
+                h1 {                        font-size: 44px; line-height: 44px;}
+                p {                         font-size: 20px; line-height: 28px; width: 100%;}
+            }
+        }
+    }
+
+    // CONTENT STYLES
+    section.intro.covii {
+        .text {                             padding: 0 5% 0;
+            h2 {                                font-size: 30px; line-height: 38px; margin: 0 0 10px;
+                span {                              color: var(--blue);}
+            }
+            p {                                 font-size: 20px; line-height: 28px; margin: 0 0 50px;}
+        }
+        img {                               width: 90%; margin: 0 5% -3px;}
+    }
+
+    section.covidstats {                                background-color: var(--red);
+        .stats {                                             padding: 40px 5%; background-color: var(--blue);
+            h2 {                                                font-size: 30px; line-height: 30px; text-align: center; margin: 0 0 10px; color: var(--white);
+                span {                                              display: inline-block; color: var(--navy);}
+            }
+            p {                                                 font-size: 20px; line-height: 28px;}
+        }
+        .vaxx {                                             padding: 40px 5%; background-color: var(--navy);
+            h2 {                                                font-size: 30px; line-height: 30px; text-align: center; margin: 0 0 10px; color: var(--white);
+                span {                                              display: inline-block; color: var(--blue);}
+            }
+        }
+    }
+
+    // COVID VIDEO STYLES
+    section.covid19 {                           margin: 5%;
+        .header {                                   margin: 0 0 50px;
+            h2 {                                        font-size: 30px; line-height: 30px; text-align: center;
+                span {                                      display: inline-block; color: var(--blue);}
+            }
+            p {                                                 font-size: 20px; line-height: 28px;}
+        }
+        .panel {                                    
+            .panes {                                    display: flex; flex-flow: row wrap; margin: 0 0 50px; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                .texts {                                    width: 100%; display: inline-block; position: relative; order: 2;
+                    .text {                                     width: calc(100% - 40px); position: relative; top: 0; left: 0; padding: 20px; transform: translate(0, 0);
+                        h2 {                                        font-size: 28px; line-height: 30px; text-align: left; margin: 0 100px 20px 0; color: var(--navy);
+                            span {                                      margin: 0; color: var(--blue); }
+                        }
+                        p {                                         font-size: 18px; line-height: 26px; color: var(--navy);}
+                    }
+                }
+                .video {                                    width: 100%; height: 350px; display: inline-block; order:1;
+                    iframe {                                    border-radius: 15px;}
+                }
+            }
+            .panes:hover {                                  transform: scale(1.02);}
+        }
+    }
+}

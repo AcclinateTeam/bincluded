@@ -1,144 +1,144 @@
-@media only screen and (max-width: 1600px) {
-    .header.wrapper {               padding: 30px 0 10px;} 
-    .header .logo svg {             height: 25px; margin: 10px 0 0;}
-    .home .callout {                width: 40%; height: 600px; position: absolute; top: 80px; left: 10%;}
-    .home .callout .calltext h1 {                  margin: 46px 0 26px;}
-    .scrollDown {                   bottom: 30px; text-align: center; left: calc(50% - 44px);}
+// @media only screen and (max-width: 1600px) {
+//     .header.wrapper {               padding: 30px 0 10px;} 
+//     .header .logo svg {             height: 25px; margin: 10px 0 0;}
+//     .home .callout {                width: 40%; height: 600px; position: absolute; top: 80px; left: 10%;}
+//     .home .callout .calltext h1 {                  margin: 46px 0 26px;}
+//     .scrollDown {                   bottom: 30px; text-align: center; left: calc(50% - 44px);}
 
-    .whoWeAre {                                     margin:100px 10%;}
-    .whoWeAre .deck .cards .card .text {            width: calc(100% - 60px); height: calc(47% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
-    .whoWeAre .deck .cards .card .text h3 {         font-size: 28px; line-height: 28px; font-weight: 900; color: #fff; margin: 0;}
-    .whatwedo {                                     padding: 50px 10%;}  
-    .stories {                                      padding: 25px 10%;}
-    .stories .rack .frames .frame .text h1 {        font-size: 20px; line-height: 20px;}
-    .stories .rack .frames .frame .text p {         font-size: 16px; line-height: 24px; }
-    .share {                                        padding: 25px 10% 0;}
-    .partWithUs {                                   padding: 25px 10% 0;}
-    .whyNow .whyNum {                               width: 80% !important; margin: 0 0 0 10%;}
-    .whyNow .whyText h2 {                           font-size: 64px; line-height: 64px;}
-    .whyNow .statis {                               padding: 0 0 50px;}
-    .research .heading h1 {                         font-size: 64px; line-height: 64px; text-align: left;}
-    .partners {                                     padding: 50px 10%;}
-    .community {                                    padding: 0 10%;}
+//     .whoWeAre {                                     margin:100px 10%;}
+//     .whoWeAre .deck .cards .card .text {            width: calc(100% - 60px); height: calc(47% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
+//     .whoWeAre .deck .cards .card .text h3 {         font-size: 28px; line-height: 28px; font-weight: 900; color: #fff; margin: 0;}
+//     .whatwedo {                                     padding: 50px 10%;}  
+//     .stories {                                      padding: 25px 10%;}
+//     .stories .rack .frames .frame .text h1 {        font-size: 20px; line-height: 20px;}
+//     .stories .rack .frames .frame .text p {         font-size: 16px; line-height: 24px; }
+//     .share {                                        padding: 25px 10% 0;}
+//     .partWithUs {                                   padding: 25px 10% 0;}
+//     .whyNow .whyNum {                               width: 80% !important; margin: 0 0 0 10%;}
+//     .whyNow .whyText h2 {                           font-size: 64px; line-height: 64px;}
+//     .whyNow .statis {                               padding: 0 0 50px;}
+//     .research .heading h1 {                         font-size: 64px; line-height: 64px; text-align: left;}
+//     .partners {                                     padding: 50px 10%;}
+//     .community {                                    padding: 0 10%;}
 
-    .blogga.hero .callout, .singBlog.hero .callout, .health.hero .callout, .family.hero .callout, .why.hero .callout, .partna.hero .callout {                                         width: 80%; height: 500px; position: absolute; top: 100px; left: 10%;}
-    .career.hero .callout, .trials.hero .callout, .cov.hero .callout {                                         width: 80%; height: 500px; position: absolute; top: 200px; left: 10%;}
-    .hero .callout .calltext h1 {                                   font-size: 64px; line-height: 64px;}
-    .health.hero .calltext h1, .family.hero .calltext h1, .career.hero .calltext h1, .cov.hero .calltext h1, .why.hero .calltext h1 {                                     font-size: 56px; line-height: 56px;}
+//     .blogga.hero .callout, .singBlog.hero .callout, .health.hero .callout, .family.hero .callout, .why.hero .callout, .partna.hero .callout {                                         width: 80%; height: 500px; position: absolute; top: 100px; left: 10%;}
+//     .career.hero .callout, .trials.hero .callout, .cov.hero .callout {                                         width: 80%; height: 500px; position: absolute; top: 200px; left: 10%;}
+//     .hero .callout .calltext h1 {                                   font-size: 64px; line-height: 64px;}
+//     .health.hero .calltext h1, .family.hero .calltext h1, .career.hero .calltext h1, .cov.hero .calltext h1, .why.hero .calltext h1 {                                     font-size: 56px; line-height: 56px;}
 
-    .breadcrumbs {                                  margin: 100px 10% 50px; color: #050236;}
-    .breadcrumbs .bread {                           width: 100% !important; margin: 0 !important;}
+//     .breadcrumbs {                                  margin: 100px 10% 50px; color: #050236;}
+//     .breadcrumbs .bread {                           width: 100% !important; margin: 0 !important;}
 
-    .storied {                                      padding: 0 10% 100px; background-color: #fff;}
+//     .storied {                                      padding: 0 10% 100px; background-color: #fff;}
 
-    .incHealth {                                    margin: 0 10% 100px;}
-    .resHealth {                                    margin: 100px 10% 0;}
-    .healthRes {                                    margin: 0 10%;}  
-    .healthRes .deck .cards .card .text h3 {        font-size: 20px; line-height: 20px;} 
-    .healthRes .deck .cards .card .text P {         font-size: 16px; line-height: 24px;}
-    .addRes .addResWide {                           width: 80% !important; margin: 0 10% !important;}
+//     .incHealth {                                    margin: 0 10% 100px;}
+//     .resHealth {                                    margin: 100px 10% 0;}
+//     .healthRes {                                    margin: 0 10%;}  
+//     .healthRes .deck .cards .card .text h3 {        font-size: 20px; line-height: 20px;} 
+//     .healthRes .deck .cards .card .text P {         font-size: 16px; line-height: 24px;}
+//     .addRes .addResWide {                           width: 80% !important; margin: 0 10% !important;}
 
-    .incFamily {                                    margin: 0 10% 100px;}
-    .resFam {                                       margin: 100px 10% 0;}
-    .familyRes {                                    margin: 0 10% 100px;}
-    .familyRes .deck .cards .card .text h3 {        font-size: 20px; line-height: 20px;}
-    .familyRes .deck .cards .card .text P {         font-size: 16px; line-height: 24px;}
+//     .incFamily {                                    margin: 0 10% 100px;}
+//     .resFam {                                       margin: 100px 10% 0;}
+//     .familyRes {                                    margin: 0 10% 100px;}
+//     .familyRes .deck .cards .card .text h3 {        font-size: 20px; line-height: 20px;}
+//     .familyRes .deck .cards .card .text P {         font-size: 16px; line-height: 24px;}
 
-    .incCareer {                                    margin: 0 10% 100px;}
-    .resCareer {                                    margin: 100px 10% 0;}
+//     .incCareer {                                    margin: 0 10% 100px;}
+//     .resCareer {                                    margin: 100px 10% 0;}
 
-    .studies {                                      margin: 0 10% 100px;}
-    .studies h2 {                                   font-size: 58px; line-height: 58px;}
-    .whyStudies {                                   margin: 100px 10%;}
-    .whyStudies h2 {                                font-size: 50px; line-height: 50px; padding: 45px 0 0;}
-    .getInvolved {                                  padding: 0 0 0 10%;}
-    .reTrials .text h2 {                            font-size: 50px; line-height: 50px;}
+//     .studies {                                      margin: 0 10% 100px;}
+//     .studies h2 {                                   font-size: 58px; line-height: 58px;}
+//     .whyStudies {                                   margin: 100px 10%;}
+//     .whyStudies h2 {                                font-size: 50px; line-height: 50px; padding: 45px 0 0;}
+//     .getInvolved {                                  padding: 0 0 0 10%;}
+//     .reTrials .text h2 {                            font-size: 50px; line-height: 50px;}
 
-    .covids {                                      margin: 0 10% 100px;}
-    .covids h2 {                                   padding: 50px 0 0;}
-    .covids .text p {                              font-size: 22px; line-height: 30px; margin: 0; padding: 30px 40px 30px 100px; }
-    .covidstats .text {                             padding: 50px 0 0 100px;}
-    .vaxxinfo {                                    margin: 50px 10%;}
-    .vaxxinfo .text {                              padding: 25px 50px 0;}
-    .covid19 .addResWide {                          width: 80% !important; margin: 0 10% !important;}
+//     .covids {                                      margin: 0 10% 100px;}
+//     .covids h2 {                                   padding: 50px 0 0;}
+//     .covids .text p {                              font-size: 22px; line-height: 30px; margin: 0; padding: 30px 40px 30px 100px; }
+//     .covidstats .text {                             padding: 50px 0 0 100px;}
+//     .vaxxinfo {                                    margin: 50px 10%;}
+//     .vaxxinfo .text {                              padding: 25px 50px 0;}
+//     .covid19 .addResWide {                          width: 80% !important; margin: 0 10% !important;}
 
-    .promise {                                      margin: 0 10% 100px;}
-    .promise h2 {                                   font-size: 52px; line-height: 52px; padding: 25px 0 0;}
-    .promise .text p {                              font-size: 22px; line-height: 30px; margin: 0; padding: 40px 0 40px 100px;}
-    .commit {                                       margin: 100px 10%;}
-    .partWithUs .image img {                       width: 126%; margin: 25px 0 0 -40px;}
-    .homies {                                      margin: 50px 5%;}
-    .homies .heading h2 {                           margin: 0 0 75px;}
-    .homies .image {                                width: calc(100%); margin: 0;}
-    .featured {                                     padding: 0; background-color: #fff;}
+//     .promise {                                      margin: 0 10% 100px;}
+//     .promise h2 {                                   font-size: 52px; line-height: 52px; padding: 25px 0 0;}
+//     .promise .text p {                              font-size: 22px; line-height: 30px; margin: 0; padding: 40px 0 40px 100px;}
+//     .commit {                                       margin: 100px 10%;}
+//     .partWithUs .image img {                       width: 126%; margin: 25px 0 0 -40px;}
+//     .homies {                                      margin: 50px 5%;}
+//     .homies .heading h2 {                           margin: 0 0 75px;}
+//     .homies .image {                                width: calc(100%); margin: 0;}
+//     .featured {                                     padding: 0; background-color: #fff;}
 
-    .healthTech .deck .cards {                            width: calc(100% - 40px); height: 660px; border-radius: 15px; margin: 0 20px 40px; overflow: hidden;}
-    .healthTech .deck .cards .card .text {                width: calc(100% - 60px); height: 440px; position: absolute; padding: 30px; bottom: 0; left: 0;}
-
-
-    .whyWeAre {                                     margin: 0 10% 100px;}
-    .leaders .addResWide {                          width: 80% !important; margin: 0 10% !important;}
-    .whyInvolved {                                  padding: 0 0 0 10%;}
-    .whyInvolved .text {                            padding: 10px 30px 0 0;}
-    .bInvolved .text {                              padding: 55px 10% 0;} 
-
-    footer .addResWide {                          width: 80% !important; margin: 0 10% !important;}
-
-}
+//     .healthTech .deck .cards {                            width: calc(100% - 40px); height: 660px; border-radius: 15px; margin: 0 20px 40px; overflow: hidden;}
+//     .healthTech .deck .cards .card .text {                width: calc(100% - 60px); height: 440px; position: absolute; padding: 30px; bottom: 0; left: 0;}
 
 
-@media only screen and (max-width: 1540px) {
+//     .whyWeAre {                                     margin: 0 10% 100px;}
+//     .leaders .addResWide {                          width: 80% !important; margin: 0 10% !important;}
+//     .whyInvolved {                                  padding: 0 0 0 10%;}
+//     .whyInvolved .text {                            padding: 10px 30px 0 0;}
+//     .bInvolved .text {                              padding: 55px 10% 0;} 
 
-    .home .callout {                width: 40%; height: 600px; position: absolute; top: 80px; left: 5%;}
+//     footer .addResWide {                          width: 80% !important; margin: 0 10% !important;}
 
-    .whoWeAre {                                     margin:100px 5%;}
-    .whoWeAre p {                                   padding: 30px 0 30px 70px; margin: 0 0 0 50px; font-weight: 300; }
-    .whoWeAre .deck .cards .card .text {            width: calc(100% - 60px); height: calc(47% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
-    .whatwedo {                                     padding: 50px 5%;}  
-    .stories {                                      padding: 25px 5%;}
-    .share {                                        padding: 25px 5% 0;}
-    .partWithUs {                                   padding: 25px 5% 0;}
-    .whyNow .whyNum {                               width: 90% !important; margin: 0 0 0 5%;}
-    .whyNow .whyText {                              margin: 150px 40px 75px; display: inline-block;}
-    .community {                                    padding: 0 5%;}
-
-    .breadcrumbs {                                  margin: 100px 5% 50px; color: #050236;}
-    .breadcrumbs .bread {                           width: 100% !important; margin: 0 !important;}
-
-    .storied {                                      padding: 0 5% 100px; background-color: #fff;}
-
-    .incHealth {                                    margin: 0 5% 100px;}
-    .resHealth {                                    margin: 100px 5% 0;}
-    .healthRes {                                    margin: 0 5%;}  
-    .addRes .addResWide {                           width: 90% !important; margin: 0 5% !important;}
-
-    .incFamily {                                    margin: 0 5% 100px;}
-    .resFam {                                       margin: 100px 5% 0;}
-    .familyRes {                                    margin: 0 5% 100px;}
-
-    .incCareer {                                    margin: 0 5% 100px;}
-    .resCareer {                                    margin: 100px 5% 0;}
-
-    .studies {                                      margin: 0 5% 100px;}
-    .whyStudies {                                   margin: 100px 5%;}
-    .getInvolved {                                  padding: 0 0 0 5%;}
-
-    .covids {                                      margin: 0 5% 100px;}
-    .vaxxinfo {                                    margin: 50px 5%;}
-    .covidstats .text {                             padding: 20px 0 0 100px;}
-    .covid19 .addResWide {                          width: 90% !important; margin: 0 5% !important;}
-
-    .promise {                                      margin: 0 5% 100px;}
-    .commit {                                       margin: 100px 5%;}
-
-    .whyWeAre {                                     margin: 0 5% 100px;}
-    .leaders .addResWide {                          width: 80% !important; margin: 0 5% !important;}
-    .whyInvolved {                                  padding: 0 0 0 5%;}
-
-    footer .addResWide {                          width: 90% !important; margin: 0 5% !important;}
+// }
 
 
+// @media only screen and (max-width: 1540px) {
+
+//     .home .callout {                width: 40%; height: 600px; position: absolute; top: 80px; left: 5%;}
+
+//     .whoWeAre {                                     margin:100px 5%;}
+//     .whoWeAre p {                                   padding: 30px 0 30px 70px; margin: 0 0 0 50px; font-weight: 300; }
+//     .whoWeAre .deck .cards .card .text {            width: calc(100% - 60px); height: calc(47% - 60px); position: absolute; padding: 30px; bottom: 0; left: 0; background-color: #050236;}
+//     .whatwedo {                                     padding: 50px 5%;}  
+//     .stories {                                      padding: 25px 5%;}
+//     .share {                                        padding: 25px 5% 0;}
+//     .partWithUs {                                   padding: 25px 5% 0;}
+//     .whyNow .whyNum {                               width: 90% !important; margin: 0 0 0 5%;}
+//     .whyNow .whyText {                              margin: 150px 40px 75px; display: inline-block;}
+//     .community {                                    padding: 0 5%;}
+
+//     .breadcrumbs {                                  margin: 100px 5% 50px; color: #050236;}
+//     .breadcrumbs .bread {                           width: 100% !important; margin: 0 !important;}
+
+//     .storied {                                      padding: 0 5% 100px; background-color: #fff;}
+
+//     .incHealth {                                    margin: 0 5% 100px;}
+//     .resHealth {                                    margin: 100px 5% 0;}
+//     .healthRes {                                    margin: 0 5%;}  
+//     .addRes .addResWide {                           width: 90% !important; margin: 0 5% !important;}
+
+//     .incFamily {                                    margin: 0 5% 100px;}
+//     .resFam {                                       margin: 100px 5% 0;}
+//     .familyRes {                                    margin: 0 5% 100px;}
+
+//     .incCareer {                                    margin: 0 5% 100px;}
+//     .resCareer {                                    margin: 100px 5% 0;}
+
+//     .studies {                                      margin: 0 5% 100px;}
+//     .whyStudies {                                   margin: 100px 5%;}
+//     .getInvolved {                                  padding: 0 0 0 5%;}
+
+//     .covids {                                      margin: 0 5% 100px;}
+//     .vaxxinfo {                                    margin: 50px 5%;}
+//     .covidstats .text {                             padding: 20px 0 0 100px;}
+//     .covid19 .addResWide {                          width: 90% !important; margin: 0 5% !important;}
+
+//     .promise {                                      margin: 0 5% 100px;}
+//     .commit {                                       margin: 100px 5%;}
+
+//     .whyWeAre {                                     margin: 0 5% 100px;}
+//     .leaders .addResWide {                          width: 80% !important; margin: 0 5% !important;}
+//     .whyInvolved {                                  padding: 0 0 0 5%;}
+
+//     footer .addResWide {                          width: 90% !important; margin: 0 5% !important;}
 
 
 
-}
+
+
+// }

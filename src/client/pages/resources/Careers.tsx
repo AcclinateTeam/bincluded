@@ -42,13 +42,13 @@ const Careers = () => {
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero">
+            <section id="hero" className="hero resc">
                 <div className="container">
                     <div className="columns eight offset-by-one callout">
                         <div className="image blog">
                             <img src="/images/theme/resources.png" alt="" />
                         </div>
-                        <div className="text" style={{ 'margin': '140px 0 0'}}>
+                        <div className="text">
                             <div className="calltext">
                                 <h1>Career<br /> Resources</h1>
                                 <p>Employment provides us with the opportunity to build a fulfilling career in a field that serves a purpose to the greater community. Find employment opportunities from local businesses and organizations from our <Logo color="#287fdd" /> community.</p>

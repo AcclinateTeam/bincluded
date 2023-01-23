@@ -87,12 +87,6 @@ const Header = () =>
                                 </Link>
                             </div>
 
-                            <div className="login">
-                                <ul className="log">
-                                    <li className="logins"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer" onClick={eventTrack.bind(this, "Header", "Sign Up Button", "Button")}>Join the Community</a></li>
-                                </ul>
-                            </div>
-
                             <nav>
                                 <ul className="nav">
                                     {/* <li><Link to='/blog'>Stories</Link></li> */}
@@ -115,6 +109,7 @@ const Header = () =>
                                     <li><Link to='/covid'>COVID-19</Link></li>
                                     <li><Link to='/partners'>Partners</Link></li>
                                     <li><Link to='/toolkit'>ToolKit</Link></li>
+                                    <li className="logins"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer" onClick={eventTrack.bind(this, "Header", "Sign Up Button", "Button")}>Join the Community</a></li>
                                 </ul>
                             </nav>                            
 

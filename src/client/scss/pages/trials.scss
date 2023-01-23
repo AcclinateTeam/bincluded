@@ -1,20 +1,47 @@
 /* TRIALS PAGES SCSS STYLES
 ============================================================== */
-section.participate {               margin: 0 10% 100px;
-    .cards {                           display: block; border-radius: 15px;
-        .card {                            height: 530px; display: block; border-radius: 15px; margin: 0 0 30px;
-            .image {                           width: 45%; float: left;
-                img {                               width: 100%; border-radius: 15px;}
-            }
-            .text {                            width: 47%; float: right; margin: 100px 0; padding: 30px;
-                h2 {                                font-size: 38px; line-height: 38px; margin: 0 0 10px; color: var(--navy);
-                    span {                              display: inline-block; color: var(--blue);}
-                }
-                p {                                 font-size: 24px; line-height: 32px; font-weight: 400; margin: 0 0 30px; color: var(--navy);}
-                a {                                 font-size: 24px; line-height: 24px; font-weight: 700; text-decoration: none; color: var(--navy);}
-                a svg {                             color: #CA1D48;}
-            }   
+/* SUB-HERO STYLES */
+#hero.hero.tri {                                background-color: var(--navy);
+    .callout {                                  margin-top: 150px; margin-bottom: 100px;                              
+        .image {                                    float: left; margin: 0 75px 0 0;}
+        .text {                                         margin: 150px 0 0;
+            h1 {                                        line-height: 85px; margin: 0 0 30px; color: var(--white);}
+            p {                                         width: 80%; font-size: 24px; line-height: 32px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
         }
+    }
+    .blogcall {                                     width: 100%; height: 70vh; background-color: var(--red);
+        img {                                       width: 100%; height: 100%; object-fit: cover;}
+    }
+    .fill {                                     height:150px;}
+}
+
+// CONTENT STYLES
+section.intro.tria {                margin: 0 10% 0;
+    .text {                             width: 60%; padding: 0 0 50px; display: inline-block;
+        h2 {                                font-size: 46px; line-height: 54px; margin: 0 0 10px;
+            span {                              color: var(--blue);}
+        }
+        p {                                 font-size: 24px; line-height: 32px; margin: 0 0 50px;}
+    }
+    .image {                            width: 40%; display: inline-block;
+        img {                               width: auto; margin: 75px 0 0 100px;}        
+    }
+}
+
+
+section.participate {               margin: 0 10% 100px;
+    .card {                            height: 530px; display: flex; flex-flow: row wrap; margin: 0 0 30px;
+        .image {                           width: 45%; float: left; order: 1;
+            img {                               width: 100%; border-radius: 15px;}
+        }
+        .text {                            width: 47%; float: right; margin: 100px 0 0 100px; padding: 50px 0; order: 2;
+            h2 {                                font-size: 38px; line-height: 38px; margin: 0 0 10px; color: var(--navy);
+                span {                              display: inline-block; color: var(--blue);}
+            }
+            p {                                 font-size: 24px; line-height: 32px; font-weight: 400; margin: 0 0 30px; color: var(--navy);}
+            a {                                 font-size: 24px; line-height: 24px; font-weight: 700; text-decoration: none; color: var(--navy);}
+            a svg {                             color: #CA1D48;}
+        }   
     }
 }
 
@@ -36,27 +63,27 @@ section.search {                            margin: 0 0 100px; background-color:
     }
 }
 
-// JOIN COMMUNITY STYLES
-.trialcomm {                        position: relative; padding: 0 10%;
-    .content {                          margin: 75px 50px 0 0;
-        h2 {                                font-size: 54px; line-height: 54px; color: var(--navy);}
-        p {                                 font-size: 24px; line-height: 32px; margin: 20px 0 30px; color: var(--navy);}
-    }
-    .image {                            width: 95%; margin: 0 0 -3px;}
-    .right {                            margin: 75px 0 0;
-        h3 {                                font-size: 44px; line-height: 44px; color: var(--navy);}
-        ul {                                margin: 30px 0;}
-        ul li {                             margin: 0 0 15px;}
-        ul li svg {                         font-size: 24px; line-height: 24px; float: left; padding: 0 8px 0 0; color:var(--red);}
-        ul li p {                           font-size: 24px; line-height: 24px; margin: 0; padding: 0;}
-        span {                              color: var(--red); font-weight: 700; display: inline-block;}
-    }
-    .left {                             
-        h3 {                           font-size: 44px; line-height: 44px; color: var(--navy);}
-        p {                            font-size: 24px; line-height: 32px; margin: 20px 0 30px; color: var(--navy);}
-        img {                          width: 35%; padding: 0 15px 0 0; display: inline-block;}
-    }
-}
+// // JOIN COMMUNITY STYLES
+// .trialcomm {                        position: relative; padding: 0 10%;
+//     .content {                          margin: 75px 50px 0 0;
+//         h2 {                                font-size: 54px; line-height: 54px; color: var(--navy);}
+//         p {                                 font-size: 24px; line-height: 32px; margin: 20px 0 30px; color: var(--navy);}
+//     }
+//     .image {                            width: 95%; margin: 0 0 -3px;}
+//     .right {                            margin: 75px 0 0;
+//         h3 {                                font-size: 44px; line-height: 44px; color: var(--navy);}
+//         ul {                                margin: 30px 0;}
+//         ul li {                             margin: 0 0 15px;}
+//         ul li svg {                         font-size: 24px; line-height: 24px; float: left; padding: 0 8px 0 0; color:var(--red);}
+//         ul li p {                           font-size: 24px; line-height: 24px; margin: 0; padding: 0;}
+//         span {                              color: var(--red); font-weight: 700; display: inline-block;}
+//     }
+//     .left {                             
+//         h3 {                           font-size: 44px; line-height: 44px; color: var(--navy);}
+//         p {                            font-size: 24px; line-height: 32px; margin: 20px 0 30px; color: var(--navy);}
+//         img {                          width: 35%; padding: 0 15px 0 0; display: inline-block;}
+//     }
+// }
 
 /* RESULTS PAGE SCSS STYLES
 ============================================================== */

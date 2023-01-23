@@ -21,13 +21,13 @@ const Health = () => {
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero">
+            <section id="hero" className="hero resc">
                 <div className="container">
                     <div className="columns eight offset-by-one callout">
                         <div className="image blog">
                             <img src="/images/theme/resources.png" alt="" />
                         </div>
-                        <div className="text" style={{ 'margin': '140px 0 0'}}>
+                        <div className="text">
                             <div className="calltext">
                                 <h1>Health<br /> Resources</h1>
                                 <p>Our health plays a big factor in our livelihood, and we understand the challenges that may arise when finding resources that align with your health needs. Find resources from our local community related to your health and wellness needs from our <Logo color="#287fdd" /> community.</p>

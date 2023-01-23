@@ -21,6 +21,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
     "@fullstory/browser": "^1.4.9",
+    "@sentry/react": "^7.31.1",
+    "@sentry/tracing": "^7.31.1",
     "@types/express": "^4.17.13",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",

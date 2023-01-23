@@ -8,14 +8,16 @@ header {                        width: 100%; display: block; margin: 0; padding:
 .header.wrapper {               padding: 50px 0 10px;} 
 
 /* NAV STYLES */
-nav {                           margin: -3px 0 0 50px; float: right;
-  ul {                            list-style: none; margin: 0; padding:  0; 
-    li {                          color: var(--white); display: block; float: left; padding: 1rem; margin: 0 ; border-radius: 5px; font-family: 'Montserrat', sans-serif; font-size: 18px; font-weight: 700; position: relative; text-transform: uppercase; transition-duration: 0.5s;}    
-    li a {                        color: var(--white); text-decoration: none; }
+nav {                           margin: 0; float: right;
+  ul {                              list-style: none; margin: 0; padding:  0; 
+    li {                                font-size: 18px; font-weight: 900; color: var(--white); display: block; float: left; padding: 1rem; margin: 0 ; border-radius: 5px; font-family: 'Montserrat', sans-serif; position: relative; text-transform: uppercase; transition-duration: 0.5s;}    
+    li a {                              color: var(--white); text-decoration: none; }
+    li#drop {                           border-radius: 5px 5px 0 0;}
+    li.logins {                         margin: 0 0 0 50px; background-color: var(--red);}
+    li:hover {                          background: var(--red); cursor: pointer; border-radius: 5px;}  
+    li.logins:hover {                   background-color: var(--blue);}
   }  
     
-  li:hover {                    background: var(--red); cursor: pointer; border-radius: 5px;}  
-  li#drop {                     border-radius: 5px 5px 0 0;}
   ul li ul {                  background: var(--red); visibility: hidden; opacity: 0; width: 100%; border-radius: 0 0 5px 5px; position: absolute; margin-top: 1rem; left: 0; }  
   li:hover > #drop {          border-radius: 20px;}
   ul li:hover > ul,
@@ -33,12 +35,22 @@ nav {                           margin: -3px 0 0 50px; float: right;
 }
 
 /* LOGIN/SIGNUP NAV BUTTON STYLES */
-.login {                        float: right; margin: 0 0 0 40px;}
+// div.login {                         float: right; margin: 0 0 0 40px;
+//     ul.log {                            margin: 0; padding: 0; list-style: none;
+//         li {                                 text-transform: uppercase; display: inline-block; margin: 0 15px 0 0;}
+//         li a {                              display: block; padding: 15px 25px; text-decoration: none; border-radius: 5px;}
+//         li.signup a {                       color: var(--blue);}
+//         li.logins a {                       color: var(--red); background-color: var(--blue);}
+//     }    
+// }
+
+.login {                        float: right; margin: 0;}
 ul.log {                        margin: 0; padding: 0; list-style: none;}
-ul.log li {                     font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 900; margin: 0; text-transform: uppercase; display: inline-block; margin: 0 15px 0 0;}
+ul.log li {                     font-family: 'DM Sans', sans-serif; font-size: 16px; font-weight: 900; margin: 0; display: inline-block; margin: 0 15px 0 0;}
 ul.log li a {                   display: block; padding: 15px 25px; text-decoration: none; border-radius: 5px;}
-ul.log li.signup a {            color: var(--blue);}
-ul.log li.logins a {            color: var(--white); background-color: var(--blue);}
+ul.log li.signup a {            color: #CA1D48;}
+ul.log li.logins a {            color: #fff; background-color: #CA1D48;}
+
 
 // DROPMENU STYLES
 header .navButton {             display: none; opacity: 0; visibility: hidden;}

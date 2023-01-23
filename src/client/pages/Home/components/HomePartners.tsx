@@ -11,7 +11,7 @@ const HomePartners = () => {
             <section className="homepartners">
                 <div className="container">
                     <div className="ten columns">
-                        <h2>Featured Partners</h2>
+                        <h2>Featured <span>Partners</span></h2>
                     </div>
                 </div>
                 <div className="container partner">

@@ -80,7 +80,7 @@ const Blog = () => {
                                                                 <p className="top">{post.subTitle}</p>
                                                                 <h1>{post.title}</h1>
                                                                 <p>{post.description}</p>
-                                                                <Link to={`/stories/${post.id}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
+                                                                <Link to={`/stories/${post.slug}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                                                             </div>
                                                         </div>
                                                     </div>

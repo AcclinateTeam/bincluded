@@ -1,3 +1,18 @@
+/* SUB-HERO STYLES */
+#hero.hero.tool {                                background-color: var(--navy);
+    .callout {                                  margin-top: 150px; margin-bottom: 100px;                              
+        .image {                                    float: left; margin: 0 75px 0 0;}
+        .text {                                     margin: 200px 0 0;
+            h1 {                                        line-height: 85px; margin: 0 0 30px; color: var(--white);}
+            p {                                         width: 80%; font-size: 24px; line-height: 32px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
+        }
+    }
+    .blogcall {                                     width: 100%; height: 70vh; background-color: var(--red);
+        img {                                       width: 100%; height: 100%; object-fit: cover;}
+    }
+    .fill {                                     height:150px;}
+}
+
 // RESOURCE TERMINAL STYLES
 .toolkit {                               margin: 0; padding: 0; background-color: #fff;
     .header {                               margin: 0 auto 50px; text-align: center;

@@ -44,6 +44,7 @@ import Submit from './pages/recipes/Submit';
 import Stories from './pages/blog/Stories';
 import SingleStory from './pages/blog/SingleStory';
 import Articles from './pages/blog/Articles';
+import Test from './utils/Test';
 
 library.add(fab, fas, far);
 
@@ -100,6 +101,7 @@ const App = (props: AppProps) =>
 					<Route path="/privacy" element={<Privacy />} />
 					<Route path="/terms" element={<Terms />} />
 					{/* <Route path="*" element={<NotFound />} /> */}
+					<Route path="/test" element={<Test />} />
 				</Routes>
 				<Footer />
 			</BrowserRouter>

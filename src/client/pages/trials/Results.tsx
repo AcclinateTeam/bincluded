@@ -8,6 +8,10 @@ import Header from '../../theme/Header';
 
 const Results = () => {
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
     const { text }: { text: any; } = useParams();
 
     const [numbers, setNumbers] = useState<any>([]);

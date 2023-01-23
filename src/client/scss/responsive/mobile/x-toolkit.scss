@@ -1,0 +1,89 @@
+@media only screen and (max-width: 499px) and (-webkit-min-device-pixel-ratio: 1) { 
+    /* BLOG SCSS
+    ================================================== */
+    // HERO STYLES
+    #hero.hero.tool {                                
+        .callout {                      width: 90%; margin: 70px 5% 5%;
+            .image {                    width: 100%; display: inline-block;
+                img {                       width: 100%;}
+            }
+            .text {                     display: inline-block; padding: 0; margin: 30px 0 0;
+                h1 {                        font-size: 54px; line-height: 54px;}
+                p {                         width: 100%;}
+            }
+        }
+    }
+
+    // RESOURCE TERMINAL STYLES
+    .toolkit {                               margin: 0 5% 0; padding: 0; background-color: #fff;
+        .header {                               margin: 0 auto 50px; text-align: center;
+            h2 {                                    font-size: 36px; line-height: 44px; padding: 0 0 30px; margin: 0;
+                span {                                  display: inline-block; color: var(--blue);}
+            }
+            p {                                     font-size: 18px; line-height: 24px; padding: 0; margin: 0;}
+        }
+        
+        .list {                             width: 100%; height: 56px; margin: 0 0 50px; position: relative; display: block;} 
+        ul.terminal {                       position: absolute; top: 0; left: 50%; padding: 10px; border-radius: 56px; transform: translateX(-50%); text-align: center; background-color: var(--navy);} 
+        ul.terminal li {                    font-weight: 900; display: inline-block; padding: 10px; margin: 0 2px; border-radius: 30px; text-align: center; cursor: pointer; color: #fff;}
+        ul.terminal li.active {             font-weight: 900; background-color: var(--red); color: #fff;}
+        ul.terminal li a {                  text-decoration: none; color: #fff;}
+        ul.terminal li:hover {              text-decoration: none; color: #fff; background-color: var(--red);}
+        ul.terminal li.active a {           text-decoration: none; color: var(--red);}
+        
+        .panel {                            margin: 30px -20px 100px;
+            .panes {                            height: auto; border-radius: 15px; overflow: hidden; margin: 0 20px 40px; position: relative; background-color: #fff;
+                img {                 width: 100%; object-fit: cover; margin: 0 0 -3px;}
+            }
+            .panes:hover {                      transform: scale(1.02);}
+            .panes:hover .pane {                bottom: -20px;}
+        }
+    }
+
+}
+
+
+
+@media only screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1) { 
+    /* BLOG SCSS
+    ================================================== */
+    // HERO STYLES
+    #hero.hero.tool {                                
+        .callout {                      width: 90%; margin: 70px 5% 5%;
+            .image {                    width: 100%; display: inline-block;
+                img {                       width: 100%;}
+            }
+            .text {                     display: inline-block; padding: 0; margin: 30px 0 0;
+                h1 {                        font-size: 44px; line-height: 44px;}
+                p {                         font-size: 20px; line-height: 28px;width: 100%;}
+            }
+        }
+    }
+
+    // RESOURCE TERMINAL STYLES
+    .toolkit {                               margin: 0 5% 0; padding: 0; background-color: #fff;
+        .header {                               margin: 0 auto 50px; text-align: center;
+            h2 {                                    font-size: 30px; line-height: 38px; padding: 0 0 30px; margin: 0;
+                span {                                  display: inline-block; color: var(--blue);}
+            }
+            p {                                     font-size: 18px; line-height: 24px; padding: 0; margin: 0;}
+        }
+        
+        .list {                             width: 100%; height: 56px; margin: 0 0 50px; position: relative; display: block;} 
+        ul.terminal {                       position: absolute; top: 0; left: 50%; padding: 10px; border-radius: 56px; transform: translateX(-50%); text-align: center; background-color: var(--navy);} 
+        ul.terminal li {                    font-weight: 900; display: inline-block; padding: 10px; margin: 0 2px; border-radius: 30px; text-align: center; cursor: pointer; color: #fff;}
+        ul.terminal li.active {             font-weight: 900; background-color: var(--red); color: #fff;}
+        ul.terminal li a {                  text-decoration: none; color: #fff;}
+        ul.terminal li:hover {              text-decoration: none; color: #fff; background-color: var(--red);}
+        ul.terminal li.active a {           text-decoration: none; color: var(--red);}
+        
+        .panel {                            margin: 30px -20px 30px;
+            .panes {                            height: auto; border-radius: 15px; overflow: hidden; margin: 0 20px 40px; position: relative; background-color: #fff;
+                img {                 width: 100%; object-fit: cover; margin: 0 0 -3px;}
+            }
+            .panes:hover {                      transform: scale(1.02);}
+            .panes:hover .pane {                bottom: -20px;}
+        }
+    }
+
+}

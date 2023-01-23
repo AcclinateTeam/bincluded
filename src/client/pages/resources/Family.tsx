@@ -30,13 +30,13 @@ const Family = () => {
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero">
+            <section id="hero" className="hero resc">
                 <div className="container">
                     <div className="columns eight offset-by-one callout">
                         <div className="image blog">
                             <img src="/images/theme/resources.png" alt="" />
                         </div>
-                        <div className="text" style={{ 'margin': '140px 0 0'}}>
+                        <div className="text">
                             <div className="calltext">
                                 <h1>Family<br /> Resources</h1>
                                 <p>Our families are central units in our communities. We understand how important your family is to you, and want to ensure you have the appropriate resources needed to fully support them. Find resources related to your family’s needs from our <Logo color="#287fdd" /> community. </p>

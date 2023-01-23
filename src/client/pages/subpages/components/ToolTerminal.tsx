@@ -33,7 +33,7 @@ const ToolTerminal = () => {
                     <div className="container">
                         <div className="eight columns offset-by-one">
                             <div className="header">
-                                <h2>Career Resources</h2>
+                                <h2>Digital <span>Resources</span></h2>
                                 <p>Click the button below to select resources by category. Click the resource card to view more information.</p>
                             </div>
                             <div className="list">
@@ -113,7 +113,7 @@ const ToolTerminal = () => {
                     <div className="container">
                         <div className="eight columns offset-by-one">
                             <div className="header">
-                                <h2>Career Resources</h2>
+                                <h2>Print <span>Resources</span></h2>
                                 <p>Click the button below to select resources by category. Click the resource card to view more information.</p>
                             </div>
                             <div className="list">

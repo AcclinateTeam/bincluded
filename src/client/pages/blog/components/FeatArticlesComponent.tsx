@@ -26,20 +26,18 @@ const FeatStoriesComponent = () => {
 
                             {blogPosts.map((post: any, index) => {
                                 return (
-                                    <>
-                                        <div className="fourth columns rack" key={post.id}>
-                                            <div className="frames">
-                                                <div className="image">
-                                                    <Link to={`/blog/single/${post.id}`}><img className="image" src={post.imagelink} alt="" /></Link>
-                                                </div>
-                                                <div className="text">
-                                                    <span>{moment(post._created).format('MMM Do, YYYY')}</span>
-                                                    <Link to={`/blog/single/${post.id}`}><h4>{post.title}</h4></Link>
-                                                    <Link to={`/blog/single/${post.id}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                                </div>
+                                    <div className="fourth columns rack" key={post.id}>
+                                        <div className="frames">
+                                            <div className="image">
+                                                <Link to={`/articles/${post.slug}`}><img className="image" src={post.imagelink} alt="" /></Link>
+                                            </div>
+                                            <div className="text">
+                                                <span>{moment(post._created).format('MMM Do, YYYY')}</span>
+                                                <Link to={`/articles/${post.slug}`}><h4>{post.title}</h4></Link>
+                                                <Link to={`/articles/${post.slug}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                                             </div>
                                         </div>
-                                    </>
+                                    </div>
                                 )
                             })}
                         </div>

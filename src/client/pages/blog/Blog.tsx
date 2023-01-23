@@ -18,13 +18,13 @@ const Blog = () => {
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero">
+            <section id="hero" className="hero blog">
                 <div className="container">
                     <div className="columns eight offset-by-one callout">
                         <div className="image blog">
                             <img src="images/theme/blog.png" alt="" />
                         </div>
-                        <div className="text" style={{ 'margin': '110px 0 0'}}>
+                        <div className="text">
                             <div className="calltext">
                                 <h1>Stories &<br /> Articles</h1>
                                 <p>A community is founded on the history and culture of a collective group. To honor our history, present experiences, and in preparation of what’s to come; our Articles and Stories page is here to help you understand our <Logo color="#287fdd" /> community.</p>

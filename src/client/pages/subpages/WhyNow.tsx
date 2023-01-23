@@ -25,10 +25,10 @@ const WhyNow = () =>
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero">
+            <section id="hero" className="hero whyy">
                 <div className="container">
                     <div className="columns eight offset-by-one callout">
-                        <div className="image blog">
+                        <div className="image">
                             <img src="/images/theme/resources.png" alt="" />
                         </div>
                         <div className="text">

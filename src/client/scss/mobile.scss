@@ -1,39 +1,8 @@
-@media only screen and (max-width: 499px) and (-webkit-min-device-pixel-ratio: 1) {
-    // HEADER STYLES
-    header {                        width: 100%; height: auto; position: absolute; margin: 0; padding: 0; top: 0; left: 0; z-index: 88;}
-    .header.wrapper {               width: 100%; height: 60px; overflow: hidden; margin: 0; padding: 0; position: relative; background-color: rgb(0,0,0,0); } 
-    .header .logo {                 position: absolute; top: 20px; left: 20px;}
-    .header .logo svg {             height: 20px; display: block; margin: 0;}
-    // SUB HEADER STYLES
-    header.sub {                            width: 100%; display: block; margin: 0; padding: 0; position: relative; top: 0; left: 0; z-index: 99;}
-    header.sub .header.wrapper {            width: 100%; height: 60px; padding: 0;}
-    header.sub ul.log li.signup a {         color: #fff;}
-    header.sub .header .logo {                 position: absolute; top:20px; left: 20px;}
-    header.sub .header .logo svg {             height: 20px; display: block; left: 0; margin: 0;}    
-    // NAVBAR STYLES
-    nav {                           padding: 70px 0 0; float: none; margin: 0 0 0 5%;}
-    ul.nav {                        margin: 0;}
-    ul.nav li {                     width: calc(100% - 35px); font-family: 'DM Sans', sans-serif; text-transform: none; font-size: 28px; line-height: 28px; font-weight: 900; position: relative; display: block; padding: 10px; margin: 0 15px 0 0;}
-    nav li:hover {                    background: #CA1D48; cursor: pointer; border-radius: 5px;} 
-    ul.nav li a {                   text-decoration: none; color: #fff;}
-    nav ul li ul {                  height: auto; background: #CA1D48; visibility: visible; opacity: 1; width: 100%; position: relative; margin: 1rem; left: 0; display: block; } 
-    nav ul li ul li a {             font-size: 24px; line-height: 24px;}    
-    // LOGIN BUTTONS
-    .login {                        width: 100%; float: left; margin: 0;}
-    ul.log {                        margin: 0; padding: 0; list-style: none;}
-    ul.log li {                     font-family: 'DM Sans', sans-serif; text-transform: none; font-size: 16px; font-weight: 900; margin: 0; display: block; margin: 0;}
-    ul.log li a {                   display: block; padding: 0; text-decoration: none;}
-    ul.log li.signup a {            font-size: 48px; line-height: 56px; margin: 10px 0 40px; color: #fff;}
-    ul.log li.logins a {            width: 90%; font-size: 16px; padding: 20px 0; border-radius: 5px; margin: 30px 5%; text-align: center; color: #fff; background-color: #CA1D48;}
-    // SCROLL DOWN STYLES
-    .scrollDown {                   position: absolute; bottom: 30px; text-align: center; left: calc(50% - 44px); display: none; visibility: hidden; opacity: 0;}
-
-
-    // MENU BUTTON STYLES
-    header .navButton {             width: 36px; display: block; opacity: 1; visibility: visible; height: 36px; position: absolute; top: 12px; right: 20px; padding: 0; margin: 0; border-radius: 22px; background-color: #CA1D48;}
-    header .navButton svg {         display: block; margin: 0 auto; }
-    header .navButton svg.open {        font-size: 18px; opacity: 1; position: absolute; top: 9px; left: 10px; color: #fff;}
-    header .navButton svg.close {       font-size: 20px; opacity: 0; position: absolute; top: 8px; left: 11px; color: #0F0F10;}
+@media only screen and (max-width: 499px) and (-webkit-min-device-pixel-ratio: 1) {   
+    
+    
+    
+    
     // HOME PAGE CALLOUT STYLES
     .home {                                                 width: 100%; height: 100%; position: relative;  background-color: #050236; overflow: hidden;}
     .home video {                                           object-fit: contain; opacity: 0.9; object-position: -698px;}     

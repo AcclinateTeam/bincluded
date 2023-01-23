@@ -30,7 +30,7 @@ const ToolKit = () =>
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero">
+            <section id="hero" className="hero tool">
                 <div className="container">
                     <div className="columns eight offset-by-one callout">
                         <div className="image blog">

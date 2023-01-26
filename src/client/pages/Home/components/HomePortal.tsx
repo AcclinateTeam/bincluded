@@ -27,7 +27,7 @@ const HomePortal = () => {
                                             <FontAwesomeIcon className="icon" icon="user-md" />
                                             <h4>Health</h4>
                                             <p>Find reliable, fact-based health information you can trust.</p>
-                                            <Link to="/health">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
                                         </div>
                                     </Link>
                                 </div>
@@ -37,7 +37,7 @@ const HomePortal = () => {
                                             <FontAwesomeIcon className="icon" icon="users" />
                                             <h4>Family</h4>
                                             <p>Find information on how  to make your family's health a priority.</p>
-                                            <Link to="/family">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
                                         </div>
                                     </Link>
                                 </div>
@@ -47,7 +47,7 @@ const HomePortal = () => {
                                             <FontAwesomeIcon className="icon" icon="hard-hat" />
                                             <h4>Careers</h4>
                                             <p>Connect with resources to elevate your careers and increase your wealth.</p>
-                                            <Link to="/careers">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
                                         </div>
                                     </Link>
                                 </div>
@@ -57,7 +57,7 @@ const HomePortal = () => {
                                             <FontAwesomeIcon className="icon" icon="comments" />
                                             <h4>Community</h4>
                                             <p>Join to the community to like, share, comment, and connect with people like you.</p>
-                                            <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
+                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
                                         </div>
                                     </a>
                                 </div>
@@ -67,7 +67,7 @@ const HomePortal = () => {
                                             <FontAwesomeIcon className="icon" icon="newspaper" />
                                             <h4>Stories</h4>
                                             <p>Share your story! We’d love to feature you.</p>
-                                            <Link to="/blog">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
                                         </div>
                                     </Link>
                                 </div>
@@ -77,7 +77,7 @@ const HomePortal = () => {
                                             <FontAwesomeIcon className="icon" icon="viruses" />
                                             <h4>COVID-19</h4>
                                             <p>Stay up-to-date on the latest COVID-19 news, stats, and resources.</p>
-                                            <Link to="/covid">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
+                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
                                         </div>
                                     </Link>
                                 </div>

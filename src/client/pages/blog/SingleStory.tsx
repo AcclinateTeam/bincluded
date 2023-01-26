@@ -29,13 +29,11 @@ const SingleStory = () => {
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="hero">
-                {single.map((post: any, index) => (
-                    <>
-                        <div className="blogcall">
-                            <img src={`/images/${post.imagelink}`} alt="" />
-                        </div>
-                    </>
-                ))}
+                {single.map((post: any, index) => 
+                    <div className="blogcall" key={index}>
+                        <img src={`/images/${post.imagelink}`} alt="" />
+                    </div>
+                )}
             </section>
 
             {/* BREADCRUMB SECTION */}
@@ -44,9 +42,9 @@ const SingleStory = () => {
                     <div className="eight columns offset-by-one bread">
                         {single.map((post: any, index) => {
                             return (
-                                <>
+                                <div key={index}>
                                     <a href="/">Home</a> {'>'} <a href="/stories">Featured Stories</a> {'>'} {post.title} - {post.subTitle}
-                                </>
+                                </div>
                             )
                         })}
                     </div>
@@ -59,7 +57,7 @@ const SingleStory = () => {
                         var htmlText = post.content;
                         if (post.type == 'YouTube video player') {
                             return (
-                                <>
+                                <div key={index}>
                                     <div className="eight columns offset-by-one">
                                         <div className="storie">
                                             <span>{post.subTitle}</span>
@@ -70,11 +68,11 @@ const SingleStory = () => {
                                     <div className="eight columns offset-by-one">
                                         <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
                                     </div>
-                                </>
+                                </div>
                             )
                         } else if (post.type == 'vimeo-player') {
                             return (
-                                <>
+                                <div key={index}>
                                     <div className="eight columns offset-by-one">
                                         <div className="storie">
                                             <h2>{post.title}</h2>
@@ -85,10 +83,10 @@ const SingleStory = () => {
                                     <div className="eight columns offset-by-one">
                                         <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
                                     </div>
-                                </>
+                                </div>
                             )
                         }
-                        
+
                     })}
                     <div className="ten columns">
                         <div className="buttonwrap center">

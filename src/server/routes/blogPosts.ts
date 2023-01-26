@@ -7,6 +7,7 @@ const router = Router();
 router.get('/blogComp', async (req, res) => {
     try {
         const blogPosts = await db.blogPosts.getBlogPosts();
+        res.setHeader('Cache-Control', 'max-age=604800, no-cache');
         res.json(blogPosts);
     } catch (error) {
         console.log(error);
@@ -17,6 +18,7 @@ router.get('/blogComp', async (req, res) => {
 router.get('/blog', async (req, res) => {
     try {
         const getBlogs = await db.blogPosts.getBlogs();
+        res.setHeader('Cache-Control', 'max-age=604800, no-cache');
         res.json(getBlogs);
     } catch (error) {
         console.log(error);
@@ -27,6 +29,7 @@ router.get('/blog', async (req, res) => {
 router.get('/:slug', async (req, res) => {
     try {
         const getPost = await db.blogPosts.getPost(req.params.slug);
+        res.setHeader('Cache-Control', 'max-age=604800, no-cache');
         res.json(getPost);
     } catch (error) {
         console.log(error);

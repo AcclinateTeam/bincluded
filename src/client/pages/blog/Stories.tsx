@@ -31,10 +31,6 @@ const Blog = () => {
             .then(stories => setStories(stories))
     }, []);
 
-    const postlength = stories.length;
-    console.log(stories.length);
-    console.log(stories);
-
     return (
         <>
             {/* SUB-HEADER COMPONENT IMPORT */}

@@ -92,7 +92,7 @@ section.breadcrumbs {                       padding: 50px 0; color: var(--navy);
     a:visited {                                 color: var(--navy);}
 }
 
-@media only screen and (max-width: 499px) and (-webkit-min-device-pixel-ratio: 1) { 
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) { 
     /* #GLOBAL STYLES
     ================================================== */
     /* SUB-HERO STYLES */
@@ -350,19 +350,14 @@ svg.logo {                                  height: 16px; display: inline-block;
 //must stay BELOW all other SCSS/imports in this file to maintain cascading order.
 @import './desktop.scss';
 @import './laptop.scss';
-@import './tablet.scss';
+// @import './tablet.scss';
 
 // MOBILE STYLES
-@import './responsive/mobile/x-header.scss';
-@import './responsive/mobile/x-home.scss';
-@import './responsive/mobile/x-blog.scss';
-@import './responsive/mobile/x-resources.scss';
-@import './responsive/mobile/x-covid.scss';
-@import './responsive/mobile/x-trials.scss';
-@import './responsive/mobile/x-partners.scss';
-@import './responsive/mobile/x-whynow.scss';
-@import './responsive/mobile/x-toolkit.scss';
-@import './responsive/mobile/x-footer.scss';
+@import './responsive/x-tablet1440.scss';
+@import './responsive/x-tablet1024.scss';
+@import './responsive/x-tablet768.scss';
+@import './responsive/x-mobile499.scss';
+@import './responsive/x-mobile320.scss';
 
 
 

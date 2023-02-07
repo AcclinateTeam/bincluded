@@ -10,30 +10,9 @@ import Logo from '../../theme/Logo';
 import CareersTerminal from './components/CareersTerminal';
 
 const Careers = () => {
-    // Scrolls to bottom of Hero Section OnClick
-    const scrollToRef = () => {
-        let hero = document.getElementById('hero');
-        let heroHeight = hero!.offsetHeight;
-
-        window.scrollTo({
-            top: heroHeight,
-            left: 0,
-            behavior: 'smooth'
-        });
-    }
-
     // Automatic Scroll To Top on Refresh
     useEffect(() => {
         window.scrollTo(0, 0)
-    }, []);
-
-    const [blogPosts, setBlogPosts] = useState([]);
-
-    // Blog Posts Component Fetch
-    useEffect(() => {
-        fetch('api/blogPosts/blog')
-            .then(res => res.json())
-            .then(blogPosts => setBlogPosts(blogPosts))
     }, []);
 
     return (

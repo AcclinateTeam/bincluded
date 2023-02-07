@@ -78,7 +78,12 @@ const Terminal = () => {
                                         beneBody.innerHTML = `${post.benefit}`;
 
                                         const linkHead = document.createElement('h2');
-                                        linkHead.innerHTML = 'Who Will Benefit';
+                                        linkHead.innerHTML = 'Website';
+                                        const linkBody = document.createElement('a');
+                                        linkBody.innerHTML = `${post.link}`;
+                                        linkBody.href = `${post.link}`;
+                                        linkBody.setAttribute('target', '_blank');
+                                        linkBody.setAttribute('rel', 'noopener noreferrer');
 
 
                                         // Constructs "HomeVideoObject" with appended elements.
@@ -99,6 +104,8 @@ const Terminal = () => {
                                         resContent.appendChild(descBody);
                                         resContent.appendChild(beneHead);
                                         resContent.appendChild(beneBody);
+                                        resContent.appendChild(linkHead);
+                                        resContent.appendChild(linkBody);
 
                                         // New Close Button (sub-div container) element creation and class name assignment
                                         const newCloseBtn = document.createElement('div');
@@ -131,9 +138,7 @@ const Terminal = () => {
                                             await wait(500);
                                             newDiv.remove();
                                         }
-                                    }                           
-
-
+                                    }
 
                                     if (post.health == 'true') {
                                         return (
@@ -154,7 +159,7 @@ const Terminal = () => {
                                                     </a> */}
                                                 </div>
                                             </div>
-                                            
+
                                         )
                                     } if (post.career = null) {
                                         return (
@@ -171,7 +176,7 @@ const Terminal = () => {
                     </div>
                 </div>
                 <div id="playContainer"></div>
-                
+
             </section>
         </>
     );

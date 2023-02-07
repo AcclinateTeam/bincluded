@@ -26,7 +26,7 @@ const FeatStoriesComponent = () => {
 
                             {blogPosts.map((post: any, index) => {
                                 return (
-                                    <div className="fourth columns rack" key={post.id}>
+                                    <div className="fourth columns rack" key={index}>
                                         <div className="frames">
                                             <div className="image">
                                                 <Link to={`/articles/${post.slug}`}><img className="image" src={post.imagelink} alt="" /></Link>

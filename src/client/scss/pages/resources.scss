@@ -67,7 +67,8 @@ section.addRes {                        margin: 0; padding: 0; background-color:
         }
         .content {                                  width: calc(100% - 80px); padding: 40px 40px 20px;
             h2 {                                        font-size: 32px; line-height: 32px;}
-            p {                                         font-size: 18px; line-height: 26px; margin: 0 0 30px;}    
+            p {                                         font-size: 18px; line-height: 26px; margin: 0 0 30px;}
+            a {                                         text-decoration: none; color: var(--red);}    
         }
     }
     .popClose {                          width: 40px; height: 80px; padding: 10px; position: absolute; top: -60px; right: 0; z-index: -77; cursor: pointer; border-radius: 15px 15px 0 0; background-color: var(--blue);}

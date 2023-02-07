@@ -12,8 +12,6 @@ const FeatArticlesComponent = () => {
             .then(stories => setStories(stories))
     }, []);
 
-    console.log(stories)
-
     return (
         <>
             <section className="stories">
@@ -28,24 +26,21 @@ const FeatArticlesComponent = () => {
                             {stories.map((post: any, index) => {
                                 if (post.id < 5) {
                                     return (
-                                        <>
-                                            {/* NEW ROW */}
-                                            <div className="fourth columns rack">
-                                                <Link to={`/stories/${post.slug}`}>
-                                                    <div className="frames">
-                                                        <div className="frame">
-                                                            <div className="image">
-                                                                <img src={`/images/${post.imagelink}`} alt="" />
-                                                            </div>
-                                                            <div className="text">
-                                                                <h1>{post.title}</h1>
-                                                                <p>{post.subTitle}</p>
-                                                            </div>
+                                        <div className="fourth columns rack" key={index}>
+                                            <Link to={`/stories/${post.slug}`}>
+                                                <div className="frames">
+                                                    <div className="frame">
+                                                        <div className="image">
+                                                            <img src={`/images/${post.imagelink}`} alt="" />
+                                                        </div>
+                                                        <div className="text">
+                                                            <h1>{post.title}</h1>
+                                                            <p>{post.subTitle}</p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                            </div>
-                                        </>
+                                                </div>
+                                            </Link>
+                                        </div>
                                     )
                                 }
                             })}

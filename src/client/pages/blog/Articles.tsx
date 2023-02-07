@@ -59,8 +59,7 @@ const Articles = () => {
                             {blogPosts.map((post: any, index) => {
                                 if (post.id === postlength) {
                                     return (
-                                        <>
-                                            <div className="ten columns rack" key={post.id}>
+                                        <div className="ten columns rack" key={index}>
                                                 <div className="frames">
                                                     <div className="image lead">
                                                         <Link to={`/articles/${post.slug}`}><img className="image" src={post.imagelink} alt="" /></Link>
@@ -73,30 +72,27 @@ const Articles = () => {
                                                     </div>
                                                 </div>
                                             </div>
-                                        </>
                                     )
                                 } else if (post.id < postlength) {
                                     return (
-                                        <>
-                                            <div className="third columns rack" key={post.id}>
-                                                <div className="frames">
-                                                    <div className="image">
-                                                        <Link to={`/articles/${post.slug}`}><img className="image" src={post.imagelink} alt="" /></Link>
-                                                    </div>
-                                                    <div className="text">
-                                                        <span>{moment(post._created).format('MMM Do, YYYY')}</span>
-                                                        <Link to={`/articles/${post.slug}`}><h4>{post.title}</h4></Link>
-                                                        <Link to={`/articles/${post.slug}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                                    </div>
+                                        <div className="third columns rack" key={index}>
+                                            <div className="frames">
+                                                <div className="image">
+                                                    <Link to={`/articles/${post.slug}`}><img className="image" src={post.imagelink} alt="" /></Link>
+                                                </div>
+                                                <div className="text">
+                                                    <span>{moment(post._created).format('MMM Do, YYYY')}</span>
+                                                    <Link to={`/articles/${post.slug}`}><h4>{post.title}</h4></Link>
+                                                    <Link to={`/articles/${post.slug}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                                                 </div>
                                             </div>
-                                        </>
+                                        </div>
                                     )
                                 } else {
                                     return (
-                                        <>
+                                        <p key={index}>
                                             This failed!
-                                        </>
+                                        </p>
                                     )
                                 }
                             })}

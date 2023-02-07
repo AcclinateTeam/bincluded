@@ -7,7 +7,11 @@ import Header from '../../theme/Header';
 
 const FullStudy = () => {
 
-    const { text, id }: { text: any; id: any } = useParams();
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, []);
+
+    const { condition, id }: { condition: any; id: any } = useParams();
 
     const [studies, setStudies] = useState([]);
 
@@ -41,7 +45,7 @@ const FullStudy = () => {
             <div className="container study">
 
                 {studies.map((study: any, index) => {
-                    if (!text) {
+                    if (!condition) {
                         return (
                             <section key={index}>
                                 <div className="container study space">
@@ -134,13 +138,13 @@ const FullStudy = () => {
                                     <div className="eight columns offset-by-one">
                                         <div className="head">
                                             <div className="info">
-                                                <Link to={`/trials/results/${text}`}>
-                                                    <FontAwesomeIcon icon="arrow-left" /> Back To Search Results for "{text.replace(/\+/g, " ").replace(/,/g, ", ")}"
+                                                <Link to={`/trials/results/${condition}`}>
+                                                    <FontAwesomeIcon icon="arrow-left" /> Back To Search Results for "{condition.replace(/\+/g, " ").replace(/,/g, ", ")}"
                                                 </Link>
                                             </div>
                                             <div className="bread">
                                                 <p>
-                                                    <Link to="/">Home</Link> / <Link to="/trials">Clinical Trials</Link> / <Link to={`/trials/results/${text}`}>{text.replace(/\+/g, " ").replace(/,/g, ", ")}</Link>
+                                                    <Link to="/">Home</Link> / <Link to="/trials">Clinical Trials</Link> / <Link to={`/trials/results/${condition}`}>{condition.replace(/\+/g, " ").replace(/,/g, ", ")}</Link>
                                                 </p>
                                             </div>
                                         </div>
@@ -199,12 +203,12 @@ const FullStudy = () => {
                                                                 </li>
                                                             </ul>
                                                             <h3>Contact Information</h3>
-                                                            {study.Study.ProtocolSection.ContactsLocationsModule.OverallOfficialList.OverallOfficial.map((m: { OverallOfficialName: number; OverallOfficialAffiliation: string; OverallOfficialRole: string }, index: number) => (
+                                                            {/* {study.Study.ProtocolSection.ContactsLocationsModule.OverallOfficialList.OverallOfficial.map((m: { OverallOfficialName: number; OverallOfficialAffiliation: string; OverallOfficialRole: string }, index: number) => (
                                                                 <>
                                                                     <h3 className="contact">{m.OverallOfficialName}</h3>
                                                                     <p className="contact">{m.OverallOfficialRole} | {m.OverallOfficialAffiliation}</p>
                                                                 </>
-                                                            ))}
+                                                            ))} */}
                                                         </div>
                                                     </div>
                                                 </div>
@@ -237,7 +241,7 @@ const FullStudy = () => {
                             <div className="seven columns offset-by-one-half">
                                 <div className="head">
                                     <div className="info">
-                                        <Link to={`/trials/results/${text}`}>
+                                        <Link to={`/trials/results/${condition}`}>
                                             {/* <FontAwesomeIcon icon="arrow-left" /> Back To Search Results for "{text}"
                                         </Link>
                                     </div>

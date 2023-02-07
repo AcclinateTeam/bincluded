@@ -15,15 +15,6 @@ const Family = () => {
         window.scrollTo(0, 0)
     }, []);
 
-    const [blogPosts, setBlogPosts] = useState([]);
-
-    // Blog Posts Component Fetch
-    useEffect(() => {
-        fetch('api/blogPosts/blog')
-            .then(res => res.json())
-            .then(blogPosts => setBlogPosts(blogPosts))
-    }, []);
-
     return (
         <>
             {/* HEADER COMPONENT */}

@@ -22,8 +22,6 @@ const Partners = () => {
             .then(cards => setCards(cards))
     }, []);
 
-    console.log(cards);
-
 
     return (
         <>

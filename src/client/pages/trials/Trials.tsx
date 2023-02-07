@@ -18,26 +18,34 @@ const Trials = (props: any) => {
         window.scrollTo(0, 0)
     }, []);
 
-    // Scrolls to bottom of Hero Section OnClick
-    const scrollToRef = () => {
-        let hero = document.getElementById('hero');
-        let heroHeight = hero!.offsetHeight;
+    // const [trials, setTrials] = useState([]);
+    const [condition, setCondition] = useState('');
+    const [minAge, setMinAge] = useState('');
+    const [maxAge, setMaxAge] = useState('');
+    const [gender, setGender] = useState('');
 
-        window.scrollTo({
-            top: heroHeight,
-            left: 0,
-            behavior: 'smooth'
-        });
+    console.log(gender)
+
+    const renderButton = () => {
+        if (condition && gender && minAge && maxAge) return '/trials/results/' + condition + '/' + gender + '/' + minAge + '/' + maxAge;
+        if (condition && gender && minAge && !maxAge) return '/trials/results/' + condition + '/' + gender + '/' + minAge;
+        if (condition && gender && !minAge && !maxAge) return '/trials/results/' + condition + '/' + gender;
+        if (condition && !gender && !minAge && !maxAge) return '/trials/results/' + condition;
+
+        if (condition && gender && !minAge && maxAge) return '/trials/results/' + condition + '/' + gender + '/' + maxAge;
+        if (condition && !gender && !minAge && maxAge) return '/trials/results/' + condition + '/' + maxAge;
+        if (!condition && !gender && !minAge && maxAge) return '/trials/results/' + maxAge;
+
+        if (!condition && !gender && minAge && maxAge) return '/trials/results/' + minAge + '/' + maxAge;      
+        if (!condition && gender && minAge && !maxAge) return '/trials/results/' + gender + '/' + minAge;
+        if (!condition && gender && !minAge && maxAge) return '/trials/results/' + gender + '/' + maxAge;
+        if (!condition && !gender && minAge && !maxAge) return '/trials/results/' + minAge;
+        if (!condition && !gender && !minAge && maxAge) return '/trials/results/' + maxAge;
+        if (!condition && gender && !minAge && !maxAge) return '/trials/results/' + gender;
+
+        if (!condition && gender && minAge && maxAge) return '/trials/results/' + gender + '/' + minAge + '/' + maxAge;
+        if (!condition && !gender && minAge && maxAge) return '/trials/results/' + minAge + '/' + maxAge;
     }
-
-    const [trials, setTrials] = useState([]);
-    const [text, setText] = useState('');
-
-    useEffect(() => {
-        fetch('https://clinicaltrials.gov/api/query/study_fields?min_rnk=1&max_rnk=3&fmt=JSON&fields=NCTId,Condition,InterventionName,StudyType,BriefTitle,BriefSummary,PrimaryCompletionDate,Phase')
-            .then(res => res.json())
-            .then(threeTrails => setTrials(threeTrails.StudyFieldsResponse.StudyFields));
-    }, []);
 
     return (
         <>
@@ -110,8 +118,15 @@ const Trials = (props: any) => {
                             <p>Enter a condition below to search clinical trials in the Birmingham area.</p>
 
                             <div className="form">
-                                <input className="control" placeholder="Enter a Condition | ex: Cancer" type="text" name="Search" onChange={e => setText(e.target.value)} />
-                                <Link to={`/trials/results/${text}`}>
+                                <input className="control" placeholder="Enter a Condition | ex: Cancer" type="text" name="Search" onChange={e => setCondition(e.target.value)} />
+                                <input className="control" placeholder="Minimum Age | ex: 18" type="text" name="MinAge" onChange={e => setMinAge(e.target.value)} />
+                                <input className="control" placeholder="Maximum Age | ex: 65" type="text" name="MaxAge" onChange={e => setMaxAge(e.target.value)} />
+                                <select className="drop" name="Gender" defaultValue={'Search By:'} onChange={e => setGender(e.target.value)}>
+                                    <option value=""></option>
+                                    <option value="male">male</option>
+                                    <option value="female">female</option>
+                                </select>
+                                <Link to={`${renderButton()}`}>
                                     <div className="submit">
                                         <FontAwesomeIcon icon="search" />
                                     </div>

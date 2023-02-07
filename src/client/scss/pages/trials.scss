@@ -232,3 +232,7 @@ section.results {
 .trials .view:hover div.image {                     opacity: 0.25; transform: scale(1.03); z-index: 1;}
 .trials .view:hover div.content p {                 margin: 0 0 5px; opacity: 1; visibility: visible;}
 .trials .action a:hover, .trials .action a:hover svg {                           color: #30A1B7;}
+
+section.trialTerminal {                 margin:  0 10% 100px; padding: 5%; background-color: var(--navy);
+    input {                                 padding: 12px 15px;}
+}

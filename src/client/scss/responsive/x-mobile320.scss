@@ -1,0 +1,485 @@
+@media only screen and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 1) { 
+    // HOME PAGE WHO WE ARE STYLES
+    section.whoWeAre {                              padding: 5%; display: flex; background-color: var(--navy);
+        .text {                                     width: 100%; order: 1; margin: 0;
+            h2 {                                        font-size: 30px; line-height: 30px; display: inline-block; color: var(--white);}
+            h2 span {                                   display: inline-block; color: var(--blue);}
+            p {                                         width: 100%; font-size: 20px; line-height: 28px; margin: 30px 0 40px; color: var(--white);}
+        }
+    }
+
+    // HOME PAGE WHAT WE DO STYLES
+    section.HomeWhatWeDo {                      padding: 5% 5% 0; display: flex; flex-flow: row wrap;
+        .content {                                  width: 100%; order: 1;
+            h3 {                                        font-size: 30px; margin: 0 0 15px;}
+            p {                                         width: 90%; font-size: 20px; line-height: 28px; margin: 0 0 10px;}
+            a {                                         font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 28px; font-weight: 900; text-decoration: none; color: var(--navy);
+                svg {                                       color: var(--red); }
+            }
+        }
+    }
+ 
+    // HOME RESOURCE PORTAL STYLES
+    section.portal {                 background-color: var(--navy); padding: 5%;
+        .text {                             margin: 0;
+            h2 {                                font-size: 38px; line-height: 38px; font-weight: 900; text-transform: uppercase; color: var(--white);
+                span {                              color: var(--blue);}
+            }
+            p {                                 font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; padding: 20px 0 40px; font-weight: 400; color: var(--white);}
+            h4 {                                font-size: 18px; color: var(--red);}
+        }
+        .deck {
+            .cards {                            margin: 0 0 30px; border: 2px solid var(--white); border-radius: 15px; padding: 20px;
+                p  {                                height: 104px; font-size: 18px; margin: 0 0 10px; line-height: 26px; color: var(--white);}
+            }
+        }
+    }
+
+    // HOME PAGE STORIES STYLES
+    section.homestories {               padding: 5% 5% 0;
+        .header h2 {                        font-size: 30px; line-height: 30px; text-transform: uppercase; padding: 0 0 20px; text-align: center; color: var(--navy);}
+        .header h2 span {                   display: inline-block; color: var(--blue);}
+        .header p {                         font-size: 20px; line-height: 28px; padding: 0; font-weight: 400; text-align: center; color: var(--navy);}
+        .case {                             margin: 50px 0 0;}
+        .rack {                             margin: 0;
+            a {                                 text-decoration: none;}
+            .frames {                           width: 100%; height: 100%; margin: 0 0 40px; position: relative;
+                .frame {                            width: 100%; height: auto; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); position: relative; background-color: var(--gray);}
+                .frame .image {                     width: 100%; height: 250px; margin: 0 0 -20px; }
+                .frame .image video {               width: 100%; height: 100%; object-fit: cover;} 
+                .frame .image img {                 width: 100%; height: 100%; border-radius: 15px; object-fit: cover;} 
+                .frame .text {                      width: calc(100% - 40px); border-radius: 15px; padding: 20px;}
+                .frame .text h1 {                   font-size: 20px; line-height: 20px; font-weight: 900; text-transform: none; padding: 15px 0 0; color: var(--navy); margin: 0;}
+                .frame .text p {                    font-size: 16px; line-height: 26px; font-weight: 400; color: var(--navy); margin: 0;}
+            }
+            .frames:hover {                     transform: scale(1.03);}        
+        } 
+        .buttonwrap {                               margin: 0 0 10%;}
+    }
+
+    // HOME PAGE WHYNOW? SECTION STYLES
+    .whyNow {                           background-color: var(--navy); padding: 10% 5%;
+        .whyImage {                         width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
+        .whyText {                          margin: 40px 0 60px; display: inline-block;
+            h2 {                                font-size: 30px; line-height: 30px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
+            p {                                 font-size: 20px; line-height: 28px; font-weight: 400; margin: 0 0 30px; color: var(--white);}
+        }   
+
+        .whyTextWide {                      text-align: center; padding: 50px 0;
+            h3 {                                font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 24px; text-transform: none; margin: 0 0 30px; color: var(--white);}
+            h1 {                                font-size: 36px; line-height: 48px; font-weight: 700; margin: 0 0 30px; color: var(--white);}
+            p {                                 width: 500px; font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 auto 30px; color: var(--white);}
+        }    
+
+        .stats {                            padding: 0;
+            .stat {                             display: block;
+                .point {                            margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; border: 2px solid var(--blue); border-radius: 5px;}
+                .point h3 {                         font-family: 'Montserrat', sans-serif; font-size: 92px; line-height: 92px; font-weight: 900; color: var(--white); margin: 0 0 20px; text-transform: none;}
+                .point p {                          height: 130px; font-size: 18px; line-height: 26px; font-weight: 400; color: var(--white); margin: 0; text-transform: none;}
+            }
+        }
+    }
+
+    // CLINICAL RESEARCH STYLES
+    .research {                             width: 100%; margin: 5%; display: block;
+        .panes {                                width: 100%; display: flex; flex-flow: row wrap; position: relative;}
+        .image {                                width: 90%; display: block; order: 2;
+            img {                                   width: 100%; margin: 0 0 30px;}
+        }
+        .heading {                              display: block; position: relative; top: 0; text-align: center; transform: none; left: 0; margin-left: 0; order: 1;
+            h1 {                                    width: 90%; font-size: 30px; line-height: 30px; text-align: center; margin: 0 0 30px; color: var(--navy);}
+        }
+        .content {                          display: block; position: relative; text-align: center;
+            .bg {                               width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.5;}
+            .text {                             width: 90%; padding: 0; color: var(--navy); z-index: 9;
+                h1 {                                font-size: 30px; line-height: 30px; color: var(--navy); opacity: 1; margin: 0 0 10px;}
+                h1 span {                           color: var(--blue);}
+                p {                                 font-size: 20px; line-height: 28px; font-weight: 400; color: var(--navy); margin: 0 0 30px;}
+                .button {                           margin: 0;}
+                .button.solid {                     background-color: var(--red);}
+                .button.solid:hover {               background-color: var(--blue); color: var(--white);}
+            }        
+        }    
+    }
+
+    // HOME PAGE COVID-19 SECTION STYLES
+    .covid {                            padding: 10% 5%; text-align: center; background-color: var(--navy);
+        h2 {                                font-size: 30px; line-height: 30px; font-weight: 900; color: var(--white); margin: 0 0 20px;}
+        h3 {                                font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 28px; font-weight: 900; color: var(--red); text-transform: none; padding: 0; margin: 0 0 30px;}
+        .data {                             padding: 0 40px; margin: 0 0 40px;
+            h4 {                                font-family: 'Montserrat', sans-serif; font-size: 54px; line-height: 54px; font-weight: 900; color: var(--white); margin: 0 0 10px; text-transform: none;}
+            h4 span {                           color: var(--white);}
+            p {                                 font-size: 14px; line-height: 20px; font-weight: 400; color: var(--blue); margin: 0 0 20px; text-transform: none;}
+        }
+        .data.border {                      border-right: none; border-bottom: 1px solid var(--white);}    
+    }
+
+    // JOIN COMMUNITY STYLES
+    .homecommunity {                        position: relative; display: flex; flex-flow: row wrap; padding: 0 5%;
+        .content {                          margin: 0;
+            h2 {                                font-size: 30px; line-height: 30px; text-align: center; color: var(--navy);}
+            p {                                 font-size: 20px; line-height: 28px; text-align: center; margin: 20px 0 30px; color: var(--navy);}
+        }
+        .buttonwrap {                               text-align: center; margin: 0 auto 0;}
+        .image {                            width: 100%; margin: 40px 0 -3px;
+            img {                               width: 100%;}
+        }
+        .right {                            margin: 75px 0 0;
+            h3 {                                font-size: 30px; line-height: 30px; text-align: center; color: var(--navy);}
+            h3 span {                           color: var(--blue);}
+            ul {                                margin: 30px 0;}
+            ul li {                             margin: 0 0 15px;}
+            ul li svg {                         font-size: 18px; line-height: 18px; float: left; padding: 0 8px 0 0; color:var(--red);}
+            ul li p {                           font-size: 18px; line-height: 18px; margin: 0; padding: 0;}
+            span {                              color: var(--red); font-weight: 700; display: inline-block;}
+        }
+        .left {                             
+            h3 {                           font-size: 30px; line-height: 30px; text-align: center; color: var(--navy);}
+            p {                            font-size: 20px; line-height: 28px; text-align: center; margin: 20px 0 30px; color: var(--navy);}
+            img {                          width: 55%; padding: 0 15px 20px 0; margin: 0 auto; display: block;}
+        }
+        .one {                                  width: 100%; order: 1;}
+        .two {                                  width: 100%; order: 3;}
+        .three {                                width: 100%; order: 2;}
+    }
+
+    /* RESOURCE SCSS
+    ================================================== */
+    // HERO STYLES
+    #hero.hero.resc {                                
+        .callout {                      width: 90%; margin: 70px 5% 5%;
+            .image {                    width: 100%; display: inline-block;
+                img {                       width: 100%;}
+            }
+            .text {                     margin: 0; display: inline-block; margin: 30px 0 0;
+                h1 {                        font-size: 44px; line-height: 44px;}
+                p {                         font-size: 20px; line-height: 28px; width: 100%;}
+            }
+        }
+    }
+
+    // CONTENT STYLES
+    section.intro {
+        .text {                             padding: 0 5% 0;
+            h2 {                                font-size: 30px; line-height: 30px; margin: 0 0 10px;
+                span {                              color: var(--blue);}
+            }
+            p {                                 font-size: 20px; line-height: 28px; margin: 0 0 50px;}
+        }
+        img {                               width: 90%; margin: 0 5% 40px;}
+    }
+
+    // RESOURCE TERMINAL STYLES
+    section.addRes {                        margin: 0 5% 0; padding: 0; background-color: #fff;
+        .header {                               margin: 0 auto 50px; text-align: center;
+            h2 {                                    font-size: 32px; line-height: 32px; padding: 0 0 30px; margin: 0;
+                span {                                  display: inline-block; color: var(--blue);}
+            }
+            p {                                     font-size: 18px; line-height: 24px; padding: 0; margin: 0;}
+        }
+        
+        .list {                             width: 100%; height: 56px; margin: 0 0 80px; position: relative; display: block;} 
+        ul.terminal {                       width: 80%; position: absolute; top: 0; left: 50%; padding: 10px; border-radius: 45px; transform: translateX(-50%); text-align: center; background-color: var(--navy);} 
+        ul.terminal li {                    font-weight: 900; display: inline-block; padding: 10px; margin: 0 2px; border-radius: 30px; text-align: center; cursor: pointer; color: #fff;}
+        ul.terminal li.active {             font-weight: 900; background-color: var(--red); color: #fff;}
+        ul.terminal li a {                  text-decoration: none; color: #fff;}
+        ul.terminal li:hover {              text-decoration: none; color: #fff; background-color: var(--red);}
+        ul.terminal li.active a {           text-decoration: none; color: var(--red);}
+        
+        .panel {                            margin: 30px -20px 100px; padding: 30px 0 0;
+            .panes {                            height: 250px; padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); overflow: hidden; margin: 0 20px 40px; position: relative; cursor: pointer; background-color: #fff;
+                .image {                             width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-size: 70%; background-repeat: no-repeat; background-position: center;}
+                .image img {                         padding: 10px; width: 100%; height: 100%; object-fit: contain;}
+            }
+            .panes:hover {                      transform: scale(1.02);}
+            .panes:hover .pane {                bottom: -20px;}
+        }
+        #playContainer {                        z-index: -99;}
+    }
+
+    .homeVideo {                                    width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 99; background-color: rgba(0,0,0,0.8); opacity: 1; display: block; visibility: visible;
+        .frame {                                        width: 90%; position: absolute; top: 80px; left: 50%; transform: translate(-50%, 0); border-radius: 15px 0 15px 15px; z-index: 99; background-color: var(--gray);
+            .header {                                       width: 100%; height: 150px; border-radius: 15px 0 15px 15px; margin: 0; background-color: var(--white);
+                .image {                                        width: 40%; height: 100%; float: left; position: relative;
+                    img {                                           width: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+                }
+                .title {                                        width: 60%; height: 100%; float: right; position: relative;
+                    .text {                                         width: calc(100% - 75px); padding: 0 50px 0 25px; position: absolute; top: 50%; left: 0; transform: translate(0, -50%);
+                        h2 {                                            font-size: 24px; line-height: 24px; text-align: left; padding: 0 0 5px; color: var(--navy);}
+                        p {                                             text-align: left; display: none; visibility: hidden;}
+                    }
+                }
+            }
+            .content {                                  width: calc(100% - 80px); padding: 40px 40px 20px;
+                h2 {                                        font-size: 24px; line-height: 24px;}
+                p {                                         font-size: 18px; line-height: 26px; margin: 0 0 30px;}    
+            }
+        }
+        .popClose {                          width: 40px; height: 80px; padding: 10px; position: absolute; top: -60px; right: 0; z-index: -77; cursor: pointer; border-radius: 15px 15px 0 0; background-color: var(--blue);}
+        .popClose img {                      width: 40px; height: 40px; }
+        .popClose:hover {                    background-color: var(--red);}
+    
+    }
+
+    /* BLOG SCSS
+    ================================================== */
+    // HERO STYLES
+    #hero.hero.par {                                
+        .callout {                      width: 90%; margin: 70px 5% 5%;
+            .image {                    width: 100%; display: inline-block;
+                img {                       width: 100%;}
+            }
+            .text {                     margin: 0; display: inline-block; margin: 30px 0 0;
+                h1 {                        font-size: 44px; line-height: 44px;}
+                p {                         font-size: 20px; line-height: 28px; width: 100%;}
+            }
+        }
+    }
+
+    // CONTENT STYLES
+    section.intro.part {                margin: 5% 5% 0;
+        .text {                             padding: 0;
+            h2 {                                font-size: 30px; line-height: 38px; margin: 0 0 10px;
+                span {                              color: var(--blue);}
+            }
+            p {                                 font-size: 20px; line-height: 28px; margin: 0 0 50px;}
+        }
+        .image {                            width: 100%;
+            img {                               width: 100%; margin: 0 0 -3px;}
+        }
+    }
+
+    // COMMITMENT STYLES
+    section.commitment {                            padding: 5%; background-color: var(--navy);
+        .image {                                        width: 100%;
+            img {                                           width: 100%; margin: 0 0 -3px;}
+        }
+        .text {                                      height: 100%; padding: 30px 0;
+            h2 {                                        font-size: 30px; line-height: 38px; margin: 0 0 10px; color: var(--white);
+                span {                                      display: inline-block; color: var(--blue);}
+            }
+            p {                                         width: 100%; font-size: 20px; padding: 0; line-height: 28px; color: var(--white);}
+        }
+    }
+
+    // HOVER GRID STYLES
+    section.featured {                      padding: 50px 5% 0; background-color: #fff;
+        .header {                               text-align: center;
+            h2 {                                    font-size: 30px; line-height: 38px; color: var(--navy);
+                span {                                  display: inline-block; color: var(--blue);}
+            }
+            p {                                     font-size: 18px; line-height: 26px; margin: 30px 0 50px; color: #050236;}
+        }
+        .panel {                                margin: 0;
+            .bottom {                               width: 16.3333333%; float: left; visibility: hidden; background-color: #f09;}
+            .frame {                                width: 100%; margin: 0 0 30px; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); background-color: var(--gray);
+                .panes {                                width: 100%; height: 300px; background-size: 60%; background-position: center; background-repeat: no-repeat; border-radius: 10px; background-color: #fff; opacity: 1; z-index: 77; filter: grayscale(0%);}                
+            }
+        }   
+    }
+
+    // HEALTH-TECH CORP STYLES
+    .healthTech {                                   margin: 5%;
+        .header {                                           
+            h2 {                                            font-size: 36px; line-height: 44px; margin: 0 0 10px; text-align: center;
+                span {                                          color: var(--blue);}
+            }  
+        }
+        .panel a {                                      text-decoration: none;}
+        
+        .card {                                     width: 100%; height: auto; margin: 0 0 40px; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); background-color: var(--gray);
+            .image {               width: 100%; height: 300px; border-radius: 15px; background-repeat: no-repeat; background-size: 60%; background-position: center; display: inline-block; background-color: var(--white);}
+            .text {                width: calc(100% - 60px); height: auto; padding: 30px; float: none;}
+            .text h3 {             font-size: 26px; line-height: 26px; font-weight: 700; color: var(--navy); margin: 0;}
+            .text p {              font-size: 16px; line-height: 22px; font-weight: 300; border: none; padding: 10px 0 20px; color: var(--navy); margin: 0;}
+            .text p.link {              font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 20px; font-weight: 700; border: none; padding: 0; text-decoration: none; color: #050236; margin: 0;}
+            .text p.link svg {          font-size: 18px; line-height: 20px; color: var(--red);}
+        }    
+        .card:hover {                      transform: scale(1.03);}    
+    }
+
+    .homies {                                           margin: 5%;
+        .heading {                              margin: 0 0 50px;}
+        .heading h2 {                           font-size: 30px; line-height: 38px; margin: 0; color: var(--navy);}
+        .heading h2 span {                      display: inline-block; }
+        .heading p {                            font-size: 20px; line-height: 28px; font-weight: 700; margin: 0; color: var(--blue);}
+        .content {                              margin: 0 50px 0 0;}
+        .content h3 {                           font-size: 26px; line-height: 34px; text-transform: none; margin: 0 0 3px;}
+        .content h4 {                           font-size: 22px; line-height: 22px; margin: 0 0 3px;}
+        .content p {                            font-size: 20px; line-height: 28px; margin: 0 0 30px;}
+        .content p span {                       font-weight: 700; color: #CA1D48;}
+        .image {                                height: 250px; border: 2px solid #050236; margin: 30px 0; border-radius: 15px; overflow: hidden;}
+        .contact {                              padding: 20px; border-radius: 15px; background-color: var(--gray);
+            h4 {                           font-size: 26px; line-height: 26px; text-transform: none; margin: 0 0 3px;}
+            p {                            font-size: 20px; line-height: 28px; margin: 0 0 30px;}
+            p span {                       font-weight: 700; color: #CA1D48;}
+        }
+    }
+
+    // SHARE YOUR STORY STYLES
+    section.partwithus {                     margin: 0 5% 0; display: flex; flex-flow: row wrap;                   
+        .container {                             border-radius: 5px;}
+        .image {                                 width: 100%; height: auto; margin: 40px 0 0; order: 2;}
+        .image img {                             width: 100%; height: auto; padding: 0; margin: 0 0 -3px;}
+        .text {                                  width: 100%; height: auto; margin: 0; order: 1;}
+        .text h2 {                               font-size: 38px; line-height: 38px; text-transform: uppercase; text-align: center; margin: 30px 0 30px; color: var(--navy);
+            span {                                  color: var(--blue);}
+        }
+        .text p {                                font-family: 'DM Sans', sans-serif; font-size: 24px; line-height: 32px; text-align: center; margin: 0 0 30px; font-weight: 700; color: var(--navy); }
+        .button {                                margin: 0 0 0 25px; text-align: left;}
+    }
+
+    /* BLOG SCSS
+    ================================================== */
+    // HERO STYLES
+    #hero.hero.tool {                                
+        .callout {                      width: 90%; margin: 70px 5% 5%;
+            .image {                    width: 100%; display: inline-block;
+                img {                       width: 100%;}
+            }
+            .text {                     display: inline-block; padding: 0; margin: 30px 0 0;
+                h1 {                        font-size: 44px; line-height: 44px;}
+                p {                         font-size: 20px; line-height: 28px;width: 100%;}
+            }
+        }
+    }
+
+    // RESOURCE TERMINAL STYLES
+    .toolkit {                               margin: 0 5% 0; padding: 0; background-color: #fff;
+        .header {                               margin: 0 auto 50px; text-align: center;
+            h2 {                                    font-size: 30px; line-height: 38px; padding: 0 0 30px; margin: 0;
+                span {                                  display: inline-block; color: var(--blue);}
+            }
+            p {                                     font-size: 18px; line-height: 24px; padding: 0; margin: 0;}
+        }
+        
+        .list {                             width: 100%; height: 56px; margin: 0 0 50px; position: relative; display: block;} 
+        ul.terminal {                       position: absolute; top: 0; left: 50%; padding: 10px; border-radius: 56px; transform: translateX(-50%); text-align: center; background-color: var(--navy);} 
+        ul.terminal li {                    font-weight: 900; display: inline-block; padding: 10px; margin: 0 2px; border-radius: 30px; text-align: center; cursor: pointer; color: #fff;}
+        ul.terminal li.active {             font-weight: 900; background-color: var(--red); color: #fff;}
+        ul.terminal li a {                  text-decoration: none; color: #fff;}
+        ul.terminal li:hover {              text-decoration: none; color: #fff; background-color: var(--red);}
+        ul.terminal li.active a {           text-decoration: none; color: var(--red);}
+        
+        .panel {                            margin: 30px -20px 30px;
+            .panes {                            height: auto; border-radius: 15px; overflow: hidden; margin: 0 20px 40px; position: relative; background-color: #fff;
+                img {                 width: 100%; object-fit: cover; margin: 0 0 -3px;}
+            }
+            .panes:hover {                      transform: scale(1.02);}
+            .panes:hover .pane {                bottom: -20px;}
+        }
+    }
+
+
+
+
+    /* BLOG SCSS
+    ================================================== */
+    // HERO STYLES
+    #hero.hero.whyy {                                
+        .callout {                      width: 90%; margin: 70px 5% 5%;
+            .image {                    width: 100%; display: inline-block;
+                img {                       width: 100%;}
+            }
+            .text {                     display: inline-block; padding: 0; margin: 30px 0 0;
+                h1 {                        font-size: 44px; line-height: 44px;}
+                p {                         font-size: 20px; line-height: 28px; width: 100%;}
+            }
+        }
+    }
+
+    // CONTENT STYLES
+    section.intro.whyn {                padding: 0 5% 5%;
+        .text {                             padding: 30px 0 0;
+            h2 {                                font-size: 30px; line-height: 38px; margin: 0 0 10px;
+                span {                              color: var(--blue);}
+            }
+            p {                                 font-size: 20px; line-height: 28px; margin: 0 0 50px;}
+        }
+        .image {                            width: 100%;
+            img {                                width: 100%; margin: 0 0 -3px;}
+        }
+    }
+
+    // CONTENT STYLES
+    section.intro.whymean {                padding: 0 5% 0;
+        .text {                             padding: 30px 0 0;
+            h2 {                                font-size: 30px; line-height: 38px; margin: 0 0 10px;
+                span {                              color: var(--blue);}
+            }
+            p {                                 font-size: 20px; line-height: 28px; margin: 0 0 50px;}
+        }
+        .image {                            width: 100%;
+            img {                                width: 100%; margin: 0 0 -3px;}
+        }
+    }
+
+    // OUR MISSION
+    section.mission {                            padding: 5% 5% 30px; background-color: var(--navy);
+        .image {                                        width: 100%;
+            img {                                           width: 100%; margin: 0 0 -3px;}
+        }
+        .text {                                      height: 100%; padding: 30px 0 0;
+            h2 {                                        font-size: 30px; line-height: 38px; margin: 0 0 10px; color: var(--white);
+                span {                                      display: inline-block; color: var(--blue);}
+            }
+            p {                                         width: 90%; font-size: 20px; line-height: 28px; color: var(--white);}
+            hr {                                        border: none; border-top: 2px solid var(--white); margin: 40px 0;}
+        }
+    }
+
+    // WHY WERE DIFFERENCT SECTION
+    section.different {                            padding: 5%; background-color: var(--navy);
+        .image {                                        width: 100%;
+            img {                                           width: 100%; margin: 0 0 -3px;}
+        }
+        .text {                                      height: 100%; padding: 30px 0 0;
+            h2 {                                        font-size: 30px; line-height: 38px; margin: 0 0 10px; color: var(--white);
+                span {                                      color: var(--blue);}
+            }
+            p {                                         width: 100%; font-size: 20px; line-height: 28px; color: var(--white);}
+        }
+    }
+
+    // LEADERSHIP PANEL STYLES
+    .leaders {                              display: block; position: relative; overflow: hidden; padding: 0 0 50px; margin: 0 5%;
+        .heading {                              padding: 50px 0 30px;
+            h2 {                                    font-size: 30px; line-height: 38px; text-align: center; margin: 0 0 30px; color: #050236;
+                span {                                  display: inline-block; color: var(--blue);}
+            }
+            h3 {                                    width: 700px; font-family: 'Roboto', sans-serif; font-size: 24px; line-height: 32px; font-weight: 500; text-transform: none; text-align: center; margin: 0 auto 30px; color: #050236;}
+            p {                                     width: 100%; font-size: 20px; line-height: 28px; text-align: center; margin: 0 auto 30px; color: var(--navy);} 
+        }
+        
+        .cards {                           display: block; border-radius: 15px;
+            .card {                            height: auto; display: flex; flex-flow: row wrap; border-radius: 15px; margin: 0 0 30px;
+                .image {                           width: 100%;  float: none; order: 2;
+                    img {                               width: 100%; border-radius: 15px;}
+                }
+                .text {                            width: 100%; float: none; order: 1; margin: 30px 0; padding: 0;
+                    h2 {                                font-size: 30px; line-height: 38px; margin: 0 0 10px; color: var(--navy);
+                        span {                              display: inline-block; color: var(--blue);}
+                    }
+                    p {                                 font-size: 20px; line-height: 32px; font-weight: 400; margin: 0 0 30px; color: var(--navy);}
+                    a {                                 font-size: 20px; line-height: 20px; font-weight: 700; text-decoration: none; color: var(--navy);}
+                    a svg {                             color: var(--red);}
+                }   
+            }
+        } 
+        
+
+        .panes {                        height: 350px; border-radius: 15px; overflow: hidden; margin: 0 0 30px; position: relative; background-color: var(--white);}
+        .panes .image {                 width: 100%; height: 68%; position: absolute; top: 0; left: 0; border-radius: 15px; background-size: cover; z-index: 20; background-repeat: no-repeat; background-position: center;}
+        .pane h2 {                          font-size: 24px; line-height: 24px; height: 48px; text-transform: none; font-weight: 700; padding: 10px 0 0; margin: 0 0 3px; color: #fff;}
+        
+    }
+
+    // ORGANIZATIONS PANEL STYLES
+    .orgs {                                     display: block; position: relative; overflow: hidden; margin: 0 0 100px;}
+    .orgs .heading {                            padding: 0 0 30px;}
+    .orgs .heading h2 {                         font-size: 36px; line-height: 44px; text-align: center; margin: 0 0 30px;
+        span {                                      color: var(--blue);}
+    }
+    .orgs .heading p {                          width: 100%; font-family: 'DM Sans', sans-serif; font-size: 24px; line-height: 32px; font-weight: 300; text-transform: none; text-align: center; margin: 0 auto; color: var(--navy);}
+    .orgs .orgImg {                             width: 100%; height: 150px; display: block; margin: 0 0 30px; background-repeat: no-repeat; background-position: center; background-size: 50%;}
+}

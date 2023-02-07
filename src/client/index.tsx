@@ -19,14 +19,14 @@ const tagManagerArgs = {
 TagManager.initialize(tagManagerArgs);
 
 // Sentry Error Logging Init
-Sentry.init({
-  dsn: "https://0460c0780fe94b82b3bd64412014d5ec@o4504526251294720.ingest.sentry.io/4504527717990400",
-  integrations: [new BrowserTracing()],
+// Sentry.init({
+//   dsn: "https://0460c0780fe94b82b3bd64412014d5ec@o4504526251294720.ingest.sentry.io/4504527717990400",
+//   integrations: [new BrowserTracing()],
 
-  // Set tracesSampleRate to 1.0 to capture 100%
-  // of transactions for performance monitoring.
-  // We recommend adjusting this value in production
-  tracesSampleRate: 1.0,
-});
+//   // Set tracesSampleRate to 1.0 to capture 100%
+//   // of transactions for performance monitoring.
+//   // We recommend adjusting this value in production
+//   tracesSampleRate: 1.0,
+// });
 
 render(<App />, document.getElementById("root"));

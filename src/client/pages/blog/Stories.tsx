@@ -63,47 +63,41 @@ const Blog = () => {
                             {stories.map((post: any, index) => {
                                 if (index === 0) {
                                     return (
-                                        <>
-                                            {/* NEW ROW */}
-                                            <div className="ten columns rack">
-                                                <Link to={`/stories/${post.slug}`}>
-                                                    <div className="frames">
-                                                        <div className="frame">
-                                                            <div className="image lead">
-                                                                <img src={`/images/${post.imagelink}`} alt="" />
-                                                            </div>
-                                                            <div className="text lead">
-                                                                <p className="top">{post.subTitle}</p>
-                                                                <h1>{post.title}</h1>
-                                                                <p>{post.description}</p>
-                                                                <Link to={`/stories/${post.slug}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                                            </div>
+                                        <div className="ten columns rack" key={index}>
+                                            <Link to={`/stories/${post.slug}`}>
+                                                <div className="frames">
+                                                    <div className="frame">
+                                                        <div className="image lead">
+                                                            <img src={`/images/${post.imagelink}`} alt="" />
+                                                        </div>
+                                                        <div className="text lead">
+                                                            <p className="top">{post.subTitle}</p>
+                                                            <h1>{post.title}</h1>
+                                                            <p>{post.description}</p>
+                                                            <p className="link">Read More <FontAwesomeIcon icon="arrow-right" /></p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                            </div>
-                                        </>
+                                                </div>
+                                            </Link>
+                                        </div>
                                     )
                                 } else if (index > 0) {
                                     return (
-                                        <>
-                                            {/* NEW ROW */}
-                                            <div className="third columns rack">
-                                                <Link to={`/stories/${post.slug}`}>
-                                                    <div className="frames">
-                                                        <div className="frame">
-                                                            <div className="image">
-                                                                <img src={`/images/${post.imagelink}`} alt="" />
-                                                            </div>
-                                                            <div className="text">
-                                                                <h1>{post.title}</h1>
-                                                                <p>{post.subTitle}</p>
-                                                            </div>
+                                        <div className="third columns rack" key={index}>
+                                            <Link to={`/stories/${post.slug}`}>
+                                                <div className="frames">
+                                                    <div className="frame">
+                                                        <div className="image">
+                                                            <img src={`/images/${post.imagelink}`} alt="" />
+                                                        </div>
+                                                        <div className="text">
+                                                            <h1>{post.title}</h1>
+                                                            <p>{post.subTitle}</p>
                                                         </div>
                                                     </div>
-                                                </Link>
-                                            </div>
-                                        </>
+                                                </div>
+                                            </Link>
+                                        </div>
                                     )
                                 } else {
                                     return (

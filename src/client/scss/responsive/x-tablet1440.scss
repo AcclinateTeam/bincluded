@@ -1,0 +1,244 @@
+@media only screen and (min-width: 1025px) and (max-width: 1440px) and (-webkit-min-device-pixel-ratio: 1) {
+    /* HEADER SCSS STYLES
+    ============================================================== */
+    /* HEADER STYLES */
+    header {                        width: 100%; display: block; margin: 0; padding: 0; position: fixed; top: 0; left: 0; z-index: 99;
+        .logo {                         margin: 0; float: left;}
+        .logo svg {                     height: 25px; margin: 10px 0 0;}
+    }
+    .header.wrapper {               padding: 50px 0 10px;} 
+    
+    /* NAV STYLES */
+    nav {                           margin: 0; float: right;
+        ul {                              list-style: none; margin: 0; padding:  0; 
+        li {                                font-size: 15px; font-weight: 900; color: var(--white); display: block; float: left; padding: 1rem; margin: 0 ; border-radius: 5px; font-family: 'Montserrat', sans-serif; position: relative; text-transform: uppercase; transition-duration: 0.5s;}    
+        li a {                              color: var(--white); text-decoration: none; }
+        li#drop {                           border-radius: 5px 5px 0 0;}
+        li.logins {                         margin: 0 0 0 30px; background-color: var(--red);}
+        li:hover {                          background: var(--red); cursor: pointer; border-radius: 5px;}  
+        li.logins:hover {                   background-color: var(--blue);}
+        }  
+        
+        ul li ul {                  background: var(--red); visibility: hidden; opacity: 0; width: 100%; border-radius: 0 0 5px 5px; position: absolute; margin-top: 1rem; left: 0; }  
+        li:hover > #drop {          border-radius: 20px;}
+        ul li:hover > ul,
+        ul li:focus-within > ul, /* this is the line we add */
+        ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        }
+        
+        ul li ul li {
+        text-align: center;
+        clear: both;
+        width: calc(100% - 2rem);
+        }
+    }    
+
+    /* BUTTONS */
+    .buttonwrap {                               width: 100%; position: relative; }
+    .buttonwrap.center {                        text-align: center;}
+    .button {                                   font-family: 'Montserrat', sans-serif; font-size: 15px; border-radius: 5px; font-weight: 900; padding: 15px 20px; text-decoration: none; color: #fff;}
+    .button.solid {                             background-color: var(--red); }
+    .button.solid:hover {                       background-color: #EEC31A; color: #0F0F10;}
+    .button.partner {                           background-color: var(--red); } 
+    .button.partner:hover {                     background-color: #EEC31A; color: #fff;}
+    .sponsors .button {                         font-weight: 500; color: #fff;}
+
+
+    
+    /* HOME PAGE SCSS STYLES
+    ============================================================== */
+    // HOME PAGE CALLOUT STYLES
+    section.home {                               width: 100%; height: 100vh; position: relative;  background-color: var(--navy); overflow: hidden;
+        video {                                  object-fit: cover; opacity: 0.9;}     
+        .calloutbg {                             width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
+        .callout {                               width: 30%; height: 500px; position: absolute; top: 50%; left: 5%; transform: translate(0, -50%);}
+        .callout .calltext {                     width: 100%; display: block;}
+        .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 72px; line-height: 72px; font-weight: 900; color: #fff; margin: 46px 0;}
+        .callout .calltext p {                   font-family: 'DM Sans', sans-serif; width: 90%; font-size: 20px; line-height: 28px; font-weight: 400; color: #fff; }
+        .callout .callbutton {                   margin: 30px 0 0; display: block;}
+    }
+
+    // HOME PAGE WHO WE ARE STYLES
+    section.whoWeAre {                              padding: 100px 5%; display: flex; flex-flow: row wrap; background-color: var(--navy);
+        .text {                                     width: 60%; order: 2; margin: 25px 0 0;
+            h2 {                                        font-size: 60px; line-height: 60px; display: inline-block; color: var(--white);}
+            h2 span {                                   display: inline-block; color: var(--blue);}
+            p {                                         width: 80%; font-size: 20px; line-height: 28px; margin: 30px 0 0; color: var(--white);}
+        }
+        .image {                                    width: 30%; margin: 0 10% 0 0; order: 1;
+            img {                                       width: 100%;}
+        }
+    }
+
+    // HOME PAGE WHAT WE DO STYLES
+    section.HomeWhatWeDo {                      padding: 100px 5% 0; display: flex; flex-flow: row wrap;
+        .content {                                  width: 40%; order: 1;
+            h3 {                                        font-size: 36px; margin: 0 0 15px;}
+            h3 span {                                   display: inline-block; color: var(--blue);}
+            p {                                         width: 90%; font-size: 20px; line-height: 28px; margin: 0 0 10px;}
+            hr {                                        width: 90%; border: 1px solid var(--navy); margin: 30px 0;}
+            a {                                         font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; text-decoration: none; color: var(--navy);
+                svg {                                       color: var(--red); }
+            }
+        }
+        .image {                                    width: 20%; order: 2;
+            img {                                       height: 100%; margin: 0 0 -3px;}
+        }
+    }
+
+
+    // HOME RESOURCE PORTAL STYLES
+    section.portal {                 background-color: var(--navy); padding: 100px 5%;
+        .text {                             margin: 0 50px 0 0;
+            h2 {                                font-size: 44px; line-height: 44px; font-weight: 900; text-transform: uppercase; color: var(--white);
+                span {                              color: var(--blue);}
+            }
+            p {                                 font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 28px; padding: 30px 0 50px; font-weight: 400; color: var(--white);}
+            h4 {                                color: var(--red);}
+        }
+        .deck {
+            .cards {                            margin: 0 15px 30px; border: 2px solid var(--white); border-radius: 15px; padding: 30px;}
+            
+            .cards svg {                        color: var(--red);}
+            .cards svg.icon {                   border: 2px solid var(--blue); font-size: 30px; border-radius: 35px; padding: 20px; margin: 0 0 20px; color: var(--blue);}
+            .cards:hover svg {                        color: var(--blue);}
+            .cards:hover svg.icon {                        border: 2px solid var(--blue);}
+            .cards h4  {                        padding: 0 0 10px; font-size: 28px; text-transform: none; color: var(--white);}
+            .cards p  {                         height: 140px; font-size: 20px; margin: 0 0 50px; line-height: 28px; color: var(--white);}
+            .cards p.link {                     height: auto; font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; margin: 0; color: var(--white);}
+            
+            .cards:hover {                      border: 2px solid var(--white); background-color: var(--white);}
+            .cards:hover h4 {                   color: var(--navy);}
+            .cards:hover p {                    color: var(--navy);}
+            .cards:hover a {                    color: var(--navy);}
+    }
+        .deck a {                                 color:var(--black); text-decoration: none;} 
+        .ss360-custom-search {                    justify-content: left;}
+        .ss360-ac-bg {                              background-color: var(--blue);}
+        .ss360-ac-b {                               background-color: var(--blue);}
+        .ss360-custom-search .ss360-custom-search__searchbox {                  width: 75%; border: 2px solid var(--blue);}
+        .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid var(--blue);}
+        .ss360-custom-search .ss360-custom-search__searchbutton:hover {               border: 2px solid #3d8fff;}
+    } 
+
+    // HOME PAGE STORIES STYLES
+    section.homestories {               padding: 100px 5% 0; background-color: #fff;
+        .header h2 {                        font-size: 44px; line-height: 44px; text-transform: uppercase; text-align: center; color: var(--navy);}
+        .header h2 span {                   display: inline-block; color: var(--blue);}
+        .header p {                         font-size: 20px; line-height: 28px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
+        .case {                             margin: 50px 0 0;}
+        .rack {                             margin: 0;
+            a {                                 text-decoration: none;}
+            .frames {                           width: calc(100% - 40px); height: 100%; margin: 0 20px 20px; position: relative;
+                .frame {                            width: 100%; height: auto; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); position: relative; background-color: var(--gray);}
+                .frame .image {                     width: 100%; height: 300px; margin: 0 0 -20px; }
+                .frame .image video {               width: 100%; height: 100%; object-fit: cover;} 
+                .frame .image img {                 width: 100%; height: 100%; border-radius: 15px; object-fit: cover;} 
+                .frame .text {                      width: calc(100% - 40px); border-radius: 15px; padding: 20px;}
+                .frame .text h1 {                   font-size: 20px; line-height: 20px; font-weight: 900; text-transform: none; padding: 15px 0 0; color: var(--navy); margin: 0;}
+                .frame .text p {                    font-size: 16px; line-height: 26px; font-weight: 400; color: var(--navy); margin: 0;}
+            }
+            .frames:hover {                     transform: scale(1.03);}        
+        } 
+        .buttonwrap {                               margin: 50px 0 100px;}
+    }
+
+    // HOME PAGE WHYNOW? SECTION STYLES
+    .whyNow {                           background-color: var(--navy); padding: 25px 0;
+        .whyImage {                         width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
+        .whyText {                          margin: 75px 40px; display: inline-block;
+            h2 {                                font-size: 56px; line-height: 56px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
+            p {                                 font-size: 20px; line-height: 28px; font-weight: 400; margin: 0 0 30px; color: var(--white);}
+        }   
+
+        .whyTextWide {                      text-align: center; padding: 90px 0;
+            h3 {                                font-family: 'DM Sans', sans-serif; font-size: 16px; line-height: 24px; text-transform: none; margin: 0 0 30px; color: var(--white);}
+            h1 {                                font-size: 48px; line-height: 60px; font-weight: 700; margin: 0 0 30px; color: var(--white);}
+            p {                                 width: 500px; font-size: 16px; line-height: 30px; font-weight: 400; margin: 0 auto 30px; color: var(--white);}
+        }    
+
+        .stats {                            padding: 100px 0 0;
+            .stat {                             display: block;
+                .point {                            margin: 0 15px 30px; padding: 30px; position: relative; overflow: hidden; text-align: left; border: 2px solid var(--blue); border-radius: 5px;}
+                .point h3 {                         font-family: 'Montserrat', sans-serif; font-size: 92px; line-height: 92px; font-weight: 900; color: var(--white); margin: 0 0 20px; text-transform: none;}
+                .point p {                          height: 52px; font-size: 18px; line-height: 26px; font-weight: 400; color: var(--white); margin: 0; text-transform: none;}
+            }
+        }
+    }
+
+    // CLINICAL RESEARCH STYLES
+    .research {                             width: 100%; display: block;
+        .panes {                                width: 100%; display: block; position: relative;}
+        .image {                                width: 100%; display: block;
+            img {                                   width: 100%; margin: -1px 0 -4px -2px;}
+        }
+        .heading {                              display: block; position: absolute; top: 50%; transform: translateY(-50%); left: 50%; margin-left: -220px;
+            h1 {                                    width: 90%; font-size: 52px; line-height: 52px; text-align: left; color: var(--white);}
+        }
+        .content {                          display: block; position: relative; text-align: center;
+            .bg {                               width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-size: cover; background-repeat: no-repeat; opacity: 0.5;}
+            .text {                             padding: 120px 0 0 150px; color: var(--navy); z-index: 9;
+                h1 {                                font-size: 44px; line-height: 44px; color: var(--navy); opacity: 1; margin: 0 0 10px;}
+                h1 span {                           color: var(--blue);}
+                p {                                 font-size: 20px; line-height: 28px; font-weight: 400; color: var(--navy); margin: 0 0 30px;}
+                .button {                           margin: 0;}
+                .button.solid {                     background-color: var(--red);}
+                .button.solid:hover {               background-color: var(--blue); color: var(--white);}
+            }        
+        }    
+    }
+
+    // HOME PAGE COVID-19 SECTION STYLES
+    .covid {                            padding: 100px 0; text-align: center; background-color: var(--navy);
+        h2 {                                font-weight: 900; color: var(--white); margin: 0 0 20px;}
+        h3 {                                font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: var(--red); text-transform: none; padding: 0 0 50px; margin: 0 50px 30px 100px;}
+        .data {                             padding: 0 40px; margin: 0 0 80px;
+            h4 {                                font-family: 'Montserrat', sans-serif; font-size: 54px; line-height: 54px; font-weight: 900; color: var(--white); margin: 0 0 10px; text-transform: none;}
+            h4 span {                           color: var(--white);}
+            p {                                 font-size: 14px; line-height: 20px; font-weight: 400; color: var(--blue); margin: 0 0 20px; text-transform: none;}
+        }
+        .data.border {                      border-right: 1px solid var(--white);}    
+    }
+
+    // SPONSOR STYLES
+    .homepartners {                         padding: 100px 10%;
+        .partner {                             padding: 0 0 50px;}
+        h2 {                                margin: 0 0 50px; text-align: center;}
+        h2 span {                           display: inline-block; color: var(--blue);}
+        .image {                            width: calc(100% - 70px); height: 200px; position: relative; 
+            img {                               width: 100%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); filter: grayscale(100%);}
+        }
+        .image img:hover {                      filter: grayscale(0%);}
+    }
+
+    // JOIN COMMUNITY STYLES
+    .homecommunity {                        position: relative; display: flex; flex-flow: row wrap; padding: 0 10%;
+        .left {                             
+            h3 {                           font-size: 32px; line-height: 32px; color: var(--navy);}
+            h3 span {                           color: var(--blue);}
+            p {                            font-size: 20px; line-height: 28px; margin: 20px 0 30px; color: var(--navy);}
+            img {                          width: 35%; padding: 0 15px 0 0; display: inline-block;}
+        }
+        .content {                          margin: 75px 50px 0 0;
+            h2 {                                font-size: 54px; line-height: 54px; color: var(--navy);}
+            h2 span {                           color: var(--blue);}
+            p {                                 font-size: 20px; line-height: 28px; margin: 20px 0 30px; color: var(--navy);}
+        }
+        .image {                            width: 95%; margin: 0 0 -3px;}
+        .right {                            margin: 75px 0 0;
+            h3 {                                font-size: 44px; line-height: 44px; color: var(--navy);}
+            h3 span {                           display: inline-block; color: var(--blue);}
+            ul {                                margin: 30px 0;}
+            ul li {                             margin: 0 0 15px;}
+            ul li svg {                         font-size: 24px; line-height: 24px; float: left; padding: 0 8px 0 0; color:var(--red);}
+            ul li p {                           font-size: 24px; line-height: 24px; margin: 0; padding: 0;}
+            span {                              color: var(--red); font-weight: 700; display: inline-block;}
+        }
+        .one {                                  width: 33.3333333%; order: 1;}
+        .two {                                  width: 33.3333333%; order: 2;}
+        .three {                                width: 33.3333333%; order: 3;}
+    }
+
+}

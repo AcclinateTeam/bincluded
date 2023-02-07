@@ -79,7 +79,7 @@ const Submit = (props: any) =>
 
     const showIngredients = () =>
     {
-        ingredients.map((ing) =>
+        ingredients.map((ing: any) =>
         {
             return (
                 <div>
@@ -212,7 +212,7 @@ const Submit = (props: any) =>
 
                                         <div className="group">
                                             <ul className="ingredients">
-                                                {ingredients.map((ing) =>
+                                                {ingredients.map((ing: any) =>
                                                 {
                                                     return (
                                                         <>

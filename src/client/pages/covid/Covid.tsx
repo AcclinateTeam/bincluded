@@ -68,7 +68,7 @@ const Covid = () => {
                             <h2>COVID-19 <span className="blue">Statistics</span></h2>
                             <p>Access local services to support your emotional and behavioral health.</p>
                             <div className="frame">
-                                <iframe src="https://covidactnow.org/embed/us/fips/01" title="CoVid Act Now" width="345" height="370" frameBorder="0" scrolling="no"></iframe>
+                                <iframe src="https://covidactnow.org/embed/us/fips/01" title="CoVid Act Now" frameBorder="0" scrolling="no"></iframe>
                             </div>
                             <h2>Birmingham's <span className="blue">COVID Strategy</span></h2>
                             <p style={{ 'margin': 0 }}>Stay up to date with Birmingham’s COVID strategy. <a href="https://www.birminghamal.gov/coronavirus">Read More</a></p>
@@ -79,7 +79,7 @@ const Covid = () => {
                             <h2>Get Free <span className="blue">Covid-19 Tests</span></h2>
                             <p>Get access to free at-home COVID tests. <a href="https://www.covid.gov/tests">Order Here</a></p>
                             <div className="frame">
-                                <iframe src="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-finder-widget_1.html" scrolling="no" height="400" frameBorder="0" width="280" title="Vaccine Finder Widget" style={{ overflow: 'hidden' }}> </iframe>
+                                <iframe src="https://www.cdc.gov/coronavirus/2019-ncov/vaccines/vaccine-finder-widget_1.html" scrolling="no" frameBorder="0" title="Vaccine Finder Widget" > </iframe>
                             </div>
                             <h2>Birmingham Vaccination <span>Information</span></h2>
                             <p>Find information on vaccination in Birmingham. <a href="https://www.alabamapublichealth.gov/covid19vaccine/">Read More</a></p>

@@ -25,7 +25,7 @@ const Family = () => {
                 <div className="container">
                     <div className="columns eight offset-by-one callout">
                         <div className="image blog">
-                            <img src="/images/theme/resources.png" alt="" />
+                            <img src="/images/theme/family.png" alt="" />
                         </div>
                         <div className="text">
                             <div className="calltext">
@@ -50,11 +50,11 @@ const Family = () => {
             <section className="intro">
                 <div className="container">
                     <div className="four columns offset-by-one">
-                        <div className="text">
-                            <h2>Our Families <span>Are Our Foundation</span></h2>
-                            <p>Family is the cornerstone of community. Building a healthier community starts with healthy families. <Logo color="#287fdd" /> provides a place for families to access local resources and connect with the broader community</p>
-                            <h2>Strengthening Community <span>Through Family Resources</span></h2>
-                            <p>Every family deserves to thrive and have access to a strong and effective support network through family.
+                        <div className="text sizing">
+                            <h2 className="size">Our Families <span>Are Our Foundation</span></h2>
+                            <p>Family is the cornerstone of community. <Logo color="#287fdd" /> provides a place for families to access local resources and connect with the broader community.</p>
+                            <h2 className="size">Strengthening Community <span>Through Family Resources</span></h2>
+                            <p>Every family deserves to thrive and have access to a strong and effective support network.
 
                             </p>
                         </div>

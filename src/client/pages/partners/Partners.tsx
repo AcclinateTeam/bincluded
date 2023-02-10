@@ -92,7 +92,7 @@ const Partners = () => {
             {/* FEATURED PARTNER LOGOS */}
             <section className="featured">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
+                    <div className="eight columns offset-by-one tes">
                         <div className="header">
                             <h2>Featured <span>Partners</span></h2>
                             <p>We partner with brands that are passionate about our mission and our community.<br /> Click on the partner logo below to see more information.</p>

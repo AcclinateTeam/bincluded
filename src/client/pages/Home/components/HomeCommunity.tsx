@@ -9,10 +9,10 @@ const HomeCommunity = () => {
                 <div className="third columns one">
                     <div className="content">
                         <h2>Join our <span>Community</span></h2>
-                        <p>We are a community that shares stories and supports minority communities. We are here to be informative, relational, helpful, and supportive. By joining this community, you will find engaging content about preventative care, clinical research, and funding options from experts and people just like you.</p>
+                        <p>We are a community that shares stories and supports one another's health and wellbeing. We are here to be informative, relational, helpful, and supportive. Once you join NOWINCLUDED, you will find engaging content about preventative care, clinical research, and other health topics. You will have an opportunity to hear from experts and people just like you!</p>
                     </div>
                     <div className="buttonwrap">
-                        <Link className="content button solid" to="/stories">See More Stories</Link>
+                        <a className="content button solid" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join The Community</a>
                     </div>
                 </div>
                 <div className="third columns two">
@@ -42,8 +42,11 @@ const HomeCommunity = () => {
                         <div className="ten columns left">
                             <h3>Get <span>Started</span></h3>
                             <p>Download & Install our app from the Apple App Store or from Google Play.</p>
-                            <img src="images/theme/appstore.png" alt="" />
-                            <img src="images/theme/googleplay.png" alt="" />
+                            <a href="https://play.google.com/store/apps/details?id=com.mightybell.nowincluded" target="_blank" rel="noopener noreferrer">
+                                <img src="images/theme/googleplay.png" alt="" />
+                            </a>
+                            <a href="https://apps.apple.com/ng/app/nowincluded/id1597990720" target="_blank" rel="noopener noreferrer">
+                                <img src="images/theme/appstore.png" alt="" /></a>
                         </div>
                     </div>
                 </div>

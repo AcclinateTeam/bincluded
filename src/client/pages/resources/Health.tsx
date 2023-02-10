@@ -30,7 +30,7 @@ const Health = () => {
                         <div className="text">
                             <div className="calltext">
                                 <h1>Health<br /> Resources</h1>
-                                <p>Our health plays a big factor in our livelihood, and we understand the challenges that may arise when finding resources that align with your health needs. Find resources from our local community related to your health and wellness needs from our <Logo color="#287fdd" /> community.</p>
+                                <p>We understand how important  your health is to your livelihood. Find local resources that fit your health and wellness needs from our <Logo color="#287fdd" /> community.</p>
                             </div>
                         </div>
                     </div>

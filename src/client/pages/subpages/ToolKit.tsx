@@ -39,7 +39,7 @@ const ToolKit = () =>
                         <div className="text">
                             <div className="calltext">
                                 <h1>ToolKit</h1>
-                                <p>We’ve created template so that you, your organization, and your fellow community members can spread <Logo color="#287fdd" />’s message of inclusion and equality. These templates are easy to use and quick to deploy.</p>
+                                <p>We’ve created template so that you, your organization, and your fellow community members can spread <Logo color="#287fdd" />’s message of inclusion and equity. These templates are easy to download and share.</p>
                             </div>
                         </div>
                     </div>

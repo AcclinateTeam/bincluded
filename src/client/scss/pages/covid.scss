@@ -22,29 +22,34 @@ section.intro.covii {
             span {                              color: var(--blue);}
         }
         p {                                 font-size: 24px; line-height: 32px; margin: 0 0 50px;}
+        a {                                 font-weight: 700; color: var(--red);}
     }
     img {                               margin: 0 0 -3px;}
 }
 
 
-section.covidstats {                                background-color: var(--red);
+section.covidstats {                                background-color: var(--navy);
     .stats {                                             padding: 100px; background-color: var(--blue);
         h2 {                                                font-size: 44px; line-height: 44px; text-align: center; margin: 0 0 10px; color: var(--white);
             span {                                              display: inline-block; color: var(--navy);}
         }
         p {                                                 font-size: 24px; line-height: 32px; margin: 0 0 30px; text-align: center; color: var(--white);}
-        .frame {                                            margin: 0 auto;
-            iframe {                                            display: block;  margin: 44px auto;}
+        .frame {                                            width: 350px; height: 420px; margin: 0 auto 30px;
+            iframe {                                            width: 100%; height: 100%; display: block;  margin: 44px auto;}
         }
+        a {                                                 font-weight: 700; color: var(--red);}
+
     }
     .vaxx {                                             padding: 100px; background-color: var(--navy);
         h2 {                                                font-size: 44px; line-height: 44px; text-align: center; margin: 0 0 10px; color: var(--white);
             span {                                              display: inline-block; color: var(--blue);}
         }
         p {                                                 font-size: 24px; line-height: 32px; margin: 0 0 30px; text-align: center; color: var(--white);}
-        .frame {                                            margin: 0 auto;
-            iframe {                                            display: block;  margin: 0 auto 30px;}
+        .frame {                                            width: 350px; height: 420px; margin: 0 auto 30px;
+            iframe {                                            width: 100%; height: 100%; display: block;  margin: 44px auto;}
         }
+        a {                                                 font-weight: 700; color: var(--red);}
+
     }
 }
 

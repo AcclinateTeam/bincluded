@@ -54,11 +54,11 @@ const SinglePost = () => {
 
             <section className="story">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
+                    <div className="eight columns offset-by-one wide">
                         <div className="storie">
                             {blogPosts.map((post: any, index) => (
                                 <>
-                                    <span>{moment(post._created).format('MMM Do, YYYY')}</span>
+                                    {/* <span>{moment(post._created).format('MMM Do, YYYY')}</span> */}
                                     <h2>{post.title}</h2>
                                 </>
                             ))}
@@ -69,7 +69,7 @@ const SinglePost = () => {
 
             <section className="story">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
+                    <div className="eight columns offset-by-one wide">
                         {blogPosts.map((post: any, index) => {
                             var htmlText = post.content;
 

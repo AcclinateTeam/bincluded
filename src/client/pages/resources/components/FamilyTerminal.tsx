@@ -362,7 +362,7 @@ const Terminal = () => {
                                             }
                                         }
 
-                                        if (post.f_general == 'true') {
+                                        if (post.f_legal == 'true') {
                                             return (
                                                 <div className="third columns" key={post.id}>
                                                     <div className="panes">

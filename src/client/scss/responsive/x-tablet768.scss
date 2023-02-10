@@ -305,14 +305,14 @@
                         span {                          font-size: 14px; font-weight: 700; margin: 20px 0 0; color: var(--blue);}
                         p {                             font-size: 18px; line-height: 26px; border: none; border-left: 3px solid #050236; margin: 20px 0; padding: 0 0 0 15px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; color: var(--navy);}
                         a {                             font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 700; text-transform: none; text-decoration: none; color: var(--red);
-                            h4 {                            text-transform: none; color: var(--navy);}
+                            h4 {                            text-transform: none; margin: 20px 0; color: var(--navy);}
                         }
                         a:hover, a:hover svg {                       color: var(--blue);}
                         svg {                           color: var(--red);}
                     }             
                     .text.lead {                        width: 100%; height: auto; display: inline-block;
                         span {                          font-size: 16px; font-weight: 700; margin: 30px 0 0; color: var(--blue);}
-                        h4 {                            font-size: 32px; line-height: 40px; font-weight: 900; margin: 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--navy);}
+                        h4 {                            font-size: 32px; line-height: 40px; margin: 20px 0; font-weight: 900; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--navy);}
                         p {                             font-size: 24px; line-height: 32px; margin: 10px 0 20px; border: none; padding: 0; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; color: var(--navy);}
                         a {                             font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 900; text-transform: none; text-decoration: none; color: var(--red);}
                         a:hover, a:hover svg {                       color: var(--blue);}

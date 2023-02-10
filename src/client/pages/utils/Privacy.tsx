@@ -31,7 +31,7 @@ const Privacy = () =>
 
             <section className="policy">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
+                    <div className="eight columns offset-by-one ute">
                         <div className="content">
                             <h2>Global <span>Privacy Policy</span> - Worldwide</h2>
                             <h6>Global Privacy Policy - Worldwide</h6>

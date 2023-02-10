@@ -51,7 +51,7 @@ const Articles = () => {
                 <div className="container">
                     <div className="ten columns header">
                         <h2>Featured <span className="blue">Articles</span></h2>
-                        <p>Read articles we collected from our community.</p>
+                        <p>Read these informative articles written exclusively for our community.</p>
                     </div>
                     <div className="ten columns">
                         <div className="container case sub">
@@ -59,13 +59,13 @@ const Articles = () => {
                             {blogPosts.map((post: any, index) => {
                                 if (post.id === postlength) {
                                     return (
-                                        <div className="ten columns rack" key={index}>
+                                        <div className="ten columns rack lead" key={index}>
                                                 <div className="frames">
                                                     <div className="image lead">
                                                         <Link to={`/articles/${post.slug}`}><img className="image" src={post.imagelink} alt="" /></Link>
                                                     </div>
                                                     <div className="text lead">
-                                                        <span>{moment(post._created).format('MMM Do, YYYY')}</span>
+                                                        {/* <span>{moment(post._created).format('MMM Do, YYYY')}</span> */}
                                                         <Link to={`/articles/${post.slug}`}><h4>{post.title}</h4></Link>
                                                         <p>{post.description}</p>
                                                         <Link to={`/articles/${post.slug}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
@@ -81,7 +81,7 @@ const Articles = () => {
                                                     <Link to={`/articles/${post.slug}`}><img className="image" src={post.imagelink} alt="" /></Link>
                                                 </div>
                                                 <div className="text">
-                                                    <span>{moment(post._created).format('MMM Do, YYYY')}</span>
+                                                    {/* <span>{moment(post._created).format('MMM Do, YYYY')}</span> */}
                                                     <Link to={`/articles/${post.slug}`}><h4>{post.title}</h4></Link>
                                                     <Link to={`/articles/${post.slug}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                                                 </div>

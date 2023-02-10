@@ -58,14 +58,14 @@ const SingleStory = () => {
                         if (post.type == 'YouTube video player') {
                             return (
                                 <div key={index}>
-                                    <div className="eight columns offset-by-one">
+                                    <div className="eight columns offset-by-one wide">
                                         <div className="storie">
                                             <span>{post.subTitle}</span>
                                             <h2>{post.title}</h2>
                                             <iframe width="100%" height="100%" src={post.videolink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                         </div>
                                     </div>
-                                    <div className="eight columns offset-by-one">
+                                    <div className="eight columns offset-by-one wide">
                                         <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
                                     </div>
                                 </div>

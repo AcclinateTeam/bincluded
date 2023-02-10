@@ -29,8 +29,6 @@ body {				min-height: 100%; position: relative;}
 @import './pages/trials.scss';
 @import './pages/toolkit.scss';
 // MISC
-@import './family.scss';
-@import './careers.scss';
 @import './recipes.scss';
 
 /* FONT IMPORT */
@@ -109,151 +107,6 @@ section.breadcrumbs {                       padding: 50px 0; color: var(--navy);
     .button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
     .button.learnmore:hover {                       border: none; background-color: #EEC31A !important; color: #0F0F10;}
 }
-// CALLOUT STYLE
-// .hero {                                                 width: 100%; position: relative; overflow: hidden;}
-// .hero .callbg img {                                     width: 100%; }     
-// .hero .calloutbg {                                      width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332; opacity: 0.7; background-color: #000;}
-// .hero .callout {                                        width: 100%; height: 100vh;}
-// .hero .callout {                                        width: 40%; height: 500px; position: absolute; top: 250px; left: 30%;}
-// .hero .callout .calltext {                              width: 100%; display: block;}
-// .hero .callout .calltext h1 {                           font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 94px; line-height: 97px; font-weight: 900; text-align: center; color: #fff; margin: 46px 0 10px;}
-// .hero .callout .calltext p {                            font-size: 24px; line-height: 36px; font-weight: 400; text-align: center; color: #fff; margin: 40px 0 0; }
-// .hero .callout .callbutton {                            text-align: center; margin: 30px 0 0; display: block;}
-// /* CALLOUT BUTTONS */
-// .hero .button {                                       font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: 900; line-height:52px; margin: 0 15px 0 0;}
-// .hero .button.signup {                                border: 1px solid var(--red); background-color: var(--red); color: #fff;} 
-// .hero .button.learnmore {                             border: 1px solid #fff; background-color: none !important; color: #cecece;}
-// .hero .button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
-// .hero .button.learnmore:hover {                       border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;}
-// //SCROLL DOWN BUTTON
-// .scrollDown {                               position: absolute; bottom: 50px; text-align: center; left: calc(50% - 44px);}
-// .scrollDown svg {                           padding: 10px 12px; font-size: 24px; border-radius: 50%; color: #fff; cursor: pointer; background-color: var(--red);}
-// .scrollDown h3 {                            font-size: 18px; font-weight: 700; color: #fff;}
-
-// svg.logo {                                  height: 14px; display: inline-block;}
-// span.blue {                                 display: inline-block; color: var(--red);}
-// span.red {                                  display: inline-block; color: var(--red);}
-
-// .breadcrumbs {                                  margin: 100px 0 30px; color: var(--navy);}
-// .breadcrumbs .bread a {                         font-weight: 700; text-decoration: none; color: var(--navy);}
-
-// .divider {                                  width: 100%;}
-// .divider img {                              width: 100%;}
-
-// // CONTENT HEADER STYLES
-// .content .header {                      padding: 80px 0;}
-
-// // FEATURED RESOURCE STYLES
-// .content .featured {                            width: 100%; height: 400px; display: inline-block; position: relative; box-shadow: 0 0 24px 2px #ddd;}
-// .content .featured .face {                      width: 30%; height: 100%; display: block; position: absolute; top: 0; left: 0; opacity: 1; visibility: visible;}
-// .content .featured .face img.health {           width: 80%; text-align: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
-// .content .featured .back {                      width: calc(70% - 200px); height: calc(100% - 200px); margin: 0 0 0 30%; display: block; padding: 50px;}
-// .content .featured .back a {                    font-weight: 900; text-decoration: none; color: var(--red);}
-// // .content .featured .face:hover {        opacity: 0; visibility: hidden;}
-// .content .featured .tag {                       position: absolute; top: 20px; left: 20px; z-index: 9;}
-// .content .featured .tag h6 {                    font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 400; text-transform: none; padding: 8px 10px; display: inline-block; background-color: #aed1f7;}
-
-
-// // 
-
-// // TESTIMONY STYLES
-// .testimony {                            padding: 100px 0; background-color: var(--navy);}
-// .testimony .header {                    margin: 0 auto; text-align: center;}
-// .testimony .header h1 {                 line-height: 50px; color: #fff;}
-// .testimony .slider {                    padding: 100px 0 0; position: relative; background-color: #a26;}
-// .testimony .slider .chevronLeft {       font-size: 70px; line-height: 70px; position: absolute; top: calc(50% - 70px); left: 0; color: #fff;}
-// .testimony .slider .chevronRight {      font-size: 70px; line-height: 70px; position: absolute; top: calc(50% - 70px); right: 0; color: #fff;}
-// .testimony .slides {                    width: 60%; height: 326px; position: relative; padding: 0; margin: 0 auto; background-color: #f09;}
-// .testimony .slide {                     width: calc(100% - 82px); text-align: center; display: inline-block; position: absolute; top: 0; left: 0; padding: 80px 40px 40px; border: 1px solid #287FDD;}
-// .testimony .slide .image {              width: 100px; height: 100px; display: block; position: absolute; top: -50px; left: calc(50% - 50px);}
-// .testimony .slide .image img {          width: 100%; border-radius: 50px;}
-// .testimony .slide h2 {                  font-family: 'Roboto', sans-serif; font-weight: 700; text-transform: none; padding: 0; margin: 0 0 20px; color: #fff;}
-// .testimony .slide h4 {                  font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 18px; font-weight: 500; text-transform: none; margin: 0 0 20px; color: #287FDD;}
-// .testimony .slide p {                   height: 66px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 300; font-style: italic; margin: 0 0 20px; color: #fff;}
-// .testimony .slide .rating svg {         font-size: 24px; line-height: 24px; margin: 0 10px 0 0; color: #EEC31A;}
-
-// // RECIPE COMPONENT STYLES
-// .recComp {                              display: block; margin: 100px 0;}
-// .recComp .panel .heading {              padding: 30px;}   
-// .recComp .panel .heading h1 {           line-height: 50px; margin: 40px 0 20px;}
-// .recComp .panel .heading p {            font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 26px; font-weight: 500; color: #0F0F10;}
-// .recComp .recwrap {                     padding: 0 0 0 30px;}
-// .recComp .recwrap:hover {               transform: scale(1.02);}
-// .recComp .recipe {                      box-shadow: 0 0 24px 2px #cecece; background-color: #fff;}
-// .recComp .recipe .image {               width: 100%; height: 224px; background-repeat: no-repeat; background-size: cover;}
-// .recComp .recipe .text {                padding: 20px;}
-// .recComp .recipe .text h2 {             min-height: 44px; font-family: 'Roboto', sans-serif; font-size: 22px; line-height: 22px; font-weight: 700; text-transform: none; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
-// .recComp .recipe .text p {              min-height: 66px; font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; text-overflow: ellipsis;}
-// .recComp .recipe .text a {              font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: var(--navy);}
-// .recComp .recipe .text a {              color: var(--navy);}
-// .recComp .panel .buttonwrap {           margin-top: 50px;}
-
-// // RELATED ARTICLES styles
-// .related {                                  display: block; margin: 100px 0 0;}
-// .related .heading {                         text-align: center;}
-// .related .heading h1 {                      line-height: 50px; margin: 50px 0 70px;} 
-// .related .panel {                           margin: 0 -20px;} 
-// .related .articles {                        padding: 0 20px; display: block;} 
-// .related .article {                         margin: 0 0 40px; box-shadow: 0 0 24px 2px #cecece;}
-// .related .articles:hover {                  transform: scale(1.02);}
-// .related .article .image {                  width: 100%; height: 250px; background-repeat: no-repeat; background-size: cover;}
-// .related .article .text {                   padding: 20px;} 
-// .related .article .text h2 {                font-family: 'Roboto', sans-serif; font-size: 20px; line-height: 20px; font-weight: 700; min-height: 40px; text-transform: none; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin: 0 0 10px;}
-// .related .article .text p {                 font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 22px; font-weight: 500; min-height: 66px; margin: 0 0 20px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;}
-// .related .article .text a {                 font-size: 16px; line-height: 16px; font-weight: 700; margin: 0 10px 0 0; text-decoration: none; color: var(--navy);}
-// .related .article .text svg {               color: var(--navy);}
-// .related .buttonwrap {                      display: block; margin: 20px 0 50px;}
-// .related .button {                          background-color: var(--red);}
-// .related .button:hover {                    background-color: #EEC31A;}
-
-// // FEATURED STORY STYLES
-// .featStory {                            height: 400px; margin: 50px 0 100px;}
-// .featStory .story {                     box-shadow: 0 0 24px 2px #cecece;}
-// .featStory .story .image {              width: 100%; height: 100%; background-repeat: no-repeat; background-size: cover; background-position: center;}
-// .featStory .story .text {               width: 100%; height: 100%; position: relative;}
-// .featStory .story .text h5 {            font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 700; text-transform: none; position: absolute; top: 50px; left: 50px; color: #0F0F10;}
-// .featStory .story .text ul.featTags {           position: absolute; top: 45px; right: 50px; list-style: none; padding: 0; margin: 0;}
-// .featStory .story .text ul.featTags li {        font-family: 'Roboto', sans-serif; font-size: 12px; line-height: 12px; font-weight: 700; display: inline-block; text-transform: none; margin: 0 0 0 5px; padding: 5px; background-color: #287FDD; color: #0F0F10;}
-// .featStory .story .text h1 {            width: 80%; font-size: 41px; line-height: 64px; position: absolute; top: 90px; left: 50px; }
-// .featStory .story .text p {             width: 65%; font-size: 16px; line-height: 24px; position: absolute; bottom: 90px; left: 50px;}
-// .featStory .story .text a {             font-weight: 700; text-decoration: none; position: absolute; bottom: 50px; left: 50px; color: var(--navy);}
-// .featStory .story .text a:hover {       color: #EEC31A;}
-
-// //404 STYLES
-// .error {                                display: block; margin: 350px 0;}
-// .error .heading {                       text-align: center;}
-// .error .heading h1 {                    font-size: 72px; margin: 50px 0 20px;}
-// .error .heading h3 {                    font-size: 24px; line-height: 24px; margin: 0 0 20px;}
-// .error .heading a {                     font-size: 24px; line-height: 32px; font-weight: 500; text-decoration: none; margin: 0 0 20px; color: var(--navy);}
-
-// /* BUTTONS */
-// .buttonwrap {                               width: 100%; position: relative; }
-// .button {                                   font-weight: 900; padding: 15px 20px; text-decoration: none; color: #fff;}
-// .button.solid {                             background-color: var(--red); }
-// .button.solid:hover {                       background-color: #EEC31A; color: #0F0F10;}
-// .button.partner {                               background-color: var(--red); } 
-// .button.partner:hover {                         background-color: #EEC31A; color: #fff;}
-// .sponsors .button {                         font-weight: 500; color: #fff;}
-
-// /* POPUP (TIMED) */
-// .popBack {                              width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; z-index: 99; background-color: rgb(0,0,0,0.7);}
-// .popback .popContainer {                width: 34%; position: absolute; top: 50%; left: 33%; transform: translateY(-50%); z-index: 100; background-color: var(--navy);}
-// .popBack .popContainer .popTopImage {           width: 100%; height: 100%; position: relative; overflow: hidden;}
-// .popBack .popContainer .popTopImage img {       width: 100%;}
-// .popBack .popContainer .popTopImage svg {       width: 100%; height: auto; position: absolute; bottom: 0; left: 0;}
-// .popback .popClose {                    width: 50px; height: 50px; position: absolute; cursor: pointer; top: -25px; right: -25px; background-color: var(--red); z-index: 55;}
-// .popBack .popClose:hover {              background-color: #EEC31A;}
-// .popBack .popClose svg{                 font-size: 40px; margin: 5px 10px; color: #fff;}
-// .popBack .popClose:hover svg {          color: #000;}
-// .popBack .popContent {                  width: calc(100% - 60px); padding: 30px;}
-// .popBack .popContent .image {           width: 100%; display: block; position: relative;}  
-// .popBack .popContent h1 {               font-size: 72px; line-height: 80px; display: inline-block; color: #fff;}
-// .popBack .popContent h1 span {          display: inline-block; color: var(--red);}
-// .popBack .popContent h3 {               margin: 8px 0 0; color: #fff;}
-// .popBack .popContent p {                width: 70%; font-size: 18px; line-height: 26px; font-weight: 500; margin: 20px 0 20px; color: #fff;}
-// .popBack .popContent .button {          font-size: 24px; line-height: 72px; margin: 0 0 10px; background-color: var(--red); }
-// .popBack .popContent .button:hover {    background-color: #EEC31A; color: #0F0F10;} 
-
 
 /* #GLOBAL TYPOGRAPHY
 ================================================== */
@@ -270,88 +123,13 @@ p { color: var(--navy);}
 /* #LOGO STYLES
 ================================================== */
 svg.logo {                                  height: 16px; display: inline-block;}
-
-
-// span.logo {                     font-family: 'Montserrat', sans-serif; display: inline-block; font-weight: 900;}
-
-// /* #GLOBAL TEXT STYLES*/
-// // CALLOUT STYLES
-// .call .text h1 {                font-family: 'Oswald', sans-serif; font-size: 72px; line-height: 72px; margin: 70px 0 30px; color: #fff;}
-// .call .text p {                 font-family: 'Firs Sans', sans-serif; font-size: 16px; line-height: 24px; font-weight: 300; width: 50%; margin: 0 0 30px; color: #fff;}
-
-// // CONTENT STYLES
-// .recipes h1 {                   margin: 50px 0; color: #fff;}
-// .recipes .text h2 {             margin: 0 0 20px; color: #1a1a1a;}
-// .recipes .text p {              font-size: 14px; line-height: 22px; margin: 0 0 20px; color: #1a1a1a;}
-// .recipes .text a {              font-size: 18px; line-height: 26px; font-weight: 500; text-decoration: none; color: #1a1a1a;}
-// .recipes .text svg {            margin: 0 0 0 5px; color: #1a1a1a;}
-
-// .related h1 {                   margin: 50px 0; color: #0F0F10;}
-// .related .text h2 {             margin: 0 0 20px; color: #1a1a1a;}
-// .related .text p {              font-size: 14px; line-height: 22px; margin: 0 0 20px; color: #1a1a1a;}
-// .related .text a {              font-size: 18px; line-height: 26px; font-weight: 500; text-decoration: none; color: #1a1a1a;}
-// .related .text svg {            margin: 0 0 0 5px; color: #1a1a1a;}
-
-// .featured .back h3 {            font-family: 'Roboto', sans-serif; font-size: 36px; line-height: 36px; font-weight: 900; text-transform: none; margin: 0 0 20px; color: #1a1a1a;}
-// .featured .back p {             font-family: 'Roboto', sans-serif; font-size: 18px; line-height: 26px; font-weight: 300; margin: 0 0 20px; color: #1a1a1a;}
-
-
 // /* #GLOBAL TRANSITION STYLES
 // ================================================== */
 .button.solid, .button.partner, .button.signup, .button.learnmore, .cards, .cards h4, .cards p, .cards a, .cards svg, .frames, .homepartners .image img, section.stories-grid .case .rack .frames .text a, section.stories-grid .case .rack .frames .text.lead a, section.stories-grid .case .rack .frames .text a svg, section.covid19 .panes {                     transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
 
-
-// ul.log li.signup a, ul.log li.logins a, .callbutton .button.signup, .callbutton .button.learnmore, .portal .ports .port, .foot a.button, .content .featured .face, .addRes .button, .addRes ul.terminal li, .addRes ul.terminal li a, .addRes .panes, .featStory .story .text a, .related .articles, .button, .button.solid, .leaders .window, .header.wrapper, header .navButton, header .navButton svg.open, header .navButton svg.close, header, header.sub, header.sub .header.wrapper, .covid19 .panes, .resources ul.terminal li, .home .callout .playModal a .card-img, .homeVideo, .homeVideo .frame, .featured .panes {   
-
-// .whatwedo .deck .cards, .stories .rack .frames, .whoWeAre .deck .cards .card .cardimg, .stories .rack .frames .frame .text, .partners .image, .whoWeAre .deck .cards, .covid19 .pane, .addRes .pane, li, ul li ul, .leaders .panes, .leaders .pane, .whatwedo .deck .cards h4, .whatwedo .deck .cards p, .whatwedo .deck .cards a, nav ul li ul, nav li#drop ul li, .storied .rack .frames, .storied .rack .frames .frame .text, .healthRes .deck .cards, .healthTech .deck .cards {
-//     transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);
-// }
-
-// .loader-wrapper {
-//     width: 100%;
-//     height: 100%;
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     background-color: var(--navy);
-//     display: grid;
-//     place-items: center;
-//     z-index: 99;
-//     animation: fade 500ms ease-in-out;
-//     animation-delay: 4s;
-// }
-
-// .loader {
-//     border: 16px solid #fff;
-//     border-top: 16px solid var(--red);
-//     border-radius: 50%;
-//     width: 140px;
-//     height: 140px;
-//     animation: spin 1.8s linear infinite;
-// }
-
-// @keyframes spin {
-//     0% {
-//         transform: rotate(0deg);
-//     }
-
-//     100% {
-//         transform: rotate(360deg);
-//     }
-// }
-
-// @keyframes fade {
-//     from {opacity: 1; }
-//     to {opacity: 0; display: block; visibility: hidden; }
-//   }
-
 /* #RESPONSIVE SCSS IMPORTS
 ================================================== */ 
 //must stay BELOW all other SCSS/imports in this file to maintain cascading order.
-@import './desktop.scss';
-@import './laptop.scss';
-// @import './tablet.scss';
-
 // MOBILE STYLES
 @import './responsive/x-tablet1440.scss';
 @import './responsive/x-tablet1024.scss';

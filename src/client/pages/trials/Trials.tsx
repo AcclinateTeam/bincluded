@@ -82,7 +82,7 @@ const Trials = (props: any) => {
             <section className="intro tria">
                 <div className="text">
                     <h2>What Is <span>Clinical Research?</span></h2>
-                    <p>Clinical Research provides community members an opportunity to participate in studies that directly affect their person and community health outcomes. With their consent, participants are able to take part in studies that address health conditions prominent in communities of color. In turn, providing researchers the opportunity to build trust with community members and better understand the health outcomes of study participants. </p>
+                    <p>Clinical Research provides community members an opportunity to participate in studies that directly affect their personal and community health outcomes. After thorough information and consent, participants can take part in studies that address health conditions impacting communities of color. In turn, researchers have an opportunity to build trust with community members and better understand the health outcomes of study participants.</p>
                     <h2>Why Clinical Research <span>Matters for Minorities</span></h2>
                     <p>Racial and ethnic minorities makeup 43% of the U.S. population, and are growing, yet they often represent as little as 2% to 16% of clinical trial participants Source. This leads to treatments that are less effective on people of color.</p>
                 </div>

@@ -29,7 +29,7 @@ const WhyNow = () =>
                 <div className="container">
                     <div className="columns eight offset-by-one callout">
                         <div className="image">
-                            <img src="/images/theme/resources.png" alt="" />
+                            <img src="/images/theme/whynow.png" alt="" />
                         </div>
                         <div className="text">
                             <div className="calltext">

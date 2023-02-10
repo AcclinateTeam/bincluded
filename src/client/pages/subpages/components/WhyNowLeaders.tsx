@@ -13,7 +13,7 @@ const WhyNowLeaders = () => {
         <>
             <section className="leaders">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
+                    <div className="eight columns offset-by-one tes">
                         <div className="heading">
                             <h2>Leadership <span className="blue">At Our Core</span></h2>
                             <p>Acclinate™, a Birmingham-based company specializing in digital health products, is partnering with Jefferson County to help 50,000 county residents control their future by taking charge of their health. The B-Included website will engage residents and provide easy access to pertinent health resources and job assistance.</p>
@@ -62,7 +62,7 @@ const WhyNowLeaders = () => {
                                                 <div className="image" style={{ backgroundImage: `url("/images/leaders/emily.jpg")`, backgroundColor: '#ffffff' }}></div>
                                                 <div className="pane">
                                                     <h2>Emily Wykle</h2>
-                                                    <p>UAB</p>
+                                                    <p>gener8tor</p>
                                                 </div>
                                             </div>
                                         </div>

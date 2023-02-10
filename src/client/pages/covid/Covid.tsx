@@ -27,7 +27,7 @@ const Covid = () => {
                         <div className="text">
                             <div className="calltext">
                                 <h1>COVID-19</h1>
-                                <p><Logo color="#287fdd" /> provides Birmingham residents COVID-19 information, current statistics and resources to take action against the virus.</p>
+                                <p><Logo color="#287fdd" /> provides Birmingham residents COVID-19 information, current statistics, and resources to take action against the virus.</p>
                             </div>
                         </div>
                     </div>
@@ -49,7 +49,7 @@ const Covid = () => {
                     <div className="four columns offset-by-one">
                         <div className="text">
                             <h2>What Is <span style={{ 'display': 'inline-block' }}>COVID-19?</span></h2>
-                            <p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people become severely ill. Older adults and people who have certain underlying medical conditions are more likely to get severely ill. <br /> <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html">Read More</a></p>
+                            <p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people become severely ill. Older adults and people who have certain underlying medical conditions are more likely to get severely ill. <br /> <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html" target="_blank" rel="noopener noreferrer">Read More</a></p>
                             <h2>How COVID-19 Research <span>Impacted Minority Communities</span></h2>
                             <p>Early in the pandemic, the CDC reported 21.8% of COVID-19 cases in the US were African Americans and 33.8% were LatinX, despite that these groups comprise only 13% and 18% of the US population.</p>
                         </div>
@@ -112,7 +112,7 @@ const Covid = () => {
                         <div className="texts">
                             <div className="text right">
                                 <h2>Faith <span>Forward</span></h2>
-                                <p>The goal of Faith Forward was to gather influencers together to share their vaccine story. We wanted to get black and brown people to consider, not just the effects of COVID-19. But their overall health issues were at a higher morbidity rate. Due to the fact that we had underlying conditions. We saw a need to try to get our people to start being more proactive about their health. Partnerships are key to this process. </p>
+                                <p>The goal of Faith Forward was to gather influential community members together to share their vaccine story. We wanted to get Black and brown people to consider, not only the effects of COVID-19, but also overall health issues that affect our communities at a higher rate due to underlying conditions. We saw a need to try to get our people to start being more proactive about their health. Partnerships are key to this process.</p>
                             </div>
                         </div>
                     </div>
@@ -120,7 +120,7 @@ const Covid = () => {
                         <div className="texts">
                             <div className="text">
                                 <h2>The Responsibility <span>of Doctors</span></h2>
-                                <p>Dr. David Hicks, Deputy Health Director for the Jefferson County Health Department talks about the responsibility of doctors to educate the public on COVID-19 and why it is important to get vaccinated. If doctors don’t step up and offer their educated perspectives, misinformation will fill the information vacuum and all of us will be in a worse position.</p>
+                                <p>Dr. David Hicks, Deputy Health Director for the Jefferson County Health Department, talks about the responsibility of doctors to educate the public on COVID-19 and why it is important to get vaccinated. If doctors don’t step up and offer their educated perspectives, misinformation will fill the information vacuum and all of us will be in a worse position.</p>
                             </div>
                         </div>
                         <div className="video">

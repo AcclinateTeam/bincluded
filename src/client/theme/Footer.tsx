@@ -54,13 +54,13 @@ const Footer = () =>
                             <h1>Resources</h1>
                             <ul>
                                 <li>
-                                    <Link to="/health">Health</Link>
+                                    <Link to="/resources/health">Health</Link>
                                 </li>
                                 <li>
-                                    <Link to="/family">Family</Link>
+                                    <Link to="/resources/family">Family</Link>
                                 </li>
                                 <li>
-                                    <Link to="/careers">Careers</Link>
+                                    <Link to="/resources/careers">Careers</Link>
                                 </li>
                                 <li>
                                     <Link to="/covid">Covid</Link>

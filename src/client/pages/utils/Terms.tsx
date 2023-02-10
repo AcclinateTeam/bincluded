@@ -32,7 +32,7 @@ const Terms = () =>
 
             <section className="policy">
                 <div className="container">
-                    <div className="eight columns offset-by-one">
+                    <div className="eight columns offset-by-one ute">
                         <div className="content">
                             <h2>Terms &#38; <span>Conditions</span></h2>
                             <h6>Global Privacy Policy - Worldwide</h6>

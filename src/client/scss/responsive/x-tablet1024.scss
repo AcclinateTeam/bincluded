@@ -68,6 +68,23 @@
     .button.signup:hover {                          border: 1px solid #EEC31A; background-color: #EEC31A; color: #0F0F10;} 
     .button.learnmore:hover {                       border: none; background-color: #EEC31A !important; color: #0F0F10;}
 
+    /* #GLOBAL STYLES
+    ================================================== */
+    /* SUB-HERO STYLES */
+    #hero.hero {                                background-color: var(--navy);
+        .callout {                                  margin-top: 150px; margin-bottom: 100px;                              
+            .image {                                    float: left; margin: 0 75px 0 0;}
+            .text {                                     
+                h1 {                                        line-height: 85px; margin: 0 0 30px; color: var(--white);}
+                p {                                         width: 80%; font-size: 24px; line-height: 32px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
+            }
+        }
+        .blogcall {                                     width: 100%; height: 75vh; overflow: hidden; background-color: var(--navy);
+            img {                                       width: 100%; height: 100%; margin: 60px 0 0; object-fit: cover;}
+        }
+        .fill {                                     height:150px;}
+    }
+
     // HOME PAGE WHO WE ARE STYLES
     section.whoWeAre {                              padding: 5% 10%; display: flex; background-color: var(--navy);
         .text {                                     width: 60%; order: 2; margin: 10px 0 0 50px;

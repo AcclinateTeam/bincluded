@@ -38,6 +38,23 @@
     header .navButton svg.open {        font-size: 18px; opacity: 1; position: absolute; top: 9px; left: 10px; color: var(--white);}
     header .navButton svg.close {       font-size: 20px; opacity: 0; position: absolute; top: 8px; left: 11px; color: #0F0F10;}
 
+    /* #GLOBAL STYLES
+    ================================================== */
+    /* SUB-HERO STYLES */
+    #hero.hero {                                background-color: var(--navy);
+        .callout {                                  margin-top: 150px; margin-bottom: 100px;                              
+            .image {                                    float: left; margin: 0 75px 0 0;}
+            .text {                                     
+                h1 {                                        line-height: 85px; margin: 0 0 30px; color: var(--white);}
+                p {                                         width: 80%; font-size: 24px; line-height: 32px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
+            }
+        }
+        .blogcall {                                     width: 100%; height: 75vh; overflow: hidden; background-color: var(--navy);
+            img {                                       width: 100%; height: 100%; margin: 60px 0 0; object-fit: cover;}
+        }
+        .fill {                                     height:150px;}
+    }
+
     /* HOME PAGE SCSS
     ================================================== */
     // HOME PAGE CALLOUT STYLES

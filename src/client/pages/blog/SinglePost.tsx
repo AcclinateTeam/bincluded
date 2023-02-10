@@ -31,38 +31,32 @@ const SinglePost = () => {
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="hero">
                 {blogPosts.map((post: any, index) => (
-                    <>
-                        <div className="blogcall">
-                            <img src={`${post.imagelink}`} alt="" />
-                        </div>
-                    </>
+                    <div className="blogcall" key={index}>
+                        <img src={`${post.imagelink}`} alt="" />
+                    </div>
                 ))}
             </section>
 
             {/* BREADCRUMB SECTION */}
             <section className="breadcrumbs">
                 <div className="container">
-                    <div className="eight columns offset-by-one bread">
-                        {blogPosts.map((post: any, index) => (
-                            <>
-                                <a href="/">Home</a> {'>'} <a href="/articles">Featured Articles</a> {'>'} {post.title}
-                            </>
-                        ))}
-                    </div>
+                    {blogPosts.map((post: any, index) => (
+                        <div className="eight columns offset-by-one bread" key={index}>
+                            <a href="/">Home</a> {'>'} <a href="/articles">Featured Articles</a> {'>'} {post.title}
+                        </div>
+                    ))}
                 </div>
             </section>
 
             <section className="story">
                 <div className="container">
                     <div className="eight columns offset-by-one wide">
-                        <div className="storie">
-                            {blogPosts.map((post: any, index) => (
-                                <>
-                                    {/* <span>{moment(post._created).format('MMM Do, YYYY')}</span> */}
-                                    <h2>{post.title}</h2>
-                                </>
-                            ))}
-                        </div>
+                        {blogPosts.map((post: any, index) => (
+                            <div className="storie" key={index}>
+                                {/* <span>{moment(post._created).format('MMM Do, YYYY')}</span> */}
+                                <h2>{post.title}</h2>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -74,7 +68,7 @@ const SinglePost = () => {
                             var htmlText = post.content;
 
                             return (
-                                <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
+                                <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }} key={index}></div>
                             )
                         })}
                         <div className="buttonwrap">

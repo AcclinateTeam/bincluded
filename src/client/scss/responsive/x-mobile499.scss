@@ -63,7 +63,7 @@
         .calloutbg {                                      width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
         .callout {                               width: 90%; height: 500px; position: absolute; top: 350px; left: 5%;}
         .callout .calltext {                     width: 100%; display: block;}
-        .callout .calltext h1 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 55px; line-height: 55px; font-weight: 900; color: #fff; margin: 0 0 30px;}
+        .callout .calltext h2 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 55px; line-height: 55px; font-weight: 900; color: #fff; margin: 0 0 30px;}
         .callout .calltext p {                   width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff; }
         .callout .callbutton {                   margin: 30px 0 0; text-align: center; display: block;}
     }
@@ -131,7 +131,7 @@
                 .frame .image video {               width: 100%; height: 100%; object-fit: cover;} 
                 .frame .image img {                 width: 100%; height: 100%; border-radius: 15px; object-fit: cover;} 
                 .frame .text {                      width: calc(100% - 40px); border-radius: 15px; padding: 20px;}
-                .frame .text h1 {                   font-size: 20px; line-height: 20px; font-weight: 900; text-transform: none; padding: 15px 0 0; color: var(--navy); margin: 0;}
+                .frame .text h2 {                   font-size: 20px; line-height: 20px; font-weight: 900; text-transform: none; padding: 15px 0 0; color: var(--navy); margin: 0;}
                 .frame .text p {                    font-size: 16px; line-height: 26px; font-weight: 400; color: var(--navy); margin: 0;}
             }
             .frames:hover {                     transform: scale(1.03);}        

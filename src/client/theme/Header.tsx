@@ -98,7 +98,7 @@ const Header = () =>
                                         </ul>
                                     </li>
                                     <li id="drop">
-                                        <a href="#">Resources</a>
+                                        <a href="#" role="button">Resources</a>
                                         <ul className="subnav">
                                             <li><Link to='/resources/health'>Health</Link></li>
                                             <li><Link to='/resources/family'>Family</Link></li>

@@ -73,14 +73,14 @@ const Home = () => {
                 </div>
                 <div className="callout">
                     <div className="calltext">
-                        <h1>Stand Up For Your Health</h1>
+                        <h2>Stand Up For Your Health</h2>
                         <p>
                             <Logo color="#ffffff" /> is a movement with a mission to build a community of individuals ready to take control of their health and future
 
                         </p>
                     </div>
                     <div className="callbutton">
-                        <a className="button signup joinCommunity" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join The Community</a>
+                        <a className="button signup joinCommunity" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer" aria-label="Join the NOWINCLUDED Community - Opens in a new tab">Join The Community</a>
                         <Link className="button learnmore" to="/whynow">Learn More</Link>
                     </div>
                 </div>
@@ -145,7 +145,7 @@ const Home = () => {
                                                             <img src={`/images/${post.imagelink}`} alt="" />
                                                         </div>
                                                         <div className="text">
-                                                            <h1>{post.title}</h1>
+                                                            <h2>{post.title}</h2>
                                                             <p>{post.subTitle}</p>
                                                         </div>
                                                     </div>

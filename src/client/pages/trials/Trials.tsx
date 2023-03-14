@@ -120,12 +120,7 @@ const Trials = (props: any) => {
                             <div className="form">
                                 <input className="control" placeholder="Enter a Condition | ex: Cancer" type="text" name="Search" onChange={e => setCondition(e.target.value)} />
                                 <input className="control" placeholder="Minimum Age | ex: 18" type="text" name="MinAge" onChange={e => setMinAge(e.target.value)} />
-                                <input className="control" placeholder="Maximum Age | ex: 65" type="text" name="MaxAge" onChange={e => setMaxAge(e.target.value)} />
-                                <select className="drop" name="Gender" defaultValue={'Search By:'} onChange={e => setGender(e.target.value)}>
-                                    <option value=""></option>
-                                    <option value="male">male</option>
-                                    <option value="female">female</option>
-                                </select>
+                                <input className="control" placeholder="Maximum Age | ex: 65" type="text" name="MaxAge" onChange={e => setMaxAge(e.target.value)} />                                
                                 <Link to={`${renderButton()}`}>
                                     <div className="submit">
                                         <FontAwesomeIcon icon="search" />

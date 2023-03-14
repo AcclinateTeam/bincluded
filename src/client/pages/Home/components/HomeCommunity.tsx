@@ -9,7 +9,7 @@ const HomeCommunity = () => {
                 <div className="third columns one">
                     <div className="content">
                         <h2>Join our <span>Community</span></h2>
-                        <p>We are a community that shares stories and supports one another's health and wellbeing. We are here to be informative, relational, helpful, and supportive. Once you join NOWINCLUDED, you will find engaging content about preventative care, clinical research, and other health topics. You will have an opportunity to hear from experts and people just like you!</p>
+                        <p>Upon clicking the link to join the <span>B-INCLUDED</span> Community, our overarching community, NOWINCLUDED will walk you through the prompts. After completing, you will be a part of the <span>B-INCLUDED</span> Community and have access to all of NOWINCLUDED’S resources beyond the Jefferson Couty area.</p>
                     </div>
                     <div className="buttonwrap">
                         <a className="content button solid" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join The Community</a>

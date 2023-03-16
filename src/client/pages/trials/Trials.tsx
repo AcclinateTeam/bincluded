@@ -2,15 +2,16 @@ import React from 'react';
 import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import ReactTextRotator from 'react-text-rotator';
 
 import Header from '../../theme/Header';
 import Accordion from '../../components/Accordion';
-import Terminal from '../resources/components/FamilyTerminal';
 
 /* UTILS IMPORTS */
 import { accordionData } from '../../utils/content';
 import Logo from '../../theme/Logo';
 import HomeCommunity from '../Home/components/HomeCommunity';
+import QuoteRotator from './components/TextRotator';
 
 const Trials = (props: any) => {
 
@@ -36,7 +37,7 @@ const Trials = (props: any) => {
         if (condition && !gender && !minAge && maxAge) return '/trials/results/' + condition + '/' + maxAge;
         if (!condition && !gender && !minAge && maxAge) return '/trials/results/' + maxAge;
 
-        if (!condition && !gender && minAge && maxAge) return '/trials/results/' + minAge + '/' + maxAge;      
+        if (!condition && !gender && minAge && maxAge) return '/trials/results/' + minAge + '/' + maxAge;
         if (!condition && gender && minAge && !maxAge) return '/trials/results/' + gender + '/' + minAge;
         if (!condition && gender && !minAge && maxAge) return '/trials/results/' + gender + '/' + maxAge;
         if (!condition && !gender && minAge && !maxAge) return '/trials/results/' + minAge;
@@ -62,7 +63,7 @@ const Trials = (props: any) => {
                         <div className="text">
                             <div className="calltext">
                                 <h1>Clinical<br /> Research</h1>
-                                <p><Logo color="#287fdd" /> addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.</p>
+                                <p>Clinical trials are research studies that evaluate safety and effectiveness of drugs, medical devices and/or behavioral interventions in people.</p>
                             </div>
                         </div>
                     </div>
@@ -119,8 +120,8 @@ const Trials = (props: any) => {
 
                             <div className="form">
                                 <input className="control" placeholder="Enter a Condition | ex: Cancer" type="text" name="Search" onChange={e => setCondition(e.target.value)} />
-                                <input className="control" placeholder="Minimum Age | ex: 18" type="text" name="MinAge" onChange={e => setMinAge(e.target.value)} />
-                                <input className="control" placeholder="Maximum Age | ex: 65" type="text" name="MaxAge" onChange={e => setMaxAge(e.target.value)} />                                
+                                {/* <input className="control" placeholder="Minimum Age | ex: 18" type="text" name="MinAge" onChange={e => setMinAge(e.target.value)} />
+                                <input className="control" placeholder="Maximum Age | ex: 65" type="text" name="MaxAge" onChange={e => setMaxAge(e.target.value)} /> */}
                                 <Link to={`${renderButton()}`}>
                                     <div className="submit">
                                         <FontAwesomeIcon icon="search" />
@@ -132,8 +133,19 @@ const Trials = (props: any) => {
                 </div>
             </section>
 
-            {/* HOME - Join The Community Section */}
-            <HomeCommunity />
+            <section className="quotes">
+                <div className="container">
+                    <div className="eight columns offset-by-one box">
+                        <div className="four columns it">
+                            <img src="/images/theme/trials4.png" alt="" />
+                        </div>
+                        <div className="six columns up">
+                            <h2>Quotes From <span>Our Community</span></h2>
+                            <QuoteRotator />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </>
 
 

@@ -9,7 +9,7 @@ const ShareYourStory = () => {
             </div>
             <div className="text">
                 <h2>Share <span>Your Story</span></h2>
-                <p>Our community is built on the shared stories of our members and other community members living, working, and playing in Birmingham. Separate yourself from the noise, share your story with us.</p>
+                <p>Our community is built on the shared stories of people who live, work, and play in Birmingham. Tell us about your health story. How have you shaped the health of the community? What would you love for people to know and understand about caring for their wellbeing?</p>
                 <a className="content button solid shareYourStory" href="https://www.videoask.com/ftmqd7gt3" target="_blank" rel="noopener noreferrer">Share Your Story</a>
             </div>
         </section>

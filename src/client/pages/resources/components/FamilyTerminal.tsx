@@ -60,7 +60,7 @@ const Terminal = () => {
                     <div className="container">
                         <div className="seven columns offset-by-one-half addResWide">
                             <div className="header">
-                                <h2>Family Resources</h2>
+                                <h2>Family <span className="blue">Resources</span></h2>
                                 <p>Click the button below to select resources by category. Click the resource card to view more information.</p>
                             </div>
                             <div className="list">
@@ -231,7 +231,7 @@ const Terminal = () => {
                     <div className="container">
                         <div className="seven columns offset-by-one-half addResWide">
                             <div className="header">
-                                <h2>Family Resources</h2>
+                                <h2>Family <span className="blue">Resources</span></h2>
                                 <p>Click the button below to select resources by category. Click the resource card to view more information.</p>
                             </div>
                             <div className="list">
@@ -398,7 +398,7 @@ const Terminal = () => {
                     <div className="container">
                         <div className="seven columns offset-by-one-half addResWide">
                             <div className="header">
-                                <h2>Family Resources</h2>
+                                <h2>Family <span className="blue">Resources</span></h2>
                                 <p>Click the button below to select resources by category. Click the resource card to view more information.</p>
                             </div>
                             <div className="list">
@@ -570,7 +570,7 @@ const Terminal = () => {
                     <div className="container">
                         <div className="seven columns offset-by-one-half addResWide">
                             <div className="header">
-                                <h2>Family Resources</h2>
+                                <h2>Family <span className="blue">Resources</span></h2>
                                 <p>Click the button below to select resources by category. Click the resource card to view more information.</p>
                             </div>
                             <div className="list">

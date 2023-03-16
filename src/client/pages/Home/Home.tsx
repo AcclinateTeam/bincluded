@@ -74,10 +74,7 @@ const Home = () => {
                 <div className="callout">
                     <div className="calltext">
                         <h2>Stand Up For Your Health</h2>
-                        <p>
-                            <Logo color="#ffffff" /> is a movement with a mission to build a community of individuals ready to take control of their health and future
-
-                        </p>
+                        <p>In the <Logo color="#ffffff" /> community, you and fellow Jefferson County residents come together to share your health stories, connect to local resources, and inspire each other to maximize health and wellbeing.</p>
                     </div>
                     <div className="callbutton">
                         <a className="button signup joinCommunity" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer" aria-label="Join the NOWINCLUDED Community - Opens in a new tab">Join The Community</a>
@@ -97,7 +94,7 @@ const Home = () => {
                 </div>
                 <div className="text">
                     <h2>We <span className="blue">Listen.</span><br /> We <span className="blue">Represent.</span><br /> We <span className="blue">Share.</span></h2>
-                    <p><Logo color="#287FDD" /> addresses healthcare needs and subsequently educational, employment, and financial gaps so that residents can work towards improved health.</p>
+                    <p>For too long, the Black community has navigated barriers to physical, mental, and financial wellbeing. There must be a space where the community can come together, access helpful resources, and validate lived experiences. <Logo color="#287FDD" /> is a platform to help navigate and remove barriers. A place designed for us, by us.</p>
                 </div>
             </section>
 

@@ -886,7 +886,22 @@
         }
     }
 
-
+    section.quotes {                margin: 0 0 50px;
+        .quote-rotator {                width: 100%; opacity: 0; transition: opacity 0.5s ease-in-out;}
+        .visible {                      opacity: 1;}
+        .hidden {                       opacity: 0; transition: opacity 0.5s ease-in-out;}
+        h2 {                                        font-size: 44px; line-height: 44px; text-align: center; margin: 50px 0; color: var(--navy);
+            span {                                      display: inline-block; color: var(--blue);}
+        }
+        .card {                                 height: 350px; margin: 0 0 100px;}
+        p.quote-text {                          font-size: 32px; line-height: 40px; text-align: center; font-weight: 900;}
+        p.quote-author {                        margin: 5px 0 ; text-align: center; color: var(--red);}
+        .box {                          display: flex; flex-flow: row wrap;}
+        .it {                           margin: 50px 5% 0; order: 2;
+            img {                           width: 100%;}
+        }
+        .up {                           order: 1;}
+    }
 
 
 

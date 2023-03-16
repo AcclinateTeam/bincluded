@@ -26,8 +26,9 @@ const Covid = () => {
                         </div>
                         <div className="text">
                             <div className="calltext">
-                                <h1>COVID-19</h1>
-                                <p><Logo color="#287fdd" /> provides Birmingham residents COVID-19 information, current statistics, and resources to take action against the virus.</p>
+                                <h1>NAVIGATING <br /> COVID-19</h1>
+                                <p> COVID-19 took enough of a toll on our community. <Logo color="#287fdd" /> provides updated information and resources to protect ourselves and one another.
+</p>
                             </div>
                         </div>
                     </div>

@@ -41,6 +41,7 @@
     "react-responsive": "^9.0.0-beta.5",
     "react-router-dom": "^6.0.2",
     "react-router-hash-link": "^2.4.3",
+    "react-text-rotator": "^1.2.0",
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.41.1",
     "sass-loader": "^12.1.0",

@@ -103,10 +103,11 @@ section.search {                            margin: 0 0 100px; background-color:
 
 /* RESULTS PAGE SCSS STYLES
 ============================================================== */
-section.results {
+section.results {                   
     .info {                            margin: 0 0 30px; font-weight: 500; color: var(--navy);}
     .panels {                          margin: 0 0 80px;
         .panel {                           margin: 0 0 40px; padding: 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); border-radius: 15px; background-color: var(--white);
+            .condition {                padding: 40px;}
             .text {                     width: calc(100% - 130px); padding: 40px; height: 100%; border-radius: 15px; background-color: var(--gray);
                 h1 {                        font-family: 'DM Sans', sans-serif; margin: 0 40px 20px 0; font-size: 32px; line-height: 40px; font-weight: 700; text-transform: none; color: var(--blue);}
                 p {                         margin: 0 80px 30px 0; font-size: 24px; line-height: 32px; color: var(--navy);}
@@ -132,13 +133,13 @@ section.results {
 }
 .results.space {                            padding: 0 0 100px;}
 
-.study.space {                              padding: 0 0 100px;}
+.study.space {                              width: calc(100% - 10%); margin: 0 5% 100px;}
 .study {                                    
-    .callout {                              padding: 0 0 50px; position: relative; background: center; background-size: cover; background-color: #fff;
+    .callout {                              padding: 0 10% 50px; position: relative; background: center; background-size: cover; background-color: #fff;
         h1 {                                    font-family: 'DM Sans', sans-serif; font-size: 48px; line-height: 56px; margin: 0 0 18px; font-weight: 700; text-transform: none; color: #0F0F10;}
         p {                                     font-weight: 500; color: #0F0F10;}
     }
-    .head {                              height: 60px; margin: 50px 0 0;
+    .head {                              height: 60px; margin: 0 10% 0 0;
         .info {                              float: left; font-weight: 500; color: #1A3667;}
         .info a {                            text-decoration: none; text-transform: capitalize; color: #0F0F10;}
         .info svg {                          color: #ca1d48;}
@@ -148,7 +149,7 @@ section.results {
     }
     
     // .panel {                             padding: 20px 10px 20px 20px; margin: 0 0 10px;}
-    .panel {                             padding: 40px 45px 40px 0; margin: 0 0 40px; background-color: #fff;}
+    .panel {                             padding: 40px 5% 40px; margin: 0 0 40px; background-color: #fff;}
     .panel h1 {                          font-family: 'DM Sans', sans-serif; margin: 0 0 10px; font-size: 32px; line-height: 40px; font-weight: 700; text-transform: none; color: var(--blue);}
     .panel h3 {                          font-family: 'DM Sans', sans-serif; margin: 0 0 5px; font-size: 28px; line-height: 36px; font-weight: 700; text-transform: none; color: var(--navy);}
     .panel p {                           margin: 0 80px 30px 0; font-size: 24px; line-height: 32px; color: var(--navy);}

@@ -109,8 +109,8 @@ const Search = () => {
                 <Link to="/trials">Click here to return to the search page</Link>
             </div> */}
 
-            <section className="trialTerminal">
-                {/* <div className="form">
+            {/* <section className="trialTerminal">
+                <div className="form">
                     <input className="control" placeholder="Enter a Condition | ex: Cancer" type="text" name="Search" onChange={e => setCondition(e.target.value)} />
                     <input className="control2" placeholder="Minimum Age | ex: 18" type="text" name="MinAge" onChange={e => setMinAge(e.target.value)} />
                     <input className="control3" placeholder="Maximum Age | ex: 65" type="text" name="MaxAge" onChange={e => setMaxAge(e.target.value)} />
@@ -124,15 +124,15 @@ const Search = () => {
                             <FontAwesomeIcon icon="search" />
                         </div>
                     </Link>
-                </div> */}
+                </div>
                 <form onSubmit={handleSubmit}>
                     <input type="text" value={condition} onChange={(e) => setCondition(e.target.value)} />
                     <input type="text" value={gender} onChange={(e) => setGender(e.target.value)} />
                     <button type="submit">Search</button>
                 </form>
-            </section>
+            </section> */}
 
-            {trials ? <div>{JSON.stringify(trials)}</div> : <div>Loading....</div>}
+            {/* {trials ? <div>{JSON.stringify(trials)}</div> : <div>Loading....</div>} */}
 
 
         </>

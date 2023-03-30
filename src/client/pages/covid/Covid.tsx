@@ -27,8 +27,7 @@ const Covid = () => {
                         <div className="text">
                             <div className="calltext">
                                 <h1>NAVIGATING <br /> COVID-19</h1>
-                                <p> COVID-19 took enough of a toll on our community. <Logo color="#287fdd" /> provides updated information and resources to protect ourselves and one another.
-</p>
+                                <p> COVID-19 took enough of a toll on our community. <Logo color="#287fdd" /> provides updated information and resources to protect ourselves and one another.</p>
                             </div>
                         </div>
                     </div>
@@ -84,6 +83,27 @@ const Covid = () => {
                             </div>
                             <h2>Birmingham Vaccination <span>Information</span></h2>
                             <p>Find information on vaccination in Birmingham. <a href="https://www.alabamapublichealth.gov/covid19vaccine/">Read More</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* COVID INTRO SECTION */}
+            <section className="intro ceal">
+                <div className="container">
+                    <div className="text">
+                        <h2>Alabama CEAL <span style={{ 'display': 'inline-block' }}>Communications Engine</span></h2>
+                        <p>The CEAL Communications Engine aims to educate, empower, and engage. Trusted community messengers tell the engine what they want to communicate to Alabama residents. The engine creates, tests, launches and analyzes messages to share actionable insights about what resonated with the community. The engine is part of the broader Alabama CEAL initiative.</p>
+                        {/* <p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people become severely ill. Older adults and people who have certain underlying medical conditions are more likely to get severely ill. <br /> <a href="https://www.cdc.gov/coronavirus/2019-ncov/faq.html" target="_blank" rel="noopener noreferrer">Read More</a></p>
+                            <h2>How COVID-19 Research <span>Impacted Minority Communities</span></h2>
+                            <p>Early in the pandemic, the CDC reported 21.8% of COVID-19 cases in the US were African Americans and 33.8% were LatinX, despite that these groups comprise only 13% and 18% of the US population.</p> */}
+                    </div>
+                    <div className="image">
+                        <img src="/images/theme/cealengine.png" alt="" />
+                    </div>
+                    <div className="ten columns">
+                        <div className="buttonwrap center">
+                            <a className="content button solid" href="https://sites.uab.edu/ceal/voices/#tell-your-covid-story" target="_blank" rel="noopener noreferrer">Share Your Covid Story</a>
                         </div>
                     </div>
                 </div>

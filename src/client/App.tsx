@@ -94,28 +94,8 @@ const App = (props: AppProps) =>
 
 					{/* Trial Paths */}
 					<Route path="/trials" element={<Trials />} />
-					{/* <Route path="/trials/results/" element={<Results />} /> */}
-					{/* <Route path="/trials/search/" element={<Search />} /> */}
-					<Route path="/trials/search" element={<Search />} />
-					<Route path="/trials/task?/:taskId" element={<Search />}/>
-					{/* <Route path="/trials/results/:condition?/:gender?/:minAge?/:maxAge?" element={<Results />} />
-					<Route path="/trials/results/:condition/:gender/:minAge" element={<Results />} />
-					<Route path="/trials/results/:condition?/:gender?" element={<Results />} />
-					<Route path="/trials/results/:condition/:minAge" element={<Results />} />
-					<Route path="/trials/results/:condition" element={<Results />} /> */}
-
-					
-					{/* <Route path="/trials/results/:condition/:maxAge" element={<Results />} />
-					<Route path="/trials/results/:condition/:minAge/:maxAge" element={<Results />} />
-					<Route path="/trials/results/:condition/:gender/:maxAge" element={<Results />} />
-					<Route path="/trials/results/:minAge/:maxAge" element={<Results />} />
-					<Route path="/trials/results/:minAge" element={<Results />} />
-					<Route path="/trials/results/:maxAge" element={<Results />} /> */}
-
-
-
-					<Route path="/trials/results/study/:condition/:id" element={<FullStudy />} />
-					<Route path="/trials/study/:id" element={<FullStudy />} />
+					<Route path="/trials/:condition" element={<Results />}/>
+					<Route path="/trials/study/:condition/:id" element={<FullStudy />} />
 
 					{/* Utils Paths */}
 					<Route path="/privacy" element={<Privacy />} />

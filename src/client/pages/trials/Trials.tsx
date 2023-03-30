@@ -28,24 +28,26 @@ const Trials = (props: any) => {
     console.log(gender)
 
     const renderButton = () => {
-        if (condition && gender && minAge && maxAge) return '/trials/results/' + condition + '/' + gender + '/' + minAge + '/' + maxAge;
-        if (condition && gender && minAge && !maxAge) return '/trials/results/' + condition + '/' + gender + '/' + minAge;
-        if (condition && gender && !minAge && !maxAge) return '/trials/results/' + condition + '/' + gender;
-        if (condition && !gender && !minAge && !maxAge) return '/trials/results/' + condition;
+        // if (condition && gender && minAge && maxAge) return '/trials/results/' + condition + '/' + gender + '/' + minAge + '/' + maxAge;
+        // if (condition && gender && minAge && !maxAge) return '/trials/results/' + condition + '/' + gender + '/' + minAge;
+        // if (condition && gender && !minAge && !maxAge) return '/trials/results/' + condition + '/' + gender;
+        // if (condition && !gender && !minAge && !maxAge) return '/trials/results/' + condition;
 
-        if (condition && gender && !minAge && maxAge) return '/trials/results/' + condition + '/' + gender + '/' + maxAge;
-        if (condition && !gender && !minAge && maxAge) return '/trials/results/' + condition + '/' + maxAge;
-        if (!condition && !gender && !minAge && maxAge) return '/trials/results/' + maxAge;
+        // if (condition && gender && !minAge && maxAge) return '/trials/results/' + condition + '/' + gender + '/' + maxAge;
+        // if (condition && !gender && !minAge && maxAge) return '/trials/results/' + condition + '/' + maxAge;
+        // if (!condition && !gender && !minAge && maxAge) return '/trials/results/' + maxAge;
 
-        if (!condition && !gender && minAge && maxAge) return '/trials/results/' + minAge + '/' + maxAge;
-        if (!condition && gender && minAge && !maxAge) return '/trials/results/' + gender + '/' + minAge;
-        if (!condition && gender && !minAge && maxAge) return '/trials/results/' + gender + '/' + maxAge;
-        if (!condition && !gender && minAge && !maxAge) return '/trials/results/' + minAge;
-        if (!condition && !gender && !minAge && maxAge) return '/trials/results/' + maxAge;
-        if (!condition && gender && !minAge && !maxAge) return '/trials/results/' + gender;
+        // if (!condition && !gender && minAge && maxAge) return '/trials/results/' + minAge + '/' + maxAge;
+        // if (!condition && gender && minAge && !maxAge) return '/trials/results/' + gender + '/' + minAge;
+        // if (!condition && gender && !minAge && maxAge) return '/trials/results/' + gender + '/' + maxAge;
+        // if (!condition && !gender && minAge && !maxAge) return '/trials/results/' + minAge;
+        // if (!condition && !gender && !minAge && maxAge) return '/trials/results/' + maxAge;
+        // if (!condition && gender && !minAge && !maxAge) return '/trials/results/' + gender;
 
-        if (!condition && gender && minAge && maxAge) return '/trials/results/' + gender + '/' + minAge + '/' + maxAge;
-        if (!condition && !gender && minAge && maxAge) return '/trials/results/' + minAge + '/' + maxAge;
+        // if (!condition && gender && minAge && maxAge) return '/trials/results/' + gender + '/' + minAge + '/' + maxAge;
+        // if (!condition && !gender && minAge && maxAge) return '/trials/results/' + minAge + '/' + maxAge;
+
+        if (condition) return `/trials/${condition}`;
     }
 
     return (

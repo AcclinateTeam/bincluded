@@ -12,7 +12,9 @@ const Results = () => {
         window.scrollTo(0, 0)
     }, []);
 
-    const { text }: { text: any; } = useParams();
+    const { condition }: { condition: any; } = useParams();
+
+    console.log(condition);
 
     const [numbers, setNumbers] = useState<any>([]);
     const [trials, setTrials] = useState([]);
@@ -21,7 +23,7 @@ const Results = () => {
         getTrials();
 
         async function getTrials() {
-            const response = await fetch(`https://clinicaltrials.gov/api/query/full_studies?expr=${text}+AND+AREA%5BLocationCity%5D+Birmingham+AND+AREA%5BLocationState%5D+Alabama&min_rnk=1&max_rnk=10&fmt=json`);
+            const response = await fetch(`https://clinicaltrials.gov/api/query/full_studies?expr=${condition}+AND+AREA%5BLocationCity%5D+Birmingham+AND+AREA%5BLocationState%5D+Alabama&min_rnk=1&max_rnk=10&fmt=json`);
             const trials = await response.json();
 
             setNumbers(trials.FullStudiesResponse);
@@ -53,7 +55,7 @@ const Results = () => {
                 </section>
 
                 <div className="container trials error">
-                    <h1>Sorry, your search for <span>{text}</span> did not return any results.</h1>
+                    <h1>Sorry, your search for <span>{condition}</span> did not return any results.</h1>
                     <Link to="/trials">Click here to return to the search page</Link>
                 </div>
             </>
@@ -82,12 +84,12 @@ const Results = () => {
                     <div className="container space">
                         <div className="eight columns offset-by-one">
                             <div className="info">
-                                Showing {numbers.NStudiesReturned} of {numbers.NStudiesFound} Search Results for "{text.replace(/\+/g, " ").replace(/,/g, "")}"
+                                Showing {numbers.NStudiesReturned} of {numbers.NStudiesFound} Search Results for "{condition.replace(/\+/g, " ").replace(/,/g, "")}"
                             </div>
 
                             <div className="panels">
                                 {trials.map((trial: any, index) => (
-                                    <Link key={index} to={`/trials/results/study/${text}/${trial.Study.ProtocolSection.IdentificationModule.NCTId}`}>
+                                    <Link key={index} to={`/trials/study/${condition}/${trial.Study.ProtocolSection.IdentificationModule.NCTId}`}>
                                         <div className="panel">
                                             <div className="container">
                                                 <div className="seven columns">

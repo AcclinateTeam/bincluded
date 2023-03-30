@@ -28,6 +28,21 @@ section.intro.covii {
 }
 
 
+// CONTENT STYLES
+section.intro.ceal {
+    .text {                             margin: 150px 10% 0; text-align: center;
+        h2 {                                font-size: 46px; line-height: 54px; margin: 0 0 10px;
+            span {                              color: var(--blue);}
+        }
+        p {                                 width: 80%; font-size: 24px; margin: 0 0 50px 10%; line-height: 32px;}
+        a {                                 font-weight: 700; color: var(--red);}
+    }
+    .image {                            width: 40%; margin: 0 auto 80px;
+        img {                               width: 100%; margin: 0 0 -3px; border-radius: 15px;}
+    }
+}
+
+
 section.covidstats {                                background-color: var(--navy);
     .stats {                                             padding: 100px; background-color: var(--blue);
         h2 {                                                font-size: 44px; line-height: 44px; text-align: center; margin: 0 0 10px; color: var(--white);

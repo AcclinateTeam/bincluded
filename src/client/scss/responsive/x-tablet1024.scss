@@ -35,6 +35,60 @@
     header .navButton svg {         display: block; margin: 0 auto; }
     header .navButton svg.open {        font-size: 18px; opacity: 1; position: absolute; top: 9px; left: 10px; color: #fff;}
     header .navButton svg.close {       font-size: 20px; opacity: 0; position: absolute; top: 8px; left: 11px; color: #0F0F10;}
+
+    /*LANDING PAGE SCSS STYLES
+    ============================================================== */
+    .landinghero {                              height: 60px;}
+    .landingimg {                               width: 90%; margin: 0 5%;}
+    .land {                                     margin: 0;
+        b {                                     font-weight: 900;}
+    }
+
+    section.landing {                           
+        .flex {                                 width: 90%; display: flex; flex-direction: column; margin: 0 0 50px 5%;
+            .four {                                 width: 100%;
+                img {                                   width: 100%;}         
+            }
+            .five {                                 width: 100%;}
+            .six {                                  width: 100%;}
+            .ten {                                  width: 100%;}
+            .text {                             padding: 0 0 0; display: inline-block;
+                h2 {                                font-size: 36px; line-height: 44px; margin: 0 0 10px;
+                    span {                              color: var(--blue); display: inline-block;}
+                }
+                p {                                 font-size: 20px; line-height: 28px; margin: 0 0 50px;}
+            }
+            .image {                            width: 100%; display: inline-block;
+                img {                               width: auto; margin: 0;}        
+            }
+            .order1 {                               order: 1; }
+            .order2 {                               order: 2; }        
+        }
+        .flex.rev {                             
+            img {                                   margin: 50px 0 0;}
+            .order1 {                               order: 2; }
+            .order2 {                               order: 1; }
+        }
+        .video {                            width: 90%; margin: 0 0 100px 5%;                        
+            .box {                              width: 100%; padding: 25px 0;}
+            iframe {                            width: 100%; height: 550px; border-radius: 15px;}
+            .head {                                 text-align: center;
+                p {                                     width: 80%; text-align: center; margin: 0 auto 50px;}
+            }
+            h2 {                                    font-size: 36px; line-height: 44px; margin: 15px 0 10px; 
+                span {                              color: var(--blue); display: inline-block;}
+            }
+            h3 {                                    font-size: 28px; line-height: 36px; margin: 15px 0 10px; 
+                span {                              color: var(--blue); display: inline-block;}
+            }
+            p {                                     font-size: 20px; line-height: 28px; margin: 0 0 25px; color: var(--navy);}
+        }
+        .heading {                              width: 80%; margin: 0 10% 30px; text-align: center;
+            span {                                  color: var(--blue); display: inline-block;}
+        }
+        a.button {                                  font-size: 16px; text-align: center; margin: 0 35% 50px;}
+    }
+
    
     /* HOME PAGE SCSS STYLES
     ============================================================== */
@@ -126,6 +180,17 @@
             .split {                            width: 50%;}
             .cards {                            border: 2px solid var(--white); border-radius: 15px; padding: 30px;
                 p {                                 height: 132px; margin: 0 0 30px;}
+            }
+            .featured {                        width: calc(100% - 114px); margin: 0 15px 30px; border: 2px solid var(--white); border-radius: 15px; padding: 40px;
+                h4  {                               padding: 0 0 10px; margin: 30px 0 0; font-size: 42px; text-transform: none; color: var(--blue);}            
+                .image {                            
+                    img {                               width: 100%;}
+                }
+                .text {                                 margin: 0;
+                    p {                                     font-size: 28px; line-height: 36px; margin: 0;}
+                    p.link {                                height: auto; font-family: 'Montserrat', sans-serif; font-size: 36px; font-weight: 900; padding: 0; margin: 0 0 30px; color: var(--white);}
+                    svg {                                   color: var(--red);}
+                }
             }
         }
         .deck a {                                 color:var(--black); text-decoration: none;} 

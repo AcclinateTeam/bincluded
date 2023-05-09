@@ -132,6 +132,7 @@ svg.logo {                                  height: 16px; display: inline-block;
 //must stay BELOW all other SCSS/imports in this file to maintain cascading order.
 // MOBILE STYLES
 @import './responsive/x-tablet1440.scss';
+@import './responsive/x-tablet1280.scss';
 @import './responsive/x-tablet1024.scss';
 @import './responsive/x-tablet768.scss';
 @import './responsive/x-mobile499.scss';

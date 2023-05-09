@@ -46,6 +46,7 @@ import SingleStory from './pages/blog/SingleStory';
 import Articles from './pages/blog/Articles';
 import Test from './utils/Test';
 import Search from './pages/trials/Search';
+import AMYMD from './pages/resources/AMYMD';
 
 library.add(fab, fas, far);
 
@@ -68,6 +69,7 @@ const App = (props: AppProps) =>
 					<Route path="/resources/health" element={<Health />} />
 					<Route path="/resources/family" element={<Family />} />
 					<Route path="/resources/careers" element={<Careers />} />
+					<Route path="/resources/amymd" element={<AMYMD />} />
 					<Route path="/covid" element={<Covid />} />
 
 					{/* Partner Page Paths */}

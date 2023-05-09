@@ -21,8 +21,18 @@ const HomePortal = () => {
                     <div className="twothird columns">
                         <div className="deck">
                             <div className="container">
+                                <div className="ten columns featured">
+                                    <div className="six columns text">
+                                        <h4>Featured Resource</h4>
+                                        <p>B-INCLUDED members can get their health questions and concerns answered by a licensed doctor 24/7, for free, through Ask Me Your MD.</p>
+                                        <Link to="/resources/amymd"><p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p></Link>
+                                    </div>
+                                    <div className="four columns image">
+                                        <img src="/images/partners/amymd.png" alt="" />
+                                    </div>
+                                </div>
                                 <div className="third columns split">
-                                    <Link to="/health">
+                                    <Link to="/resources/health">
                                         <div className="cards shadow hover">
                                             <FontAwesomeIcon className="icon" icon="user-md" />
                                             <h4>Health</h4>
@@ -32,7 +42,7 @@ const HomePortal = () => {
                                     </Link>
                                 </div>
                                 <div className="third columns split">
-                                    <Link to="/family">
+                                    <Link to="/resources/family">
                                         <div className="cards shadow hover">
                                             <FontAwesomeIcon className="icon" icon="users" />
                                             <h4>Family</h4>
@@ -42,7 +52,7 @@ const HomePortal = () => {
                                     </Link>
                                 </div>
                                 <div className="third columns split">
-                                    <Link to="/careers">
+                                    <Link to="/resources/careers">
                                         <div className="cards shadow hover">
                                             <FontAwesomeIcon className="icon" icon="hard-hat" />
                                             <h4>Careers</h4>

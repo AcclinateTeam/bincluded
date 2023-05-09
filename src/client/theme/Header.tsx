@@ -103,6 +103,7 @@ const Header = () =>
                                             <li><Link to='/resources/health'>Health</Link></li>
                                             <li><Link to='/resources/family'>Family</Link></li>
                                             <li><Link to='/resources/careers'>Careers</Link></li>
+                                            <li><Link to='/resources/amymd'>AMYMD</Link></li>
                                         </ul>
                                     </li>
                                     <li><Link to='/trials'>Clinical Research</Link></li>

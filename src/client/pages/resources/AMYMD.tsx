@@ -72,7 +72,7 @@ const AMYMD = () => {
             
 
             {/* RESOURCE INTRO SECTION */}
-            <section className="landing">
+            {/* <section className="landing">
                 <div className="container video">
                     <div className="ten columns head">
                         <h2>About <span>AMYMD</span></h2>
@@ -107,7 +107,7 @@ const AMYMD = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
 
 

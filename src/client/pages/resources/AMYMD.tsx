@@ -54,9 +54,8 @@ const AMYMD = () => {
 
             <section className="landCTA">
                 <div className="text">
-                    <h3>Chat with a doctor <span>for free now</span></h3>
-                    <p>Join <Logo color="#287fdd" /> to access</p>
-                    <a className="content button solid landingCTA" href="https://get.nowincluded.com/amymd" target="_blank" rel="noopener noreferrer">Join B-INCLUDED</a>
+                    <h3>Join b-included and chat with a doctor <span>for free</span></h3>
+                    <a className="content button solid landingCTA" href="https://get.nowincluded.com/amymd-b-included" target="_blank" rel="noopener noreferrer">Join B-INCLUDED</a>
                 </div>
             </section>
 

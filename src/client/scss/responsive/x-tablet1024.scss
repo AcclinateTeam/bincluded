@@ -90,25 +90,26 @@
     }
 
     div.popBack {                       width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 9999;
-        .popup {                            width: 80%; background-color: var(--white); border-radius: 30px;
-            h2 {                                font-size: 32px; line-height: 40px;}
-            h3 {                                font-size: 20px; line-height: 28px; margin: 0 0 20px; color: var(--blue);}
+        .popup {                            width: 80%; background-color: var(--white); border-radius: 30px 0 30px 30px;
+            h2 {                                font-size: 40px; line-height: 48px;}
+            h3 {                                font-size: 28px; line-height: 36px; margin: 0 0 20px; color: var(--blue);}
             p {                                 font-size: 20px; line-height: 28px; margin: 0 0 30px; color: var(--navy);}
             img {                               width: 200px; height: auto; margin: 0 auto 20px; text-align: center;}
             button {                            font-size: 18px; font-weight: 900; cursor: pointer; text-transform: uppercase; padding: 15px 20px; background-color: var(--red); color: var(--white); border: none; border-radius: 15px;}
-            .popButLeft {                       margin: 0 10px 10px 0;}
-        }
+            .popButLeft {                       margin: 0 10px 0 0;}
+            .close {                            width: 40px; height: 40px; position: fixed; top: -60px; right: -1px; padding: 10px; cursor: pointer; border-radius: 15px 15px 0 0; background-color: var(--red);
+                img {                               width: 100%;}
+            }
+        }        
     }
     
     .popup {
         position: fixed;
         text-align: center;
-        overflow: scroll;        
-        height: auto;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 20px;
+        padding: 50px;
         z-index: 1000;
     }
 

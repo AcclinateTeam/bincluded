@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const PopupComponent: React.FC = () => {
-    const [isOpen, setIsOpen] = useState<boolean>(false);
+    const [isOpen, setIsOpen] = useState<boolean>(true);
 
     useEffect(() => {
         // Check if 'popupShown' is in local storage
@@ -25,11 +25,14 @@ const PopupComponent: React.FC = () => {
                 <img src="/images/partners/amymd.png" alt="" />
                 <h2>Have a medical question?</h2>
                 <h3>Ask a doctor online for free!</h3>
-                <p>Acclinate and Ask Me Your MD are providing the B-INCLUDED community with free 24/7 chat services with licensed doctors until May 31.</p>
+                <p>Acclinate and Ask Me Your MD are providing the B-INCLUDED community with free 24/7 chat services with licensed doctors until May 31st.</p>
                 <a href="https://get.nowincluded.com/amymd-b-included">
                     <button className="popButLeft">Join B-INCLUDED</button>
                 </a>
-                <button className="popButRight" onClick={() => setIsOpen(false)}>Close</button>
+                {/* <button className="popButRight" >Close</button> */}
+                <div className="close" onClick={() => setIsOpen(false)}>
+                    <img src="/images/close.png" alt="" />
+                </div>
 
             </div>
         </div>

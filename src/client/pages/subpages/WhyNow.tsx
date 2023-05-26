@@ -10,6 +10,7 @@ import WhyNowMission from './components/WhyNowMission';
 import WhyNowMeaning from './components/WhyNowMeaning';
 import WhyNowDifferent from './components/WhyNowDifferent';
 import WhyNowLeaders from './components/WhyNowLeaders';
+import PopBottom from '../../components/PopBottom';
 
 const WhyNow = () =>
 {
@@ -23,6 +24,8 @@ const WhyNow = () =>
         <>
             {/* HEADER COMPONENT */}
             <Header />
+
+            <PopBottom />
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="hero whyy">

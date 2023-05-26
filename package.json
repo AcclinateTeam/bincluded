@@ -44,6 +44,7 @@
     "react-router-hash-link": "^2.4.3",
     "react-text-rotator": "^1.2.0",
     "react-visibility-sensor": "^5.1.1",
+    "reactjs-popup": "^2.0.5",
     "sass": "^1.41.1",
     "sass-loader": "^12.1.0",
     "site-search-360-react": "^0.3.3",

@@ -1,41 +1,39 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-const Popup = () =>
-{
+const PopupComponent: React.FC = () => {
+    const [isOpen, setIsOpen] = useState<boolean>(true);
 
-    // PopUp Close function
-    function closePopup ()
-    {
-        const popup = document.getElementById('popBack');
-        popup.setAttribute('style', `display: none;`);
-    }
+    useEffect(() => {
+        // Check if 'popupShown' is in local storage
+        const popupShown = localStorage.getItem('popupShown');
+
+        // If it isn't, then this is the user's first visit, so show the popup
+        if (!popupShown) {
+            setIsOpen(true);
+            localStorage.setItem('popupShown', 'true');
+        }
+    }, []);
+
+    // Don't render the popup if it isn't open
+    if (!isOpen) return null;
 
     return (
-        <>
-            <div className="popBack" id="popBack">
-                <div className="popContainer">
-                    <div className="popClose" onClick={closePopup}>
-                        <FontAwesomeIcon id="button-close" className="close" icon="times" />
-                    </div>
-                    <div className="popTopImage">
-                        <img src="images/poptop.png" alt="" />
-                        <svg viewBox="0 0 1083 168" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1083 0L0 168H1083V0Z" fill="#287FDD" />
-                            <path d="M1083 52L0 168H1083V52Z" fill="#CA1D48" />
-                        </svg>
-                    </div>
-                    <div className="popContent">
-                        <h1>B-Included Is <span>Live!</span></h1>
-                        <p>Join a community of people focused on improving health, overall wellness, and elevated financial practices.</p>
-                        <a className="button" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual">
-                            Join The Community
-                        </a>
-                    </div>
-                </div>
+        <div className="popBack">
+            <div className="popup">
+                <img src="/images/partners/amymd.png" alt="" />
+                <h2>Have a medical question?</h2>
+                <h3>Ask a doctor online for free!</h3>
+                <p>Acclinate and Ask Me Your MD are providing the B-INCLUDED community with free 24/7 chat services with licensed doctors until May 31.</p>
+                <a href="https://get.nowincluded.com/amymd-b-included">
+                    <button className="popButLeft">Join B-INCLUDED</button>
+                </a>
+                <button className="popButRight" onClick={() => setIsOpen(false)}>Close</button>
+
             </div>
-        </>
-    )
+        </div>
+    );
 }
 
-export default Popup;
+export default PopupComponent;

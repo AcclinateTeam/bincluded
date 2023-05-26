@@ -11,6 +11,9 @@ import SiteSearch360 from 'site-search-360-react';
 import HomePortal from './components/HomePortal';
 import ShareYourStory from '../blog/components/ShareYourStory';
 import HomeCommunity from './components/HomeCommunity';
+import Popup from '../../components/Popup';
+import PopupComponent from '../../components/Popup';
+import PopSide from '../../components/PopSide';
 
 const Home = () => {
     // Window scroll-to-top function
@@ -62,6 +65,10 @@ const Home = () => {
         <>
             {/* HEADER COMPONENT IMPORT */}
             <Header />
+
+            <PopupComponent />
+
+            {/* <PopSide /> */}
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="home">

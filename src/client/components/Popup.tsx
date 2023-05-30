@@ -21,6 +21,7 @@ const PopupComponent: React.FC = () => {
 
     return (
         <div className="popBack">
+            {/* SOME CHANGES TO MAKE SURE THIS GOES THROUGH */}
             <div className="popup">
                 <img src="/images/partners/amymd.png" alt="" />
                 <h2>Have a medical question?</h2>

@@ -21,6 +21,7 @@ const PopBottom: React.FC = () => {
 
     return (
         <div className="popup2">
+            {/* some changes that need to be made to make sure this goes into effect properly */}
             <img src="/images/partners/amymd.png" alt="" />
             <h2>Have a medical question? <span>Ask a doctor online for free!</span></h2>
             <p>Acclinate and Ask Me Your MD are providing the B-INCLUDED community with free 24/7 chat services with licensed doctors until May 31st.</p>

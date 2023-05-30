@@ -66,6 +66,7 @@ const Home = () => {
             {/* HEADER COMPONENT IMPORT */}
             <Header />
 
+            {/* POPUP COMPONENT */}
             <PopupComponent />
 
             {/* JUMBOTRON COMPONENT */}

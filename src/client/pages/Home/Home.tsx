@@ -68,8 +68,6 @@ const Home = () => {
 
             <PopupComponent />
 
-            {/* <PopSide /> */}
-
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="home">
                 <div className="callbg">

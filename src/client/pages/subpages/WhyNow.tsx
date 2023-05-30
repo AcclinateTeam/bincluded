@@ -25,7 +25,7 @@ const WhyNow = () =>
             {/* HEADER COMPONENT */}
             <Header />
 
-            <PopBottom />
+            {/* <PopBottom /> */}
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="hero whyy">

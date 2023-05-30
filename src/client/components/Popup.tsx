@@ -20,6 +20,7 @@ const PopupComponent: React.FC = () => {
     if (!isOpen) return null;
 
     return (
+        // This makes sure something is updated.
         <div className="popBack">
             <div className="popup">
                 <img src="/images/partners/amymd.png" alt="" />

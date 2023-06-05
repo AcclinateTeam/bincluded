@@ -77,7 +77,7 @@ section.stories-grid {                          padding: 0 10% 100px; background
 /* BLOG ARTICLE/STORIE SUB-PAGE STYLES
 ================================================== */
 // MAIN CONTENT STYLES
-.story {                        margin: 0 0 50px;
+.story {                        margin: 0 0 100px;
     .text {                          margin: 0 0 30px;
         h3 {                            text-align: none; margin: 0 0 10px 0; }      
         h4 {                            color: var(--red); text-transform: none; padding: 0 0 10px;}
@@ -156,11 +156,11 @@ section.stories-grid {                          padding: 0 10% 100px; background
 // .singlePost .buttonWrap .button {          background-color: var(--red);}
 
 // SHARE YOUR STORY STYLES
-section.shareyourstory {                      margin: 20px 20% 0; display: flex; flex-flow: row wrap;                  
+section.shareyourstory {                      margin: 20px 20% 100px; display: flex; flex-flow: row wrap;                
     .container {                             border-radius: 5px;}
     .image {                                 width: 45%; margin: 0 5% 0 0;}
-    .image img {                             width: 100%; padding: 0; margin: 0 0 -3px;}
-    .text {                                  width: 50%; height: 308px; margin: 35px 0 0;}
+    .image img {                             width: 90%; padding: 0; margin: 0;}
+    .text {                                  width: 50%; height: 308px; margin: 25px 0 0;}
     .text h2 {                               text-transform: uppercase; margin: 0 0 30px; color: var(--navy);
         span {                                  color: var(--blue);}
     }

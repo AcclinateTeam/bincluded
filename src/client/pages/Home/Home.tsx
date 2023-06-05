@@ -67,7 +67,7 @@ const Home = () => {
             <Header />
 
             {/* POPUP COMPONENT */}
-            <PopupComponent />
+            {/* <PopupComponent /> */}
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="home">
@@ -92,6 +92,21 @@ const Home = () => {
                     <h3>Scroll Down</h3>
                 </div>
             </section>
+
+            {/* <section className="betterBham">
+                <div className="container">
+                    <div className="eight columns offset-by-one">
+                        <h2>Bettering <span className="blue">Birmingham</span></h2>
+                        <p>Learn why now is the time to take control of your health and future.</p>
+                    </div>
+                    <div className="four columns offset-by-one">
+                        <img src="/images/theme/bridgeBHAM.jpg" alt="" />
+                    </div>
+                    <div className="four columns">
+                        Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
+                    </div>
+                </div>
+            </section> */}
 
             {/* HOME - Who We Are Section */}
             {/* <section className="whoWeAre">

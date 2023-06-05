@@ -5,7 +5,7 @@ const ShareYourStory = () => {
     return (
         <section className="shareyourstory">
             <div className="image">
-                <img src="/images/theme/shareyourstory.png" alt="" />
+                <img src="/images/theme/sharestory2.png" alt="" />
             </div>
             <div className="text">
                 <h2>Share <span>Your Story</span></h2>

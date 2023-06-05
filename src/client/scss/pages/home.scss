@@ -119,6 +119,8 @@ section.landing {
     }
 }
 
+
+
 // HOME PAGE WHO WE ARE STYLES
 section.whoWeAre {                              padding: 100px 10%; display: flex; flex-flow: row wrap; background-color: var(--navy);
     .text {                                     width: 60%; order: 2; margin: 25px 0 0;
@@ -192,6 +194,13 @@ section.portal {                 background-color: var(--navy); padding: 100px 1
     .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid var(--blue);}
     .ss360-custom-search .ss360-custom-search__searchbutton:hover {               border: 2px solid #3d8fff;}
 } 
+
+// HOME PAGE BETTERING BIRMINGHAM STYLES
+section.betterBham {                margin: 50px 0;
+    h2 {                                text-align: center;}
+    h2 span {                           display: inline-block; color: var(--blue);}
+    img {                               width: 100%;}
+}
 
 // HOME PAGE STORIES STYLES
 section.homestories {               padding: 100px 10% 0; background-color: #fff;

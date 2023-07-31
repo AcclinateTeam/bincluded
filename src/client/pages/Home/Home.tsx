@@ -183,7 +183,7 @@ const Home = () => {
             <HomePortal />
 
             {/* HOME - Stories Section */}
-            <section className="homestories">
+            <section id="stories" className="homestories">
                 <div className="container">
                     <div className="ten columns header">
                         <h2 id="#stories">Featured <span className="blue">Stories</span></h2>

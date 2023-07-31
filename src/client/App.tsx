@@ -47,6 +47,10 @@ import Articles from './pages/blog/Articles';
 import Test from './utils/Test';
 import Search from './pages/trials/Search';
 import AMYMD from './pages/resources/AMYMD';
+import Events from './pages/events/Events';
+import Miles from './pages/events/Miles';
+import Gallery from './pages/gallery/Gallery';
+import MilesGallery from './pages/gallery/MilesGallery';
 
 library.add(fab, fas, far);
 
@@ -88,6 +92,14 @@ const App = (props: AppProps) =>
 					{/* Stories Paths */}
 					<Route path="/stories" element={<Stories />} />
 					<Route path="/stories/:slug" element={<SingleStory />} />
+
+					{/* Stories Paths */}
+					<Route path="/events" element={<Events />} />
+					<Route path="/events/miles" element={<Miles />} />
+
+					{/* Gallery Paths */}
+					<Route path="/gallery" element={<Gallery />} />
+					<Route path="/gallery/miles" element={<MilesGallery />} />
 
 					{/* Recipe Paths */}
 					{/* <Route path="/recipes" element={<RecipeSearch />} />

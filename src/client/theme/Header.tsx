@@ -3,11 +3,9 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
-const Header = () =>
-{
+const Header = () => {
     // GOOGLE ANALYTICS
-    const eventTrack = (category: string, action: string, label: string, value: number) =>
-    {
+    const eventTrack = (category: string, action: string, label: string, value: number) => {
         ReactGA.event({
             category: category,
             action: action,
@@ -16,8 +14,7 @@ const Header = () =>
     }
 
     // MOBILE NAV MENU TOGGLE CONTROLLER
-    function toggleNav ()
-    {
+    function toggleNav() {
         // VARIABLE SETTINGS
         const header = document.querySelector('header');
         const headerWrapper = document.getElementById('header-wrapper');
@@ -26,15 +23,13 @@ const Header = () =>
         const openButton = document.getElementById('button-open');
         const closeButton = document.getElementById('button-close');
         // MENU TOGGLE
-        if (headWrapHeight <= 61)
-        {
+        if (headWrapHeight <= 61) {
             header!.style.position = 'fixed';
             headerWrapper!.setAttribute('style', `height: 100vh; background-color: #04278E;`);
             navBg!.setAttribute('style', `background-color: #fff;`);
             openButton!.setAttribute('style', `opacity: 0;`);
             closeButton!.setAttribute('style', `opacity: 1;`);
-        } else
-        {
+        } else {
             header!.style.position = 'fixed';
             headerWrapper!.setAttribute('style', `height: 60px; background-color: #00000000;`);
             navBg!.setAttribute('style', `background-color: #CA1D48;`);
@@ -44,8 +39,7 @@ const Header = () =>
     }
 
     // MOBILE NAV SCROLL ANIMATION
-    window.addEventListener('scroll', function (e)
-    {
+    window.addEventListener('scroll', function (e) {
         // VARIABLE SETTINGS
         var header = document.querySelector('header');
         var windowWidth = window.innerWidth;
@@ -53,14 +47,11 @@ const Header = () =>
         var headWrapHeight = document.getElementById('header-wrapper')!.offsetHeight;
 
         // MOBILE NAV SCROLL ANIMATION
-        if (windowWidth <= 1115 && windowPosition >= 900 && headWrapHeight <= 61)
-        {
+        if (windowWidth <= 1115 && windowPosition >= 900 && headWrapHeight <= 61) {
             header!.setAttribute('style', `position: fixed; background-color: #050236;`);
-        } else if (windowWidth <= 1115 && headWrapHeight >= 61)
-        {
+        } else if (windowWidth <= 1115 && headWrapHeight >= 61) {
             header!.setAttribute('style', `position: fixed; background-color: #00000000;`);
-        } else
-        {
+        } else {
             header!.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0);`);
         }
     });
@@ -103,16 +94,16 @@ const Header = () =>
                                             <li><Link to='/resources/health'>Health</Link></li>
                                             <li><Link to='/resources/family'>Family</Link></li>
                                             <li><Link to='/resources/careers'>Careers</Link></li>
-                                            <li><Link to='/resources/amymd'>AMYMD</Link></li>
+                                            <li><Link to='/resources/amymd'>Ask Me Your MD</Link></li>
                                         </ul>
                                     </li>
-                                    <li><Link to='/trials'>Clinical Research</Link></li>
+                                    <li><a href="/trials" role="button">Clinical Research</a></li>
                                     <li><Link to='/covid'>COVID-19</Link></li>
                                     <li><Link to='/partners'>Partners</Link></li>
                                     <li><Link to='/toolkit'>ToolKit</Link></li>
                                     <li className="logins"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer" onClick={eventTrack.bind(this, "Header", "Sign Up Button", "Button")}>Join the Community</a></li>
                                 </ul>
-                            </nav>                            
+                            </nav>
 
                             <div id="navButtonBg" className="navButton" onClick={toggleNav}>
                                 <FontAwesomeIcon id="button-open" className="open" icon="bars" />

@@ -93,21 +93,6 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* <section className="betterBham">
-                <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <h2>Bettering <span className="blue">Birmingham</span></h2>
-                        <p>Learn why now is the time to take control of your health and future.</p>
-                    </div>
-                    <div className="four columns offset-by-one">
-                        <img src="/images/theme/bridgeBHAM.jpg" alt="" />
-                    </div>
-                    <div className="four columns">
-                        Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-                    </div>
-                </div>
-            </section> */}
-
             {/* HOME - Who We Are Section */}
             {/* <section className="whoWeAre">
                 <div className="image">
@@ -116,6 +101,61 @@ const Home = () => {
                 <div className="text">
                     <h2>We <span className="blue">Listen.</span><br /> We <span className="blue">Represent.</span><br /> We <span className="blue">Share.</span></h2>
                     <p>For too long, the Black community has navigated barriers to physical, mental, and financial wellbeing. There must be a space where the community can come together, access helpful resources, and validate lived experiences. <Logo color="#287FDD" /> is a platform to help navigate and remove barriers. A place designed for us, by us.</p>
+                </div>
+            </section> */}
+
+            {/* HOME - Who We Are Section */}
+            <section className="whoWeAre">
+                <div className="image">
+                    <img src="/images/theme/homewhoweare2.png" alt="Who_We_Are" />
+                </div>
+                <div className="text">
+                    <h2>We <span className="blue">Listen.</span><br /> We <span className="blue">Represent.</span><br /> We <span className="blue">Share.</span></h2>
+                    <p>For too long, the Black community has navigated barriers to physical, mental, and financial wellbeing. There must be a space where the community can come together, access helpful resources, and validate lived experiences. <Logo color="#287FDD" /> is a platform to help navigate and remove barriers. A place designed for us, by us.</p>
+                </div>
+            </section>
+
+            {/* HOME - Recent Events Section */}
+            {/* <section className="eventshome">
+                <div className="container">
+                    <div className="eight columns offset-by-one">
+                        <h2>Investing in <span className="blue">Community</span></h2>
+                        <p>Click below to learn more about events impacting the community.</p>
+                    </div>
+                    <div className="eight columns offset-by-one">
+                        <div className="third columns">
+                            <Link to="/events/miles">
+                                <div className="photo">
+                                    <img src="/images/events/miles/IMG_0024.jpg" />
+                                    <h4>Bridging the Gap: Miles College</h4>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="third columns">
+                            <Link to="/events/miles">
+                                <div className="photo">
+                                    <img src="/images/events/seniors/6Q3A9343.jpg" />
+                                    <h4>Bridging the Gap: Senior 'R Us</h4>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="third columns">
+                            <Link to="/events/miles">
+                                <div className="photo">
+                                    <img src="/images/events/bushconx/IMG_6172.jpg" />
+                                    <h4>Bush Hills Connection</h4>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="ten columns">
+                            <div className="buttonwrap center">
+                                <Link className="content button solid" to="/events">See More Events</Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section> */}
 
@@ -146,7 +186,7 @@ const Home = () => {
             <section className="homestories">
                 <div className="container">
                     <div className="ten columns header">
-                        <h2>Featured <span className="blue">Stories</span></h2>
+                        <h2 id="#stories">Featured <span className="blue">Stories</span></h2>
                         <p>Click below to hear from the community</p>
                     </div>
 
@@ -291,7 +331,7 @@ const Home = () => {
             </section>
 
             {/* HOME - COVID Statistics Section */}
-            <section className="covid">
+            {/* <section className="covid">
                 <div className="container">
                     <div className="row">
                         <div className="ten columns">
@@ -347,7 +387,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             {/* HOME - Partners Section */}
             <section className="homepartners">

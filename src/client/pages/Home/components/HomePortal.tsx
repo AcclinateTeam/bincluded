@@ -24,7 +24,7 @@ const HomePortal = () => {
                                 <div className="ten columns featured">
                                     <div className="six columns text">
                                         <h4>Featured Resource</h4>
-                                        <p>B-INCLUDED members can get their health questions and concerns answered by a licensed doctor 24/7, for free, through Ask Me Your MD.</p>
+                                        <p>B-INCLUDED members can get their health questions and concerns answered by a licensed doctor 24/7, through Ask Me Your MD.</p>
                                         <Link to="/resources/amymd"><p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p></Link>
                                     </div>
                                     <div className="four columns image">

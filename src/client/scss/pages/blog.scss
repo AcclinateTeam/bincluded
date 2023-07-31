@@ -28,7 +28,7 @@ section.stories {               padding: 0 10%; background-color: #fff;
                     p.top {                             font-size: 18px; line-height: 18px; margin: 0; padding: 70px 0 0; font-weight: 900; color: var(--blue);}
                     p.link {                            font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 900; text-transform: none; text-decoration: none; color: var(--red);}
                 }
-                .text h1 {                          font-size: 20px; line-height: 20px; font-weight: 900; padding: 15px 0 0; text-transform: none; color: var(--navy); margin: 0;}
+                .text h1 {                          font-size: 20px; line-height: 20px; font-weight: 900; padding: 15px 0 0; text-overflow: ellipsis; white-space: nowrap; overflow: hidden; text-transform: none; color: var(--navy); margin: 0;}
                 .text span {                        font-size: 18px; line-height: 26px; font-weight: 400; color: var(--navy); margin: 0;}
             }
             
@@ -98,6 +98,7 @@ section.stories-grid {                          padding: 0 10% 100px; background
         p b {                           font-weight: 700;}
         p .italic {                     font-style: italic;}
         p span {                        font-family: 'Montserrat', sans-serif; font-weight: 900; display: inline-block; color: var(--red);}
+        p.bottom {                      margin: 0;}
         .image {                        width: calc(100% - 200px); padding: 50px; margin: 0 auto;}
         .image img {                    width: 100%;}
         .blockquote {                   width: calc(100% - 200px); font-size: 56px; line-height: 64px; font-weight: 900; padding: 5px 50px; margin: 30px auto 30px; border-left: 5px solid var(--navy); color: var(--red);}

@@ -42,7 +42,7 @@ const AMYMD = () => {
                     <div className="six order1">
                         <div className="text">
                             <h2>Ask Me <span>Your MD</span></h2>
-                            {/* <p>For the month of May, Acclinate and Ask Me Your MD are providing the B-INCLUDED community with free, 24/7 chat services with licensed doctors.</p> */}
+                            <p>For the month of May, Acclinate and Ask Me Your MD are providing the B-INCLUDED community with 24/7 chat services with licensed doctors.</p>
                             <p>Ask Me Your MD is a Black-owned healthcare technology platform that provides direct digital access to licensed doctors that can answer medical questions. For too long, this level of white-glove access to doctors hasn't been readily available for communities of color. This partnership offers another tool for people of color to help them make better informed health decisions.</p>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ const AMYMD = () => {
 
             <section className="landCTA">
                 <div className="text">
-                    <h3>Join b-included and chat with a doctor <span>for free</span></h3>
+                    <h3>Join b-included and <span>chat with a doctor</span></h3>
                     <a className="content button solid landingCTA" href="https://get.nowincluded.com/amymd-b-included" target="_blank" rel="noopener noreferrer">Join B-INCLUDED</a>
                 </div>
             </section>

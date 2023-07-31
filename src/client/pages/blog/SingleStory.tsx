@@ -89,7 +89,7 @@ const SingleStory = () => {
 
                     })}
                     <div className="ten columns">
-                        <div className="buttonwrap center">
+                        <div className="buttonwrap center storiesb">
                             <Link className="content button solid" to="/stories">Back To Featured Stories</Link>
                         </div>
                     </div>
@@ -99,8 +99,11 @@ const SingleStory = () => {
             {/* SHARE YOUR STORY SECTION */}
             <ShareYourStory />
 
+            
+
         </>
     );
 }
 
 export default SingleStory;
+

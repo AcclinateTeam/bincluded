@@ -51,6 +51,7 @@ import Events from './pages/events/Events';
 import Miles from './pages/events/Miles';
 import Gallery from './pages/gallery/Gallery';
 import MilesGallery from './pages/gallery/MilesGallery';
+import FountainHeights from './pages/events/FountainHeights';
 
 library.add(fab, fas, far);
 
@@ -96,6 +97,7 @@ const App = (props: AppProps) =>
 					{/* Stories Paths */}
 					<Route path="/events" element={<Events />} />
 					<Route path="/events/miles" element={<Miles />} />
+					<Route path="/events/fountainheights" element={<FountainHeights />} />
 
 					{/* Gallery Paths */}
 					<Route path="/gallery" element={<Gallery />} />

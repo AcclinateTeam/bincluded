@@ -89,7 +89,7 @@ const Events = () => {
                                 <div className="ten columns">
                                     <Link to="/events/miles">
                                         <div className="card">
-                                            <div className="image" style={{ backgroundImage: `url("/images/events/seniors/6Q3A9343.jpg")` }}></div>
+                                            <div className="image" style={{ backgroundImage: `url("/images/events/seniors/6Q3A9342.jpeg")` }}></div>
                                             <div className="text">
                                                 <h4>March 2023</h4>
                                                 <h3>Bridging the Gap - Seniors 'R Us</h3>

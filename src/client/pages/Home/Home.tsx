@@ -94,17 +94,6 @@ const Home = () => {
             </section>
 
             {/* HOME - Who We Are Section */}
-            {/* <section className="whoWeAre">
-                <div className="image">
-                    <img src="/images/theme/homewhoweare.png" alt="Who_We_Are" />
-                </div>
-                <div className="text">
-                    <h2>We <span className="blue">Listen.</span><br /> We <span className="blue">Represent.</span><br /> We <span className="blue">Share.</span></h2>
-                    <p>For too long, the Black community has navigated barriers to physical, mental, and financial wellbeing. There must be a space where the community can come together, access helpful resources, and validate lived experiences. <Logo color="#287FDD" /> is a platform to help navigate and remove barriers. A place designed for us, by us.</p>
-                </div>
-            </section> */}
-
-            {/* HOME - Who We Are Section */}
             <section className="whoWeAre">
                 <div className="image">
                     <img src="/images/theme/homewhoweare2.png" alt="Who_We_Are" />

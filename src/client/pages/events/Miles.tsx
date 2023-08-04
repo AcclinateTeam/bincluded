@@ -44,16 +44,16 @@ const SinglePartner = () => {
                     </div>
                     <div className="six columns">
                         <div className="content">
-                            <p>Dolor sit amet consectetur elit sed do eiusmod tempor incd idunt labore et dolore magna aliqua enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat. Duis aute irure dolor in repre hen derit in voluptate velit esse.</p>
-                            <p>Cillum dolore eu fugiat nulla pariatur cepteur sint occaecat cupidatat eaque ipsa quae illo proident sunt in culpa qui officia deserunt mollit anim id est laborum perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore laudant rem aperiam eaque ipsa quae ab illo inventore veritatis quasi architecto. </p>
+                            <p>Through “Bridging the Gap,” we are aiming to help communities of color recognize ways they can use artificial intelligence and machine learning to be healthy.</p>
+                            <p>Over the last few months, we have hosted interactive educational sessions about artificial intelligence and machine learning that have reached over 265 Birmingham residents. This is remarkable as communities of color have been historically left out of conversations around the latest technology in healthcare and how it can be used to help people have better health outcomes.</p>
                             <h3>Event Details</h3>
                             <ul>
-                                <li>Meeting 1 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Meeting 2 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Meeting 3 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Meeting 4 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Meeting 5 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-                                <li>Meeting 6 - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                                <li>Meeting 1 - Curator Pilot</li>
+                                <li>Meeting 2 - Health Equity and AI/ML in Healthcare</li>
+                                <li>Meeting 3 - Participatory Action Research: Research Topic</li>
+                                <li>Meeting 4 - Data Collection</li>
+                                <li>Meeting 5 - Data Evaluation</li>
+                                <li>Meeting 6 - Community Member Lead Report(s)</li>
                             </ul>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ const SinglePartner = () => {
                             </div>
 
                             {/* Deleted miles video */}
-                            
+
                             <div className="five columns">
                                 <div className="card small">
                                     <video controls>
@@ -79,7 +79,7 @@ const SinglePartner = () => {
                                 </div>
                             </div>
                             <div className="five columns">
-                            <div className="card small">
+                                <div className="card small">
                                     <video controls>
                                         <source src="/images/events/miles/rosemiles.mp4" type="video/mp4" />
                                         Sorry, your browser doesn't support videos.
@@ -95,61 +95,61 @@ const SinglePartner = () => {
                                 <h2>Event Photos</h2>
                             </div>
 
-                            <div className="third columns">
+                            <div className="fourth columns">
                                 <div className="photo">
                                     <ImageModal imageUrl="/images/events/miles/IMG_0018.jpg" />
                                 </div>
                             </div>
 
-                            <div className="third columns">
+                            <div className="fourth columns">
                                 <div className="photo">
                                     <ImageModal imageUrl="/images/events/miles/_Q4A4570.jpg" />
                                 </div>
                             </div>
 
-                            <div className="third columns">
-                                <div className="photo">
-                                    <ImageModal imageUrl="/images/events/miles/_Q4A4661.jpg" />
-                                </div>
-                            </div>
-
-                            <div className="third columns">
-                                <div className="photo">
-                                    <ImageModal imageUrl="/images/events/miles/_Q4A4882-Edit.jpg" />
-                                </div>
-                            </div>
-
-                            <div className="third columns">
-                                <div className="photo">
-                                    <ImageModal imageUrl="/images/events/miles/8Q4A4389.jpg" />
-                                </div>
-                            </div>
-
-                            <div className="third columns">
-                                <div className="photo">
-                                    <ImageModal imageUrl="/images/events/miles/8Q4A4935.jpg" />
-                                </div>
-                            </div>
-
-                            <div className="third columns">
-                                <div className="photo">
-                                    <ImageModal imageUrl="/images/events/miles/1I2A1482.jpg" />
-                                </div>
-                            </div>
-                            
-                            <div className="third columns">
-                                <div className="photo">
-                                    <ImageModal imageUrl="/images/events/miles/6Q3A8925.jpg" />
-                                </div>
-                            </div>
-                            
-                            <div className="third columns">
+                            <div className="fourth columns">
                                 <div className="photo">
                                     <ImageModal imageUrl="/images/events/miles/8Q4A4418.jpg" />
                                 </div>
                             </div>
 
-                            
+                            <div className="fourth columns">
+                                <div className="photo">
+                                    <ImageModal imageUrl="/images/events/miles/_Q4A4882-Edit.jpg" />
+                                </div>
+                            </div>
+
+                            <div className="fourth columns">
+                                <div className="photo">
+                                    <ImageModal imageUrl="/images/events/miles/8Q4A4389.jpg" />
+                                </div>
+                            </div>
+
+                            <div className="fourth columns">
+                                <div className="photo">
+                                    <ImageModal imageUrl="/images/events/miles/8Q4A4935.jpg" />
+                                </div>
+                            </div>
+
+                            <div className="fourth columns">
+                                <div className="photo">
+                                    <ImageModal imageUrl="/images/events/miles/1I2A1482.jpg" />
+                                </div>
+                            </div>
+
+                            <div className="fourth columns">
+                                <div className="photo">
+                                    <ImageModal imageUrl="/images/events/miles/6Q3A8925.jpg" />
+                                </div>
+                            </div>
+
+                            {/* <div className="fourth columns">
+                                <div className="photo">
+                                    <ImageModal imageUrl="/images/events/miles/8Q4A4418.jpg" />
+                                </div>
+                            </div> */}
+
+
                             <div className="third columns"></div>
                             <div className="third columns"></div>
                             <div className="third columns"></div>

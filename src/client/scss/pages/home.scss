@@ -122,11 +122,11 @@ section.landing {
 
 
 // HOME PAGE WHO WE ARE STYLES
-section.whoWeAre {                              padding: 100px 10%; display: flex; flex-flow: row wrap; background-color: var(--navy);
+section.whoWeAre {                              padding: 100px 10%; display: flex; flex-flow: row wrap; background-color: var(--white);
     .text {                                     width: 60%; order: 2; margin: 25px 0 0;
-        h2 {                                        font-size: 64px; line-height: 64px; display: inline-block; color: var(--white);}
+        h2 {                                        font-size: 82px; line-height: 82px; display: inline-block; color: var(--navy);}
         h2 span {                                   display: inline-block; color: var(--blue);}
-        p {                                         width: 100%; font-size: 24px; line-height: 36px; margin: 30px 0 0; color: var(--white);}
+        p {                                         width: 100%; font-size: 24px; line-height: 36px; margin: 30px 0 0; color: var(--navy);}
     }
     .image {                                    width: 30%; margin: 0 10% 0 0; order: 1;
         img {                                       width: 100%;}
@@ -154,7 +154,7 @@ section.HomeWhatWeDo {                      padding: 100px 10% 0; display: flex;
 
 // HOME RESOURCE PORTAL STYLES
 section.portal {                 background-color: var(--navy); padding: 100px 10%;
-    .text {                             margin: 0 50px 0 0;
+    .text {                             margin: 0 50px 0 0; text-align: center;
         h2 {                                font-weight: 900; text-transform: uppercase; color: var(--white);
             span {                              color: var(--blue);}
         }
@@ -189,12 +189,19 @@ section.portal {                 background-color: var(--navy); padding: 100px 1
         .cards:hover a {                    color: var(--navy);}
 }
     .deck a {                                 color:var(--black); text-decoration: none;} 
-    .ss360-custom-search {                    justify-content: left;}
+    .ss360-custom-search {                    justify-content: center;}
     .ss360-ac-bg {                              background-color: var(--blue);}
     .ss360-ac-b {                               background-color: var(--blue);}
     .ss360-custom-search .ss360-custom-search__searchbox {                  width: 75%; border: 2px solid var(--blue);}
     .ss360-custom-search .ss360-custom-search__searchbutton {               border: 2px solid var(--blue);}
     .ss360-custom-search .ss360-custom-search__searchbutton:hover {               border: 2px solid #3d8fff;}
+    .search {                             margin: 50px 50px 0 0; text-align: center;
+        h2 {                                font-weight: 900; text-transform: uppercase; color: var(--white);
+            span {                              color: var(--blue);}
+        }
+        p {                                 font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; padding: 30px 0 50px; font-weight: 400; color: var(--white);}
+        h4 {                                color: var(--red);}
+    }
 } 
 
 // HOME PAGE BETTERING BIRMINGHAM STYLES

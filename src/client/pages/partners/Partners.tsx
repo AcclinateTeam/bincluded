@@ -100,6 +100,26 @@ const Partners = () => {
 
                         <div className="container panel">
                             {cards.map((p: any, index) => {
+                                if (p.id >= 1) {
+                                    return (
+                                        <div className="third columns panet" key={index}>
+                                            <Link to={`/partners/${p.slug}`}>
+                                                <div className="frame">
+                                                    <div className="panes" style={{ backgroundImage: `url(${p.logo})` }}></div>
+                                                    <div className="text">
+                                                        <h3>{p.title}</h3>
+                                                        <p>Featured Partner</p>
+                                                    </div>
+                                                </div>
+                                            </Link>
+                                        </div>
+                                    )
+                                }
+                            })}
+                        </div>
+
+                        {/* <div className="container panel">
+                            {cards.map((p: any, index) => {
                                 if (p.id <= 3) {
                                     return (
                                         <div className="third columns panet" key={index}>
@@ -136,7 +156,7 @@ const Partners = () => {
                                     )
                                 }
                             })}
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </section>

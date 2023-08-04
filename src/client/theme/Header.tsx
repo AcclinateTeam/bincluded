@@ -94,13 +94,14 @@ const Header = () => {
                                             <li><Link to='/resources/health'>Health</Link></li>
                                             <li><Link to='/resources/family'>Family</Link></li>
                                             <li><Link to='/resources/careers'>Careers</Link></li>
-                                            <li><Link to='/resources/amymd'>Ask Me Your MD</Link></li>
+                                            <li><Link to='/toolkit'>ToolKit</Link></li>
+                                            {/* <li><Link to='/resources/amymd'>Ask Me Your MD</Link></li> */}
                                         </ul>
                                     </li>
+                                    <li><Link to='/events'>Events</Link></li>
                                     <li><a href="/trials" role="button">Clinical Research</a></li>
                                     <li><Link to='/covid'>COVID-19</Link></li>
-                                    <li><Link to='/partners'>Partners</Link></li>
-                                    <li><Link to='/toolkit'>ToolKit</Link></li>
+                                    <li><Link to='/partners'>Partners</Link></li>                                    
                                     <li className="logins"><a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer" onClick={eventTrack.bind(this, "Header", "Sign Up Button", "Button")}>Join the Community</a></li>
                                 </ul>
                             </nav>

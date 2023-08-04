@@ -447,12 +447,12 @@
 
 
     // SHARE YOUR STORY STYLES
-    section.shareyourstory {                      margin: 20px 15% 0; display: flex; flex-flow: row wrap;                  
+    section.shareyourstory {                      margin: 20px 15% 100px; display: flex; flex-flow: row wrap;                  
         .container {                             border-radius: 5px;}
         .image {                                 width: 40%; margin: 0 5% 0 0;}
         .image img {                             width: 100%; padding: 0; margin: 0 0 -3px;}
-        .text {                                  width: 55%; height: 308px; margin: 50px 0 0;}
-        .text h2 {                               font-size: 44px; line-height: 44px; text-transform: uppercase; margin: 0 0 30px; color: var(--navy);
+        .text {                                  width: 55%; height: 308px; margin: 0 0 0;}
+        .text h2 {                               font-size: 44px; line-height: 44px; text-transform: uppercase; margin: 0 0 20px; color: var(--navy);
             span {                                  color: var(--blue);}
         }
         .text p {                                font-family: 'DM Sans', sans-serif; font-size: 20px; line-height: 28px; margin: 0 0 30px; font-weight: 700; color: var(--navy); }

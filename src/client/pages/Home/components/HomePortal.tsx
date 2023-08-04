@@ -9,7 +9,13 @@ const HomePortal = () => {
         <>
             <section className="portal">
                 <div className="container">
-                    <div className="third columns">
+                    <div className="ten columns">
+                        <div className="text">
+                            <h2>Resources At Your <span className="blue">Fingertips</span></h2>
+                            <p>Learn more about each of the resources available to you in the Birmingham area.</p>
+                        </div>
+                    </div>
+                    {/* <div className="ten columns">
                         <div className="text">
                             <h2>Resources<br /> At Your <span className="blue">Fingertips</span></h2>
                             <p>Learn more about each of the resources available to you in the Birmingham area.</p>
@@ -17,11 +23,11 @@ const HomePortal = () => {
                             <p>Use the search feature below to search our resources.</p>
                             <SiteSearch360 siteId="b-included.com_1" />
                         </div>
-                    </div>
-                    <div className="twothird columns">
+                    </div> */}
+                    <div className="ten columns">
                         <div className="deck">
                             <div className="container">
-                                <div className="ten columns featured">
+                                {/* <div className="ten columns featured">
                                     <div className="six columns text">
                                         <h4>Featured Resource</h4>
                                         <p>B-INCLUDED members can get their health questions and concerns answered by a licensed doctor 24/7, through Ask Me Your MD.</p>
@@ -30,7 +36,7 @@ const HomePortal = () => {
                                     <div className="four columns image">
                                         <img src="/images/partners/amymd.png" alt="" />
                                     </div>
-                                </div>
+                                </div> */}
                                 <div className="third columns split">
                                     <Link to="/resources/health">
                                         <div className="cards shadow hover">
@@ -91,6 +97,15 @@ const HomePortal = () => {
                                         </div>
                                     </Link>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="ten columns">
+                        <div className="search">
+                            <h2>Looking for something <span className="blue">specific?</span></h2>
+                            <p>Use the search feature below to search our resources.</p>
+                            <div className="searchbox">
+                                <SiteSearch360 siteId="b-included.com_1" />
                             </div>
                         </div>
                     </div>

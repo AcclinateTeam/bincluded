@@ -79,8 +79,8 @@ const Events = () => {
                                             <div className="text">
                                                 <h4>March 2023</h4>
                                                 <h3>Bridging the Gap - Miles College</h3>
-                                                <p>Oben (formerly Lapis) is a culturally competent digital health treatment that safely and sustainably reverses heart disease without medication or surgery. Starting off with hypertension, the treatment is based on the clinical work of Lapis's Chief Medical Officer (Michelle Routhenstien)</p>
-                                                <p className="link">Visit Oben Health <FontAwesomeIcon className="icon" icon="arrow-right" /></p>
+                                                <p>Over the last few months, we have hosted interactive educational sessions about artificial intelligence and machine learning that have reached over 265 Birmingham residents. This is remarkable as communities of color have been historically left out of conversations around the latest technology in healthcare and how it can be used to help people have better health outcomes.</p>
+                                                <p className="link">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></p>
                                             </div>
                                         </div>
                                     </Link>
@@ -93,14 +93,14 @@ const Events = () => {
                                             <div className="text">
                                                 <h4>March 2023</h4>
                                                 <h3>Bridging the Gap - Seniors 'R Us</h3>
-                                                <p>Oben (formerly Lapis) is a culturally competent digital health treatment that safely and sustainably reverses heart disease without medication or surgery. Starting off with hypertension, the treatment is based on the clinical work of Lapis's Chief Medical Officer (Michelle Routhenstien)</p>
-                                                <p className="link">Visit Oben Health <FontAwesomeIcon className="icon" icon="arrow-right" /></p>
+                                                <p>Over the last few months, we have hosted interactive educational sessions about artificial intelligence and machine learning that have reached over 265 Birmingham residents. This is remarkable as communities of color have been historically left out of conversations around the latest technology in healthcare and how it can be used to help people have better health outcomes.</p>
+                                                <p className="link">Read More <FontAwesomeIcon className="icon" icon="arrow-right" /></p>
                                             </div>
                                         </div>
                                     </Link>
                                 </div>
 
-                                <div className="ten columns">
+                                {/* <div className="ten columns">
                                     <Link to="/events/miles">
                                         <div className="card">
                                             <div className="image" style={{ backgroundImage: `url("/images/events/bushconx/IMG_6172.jpg")` }}></div>
@@ -112,7 +112,7 @@ const Events = () => {
                                             </div>
                                         </div>
                                     </Link>
-                                </div>
+                                </div> */}
 
 
                             </div>

@@ -9,21 +9,14 @@ const HomePortal = () => {
         <>
             <section className="portal">
                 <div className="container">
+
                     <div className="ten columns">
                         <div className="text">
                             <h2>Resources At Your <span className="blue">Fingertips</span></h2>
                             <p>Learn more about each of the resources available to you in the Birmingham area.</p>
                         </div>
                     </div>
-                    {/* <div className="ten columns">
-                        <div className="text">
-                            <h2>Resources<br /> At Your <span className="blue">Fingertips</span></h2>
-                            <p>Learn more about each of the resources available to you in the Birmingham area.</p>
-                            <h4>Looking for something <span className="blue">specific?</span></h4>
-                            <p>Use the search feature below to search our resources.</p>
-                            <SiteSearch360 siteId="b-included.com_1" />
-                        </div>
-                    </div> */}
+
                     <div className="ten columns">
                         <div className="deck">
                             <div className="container">
@@ -37,7 +30,86 @@ const HomePortal = () => {
                                         <img src="/images/partners/amymd.png" alt="" />
                                     </div>
                                 </div> */}
+
                                 <div className="third columns split">
+                                    <div className="cards1">
+                                        <Link to="/resources/health">
+                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0938.jpg)` }}></div>
+                                            <div className="content">
+                                                <h4>Health</h4>
+                                                <p>Find reliable, fact-based health information you can trust.</p>
+                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+
+                                <div className="third columns split">
+                                    <div className="cards1">
+                                        <Link to="/resources/family">
+                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0943.jpg)` }}></div>
+                                            <div className="content">
+                                                <h4>Family</h4>
+                                                <p>Find information on how  to make your family's health a priority.</p>
+                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+
+                                <div className="third columns split">
+                                    <div className="cards1">
+                                        <Link to="/resources/careers">
+                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0949.jpg)` }}></div>
+                                            <div className="content">
+                                                <h4>Careers</h4>
+                                                <p>Connect with resources to elevate your careers and increase your wealth.</p>
+                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+
+                                <div className="third columns split">
+                                    <div className="cards1">
+                                        <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">
+                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0932.jpg)` }}></div>
+                                            <div className="content">
+                                                <h4>Community</h4>
+                                                <p>Join to the community to like, share, comment, and connect with people like you.</p>
+                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="third columns split">
+                                    <div className="cards1">
+                                        <Link to="/stories">
+                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0951.jpg)` }}></div>
+                                            <div className="content">
+                                                <h4>Stories</h4>
+                                                <p>Share your story! We’d love to feature you.</p>
+                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+
+                                <div className="third columns split">
+                                    <div className="cards1">
+                                        <Link to="/covid">
+                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0959.jpg)` }}></div>
+                                            <div className="content">
+                                                <h4>COVID-19</h4>
+                                                <p>Stay up-to-date on the latest COVID-19 news, stats, and resources.</p>
+                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+
+                                {/* <div className="third columns split">
                                     <Link to="/resources/health">
                                         <div className="cards shadow hover">
                                             <FontAwesomeIcon className="icon" icon="user-md" />
@@ -96,7 +168,7 @@ const HomePortal = () => {
                                             <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
                                         </div>
                                     </Link>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

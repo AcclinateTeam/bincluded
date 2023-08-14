@@ -60,6 +60,20 @@ const Home = () => {
             behavior: 'smooth'
         });
     }
+    
+    useEffect(() => {
+        let hero = document.getElementById('heroSlide');
+        let heroHead = document.getElementById('headText');
+        let heroPar = document.getElementById('headPar');
+        let heroButt = document.getElementById('headButt');
+        let heroLink = document.getElementById('headLink');
+
+        hero!.style.height = '100%';
+        heroHead!.style.cssText = 'margin-top: 0px; opacity: 1;';
+        heroPar!.style.cssText = 'margin-top: 0px; opacity: 1;';
+        heroButt!.style.cssText = 'margin-top: 0px; opacity: 1;';
+        heroLink!.style.cssText = 'margin-top: 0px; opacity: 1;';
+    }, []);
 
     return (
         <>
@@ -71,30 +85,31 @@ const Home = () => {
 
             {/* JUMBOTRON COMPONENT */}
             <section id="hero" className="home">
-                <div className="callbg">
+                <div id="heroSlide" className="callbg">
                     <video playsInline autoPlay muted loop id="myVideo">
                         <source src='images/theme/hero.mp4' type="video/mp4" />
                         Your browser does not support HTML5 video.
                     </video>
                 </div>
-                <div className="callout">
-                    <div className="calltext">
-                        <h2>Stand Up For Your Health</h2>
-                        <p>In the <Logo color="#ffffff" /> community, you and fellow Jefferson County residents come together to share your health stories, connect to local resources, and inspire each other to maximize health and wellbeing.</p>
-                    </div>
-                    <div className="callbutton">
-                        <a className="button signup joinCommunity" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer" aria-label="Join the NOWINCLUDED Community - Opens in a new tab">Join The Community</a>
-                        <Link className="button learnmore" to="/whynow">Learn More</Link>
-                    </div>
-                </div>
-                <div className="scrollDown">
+                {/* <div className="scrollDown">
                     <FontAwesomeIcon icon="arrow-down" onClick={scrollToRef} />
                     <h3>Scroll Down</h3>
+                </div> */}
+            </section>
+
+            <section className="homeintro">
+                <div className="header">
+                    <h2 id="headText">Stand Up For Your Health</h2>
+                </div>
+                <div className="text">
+                    <p id="headPar">For too long, the Black community has navigated barriers to physical, mental, and financial wellbeing. There must be a space where the community can come together, access helpful resources, and validate lived experiences. <Logo color="#050236" /> is a platform to help navigate and remove barriers. A place designed for us, by us.</p>
+                    <a id="headButt" className="button signup joinCommunity" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer" aria-label="Join the NOWINCLUDED Community - Opens in a new tab">Join The Community</a>
+                    <Link id="headLink" className="button learnmore" to="/whynow">Learn More</Link>
                 </div>
             </section>
 
             {/* HOME - Who We Are Section */}
-            <section className="whoWeAre">
+            {/* <section className="whoWeAre">
                 <div className="image">
                     <img src="/images/theme/homewhoweare2.png" alt="Who_We_Are" />
                 </div>
@@ -102,7 +117,7 @@ const Home = () => {
                     <h2>We <span className="blue">Listen.</span><br /> We <span className="blue">Represent.</span><br /> We <span className="blue">Share.</span></h2>
                     <p>For too long, the Black community has navigated barriers to physical, mental, and financial wellbeing. There must be a space where the community can come together, access helpful resources, and validate lived experiences. <Logo color="#287FDD" /> is a platform to help navigate and remove barriers. A place designed for us, by us.</p>
                 </div>
-            </section>
+            </section> */}
 
             {/* HOME - Recent Events Section */}
             {/* <section className="eventshome">

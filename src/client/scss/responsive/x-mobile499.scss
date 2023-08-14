@@ -163,18 +163,27 @@
     /* HOME PAGE SCSS
     ================================================== */
     // HOME PAGE CALLOUT STYLES
-    section.home {                                                 width: 100%; height: 100vh; position: relative;  background-color: #050236; overflow: hidden;
-        video {                                           object-fit: contain; opacity: 0.9; object-position: -698px;}     
-        .calloutbg {                                      width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
+    section.home {                           width: 100%; height: 80vh; position: relative; overflow: hidden;
+        video {                                  object-fit: contain; object-position: -698px;}     
+        .calloutbg {                             width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
         .callout {                               width: 90%; height: 500px; position: absolute; top: 350px; left: 5%;}
         .callout .calltext {                     width: 100%; display: block;}
         .callout .calltext h2 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 55px; line-height: 55px; font-weight: 900; color: #fff; margin: 0 0 30px;}
         .callout .calltext p {                   width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff; }
         .callout .callbutton {                   margin: 30px 0 0; text-align: center; display: block;}
     }
+
+    section.homeintro {                              width: 80%; height: auto; margin: 0 10% 50px; padding: 0; display: flex; flex-flow: column;
+        .header {                                   width: 100%; margin: 0; padding: 20px 0;
+            h2 {                                        font-size: 37px; line-height: 45px; display: inline-block;}
+        }
+        .text {                             width: 100%;
+            p {                                 font-size: 20px; line-height: 32px; margin: 0 0 50px;}
+        }
+    }
     
     /* CALLOUT BUTTONS */
-    .button {                                       font-family: 'Montserrat', sans-serif; text-transform: uppercase; border-radius: 5px; font-weight: 900; line-height:52px; margin: 0 15px 0 0;}
+    .button {                                       font-family: 'Montserrat', sans-serif; margin: 0 0 30px; display: block; font-size: 18px; text-align: center; text-transform: uppercase; border-radius: 5px; font-weight: 900; line-height:52px; margin: 0 0 15px; padding: 0;}
     // HOME BUTTON STYLES
     .home .button {                                 width: 90%; display: inline-block; margin: 0 0 15px; line-height: 16px;}  
 
@@ -207,7 +216,7 @@
     }
  
     // HOME RESOURCE PORTAL STYLES
-    section.portal {                 background-color: var(--navy); padding: 5%;
+    section.portal {                 background-color: var(--navy); padding: 50px 5%;
         .text {                             margin: 0;
             h2 {                                font-size: 38px; line-height: 38px; font-weight: 900; text-transform: uppercase; color: var(--white);
                 span {                              color: var(--blue);}

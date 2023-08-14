@@ -128,7 +128,9 @@ p { color: var(--navy);}
 svg.logo {                                  height: 16px; display: inline-block;}
 // /* #GLOBAL TRANSITION STYLES
 // ================================================== */
-.button.solid, .button.partner, .button.signup, .button.learnmore, .cards, .cards h4, .cards p, .cards a, .cards svg, .frames, .homepartners .image img, section.stories-grid .case .rack .frames .text a, section.stories-grid .case .rack .frames .text.lead a, section.stories-grid .case .rack .frames .text a svg, section.covid19 .panes, section.eventshome .photo {                     transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+.button.solid, .button.partner, .button.signup, .button.learnmore, .cards, .cards h4, .cards p, .cards a, .cards svg, .frames, .homepartners .image img, section.stories-grid .case .rack .frames .text a, section.stories-grid .case .rack .frames .text.lead a, section.stories-grid .case .rack .frames .text a svg, section.covid19 .panes, section.eventshome .photo, .cards1, .cards1 .bgImage {                     transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+
+.callbg, #headText, section.homeintro .header .head h2, section.homeintro .text p  {                     transition: all 1500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 1500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 1500ms cubic-bezier(0.45, 0, 0.55, 1);}
 
 /* #RESPONSIVE SCSS IMPORTS
 ================================================== */ 

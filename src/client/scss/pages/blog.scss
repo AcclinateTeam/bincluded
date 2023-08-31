@@ -3,12 +3,12 @@
 // HERO STYLES
 #hero.hero.blog {                                
     .callout {
-        .text {                     margin: 110px 0 0;}
+        .text {                     margin: 35px 0 0;}
     }
 }
 
 // BLOG PAGE STORIES STYLES
-section.stories {               padding: 0 10%; background-color: #fff;
+section.stories {                height: 0%; overflow: hidden; padding: 0 10%; background-color: #fff;
     .header h2 {                        text-transform: uppercase; text-align: center; color: var(--navy);}
     .header h2 span {                   display: inline-block; color: var(--blue);}
     .header p {                         font-size: 24px; line-height: 32px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}
@@ -51,7 +51,7 @@ section.stories-grid {                          padding: 0 10% 100px; background
                 }
                 .image.lead {                       width: 40%; height: 450px; float: left; margin: 0 50px 0 0;}
                 .text {                             width: 100%; background-color: var(--white);
-                    h4 {                            font-size: 24px; line-height: 32px; min-height: 64px; font-weight: 900; margin: 0 0 15px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--red);}
+                    h4 {                            font-size: 20px; line-height: 28px; min-height: 64px; font-weight: 900; margin: 10px 0 15px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--red);}
                     span {                          font-size: 14px; font-weight: 700; margin: 20px 0 0; color: var(--blue);}
                     p {                             font-size: 18px; line-height: 26px; border: none; border-left: 3px solid #050236; margin: 20px 0; padding: 0 0 0 15px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; color: var(--navy);}
                     a {                             font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 700; text-transform: none; text-decoration: none; color: var(--red);
@@ -82,14 +82,14 @@ section.stories-grid {                          padding: 0 10% 100px; background
         h3 {                            text-align: none; margin: 0 0 10px 0; }      
         h4 {                            color: var(--red); text-transform: none; padding: 0 0 10px;}
         h6 {                            margin: 0 0 5px;}
-        p {                             font-size: 24px; line-height: 32px; display: inline-block; margin: 0 0 30px;}
+        p {                             font-size: 20px; line-height: 28px; display: inline-block; margin: 0 0 30px;}
         p a {                           color: var(--red);}
         a.center {                      text-align: center;}
         ul {                            margin: 0 0 0 10px;}
         li {                            font-size: 18px; line-height: 26px;}
         ul.list, ol.list {                   margin: 0 0 30px 60px;}
-        ul.list li {                    font-size: 24px; line-height: 32px; list-style-type: disc; font-weight: 700; color: var(--red);}
-        ol.list li {                    font-size: 24px; line-height: 32px; margin: 0 0 20px; color: var(--navy);}
+        ul.list li {                    font-size: 20px; line-height: 28px; list-style-type: disc; font-weight: 700; color: var(--red);}
+        ol.list li {                    font-size: 20px; line-height: 28px; margin: 0 0 20px; color: var(--navy);}
         ol.list li b {                  font-weight: 700; color: var(--red);}
 
 
@@ -104,7 +104,7 @@ section.stories-grid {                          padding: 0 10% 100px; background
         .blockquote {                   width: calc(100% - 200px); font-size: 56px; line-height: 64px; font-weight: 900; padding: 5px 50px; margin: 30px auto 30px; border-left: 5px solid var(--navy); color: var(--red);}
         .blockquote span {              font-size: 16px; font-weight: 500;}
     }
-    .storie iframe {                 height: 650px; margin: 50px 0;}
+    .storie iframe {                 width: 70%; height: 650px; margin: 100px 15% 50px;}
     .storie span {                   font-weight: 900; color: var(--blue);}
     .storie h2 {                     font-size: 56px; line-height: 56px; text-transform: none; color: var(--navy);}
     .storie h4 {                     color: var(--red);}

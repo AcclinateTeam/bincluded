@@ -1,32 +1,57 @@
 /* EVENTS SCSS
 ================================================== */
-// HERO STYLES
-.upcoming {                     margin: 0 0 100px;          
-    .header {                   margin: 0 0 50px;
-        h2 span {                   display: inline-block; color: var(--blue);}
+section.upcoming {                     margin: 0 10% 50px;
+    .header {                       margin: 0 0 50px;
+        h2 span {                       display: inline-block; color: var(--blue);}
     }
 
-    .panel {
-        .card {                                         width: calc(100% - 40px); height: 400px; margin: 0 20px 40px; border-radius: 15px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); background-color: var(--white);
-        .image {               width: 45%; height: 100%; border-radius: 15px; background-repeat: no-repeat; background-size: cover; background-position: center; display: inline-block; background-color: var(--white);}
-        .text {                width: calc(55% - 60px); height: 240px; padding: 30px; float: right;}
-        .text h4 {              font-size: 18px; line-height: 26px; text-transform: none; text-decoration: none; color: var(--blue); margin: 0;}
-        .text h3 {             font-size: 34px; line-height: 42px; text-transform: none; font-weight: 700; color: var(--navy); margin: 0;}
-        .text p {              font-size: 24px; line-height: 32px; font-weight: 300; border: none; padding: 10px 0 20px; color: var(--navy); margin: 0 0 20px;}
-        .text p.link {              font-family: 'Montserrat', sans-serif; font-size: 28px; line-height: 28px; font-weight: 700; border: none; padding: 0; text-decoration: none; color: #050236; margin: 0;}
-        .text p.link svg {          font-size: 26px; line-height: 28px; color: var(--red);}
-    }    
-    .card:hover {                      transform: scale(1.03);} 
-        // .card {                 display: flex; flex-direction: column; background-color: #f09;
-        //     .image {                    width: 40%; display: inline-block; background-color: var(--blue);}
-        //     .text {
-        //         h3 {                    font-size: 24px; line-height: 28px; text-transform: none; text-decoration: none;}
-        //         p {                     font-size: 18px; line-height: 26px; margin: 0 0 20px; color: #050236;}
-        //     }
-        // }
+    .slider {                       width: 100%; display: flex; flex-flow: row wrap; column-count: 3; gap: 50px; margin: 0 0 50px;         
+        .slides {                   width: 50%; display: flex; flex-flow: row nowrap; flex: 1 1 35%; border-radius: 0 30px 0 30px; overflow: hidden; background-color: var(--navy);
+            .date {                     width: 35%; height: 200px; display: flex; justify-content: center; flex-flow: column; text-align: center; background-color: var(--navy);
+                h2 {                        font-size: 95px; line-height: 95px; margin: 0; color: var(--white);}
+                h3 {                        font-size: 20px; color: var(--white);}
+                span {                      font-size: 14px; color: var(--white);
+                    svg {                       color: var(--red);}
+                }
+            }
+            .details {                  width: 100%; padding: 30px 30px 30px 0;
+                h3 {                        font-size: 24px; line-height: 32px; text-transform: none; color: var(--blue);}
+                p {                         height: 78px; font-size: 18px; line-height: 26px; margin: 0 0 20px; color: var(--white);}
+                ul {
+                    li {                        font-size: 14px; line-height: 22px; margin: 0 8px 0 0; display: inline-block; color: var(--white);
+                        svg {                       color: var(--red);}
+                    }
+                }
+            }
+            .action {                   width: 20%; display: flex; flex-direction: column; justify-content: center; text-align: center; background-color: var(--red);
+                p {                         font-size: 24px; line-height: 32px; color: var(--white);}
+            }
+        }
+        .slides:hover {            transform: scale(1.025);}
     }
 }
 
+.recent {                       margin: 0 0 100px; margin: 0 10% 100px;          
+    .header {                       margin: 0 0 50px;
+        h2 span {                       display: inline-block; color: var(--blue);}
+    }
+    .panel {                        display: flex; flex-wrap: row wrap; gap: 50px;       
+        .pane {                         width: 50%; height: 650px; overflow: hidden; 
+            .pan {                          width: 100%; height: 100%; border-radius: 60px 0 60px 0; overflow: hidden; position: relative; background-color: var(--navy);
+                .image {                        width: 100%; height: 100%; opacity: 0.5; position: absolute; top: 0; left: 0; background-position: center; background-repeat: no-repeat; background-size: cover; color: #90f;}
+                .text {                         width: calc(100% - 80px); padding: 40px; position: absolute; bottom: 0; left: 0; background: linear-gradient(0deg, rgba(5,2,54,1) 20%, rgba(255,255,255,0) 100%);
+                    h3 {                            font-size: 24px; line-height: 32px; text-transform: none; text-decoration: none; color: var(--white); margin: 0 0 10px;}
+                    h4 {                            font-size: 18px; line-height: 26px; text-transform: none; text-decoration: none; color: var(--blue); margin: 0;}
+                    p {                             font-size: 24px; line-height: 32px; margin: 0 0 20px; color: var(--white);}
+                    p.link {                        color: var(--red); text-decoration: none; margin: 0; font-weight: 900;}
+                    p.link svg {                    color: var(--white);}
+                }
+            }
+        }
+        .pane:hover {                    transform: scale(1.03); transition: all 0.5s ease-in-out;}
+        .pane:hover .pan .image {           opacity: 1;}
+    }
+}
 
 .singevent {                                           margin: 50px 10%;
     .heading {                              margin: 0 0 50px;}

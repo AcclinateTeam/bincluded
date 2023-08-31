@@ -4,6 +4,7 @@ import Recipes from './recipes';
 import resources from './resources';
 import stories from './stories';
 import partners from './stories';
+import recentEvents from './recentEvents';
 
 
 require('dotenv').config();
@@ -34,5 +35,6 @@ export default {
     blogPosts,
     stories,
     resources,
-    partners
+    partners,
+    recentEvents
 }

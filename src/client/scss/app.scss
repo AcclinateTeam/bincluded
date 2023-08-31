@@ -54,18 +54,34 @@ body {				min-height: 100%; position: relative;}
 /* #GLOBAL STYLES
 ================================================== */
 /* SUB-HERO STYLES */
-#hero.hero {                                background-color: var(--navy);
-    .callout {                                  margin-top: 150px; margin-bottom: 100px;                              
-        .image {                                    float: left; margin: 0 75px 0 0;}
-        .text {                                     
-            h1 {                                        line-height: 85px; margin: 0 0 30px; color: var(--white);}
-            p {                                         width: 80%; font-size: 24px; line-height: 32px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
+#hero.hero {                                    height: 73vh; position: relative; overflow: hidden;
+    .heroSlide {                                    width: 10%; height: 100%; border-radius:  0 0 60px 60px; background-color: var(--navy);}
+    .heroContent {                                  width: 80%; display: flex; flex-flow: row nowrap; position: absolute; top: 170px; left: 10%; border-radius: 0 0 60px 60px;                            
+        .image {                                    width: 50%; height: 450px; display: inline-block; 
+            .bg {                                       width: 0%; height: 450px; border-radius: 0 60px 0 60px; background-color: var(--red);
+                img {                                       width: 0%; height: 450px; display: inline-block; object-fit: cover; border-radius: 0 60px 0 60px;}
+            }
+        }
+        .text {                                     width: 50%; padding: 25px 0 0 75px; opacity: 0;                                
+            h1 {                                        line-height: 75px; margin: 25px 0 30px; color: var(--white);}
+            p {                                         width: 100%; font-size: 24px; line-height: 32px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
         }
     }
-    .blogcall {                                     width: 100%; height: 75vh; overflow: hidden; background-color: var(--navy);
-        img {                                       width: 100%; height: 100%; margin: 150px 0 0; object-fit: cover;}
-    }
+    .blogcall {                                     width: 100%; height: 0%; overflow: hidden; border-radius: 0 0 60px 60px; background-color: var(--navy);
+        img {                                       width: 100%; height: 100%; margin: 150px 0 0 0; object-fit: cover;}
+    }    
     .fill {                                     height:150px;}
+}
+
+#subHero.subHero {                              height: 73vh; position: relative; overflow: hidden;
+    .subCall {                                     width: 100%; height: 0%; overflow: hidden; border-radius: 0 0 60px 60px; background-color: var(--navy);
+        img {                                       width: 100%; height: 100%; margin: 150px 0 0 0; object-fit: cover;}
+    }
+    .fill {                                         height:150px;}
+}
+
+#noHero.noHero {                              height: 100%; position: relative; overflow: hidden;
+    .fill {                                         height:150px; background-color: var(--navy);}
 }
 
 /* BUTTONS */
@@ -128,9 +144,9 @@ p { color: var(--navy);}
 svg.logo {                                  height: 16px; display: inline-block;}
 // /* #GLOBAL TRANSITION STYLES
 // ================================================== */
-.button.solid, .button.partner, .button.signup, .button.learnmore, .cards, .cards h4, .cards p, .cards a, .cards svg, .frames, .homepartners .image img, section.stories-grid .case .rack .frames .text a, section.stories-grid .case .rack .frames .text.lead a, section.stories-grid .case .rack .frames .text a svg, section.covid19 .panes, section.eventshome .photo, .cards1, .cards1 .bgImage {                     transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
+.button.solid, .button.partner, .button.signup, .button.learnmore, .cards, .cards h4, .cards p, .cards a, .cards svg, .frames, .homepartners .image img, section.stories-grid .case .rack .frames .text a, section.stories-grid .case .rack .frames .text.lead a, section.stories-grid .case .rack .frames .text a svg, section.covid19 .panes, section.eventshome .photo, .cards1, .cards1 .bgImage, .panel .panes, section.recent .pane, section.recent .image, section.upcoming .slides {                     transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 500ms cubic-bezier(0.45, 0, 0.55, 1);}
 
-.callbg, #headText, section.homeintro .header .head h2, section.homeintro .text p  {                     transition: all 1500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 1500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 1500ms cubic-bezier(0.45, 0, 0.55, 1);}
+.callbg, #headText, section.homeintro .header .head h2, section.homeintro .text p, .split, div#heroSlide, #bg.bg, img#img, #text.text, #header, .fourth.columns.rack, .subCall, .storie iframe, .text, .wide, .container.visible, .intro.tria, .participate, section.intro .image, section.intro .image img {                     transition: all 1500ms cubic-bezier(0.45, 0, 0.55, 1); -moz-transition: all 1500ms cubic-bezier(0.45, 0, 0.55, 1); -webkit-transition: all 1500ms cubic-bezier(0.45, 0, 0.55, 1);}
 
 /* #RESPONSIVE SCSS IMPORTS
 ================================================== */ 

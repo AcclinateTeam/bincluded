@@ -10,10 +10,11 @@ import moment from 'moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Articles = () => {
-
-    // AUTO-SCROLL
+    // GLOBAL JS
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        const header = document.getElementById('header');
+        header!.style.cssText = 'opacity: 1;';
     }, []);
 
     // FETCH
@@ -33,7 +34,7 @@ const Articles = () => {
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero">
+            <section id="noHero" className="noHero">
                 <div className="fill"></div>
             </section>
 
@@ -60,18 +61,18 @@ const Articles = () => {
                                 if (post.id === postlength) {
                                     return (
                                         <div className="ten columns rack lead" key={index}>
-                                                <div className="frames">
-                                                    <div className="image lead">
-                                                        <Link to={`/articles/${post.slug}`}><img className="image" src={post.imagelink} alt="" /></Link>
-                                                    </div>
-                                                    <div className="text lead">
-                                                        {/* <span>{moment(post._created).format('MMM Do, YYYY')}</span> */}
-                                                        <Link to={`/articles/${post.slug}`}><h4>{post.title}</h4></Link>
-                                                        <p>{post.description}</p>
-                                                        <Link to={`/articles/${post.slug}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
-                                                    </div>
+                                            <div className="frames">
+                                                <div className="image lead">
+                                                    <Link to={`/articles/${post.slug}`}><img className="image" src={post.imagelink} alt="" /></Link>
+                                                </div>
+                                                <div className="text lead">
+                                                    {/* <span>{moment(post._created).format('MMM Do, YYYY')}</span> */}
+                                                    <Link to={`/articles/${post.slug}`}><h4>{post.title}</h4></Link>
+                                                    <p>{post.description}</p>
+                                                    <Link to={`/articles/${post.slug}`}>Read More <FontAwesomeIcon icon="arrow-right" /></Link>
                                                 </div>
                                             </div>
+                                        </div>
                                     )
                                 } else if (post.id < postlength) {
                                     return (

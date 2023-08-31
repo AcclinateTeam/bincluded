@@ -12,23 +12,50 @@ const Covid = () => {
         window.scrollTo(0, 0)
     }, []);
 
+    // Hero Background-Image Slide + Hero Text Fade-In
+    useEffect(() => {
+        const hero = document.getElementById('heroSlide');
+        const bg = document.getElementById('bg');
+        const img = document.getElementById('img');
+        const text = document.getElementById('text');
+        const header = document.getElementById('header');
+
+        hero!.style.width = '100%';
+        if (window.innerWidth <= 499) {
+            bg!.style.width = '100%';
+            img!.style.width = '100%';
+        } else {
+            bg!.style.width = '100%';
+            img!.style.width = '100%';
+        };
+
+        setTimeout(() => {
+            text!.style.cssText = 'padding-top: 0; opacity: 1;';
+            header!.style.cssText = 'opacity: 1;';
+        }, 1000);
+    }, []);
+
     return (
         <>
             {/* SUB-HEADER COMPONENT IMPORT */}
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero cov">
-                <div className="container">
-                    <div className="columns eight offset-by-one callout">
-                        <div className="image blog">
-                            <img src="/images/theme/covid.png" alt="" />
+            <section id="hero" className="hero blog">
+                <div id="heroSlide" className="heroSlide"> </div>
+                <div className="heroContent">
+                    <div className="image blog">
+                        <div id="bg" className="bg">
+                            <img id="img" src="/images/theme/6Q3A4016.jpg" alt="" />
                         </div>
-                        <div className="text">
-                            <div className="calltext">
-                                <h1>NAVIGATING <br /> COVID-19</h1>
-                                <p> COVID-19 took enough of a toll on our community. <Logo color="#287fdd" /> provides updated information and resources to protect ourselves and one another.</p>
-                            </div>
+                    </div>
+                    <div id="text" className="text">
+                        <div className="calltext">
+                            <h1>NAVIGATING <br /> COVID-19</h1>
+                            <p> COVID-19 took enough of a toll on our community. <Logo color="#287fdd" /> provides updated information and resources to protect ourselves and one another.</p>
+                        </div>
+                        <div className="callbutton">
+                            <a className="button signup" href="https://www.videoask.com/ftmqd7gt3" target="_blank" rel="noopener noreferrer">Share Your Story</a>
                         </div>
                     </div>
                 </div>

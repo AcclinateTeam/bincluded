@@ -7,8 +7,11 @@ import Header from '../../theme/Header';
 import ShareYourStory from '../blog/components/ShareYourStory';
 
 const Blog = () => {
+    // GLOBAL JS
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        const header = document.getElementById('header');
+        header!.style.cssText = 'opacity: 1;';
     }, []);
 
     // Scrolls to bottom of Hero Section OnClick
@@ -37,7 +40,7 @@ const Blog = () => {
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero">
+            <section id="noHero" className="noHero">
                 <div className="fill"></div>
             </section>
 
@@ -45,7 +48,7 @@ const Blog = () => {
             <section className="breadcrumbs">
                 <div className="container">
                     <div className="eight columns offset-by-one bread">
-                        <a href="/">Home</a> {'>'} Featured Stories
+                        <a href="/">Home</a> {'>'} Stories
                     </div>
                 </div>
             </section>

@@ -164,7 +164,7 @@ section.HomeWhatWeDo {                      padding: 100px 10% 0; display: flex;
 
 
 // HOME RESOURCE PORTAL STYLES
-section.portal {                 background-color: var(--navy); padding: 100px 10%; border-radius: 60px;
+section.portal {                 background-color: var(--navy); padding: 100px 10%; margin: 0 0 100px; border-radius: 60px;
     .text {                             margin: 0 50px 0 0; text-align: center;
         h2 {                                font-weight: 900; text-transform: uppercase; color: var(--white);
             span {                              color: var(--blue);}
@@ -200,15 +200,17 @@ section.portal {                 background-color: var(--navy); padding: 100px 1
         .cards:hover a {                    color: var(--navy);}
 
         .cards1 {                           width: calc(100% - 30px); height: 400px; margin: 0 15px 30px; border: 2px solid #ffffff88; position: relative; border-radius: 15px;
-            .bgImage {                          height: 100%; width: 100%; background-size: cover; background-position: center; border-radius: 15px; opacity: 0.175;}
-            .content {                          width: calc(100% - 60px); z-index: 99; position: absolute; bottom: 0; left: 0; padding: 30px; border-radius: 15px; background: linear-gradient(0deg, rgba(5,2,54,1) 20%, rgba(255,255,255,0) 100%);
+            .bgImage {                          height: 100%; width: 100%; background-size: cover; background-position: center; border-radius: 15px; opacity: 0.4;}
+            .content {                          width: calc(100% - 60px); z-index: 66; position: absolute; bottom: 0; left: 0; padding: 30px; border-radius: 15px; background: linear-gradient(0deg, rgba(5,2,54,1) 20%, rgba(255,255,255,0) 100%);
                 h4  {                               padding: 0 0 10px; font-size: 28px; text-transform: none; color: var(--white);}
-                p  {                                font-size: 20px; margin: 0; line-height: 28px; color: var(--white);}
-                p.link {                            height: auto; font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; margin: 0; color: var(--white);}
+                p  {                                font-size: 20px; margin: 0 0 10px; line-height: 28px; color: var(--white);}
+                p.link {                            font-size: 20px; font-weight: 900; margin: 0; color: var(--red);}
+                p.link svg {                        color: var(--white);}
             }
         }
         .cards1:hover {                     border: 2px solid #fff;}
-        .cards1:hover .bgImage {            opacity: 0.6;}
+        .cards1:hover .bgImage {            opacity: 0.9;}
+        .cardFade {                         opacity: 1;}
 
 }
     .deck a {                                 color:var(--black); text-decoration: none;} 
@@ -241,7 +243,7 @@ section.eventshome {                margin: 50px 0;
 }
 
 // HOME PAGE STORIES STYLES
-section.homestories {               padding: 100px 10% 0; background-color: #fff;
+section.homestories {               padding: 0 10% 0; background-color: #fff;
     .header h2 {                        text-transform: uppercase; text-align: center; color: var(--navy);}
     .header h2 span {                   display: inline-block; color: var(--blue);}
     .header p {                         font-size: 24px; line-height: 32px; padding: 30px 300px 0; font-weight: 400; text-align: center; color: var(--navy);}

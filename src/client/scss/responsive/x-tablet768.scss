@@ -133,16 +133,23 @@
     /* HOME PAGE SCSS STYLES
     ============================================================== */
     // HOME PAGE CALLOUT STYLES
-    section.home {                               width: 100%; height: 700px; position: relative;  background-color: var(--navy); overflow: hidden;
-        video {                                  object-fit: contain; opacity: 0.9;}     
-        .callbg {                             width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;
-            video {                                 height: 100%;}
-        }
-        .callout {                               width: 60%; height: 500px; position: absolute; top: 50%; left: 10%; transform: translate(0, -50%);}
+    section.home {                           width: 100%; height: 50vh; position: relative; overflow: hidden;
+        video {                                  object-fit: contain; object-position: -698px;}     
+        .calloutbg {                             width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-repeat: no-repeat; background-size: cover; background-position: center; color: #332;}
+        .callout {                               width: 90%; height: 500px; position: absolute; top: 350px; left: 5%;}
         .callout .calltext {                     width: 100%; display: block;}
-        .callout .calltext h2 {                  width: 60%; font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 54px; line-height: 62px; font-weight: 900; color: #fff; margin: 0 0 40px;}
-        .callout .calltext p {                   font-family: 'DM Sans', sans-serif; width: 90%; font-size: 20px; line-height: 28px; font-weight: 400; color: #fff; }
-        .callout .callbutton {                   margin: 30px 0 0; display: block;}
+        .callout .calltext h2 {                  font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-size: 55px; line-height: 55px; font-weight: 900; color: #fff; margin: 0 0 30px;}
+        .callout .calltext p {                   width: 90%; font-size: 18px; line-height: 26px; font-weight: 400; color: #fff; }
+        .callout .callbutton {                   margin: 30px 0 0; text-align: center; display: block;}
+    }  
+
+    section.homeintro {                              width: 80%; height: auto; margin: 0 10% 50px; padding: 0; display: flex; flex-flow: column;
+        .header {                                   width: 100%; margin: 0; padding: 20px 0;
+            h2 {                                        font-size: 75px; line-height: 83px; display: inline-block;}
+        }
+        .text {                             width: 100%;
+            p {                                 font-size: 20px; line-height: 28px; margin: 0 0 50px;}
+        }
     }
 
     /* BUTTONS */
@@ -204,7 +211,7 @@
             .cards {                            border: 2px solid var(--white); border-radius: 15px; padding: 30px;
                 p {                                 height: 132px; margin: 0 0 30px;}
             }
-            .featured {                        width: calc(100% - 114px); margin: 0 15px 30px; border: 2px solid var(--white); border-radius: 15px; padding: 40px;
+            .featured {                         width: calc(100% - 114px); margin: 0 15px 30px; border: 2px solid var(--white); border-radius: 15px; padding: 40px;
                 h4  {                               padding: 0 0 10px; margin: 30px 0 0; font-size: 42px; text-transform: none; color: var(--blue);}            
                 .image {                            
                     img {                               width: 100%;}
@@ -218,6 +225,13 @@
         }
         .deck a {                                 color:var(--black); text-decoration: none;} 
         .ss360-custom-search {                    width: 100%; justify-content: center; margin: 0 auto 50px; padding: 0;}
+        .search {                               margin: 30px 0 0 0; text-align: center;
+            h2 {                                font-size: 38px; line-height: 46px; font-weight: 900; text-transform: uppercase; color: var(--white);
+                span {                              color: var(--blue);}
+            }
+            p {                                 font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 28px; padding: 30px 0 50px; font-weight: 400; color: var(--white);}
+            h4 {                                color: var(--red);}
+        }
     }
 
     // HOME PAGE STORIES STYLES

@@ -22,6 +22,31 @@ const Partners = () => {
             .then(cards => setCards(cards))
     }, []);
 
+    // Hero Background-Image Slide + Hero Text Fade-In
+    useEffect(() => {
+        const hero = document.getElementById('heroSlide');
+        const bg = document.getElementById('bg');
+        const img = document.getElementById('img');
+        const text = document.getElementById('text');
+        const header = document.getElementById('header');
+
+        hero!.style.width = '100%';
+        if (window.innerWidth <= 499) {
+            bg!.style.width = '100%';
+            img!.style.width = '100%';
+        } else {
+            bg!.style.width = '100%';
+            img!.style.width = '100%';
+        };
+
+        setTimeout(() => {
+            text!.style.cssText = 'padding-top: 0; opacity: 1;';
+            header!.style.cssText = 'opacity: 1;';
+        }, 1000);
+    }, []);
+
+    const [visible, setVisible] = useState(false);
+
 
     return (
         <>
@@ -30,17 +55,21 @@ const Partners = () => {
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero par">
-                <div className="container">
-                    <div className="columns eight offset-by-one callout">
-                        <div className="image blog">
-                            <img src="/images/theme/partners.png" alt="" />
+            <section id="hero" className="hero blog">
+                <div id="heroSlide" className="heroSlide"> </div>
+                <div className="heroContent">
+                    <div className="image blog">
+                        <div id="bg" className="bg">
+                            <img id="img" src="/images/theme/6Q3A4055.jpg" alt="" />
                         </div>
-                        <div className="text">
-                            <div className="calltext">
-                                <h1>Partners</h1>
-                                <p>We partner with brands that are passionate about our <Logo color="#287fdd" /> mission and our community.</p>
-                            </div>
+                    </div>
+                    <div id="text" className="text">
+                        <div className="calltext">
+                            <h1>Partners</h1>
+                            <p>We partner with brands that are passionate about our <Logo color="#287fdd" /> mission and our community.</p>
+                        </div>
+                        <div className="callbutton">
+                            <a className="button signup" href="https://www.videoask.com/ftmqd7gt3" target="_blank" rel="noopener noreferrer">Share Your Story</a>
                         </div>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 import moment from 'moment';
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
+import VisibilitySensor from 'react-visibility-sensor';
 
 /* COMPONENT IMPORTS */
 import Header from '../../theme/Header';
@@ -8,11 +9,19 @@ import ShareYourStory from '../blog/components/ShareYourStory';
 
 
 const SingleStory = () => {
-
+    // GLOBAL JS
     useEffect(() => {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
+        const header = document.getElementById('header');
+        const bgSlide = document.getElementById('bgSlide');
+        header!.style.cssText = 'opacity: 1;';
+        bgSlide!.style.height = '100%';
     }, []);
 
+    const [videoVisible, setVideoVisible] = useState(false);
+    const [textVisible, setTextVisible] = useState(false);
+
+    // GET STORY POST
     const { slug } = useParams();
     const [single, setSingle] = useState([]);
 
@@ -28,12 +37,12 @@ const SingleStory = () => {
             <Header />
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero">
-                {single.map((post: any, index) => 
-                    <div className="blogcall" key={index}>
-                        <img src={`/images/${post.imagelink}`} alt="" />
-                    </div>
-                )}
+            <section id="subHero" className="subHero">
+                <div id="bgSlide" className="subCall" >
+                    {single.map((post: any, index) =>
+                        <img id="bgImg" src={`/images/${post.imagelink}`} alt="" key={index} />
+                    )}
+                </div>
             </section>
 
             {/* BREADCRUMB SECTION */}
@@ -43,7 +52,7 @@ const SingleStory = () => {
                         {single.map((post: any, index) => {
                             return (
                                 <div key={index}>
-                                    <a href="/">Home</a> {'>'} <a href="/stories">Featured Stories</a> {'>'} {post.title} - {post.subTitle}
+                                    <a href="/">Home</a> {'>'} <a href="/stories">Stories</a> {'>'} {post.title} - {post.subTitle}
                                 </div>
                             )
                         })}
@@ -62,11 +71,15 @@ const SingleStory = () => {
                                         <div className="storie">
                                             <span>{post.subTitle}</span>
                                             <h2>{post.title}</h2>
-                                            <iframe width="100%" height="100%" src={post.videolink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                            <VisibilitySensor partialVisibility onChange={(videoVisible) => { if (videoVisible) { setVideoVisible(true); } }}>
+                                                <iframe width="100%" height="100%" src={post.videolink} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen style={{ opacity: videoVisible ? 1 : 0 }}></iframe>
+                                            </VisibilitySensor>
                                         </div>
                                     </div>
                                     <div className="eight columns offset-by-one wide">
-                                        <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }}></div>
+                                        <VisibilitySensor partialVisibility onChange={(textVisible) => { if (textVisible) { setTextVisible(true); } }}>
+                                            <div className="text" dangerouslySetInnerHTML={{ __html: htmlText }} style={{ opacity: textVisible ? 1 : 0 }}></div>
+                                        </VisibilitySensor>
                                     </div>
                                 </div>
                             )
@@ -98,8 +111,6 @@ const SingleStory = () => {
 
             {/* SHARE YOUR STORY SECTION */}
             <ShareYourStory />
-
-            
 
         </>
     );

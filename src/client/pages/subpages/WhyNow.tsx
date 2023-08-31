@@ -12,13 +12,36 @@ import WhyNowDifferent from './components/WhyNowDifferent';
 import WhyNowLeaders from './components/WhyNowLeaders';
 import PopBottom from '../../components/PopBottom';
 
-const WhyNow = () =>
-{
+const WhyNow = () => {
 
-    useEffect(() =>
-    {
+    useEffect(() => {
         window.scrollTo(0, 0)
     }, []);
+
+    // Hero Background-Image Slide + Hero Text Fade-In
+    useEffect(() => {
+        const hero = document.getElementById('heroSlide');
+        const bg = document.getElementById('bg');
+        const img = document.getElementById('img');
+        const text = document.getElementById('text');
+        const header = document.getElementById('header');
+
+        hero!.style.width = '100%';
+        if (window.innerWidth <= 499) {
+            bg!.style.width = '100%';
+            img!.style.width = '100%';
+        } else {
+            bg!.style.width = '100%';
+            img!.style.width = '100%';
+        };
+
+        setTimeout(() => {
+            text!.style.cssText = 'padding-top: 0; opacity: 1;';
+            header!.style.cssText = 'opacity: 1;';
+        }, 1000);
+    }, []);
+
+    const [visible, setVisible] = useState(false);
 
     return (
         <>
@@ -28,17 +51,21 @@ const WhyNow = () =>
             {/* <PopBottom /> */}
 
             {/* JUMBOTRON COMPONENT */}
-            <section id="hero" className="hero whyy">
-                <div className="container">
-                    <div className="columns eight offset-by-one callout">
-                        <div className="image">
-                            <img src="/images/theme/whynow.png" alt="" />
+            <section id="hero" className="hero blog">
+                <div id="heroSlide" className="heroSlide"> </div>
+                <div className="heroContent">
+                    <div className="image blog">
+                        <div id="bg" className="bg">
+                            <img id="img" src="/images/theme/6Q3A4055.jpg" alt="" />
                         </div>
-                        <div className="text">
-                            <div className="calltext">
-                                <h1>Why Now?</h1>
-                                <p>There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices. <Logo color="#287fdd" /> is that space and you can become part of that collective.</p>
-                            </div>
+                    </div>
+                    <div id="text" className="text">
+                        <div className="calltext">
+                            <h1>Why Now?</h1>
+                            <p>There’s no better time for Black communities to have and claim a space of their own. The longevity of Black communities depends on a collective of people who are focused on improved health, overall wellness, and elevated financial practices. <Logo color="#287fdd" /> is that space and you can become part of that collective.</p>
+                        </div>
+                        <div className="callbutton">
+                            <a className="button signup" href="https://www.videoask.com/ftmqd7gt3" target="_blank" rel="noopener noreferrer">Share Your Story</a>
                         </div>
                     </div>
                 </div>
@@ -63,7 +90,7 @@ const WhyNow = () =>
             <WhyNowMeaning />
 
             {/* PARTNER COMMITMENT SECTION */}
-            <WhyNowDifferent />          
+            <WhyNowDifferent />
 
             {/* LEADERSHIP SECTION */}
             <WhyNowLeaders />
@@ -74,7 +101,7 @@ const WhyNow = () =>
                     <div className="eight columns offset-by-one">
                         <div className="heading">
                             <h2>Aligned With The <span>Best Organizations</span></h2>
-                            <p><Logo color="#287fdd"/> gives its residents a chance at a happier, healthier life.</p>
+                            <p><Logo color="#287fdd" /> gives its residents a chance at a happier, healthier life.</p>
                         </div>
                         <div className="container">
                             <div className="fourth columns">

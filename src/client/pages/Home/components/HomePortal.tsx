@@ -2,8 +2,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import SiteSearch360 from 'site-search-360-react';
+import VisibilitySensor from 'react-visibility-sensor';
+
 
 const HomePortal = () => {
+
+    const [healthVisible, setHealthVisible] = useState(false);
+    const [familyVisible, setFamilyVisible] = useState(false);
+    const [careerVisible, setCareerVisible] = useState(false);
+    const [commVisible, setCommVisible] = useState(false);
+    const [storyVisible, setStoryVisible] = useState(false);
+    const [covidVisible, setCovidVisible] = useState(false);
 
     return (
         <>
@@ -31,144 +40,102 @@ const HomePortal = () => {
                                     </div>
                                 </div> */}
 
-                                <div className="third columns split">
-                                    <div className="cards1">
-                                        <Link to="/resources/health">
-                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0938.jpg)` }}></div>
-                                            <div className="content">
-                                                <h4>Health</h4>
-                                                <p>Find reliable, fact-based health information you can trust.</p>
-                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                            </div>
-                                        </Link>
-                                    </div>
-                                </div>
 
-                                <div className="third columns split">
-                                    <div className="cards1">
-                                        <Link to="/resources/family">
-                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0943.jpg)` }}></div>
-                                            <div className="content">
-                                                <h4>Family</h4>
-                                                <p>Find information on how  to make your family's health a priority.</p>
-                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                            </div>
-                                        </Link>
+                                {/* HEALTH CARD */}
+                                <VisibilitySensor partialVisibility onChange={(isVisible) => { if (isVisible) { setHealthVisible(true); }}}>
+                                    <div className="third columns split" style={{ opacity: healthVisible ? 1 : 0 }}>
+                                        <div id="fadeCard" className="cards1">
+                                            <Link to="/resources/health">
+                                                <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0938.jpg)` }}></div>
+                                                <div className="content">
+                                                    <h4>Health</h4>
+                                                    <p>Find reliable, fact-based health information you can trust.</p>
+                                                    <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                                </div>
+                                            </Link>
+                                        </div>
                                     </div>
-                                </div>
+                                </VisibilitySensor>
 
-                                <div className="third columns split">
-                                    <div className="cards1">
-                                        <Link to="/resources/careers">
-                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0949.jpg)` }}></div>
-                                            <div className="content">
-                                                <h4>Careers</h4>
-                                                <p>Connect with resources to elevate your careers and increase your wealth.</p>
-                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                            </div>
-                                        </Link>
+                                {/* FAMILY CARD */}
+                                <VisibilitySensor partialVisibility onChange={(isVisible) => { if (isVisible) { setFamilyVisible(true); }}}>
+                                    <div className="third columns split" style={{ opacity: familyVisible ? 1 : 0 }}>
+                                        <div id="fadeCard" className="cards1">
+                                            <Link to="/resources/family">
+                                                <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0943.jpg)` }}></div>
+                                                <div className="content">
+                                                    <h4>Family</h4>
+                                                    <p>Find information on how  to make your family's health a priority.</p>
+                                                    <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                                </div>
+                                            </Link>
+                                        </div>
                                     </div>
-                                </div>
+                                </VisibilitySensor>
 
-                                <div className="third columns split">
-                                    <div className="cards1">
-                                        <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">
-                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0932.jpg)` }}></div>
-                                            <div className="content">
-                                                <h4>Community</h4>
-                                                <p>Join to the community to like, share, comment, and connect with people like you.</p>
-                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                            </div>
-                                        </a>
+                                {/* CAREERS CARD */}
+                                <VisibilitySensor partialVisibility onChange={(isVisible) => { if (isVisible) { setCareerVisible(true); }}}>
+                                    <div className="third columns split" style={{ opacity: careerVisible ? 1 : 0 }}>
+                                        <div id="fadeCard" className="cards1">
+                                            <Link to="/resources/careers">
+                                                <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0949.jpg)` }}></div>
+                                                <div className="content">
+                                                    <h4>Careers</h4>
+                                                    <p>Connect with resources to elevate your careers and increase your wealth.</p>
+                                                    <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                                </div>
+                                            </Link>
+                                        </div>
                                     </div>
-                                </div>
+                                </VisibilitySensor>
 
-                                <div className="third columns split">
-                                    <div className="cards1">
-                                        <Link to="/stories">
-                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0951.jpg)` }}></div>
-                                            <div className="content">
-                                                <h4>Stories</h4>
-                                                <p>Share your story! We’d love to feature you.</p>
-                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                            </div>
-                                        </Link>
+                                {/* COMMUNITY CARD */}
+                                <VisibilitySensor partialVisibility onChange={(isVisible) => { if (isVisible) { setCommVisible(true); }}}>
+                                    <div className="third columns split" style={{ opacity: commVisible ? 1 : 0 }}>
+                                        <div id="fadeCard" className="cards1">
+                                            <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">
+                                                <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0932.jpg)` }}></div>
+                                                <div className="content">
+                                                    <h4>Community</h4>
+                                                    <p>Join to the community to like, share, comment, and connect with people like you.</p>
+                                                    <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
+                                </VisibilitySensor>
 
-                                <div className="third columns split">
-                                    <div className="cards1">
-                                        <Link to="/covid">
-                                            <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0959.jpg)` }}></div>
-                                            <div className="content">
-                                                <h4>COVID-19</h4>
-                                                <p>Stay up-to-date on the latest COVID-19 news, stats, and resources.</p>
-                                                <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                            </div>
-                                        </Link>
+                                {/* STORIES CARD */}
+                                <VisibilitySensor partialVisibility onChange={(isVisible) => { if (isVisible) { setStoryVisible(true); }}}>
+                                    <div className="third columns split" style={{ opacity: storyVisible ? 1 : 0 }}>
+                                        <div id="fadeCard" className="cards1">
+                                            <Link to="/stories">
+                                                <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0951.jpg)` }}></div>
+                                                <div className="content">
+                                                    <h4>Stories</h4>
+                                                    <p>Share your story! We’d love to feature you.</p>
+                                                    <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                                </div>
+                                            </Link>
+                                        </div>
                                     </div>
-                                </div>
+                                </VisibilitySensor>
 
-                                {/* <div className="third columns split">
-                                    <Link to="/resources/health">
-                                        <div className="cards shadow hover">
-                                            <FontAwesomeIcon className="icon" icon="user-md" />
-                                            <h4>Health</h4>
-                                            <p>Find reliable, fact-based health information you can trust.</p>
-                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                {/* COVID CARD */}
+                                <VisibilitySensor partialVisibility onChange={(isVisible) => { if (isVisible) { setCovidVisible(true); }}}>
+                                    <div className="third columns split" style={{ opacity: covidVisible ? 1 : 0 }}>
+                                        <div id="fadeCard" className="cards1">
+                                            <Link to="/covid">
+                                                <div className="bgImage" style={{ backgroundImage: `url(/images/theme/1I2A0959.jpg)` }}></div>
+                                                <div className="content">
+                                                    <h4>COVID-19</h4>
+                                                    <p>Stay up-to-date on the latest COVID-19 news, stats, and resources.</p>
+                                                    <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
+                                                </div>
+                                            </Link>
                                         </div>
-                                    </Link>
-                                </div>
-                                <div className="third columns split">
-                                    <Link to="/resources/family">
-                                        <div className="cards shadow hover">
-                                            <FontAwesomeIcon className="icon" icon="users" />
-                                            <h4>Family</h4>
-                                            <p>Find information on how  to make your family's health a priority.</p>
-                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="third columns split">
-                                    <Link to="/resources/careers">
-                                        <div className="cards shadow hover">
-                                            <FontAwesomeIcon className="icon" icon="hard-hat" />
-                                            <h4>Careers</h4>
-                                            <p>Connect with resources to elevate your careers and increase your wealth.</p>
-                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="third columns split">
-                                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">
-                                        <div className="cards shadow hover">
-                                            <FontAwesomeIcon className="icon" icon="comments" />
-                                            <h4>Community</h4>
-                                            <p>Join to the community to like, share, comment, and connect with people like you.</p>
-                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div className="third columns split">
-                                    <Link to="/blog">
-                                        <div className="cards shadow hover">
-                                            <FontAwesomeIcon className="icon" icon="newspaper" />
-                                            <h4>Stories</h4>
-                                            <p>Share your story! We’d love to feature you.</p>
-                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                        </div>
-                                    </Link>
-                                </div>
-                                <div className="third columns split">
-                                    <Link to="/covid">
-                                        <div className="cards shadow hover">
-                                            <FontAwesomeIcon className="icon" icon="viruses" />
-                                            <h4>COVID-19</h4>
-                                            <p>Stay up-to-date on the latest COVID-19 news, stats, and resources.</p>
-                                            <p className="link">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></p>
-                                        </div>
-                                    </Link>
-                                </div> */}
+                                    </div>
+                                </VisibilitySensor>                                
                             </div>
                         </div>
                     </div>

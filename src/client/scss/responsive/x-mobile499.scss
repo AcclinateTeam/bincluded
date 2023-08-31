@@ -41,19 +41,46 @@
     /* #GLOBAL STYLES
     ================================================== */
     /* SUB-HERO STYLES */
-    #hero.hero {                                background-color: var(--navy);
-        .callout {                                  margin-top: 150px; margin-bottom: 100px;                              
-            .image {                                    float: left; margin: 0 75px 0 0;}
-            .text {                                     
-                h1 {                                        line-height: 85px; margin: 0 0 30px; color: var(--white);}
-                p {                                         width: 80%; font-size: 24px; line-height: 32px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
+    // #hero.hero {                                background-color: var(--navy);
+    //     .callout {                                  margin-top: 150px; margin-bottom: 100px;                              
+    //         .image {                                    float: left; margin: 0 75px 0 0;}
+    //         .text {                                     
+    //             h1 {                                        line-height: 85px; margin: 0 0 30px; color: var(--white);}
+    //             p {                                         width: 80%; font-size: 24px; line-height: 32px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
+    //         }
+    //     }
+    //     .blogcall {                                     width: 100%; height: 75vh; overflow: hidden; background-color: var(--navy);
+    //         img {                                       width: 100%; height: 100%; margin: 60px 0 0; object-fit: cover;}
+    //     }
+    //     .fill {                                     height: 60px;}
+    // }
+
+    #hero.hero {                                    height: 100%; position: relative; overflow: visible;
+        .heroSlide {                                    width: 10%; height: 100%; position: absolute; top: 0; left: 0; border-radius:  0 0 30px 30px; background-color: var(--navy);}
+        .heroContent {                                  width: 90%; display: flex; position: relative; top: 0; left: 0; padding: 80px 5% 30px; flex-flow: column; border-radius: 0 0 60px 60px;                            
+            .image {                                    width: 100%; height: 250px; display: inline-block;
+                .bg {                                       width: 0%; height: 250px; border-radius: 0 60px 0 60px; background-color: var(--red);
+                    img {                                       width: 0%; height: 250px; display: inline-block; object-fit: cover; border-radius: 0 60px 0 60px;}
+                }
+            }
+            .text {                                     width: 100%; padding: 0; opacity: 0;                            
+                h1 {                                        font-size: 50px; line-height: 50px; margin: 25px 0 20px; color: var(--white);}
+                p {                                         width: 100%; font-size: 20px; line-height: 28px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
             }
         }
-        .blogcall {                                     width: 100%; height: 75vh; overflow: hidden; background-color: var(--navy);
+        .blogcall {                                     width: 0%; height: 100%; overflow: hidden; border-radius: 0 0 30px 30px; background-color: var(--navy);
             img {                                       width: 100%; height: 100%; margin: 60px 0 0; object-fit: cover;}
         }
-        .fill {                                     height: 60px;}
+        .fill {                                     height:150px;}
     }
+
+    #subHero.subHero {                              height: 50vh; position: relative; overflow: hidden;
+        .subCall {                                     width: 100%; height: 0%; overflow: hidden; border-radius: 0 0 30px 30px; background-color: var(--navy);
+            img {                                       width: 100%; height: 100%; margin: 60px 0 0 0; object-fit: cover;}
+        }
+        .fill {                                         height:150px;}
+    }
+    
 
     div.popBack {                       width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: rgba(0, 0, 0, 0.5); z-index: 9999;
         .popup {                            width: 80%; background-color: var(--white); border-radius: 20px 0 20px 20px;
@@ -178,7 +205,7 @@
             h2 {                                        font-size: 37px; line-height: 45px; display: inline-block;}
         }
         .text {                             width: 100%;
-            p {                                 font-size: 20px; line-height: 32px; margin: 0 0 50px;}
+            p {                                 font-size: 20px; line-height: 28px; margin: 0 0 50px;}
         }
     }
     
@@ -186,42 +213,14 @@
     .button {                                       font-family: 'Montserrat', sans-serif; margin: 0 0 30px; display: block; font-size: 18px; text-align: center; text-transform: uppercase; border-radius: 5px; font-weight: 900; line-height:52px; margin: 0 0 15px; padding: 0;}
     // HOME BUTTON STYLES
     .home .button {                                 width: 90%; display: inline-block; margin: 0 0 15px; line-height: 16px;}  
-
-    // HOME PAGE WHO WE ARE STYLES
-    section.whoWeAre {                              padding: 5%; display: flex; background-color: var(--navy);
-        .text {                                     width: 100%; order: 1; margin: 0;
-            h2 {                                        font-size: 38px; line-height: 38px; display: inline-block; color: var(--white);}
-            h2 span {                                   display: inline-block; color: var(--blue);}
-            p {                                         width: 100%; font-size: 24px; line-height: 36px; margin: 30px 0 40px; color: var(--white);}
-        }
-        .image {                                    width: 100%; margin: 0; order: 2;
-            img {                                       width: 100%;}
-        }
-    }
-
-    // HOME PAGE WHAT WE DO STYLES
-    section.HomeWhatWeDo {                      padding: 5% 5% 0; display: flex; flex-flow: row wrap;
-        .content {                                  width: 100%; order: 1;
-            h3 {                                        font-size: 38px; margin: 0 0 15px;}
-            h3 span {                                   display: inline-block; color: var(--blue);}
-            p {                                         width: 90%; font-size: 24px; line-height: 32px; margin: 0 0 10px;}
-            hr {                                        width: 90%; border: 1px solid var(--navy); margin: 30px 0;}
-            a {                                         font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; text-decoration: none; color: var(--navy);
-                svg {                                       color: var(--red); }
-            }
-        }
-        .image {                                    width: 100%; margin: 40px 0 0; order: 2;
-            img {                                       width: 100%; height: auto; margin: 0 0 -3px;}
-        }
-    }
  
     // HOME RESOURCE PORTAL STYLES
-    section.portal {                 background-color: var(--navy); padding: 50px 5%;
+    section.portal {                 background-color: var(--navy); padding: 50px 10%; margin: 0 0 50px;
         .text {                             margin: 0;
             h2 {                                font-size: 38px; line-height: 38px; font-weight: 900; text-transform: uppercase; color: var(--white);
                 span {                              color: var(--blue);}
             }
-            p {                                 font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; padding: 20px 0 40px; font-weight: 400; color: var(--white);}
+            p {                                 font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 28px; padding: 20px 0 40px; font-weight: 400; color: var(--white);}
             h4 {                                font-size: 18px; color: var(--red);}
         }
         .deck {
@@ -237,16 +236,35 @@
                     svg {                                   color: var(--red);}
                 }
             }
+
+            .cards1 {                           width: 100%; height: 400px; margin: 0 0 30px; border: 2px solid #ffffff88; position: relative; border-radius: 15px;
+                .bgImage {                          height: 100%; width: 100%; background-size: cover; background-position: center; border-radius: 15px; opacity: 0.6;}
+                .content {                          width: calc(100% - 60px); z-index: 66; position: absolute; bottom: 0; left: 0; padding: 30px; border-radius: 15px; background: linear-gradient(0deg, rgba(5,2,54,1) 20%, rgba(255,255,255,0) 100%);
+                    h4  {                               padding: 0 0 10px; font-size: 28px; text-transform: none; color: var(--white);}
+                    p  {                                font-size: 20px; margin: 0; line-height: 28px; color: var(--white);}
+                    p.link {                            height: auto; font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 900; margin: 0; color: var(--white);}
+                }
+            }
+            .cards1:hover {                     border: 2px solid #fff;}
+            .cards1:hover .bgImage {            opacity: 0.6;}            
         }
         .deck a {                                 color:var(--black); text-decoration: none;} 
-        .ss360-custom-search {                    width: 100%; justify-content: left; margin: 0 0 50px; padding: 0;}
+        .ss360-custom-search {                    width: 100%; justify-content: left; margin: 0 0 50px; padding: 0;}     
+        
+        .search {                             margin: 30px 0 0 0; text-align: center;
+            h2 {                                font-size: 38px; line-height: 46px; font-weight: 900; text-transform: uppercase; color: var(--white);
+                span {                              color: var(--blue);}
+            }
+            p {                                 font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 28px; padding: 30px 0 50px; font-weight: 400; color: var(--white);}
+            h4 {                                color: var(--red);}
+        }
     }
 
     // HOME PAGE STORIES STYLES
     section.homestories {               padding: 5% 5% 0;
         .header h2 {                        font-size: 38px; line-height: 38px; text-transform: uppercase; padding: 0 0 20px; text-align: center; color: var(--navy);}
         .header h2 span {                   display: inline-block; color: var(--blue);}
-        .header p {                         font-size: 24px; line-height: 32px; padding: 0; font-weight: 400; text-align: center; color: var(--navy);}
+        .header p {                         font-size: 20px; line-height: 28px; padding: 0; font-weight: 400; text-align: center; color: var(--navy);}
         .case {                             margin: 50px 0 0;}
         .rack {                             margin: 0;
             a {                                 text-decoration: none;}
@@ -269,7 +287,7 @@
         .whyImage {                         width: 100%; height: 300px; background-size: cover; background-position: center; background-repeat: no-repeat;}
         .whyText {                          margin: 40px 0 60px; display: inline-block;
             h2 {                                font-size: 38px; line-height: 38px; font-weight: 900; margin: 0 0 30px; color: var(--white);}
-            p {                                 font-size: 24px; line-height: 32px; font-weight: 400; margin: 0 0 30px; color: var(--white);}
+            p {                                 font-size: 20px; line-height: 28px; font-weight: 400; margin: 0 0 30px; color: var(--white);}
         }   
 
         .whyTextWide {                      text-align: center; padding: 90px 0;
@@ -288,7 +306,7 @@
     }
 
     // CLINICAL RESEARCH STYLES
-    .research {                             width: 100%; margin: 5%; display: block;
+    .research {                             width: 90%; margin: 5%; display: block;
         .panes {                                width: 100%; display: flex; flex-flow: row wrap; position: relative;}
         .image {                                width: 90%; display: block; order: 2;
             img {                                   width: 100%; margin: 0 0 30px;}
@@ -301,7 +319,7 @@
             .text {                             width: 90%; padding: 0; color: var(--navy); z-index: 9;
                 h1 {                                font-size: 38px; line-height: 38px; color: var(--navy); opacity: 1; margin: 0 0 10px;}
                 h1 span {                           color: var(--blue);}
-                p {                                 font-size: 24px; line-height: 32px; font-weight: 400; color: var(--navy); margin: 0 0 30px;}
+                p {                                 font-size: 20px; line-height: 28px; font-weight: 400; color: var(--navy); margin: 0 0 30px;}
                 .button {                           margin: 0;}
                 .button.solid {                     background-color: var(--red);}
                 .button.solid:hover {               background-color: var(--blue); color: var(--white);}
@@ -312,7 +330,7 @@
     // HOME PAGE COVID-19 SECTION STYLES
     .covid {                            padding: 10% 5%; text-align: center; background-color: var(--navy);
         h2 {                                font-size: 38px; line-height: 38px; font-weight: 900; color: var(--white); margin: 0 0 20px;}
-        h3 {                                font-family: 'Montserrat', sans-serif; font-size: 24px; line-height: 32px; font-weight: 900; color: var(--red); text-transform: none; padding: 0; margin: 0 0 30px;}
+        h3 {                                font-family: 'Montserrat', sans-serif; font-size: 20px; line-height: 28px; font-weight: 900; color: var(--red); text-transform: none; padding: 0; margin: 0 0 30px;}
         .data {                             padding: 0 40px; margin: 0 0 40px;
             h4 {                                font-family: 'Montserrat', sans-serif; font-size: 54px; line-height: 54px; font-weight: 900; color: var(--white); margin: 0 0 10px; text-transform: none;}
             h4 span {                           color: var(--white);}
@@ -337,7 +355,7 @@
     .homecommunity {                        position: relative; display: flex; flex-flow: row wrap; padding: 0 5%;
         .content {                          margin: 0;
             h2 {                                font-size: 38px; line-height: 38px; text-align: center; color: var(--navy);}
-            p {                                 font-size: 24px; line-height: 32px; text-align: center; margin: 20px 0 30px; color: var(--navy);}
+            p {                                 font-size: 20px; line-height: 28px; text-align: center; margin: 20px 0 30px; color: var(--navy);}
         }
         .buttonwrap {                               text-align: center; margin: 0 auto 0;}
         .image {                            width: 100%; margin: 40px 0 -3px;
@@ -354,7 +372,7 @@
         }
         .left {                             
             h3 {                           font-size: 32px; line-height: 32px; text-align: center; color: var(--navy);}
-            p {                            font-size: 24px; line-height: 32px; text-align: center; margin: 20px 0 30px; color: var(--navy);}
+            p {                            font-size: 20px; line-height: 28px; text-align: center; margin: 20px 0 30px; color: var(--navy);}
             img {                          width: 55%; padding: 0 15px 20px 0; margin: 0 auto; display: block;}
         }
         .one {                                  width: 100%; order: 1;}
@@ -389,7 +407,7 @@
     section.stories {               padding: 0 5%; background-color: #fff;
         .header h2 {                        font-size: 44px; line-height: 44px; text-transform: uppercase; text-align: center; color: var(--navy);}
         .header h2 span {                   display: inline-block; color: var(--blue);}
-        .header p {                         font-size: 24px; line-height: 32px; padding: 20px 0 0; font-weight: 400; text-align: center; color: var(--navy);}
+        .header p {                         font-size: 20px; line-height: 28px; padding: 20px 0 0; font-weight: 400; text-align: center; color: var(--navy);}
         .case {                             margin: 50px 0 0;}
         .rack {                             margin: 0;
             a {                                 text-decoration: none;}
@@ -402,7 +420,7 @@
                     .text {                             width: calc(100% - 40px); border-radius: 15px; padding: 20px;}
                     .text.lead {                        width: 90%; height: auto;
                         h1 {                                font-size: 36px; line-height: 44px; font-weight: 900; padding: 0 0 15px; text-transform: none; color: var(--navy); margin: 0;}
-                        p {                                 font-size: 24px; line-height: 32px; margin: 0 0 15px; color: var(--navy);}
+                        p {                                 font-size: 20px; line-height: 28px; margin: 0 0 15px; color: var(--navy);}
                         p.top {                             font-size: 18px; line-height: 18px; margin: 0; padding: 0; font-weight: 900; color: var(--blue);}
                         a {                             font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 900; text-transform: none; text-decoration: none; color: var(--red);}
                     }
@@ -418,7 +436,7 @@
     section.stories-grid {                          padding: 10% 5%; background-color: var(--white);
         .header h2 {                                font-size: 44px; line-height: 44px; text-align: center; color: var(--navy);}
         .header h2 span {                           display: inline-block; color: var(--blue);}
-        .header p {                                 font-size: 24px; line-height: 32px; padding: 30px 0 0; font-weight: 300; text-align: center; color: var(--navy);}
+        .header p {                                 font-size: 20px; line-height: 28px; padding: 30px 0 0; font-weight: 300; text-align: center; color: var(--navy);}
         .case {                                     margin: 50px 0 20px;
             .rack {                                     margin: 0 0 30px;
                 .frames {                               width: 100%; height: 100%; margin: 0 0 30px; overflow: hidden;
@@ -427,7 +445,7 @@
                     }
                     .image.lead {                       width: 100%; height: 350px; float: left; margin: 0;}
                     .text {                             width: 100%; background-color: var(--white);
-                        h4 {                            font-size: 24px; line-height: 32px; min-height: 64px; font-weight: 900; margin: 0 0 15px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--red);}
+                        h4 {                            font-size: 20px; line-height: 28px; min-height: 64px; font-weight: 900; margin: 0 0 15px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--red);}
                         span {                          font-size: 14px; font-weight: 700; margin: 20px 0 0; color: var(--blue);}
                         p {                             font-size: 18px; line-height: 26px; border: none; border-left: 3px solid #050236; margin: 20px 0; padding: 0 0 0 15px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; color: var(--navy);}
                         a {                             font-family: 'Montserrat', sans-serif; font-size: 20px; font-weight: 700; text-transform: none; text-decoration: none; color: var(--red);
@@ -439,7 +457,7 @@
                     .text.lead {                        width: 100%; height: auto; display: inline-block;
                         span {                          font-size: 16px; font-weight: 700; margin: 30px 0 0; color: var(--blue);}
                         h4 {                            font-size: 32px; line-height: 40px; font-weight: 900; margin: 20px 0; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; color: var(--navy);}
-                        p {                             font-size: 24px; line-height: 32px; margin: 10px 0 20px; border: none; padding: 0; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; color: var(--navy);}
+                        p {                             font-size: 20px; line-height: 28px; margin: 10px 0 20px; border: none; padding: 0; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; color: var(--navy);}
                         a {                             font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 900; text-transform: none; text-decoration: none; color: var(--red);}
                         a:hover, a:hover svg {                       color: var(--blue);}
                         
@@ -451,18 +469,19 @@
 
     // BLOG ARTICLE/STORIE SUB-PAGE STYLES
     .story {                        margin: 0 5% 50px;
-        .text {                          margin: 0 0 30px;
+        .text {                          width: 100%; margin: 0 0 30px; overflow-wrap: break-word;
             h3 {                            text-align: none; margin: 0 0 10px 0; }      
             h4 {                            color: var(--red); text-transform: none; padding: 0 0 10px;}
             h6 {                            margin: 0 0 5px;}
-            p {                             font-size: 24px; line-height: 32px; display: inline-block; margin: 0 0 30px;}
-            p a {                           color: var(--red);}
+            p {                             font-size: 20px; line-height: 28px; display: inline-block; word-wrap: break-word; margin: 0 0 30px;}
+            p a {                           color: var(--red); word-wrap: break-word;}
+            p a:before {                    content: ""; display: block;}
             a.center {                      text-align: center;}
             ul {                            margin: 0 0 0 10px;}
             li {                            font-size: 18px; line-height: 26px;}
-            ul.list, ol.list {                   margin: 0 0 30px 60px;}
-            ul.list li {                    font-size: 24px; line-height: 32px; list-style-type: disc; font-weight: 700; color: var(--red);}
-            ol.list li {                    font-size: 24px; line-height: 32px; margin: 0 0 20px; color: var(--navy);}
+            ul.list, ol.list {                   margin: 0 0 30px 20px;}
+            ul.list li {                    font-size: 20px; line-height: 28px; list-style-type: disc; font-weight: 700; color: var(--red);}
+            ol.list li {                    font-size: 20px; line-height: 28px; margin: 0 0 20px; color: var(--navy);}
             ol.list li b {                  font-weight: 700; color: var(--red);}
 
 
@@ -476,7 +495,7 @@
             .blockquote {                   width: calc(100% - 200px); font-size: 56px; line-height: 64px; font-weight: 900; padding: 5px 50px; margin: 30px auto 30px; border-left: 5px solid var(--navy); color: var(--red);}
             .blockquote span {              font-size: 16px; font-weight: 500;}
         }
-        .storie iframe {                 height: 400px; margin: 50px 0;}
+        .storie iframe {                 width: 100%; height: 275px; margin: 50px 0;}
         .storie span {                   font-weight: 900; color: var(--blue);}
         .storie h2 {                     font-size: 32px; line-height: 32px; text-transform: none; margin: 3px 0 0; color: var(--navy);}
         .storie h4 {                     color: var(--red);}
@@ -485,14 +504,14 @@
     // SHARE YOUR STORY STYLES
     section.shareyourstory {                     margin: 0 5% 0; display: flex; flex-flow: row wrap;                   
         .container {                             border-radius: 5px;}
-        .image {                                 width: 100%; height: auto; margin: 40px 0 0; order: 2;}
+        .image {                                 width: 100%; height: auto; margin: 40px 0 50px; order: 2;}
         .image img {                             width: 100%; height: auto; padding: 0; margin: 0 0 -3px;}
         .text {                                  width: 100%; height: auto; margin: 0; order: 1;}
         .text h2 {                               font-size: 38px; line-height: 38px; text-transform: uppercase; text-align: center; margin: 30px 0 30px; color: var(--navy);
             span {                                  color: var(--blue);}
         }
-        .text p {                                font-family: 'DM Sans', sans-serif; font-size: 24px; line-height: 32px; text-align: center; margin: 0 0 30px; font-weight: 700; color: var(--navy); }
-        .button {                                margin: 0 0 0 60px; text-align: left;}
+        .text p {                                font-family: 'DM Sans', sans-serif; font-size: 20px; line-height: 28px; text-align: center; margin: 0 0 30px; font-weight: 700; color: var(--navy); }
+        .button {                                margin: 0; text-align: center;}
     }
 
 
@@ -517,7 +536,7 @@
             h2 {                                font-size: 32px; line-height: 40px; margin: 0 0 10px;
                 span {                              color: var(--blue);}
             }
-            p {                                 font-size: 24px; line-height: 32px; margin: 0 0 50px;}
+            p {                                 font-size: 20px; line-height: 28px; margin: 0 0 50px;}
         }
         img {                               width: 90%; margin: 0 5% 40px;}
     }
@@ -596,7 +615,7 @@
             h2 {                                font-size: 32px; line-height: 40px; margin: 0 0 10px;
                 span {                              color: var(--blue);}
             }
-            p {                                 font-size: 24px; line-height: 32px; margin: 0 0 50px;}
+            p {                                 font-size: 20px; line-height: 28px; margin: 0 0 50px;}
         }
         .image {                            width: 100%; display: inline-block;
             img {                               width: 100%; margin: 0;}        
@@ -612,7 +631,7 @@
                 h2 {                                font-size: 38px; line-height: 38px; margin: 0 0 20px; color: var(--navy);
                     span {                              display: inline-block; color: var(--blue);}
                 }
-                p {                                 font-size: 24px; line-height: 32px; font-weight: 400; margin: 0 0 30px; color: var(--navy);}
+                p {                                 font-size: 20px; line-height: 28px; font-weight: 400; margin: 0 0 30px; color: var(--navy);}
                 a {                                 font-size: 24px; line-height: 24px; font-weight: 700; text-decoration: none; color: var(--navy);}
                 a svg {                             color: #CA1D48;}
             }   
@@ -627,7 +646,7 @@
             h2 {                                        font-size: 32px; line-height: 40px; text-align: center; margin: 0 0 10px; color: var(--white);
                 span {                                      display: inline-block; color: var(--blue);}
             }
-            p {                                         width: 100%; font-size: 24px; line-height: 32px; text-align: center; margin: 0 0 30px; color: var(--white);}
+            p {                                         width: 100%; font-size: 20px; line-height: 28px; text-align: center; margin: 0 0 30px; color: var(--white);}
             .form {                                         width: 100%; height: 70px; margin: 0 0 35px; display: block; text-align: center;
                 input {                                     width: calc(100% - 115px); height: 66px; padding: 0 20px; font-size: 26px; font-weight: 300; line-height: 28px; display: block; float: left;  border: 2px solid var(--red); border-radius:  15px 0 0 15px; background-color: var(--white);}
                 a {                                         width: 70px; height: 50px; padding: 20px 0 0; display: block; border-radius: 0 15px 15px 0; float: left; background-color: var(--red); color: #fff;}
@@ -641,7 +660,7 @@
     .trialcomm {                        position: relative; padding: 0 10%;
         .content {                          margin: 75px 50px 0 0;
             h2 {                                font-size: 54px; line-height: 54px; color: var(--navy);}
-            p {                                 font-size: 24px; line-height: 32px; margin: 20px 0 30px; color: var(--navy);}
+            p {                                 font-size: 20px; line-height: 28px; margin: 20px 0 30px; color: var(--navy);}
         }
         .image {                            width: 95%; margin: 0 0 -3px;}
         .right {                            margin: 75px 0 0;
@@ -654,7 +673,7 @@
         }
         .left {                             
             h3 {                           font-size: 44px; line-height: 44px; color: var(--navy);}
-            p {                            font-size: 24px; line-height: 32px; margin: 20px 0 30px; color: var(--navy);}
+            p {                            font-size: 20px; line-height: 28px; margin: 20px 0 30px; color: var(--navy);}
             img {                          width: 35%; padding: 0 15px 0 0; display: inline-block;}
         }
     }
@@ -666,7 +685,7 @@
         .panels {                          margin: 0 0 80px;
             .panel {                           margin: 0 0 40px; padding: 0; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); border-radius: 15px; background-color: var(--white);
                 .text {                     width: calc(100% - 40px); padding: 20px; height: 100%; border-radius: 15px; background-color: var(--gray);
-                    h1 {                        font-family: 'DM Sans', sans-serif; margin: 0 40px 20px 0; font-size: 24px; line-height: 32px; font-weight: 700; text-transform: none; color: var(--blue);}
+                    h1 {                        font-family: 'DM Sans', sans-serif; margin: 0 40px 20px 0; font-size: 20px; line-height: 28px; font-weight: 700; text-transform: none; color: var(--blue);}
                     p {                         font-size: 18px; line-height: 26px; margin: 0 0 30px; color: var(--navy);}
                     p.type {                    line-height: 26px; margin: 0; font-weight: 700; color: var(--navy);}
                 }
@@ -1250,6 +1269,64 @@
         .up {                           order: 1;}
     }
 
+    
+    /* EVENTS SCSS
+    ================================================== */
+    section.upcoming {                     margin: 0 10% 50px;
+        .header {                       margin: 0 0 50px;
+            h2 {                        font-size: 38px; line-height: 46px;}
+            h2 span {                       display: inline-block; color: var(--blue);}
+        }
+
+        .slider {                       width: 100%; display: flex; flex-flow: column wrap; column-count: 3; gap: 50px; margin: 0 0 50px;         
+            .slides {                   width: 100%; display: flex; flex-flow: column nowrap; flex: 1 1 35%; border-radius: 0 30px 0 30px; overflow: hidden; background-color: var(--navy);
+                .date {                     width: 100%; height: 200px; display: flex; justify-content: center; flex-flow: column; text-align: center; background-color: var(--navy);
+                    h2 {                        font-size: 95px; line-height: 95px; margin: 0; color: var(--white);}
+                    h3 {                        font-size: 20px; color: var(--white);}
+                    span {                      font-size: 14px; color: var(--white);
+                        svg {                       color: var(--red);}
+                    }
+                }
+                .details {                  width: calc(100% - 60px); padding: 0 30px 30px 30px;
+                    h3 {                        font-size: 24px; line-height: 32px; text-transform: none; color: var(--blue);}
+                    p {                         height: auto; font-size: 18px; line-height: 26px; margin: 0 0 20px; color: var(--white);
+                        a {                         color: var(--red);}
+                    }
+                    ul {
+                        li {                        font-size: 14px; line-height: 22px; margin: 0 8px 0 0; display: inline-block; color: var(--white);
+                            svg {                       color: var(--red);}
+                        }
+                    }
+                }
+                .action {                   width: 20%; display: flex; flex-direction: column; justify-content: center; text-align: center; background-color: var(--red);
+                    p {                         font-size: 24px; line-height: 32px; color: var(--white);}
+                }
+            }
+            .slides:hover {            transform: scale(1.025);}
+        }
+    }
+
+    .recent {                       margin: 0 0 100px; margin: 0 10% 100px;          
+        .header {                       margin: 0 0 50px;
+            h2 span {                       display: inline-block; color: var(--blue);}
+        }
+        .panel {                        display: flex; flex-wrap: row wrap; gap: 50px;       
+            .pane {                         width: 50%; height: 650px; overflow: hidden; 
+                .pan {                          width: 100%; height: 100%; border-radius: 60px 0 60px 0; overflow: hidden; position: relative; background-color: var(--navy);
+                    .image {                        width: 100%; height: 100%; opacity: 0.5; position: absolute; top: 0; left: 0; background-position: center; background-repeat: no-repeat; background-size: cover; color: #90f;}
+                    .text {                         width: calc(100% - 80px); padding: 40px; position: absolute; bottom: 0; left: 0; background: linear-gradient(0deg, rgba(5,2,54,1) 20%, rgba(255,255,255,0) 100%);
+                        h3 {                            font-size: 24px; line-height: 32px; text-transform: none; text-decoration: none; color: var(--white); margin: 0 0 10px;}
+                        h4 {                            font-size: 18px; line-height: 26px; text-transform: none; text-decoration: none; color: var(--blue); margin: 0;}
+                        p {                             font-size: 24px; line-height: 32px; margin: 0 0 20px; color: var(--white);}
+                        p.link {                        color: var(--red); text-decoration: none; margin: 0; font-weight: 900;}
+                        p.link svg {                    color: var(--white);}
+                    }
+                }
+            }
+            .pane:hover {                    transform: scale(1.03); transition: all 0.5s ease-in-out;}
+            .pane:hover .pan .image {           opacity: 1;}
+        }
+    }
 
     /* FOOTER SCSS STYLES
     ============================================================== */

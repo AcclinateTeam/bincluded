@@ -48,11 +48,11 @@ const Header = () => {
 
         // MOBILE NAV SCROLL ANIMATION
         if (windowWidth <= 1115 && windowPosition >= 900 && headWrapHeight <= 61) {
-            header!.setAttribute('style', `position: fixed; background-color: #050236;`);
+            header!.setAttribute('style', `position: fixed; background-color: #050236; opacity: 1;`);
         } else if (windowWidth <= 1115 && headWrapHeight >= 61) {
-            header!.setAttribute('style', `position: fixed; background-color: #00000000;`);
+            header!.setAttribute('style', `position: fixed; background-color: #00000000; opacity: 1;`);
         } else {
-            header!.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0);`);
+            header!.setAttribute('style', `position: absolute; background-color: rgb(0,0,0,0); opacity: 1;`);
         }
     });
 

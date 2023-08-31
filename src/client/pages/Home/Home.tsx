@@ -46,13 +46,12 @@ const Home = () => {
             setBeds(metro.actuals.hospitalBeds);
             setMetrics(metro.metrics);
         }
-
     }, []);
 
     // Scrolls to bottom of Hero Section OnClick
     const scrollToRef = () => {
-        let hero = document.getElementById('hero');
-        let heroHeight = hero!.offsetHeight;
+        const hero = document.getElementById('hero');
+        const heroHeight = hero!.offsetHeight;
 
         window.scrollTo({
             top: heroHeight,
@@ -61,24 +60,27 @@ const Home = () => {
         });
     }
     
+    // Hero Background-Image Slide + Hero Text Fade-In
     useEffect(() => {
-        let hero = document.getElementById('heroSlide');
-        let heroHead = document.getElementById('headText');
-        let heroPar = document.getElementById('headPar');
-        let heroButt = document.getElementById('headButt');
-        let heroLink = document.getElementById('headLink');
+        const hero = document.getElementById('heroSlide');
+        const heroHead = document.getElementById('headText');
+        const heroPar = document.getElementById('headPar');
+        const heroButt = document.getElementById('headButt');
+        const heroLink = document.getElementById('headLink');
+        const header = document.getElementById('header');
 
         hero!.style.height = '100%';
         heroHead!.style.cssText = 'margin-top: 0px; opacity: 1;';
         heroPar!.style.cssText = 'margin-top: 0px; opacity: 1;';
         heroButt!.style.cssText = 'margin-top: 0px; opacity: 1;';
         heroLink!.style.cssText = 'margin-top: 0px; opacity: 1;';
-    }, []);
+        header!.style.cssText = 'opacity: 1;';
+    }, []);   
 
     return (
         <>
             {/* HEADER COMPONENT IMPORT */}
-            <Header />
+            <Header /> 
 
             {/* POPUP COMPONENT */}
             {/* <PopupComponent /> */}
@@ -106,85 +108,112 @@ const Home = () => {
                     <a id="headButt" className="button signup joinCommunity" href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer" aria-label="Join the NOWINCLUDED Community - Opens in a new tab">Join The Community</a>
                     <Link id="headLink" className="button learnmore" to="/whynow">Learn More</Link>
                 </div>
-            </section>
-
-            {/* HOME - Who We Are Section */}
-            {/* <section className="whoWeAre">
-                <div className="image">
-                    <img src="/images/theme/homewhoweare2.png" alt="Who_We_Are" />
-                </div>
-                <div className="text">
-                    <h2>We <span className="blue">Listen.</span><br /> We <span className="blue">Represent.</span><br /> We <span className="blue">Share.</span></h2>
-                    <p>For too long, the Black community has navigated barriers to physical, mental, and financial wellbeing. There must be a space where the community can come together, access helpful resources, and validate lived experiences. <Logo color="#287FDD" /> is a platform to help navigate and remove barriers. A place designed for us, by us.</p>
-                </div>
-            </section> */}
-
-            {/* HOME - Recent Events Section */}
-            {/* <section className="eventshome">
-                <div className="container">
-                    <div className="eight columns offset-by-one">
-                        <h2>Investing in <span className="blue">Community</span></h2>
-                        <p>Click below to learn more about events impacting the community.</p>
-                    </div>
-                    <div className="eight columns offset-by-one">
-                        <div className="third columns">
-                            <Link to="/events/miles">
-                                <div className="photo">
-                                    <img src="/images/events/miles/IMG_0024.jpg" />
-                                    <h4>Bridging the Gap: Miles College</h4>
-                                </div>
-                            </Link>
-                        </div>
-
-                        <div className="third columns">
-                            <Link to="/events/miles">
-                                <div className="photo">
-                                    <img src="/images/events/seniors/6Q3A9343.jpg" />
-                                    <h4>Bridging the Gap: Senior 'R Us</h4>
-                                </div>
-                            </Link>
-                        </div>
-
-                        <div className="third columns">
-                            <Link to="/events/miles">
-                                <div className="photo">
-                                    <img src="/images/events/bushconx/IMG_6172.jpg" />
-                                    <h4>Bush Hills Connection</h4>
-                                </div>
-                            </Link>
-                        </div>
-
-                        <div className="ten columns">
-                            <div className="buttonwrap center">
-                                <Link className="content button solid" to="/events">See More Events</Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> */}
-
-            {/* HOME - What We Do Section */}
-            {/* <section className="HomeWhatWeDo">
-                <div className="content">
-                    <h3>Your Story <span>Matters</span></h3>
-                    <p>Hear from the community and share your story.</p>
-                    <Link to="/blog">See Featured Stories <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
-                    <hr />
-                    <h3>Bettering <span>Birmingham</span></h3>
-                    <p>Learn why now is the time to take control of your health and future. </p>
-                    <Link to="/whynow">Read More <FontAwesomeIcon className="readmo" icon="arrow-right" /></Link>
-                    <hr />
-                    <h3>Join Our <span>Community</span></h3>
-                    <p>Click here to learn, share and grow with others in the <Logo color="#287fdd" /> community. </p>
-                    <a href="https://app.nowincluded.com/share/4G6YaPVNDXWamfDM?utm_source=manual" target="_blank" rel="noopener noreferrer">Join Now <FontAwesomeIcon className="readmo" icon="arrow-right" /></a>
-                </div>
-                <div className="image">
-                    <img src="/images/theme/homewhatwedo.png" alt="Who_We_Are" />
-                </div>
-            </section> */}
+            </section>            
 
             {/* HOME - Resource Portal Section */}
             <HomePortal />
+
+            {/* HOME - Upcoming Events Section */}            
+            <section className="upcoming" style={{}}>
+                <div className="header" style={{ textAlign: 'center' }}>
+                    <h2>Upcoming <span>Events</span></h2>
+                </div>
+                <div className="slider">
+                    <div className="slides">
+                        <div className="date">
+                            <h2>2</h2>
+                            <h3>Sept</h3>
+                            <span><FontAwesomeIcon icon="clock" /> 7:00pm</span>
+                        </div>
+                        <div className="details">
+                            <h3>District 6 - Movies at the Park</h3>
+                            <p>Birmingham City Council Pro Tem Crystal Smitherman, Senator Rodger Smitherman, Commissioner Sheila Tyson and the Titusville community present Movies at the Park.</p>
+                            <ul>
+                                <li><FontAwesomeIcon icon="map-marker-alt" /> Memorial Park - 524 6th Avenue S. Birmingham, Alabama 35205</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="slides">
+                        <div className="date">
+                            <h2>3</h2>
+                            <h3>Sept</h3>
+                            <span><FontAwesomeIcon icon="clock" /> 4pm</span>
+                        </div>
+                        <div className="details">
+                            <h3>Summer Music Vibes</h3>
+                            <p>FREE entry! Voter Registraion, Music, Food Trucks and more!</p>
+                            <ul>
+                                <li><FontAwesomeIcon icon="map-marker-alt" /> 633 Cotton Avenue SW, Birmingham, Alabama 35211</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="slides">
+                        <div className="date">
+                            <h2>5</h2>
+                            <h3>Sept</h3>
+                            <span><FontAwesomeIcon icon="clock" /> 6 - 7:30pm</span>
+                        </div>
+                        <div className="details">
+                            <h3>Birmingham CERT</h3>
+                            <p>CERT is a FEMA-sponsored, State supported and locally run training program that prepares you to help yourself, your family, and your neighbors in the event of a disaster.</p>
+                            <ul>
+                                <li><FontAwesomeIcon icon="map-marker-alt" /> Birmingham Fire Station 2 - 600 11th Street South Birmingham, Alabama 35233</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="slides">
+                        <div className="date">
+                            <h2>7</h2>
+                            <h3>Sept</h3>
+                            <span><FontAwesomeIcon icon="clock" /> 6pm</span>
+                        </div>
+                        <div className="details">
+                            <h3>BCS Game of The Week</h3>
+                            <p>Parker vs Jackson Olin. Click <a href="https://www.bhamcityschools.org/cms/lib/AL01001646/Centricity/Domain/4/300957569_3312159375681238_1050852427943883188_n.jpg">here</a> to view entire schedule.</p>
+                            <ul>
+                                <li><FontAwesomeIcon icon="map-marker-alt" /> Jackson Olin High School - 1300 Avenue F, Birmingham, AL 35218</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="slides">
+                        <div className="date">
+                            <h2>13</h2>
+                            <h3>Sept</h3>
+                            <span><FontAwesomeIcon icon="clock" /> 11am</span>
+                        </div>
+                        <div className="details">
+                            <h3>Birmingham Public Library T-Shirt Day</h3>
+                            <p>Design your own t-shirts! Adult book club will make their own t-shirts!</p>
+                            <ul>
+                                <li><FontAwesomeIcon icon="map-marker-alt" /> Birimingham Public Library - 2100 Park Place, Birmingham, AL 35222</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="slides">
+                        <div className="date">
+                            <h2>17</h2>
+                            <h3>Sept</h3>
+                            <span><FontAwesomeIcon icon="clock" /> 3 - 8pm</span>
+                        </div>
+                        <div className="details">
+                            <h3>The Getdown at Avondale Park</h3>
+                            <p>We’re excited to announce THE GET DOWN at Avondale Park: a FREE concert series presented by Seasick & Yellowhammer Creative!</p>
+                            <ul>
+                                <li><FontAwesomeIcon icon="map-marker-alt" /> Avondale Park - 4101 5th Ave S, Birmingham, AL 35222</li>
+                            </ul>
+                        </div>
+                    </div>                    
+                    
+                </div>
+                <div className="slideImage">
+                    <img src="images/events/" alt="" />
+                </div>
+            </section>
 
             {/* HOME - Stories Section */}
             <section id="stories" className="homestories">

@@ -1,7 +1,7 @@
 /* HEADER SCSS STYLES
 ============================================================== */
 /* HEADER STYLES */
-header {                        width: 100%; display: block; margin: 0; padding: 0; position: fixed; top: 0; left: 0; z-index: 99;
+header {                        width: 100%; display: block; margin: 0; padding: 0; position: fixed; top: 0; left: 0; z-index: 99; opacity: 0;
   .logo {                         margin: 0; float: left;}
   .logo svg {                     height: 35px; margin: 5px 0 0;}
 }
